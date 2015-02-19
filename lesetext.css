@@ -1,3 +1,13 @@
 .fw { color: #ddd; }
 .centered { text-align: center; }
 .letter-spaced { letter-spacing: 1pt; }
+
+nav a {  
+  color: #777;
+}
+nav a:hover {
+  color: #FFC20E; 
+}
+.breadcrumbs .current {
+  color: black;
+}
