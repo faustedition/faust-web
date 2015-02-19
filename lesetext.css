@@ -11,3 +11,22 @@ nav a:hover {
 .breadcrumbs .current {
   color: black;
 }
+
+a.lineno {
+  margin-left: -5em;
+  width: 4.5em;
+  float: left;
+  position: relative;
+  text-align: right;
+  color: #777;
+  font-weight: lighter;
+  font-size: 80%;  
+}
+
+a.lineno.invisible {
+  opacity:0;
+}
+
+div:hover > a.lineno, a.lineno:hover {
+  opacity:100 !important;  
+}
