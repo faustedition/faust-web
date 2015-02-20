@@ -30,3 +30,11 @@ a.lineno.invisible {
 div:hover > a.lineno, a.lineno:hover {
   opacity:100 !important;  
 }
+
+a.sigil {
+  float: right;
+  color: #777;
+}
+div:hover > a.sigil {
+  color: black;
+}
