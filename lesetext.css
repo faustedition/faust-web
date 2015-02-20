@@ -8,7 +8,7 @@ nav a {
 nav a:hover {
   color: #FFC20E; 
 }
-.breadcrumbs .current {
+.breadcrumbs .current a {
   color: black;
 }
 
