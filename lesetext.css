@@ -18,6 +18,7 @@ a.lineno {
   float: left;
   position: relative;
   text-align: right;
+  text-indent: 0pt;
   color: #777;
   font-weight: lighter;
   font-size: 80%;  
