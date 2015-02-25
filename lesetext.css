@@ -39,3 +39,10 @@ a.sigil {
 div:hover > a.sigil {
   color: black;
 }
+.lg {
+  margin-bottom: 0.5em;
+}
+.rend-indented {
+  text-indent: 2em;
+}
+
