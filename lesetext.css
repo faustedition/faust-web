@@ -46,3 +46,11 @@ div:hover > a.sigil {
   text-indent: 2em;
 }
 
+.alt {
+  border-bottom: 1px dotted black;
+  /*
+   * alternative:
+   * text-decoration underline dotted;
+   * wird aber nur von firefox unterstrützt 
+   */
+}
