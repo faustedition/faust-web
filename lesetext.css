@@ -36,6 +36,9 @@ a.sigil {
   float: right;
   color: #777;
 }
+.variants > * {
+  clear: right;
+}
 div:hover > a.sigil {
   color: black;
 }
