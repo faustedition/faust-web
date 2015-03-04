@@ -45,6 +45,9 @@ div:hover > a.sigil {
 .lg {
   margin-bottom: 0.5em;
 }
+div.text {
+  margin-bottom: 1em;
+}
 .rend-indented {
   text-indent: 2em;
 }
