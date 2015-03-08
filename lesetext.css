@@ -46,10 +46,17 @@ div:hover > a.sigil {
   margin-bottom: 0.5em;
 }
 div.text {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .rend-indented {
   text-indent: 2em;
+}
+
+.l .hi {
+	font-style: italic;
+}
+.stage .hi {
+	font-variant: small-caps;
 }
 
 .alt {
