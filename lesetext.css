@@ -67,3 +67,10 @@ div.text {
    * wird aber nur von firefox unterstrützt 
    */
 }
+
+a.pageno {
+    float: right;
+    font-weight: normal;
+    font-size: smaller;
+    color:  #805F40;
+}
