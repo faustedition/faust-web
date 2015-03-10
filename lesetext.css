@@ -57,7 +57,7 @@ div.text {
 }
 .stage .hi, .stage .emph {
 	font-variant: small-caps;
-	font-style: oblique;
+	font-style: normal;
 }
 
 .alt {
