@@ -29,7 +29,7 @@ a.lineno.invisible {
 }
 
 div:hover > a.lineno, a.lineno:hover {
-  opacity:100 !important;  
+  opacity: 1 !important;  
 }
 
 a.sigil {
@@ -42,8 +42,8 @@ a.sigil {
 div:hover > a.sigil {
   color: black;
 }
-.lg {
-  margin-bottom: 0.5em;
+.lg, .p, .head {
+  margin-bottom: 0.75em;
 }
 div.text {
   margin-bottom: 1.5em;
@@ -52,11 +52,12 @@ div.text {
   text-indent: 2em;
 }
 
-.l .hi {
+.l .emph {
 	font-style: italic;
 }
-.stage .hi {
+.stage .hi, .stage .emph {
 	font-variant: small-caps;
+	font-style: oblique;
 }
 
 .alt {
