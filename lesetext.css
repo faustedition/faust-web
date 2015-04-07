@@ -1,0 +1,71 @@
+/* Die richtige Schrift auch auf der Testinstanz ... */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+
+
+
+/*
+ * Überschriften
+ */
+
+.type-subscene > .head {
+	padding-bottom: 0.5ex;
+	padding-top: 1ex;
+	color: red;
+}
+
+
+.type-scene > .head, .body > .head {
+	padding-bottom: 1ex;
+	padding-top: 2ex;
+	font-weight: bold;
+}
+
+/* Zueignung, Vorspiel, ... */
+.body > .div > .head {
+	padding-bottom: 2ex;
+	padding-top: 4ex;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.titlePart {
+	display: block;
+	font-weight: bold;
+	padding: 0.5ex 0ex;
+}
+
+
+/* Seitenzahlen */
+.pb {
+	clear: right;
+}
+
+.speaker {
+	color: inherit !important;
+	padding-top: 0.5ex;
+}
+
+br.swelledRule {
+	display: none;
+}
+
+
+ul.toc {
+	list-style: none;
+}
+.toc a {
+	color: #444;
+	font-weight: 500;
+}
+.toc a:hover {
+	color: black;
+}
+
+.hi.rend-big {
+	font-variant: inherit;
+}
+
+.l.rend-indented {
+	text-indent: inherit;
+}
