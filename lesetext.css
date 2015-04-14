@@ -7,21 +7,21 @@
  * Überschriften
  */
 
-.type-subscene > .head {
+h5.head, .type-subscene > .head {
 	padding-bottom: 0.5ex;
 	padding-top: 1ex;
 	color: red;
 }
 
 
-.type-scene > .head, .body > .head {
+h4.head, .type-scene > .head, .body > .head {
 	padding-bottom: 1ex;
 	padding-top: 2ex;
 	font-weight: bold;
 }
 
 /* Zueignung, Vorspiel, ... */
-.body > .div > .head {
+h3.head, .body > .div > .head {
 	padding-bottom: 2ex;
 	padding-top: 4ex;
 	font-weight: bold;
