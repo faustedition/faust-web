@@ -72,7 +72,8 @@ ul.toc {
 }
 
 .hi.rend-big {
-	font-variant: inherit;
+	font-variant: inherit;	/* statt small-caps */
+	font-style: inherit;	/* statt italic */
 }
 
 .l.rend-indented {
