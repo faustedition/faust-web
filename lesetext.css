@@ -79,3 +79,10 @@ ul.toc {
 .l.rend-indented {
 	text-indent: inherit;
 }
+a.sigil {
+	float: none !important;	/* rm from basic_layout.css */
+}
+.sigils {
+	float: right;
+	/* do we need a max-width here? */
+}
