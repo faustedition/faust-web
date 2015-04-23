@@ -41,6 +41,13 @@ h3.head, .body > .div > .head {
 	clear: right;
 }
 
+.pageno {
+    float: right;
+    font-weight: lighter;
+    font-size: smaller;
+    color:  #805F40;
+}
+
 .speaker {
 	padding-top: 0.5ex;
 	/* 
