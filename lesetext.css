@@ -78,7 +78,7 @@ ul.toc {
 	color: black;
 }
 
-.hi.rend-big {
+.hi.nohighlight {
 	font-variant: inherit;	/* statt small-caps */
 	font-style: inherit;	/* statt italic */
 }
