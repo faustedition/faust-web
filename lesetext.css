@@ -1,5 +1,5 @@
 /* Die richtige Schrift auch auf der Testinstanz ... */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+@import url(//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
 
 
 
@@ -48,8 +48,8 @@ h3.head, .body > .div > .head {
     color:  #805F40;
 }
 
-.speaker {
-	padding-top: 0.5ex;
+.speaker {    
+	padding-top: 1.5ex;
 	/* 
 	Alternative 1: 
 	font-weight: 500;
@@ -62,7 +62,7 @@ h3.head, .body > .div > .head {
 	font-size: 90%;
 }
 
-br.swelledRule {
+br.swelledRule, br.line {
 	display: none;
 }
 
@@ -92,4 +92,11 @@ a.sigil {
 .sigils {
 	float: right;
 	/* do we need a max-width here? */
+}
+
+.lg, .p, .head {
+    margin-bottom: 0 !important;
+}
+.lg > *:last-child {
+    padding-bottom: 1ex;
 }
