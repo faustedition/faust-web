@@ -97,6 +97,6 @@ a.sigil {
 .lg, .p, .head {
     margin-bottom: 0 !important;
 }
-.lg > *:last-child {
-    padding-bottom: 1ex;
+.lg > *:first-child {
+    padding-top: 1ex;
 }
