@@ -81,6 +81,7 @@ ul.toc {
 .hi.nohighlight {
 	font-variant: inherit;	/* statt small-caps */
 	font-style: inherit;	/* statt italic */
+	margin: 0em;	/* statt kursivausgleich */
 }
 
 .l.rend-indented {
@@ -99,4 +100,13 @@ a.sigil {
 }
 .lg > *:first-child {
     padding-top: 1ex;
+}
+
+/*
+ * Kursivausgleich
+ * 
+ */
+ 
+.stage > .hi { 
+	margin-left: 0.1em;
 }
