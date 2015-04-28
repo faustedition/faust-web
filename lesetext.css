@@ -10,7 +10,8 @@
 h5.head, .type-subscene > .head {
 	padding-bottom: 0.5ex;
 	padding-top: 1ex;
-	color: red;
+	font-size: inherit;
+	font-weight: medium;
 }
 
 
