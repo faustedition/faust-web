@@ -44,6 +44,7 @@ h3.head, .body > .div > .head {
 
 .pageno {
     float: right;
+    padding-right: 12pt;
     font-weight: lighter;
     font-size: smaller;
     color:  #805F40;
@@ -121,3 +122,34 @@ a.sigil {
 dt {
 	margin-top: 1ex; 
 }
+
+
+.hasvars {
+    border-right-style: solid;
+    border-right-width: 12pt;
+}
+
+.varcount-1  { border-color:  #fff; }
+.varcount-2  { border-color:  #eee; }
+.varcount-3  { border-color:  #ddd; }
+.varcount-4  { border-color:  #ccc; }
+.varcount-5  { border-color:  #bbb; }
+.varcount-6  { border-color:  #aaa; }
+.varcount-7  { border-color:  #999; }
+.varcount-8  { border-color:  #888; }
+.varcount-9  { border-color:  #777; }
+.varcount-10 { border-color:  #666; }
+.varcount-11 { border-color:  #555; }
+.varcount-12 { border-color:  #444; }
+.varcount-13 { border-color:  #333; }
+.varcount-14 { border-color:  #222; }
+.varcount-15 { border-color:  #111; }
+.varcount-16 { border-color:  #000; }
+
+.variants-1 { background-color: rgb(255,255,255); }
+.variants-2 { background-color: rgb(245,245,245); }
+.variants-3 { background-color: rgb(235,235,235); }
+.variants-4 { background-color: rgb(225,225,225); }
+.variants-5 { background-color: rgb(215,215,215); }
+.variants-6 { background-color: rgb(205,205,205); }
+.variants-7 { background-color: rgb(195,195,195); }
