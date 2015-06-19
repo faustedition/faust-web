@@ -153,3 +153,21 @@ dt {
 .variants-5 { background-color: rgb(215,215,215); }
 .variants-6 { background-color: rgb(205,205,205); }
 .variants-7 { background-color: rgb(195,195,195); }
+
+
+
+/* ------------------------------------------ */
+/* Einblendungsapparat. TODO auslagern */
+
+.generated-text {
+	color: #aaa;
+}
+.app {
+	font-style: italic;
+}
+abbr.app {
+	border-bottom: none;
+}
+.replaced {
+	border-bottom: #aaa solid 1px;
+}
