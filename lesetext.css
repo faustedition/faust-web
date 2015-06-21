@@ -171,3 +171,7 @@ abbr.app {
 .replaced {
 	border-bottom: #aaa solid 1px;
 }
+
+.appnote, .del, .add {
+	cursor: help;
+}
