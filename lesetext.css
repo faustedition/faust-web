@@ -91,6 +91,7 @@ ul.toc {
 }
 a.sigil {
 	float: none !important;	/* rm from basic_layout.css */
+	cursor: help;
 }
 .sigils {
 	float: right;
