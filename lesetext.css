@@ -168,8 +168,14 @@ dt {
 abbr.app {
 	border-bottom: none;
 }
-.replaced, .deleted {
+.deleted {
 	border-bottom: #aaa solid 1px;
+}
+.deleted .deleted {
+        border-bottom-width: 2px;
+}
+.delted .deleted .deleted {
+	border-bottom-width: 3px;
 }
 
 .appnote, .del, .add {
