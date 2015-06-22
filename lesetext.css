@@ -168,7 +168,7 @@ dt {
 abbr.app {
 	border-bottom: none;
 }
-.replaced {
+.replaced, .deleted {
 	border-bottom: #aaa solid 1px;
 }
 
