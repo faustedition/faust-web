@@ -181,3 +181,13 @@ abbr.app {
 .appnote, .del, .add {
 	cursor: help;
 }
+
+.current {
+	background-color: yellow;
+}
+.current > * {
+	border-color: blue;
+}
+.current > .generated-text {
+	color: blue;
+}
