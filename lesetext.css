@@ -177,6 +177,9 @@ abbr.app {
 .delted .deleted .deleted {
 	border-bottom-width: 3px;
 }
+.restored {
+    border-bottom: #aaa dashed 1px;
+}
 
 .appnote, .del, .add {
 	cursor: help;
