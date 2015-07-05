@@ -183,11 +183,14 @@ abbr.app {
 }
 
 .current {
-	background-color: yellow;
-}
+	background-color: #FCE5A6;
+	transition: all 0.5s ease-in-out;
+} 
 .current > * {
 	border-color: blue;
+	transition: all 0.5s ease-in-out;
 }
 .current > .generated-text {
 	color: blue;
+	transition: all 0.5s ease-in-out;
 }
