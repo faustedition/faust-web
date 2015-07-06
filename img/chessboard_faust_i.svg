@@ -1,0 +1,315 @@
+<svg version="1.1" baseProfile="full" width="950" height="542.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <style type="text/css" >
+    <![CDATA[
+
+      .rowText {
+        font-family: Arial, Helvetica;
+        font-weight: 400;
+        font-size: 20pt;
+        font-style: normal;
+        text-anchor: end;
+        fill: black;
+      }
+
+      .columnText {
+        font-family: Arial, Helvetica;
+        font-weight: 400;
+        font-size: 15pt;
+        font-style: normal;
+        text-anchor: start;
+        fill: black;
+      }
+
+      .untouched {
+        fill: white;
+        stroke: black;
+        stroke-width: 0.5;
+
+      }
+
+      .inProgress {
+        fill: gray;
+        stroke: black;
+        stroke-width: 0.5;
+
+      }
+
+      .finished {
+        fill: black;
+        stroke: black;
+        stroke-width: 0.5;
+
+      }
+
+      .highlight {
+        opacity: 0;
+        fill: red;
+        fill-opacity: 0.25;
+        stroke: black;
+        stroke-width: 0.5;
+        stroke-opacity: 0.5;
+      }
+
+      .highlight:hover {
+        opacity: 1;
+      }
+    ]]>
+  </style>
+
+  <rect width="100%" height="100%" style="fill:none;"></rect>
+
+  <g transform="translate(145,275)">
+    <g transform="translate(10,-5)">
+      <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Zueignung</text>
+      <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Vorspiel auf dem Theater</text>
+      <text x="0" y="0" transform="translate(50,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Prolog im Himmel</text>
+      <text x="0" y="0" transform="translate(75,0) rotate(-45)" class="columnText">&nbsp;1 Nacht</text>
+      <text x="0" y="0" transform="translate(100,0) rotate(-45)" class="columnText">&nbsp;2 Vor dem Tor</text>
+      <text x="0" y="0" transform="translate(125,0) rotate(-45)" class="columnText">&nbsp;3 Studierzimmer I</text>
+      <text x="0" y="0" transform="translate(150,0) rotate(-45)" class="columnText">&nbsp;4 Studierzimmer II</text>
+      <text x="0" y="0" transform="translate(175,0) rotate(-45)" class="columnText">&nbsp;5 Auerbachs Keller in Leipzig</text>
+      <text x="0" y="0" transform="translate(200,0) rotate(-45)" class="columnText">&nbsp;6 Hexenküche</text>
+      <text x="0" y="0" transform="translate(225,0) rotate(-45)" class="columnText">&nbsp;7 Straße. Faust Margarete</text>
+      <text x="0" y="0" transform="translate(250,0) rotate(-45)" class="columnText">&nbsp;8 Abend. Ein kleines reinliches Zimmer</text>
+      <text x="0" y="0" transform="translate(275,0) rotate(-45)" class="columnText">&nbsp;9 Spaziergang</text>
+      <text x="0" y="0" transform="translate(300,0) rotate(-45)" class="columnText">10 Der Nachbarin Haus</text>
+      <text x="0" y="0" transform="translate(325,0) rotate(-45)" class="columnText">11 Straße. Faust Mephistopheles</text>
+      <text x="0" y="0" transform="translate(350,0) rotate(-45)" class="columnText">12 Garten</text>
+      <text x="0" y="0" transform="translate(375,0) rotate(-45)" class="columnText">13 Ein Gartenhäuschen</text>
+      <text x="0" y="0" transform="translate(400,0) rotate(-45)" class="columnText">14 Wald und Höhle</text>
+      <text x="0" y="0" transform="translate(425,0) rotate(-45)" class="columnText">15 Gretchens Stube</text>
+      <text x="0" y="0" transform="translate(450,0) rotate(-45)" class="columnText">16 Marthens Garten</text>
+      <text x="0" y="0" transform="translate(475,0) rotate(-45)" class="columnText">17 Am Brunnen</text>
+      <text x="0" y="0" transform="translate(500,0) rotate(-45)" class="columnText">18 Zwinger</text>
+      <text x="0" y="0" transform="translate(525,0) rotate(-45)" class="columnText">19 Nacht. Straße vor Gretchens Türe</text>
+      <text x="0" y="0" transform="translate(550,0) rotate(-45)" class="columnText">20 Dom</text>
+      <text x="0" y="0" transform="translate(575,0) rotate(-45)" class="columnText">21 Walpurgisnacht</text>
+      <text x="0" y="0" transform="translate(600,0) rotate(-45)" class="columnText">22 Walpurgisnachtstraum</text>
+      <text x="0" y="0" transform="translate(625,0) rotate(-45)" class="columnText">23 Trüber Tag. Feld</text>
+      <text x="0" y="0" transform="translate(650,0) rotate(-45)" class="columnText">24 Nacht, offen Feld</text>
+      <text x="0" y="0" transform="translate(675,0) rotate(-45)" class="columnText">25 Kerker</text>
+    </g>
+
+    <g transform="translate(0,0)">
+      <g transform="translate(0,0)">
+        <text x="-10" y="30"  class="rowText">bis 1806</text>
+
+        <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="50" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="75" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="100" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="125" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="150" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="175" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="200" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="225" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="250" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="275" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="300" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="325" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="350" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="375" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="400" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="425" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="450" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="475" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="500" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="525" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="550" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="575" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="600" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="625" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="650" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="675" y="0" width="22.5" height="40" class="finished"></rect>
+      </g>
+
+      <g transform="translate(0,75)">
+        <text x="-10" y="30" class="rowText">1797-1801</text>
+
+        <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="50" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="75" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="100" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="125" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="150" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="175" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="200" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="225" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="250" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="275" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="300" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="325" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="350" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="375" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="400" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="425" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="450" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="475" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="500" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="525" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="550" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="575" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="600" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="625" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="650" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="675" y="0" width="22.5" height="40" class="finished"></rect>
+      </g>
+
+      <g transform="translate(0,150)">
+        <text x="-10" y="30" class="rowText">bis 1790</text>
+
+        <rect x="0" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="25" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="50" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="75" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="100" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="125" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="150" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="175" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="200" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="225" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="250" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="275" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="300" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="325" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="350" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="375" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="400" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="425" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="450" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="475" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="500" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="525" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="550" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="575" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="600" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="625" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="650" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="675" y="0" width="22.5" height="40" class="inProgress"></rect>
+      </g>
+
+      <g transform="translate(0,225)">
+        <text x="-10" y="30" class="rowText">bis 1775</text>
+
+        <rect x="0" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="25" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="50" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="75" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="100" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="125" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="150" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="175" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="200" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="225" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="250" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="275" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="300" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="325" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="350" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="375" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="400" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="425" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="450" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="475" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="500" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="525" y="0" width="22.5" height="40" class="inProgress"></rect>
+        <rect x="550" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="575" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="600" y="0" width="22.5" height="40" class="untouched"></rect>
+        <rect x="625" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="650" y="0" width="22.5" height="40" class="finished"></rect>
+        <rect x="675" y="0" width="22.5" height="40" class="inProgress"></rect>
+      </g>
+
+      <g transform="translate(-2,-2)">
+        <a xlink:href="geneticBarGraph.php?rangeStart=1&amp;rangeEnd=32">
+          <rect x="0" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zueignung"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=33&amp;rangeEnd=242">
+          <rect x="25" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vorspiel auf dem Theater"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=243&amp;rangeEnd=353">
+          <rect x="50" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Prolog im Himmel"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=354&amp;rangeEnd=807">
+          <rect x="75" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=808&amp;rangeEnd=1177">
+          <rect x="100" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vor dem Tor"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=1178&amp;rangeEnd=1529">
+          <rect x="125" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer I"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=1530&amp;rangeEnd=2072">
+          <rect x="150" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer II"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=2073&amp;rangeEnd=2336">
+          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller in Leipzig"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=2337&amp;rangeEnd=2604">
+          <rect x="200" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Hexenküche"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=2605&amp;rangeEnd=2677">
+          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße. Faust Margarete"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=2678&amp;rangeEnd=2804">
+          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend. Ein kleines reinliches Zimmer"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=2805&amp;rangeEnd=2864">
+          <rect x="275" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Spaziergang"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=2865&amp;rangeEnd=3024">
+          <rect x="300" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Der Nachbarin Haus"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3025&amp;rangeEnd=3072">
+          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße. Faust Mephistopheles"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3073&amp;rangeEnd=3204">
+          <rect x="350" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Garten"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3205&amp;rangeEnd=3216">
+          <rect x="375" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Ein Gartenhäuschen"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3217&amp;rangeEnd=3373">
+          <rect x="400" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Wald und Höhle"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3374&amp;rangeEnd=3413">
+          <rect x="425" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Gretchens Stube"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3414&amp;rangeEnd=3543">
+          <rect x="450" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Marthens Garten"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3544&amp;rangeEnd=3586">
+          <rect x="475" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Am Brunnen"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3587&amp;rangeEnd=3619">
+          <rect x="500" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zwinger"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3620&amp;rangeEnd=3775">
+          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht. Straße vor Gretchens Türe"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3776&amp;rangeEnd=3834">
+          <rect x="550" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Dom"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=3835&amp;rangeEnd=4222">
+          <rect x="575" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnacht"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=4223&amp;rangeEnd=4398">
+          <rect x="600" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnachtstraum"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=4389&amp;rangeEnd=4399">
+          <rect x="625" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Trüber Tag. Feld"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=4399&amp;rangeEnd=4404">
+          <rect x="650" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht, offen Feld"></rect>
+        </a>
+        <a xlink:href="geneticBarGraph.php?rangeStart=4405&amp;rangeEnd=4612">
+          <rect x="675" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Kerker"></rect>
+        </a>
+      </g>
+    </g>
+  </g>
+</svg>
