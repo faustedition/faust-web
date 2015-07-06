@@ -159,29 +159,40 @@ dt {
 /* ------------------------------------------ */
 /* Einblendungsapparat. TODO auslagern */
 
+/* Everything that is not in the original text should be grey: */
 .generated-text {
 	color: #aaa;
 }
+
+/* Editorial notes */
 .app {
 	font-style: italic;
 }
 abbr.app {
 	border-bottom: none;
 }
+
+/* Affected text in the base level is underlined. It has both the .affected and 
+   either a .restored or .deleted class */
 .deleted {
-	border-bottom: #aaa solid 1px;
-}
-.deleted .deleted {
-        border-bottom-width: 2px;
-}
-.delted .deleted .deleted {
-	border-bottom-width: 3px;
+	border-bottom: #aaa solid;
 }
 .restored {
-    border-bottom: #aaa dashed 1px;
+    border-bottom: #aaa dashed;
 }
 
-.appnote, .del, .add {
+
+.affected {
+	border-bottom-width: 1px;
+}
+.affected .affected {
+        border-bottom-width: 2px;
+}
+.delted .affected .affected {
+	border-bottom-width: 3px;
+}
+
+.appnote {
 	cursor: help;
 }
 
