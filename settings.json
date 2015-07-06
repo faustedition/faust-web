@@ -1,0 +1,29 @@
+{
+  "javaApp": {
+    "path": "./java",
+    "maxParallelTransforms": 10,
+    "pollInterval": 100
+  },
+  "rendering": {
+    "url": "http://127.0.0.1/new/page/transcript-generation.html"
+  },
+  "input": {
+    "doc": {
+      "metadata": "/var/www/html/new2/xml/document/",
+      "transcript": "/var/www/html/new2/xml/transcript/",
+      "imageTextLink": "/var/www/html/new2/xml/image-text-links/",
+      "facsimile": "/var/www/html/img/"
+    }
+  },
+  "output": {
+    "jsonDoc": {
+      "metadata": "./out2/document",
+      "transcript": "./out2/transcript"
+    },
+    "svg": {
+      "diplomatic": "./out2/svg/diplomatic",
+      "facsimileOverlay": "./out2/svg/facsimileOverlay"
+    }
+  },
+  "errorLog": "error.log"
+}
