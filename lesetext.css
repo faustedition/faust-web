@@ -187,13 +187,13 @@ abbr.app {
 
 .current {
 	background-color: #FCE5A6;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-out;
 } 
 .current > * {
 	border-color: blue;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-out;
 }
 .current > .generated-text {
 	color: blue;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-out;
 }
