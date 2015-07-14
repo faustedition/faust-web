@@ -194,6 +194,10 @@ abbr.app {
 
 .appnote {
 	cursor: help;
+	transition: all 0.5s ease-out;
+}
+.appnote > * {
+	transition: all 0.5s ease-out;
 }
 
 .current {
