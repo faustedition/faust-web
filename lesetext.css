@@ -154,3 +154,62 @@ dt {
 .variants-5 { background-color: rgb(215,215,215); }
 .variants-6 { background-color: rgb(205,205,205); }
 .variants-7 { background-color: rgb(195,195,195); }
+
+
+
+/* ------------------------------------------ */
+/* Einblendungsapparat. TODO auslagern */
+
+/* Everything that is not in the original text should be grey: */
+.generated-text {
+	color: #aaa;
+}
+
+/* Editorial notes */
+.app {
+	font-style: italic;
+}
+abbr.app {
+	border-bottom: none;
+}
+
+/* Affected text in the base level is underlined. It has both the .affected and 
+   either a .restored or .deleted class */
+.deleted {
+	border-bottom: #aaa solid;
+}
+.restored {
+    border-bottom: #aaa dashed;
+}
+
+
+.affected {
+	border-bottom-width: 1px;
+}
+.affected .affected {
+        border-bottom-width: 2px;
+}
+.delted .affected .affected {
+	border-bottom-width: 3px;
+}
+
+.appnote {
+	cursor: help;
+	transition: all 0.5s ease-out;
+}
+.appnote > * {
+	transition: all 0.5s ease-out;
+}
+
+.current {
+	background-color: #FCE5A6;
+	transition: all 0.5s ease-out;
+} 
+.current > * {
+	border-color: blue;
+	transition: all 0.5s ease-out;
+}
+.current > .generated-text {
+	color: blue;
+	transition: all 0.5s ease-out;
+}
