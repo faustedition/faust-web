@@ -81,7 +81,7 @@
                     <strong style="font-weight: bold; font-style: normal;">Thorsten Vitt</strong><br>
                       <a href="mailto:thorsten.vitt@uni-wuerzburg.de" title="E-Mail" style="color: rgb(0, 0, 0); font-weight: bold; text-decoration: none; cursor: pointer;">thorsten.vitt@uni-wuerzburg.de</a>
                     </p>
-                    <strong style="font-weight: bold; font-style: normal;">Gerrit Brüning</strong><br>
+                    <strong style="font-weight: bold; font-style: normal;">Dr. Gerrit Brüning</strong><br>
                       <a href="mailto:bruening@faustedition.de" title="E-Mail" style="color: rgb(0, 0, 0); font-weight: bold; text-decoration: none; cursor: pointer;">bruening@faustedition.de</a>
                     </p>
                     <p>
