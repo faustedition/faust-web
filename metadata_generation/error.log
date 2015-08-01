@@ -1,0 +1,38 @@
+ERROR: couldn't find page for pb A80014-91 referenced in transcript /var/www/html/xml/transcript/bl_london/Add_20723/Add_20723.xml
+ERROR: couldn't find page for pb A80014-92 referenced in transcript /var/www/html/xml/transcript/bl_london/Add_20723/Add_20723.xml
+ERROR: couldn't find page for pb A80014-89 referenced in transcript /var/www/html/xml/transcript/bl_london/Egerton_2829/Egerton_2829.xml
+ERROR: couldn't find page for pb A80014-90 referenced in transcript /var/www/html/xml/transcript/bl_london/Egerton_2829/Egerton_2829.xml
+ERROR: couldn't find page for pb A80014-87 referenced in transcript /var/www/html/xml/transcript/bl_london/Zweig_152/Zweig_152.xml
+ERROR: couldn't find page for pb A80014-88 referenced in transcript /var/www/html/xml/transcript/bl_london/Zweig_152/Zweig_152.xml
+ERROR: couldn't find page for pb 15 referenced in transcript /var/www/html/xml/transcript/dla_marbach/Cotta-Archiv_Goethe_23/Marbach_Deutsches_Literaturarchiv.xml
+ERROR: couldn't find page for pb Hs-18480_3 referenced in transcript /var/www/html/xml/transcript/fdh_frankfurt/Hs-18480/Hs-18480.xml
+ERROR: couldn't find page for pb Hs-18480_4 referenced in transcript /var/www/html/xml/transcript/fdh_frankfurt/Hs-18480/Hs-18480.xml
+ERROR: couldn't find page for pb Hs-29527_2 referenced in transcript /var/www/html/xml/transcript/fdh_frankfurt/Hs-29527/Hs-29527.xml
+ERROR: couldn't find page for pb Hs-29527_3 referenced in transcript /var/www/html/xml/transcript/fdh_frankfurt/Hs-29527/Hs-29527.xml
+ERROR: couldn't find page for pb Hs-6626_3 referenced in transcript /var/www/html/xml/transcript/fdh_frankfurt/Hs-6626/Hs-6626.xml
+ERROR: couldn't find page for pb Hs-6626_5 referenced in transcript /var/www/html/xml/transcript/fdh_frankfurt/Hs-6626/Hs-6626.xml
+ERROR: couldn't find page for pb GSA_25-W_3-2_Blatt-6recto referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-W_3-2/GSA_25-W_3-2.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29a_Seite-2 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29a/GSA_25-XXXVII-B-29a.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29b_Seite-1 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29b/GSA_25-XXXVII-B-29b.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29c_Seite-1 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29c/GSA_25-XXXVII-B-29c.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29d_Seite-1 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29d/GSA_25-XXXVII-B-29d.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29d_Seite-2 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29d/GSA_25-XXXVII-B-29d.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29d_Seite-3 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29d/GSA_25-XXXVII-B-29d.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29e_Seite-1 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29e/GSA_25-XXXVII-B-29e.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29e_Seite-2 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29e/GSA_25-XXXVII-B-29e.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29e_Seite-3 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29e/GSA_25-XXXVII-B-29e.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29f_Seite-1 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29f/GSA_25-XXXVII-B-29f.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29f_Seite-2 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29f/GSA_25-XXXVII-B-29f.xml
+ERROR: couldn't find page for pb GSA_25-XXXVII-B-29f_Seite-3 referenced in transcript /var/www/html/xml/transcript/gsa/GSA_25-XXXVII-B-29f/GSA_25-XXXVII-B-29f.xml
+ERROR: metadata file /var/www/html/xml/document/archival/location_unknown/cohen_catalog97-106.xml has no sigil to extract
+ERROR: metadata file /var/www/html/xml/document/archival/privatbesitz/anonym/anonym.xml has no sigil to extract
+ERROR: couldn't find page for pb 54a referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 55 referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 112 referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 113 referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 113a referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 114 referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 114b referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: couldn't find page for pb 115 referenced in transcript /var/www/html/xml/transcript/thlma_weimar/DNT_227/DNT_227.xml
+ERROR: textTranscript /var/www/html/xml/transcript/gsa/390821/null of metadata file /var/www/html/xml/document/kunst_und_alterthum/gsa_390821.xml couldn't be read
+ERROR: textTranscript /var/www/html/xml/transcript/gsa/390489/null of metadata file /var/www/html/xml/document/verschiedenes/gsa_390489.xml couldn't be read
