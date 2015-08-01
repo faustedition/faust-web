@@ -40,6 +40,13 @@
                 user-select: none;
       }
 
+      .facsimile-document-content * {
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+      }
+
       .doc-transcript-content {
         text-align: center;
       }
@@ -120,15 +127,11 @@ g.element-line:hover .bgBox {
   stroke-width: 0.1em;
 }
 
-g:hover .element-line * {
-  opacity: 1;
-}
-
-.facsimile-content g.element-line-hidden > * {
+g.element-line-hidden > * {
   opacity: 0;
 }
 
-.facsimile-content g.element-line-hidden:hover > * {
+div g.element-line-hidden:hover > * {
   opacity: 1;
 }
 
@@ -196,7 +199,7 @@ g:hover .element-line * {
               <div id="zoom-out-button" class="zoom-out-button navigation-button" style="font-family: FontAwesome" onclick="viewer.zoomOut()" title="Verkleinern">&#xf068;</div>
               <div id="rotate-left" class="rotate-left-button navigation-button" style="font-family: FontAwesome" onclick="viewer.rotateLeft()" title="Nach links drehen">&#xf0e2;</div>
               <div id="rotate-right" class="rotate-right-button navigation-button" style="font-family: FontAwesome" onclick="viewer.rotateRight()" title="Nach rechts drehen">&#xf01e;</div>
-              <div id="toggle-overlay-button" class="toggle-overlay-button navigation-button" onclick="viewer.toggleOverlay()" title="Überblendung ein-/ausschalten"><span style="font-family: FontAwesome;">&#xf1fc;</span></div>
+              <div id="toggle-overlay-button" class="toggle-overlay-button button-active navigation-button" onclick="viewer.toggleOverlay()" title="Überblendung ein-/ausschalten"><span style="font-family: FontAwesome;">&#xf1fc;</span></div>
             </div>
             <div id="page-navigation" class="page-navigation">
               <div id="first-page-button" class="first-page-button navigation-button" style="font-family: FontAwesome" onclick="viewer.setPage(1);" title="Erste Seite">&#xf053;&#xf053;</div>
@@ -206,12 +209,13 @@ g:hover .element-line * {
               <div id="last-page-button" class="last-page-button navigation-button" style="font-family: FontAwesome" onclick="viewer.setPage(viewer.getPageCount());" title="Letzte Seite">&#xf054;&#xf054;</div>
             </div>
             <div id="view-select" class="view-select">
-              <div id="show-facsimile-button" class="show-facsimile-button navigation-button" onclick="viewer.setView('facsimile');" title="Faksimile"><span style="font-family: FontAwesome;">&#xf03e;</span></div>
-              <div id="show-facsimile-document-button" class="show-facsimile-button navigation-button" onclick="viewer.setView('facsimile_document');" title="Faksimile | Dokumentarische Transkription"><span style="font-family: FontAwesome;">&#xf03e;</span> | <span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span></div>
-              <div id="show-document-button" class="show-document-button navigation-button" onclick="viewer.setView('document');" title="Dokumentarische Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span></div>
-              <div id="show-document-text-button" class="show-document-button navigation-button" onclick="viewer.setView('document_text');" title="Dokumentarische Transkription | Textuelle Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span> | <span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span></div>
-              <div id="show-text-button" class="show-text-button navigation-button" onclick="viewer.setView('text');" title="Textuelle Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span></div>
               <div id="show-structure-button" class="show-structure-button navigation-button" onclick="viewer.setView('structure');" title="Metadaten/Lagenstruktur"><span style="font-size: smaller; font-family: FontAwesome;">&#xf0cb;</span></div>
+              <div id="show-facsimile-button" class="show-facsimile-button navigation-button" onclick="viewer.setView('facsimile');" title="Faksimile"><span style="font-family: FontAwesome;">&#xf03e;</span></div>
+              <div id="show-facsimile_document-button" class="show-facsimile-button navigation-button" onclick="viewer.setView('facsimile_document');" title="Faksimile | Dokumentarische Transkription"><span style="font-family: FontAwesome;">&#xf03e;</span> | <span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span></div>
+              <div id="show-document-button" class="show-document-button navigation-button" onclick="viewer.setView('document');" title="Dokumentarische Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span></div>
+              <div id="show-document_text-button" class="show-document-button navigation-button" onclick="viewer.setView('document_text');" title="Dokumentarische Transkription | Textuelle Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span> | <span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">{ T }</span></div>
+              <div id="show-text-button" class="show-text-button navigation-button" onclick="viewer.setView('text');" title="Textuelle Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">{ T }</span></div>
+              <div id="show-print-button" class="show-text-button navigation-button" onclick="viewer.setView('print');" title="Variantenapparat"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span></div>
             </div>
           </div>
         </div>
@@ -222,7 +226,6 @@ g:hover .element-line * {
         <script type="text/javascript" src="js/faust_image_overlay.js"></script>
         <script type="text/javascript" src="js/faust_mousemove_scroll.js"></script>
         <script type="text/javascript" src="js/faust_viewer.js"></script>
-        <script type="text/javascript" src="js/faust_print_view.js"></script>
         <script type="text/javascript" src="js/faust_print_interaction.js"></script>
 
         <script>
@@ -230,7 +233,7 @@ g:hover .element-line * {
           var viewer = (function(){
             "use strict";
             var viewer = createDocumentViewer(documentMetadata, document.getElementById("main-content2"));
-            if(viewer.getCurrentView() === "facsimile") {
+            if(viewer.getCurrentView() === "facsimile" || viewer.getCurrentView() === "facsimile_document") {
               document.getElementById("facsimile-settings").style.display="block";
             }
             return viewer;
@@ -249,7 +252,7 @@ g:hover .element-line * {
           viewer.addViewerEventListener("pageLoaded", viewerPageLoadedEventHandler);
 
           viewer.addViewerEventListener("viewChanged", function(newView) {
-            if(newView === "facsimile") {
+            if(newView === "facsimile" || newView === "facsimile_document") {
               document.getElementById("facsimile-settings").style.display = "block";
             } else {
               document.getElementById("facsimile-settings").style.display = "none";

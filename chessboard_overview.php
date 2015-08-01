@@ -1,6 +1,7 @@
       <?php include "includes/header.php"; ?>
         <script>
           window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)"}]));
         </script>
         <div id="main-content" class="main-content">
           <div style="float: left; padding-right: 2em;">

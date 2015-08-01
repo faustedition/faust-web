@@ -49,6 +49,11 @@ header {
   cursor: default;
 }
 
+.breadcrumbs {
+  font-size: 12px;
+  line-height: 1.25em;
+}
+
 /* style for main area */
 main {
   position: absolute;
@@ -196,7 +201,7 @@ footer {
   cursor: pointer;
 }
 
-.navigation-button-active {
+.button-active {
   background-color: #F9CB9C;
 }
 

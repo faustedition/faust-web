@@ -745,6 +745,41 @@ var Faust = (function(){
   })();
 
 //###########################################################################
+// Faust.createBreadcrumbs
+//###########################################################################
+
+  // create and return breadcrumbs as a span element. data is accepted as an array where
+  // each element contains a caption and a link. if no link is provided for an element
+  // there will only be a text node with the caption instead of a link in the returned
+  // span element
+  Faust.createBreadcrumbs = function(data) {
+    // create return element
+    var breadcrumbs = document.createElement("span");
+
+    // iterate through all breadcrumbs
+    data.forEach(function(crumb, index) {
+      // add a spacer if there is more than one breadcrub
+      if(index > 0) {
+        breadcrumbs.appendChild(document.createTextNode(" > "));
+      }
+
+      // create span for current breadcrumb
+      var crumbSpan = Faust.dom.createElement({name: "span", parent: breadcrumbs});
+
+      // add a link for current element if a link was provided, otherwise only append the caption
+      if(crumb.link !== undefined) {
+        var crumbA = Faust.dom.createElement({name: "a", parent: crumbSpan, attributes: [["href", crumb.link]]});
+        crumbA.appendChild(document.createTextNode(crumb.caption));
+      } else {
+        crumbSpan.appendChild(document.createTextNode(crumb.caption));
+      }
+    });
+
+    // return breadcrumbs
+    return breadcrumbs;
+  };
+
+//###########################################################################
 //###########################################################################
   return Faust;
 })();

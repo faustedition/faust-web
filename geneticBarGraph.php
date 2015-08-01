@@ -31,6 +31,7 @@
         </div>
 
         <script>
+
           // remove test
           geneticBarGraphData = geneticBarGraphData.filter(function(graphData) {
             if(graphData.source.indexOf("test.xml") === -1) {
@@ -100,6 +101,23 @@
           var firstLine = visibleRange.rangeStart;
           var lastLine = visibleRange.rangeEnd;
           var numberOfLines = lastLine - firstLine + 1;
+
+          // determine current scene title and scene-line-mapping id
+          var sceneTitle;
+          var sceneLineMappingId;
+          sceneLineMapping.forEach(function(mappingData) {
+            if(firstLine >= mappingData.rangeStart && lastLine <= mappingData.rangeEnd) {
+              sceneLineMappingId = mappingData.id;
+              sceneTitle = mappingData.title;
+            }
+          });
+
+          // set breadcrumbs
+          if(sceneLineMappingId.split(".")[0] === "1") {
+            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneTitle}]));
+          } else {
+            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneTitle}]));
+          }
 
           var horizontalDistance = 30;
           var verticalDistance = 20;

@@ -9,6 +9,7 @@
     <script type="text/javascript" src="data/concordance_columns.js"></script>
     <script type="text/javascript" src="data/document_metadata.js"></script>
     <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
+    <script type="text/javascript" src="data/scene_line_mapping.js"></script>
 
     <script type="text/javascript" src="js/faust_common.js"></script>
 
@@ -25,10 +26,12 @@
         <a class="faustedition-logo" title="Faustedition" href="index.php">
           <img class="faustedition-logo-svg" src="img/faustlogo.svg" alt="Faustedition logo">
         </a>
+        <div id="breadcrumbs" class="breadcrumbs">
+        </div>
         <nav class="header-navigation pure-menu">
           <a href="archives.php">Archiv</a>
           <a href="chessboard_overview.php">Genese</a>
-          <a href="print/index.html">Text</a>
+          <a href="print/text.html">Text</a>
 <!--          <input autocomplete="off" id="quick-search" placeholder="Search" type="text"/>-->
         </nav>
       </div>

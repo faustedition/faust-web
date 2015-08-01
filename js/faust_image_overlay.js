@@ -618,8 +618,14 @@ var imageOverlay = (function(){
             // Metadata is available.
             domNodes.imageInfo.innerHTML = htmlStrings.metadataLoaded;
 
+            // if an overlay exists try to load it
             // Since xhr is async try to get overlay
-            Faust.xhr.getXhr(args.overlayUrl, overlayLoadHandler);
+            if(args.hasImageTextLink === true) {
+              Faust.xhr.getXhr(args.overlayUrl, overlayLoadHandler);
+            } else {
+              Faust.dom.removeAllChildren(domNodes.imageInfo);
+              showElement(domNodes.rotateContainer, true);
+            }
 
             // Set width and height of all elements beneath rotate container to width
             // and height of original image

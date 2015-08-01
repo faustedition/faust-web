@@ -2,7 +2,7 @@ var createDocumentViewer = (function(){
   "use strict";
 
   // Global variables to all viewer instances
-  var viewModes = ["facsimile", "facsimile_document", "document", "document_text", "text", "structure"];
+  var viewModes = ["facsimile", "facsimile_document", "document", "document_text", "text", "print", "structure"];
   var contentHtml = {
     missingImageMetadata: "{\"hasImages\": false}",
     loadErrorImageMetadata: "{\"hasImages\": false, \"noImageLoadable\": true}",
@@ -10,7 +10,8 @@ var createDocumentViewer = (function(){
     loadErrorFacsimielOverlay: "<div>Facsimile Overlay konnte nicht geladen werden</div>",
     missingDocTranscript: "<div>Kein dokumentarisches Transkript vorhanden</div>",
     loadErrorDocTranscript: "<div>Dokumentarisches Transkript konnte nicht geladen werden</div>",
-    missingTextTranscript: "<div>Textuelles Transkript fehlt</div>"
+    missingTextTranscript: "<div>Kein Textuelles Transkript vorhanden</div>",
+    missingTextAppTranscript: "<div>Kein Textuelles Transkript vorhanden</div>"
   };
 
   return function(faustDocumentsMetadata, parentDomNode){
@@ -72,6 +73,11 @@ var createDocumentViewer = (function(){
             domContainer.textTranscript.id = "text-transcript-content";
             domContainer.textTranscript.className = "text-transcript-content view-content";
 
+            // create print view element
+            domContainer.print = document.createElement("div");
+            domContainer.print.id = "print-content";
+            domContainer.print.className = "print-content view-content";
+
             // create structure element
             domContainer.structure = document.createElement("div");
             domContainer.structure.id = "structureContainer";
@@ -83,6 +89,7 @@ var createDocumentViewer = (function(){
             parentNode.appendChild(domContainer.docTranscript);
             parentNode.appendChild(domContainer.document_text);
             parentNode.appendChild(domContainer.textTranscript);
+            parentNode.appendChild(domContainer.print);
             parentNode.appendChild(domContainer.structure);
           };
         })();
@@ -107,9 +114,11 @@ var createDocumentViewer = (function(){
           // try to find sigil for current document and set document title to sigil
           geneticBarGraphData.forEach(function(currentDocument){
             if(currentDocument.source === ("faust://xml/document/" + relativeFaustUri)) {
+              doc.sigil = currentDocument.sigil;
               document.title = document.title + " - " + currentDocument.sigil;
             }
           });
+
 
           // create elements that will contain the available views
           createDomNodes(parentDomNode);
@@ -119,7 +128,7 @@ var createDocumentViewer = (function(){
           loadDocumentXmlMetadata();
 
           // load the textual representation of the whole witness (pre-generated dom structure als text file)
-          loadTextTranscript();
+//          loadTextTranscript();
 
           // if a valid page was given as parameter use ist. otherwise state.page is preset to the
           // first (1) page of the witness
@@ -359,27 +368,132 @@ var createDocumentViewer = (function(){
 
       /* loading of textual transcript. if it exists it will be appended to the appropriate view when loaded */
       var loadTextTranscript = (function(){
-        return function() {
-          if(doc.metadata.hasTextTranscript) {
-            createPrintDiv("print/", "pages.json", doc.faustUri, textTranscriptLoadedHandler);
+        return function(pageNum, callback) {
+          var printLinks;
+          var loadedDocs = {};
+
+          if(doc.printLinks !== undefined) {
+            // try to load documents if pageNum / filename mappings were already loaded
+            loadDocs(pageNum);
           } else {
-            textTranscriptLoadedHandler(null);
+            // otherwise get json file with page / filename mappings
+            Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
+              var pages;
+              // parse json file ...
+              pages = JSON.parse(pagesJson);
+              // ... and extract information for current witness
+              printLinks = pages[doc.faustUri];
+              // try to load document for current page
+              loadDocs(printLinks[pageNum]);
+            });
           }
+          
+          // load actual transcript html files
+          var loadDocs = function(filename) {
+            // if no html files are associated, return undefined
+            if(filename === undefined) {
+              callback(undefined);
+            } else {
+              // return files if already loaded
+              if(loadedDocs[filename] !== undefined) {
+                callback(loadedDocs[filename]);
+              } else {
+                // otherwise load files
+                Faust.xhr.getResponseText("print/" + filename, function(printFile) {
+                  loadedDocs[filename] = {};
+                  loadedDocs[filename].print = createPrintDiv(printFile);
+                  Faust.xhr.getResponseText("app/" + filename, function(appFile) {
+                    loadedDocs[filename].app = createPrintDiv(appFile);
+                    callback(loadedDocs[filename]);
+                  });
+                });
+              }
+            }
+          };
+
+          var createPrintDiv = function(printString) {
+            // create container element for the text and add print class to it
+            var printParentNode = document.createElement("div");
+            printParentNode.className = "print";
+            printParentNode.style.textAlign = "initial";
+
+            // create temporary div to parse received html
+            var tempDiv = document.createElement("div");
+            tempDiv.innerHTML = printString;
+            
+            // add contents of parsed html to container element and hide rightmost column
+            Array.prototype.slice.call(tempDiv.getElementsByClassName("print")[0].childNodes).forEach(function(child) {
+              if(child.className === "print-side-column") {
+                child.style.visibility = "hidden";
+              }
+              printParentNode.appendChild(child);
+            });
+
+            return printParentNode;
+          };
         };
       })();
 
-      var textTranscriptLoadedHandler = (function(){
-        return function(textTranscriptDiv) {
-          if(textTranscriptDiv) {
-            doc.textTranscript = textTranscriptDiv;
-            addPrintInteraction("", textTranscriptDiv);
-          } else {
-            doc.textTranscript.innerHTML = contentHtml.missingTextTranscript;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      /* function to get the scene title and the range of verse lines that the
+       * scene spans. used to determine breadcrumbs content.
+       *
+       * information from genetic_bar_graph.js and scene_line_mapping.js are used
+       * to determine the result.
+       *
+       * args: faustUri and page
+       * returns: undefined if no scene information was found, otherwise
+       *          the corresponding object from sceneLineMapping js/json data file
+       *          (scene title, range start and end, scene<>line mapping id)
+       */
+      var getSceneData = function(faustUri, pageNum) {
+        var result = undefined;
+
+        var barData;
+        var pageIntervals;
+        var minInterval = -1;
+
+        // get a specific witness from geneticBarGraphData
+        barData = geneticBarGraphData.reduce(function(prev, curr) {
+          if(curr.source === faustUri) {
+            prev.push(curr);
           }
-          domContainer.textTranscript.appendChild(doc.textTranscript);
-          events.triggerEvent("textTranscriptLoaded");
-        };
-      })();
+          
+          return prev;
+        }, []);
+
+        // if the witness in question was found...
+        if(barData.length === 1) {
+          // ..extract the intervals that correspond to the given page number
+          pageIntervals = barData[0].intervals.filter(function(interval) {
+            if(interval.page === pageNum) {
+              return true;
+            } else {
+              return false;
+            }
+          });
+
+          // find the lowest intervals range start
+          pageIntervals.forEach(function(interval) {
+            if(interval.start !== undefined && (minInterval === -1 || interval.start < minInterval)) {
+              minInterval = interval.start;
+            }
+          });
+
+          // try to get scene name and range if an interval was found
+          if(minInterval !== -1) {
+            sceneLineMapping.forEach(function(mapping) {
+              // return mapping if it contains a mapping whithin that the minInterval lays
+              if(minInterval >= mapping.rangeStart && minInterval <= mapping.rangeEnd) {
+                result = mapping;
+              }
+            });
+          }
+        }
+        
+        // return undefined or matched mapping object
+        return result;
+      };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -389,9 +503,34 @@ var createDocumentViewer = (function(){
       var loadPage = (function(){
         return function(pageNum) {
           var currentMetadata;
+          var sceneData;
 
           // replace window location with current parameters
           history.replaceState(history.state, null, window.location.pathname + "?faustUri=" + doc.faustUri + "&page=" + pageNum + "&view=" + state.view);
+
+          // set breadcrumbs
+
+          // get breadcrumbs element
+          var breadcrumbs = document.getElementById("breadcrumbs");
+
+          // remove all breadcrumbs (if exist)
+          Faust.dom.removeAllChildren(breadcrumbs);
+          breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: doc.sigil}]));
+
+          // get information about scene that contains current page
+          sceneData = getSceneData(doc.faustUri, pageNum);
+
+          // set second breadcrumb to barGraph if a matching scene was found
+          if(sceneData !== undefined) {
+            breadcrumbs.appendChild(document.createElement("br"));
+
+            if(sceneData.id.split(".")[0] === "1") {
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+            } else {
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+            }
+          }
+
 
           // create object for page if not already done yet
           if(!doc.pages[pageNum - 1]) {
@@ -399,7 +538,9 @@ var createDocumentViewer = (function(){
               facsimile: null,
               facsimile_document: null,
               docTranscript: null,
-              document_text: null
+              document_text: null,
+              textTranscript: null,
+              print: null
             };
           }
 
@@ -425,7 +566,8 @@ var createDocumentViewer = (function(){
             if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
               facsimile = imageOverlay.createImageOverlay(
               {
-                "hasFacsimile": currentMetadata.docTranscripts[0].hasImageTextLink,
+                "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
+                "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
                 "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
                 "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                 "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
@@ -459,6 +601,9 @@ var createDocumentViewer = (function(){
             var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
             var docTranscriptContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
 
+            Faust.dom.removeAllChildren(domContainer.facsimile_document);
+            domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
+
             facsimileDocTranscriptContainer.style.height = "100%";
             facsimileDocTranscriptContainer.style.padding = "0px";
             facsimileDocTranscriptContainer.style.overflow = "hidden";
@@ -466,13 +611,13 @@ var createDocumentViewer = (function(){
             facsimileContainer.style.display = "inline-block";
             facsimileContainer.style.width = "50%";
             facsimileContainer.style.height = "100%";
-            facsimileContainer.style.border = "1px solid black";
+            facsimileContainer.style.border = "0px solid black";
+            facsimileContainer.style.borderRightWidth = "1px";
             facsimileContainer.style.overflow = "auto";
 
             docTranscriptContainer.style.display = "inline-block";
             docTranscriptContainer.style.width = "50%";
             docTranscriptContainer.style.height = "100%";
-            docTranscriptContainer.style.border = "1px solid black";
             docTranscriptContainer.style.overflow = "auto";
             docTranscriptContainer.style.textAlign = "center";
 
@@ -485,7 +630,8 @@ var createDocumentViewer = (function(){
             if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
               facsimileParallel = imageOverlay.createImageOverlay(
               {
-                "hasFacsimile": currentMetadata.docTranscripts[0].hasImageTextLink,
+                "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
+                "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
                 "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
                 "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                 "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
@@ -496,12 +642,16 @@ var createDocumentViewer = (function(){
               facsimileParallel = imageOverlay.createImageOverlay({"hasFacsimile": false});
             }
 
+            currentPage.facsimile_document.facsimileParallel = facsimileParallel;
             facsimileContainer.appendChild(facsimileParallel);
-            Faust.dom.removeAllChildren(domContainer.facsimile_document);
-            domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
 
-            facsimileParallel.showOverlay(false);
-            facsimileParallel.addFacsimileEventListener("metadataLoaded", function(){facsimileParallel.fitScale();});
+            facsimileParallel.addFacsimileEventListener("metadataLoaded", function(){
+                currentPage.facsimile_document.metadataLoaded = true;
+                if(domContainer.facsimile_document.style.display === "block") {
+                  currentPage.facsimile_document.facsimileParallel.fitScale();
+                  currentPage.facsimile_document.pageFitted = true;
+                }
+            });
             facsimileParallel.addFacsimileEventListener("overlayLoaded", function(){facsimileParallel.showOverlay(state.showOverlay); transcriptTooltips(facsimileParallel);});
 
             events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
@@ -528,16 +678,17 @@ var createDocumentViewer = (function(){
             documentTextContainer.textContainer = textContainer;
 
             documentContainer.style.display = "inline-block";
+            documentContainer.style.paddingTop = "1em";
             documentContainer.style.width = "50%";
             documentContainer.style.height = "100%";
-            documentContainer.style.border = "1px solid black";
+            documentContainer.style.border = "0px solid black";
+            documentContainer.style.borderRightWidth = "1px";
             documentContainer.style.overflow = "auto";
             documentContainer.style.textAlign = "center";
 
             textContainer.style.display = "inline-block";
             textContainer.style.width = "50%";
             textContainer.style.height = "100%";
-            textContainer.style.border = "1px solid black";
             textContainer.style.overflow = "auto";
             textContainer.style.textAlign = "center";
 
@@ -551,25 +702,92 @@ var createDocumentViewer = (function(){
               documentContainer.appendChild(currentPage.docTranscript.cloneNode(true));
               transcriptTooltips(documentContainer);
             });
-            
-            if(doc.printDiv === undefined) {
-              createPrintDiv("print/", "pages.json", doc.faustUri, function(printDiv) {
-                // print view / div can be very resource consuming, so cache and reuse it
-                // once loaded
-                doc.printDiv = printDiv;
-                addPrintInteraction("", doc.printDiv);
-                textContainer.appendChild(doc.printDiv);
-              });
-            } else {
-              doc.printDiv.parentNode.removeChild(doc.printDiv);
-              textContainer.appendChild(doc.printDiv);
-            }
+
+            loadTextTranscript(pageNum, function(text) {
+              if(text !== undefined) {
+                var appText = text.app.cloneNode(true);
+                currentPage.document_text.textContainer.appendChild(appText);
+                addPrintInteraction("", appText);
+                if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
+                  domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
+                }
+              } else {
+                currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
+              }
+            });
 
           } else {
             Faust.dom.removeAllChildren(domContainer.document_text);
-            doc.printDiv.parentNode.removeChild(doc.printDiv);
-            currentPage.document_text.textContainer.appendChild(doc.printDiv);
             domContainer.document_text.appendChild(currentPage.document_text);
+            if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
+              domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
+            }
+          }
+
+
+          if(currentPage.textTranscript === null) {
+            var textTranscriptContainer = Faust.dom.createElement({name: "div"});
+
+            textTranscriptContainer.style.width = "100%";
+            textTranscriptContainer.style.height = "100%";
+            textTranscriptContainer.style.overflow = "auto";
+            textTranscriptContainer.style.textAlign = "center";
+
+            currentPage.textTranscript = textTranscriptContainer;
+            Faust.dom.removeAllChildren(domContainer.textTranscript);
+            domContainer.textTranscript.appendChild(textTranscriptContainer);
+
+            loadTextTranscript(pageNum, function(text) {
+              if(text !== undefined) {
+                var appText = text.app.cloneNode(true);
+                currentPage.textTranscript.appendChild(appText);
+                addPrintInteraction("", appText);
+                if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
+                  domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
+                }
+              } else {
+                currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
+              }
+            });
+          } else {
+            Faust.dom.removeAllChildren(domContainer.textTranscript);
+            domContainer.textTranscript.appendChild(currentPage.textTranscript);
+            if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
+              domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
+            }
+          }
+
+
+          if(currentPage.print === null) {
+            var printContainer = Faust.dom.createElement({name: "div"});
+
+            printContainer.style.width = "100%";
+            printContainer.style.height = "100%";
+            printContainer.style.overflow = "auto";
+            printContainer.style.textAlign = "center";
+
+            currentPage.print = printContainer;
+            Faust.dom.removeAllChildren(domContainer.print);
+            domContainer.print.appendChild(printContainer);
+
+            loadTextTranscript(pageNum, function(text) {
+              if(text !== undefined) {
+                var printText = text.print.cloneNode(true);
+                currentPage.print.appendChild(printText);
+                addPrintInteraction("", printText);
+                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
+                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
+                }
+              } else {
+                currentPage.print.innerHTML = contentHtml.missingTextTranscript;
+              }
+            });
+          } else {
+            Faust.dom.removeAllChildren(domContainer.print);
+            domContainer.print.appendChild(currentPage.print);
+            if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
+              domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
+            }
           }
 
           // finally set correct page on structure view
@@ -844,7 +1062,7 @@ var createDocumentViewer = (function(){
           });
 
           // set all views to display none
-          ["facsimile", "facsimile_document", "docTranscript", "document_text", "textTranscript", "structure"].forEach(function(view) {
+          ["facsimile", "facsimile_document", "docTranscript", "document_text", "textTranscript", "print", "structure"].forEach(function(view) {
             domContainer[view].style.display = "none";
           });
 
@@ -859,21 +1077,37 @@ var createDocumentViewer = (function(){
             }
           } else if (state.view === "facsimile_document") {
             domContainer.facsimile_document.style.display = "block";
+            if(doc.pages[state.page -1].facsimile_document.metadataLoaded === true && doc.pages[state.page -1].facsimile_document.pageFitted !== true) {
+              doc.pages[state.page - 1].facsimile_document.facsimileParallel.fitScale();
+            }
           } else if (state.view === "document") {
             domContainer.docTranscript.style.display = "block";
           } else if (state.view === "document_text") {
             domContainer.document_text.style.display = "block";
+            if(domContainer.document_text.querySelector("#dt" + state.page) !== null) {
+              domContainer.document_text.querySelector("#dt" + state.page).scrollIntoView();
+            }
           } else if (state.view === "text") {
             domContainer.textTranscript.style.display = "block";
+            if(domContainer.textTranscript.querySelector("#dt" + state.page) !== null) {
+              domContainer.textTranscript.querySelector("#dt" + state.page).scrollIntoView();
+            }
+          } else if (state.view === "print") {
+            domContainer.print.style.display = "block";
+            if(domContainer.print.querySelector("#dt" + state.page) !== null) {
+              domContainer.print.querySelector("#dt" + state.page).scrollIntoView();
+            }
           } else if (state.view === "structure") {
             domContainer.structure.style.display = "table";
           }
 
           // set active button
           Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .navigation-button")).forEach(function(button) {
-            Faust.dom.removeClassFromElement(button, "navigation-button-active");
-            if(button.id === "show-" + state.view + "-button") {
-              Faust.dom.addClassToElement(button, "navigation-button-active");
+            if(button.id !== "toggle-overlay-button") {
+              Faust.dom.removeClassFromElement(button, "button-active");
+              if(button.id === "show-" + state.view + "-button") {
+                Faust.dom.addClassToElement(button, "button-active");
+              }
             }
           });
 
@@ -888,13 +1122,21 @@ var createDocumentViewer = (function(){
       // facsimile zooming functions
       var zoomIn = (function(){
         return function() {
-          doc.pages[state.page - 1].facsimile.zoom("in");
+          if(state.view === "facsimile") {
+            doc.pages[state.page - 1].facsimile.zoom("in");
+          } else if (state.view === "facsimile_document") {
+            doc.pages[state.page - 1].facsimile_document.facsimileParallel.zoom("in");
+          }
         };
       })();
 
       var zoomOut = (function(){
         return function() {
-          doc.pages[state.page - 1].facsimile.zoom("out");
+          if(state.view === "facsimile") {
+            doc.pages[state.page - 1].facsimile.zoom("out");
+          } else if (state.view === "facsimile_document") {
+            doc.pages[state.page - 1].facsimile_document.facsimileParallel.zoom("out");
+          }
         };
       })();
 
@@ -902,12 +1144,14 @@ var createDocumentViewer = (function(){
       var rotateLeft = (function(){
         return function() {
           doc.pages[state.page - 1].facsimile.rotate("left");
+          doc.pages[state.page - 1].facsimile_document.facsimileParallel.rotate("left");
         };
       })();
 
       var rotateRight = (function(){
         return function() {
           doc.pages[state.page - 1].facsimile.rotate("right");
+          doc.pages[state.page - 1].facsimile_document.facsimileParallel.rotate("right");
         };
       })();
 
@@ -916,11 +1160,14 @@ var createDocumentViewer = (function(){
         return function() {
           if(state.showOverlay === true) {
             state.showOverlay = false;
+            Faust.dom.removeClassFromElement(document.getElementById("toggle-overlay-button"), "button-active");
           } else {
             state.showOverlay = true;
+            Faust.dom.addClassToElement(document.getElementById("toggle-overlay-button"), "button-active");
           }
           if(doc.pages[state.page - 1]) {
             doc.pages[state.page - 1].facsimile.showOverlay(state.showOverlay);
+            doc.pages[state.page - 1].facsimile_document.facsimileParallel.showOverlay(state.showOverlay);
           }
         };
       })();

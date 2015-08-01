@@ -79,6 +79,9 @@
             repositoryName = parameters["archiveId"];
           }
 
+          // set breadcrumbs
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv"}]));
+
           // select only non-print witnesses from selected repository and remove test
           var repositoryNonPrintEntries = documentMetadata.metadata.filter(function(metadata) {
             if( (metadata.sigils.repository === repositoryName) && !(metadata.type === "print") && !(metadata.text==="test.xml") ) {
@@ -174,7 +177,11 @@
 
             tableColumn1.appendChild(document.createTextNode(index + 1));
             tableColumn2.appendChild(document.createTextNode(data.repositorySigil));
-            tableColumn3.appendChild(document.createTextNode(data.waSigil));
+            if(data.waSigil === "none" || data.waSigil === "-" || data.waSigil === "n.s.") {
+              tableColumn3.appendChild(document.createTextNode(""));
+            } else {
+              tableColumn3.appendChild(document.createTextNode(data.waSigil));
+            }
 
             tableRow.appendChild(tableColumn1);
             tableRow.appendChild(tableColumn2);

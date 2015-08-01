@@ -1,6 +1,14 @@
       <?php include "includes/header.php"; ?>
         <style>
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 
@@ -89,6 +97,24 @@
           }
 
 
+          .print-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: auto;
+          }
+
+          .print-table-header {
+            font-weight: bold;
+          }
+
+          .print-table-header th {
+            font-weight: bold;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px 1px 3px 1px;
+          }
+
+
 
 
 
@@ -108,9 +134,6 @@
   padding: 0.5em;
 }
 
-.navigation-button {
-  background-color: rgba(255, 200, 175, 0.5);
-}
 
 
 
@@ -122,16 +145,21 @@
           </div>
           <div id="flex-container" class="flex-container">
           </div>
+          <div id="print-container" class="print-container">
+          </div>
         </div>
         <div id="navigation-bar-container" class="navigation-bar-container">
           <div id="navigation-bar-content" class="navigation-bar-content">
-            <div id="show-archives-button" class="show-archives-button navigation-button" onclick="document.getElementById('flex-container').style.display = 'flex'; document.getElementById('concordance-table-container').style.display = 'none';">Aufbewahrungsorte</div>
-            <div id="show-manuscript-concordance-button" class="show-manuscript-concordance-button navigation-button" onclick="document.getElementById('flex-container').style.display = 'none'; document.getElementById('concordance-table-container').style.display = 'block'; sortClickEventListener.setData(concordanceManuscriptTableData);">Handschriftenkonkordanz</div>
-            <div id="show-print-concordance-button" class="show-print-concordance-button navigation-button" onclick="document.getElementById('flex-container').style.display = 'none'; document.getElementById('concordance-table-container').style.display = 'block'; sortClickEventListener.setData(concordancePrintTableData);">Konkordanz der Drucke</div>
+            <div id="show-archives-button" class="show-archives-button navigation-button" onclick="setActiveView('archives');">Aufbewahrungsorte</div>
+            <div id="show-manuscript-concordance-button" class="show-manuscript-concordance-button navigation-button button-active" onclick="setActiveView('manuscript-concordance');">Handschriftenkonkordanz</div>
+            <div id="show-print-concordance-button" class="show-print-concordance-button navigation-button" onclick="setActiveView('print-concordance');">Konkordanz der Drucke</div>
           </div>
         </div>
 
         <script type="text/javascript">
+          // set breadcrumbs
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv"}]));
+
           // remove test
           documentMetadata.metadata = documentMetadata.metadata.filter(function(metadata) {
             if(!(metadata.text === "test.xml")) {
@@ -236,6 +264,13 @@
 
               tableDiv = createConcordanceTable(concordanceColumns, sortedTableData);
               tableDiv.firstElementChild.childNodes.item(currentColumn).className = "concordance-table-header-sorted-column";
+
+              if(currentSort === 0) {
+                tableDiv.firstElementChild.childNodes.item(currentColumn).firstElementChild.innerHTML = "\u00a0\uf0de";
+              } else if (currentSort === 1) {
+                tableDiv.firstElementChild.childNodes.item(currentColumn).firstElementChild.innerHTML = "\u00a0\uf0dd";
+              }
+
               while(parentElement.firstChild) {
                 parentElement.removeChild(parentElement.firstChild);
               }
@@ -245,11 +280,14 @@
               // set scrollTop to 0 so that the table begin is shown.
               parentElement.scrollTop = 0;
 
-              // a fixed header can only be created if the underlaying table already exists.
-              // otherwise the actual column widths is not available
+              // create header for table
+              createFixedHeader(tableDiv, parentElement);
+
+              // when page is called for the first time, a header must be created when the table was rendered and has a width
               window.addEventListener("load", function(){
                 createFixedHeader(tableDiv, parentElement);
               });
+              // when the window is resized, resize the header
               window.addEventListener("resize", function(){
                 createFixedHeader(tableDiv, parentElement);
               });
@@ -267,6 +305,7 @@
           // create function for table generation
           var createConcordanceTable = (function() {
             return function(concordanceColumns, concordanceData) {
+              var span;
               var i, j;
               
               var currentDocument;
@@ -283,6 +322,12 @@
                 var tableData = document.createElement("th");
                 tableData.addEventListener("click", sortClickEventListener);
                 tableData.appendChild(document.createTextNode(concordanceColumns[i].column));
+
+                var span = document.createElement("span");
+                span.style.fontFamily = "FontAwesome";
+                span.appendChild(document.createTextNode("\u00a0\uf0dc"));
+
+                tableData.appendChild(span);
                 tableRow.appendChild(tableData);
               }
               concordanceTable.appendChild(tableRow);
@@ -346,11 +391,91 @@
             });
           };
 
-          // create table
-          sortClickEventListener.setData(concordanceManuscriptTableData);
 
         </script>
 
+        <script>
+          // create table with prints. table data is fetched from the generated page inside the print folder
+          var createPrintTable = function(container) {
+            // create table and table header
+            var table = Faust.dom.createElement({name: "table", class: "print-table"});
+            var tableHeader = Faust.dom.createElement({name: "tr", class: "print-table-header", parent: table});
+            Faust.dom.createElement({name: "th", parent: tableHeader, children: [document.createTextNode("Sigle")]});
+            Faust.dom.createElement({name: "th", parent: tableHeader, children: [document.createTextNode("Siglenbezeichnung")]});
+            Faust.dom.createElement({name: "th", parent: tableHeader, children: [document.createTextNode("Kurzbeschreibung")]});
+
+            // fetch the generated html file containing the data for this table
+            Faust.xhr.getResponseText("print/prints.html", function(printFile) {
+              // create element to parse received html
+              var printDom = document.createElement("div");
+              printDom.innerHTML = printFile;
+
+              // select only the information we need and sort the documents within
+              var printDocuments = Array.prototype.slice.call(printDom.querySelectorAll("dt"));
+              printDocuments = printDocuments.sort(function(doc1, doc2) {
+                if(doc1.firstElementChild.firstChild.textContent === doc2.firstElementChild.firstChild.textContent) {
+                  return 0;
+                } else if(doc1.firstElementChild.firstChild.textContent < doc2.firstElementChild.firstChild.textContent) {
+                  return -1;
+                } else {
+                  return 1;
+                }
+              });
+
+              // generate a table row for each document that was found
+              printDocuments.forEach(function(dt) {
+                // create row
+                var tableRow = Faust.dom.createElement({name: "tr", parent: table});
+                // add link / click event listener pointing to the document
+                tableRow.addEventListener("click", function(){window.location = "print" + dt.firstElementChild.href.substr(dt.firstElementChild.href.lastIndexOf("/"));});
+
+                // add sigil
+                var tableData = Faust.dom.createElement({name: "td", parent: tableRow});
+                tableData.appendChild(document.createTextNode(dt.firstElementChild.firstChild.textContent));
+
+                // add sigil type
+                tableData = Faust.dom.createElement({name: "td", parent: tableRow});
+                tableData.appendChild(document.createTextNode(dt.title));
+
+                // add document description
+                tableData = Faust.dom.createElement({name: "td", parent: tableRow});
+                tableData.appendChild(document.createTextNode(dt.nextElementSibling.textContent));
+              });
+            });
+            container.appendChild(table);
+          };
+
+          // directly append the table to its container
+          createPrintTable(document.getElementById("print-container"));
+        </script>
+
+        <script type="text/javascript">
+          var setActiveView = function(newView) {
+            Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .navigation-button")).forEach(function(button) {
+              Faust.dom.removeClassFromElement(button, "button-active");
+              if(button.id === "show-" + newView + "-button") {
+                Faust.dom.addClassToElement(button, "button-active");
+              }
+            });
+
+            if(newView === "archives") {
+              document.getElementById('flex-container').style.display = 'flex';
+              document.getElementById('concordance-table-container').style.display = 'none';
+              document.getElementById('print-container').style.display = 'none';
+            } else if (newView === "manuscript-concordance") {
+              document.getElementById('flex-container').style.display = 'none';
+              document.getElementById('concordance-table-container').style.display = 'block';
+              document.getElementById('print-container').style.display = 'none';
+              sortClickEventListener.setData(concordanceManuscriptTableData);
+            } else if (newView === "print-concordance") {
+              document.getElementById('flex-container').style.display = 'none';
+              document.getElementById('concordance-table-container').style.display = 'none';
+              document.getElementById('print-container').style.display = 'block';
+            }
+          }
+
+          setActiveView("manuscript-concordance");
+        </script>
 
 
 
