@@ -9,10 +9,10 @@
   },
   "input": {
     "doc": {
-      "metadata": "/var/www/html/new2/xml/document/",
-      "transcript": "/var/www/html/new2/xml/transcript/",
-      "imageTextLink": "/var/www/html/new2/xml/image-text-links/",
-      "facsimile": "/var/www/html/img/"
+      "metadata": "/var/www/html/xml/document/",
+      "transcript": "/var/www/html/xml/transcript/",
+      "imageTextLink": "/var/www/html/xml/image-text-links/",
+      "facsimile": "/var/www/html/transcript/facsimile/"
     }
   },
   "output": {
@@ -22,7 +22,7 @@
     },
     "svg": {
       "diplomatic": "./out2/svg/diplomatic",
-      "facsimileOverlay": "./out2/svg/facsimileOverlay"
+      "facsimileOverlay": "./out2/svg/overlay"
     }
   },
   "errorLog": "error.log"

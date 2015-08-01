@@ -376,6 +376,8 @@ if(window.Faust === undefined) {
 
 				'rdg' : { vc: function(){return new FaustTranscript.InlineViewComponent();}},
 
+				'reg' : { vc: function(){return new FaustTranscript.InlineViewComponent();}},
+
 				'rewrite' : {
 
 					text: function (annotation, textVC, layoutState) {
