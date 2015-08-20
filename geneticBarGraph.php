@@ -12,8 +12,6 @@
 
           .genetic-bar-diagram-svg text {
             font-size: 10;
-            font-family: sans-serif;
-            font-weight: bold;
             fill: black;
           }
 
@@ -25,7 +23,7 @@
 
         <div id="main-content" class="main-content">
           <div id="outer-genetic-bar-diagram-container" style="width: 100%; height: 100%;">
-            <div id="genetic-bar-diagram-container" style="width: 100%; diaplay: inline-block;">
+            <div id="genetic-bar-diagram-container" style="width: 100%; display: inline-block;">
             </div>
           </div>
         </div>
