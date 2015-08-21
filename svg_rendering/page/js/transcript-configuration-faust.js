@@ -48,7 +48,9 @@ if(window.Faust === undefined) {
 	// functions in Y.Faust.TranscriptConfiguration.
 
   Faust.TranscriptConfiguration = {
-			overlay : "overlay",
+			// should overlapping stuff be rendered on top of each other?
+			// overlay : "overlay",
+			overlay : "none",
 			stripWhitespace : ['overw'],
 			initialize : function (layoutState) {
 				layoutState.idMap = {};
