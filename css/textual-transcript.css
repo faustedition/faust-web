@@ -147,15 +147,16 @@ dt {
 .varcount-15 { border-color:  #111; }
 .varcount-16 { border-color:  #000; }
 
-.variants-1 { background-color: rgb(255,255,255); }
-.variants-2 { background-color: rgb(245,245,245); }
-.variants-3 { background-color: rgb(235,235,235); }
-.variants-4 { background-color: rgb(225,225,225); }
-.variants-5 { background-color: rgb(215,215,215); }
-.variants-6 { background-color: rgb(205,205,205); }
-.variants-7 { background-color: rgb(195,195,195); }
-.variants-8 { background-color: rgb(185,185,185); }
-.variants-9 { background-color: rgb(175,175,175); }
+.variants-0 { background-color: rgb(255,255,255); }
+.variants-1 { background-color: rgb(245,245,245); }
+.variants-2 { background-color: rgb(235,235,235); }
+.variants-3 { background-color: rgb(225,225,225); }
+.variants-4 { background-color: rgb(215,215,215); }
+.variants-5 { background-color: rgb(205,205,205); }
+.variants-6 { background-color: rgb(195,195,195); }
+.variants-7 { background-color: rgb(185,185,185); }
+.variants-8 { background-color: rgb(175,175,175); }
+.variants-9 { background-color: rgb(165,165,165); }
 
 
 

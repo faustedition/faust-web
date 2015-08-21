@@ -67,6 +67,7 @@ var addPrintInteraction = function(rootDir, node) {
 
   // collect all verse lines
   var lines;
+  var varstr;
   // if a node was given, collect verse lines on node children
   if(node !== undefined) {
     lines = node.getElementsByClassName("hasvars");
@@ -94,7 +95,15 @@ var addPrintInteraction = function(rootDir, node) {
     // data-varcount attribute can be an empty string and thus variantCount variable can
     // be "NaN". Only create tooltip, if variantCount is a number
     if (!isNaN(variantCount)) {
-      Faust.tooltip.add(currentLine, document.createTextNode((variantCount > 1? variantCount + " Varianten": "Eine Variante") + " in " + witnessCount + " Textzeugen"));
+      switch (variantCount) {
+        case 0:
+          varstr = "Keine Varianz"; break;
+        case 1:
+          varstr = "Eine Variante"; break;
+        default:
+          varstr = variantCount + " Varianten";
+      }
+      Faust.tooltip.add(currentLine, document.createTextNode(varstr + " in " + witnessCount + " Textzeugen"));
     }
   }
 };
