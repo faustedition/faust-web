@@ -3,12 +3,12 @@
           .genetic-bar-diagram-svg {
           } 
 
-          .genetic-bar-diagram-svg * {
+          /*.genetic-bar-diagram-svg * {
             -webkit-user-select: none;
                -moz-user-select: none;
                 -ms-user-select: none;
                     user-select: none;
-          } 
+          }*/
 
           .genetic-bar-diagram-svg text {
             font-size: 10;

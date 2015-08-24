@@ -33,6 +33,7 @@
         overflow: hidden;
       }
 
+      /*
       .facsimile-content * {
         -webkit-user-select: none;
            -moz-user-select: none;
@@ -46,17 +47,20 @@
             -ms-user-select: none;
                 user-select: none;
       }
+      */
 
       .doc-transcript-content {
         text-align: center;
       }
 
+       /*
       .doc-transcript-content * {
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none;
       }
+      */
 
       .text-transcript-content {
       }
