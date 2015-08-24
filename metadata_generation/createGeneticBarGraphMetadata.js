@@ -232,6 +232,7 @@ var createGeneticBarGraphMetadata = function(documentMetadata, inputDirs, errorL
           var nodePageNumber = 1;
           var transcriptPageNumber;
           var pbPageFound = false;
+          var debug_msg = "";
 
           // only process element nodes
           if(textChild.nodeType === 1) {
@@ -254,7 +255,7 @@ var createGeneticBarGraphMetadata = function(documentMetadata, inputDirs, errorL
                     // to complicate things, sometimes leading zeros are omitted, ranges were defined or even strings were used.
 
                     // if page number contains a range (e.g. 2-4) only take the first page
-                    nodePageNumber = nodePageNumber.split("-")[0];
+                    // nodePageNumber = nodePageNumber.split("-")[0];
 
                     // now remove leading zeros (if exist)
                     nodePageNumber = nodePageNumber.replace(/^0+/, "");
@@ -262,14 +263,17 @@ var createGeneticBarGraphMetadata = function(documentMetadata, inputDirs, errorL
                     // iterate through pages of current transcript's metadata and try to find a page uri that matches our pb@n value
                     docMetadata.page.forEach(function(currentPage, pageIndex) {
                       // see if there is any uri defined for the current page
+                      debug_msg += "\n  pageIndex " + pageIndex + ", checking " + nodePageNumber + " against: ";
                       if(currentPage.doc[0] !== undefined && currentPage.doc[0].uri !== undefined) {
                         // get name of transcript file from current page
                         transcriptPageNumber = currentPage.doc[0].uri;
+                        debug_msg += transcriptPageNumber;
                         // remove .xml suffix from name
                         transcriptPageNumber = transcriptPageNumber.substring(0, transcriptPageNumber.lastIndexOf(".xml"));
                         // remove leading zeros
                         transcriptPageNumber = transcriptPageNumber.replace(/^0+/, "");
 
+                        debug_msg += " -> " + transcriptPageNumber + " ";
                         // see if current transcript filename matches the pb's cleaned page value
                         if(transcriptPageNumber === nodePageNumber) {
                           currentPageNumber = pageIndex + 1;
@@ -280,7 +284,7 @@ var createGeneticBarGraphMetadata = function(documentMetadata, inputDirs, errorL
                     // if no matching uri to our current n value was found write an error to the logfile. Also default to page number 1
                     // so that verseLines aren't skipped. Transcripts should be corrected.
                     if(pbPageFound === false) {
-                      fs.appendFileSync(errorLog, "ERROR: couldn't find page for pb " + textChild.getAttribute("n") + " referenced in transcript " + transcriptFilename + "\n");
+                      fs.appendFileSync(errorLog, "ERROR: couldn't find page for pb " + textChild.getAttribute("n") + " referenced in transcript " + transcriptFilename + debug_msg + "\n");
                       currentPageNumber = 1;
                     }
                   }
