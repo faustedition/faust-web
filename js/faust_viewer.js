@@ -115,7 +115,7 @@ var createDocumentViewer = (function(){
           geneticBarGraphData.forEach(function(currentDocument){
             if(currentDocument.source === ("faust://xml/document/" + relativeFaustUri)) {
               doc.sigil = currentDocument.sigil;
-              document.title = document.title + " - " + currentDocument.sigil;
+              document.title = document.title + " – " + currentDocument.sigil;
             }
           });
 
