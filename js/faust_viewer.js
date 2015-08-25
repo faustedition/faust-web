@@ -14,15 +14,15 @@ var createDocumentViewer = (function(){
     missingTextAppTranscript: "<div>Kein Textuelles Transkript vorhanden</div>"
   };
 
-  return function(faustDocumentsMetadata, parentDomNode){
-    return (function(){
+  return function createDocumentViewer(faustDocumentsMetadata, parentDomNode){
       // viewer instance variables
       var state = {
         page: 1,
         view: "structure",
         scale: undefined,
         imageBackgroundZoomLevel: 3,
-        showOverlay: true
+        showOverlay: true,
+        section: undefined         // opt. file name for textual / apparatus view
       };
 
       // allow other objects to listen to events
@@ -94,7 +94,7 @@ var createDocumentViewer = (function(){
           };
         })();
 
-        return function() {
+        return function init() {
           var relativeFaustUri; 
 
           var getParameters = Faust.url.getParameters();
@@ -134,6 +134,10 @@ var createDocumentViewer = (function(){
           // first (1) page of the witness
           if(getParameters.page && !isNaN( parseInt(getParameters.page) ) ) {
             state.page = parseInt(getParameters.page);
+          }
+
+          if (getParameters.section) {
+            state.section = getParameters.section;
           }
 
           // if a view was given in the get parameters and the view is available then set active view to that 
@@ -374,17 +378,27 @@ var createDocumentViewer = (function(){
 
           if(doc.printLinks !== undefined) {
             // try to load documents if pageNum / filename mappings were already loaded
-            loadDocs(pageNum);
+            loadDocs(pageNum); // XXX? There's no handling for this!?
           } else {
             // otherwise get json file with page / filename mappings
             Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
-              var pages;
+              var pages, filename;
               // parse json file ...
               pages = JSON.parse(pagesJson);
               // ... and extract information for current witness
               printLinks = pages[doc.faustUri];
+
+              filename = printLinks[pageNum];
+              if (state.section) {
+                if (state.section === filename) {
+                  state.section = undefined; // it's the default
+                } else {
+                  filename = state.section;
+                }
+              }
+              
               // try to load document for current page
-              loadDocs(printLinks[pageNum]);
+              loadDocs(filename);
             });
           }
           
@@ -411,6 +425,7 @@ var createDocumentViewer = (function(){
             }
           };
 
+          // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
           var createPrintDiv = function(printString) {
             // create container element for the text and add print class to it
             var printParentNode = document.createElement("div");
@@ -423,9 +438,9 @@ var createDocumentViewer = (function(){
             
             // add contents of parsed html to container element and hide rightmost column
             Array.prototype.slice.call(tempDiv.getElementsByClassName("print")[0].childNodes).forEach(function(child) {
-              if(child.className === "print-side-column") {
+              /*if(child.className === "print-side-column") {
                 child.style.visibility = "hidden";
-              }
+              }*/
               printParentNode.appendChild(child);
             });
 
@@ -726,6 +741,7 @@ var createDocumentViewer = (function(){
 
 
           if(currentPage.textTranscript === null) {
+            // XXX do we have a _different_ tTC for each page?
             var textTranscriptContainer = Faust.dom.createElement({name: "div"});
 
             textTranscriptContainer.style.width = "100%";
@@ -1197,7 +1213,6 @@ var createDocumentViewer = (function(){
         };
 
       return viewer;
-      })();
     })();
   };
 })();
