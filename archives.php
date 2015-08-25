@@ -472,9 +472,13 @@
               document.getElementById('concordance-table-container').style.display = 'none';
               document.getElementById('print-container').style.display = 'block';
             }
+
+            history.replaceState(history.state, undefined, window.location.pathname + "?view=" + newView);
+
           }
 
-          setActiveView("manuscript-concordance");
+          var params = Faust.url.getParameters();
+          setActiveView(params.view? params.view : "manuscript-concordance");
         </script>
 
 
