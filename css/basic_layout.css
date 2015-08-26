@@ -21,35 +21,34 @@ html, body {
 
 /* style for header area */
 header {
-  overflow: hidden;
   position: fixed;
-  top: 0em;
-  left: 0em;
-  padding: 0.75em 2em ;
+  padding: 0.5em 1em;
   width: 100%;
-  height: 3em;
+  height:3.4em;
+  background:white;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.header-content {
-  height: 1.5em;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: middle;
-  cursor: default;
+header .logo a {
+  display:block;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
 }
 
-.breadcrumbs {
-  font-size: 12px;
-  line-height: 1.25em;
+header .logo img {
+  display:block;
+  width:270px;
+  height:22px;
+}
+
+header .breadcrumbs {
+  line-height: 1em;
 }
 
 /* style for main area */
 main {
   position: absolute;
-  top: 3em;
+  top: 3.4em;
   bottom: 1.5em;
   left: 0em;
   right: 0em;
@@ -86,10 +85,6 @@ main {
 }
 
 /* style for navigational area */
-nav {
-  height: 100%;
-  white-space: nowrap;
-}
 
 .faustedition-logo {
   height: 100%;
@@ -97,33 +92,6 @@ nav {
 
 .faustedition-logo-svg {
   height: 100%;
-}
-
-/* styling of individual navigation items */
-.header-navigation > * {
-  height: 100%;
-  vertical-align: middle;
-  margin: 0em 1em;
-}
-
-nav a {
-  color: #777;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-bottom: 0.2em solid rgba(255,255,255,0);
-}
-
-nav a:hover {
-  color: rgb(255,194,14);
-  border-bottom: 0.2em solid rgb(255,194,14);
-}
-
-nav input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px #ddd;
-  padding: 0em .33em;
 }
 
 /* style for footer area */

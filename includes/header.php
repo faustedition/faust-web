@@ -23,19 +23,24 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <a class="faustedition-logo" title="Faustedition" href="index.php">
-          <img class="faustedition-logo-svg" src="img/faustlogo.svg" alt="Faustedition logo">
-        </a>
-        <div id="breadcrumbs" class="breadcrumbs">
+      <div class="pure-g-r">
+        <div class="logo pure-u-1-3">
+          <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
         </div>
-        <nav class="header-navigation pure-menu">
-          <a href="archives.php">Archiv</a>
-          <a href="chessboard_overview.php">Genese</a>
-          <a href="print/text.html">Text</a>
-<!--          <input autocomplete="off" id="quick-search" placeholder="Search" type="text"/>-->
+        <div class="breadcrumbs pure-u-1-3 pure-center pure-fade-50">
+          <small id="breadcrumbs"></small>
+        </div>
+        <div class="pure-u-1-3">
+        <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right">
+          <ul>
+          <li><a href="archives.php">Archiv</a></li>
+          <li><a href="chessboard_overview.php">Genese</a></li>
+          <li><a href="print/text.html">Text</a></li>
+          <!-- <li><form class="pure-form"><input autocomplete="off" id="quick-search" placeholder="Suche" type="text"/></form></li> -->
+          </ul>
         </nav>
-      </div>
+        </div>
+        </div>
     </header>
     <main>
       <div class="main-content-container">
