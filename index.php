@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
       <div style="text-align: center; padding-top: 5em;">
         <div style="display: inline-block; text-align: left;">
           <div style="display: inline-block; width: 259px; height: 267px;">
@@ -23,5 +24,6 @@
             <a style="display: table-cell;" href="http://www.dfg.de"><img alt="" src="img/DFG-Logo.png" height="57" width="284"></a>
           </div>
         </div>
+      </div>
       </div>
       <?php include "includes/footer.php"; ?>

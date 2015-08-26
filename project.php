@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <div id="main-content" class="main-content">
           <div style="width: 50em; margin: auto;">
             <h2 style="text-align: center;">Die Ausgabe</h2>
@@ -131,4 +132,5 @@
 
           </div>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

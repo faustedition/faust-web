@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <style>
 
 @font-face {
@@ -559,4 +560,5 @@
           } 
         </script>
 
+      </div>
       <?php include "includes/footer.php"; ?>

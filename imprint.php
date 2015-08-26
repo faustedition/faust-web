@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <div style="width: 995px; margin: auto; padding-top: 2.5em;" align="left">
           <h2>Teledienst-Anbieter</h2>
           <p>
@@ -28,4 +29,5 @@
             Verweise auf fremde Inhalte (Hyperlinks) stellen ausdrücklich kein Zueigenmachen der fremden Inhalte im Sinne der Rechtsordnung dar. Die inhaltliche Verantwortung für fremde HTML-Dokumente, auf die von dieser Website aus verwiesen wird, liegt allein bei den Urhebern der jeweiligen Dokumente.
           </p>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

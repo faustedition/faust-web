@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <div>
           <h2>Lesetext</h2>
           <p align="left">
@@ -77,4 +78,5 @@
               <br>
             </p>
           </div>
+      </div>
       <?php include "includes/footer.php"; ?>

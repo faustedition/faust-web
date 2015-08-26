@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
       <center style="width:50%; margin:2em auto;">
         <?php
           $status = filter_input (INPUT_GET, 'status', FILTER_SANITIZE_NUMBER_INT);
@@ -41,4 +42,5 @@
         </div>
         <p><a href="/">Startseite</a></p>
       </center>
+      </div>
       <?php include "includes/footer.php"; ?>

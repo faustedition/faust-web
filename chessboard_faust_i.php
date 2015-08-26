@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <script>
           window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
           document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust I"}]));
@@ -24,4 +25,5 @@
 
           <p><i>Die Auswahl einer Spalte führt zu einem <a href="geneticBarGraphInfo.php"><u>Balkendiagramm</u></a>, in dem alle relevanten Handschriften und Drucke angezeigt werden.</i></p>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

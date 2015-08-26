@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <script>
           window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
         </script>
@@ -20,4 +21,5 @@
 
             <p><i>Beim Ansteuern eines Balkens werden das zugehörige Versintervall und die Überlieferungsform (Handschrift, Druck, Paralipomenon, Schema) angezeigt. Die Auswahl eines Balkens führt zur entsprechenden Stelle im Textzeugen.</i></p>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

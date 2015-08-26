@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <style>
           .genetic-bar-diagram-svg {
           } 
@@ -400,4 +401,5 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
           Faust.tooltip.addToTooltipElements();
 
         </script>
+      </div>
       <?php include "includes/footer.php"; ?>

@@ -1,4 +1,3 @@
-      </div>
     </main>
     <footer>
       <div class="pure-g-r">

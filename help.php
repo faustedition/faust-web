@@ -1,7 +1,9 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <div align="left">
           [Kurzanleitung für Nutzung der Edition mit Screenshots]
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>
 <script>
   var span = Faust.dom.createElement({name: "span", attributes: [["style", "position: fixed; right: 2px; bottom: 0px; font-family: Helvetica,sans-serif"]], parent: document.body, children: [document.createTextNode("π")]});

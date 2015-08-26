@@ -43,4 +43,3 @@
         </div>
     </header>
     <main>
-      <div class="main-content-container">

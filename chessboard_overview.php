@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <script>
           window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
           document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)"}]));
@@ -20,4 +21,5 @@
 
             <p><i>Die Auswahl einer Spalte in einer der beiden Hälften führt zu einer detaillierteren Darstellung.</i></p>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

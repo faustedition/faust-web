@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <style>
           h3, h4 {
             font-weight: bold;
@@ -145,4 +146,5 @@
 
           </div>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

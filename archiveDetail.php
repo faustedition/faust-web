@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <style>
           .archives-content {
             width: 995px;
@@ -191,4 +192,5 @@
 
           document.getElementById("archives-content").appendChild(archiveTable);
         </script>
+      </div>
       <?php include "includes/footer.php"; ?>

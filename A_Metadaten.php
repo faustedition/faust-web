@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <h2 align="left">Beschreibung der Überlieferungsträger</h2>
         <div>
           <h3 align="left">Handschriftenbeschreibung</h3>
@@ -143,4 +144,5 @@
            </li>
           </ul>
         </div>
+      </div>
       <?php include "includes/footer.php"; ?>

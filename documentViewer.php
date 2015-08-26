@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <style>
 @font-face {
   font-family: 'FontAwesome';
@@ -264,4 +265,5 @@ div g.element-line-hidden:hover > * {
             }
           });
         </script>
+      </div>
       <?php include "includes/footer.php"; ?>

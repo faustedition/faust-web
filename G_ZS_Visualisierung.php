@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <div align="center">
           <h1>Werkgenese</h1>
         </div>
@@ -25,4 +26,5 @@
         <br>
         <br>
         <br>
+      </div>
       <?php include "includes/footer.php"; ?>
