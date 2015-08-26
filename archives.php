@@ -115,30 +115,9 @@
             border-width: 1px 1px 3px 1px;
           }
 
-
-
-
-
-
 .main-content-container {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em 0.5em 2.5em 0.5em;
-  overflow: auto;
+  margin-bottom: 2em;
 }
-
-.main-content {
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 0.5em;
-}
-
-
-
-
-
         </style>
 
         <div id="main-content" class="main-content">

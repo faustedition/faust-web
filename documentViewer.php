@@ -10,10 +10,7 @@
 }
 
 .main-content-container {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em 0.5em 2.5em 0.5em;
-  overflow: hidden;
+  margin-bottom: 2em;
 }
 
 .main-content2 {

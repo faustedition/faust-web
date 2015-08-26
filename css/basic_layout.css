@@ -46,27 +46,14 @@ header .breadcrumbs {
 }
 
 /* style for main area */
-main {
+.main-content-container {
   position: absolute;
   top: 3.4em;
   bottom: 1.8em;
   left: 0em;
   right: 0em;
-/* here for historical reasons. ff&chrome were fine, but ie
- * (surprise) not. so changed to position: absolute with
- * top 3em, bottom 1.5em, left, right 0em
-  height: 100%;
-  width: 100%;
-  padding: 3em 0em 1.5em 0em;
-*/
-  overflow: hidden;
-}
-
-.main-content-container {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em;
   overflow: auto;
+  padding:0.5em;
 }
 
 .main-content-container * {
