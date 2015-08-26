@@ -427,3 +427,35 @@ a.pageno {
   margin: 0;
   padding: 0.5em 0.5em;
 }
+
+
+/* print layout */
+@media print {
+  header {
+    position:relative;
+    border-bottom:1px solid;
+    box-shadow: none;
+  }
+  
+  main {
+    position: relative;
+    left:auto;
+    top:auto;
+    overflow: visible;
+  }
+
+  .main-content-container {
+    overflow: visible;
+  }
+
+  .main-content {
+    border: none;
+    overflow: visible;
+  }
+
+  footer {
+    position: relative;
+    left:auto;
+    bottom:auto;
+  }
+}
