@@ -415,26 +415,34 @@ a.pageno {
 
 /* print layout */
 @media print {
+  html {
+    padding:0;
+  }
+
   header {
     position:relative;
     border-bottom:1px solid;
     box-shadow: none;
-  }
-  
-  main {
-    position: relative;
-    left:auto;
-    top:auto;
-    overflow: visible;
+    height:auto;
   }
 
   .main-content-container {
+    position: relative;
+    border: none;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
     overflow: visible;
   }
 
   .main-content {
-    border: none;
-    overflow: visible;
+    border:none;
+    overflow: auto;
+  }
+
+  main [class*="pure-u"] {
+    display:inline; /* FIXME: hotfix - default is 'inline-block'. This leads to cutt-offs on long texts in FF */
   }
 
   footer {
