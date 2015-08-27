@@ -30,7 +30,7 @@
         <div class="breadcrumbs pure-u-1-3 pure-center pure-fade-50">
           <small id="breadcrumbs"></small>
         </div>
-        <div class="pure-u-1-3">
+        <div class="pure-u-1-3 pure-noprint">
         <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right">
           <ul>
           <li><a href="archives.php">Archiv</a></li>

@@ -4,7 +4,7 @@
         <div class="pure-u-1-2 pure-fade-50">
           <b>Digitale Faust-Edition</b>
         </div>
-        <div class="pure-u-1-2 pure-right pure-fade-50">
+        <div class="pure-u-1-2 pure-right pure-fade-50 pure-noprint">
           <a href="help.php">Hilfe</a>
           <a href="contact.php">Kontakt</a>
           <a href="imprint.php">Impressum</a>
