@@ -1,4 +1,5 @@
       <?php include "includes/header.php"; ?>
+      <div class="main-content-container">
         <style>
 @font-face {
   font-family: 'FontAwesome';
@@ -9,10 +10,7 @@
 }
 
 .main-content-container {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em 0.5em 2.5em 0.5em;
-  overflow: hidden;
+  margin-bottom: 2em;
 }
 
 .main-content2 {
@@ -264,4 +262,5 @@ div g.element-line-hidden:hover > * {
             }
           });
         </script>
+      </div>
       <?php include "includes/footer.php"; ?>

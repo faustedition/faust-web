@@ -1,14 +1,10 @@
       <?php include "includes/header.php"; ?>
-        <style>
-          h3, h4 {
-            font-weight: bold;
-          }
-        </style>
-        <div id="main-content" class="main-content">
-          <div style="width: 50em; margin: auto;">
+      <section class="center pure-g-r">
 
-            <h2>Wir möchten folgenden Institutionen und Personen für ihre Unterstützung danken:</h2>
-            <h3>Quellenzugang/-digitalisierung: Archive, Bibliotheken, Sammlungen</h3>
+          <article class="pure-u-1">
+          
+            <h1>Wir möchten folgenden Institutionen und Personen für ihre Unterstützung danken:</h1>
+            <h2>Quellenzugang/-digitalisierung: Archive, Bibliotheken, Sammlungen</h2>
 
               <ul>
                 <li>Archiwum Główne Akt Dawnych (Warszawa), Hubert Wajs - Handschriftendigitalisate und Archivbesuch</li>
@@ -52,7 +48,7 @@
                 <li>Privatsammlung NN in USA (Hs. zum 4. Akt von Faust II)</li>
               </ul>
 
-            <h3>Finanzielle Förderer</h3>
+            <h2>Finanzielle Förderer</h2>
 
               <ul>
                 <li>DFG</li>
@@ -60,7 +56,7 @@
                 <li>Effi Biedrzynski-Stiftung</li>
               </ul>
 
-            <h3>Vor- und Zuarbeiten</h3>
+            <h2>Vor- und Zuarbeiten</h2>
 
               <ul>
                 <li>Alberth, Christian (FDH)/ Gersitz, Barbara (Würzburg)</li>
@@ -87,7 +83,7 @@
                 <li>Zanaboni, Serena - Handschriftenautopsie</li>
               </ul>
 
-            <h3>Recherchen/Fragen</h3>
+            <h2>Recherchen/Fragen</h2>
 
               <ul>
                 <li>verschiedene Editionsabteilungen des GSA, v.a. Tagebücher (Zehm, Edith, Ludwig, Ariane und Mangold, Sebastian) - Fachfragen, Transkriptionsfragen</li>
@@ -113,7 +109,7 @@
                 <li>(Wegstein, Werner)</li>
               </ul>
 
-            <h3>Fachlicher Rat und Austausch</h3>
+            <h2>Fachlicher Rat und Austausch</h2>
 
               <ul>
                 <li>Aachen (Axel Gellhaus, Karin Herrmann, Moritz Wittenhagen, Maximilian Möllers)</li>
@@ -143,6 +139,7 @@
                 <li>[Konferenzausrichter: Uni München, editio, Eutin usw.]</li>
               </ul>
 
-          </div>
-        </div>
+          </article>
+
+      </section>
       <?php include "includes/footer.php"; ?>

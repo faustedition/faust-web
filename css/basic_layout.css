@@ -8,78 +8,57 @@
   src: url(../fonts/Symbola.ttf) format("truetype");
 }
 
-/* reset some default css settings */
+/* default css settings */
 html, body {
-  height: 100%;
-  margin: 0px 0px 0px 0px;
-/*  font-family: sans-serif;*/
-  font:16px/1.5em "Ubuntu", Arial, Helvetica, sans-serif, "Symbola";
+  min-height: 100%;
 }
 
-
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          /*
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-          */
+html {
+  padding:4em 0 2em;
 }
-
 
 /* style for header area */
 header {
-  overflow: hidden;
   position: fixed;
-  top: 0em;
-  left: 0em;
-  padding: 0.75em 2em ;
+  top:0;
+  padding: 0.5em 1em;
   width: 100%;
-  height: 3em;
+  height:3.4em;
+  background:white;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.header-content {
-  height: 1.5em;
-  display: -ms-flexbox;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: middle;
-  cursor: default;
+header .logo a {
+  display:block;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
 }
 
-.breadcrumbs {
-  font-size: 12px;
-  line-height: 1.25em;
+header .logo img {
+  display:block;
+  width:270px;
+  height:22px;
+}
+
+header .breadcrumbs {
+  line-height: 1em;
 }
 
 /* style for main area */
-main {
-  position: absolute;
-  top: 3em;
-  bottom: 1.5em;
-  left: 0em;
-  right: 0em;
-/* here for historical reasons. ff&chrome were fine, but ie
- * (surprise) not. so changed to position: absolute with
- * top 3em, bottom 1.5em, left, right 0em
-  height: 100%;
-  width: 100%;
-  padding: 3em 0em 1.5em 0em;
-*/
-  overflow: hidden;
+.center {
+    max-width: 995px;
+    margin: 0px auto;
+    padding:0 1em;
 }
 
 .main-content-container {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em;
+  position: absolute;
+  top: 3.4em;
+  bottom: 1.8em;
+  left: 0em;
+  right: 0em;
   overflow: auto;
+  padding:0.5em;
 }
 
 .main-content-container * {
@@ -97,86 +76,31 @@ main {
   padding: 0.5em;
 }
 
-/* style for navigational area */
-nav {
-  height: 100%;
-  white-space: nowrap;
-}
-
-.faustedition-logo {
-  height: 100%;
-}
-
-.faustedition-logo-svg {
-  height: 100%;
-}
-
-/* styling of individual navigation items */
-.header-navigation > * {
-  height: 100%;
-  vertical-align: middle;
-  margin: 0em 1em;
-}
-
-nav a {
-  color: #777;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-bottom: 0.2em solid rgba(255,255,255,0);
-}
-
-nav a:hover {
-  color: rgb(255,194,14);
-  border-bottom: 0.2em solid rgb(255,194,14);
-}
-
-nav input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px #ddd;
-  padding: 0em .33em;
-}
-
 /* style for footer area */
 footer {
   position: fixed;
   left: 0em;
   bottom: 0em;
+  padding: 0.25em 1.33em;
   width: 100%;
-  height: 1.5em;
+  font-size:0.75em;
   border-top: 1px solid #aaa;
   background-color: #F5F5F5;
-  text-align: center;
-  overflow: hidden;
-  cursor: default;
 }
 
-.footer-content {
-  display: inline-block;
-  vertical-align: middle;
-  color: #777;
-  font-size: 0.75em;
-  white-space: nowrap;
-  position: relative;
-}
-
-.footer-navigation {
-  position: absolute;
-  top: 0px;
-  right: 1em;
+footer a {
+  margin:0 .5em;
+  text-decoration: none;
 }
 
 /* styling for navigation bar */
 .navigation-bar-container {
   position: fixed;
   left: 0px;
-  bottom: 1.5em;
-  border-top: 1px solid black;
+  bottom: 2em;
   width: 100%;
   height: 2.25em;
   overflow: hidden;
-  background-color: #F5F5F5;
 }
 
 /*
@@ -225,15 +149,7 @@ footer {
   padding: 0em 0.33em;
 }
 
-/* pure-custom */
-html, button, input, select, textarea {
-  font: 1.0em/1.5em "Ubuntu", Arial, Helvetica, sans-serif;
-  color: rgb(0,0,0);
-}
-
 /* styling of prints and texts in synoptic view */
-
-
 .line { margin: 0; }
 p.head { margin: 1em 0; font-weight: bold; font-size: 123.1%; }
 p.para-start { margin-top: 1em; }
@@ -478,4 +394,44 @@ a.pageno {
   overflow: auto;
   margin: 0;
   padding: 0.5em 0.5em;
+}
+
+
+/* print layout */
+@media print {
+  html {
+    padding:0;
+  }
+
+  header {
+    position:relative;
+    border-bottom:1px solid;
+    box-shadow: none;
+    height:auto;
+  }
+
+  .main-content-container {
+    position: relative;
+    border: none;
+    left:auto;
+    right:auto;
+    top:auto;
+    bottom:auto;
+    overflow: visible;
+  }
+
+  .main-content {
+    border:none;
+    overflow: auto;
+  }
+
+  main [class*="pure-u"] {
+    display:inline; /* FIXME: hotfix - default is 'inline-block'. This leads to cutt-offs on long texts in FF */
+  }
+
+  footer {
+    position: relative;
+    left:auto;
+    bottom:auto;
+  }
 }

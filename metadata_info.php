@@ -1,14 +1,10 @@
       <?php include "includes/header.php"; ?>
-        <style>
-          h3, h4 {
-            font-weight: bold;
-          }
-        </style>
-        <div id="main-content" class="main-content">
-          <div style="width: 50em; margin: auto;">
+      <section class="center pure-g-r">
+        
+        <article class="pure-u-1">
+            <h1>Beschreibung der Überlieferungsträger</h1>
 
-            <h2>Beschreibung der Überlieferungsträger</h2>
-            <h3>Handschriftenbeschreibung</h3>
+            <h2>Handschriftenbeschreibung</h2>
 
             <p>Für jeden Textzeugen existiert eine Beschreibung, in der grundlegende Informationen zur jeweiligen Handschrift enthalten sind. Die Anordnung der Daten erfolgt hierarchisch: Beim ersten Zugang zur Handschrift werden die wichtigsten Informationen, die für die Identifikation der Handschrift und ihre werkgeschichtliche Einordnung von Bedeutung sind, dem Nutzer bereitgestellt. Sie beziehen sich allesamt auf den Überlieferungszeugen in seiner Gesamtheit.</p>
             <p>Zur ausführlichen Information über die Beschaffenheit einer Handschrift in ihrer Gänze (Dokumenteigenschaften) kann die Anzeige der Metadaten um Details zu den Eigenschaften einzelner Handschriftenblätter, des Papiers, einzelner Seiten (und eventuell an diesen vorzufindenden Anbringungen/Zetteln) erweitert werden. Alle verfügbaren Metadaten einer Handschrift stehen als Download zur Verfügung bereit.</p>
@@ -39,7 +35,6 @@
                 </ul>
               </ul>
 
-            <br>
             <li>Weiterführende Informationen der Handschriftenbeschreibung zur Vertiefung</li>
 
             <p>(Fakultative Angaben sind in Klammern wiedergegeben.)</p>
@@ -97,7 +92,7 @@
 
             <p>Bei der Konvolutdarstellung handelt sich um eine abstrakte Sicht auf den Überlieferungsträger. Dieser wird in Gänze im Profil gezeigt, um den Aufbau des Konvoluts nachvollziehbar zu machen. Das Modell wurde aus Musik-Editionen entlehnt, in denen man sich solcher Darstellungen als etablierter Vermittlungsform für die Materialanalyse schon seit geraumer Zeit bedient.</p>
 
-            <img src="img/convolute_view.png" style="text-align: center;" alt="Beispiel einer Konvolutdarstellung" title="Beispiel einer Konvolutdarstellung">
+            <img src="img/convolute_view.png" alt="Beispiel einer Konvolutdarstellung" title="Beispiel einer Konvolutdarstellung">
 
             <p>Die waagerechten Linien stellen die Blätter einer Handschrift dar. Sie sind durchnummeriert, beginnend mit 1 (für Seite 1 usw.) und werden dann in ungerader Zählung fortgeführt (aus Platzgründen wird nur die ungerade Seite angegeben). Die obere Kante einer Linie stellt die Vorderseite eines Blattes dar, analog dazu bildet die untere Kante die Rückseite.</p>
 
@@ -135,12 +130,7 @@
               <li>Angaben und Erörterungen über den stemmatologischen Ort eines Drucks in wissenschaftlichen Ausgaben und in der Forschungsliteratur.)</li>
             </ul>
 
+        </article>
 
-
-
-
-
-
-          </div>
-        </div>
+      </section>
       <?php include "includes/footer.php"; ?>
