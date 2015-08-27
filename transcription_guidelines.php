@@ -1,5 +1,8 @@
       <?php include "includes/header.php"; ?>
-      <section>
+      <section class="center pure-g-r">
+        
+        <article class="pure-u-1">
+        
             <h1>Transkriptionsprinzipien</h1>
             <h3>Allgemeine Transkriptionsprinzipien</h3>
 
@@ -134,5 +137,8 @@
               <p>Die genannten Zeichen und Differenzierungen, auf deren Wiedergabe in den für den Nutzer sichtbaren Transkriptionen verzichtet wird, sind in den XML-kodierten Basisdaten der Transkriptionen erhalten.</p>
 
               <p class="pure-fade-50">[ausführlicher Text folgt noch]</p>
+
+        </article>
+
       </section>
       <?php include "includes/footer.php"; ?>
