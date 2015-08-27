@@ -17,12 +17,6 @@ html {
   padding:4em 0 2em;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /* style for header area */
 header {
   position: fixed;
@@ -80,16 +74,6 @@ header .breadcrumbs {
   height: 100%;
   overflow: auto;
   padding: 0.5em;
-}
-
-/* style for navigational area */
-
-.faustedition-logo {
-  height: 100%;
-}
-
-.faustedition-logo-svg {
-  height: 100%;
 }
 
 /* style for footer area */
