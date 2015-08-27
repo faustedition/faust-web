@@ -1,45 +1,6 @@
       <?php include "includes/header.php"; ?>
       <div class="main-content-container">
         <style>
-          .archives-content {
-            width: 995px;
-            margin: auto;
-            overflow: auto;
-          }
-
-          .archive-details {
-            padding: 2em 0em 2.5em 1.5em;
-          }
-
-          .archive-table {
-            width: 75%;
-            border-collapse: collapse;
-          }
-
-          .archive-table tr {
-            border-bottom: 1px solid #ccc;
-          }
-
-          .archive-table > tr {
-            cursor: pointer;
-          }
-
-          .archive-table-header > th {
-            text-align: left;
-            border: 0px none;
-            padding: 0.5em;
-            font-weight: bold;
-          }
-
-          .archive-table td {
-            border: 0px none;
-            padding: 0.5em;
-          }
-
-          .archives-content a {
-            font-weight: bold;
-            text-decoration: none;
-          }
         </style>
         <div id="main-content" class="main-content">
           <div id="archives-content" class="archives-content">

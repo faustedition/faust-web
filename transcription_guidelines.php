@@ -1,14 +1,6 @@
       <?php include "includes/header.php"; ?>
-      <div class="main-content-container">
-        <style>
-          h3, h4 {
-            font-weight: bold;
-          }
-        </style>
-        <div id="main-content" class="main-content">
-          <div style="width: 50em; margin: auto;">
-
-            <h2 style="text-align: center;">Transkriptionsprinzipien</h2>
+      <section>
+            <h1>Transkriptionsprinzipien</h1>
             <h3>Allgemeine Transkriptionsprinzipien</h3>
 
               <p>Die Transkriptionen der Handschriften und Drucke sind zeichengetreu. Jedoch haben nicht alle Zeichen der damaligen Schreib- und Druckschrift eine genaue Entsprechung in der heutigen Druckschrift, wie sie in der Edition verwendet wird. Einige Differenzierungen des damaligen Schriftsystems werden nicht wiedergegeben, obwohl dies technisch möglich wäre. Im Folgenden werden lediglich die allgemeinsten, auf alle Teile der Edition anwendbaren Regeln angegeben. Für die Transkriptionen der Handschriften und Drucke sowie für die dokumentarische und textuelle Transkription der Handschriften gelten ergänzende Regeln, über die in den betreffenden Abschnitten (s. u.) Rechenschaft abgelegt wird.</p>
@@ -109,7 +101,7 @@
 
             <h3>Rasuren</h3>
 
-              <p>Radierte Zeichen erscheinen in Konturschrift. Partielle Rasuren von Zeichen, die zur Umwandlung in einen anderen Buchstaben dienen (m→n, ß→ſ u.ä.) werden nicht als Rasuren gekennzeichnet, sondern wie bloße Daraufschreibungen behandelt. Gezielte Ausweichungen von Bleistift sowie gelegentlich auch von Tinte (z. B. <a href=documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_391529.xml&page=13&view=facsimile">H P63, Bl. 6<span style="vertical-align: super">r</span></a>, „I > ihre“) werden wie die Rasur behandelt.</p>
+              <p>Radierte Zeichen erscheinen in Konturschrift. Partielle Rasuren von Zeichen, die zur Umwandlung in einen anderen Buchstaben dienen (m→n, ß→ſ u.ä.) werden nicht als Rasuren gekennzeichnet, sondern wie bloße Daraufschreibungen behandelt. Gezielte Ausweichungen von Bleistift sowie gelegentlich auch von Tinte (z. B. <a href="documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_391529.xml&page=13&view=facsimile">H P63, Bl. 6<sup>r</sup></a>, „I > ihre“) werden wie die Rasur behandelt.</p>
 
             <h3>Einfügungslinien und Einweisungszeichen</h3>
 
@@ -141,12 +133,6 @@
 
               <p>Die genannten Zeichen und Differenzierungen, auf deren Wiedergabe in den für den Nutzer sichtbaren Transkriptionen verzichtet wird, sind in den XML-kodierten Basisdaten der Transkriptionen erhalten.</p>
 
-              <p>[ausführlicher Text folgt noch] </p>
-
-
-
-
-          </div>
-        </div>
-      </div>
+              <p class="pure-fade-50">[ausführlicher Text folgt noch]</p>
+      </section>
       <?php include "includes/footer.php"; ?>

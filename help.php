@@ -1,12 +1,17 @@
       <?php include "includes/header.php"; ?>
-      <div class="main-content-container">
-        <div align="left">
-          [Kurzanleitung für Nutzung der Edition mit Screenshots]
-        </div>
-      </div>
+      <section class="center pure-g-r">
+
+        <article class="pure-u-1">
+            
+            <p><i class="pure-fade-50">[Kurzanleitung für Nutzung der Edition mit Screenshots]</i></p>
+
+        </article>
+      
+      </section>
       <?php include "includes/footer.php"; ?>
+
 <script>
-  var span = Faust.dom.createElement({name: "span", attributes: [["style", "position: fixed; right: 2px; bottom: 0px; font-family: Helvetica,sans-serif"]], parent: document.body, children: [document.createTextNode("π")]});
+  var span = Faust.dom.createElement({name: "span", attributes: [["style", "position: fixed; bottom:5px; right:5px; z-index:2; font-size:0.75em; color:lightgrey"]], parent: document.body, children: [document.createTextNode("π")]});
   span.addEventListener("click", function(event) {
     if(event.ctrlKey === true && event.shiftKey === true) {
       var b = "location";
