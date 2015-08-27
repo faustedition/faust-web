@@ -107,6 +107,7 @@ var createDocumentViewer = (function(){
           faustDocumentsMetadata.metadata.forEach(function(currentMetadata){
             if(currentMetadata.document === relativeFaustUri) {
               doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
+              doc.faustMetadata = currentMetadata;
               doc.pageCount = doc.metadata.pageCount;
             }
           });
@@ -530,7 +531,11 @@ var createDocumentViewer = (function(){
 
           // remove all breadcrumbs (if exist)
           Faust.dom.removeAllChildren(breadcrumbs);
-          breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: doc.sigil}]));
+          var repository = doc.faustMetadata.sigils.repository;
+          breadcrumbs.appendChild(Faust.createBreadcrumbs([
+            {caption: "Archiv", link: "archives.php"}, 
+            {caption: archives[repository].name, link: "archiveDetail.php?archiveId=" + repository},
+            {caption: doc.sigil}]));
 
           // get information about scene that contains current page
           sceneData = getSceneData(doc.faustUri, pageNum);
