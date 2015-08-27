@@ -119,6 +119,18 @@ a.sigil {
 	margin-left: 0.1em;
 }
 
+/* 
+ * Briefe gibt's auch, z.B. 2 III H.75a
+ */
+.closer {
+	text-align: right;
+	margin-top: 6pt;
+}
+.dateline {
+	display: block;
+	text-align: left;
+}
+
 /* print.html */
 dt {
 	margin-top: 1ex; 
