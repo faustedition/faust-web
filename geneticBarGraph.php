@@ -112,9 +112,9 @@
 
           // set breadcrumbs
           if(sceneLineMappingId.split(".")[0] === "1") {
-            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneTitle}]));
+            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneTitle}]));
           } else {
-            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneTitle}]));
+            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneTitle}]));
           }
 
           var horizontalDistance = 30;
