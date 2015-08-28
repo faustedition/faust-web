@@ -19,7 +19,7 @@
             <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung. Durch Anklicken der einzelnen Zeilen können alle überlieferten Fassungen eines Verses, einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in zeilensynoptischer Anordnungen aufgerufen werden. Die Sigle am rechten Rand führt zur Einzeldarstellung des Zeugen im digitalen Archiv.</p>
 
         <h2>Drucke</h2>
-        <p>Teil der Ausgabe sind alle textkritisch relevanten Drucke und Teildrucke des ‚Faust‘. Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und Revisionsbogen.</p>
+        <p>Teil der Ausgabe sind alle textkritisch relevanten <a href="archives.php?view=print-concordance">Drucke</a> und Teildrucke des ‚Faust‘. Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
 
 
