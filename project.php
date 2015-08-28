@@ -18,6 +18,10 @@
             <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ I ist dies der Druck im achten Band der ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des ‚Faust II‘ liegt die 187 Blätter umfassende sogenannte große Reinschrift zugrunde (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien wie bei den <a href="transcription_guidelines.php#txt_Transkr_Hss">textuellen Transkriptionen</a>. Im Unterschied zu den übrigen Textwiedergaben sind die Seitengrenzen der Vorlage im Lesetext nicht markiert.</p>
             <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung. Durch Anklicken der einzelnen Zeilen können alle überlieferten Fassungen eines Verses, einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in zeilensynoptischer Anordnungen aufgerufen werden. Die Sigle am rechten Rand führt zur Einzeldarstellung des Zeugen im digitalen Archiv.</p>
 
+        <h2>Drucke</h2>
+        <p>Teil der Ausgabe sind alle textkritisch relevanten Drucke und Teildrucke des ‚Faust‘. Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und Revisionsbogen.</p>
+        <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
+
 
             <h2>Siglen</h2>
             <p>Verwendung findet die jeweils gebräuchlichste Sigle. Im Fall der Handschriften ist dies die von Erich Schmidt, dem Herausgeber des ‚Faust‘ in den Bänden 14 und 15 der Weimarer Ausgabe (WA), eingeführte Sigle. Tragen Handschriften dort keine Sigle, treten die von der späteren Faust-Forschung vergebenen Bezeichnungen ein. Fehlen auch diese, so wird auf andere editorische Siglen oder die Archivsignatur zurückgegriffen. Drucke erhalten die durch Waltraud Hagen, ersatzweise die durch die WA eingeführten Siglen.</p>
