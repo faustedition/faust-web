@@ -170,8 +170,7 @@ var createDocumentViewer = (function(){
         };
       })();
 
-      var documentXmlMetadataLoaded = (function(){
-        return function(documentXmlMetadata) {
+      var documentXmlMetadataLoaded = function(documentXmlMetadata) {
           var lockedPages;
 
           // create elements for previews
@@ -207,8 +206,12 @@ var createDocumentViewer = (function(){
           structureSvgDiv.appendChild(structureSvg);
 
           // create dom elements for metadata display
-          var metadataTextContent = metadataText.transformXml(documentXmlMetadata);
-          var metadataDiv = Faust.dom.createElement({name: "div", id: "metadataDiv", class: "metadata-div", children: [metadataTextContent]});
+          var metadataDiv = Faust.dom.createElement({name: "div", id: "metadataDiv", class: "metadata-div"});
+          var baseName = doc.metadata.documentUri.replace(/^.*\/(\S+)\.xml/, '$1');
+          Faust.xhr.getResponseText("metadata/" + baseName + '.html', function(documentHtml) {
+            metadataDiv.innerHTML = documentHtml;
+            metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
+          }); 
 
           // function used to get preview images. this function is used so that images once loaded
           // will be buffered so that images are downloaded once and only once (chrome would buffer
@@ -359,7 +362,9 @@ var createDocumentViewer = (function(){
           // set current active page on structure view
           structureSvg.setLockedGroup(state.page);
 
-          metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
+          // XXX Was soll DAS HIER???
+          // Es bewirkt offenbar die Scrollbarkeit, aber wieso?
+          // metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
           structureDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
           window.addEventListener("resize", function() {
             metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
@@ -367,7 +372,6 @@ var createDocumentViewer = (function(){
           });
 
         };
-      })();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
