@@ -133,20 +133,77 @@
             zeitgenösisschen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
-        <p><strong>2.3. Textuelle Transkription der Handschriften</strong></p>
-        <p>Die textuelle Transkription gibt den Text mit seiner textspezifischen Gliederung wieder
-            (z. B. als Dramentext, Liste, Gedicht, Exzerpt).</p>
-        <p>Von der textuellen Transkription der Handschriften wird nur die letzte abhebbare Stufe,
-            d. h. der Text, der sich aus der Niederschrift und allen darin vorkommenden Änderungen
-            ergibt, angezeigt.</p>
-        <p>Das lange s (ſ) wird als rundes s wiedergegeben. Die Buchstabenkombination ſs in der
-            lateinischen Schrift wird als ß wiedergegeben.</p>
-        <p>Fehlende Umlautzeichen werden ergänzt.</p>
-        <p>Die Umlaute Ae, Oe und Ue werden als Ä, Ö und Ü wiedergegeben, außer bei lateinischen
-            Fremd- und Lehnwörtern. Die Schreibungen ae, oe und ue bleiben von dieser Regel
-            unberührt.</p>
-        <p>Geminationsstriche über n und m (n̄, m̄) und weiteren Buchstaben werden zu nn, mm usw.
-            aufgelöst.</p>
+        <h4><strong>Textuelle Transkription der Handschriften</strong></h4>
+        <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner textspezifischen
+            Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
+            unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten
+            und daneben als letzte abhebbare Stufe, d.h. des Textes, der sich aus der Niederschrift
+            und allen darin vorkommenden Änderungen ergibt.</p>
+        <h4>Darstellung der innerhandschriftlichen Varianten</h4>
+        <p>Für die Darstellung innerhandschriftlicher Varianten existiert in gedruckten Ausgaben
+            bereits eine Vielfalt von Apparatformen. Die Entwicklung von entsprechenden
+            Darstellungsformen im digitalen Medium steht dagegen noch in den Anfängen. Der in der
+            vorliegenden Ausgabe gewählte Apparattyp hat ebenfalls nur vorläufigen Charakter. Er
+            beruht auf dem Einblendungsapparat, der für die Akademie-Ausgabe der Werke Goethes
+            entwickelt wurde (Abb. ###).</p>
+        <p><img src="einblendung/media/image1.png"/></p>
+        <p>Abb. ###: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
+                href="http://beta.faustedition.net/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
+                class="uri"
+                >http://beta.faustedition.net/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text</a>).</p>
+        <p>Varianten werden stets als Abweichungen von der Grundschicht dargestellt. Unter der
+            Grundschicht werden in diesem Zusammenhang alle Zeichen verstanden, die nicht entweder
+            sofort getilgt (Sofortrevision) oder später hinzugefügt wurden. Der Text der
+            Grundschicht steht außerhalb der Klammern ⟨…⟩. Innerhalb der Klammern stehen
+            Sofortrevisionen und generell das Ergebnis von Änderungen. Die Klammern und der die
+            Änderungen beschreibende kursive Editortext sind durch graue Schrift abgehoben, von
+            einer späteren Änderung betroffene Teile der Grundschicht sind durch Unterstreichung
+            u.ä. markiert. Beim Ansteuern des Bereichs einer Variante erscheint eine verbale
+            Beschreibung der Änderung. Alle folgend genannten editorischen Zeichen und Kürzel werden
+            so an Ort und Stelle erklärt:</p>
+        <ul>
+            <li><p>&gt; steht zwischen dem sofort Getilgten und dem danach
+                Niedergeschriebenen,</p></li>
+            <li><p><em>erg</em> – „ergänzt“,</p></li>
+            <li><p><em>tilgt</em> – „tilgt“,</p></li>
+            <li><p><em>:</em> steht bei Ersetzungen zwischen dem Getilgten und dem
+                    Hinzugefügten,</p></li>
+            <li><p><em>wdhst</em> – „wiederherstellt“</p></li>
+            <li><p><em>mon</em> – „moniert“</p></li>
+            <li><p><em>vorschl</em> (statt <em>propon</em>) – „vorschlägt“</p></li>
+        </ul>
+        <p>Umgestellter Wortlaut wird vorerst nur beziffert und nicht auch in der endgültigen
+            Reihenfolge wiedergegeben.</p>
+        <ol>
+            <li>Änderungen werden vorerst nicht wie in der AA auf ganze Wörter expandiert.
+                Änderungen, die in Zeugen als Änderungen einzelner Buchstaben vorgenommen worden
+                sind, erscheinen vielfach auch in der Edition als Änderungen einzelner
+                Buchstaben.</li>
+            <li>Vor ⟨ wird vorläufig kein Leerzeichen gesetzt (aus Rücksicht auf die eben
+                beschriebene Darstellung von Änderungen im Wortinneren, die noch nicht expandiert
+                werden).</li>
+            <li>Umfangreichere Tilgungen erhalten vorerst keine durchgehende Markierung, sondern nur
+                Zeichen am Anfangs- und Endpunkt.</li>
+            <li>Schreibersiglen kommen nur bei vorgeschlagenen Änderungen und bei Monierungen vor.
+                Die in der AA gebräuchliche Syntax „Variante <i>tilgt / erg G</i>“ verkürzt sich
+                damit auf <i>tilgt / erg</i>“.</li>
+            <li>Für vorgeschlagene Änderungen wurde nicht nur die Form der Ersetzung gebraucht,
+                sondern auch Hinzufügung und Tilgung.</li>
+        </ol>
+        <h4>Darstellung der innerhandschriftlichen Varianten letzten abhebbaren Stufe</h4>
+        <p>Die letzte abhebbare Stufe ist der Text, der sich aus der Niederschrift und allen darin
+            vorkommenden Änderungen ergibt. Für die Darstellung dieses Textes gelten folgende
+            besonderen Regeln:</p>
+        <ul>
+            <li>Das lange s (ſ) wird als rundes s wiedergegeben. Die Buchstabenkombination ſs in der
+                lateinischen Schrift wird als ß wiedergegeben.</li>
+            <li>Fehlende Umlautzeichen werden ergänzt.</li>
+            <li>Die Umlaute Ae, Oe und Ue werden als Ä, Ö und Ü wiedergegeben, außer bei
+                lateinischen Fremd- und Lehnwörtern. Die Schreibungen ae, oe und ue bleiben von
+                dieser Regel unberührt.</li>
+            <li>Geminationsstriche über n und m (n̄, m̄) und weiteren Buchstaben werden zu nn, mm
+                usw. aufgelöst.</li>
+        </ul>
         <p><strong>3. Wiedergabe von Drucken</strong></p>
         <p>Die Transkription der Drucke wird in einer Form angeboten, die der textuellen
             Transkription der Handschriften im Wesentlichen entspricht. Vom typographischen
