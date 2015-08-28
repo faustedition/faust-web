@@ -24,7 +24,7 @@
             gemacht worden war (Abb. 1). Die Separation war möglich, weil die dunkelblaue Tinte vom
             menschlichen Auge zwar schwer von der schwarzen zu unterscheiden ist, für einen Teil des
             Lichtspektrums (Wellenlänge um 440 nm) aber einen hohen Reflexionsgrad aufweist.</p>
-        <p><img src="hyperspectral_imaging/media/image1.jpeg"/></p>
+        <p><img src="multispectral_imaging/media/image1.jpeg"/></p>
         <p>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober 1912).
             Wellenlänge: 440 nm. Text: „unserem unsagbar schönen Wiederzusammenkommen im März, da
             waren ja auch <em>andere</em> herzige Munderln ganz nahe davor, sogar ein bisserl
@@ -40,9 +40,9 @@
             Kooperation mit Manuel Raaf am 27. und 28. März 2013 angefertigt). Auch diese Tinten
             reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 2 und 3).</p>
-        <p><img src="hyperspectral_imaging/media/image2.png"/></p>
+        <p><img src="multispectral_imaging/media/image2.png"/></p>
         <p>Abb. 2: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</p>
-        <p><img src="hyperspectral_imaging/media/image3.png"/></p>
+        <p><img src="multispectral_imaging/media/image3.png"/></p>
         <p>Abb. 3: vgl. Abb. 2. Wellenlänge: 1000 nm.</p>
         <p>Durch geeignete Kombination der Bilder aus verschiedenen Spektralbereichen konnten die
             Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein manuelles
