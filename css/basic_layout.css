@@ -396,6 +396,32 @@ a.pageno {
   padding: 0.5em 0.5em;
 }
 
+/*
+ * Normale <dl> sieht schön aus, nimmt aber zuviel platz weg.
+ * horizontale <dl> sieht doof aus.
+ *
+ * Das folgende ist ein Hack, kriegen wir das irgendwie besser hin?
+ */
+
+.metadata-container dt {
+  display: inline;
+}
+.metadata-container dt:after {
+  content: ": ";
+}
+.metadata-container dd {
+  display: inline;
+  margin-left: 0;
+}
+.metadata-container dd:after {
+  display: block;
+  content: '\A';
+  margin-bottom: 0.5ex;
+}
+.metadata-container .md-level dl, .metadata-container dd > dl {
+  display: block;
+  margin-left: 2em;
+}
 
 /* print layout */
 @media print {
