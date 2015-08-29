@@ -407,7 +407,7 @@ a.pageno {
   display: inline;
 }
 .metadata-container dt:after {
-  content: ": ";
+  content: " ";
 }
 .metadata-container dd {
   display: inline;
@@ -418,9 +418,31 @@ a.pageno {
   content: '\A';
   margin-bottom: 0.5ex;
 }
-.metadata-container .md-level dl, .metadata-container dd > dl {
+.metadata-container dd > dl {
   display: block;
   margin-left: 2em;
+  margin-top: 0;
+}
+.md-note { line-height: normal; }
+.md-level {
+  margin-left: 2em;
+  margin-top: 0;
+}
+.md-level > h3 {
+  margin-left: -2em;
+  margin-bottom: 0;
+}
+
+/* :) */
+.wip {
+  color: #111;
+  background: url(../img/wip-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+cite {
+  margin-right: 0.1em; /* Kursivausgleich */
 }
 
 /* print layout */
