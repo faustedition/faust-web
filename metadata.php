@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.1.2" />
-  <meta http-equiv="content-type" content=
-  "text/html; charset=utf-8" />
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" />
-  <title>A_Metadaten</title>
-  <style type="text/css">
-  /*<![CDATA[*/
-  h3.c2 {text-align: left}
-  h2.c1 {text-align: left}
-  /*]]>*/
-  </style>
-</head>
-<body>
-  <header>
-    <div id="headerContent" class="headerContent">
-      <img id="faustLogo" src="img/faustlogo.svg" />
-      <div class="headerSpacer"></div>
-      <nav>
-        <a href="file:///new/archive/">Archive</a> <a href=
-        "file:///new/genesis/work/">Genesis</a> <a href=
-        "file:///new/text/sample">Text</a> <input autocomplete=
-        "off" id="quick-search" placeholder="Search" type="text" />
-      </nav>
-    </div>
-  </header>
-  <div class="content">
-    <div align="center">
-      <p align="right"><a href="K_Hilfe.html">Hilfe</a> <a href=
-      "K_Kontakt.html">Kontakt</a> <a href=
-      "K_Impressum.html">Impressum</a> <a href=
-      "Startseite.html">Projekt</a><br /></p>
-    </div>
-    <div>
-      <h2 class="c1">Beschreibung der Überlieferungsträger
+<?php include "includes/header.php"; ?>
+  <section class="center pure-g-r">
+    <article class="pure-u-1">
+      <h2>Beschreibung der Überlieferungsträger
       (Metadaten)<br /></h2>
       <div>
         <h3 class="c2">1. Handschriftenbeschreibung</h3>
@@ -203,14 +168,7 @@
         <li>Angaben und Erörterungen über den stemmatologischen Ort
         eines Drucks in wissenschaftlichen Ausgaben und in der
         Forschungsliteratur.</li>
-      </ul><br />
-      <br />
-    </div>
-  </div>
-  <footer>
-    <div id="footeContent" class="footerContent">
-      <strong>Digitale Faust-Edition</strong>
-    </div>
-  </footer>
-</body>
-</html>
+      </ul>
+    </article>
+  </section>
+  <?php include "includes/footer.php"; ?>
