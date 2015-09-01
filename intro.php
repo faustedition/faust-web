@@ -37,8 +37,19 @@
           <p>Beim Ansteuern eines Balkens werden das zugehörige Versintervall und die Überlieferungsform (Handschrift, Druck, Paralipomenon, Schema) angezeigt. Die Auswahl eines Balkens führt zur entsprechenden Stelle im Textzeugen.</p>
 
             <h2>Siglen</h2>
-            <p>Verwendung findet die jeweils gebräuchlichste Sigle. Im Fall der Handschriften ist dies die von Erich Schmidt, dem Herausgeber des ‚Faust‘ in den Bänden 14 und 15 der Weimarer Ausgabe (WA), eingeführte Sigle. Tragen Handschriften dort keine Sigle, treten die von der späteren Faust-Forschung vergebenen Bezeichnungen ein. Fehlen auch diese, so wird auf andere editorische Siglen oder die Archivsignatur zurückgegriffen. Drucke erhalten die durch Waltraud Hagen, ersatzweise die durch die WA eingeführten Siglen.</p>
-            <p>&nbsp;</p>
+            <p>In den tabellarischen Übersichten des Archivs, den Ansichten einzelner Handschriften und Drucke, der zeilensynoptischen Darstellung im Lesetext sowie im Balkendiagramm finden Kurzbezeichnungen für Zeugen, sog. Siglen, Verwendung. Ausgangspunkt ist dabei das System der Siglierung, das Erich Schmidt, der Herausgeber des ‚Faust‘ in den Bänden 14 und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ eingeführt hat. Die Handschriften werden dabei zunächst nach der Texterstreckung geordnet. Maßgebend ist dabei nicht der Umfang einer Handschrift, sondern die Stelle im Werktext, mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Abschnitt einsetzt, wird vor einer Handschrift eingeordnet, die mit einem späteren Vers einsetzt.</p>
+
+            <h3>Siglen der Handschriften zum ‚Faust&nbsp;I‘</h3>
+            <p>Zum Faust&nbsp;I liegen vergleichsweise wenige Handschriften vor, zu jeder Szene meist nur eine. Im Zusammenhang einer Szene spricht Erich Schmidt, der Herausgeber des ‚Faust‘ in den Bänden 14 und 15 der Weimarer Ausgabe (WA), dann einfach jeweils von „H“ als der Handschrift zu der betreffenden Szene (WA&nbsp;I&nbsp;14). Die Göchhausensche Abschrift erhielt die Bezeichnung „U“ für ‚Urfaust‘. Um eindeutige Kurzbezeichnungen für jede Handschrift zu erhalten, werden die Handschriften zum ‚Faust&nbsp;I‘ in der Faust-Edition stattdessen durchlaufend numerisch nach dem Prinzip der Texterstreckung sigliert. </p>
+
+            <h3>Siglen der Handschriften zum ‚Faust&nbsp;II‘</h3>
+            <p>Der Großteil der Siglen zu den einzelnen Akten des ‚Faust&nbsp;II‘ wurde von Erich Schmidt gemäß dem oben beschriebenen Prinzip der Texterstreckung eingeführt. Seit dem Erscheinen von Bd.&nbsp;15.2 der WA neu aufgefundene Handschriften wurden teils schon von Erich Schmidt durch Hinzufügung von Siglen in dieses System integriert. Um alle ihm noch unbekannten oder aus anderen Gründen nicht siglierten Handschriften mit einer eindeutigen Kurzbezeichnung versehen zu können, ist ein Teil der Siglen Erich Schmidts wie auch der späteren Faust-Forschung ersetzt worden. </p>
+            <p>Vor allem die von Schmidt für die auswärtigen Handschriften eingeführte alphabetische Siglierung ließ sich nicht so fortsetzen, dass dabei das Prinzip der Texterstreckung hätte aufrechterhalten lassen. Alle betreffenden Handschriften sind in die Reihe der numerisch siglierten Handschriften eingefügt worden, beginnend mit I&nbsp;H.0d für I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg (faust://bibliography/fischer-lamberg1955) verfahren. </p>
+            <p>Einige der von Schmidt unter einer gemeinsamen Sigle zusammengefassten Handschriften liegen unter verschiedenen Archivsignaturen oder sogar an verschiedenen Aufbewahrungsorten. Um einzelne archivalische Objekte identifizierbar zu machen, wurden die betreffenden Siglen mit einem Zusatz erweitert. </p>
+
+            <h3>Siglen der Drucke</h3>
+            <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise die durch die WA eingeführte Sigle.</p>
+
             <p>
               <a href="K_Angewandte_Verfahren.php">Angewandte Verfahren</a><br>
               <a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a><br>
