@@ -18,7 +18,7 @@
 
         <div class="pure-u-1-3 pure-center">
 
-          <p><a href="project.php">Weiterlesen</a></p>
+          <p><a href="intro.php">Weiterlesen</a></p>
 
         </div>
 
