@@ -19,7 +19,7 @@
 
             <h2>Lesetext</h2>
             <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ I ist dies der Druck im achten Band der ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des ‚Faust II‘ liegt die 187 Blätter umfassende sogenannte große Reinschrift zugrunde (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien wie bei den <a href="transcription_guidelines.php#txt_Transkr_Hss">textuellen Transkriptionen</a>. Im Unterschied zu den übrigen Textwiedergaben sind die Seitengrenzen der Vorlage im Lesetext nicht markiert.</p>
-            <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung. Durch Anklicken der einzelnen Zeilen können alle überlieferten Fassungen eines Verses, einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in zeilensynoptischer Anordnungen aufgerufen werden. Die Sigle am rechten Rand führt zur Einzeldarstellung des Zeugen im digitalen Archiv.</p>
+            <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung. Durch Auswahl der einzelnen Zeilen können alle überlieferten Fassungen eines Verses, einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in zeilensynoptischer Anordnungen aufgerufen werden. Die Sigle am rechten Rand führt zur Einzeldarstellung des Zeugen im digitalen Archiv.</p>
             
             <h2>Genese</h2>
             <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom abgeschlossenen Werk ausgehend dar.</p>
