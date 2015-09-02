@@ -50,12 +50,12 @@
             <h3>Siglen der Drucke</h3>
             <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise die durch die WA eingeführte Sigle.</p>
 
-            <p>
-              <a href="K_Angewandte_Verfahren.php">Angewandte Verfahren</a><br>
-              <a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a><br>
-              <a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a><br>
-              <a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a><br>
-            </p>
+        <ul>
+            <li><a href="K_Angewandte_Verfahren.php">Angewandte Verfahren</a></li>
+            <li><a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a></li>
+            <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>
+            <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>
+        </ul>
 
             <h2>Zitierempfehlung</h2>
             <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
