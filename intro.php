@@ -133,17 +133,19 @@
             von Erich Schmidt durch Hinzufügung von Siglen in dieses System integriert. Um alle ihm
             noch unbekannten oder aus anderen Gründen nicht siglierten Handschriften mit einer
             eindeutigen Kurzbezeichnung versehen zu können, ist ein Teil der Siglen Erich Schmidts
-            wie auch der späteren Faust-Forschung ersetzt worden. </p>
-        <p>Vor allem die von Schmidt für die auswärtigen Handschriften eingeführte alphabetische
-            Siglierung ließ sich nicht so fortsetzen, dass dabei das Prinzip der Texterstreckung
-            hätte aufrechterhalten lassen. Alle betreffenden Handschriften sind in die Reihe der
-            numerisch siglierten Handschriften eingefügt worden, beginnend mit I&nbsp;H.0d für
-            I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg
-            (faust://bibliography/fischer-lamberg1955) verfahren. </p>
-        <p>Einige der von Schmidt unter einer gemeinsamen Sigle zusammengefassten Handschriften
-            liegen unter verschiedenen Archivsignaturen oder sogar an verschiedenen
-            Aufbewahrungsorten. Um einzelne archivalische Objekte identifizierbar zu machen, wurden
-            die betreffenden Siglen mit einem Zusatz erweitert. </p>
+            wie auch der späteren Faust-Forschung ersetzt worden:</p>
+        <ol>
+            <li>Vor allem die von Schmidt für die auswärtigen Handschriften eingeführte
+                alphabetische Siglierung ließ sich nicht so fortsetzen, dass dabei das Prinzip der
+                Texterstreckung hätte aufrechterhalten lassen. Alle betreffenden Handschriften sind
+                in die Reihe der numerisch siglierten Handschriften eingefügt worden, beginnend mit
+                I&nbsp;H.0d für I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg
+                (faust://bibliography/fischer-lamberg1955) verfahren.</li>
+            <li>Einige der von Schmidt unter einer gemeinsamen Sigle zusammengefassten Handschriften
+                liegen unter verschiedenen Archivsignaturen oder sogar an verschiedenen
+                Aufbewahrungsorten. Um einzelne archivalische Objekte identifizierbar zu machen,
+                wurden die betreffenden Siglen mit einem Zusatz erweitert.</li>
+        </ol>
 
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
