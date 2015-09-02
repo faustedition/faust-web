@@ -146,6 +146,9 @@
                 Aufbewahrungsorten. Um einzelne archivalische Objekte identifizierbar zu machen,
                 wurden die betreffenden Siglen mit einem Zusatz erweitert.</li>
         </ol>
+        <p>Die von Erich Schmidt eingeführten numerischen Siglen blieben dagegen auch dann erhalten,
+            wenn sie gegen das sonst geltende Prinzip der Texterstreckung verstoßen (z.B.
+            II&nbsp;H.74).</p>
 
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
