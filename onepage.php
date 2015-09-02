@@ -10,10 +10,9 @@
 	   Jeweils nur der Inhalt der ersten <section>.
 	*/
 	var pages = [
-		"project.php",
-		"transcription_guidelines.php",
-		"geneticBarGraphInfo.php",
+		"intro.php",
 		"metadata.php",
+		"transcription_guidelines.php",
 		"multispectral_imaging.php",
 		"x-ray_spectrometry.php",
 		],
