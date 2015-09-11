@@ -164,7 +164,7 @@
         <h2 id="cite">Zitierempfehlung</h2> <?php // NOTE: see links in imprint.php ?>
         <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
 
-        <h2 id="updates">Updates</h2> <?php // NOTE: see links in imprint.php ?>
+        <h2 id="updates">Updates</h2> <?php // NOTE: see links in index.php and imprint.php ?>
         <p class="pure-fade-50">[Download aller verfügbaren Versionen der Ausgabe (oder Teilen
             davon)]</p>
 
