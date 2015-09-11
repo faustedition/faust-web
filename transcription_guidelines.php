@@ -8,7 +8,7 @@
             auf eine dokumentarische Wiedergabe oder auf eine textuelle Deutung der
             handschriftlichen Verhältnisse zielen. In der jeweiligen Standardansicht gelten die
             folgenden Bestimmungen: </p>
-        <h3><strong>Allgemein</strong></h3>
+        <h2>Allgemein</h2>
         <p>Die Handschriften und Drucke werden zeichengetreu wiedergegeben.</p>
         <p>I und J sind in der deutschen Schrift nicht unterschieden. In der Transkription wird die
             Unterscheidung zwischen I und J gemäß Lautwert eingeführt. Die Unterscheidung zwischen i
@@ -21,8 +21,8 @@
             Zeichen und Wörter werden nicht ergänzt.</p>
         <p>Editorische Ergänzungen sind mit eckigen Klammern gekennzeichnet. Vgl. im Einzelnen die
             Abschnitte zur Transkription der Handschriften und Drucke.</p>
-        <h3><strong>Wiedergabe von Handschriften</strong></h3>
-        <h4><strong>Allgemeine Prinzipien der Handschriftenwiedergabe</strong></h4>
+        <h2>Wiedergabe von Handschriften</h2>
+        <h3>Allgemeine Prinzipien der Handschriftenwiedergabe</h3>
         <p>Die Überlieferung zu Goethes ‚Faust‘ ist sehr vielfältig: Schemata, Exzerpte, einzelne
             Versentwürfe, eigenhändige Niederschriften ganzer Passagen in Bleistift, Abschriften und
             Diktate, Sammelhandschriften, Munda (Reinschriften sowie zur Weiterarbeit genutzte
@@ -78,7 +78,7 @@
             <li><p>ganze Zeilen sowie Zeilenanfänge oder -enden, die infolge von Beschädigung oder
                 Fragmentierung verloren gegangen sind.</p></li>
         </ul>
-        <h4><strong>Dokumentarische Transkription der Handschriften</strong></h4>
+        <h3>Dokumentarische Transkription der Handschriften</h3>
         <p>Die dokumentarische Transkription gibt die Niederschrift in ihren strukturellen
             räumlichen Relationen wieder. Erfasst und als zusätzliche Information eingeblendet
             werden auch die verschiedenen Arten der Zeichenmanipulation (Unterstreichungen,
@@ -87,7 +87,7 @@
             transkribiert, unabhängig von der Werkzugehörigkeit. Die dokumentarische Transkription
             lässt sich zeilengetreu in die Anzeige der Faksimiles einblenden und ist auch in
             druckfähiger Form abrufbar.</p>
-        <h5><strong>Zeichenwiedergabe</strong></h5>
+        <h4>Zeichenwiedergabe</h4>
         <p>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der lateinischen
             Schrift.</p>
         <p>Fehlende Umlautzeichen werden nicht ergänzt.</p>
@@ -104,7 +104,7 @@
         <p>Markierungen von Abschnitten (z. B. Zwischenstriche, waagerechte geschweifte Klammern)
             werden getreu wiedergegeben. [Auf die Wiedergabe von Randstrichen zur Begrenzung des
             Schriftspiegels wird verzichtet.]</p>
-        <h5><strong>Zeichenmanipulation</strong></h5>
+        <h4>Zeichenmanipulation</h4>
         <p>Alle Streichungen (auch mehrfache, schräge, senkrechte usw.) werden als einfach
             durchgestrichener Text wiedergegeben.</p>
         <p>Von Durchstreichungen zu unterscheiden sind Erledigungsmarkierungen, die verdeutlichen,
@@ -118,7 +118,7 @@
         <p>Radierte und absichtlich verwischte Zeichen erscheinen in Konturschrift. Die Umwandlung
             eines Buchstabens in einen anderen durch Rasur (m→n, ß→ſ u. ä.) wird aber nicht wie eine
             Rasur, sondern als Daraufschreibung behandelt.</p>
-        <h5><strong>Schreiberhand und Schreibmaterial</strong></h5>
+        <h4>Schreiberhand und Schreibmaterial</h4>
         <p>Serifenschrift steht für Eigenhändiges (von Goethe Geschriebenes), Serifenlose für andere
             zeitgenössische Schreiber, Festbreitenschrift für spätere Eintragungen.</p>
         <p>Schwarze Schriftfarbe steht für Tinte, Hellgrau für Bleistift, Dunkelgrau für Kohle,
@@ -133,13 +133,13 @@
             zeitgenösisschen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
-        <h4><strong>Textuelle Transkription der Handschriften</strong></h4>
+        <h3>Textuelle Transkription der Handschriften</h3>
         <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner textspezifischen
             Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
             unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten
             und daneben als letzte abhebbare Stufe, d.h. des Textes, der sich aus der Niederschrift
             und allen darin vorkommenden Änderungen ergibt.</p>
-        <h4>Darstellung der innerhandschriftlichen Varianten</h4>
+        <h3>Darstellung der innerhandschriftlichen Varianten</h3>
         <p>Für die Darstellung innerhandschriftlicher Varianten existiert in gedruckten Ausgaben
             bereits eine Vielfalt von Apparatformen. Die Entwicklung von entsprechenden
             Darstellungsformen im digitalen Medium steht dagegen noch in den Anfängen. Der in der
@@ -190,7 +190,7 @@
             <li>Für vorgeschlagene Änderungen wurde nicht nur die Form der Ersetzung gebraucht,
                 sondern auch Hinzufügung und Tilgung.</li>
         </ol>
-        <h4>Darstellung der innerhandschriftlichen Varianten letzten abhebbaren Stufe</h4>
+        <h3>Darstellung der innerhandschriftlichen Varianten letzten abhebbaren Stufe</h3>
         <p>Die letzte abhebbare Stufe ist der Text, der sich aus der Niederschrift und allen darin
             vorkommenden Änderungen ergibt. Für die Darstellung dieses Textes gelten folgende
             besonderen Regeln:</p>
@@ -204,15 +204,15 @@
             <li>Geminationsstriche über n und m (n̄, m̄) und weiteren Buchstaben werden zu nn, mm
                 usw. aufgelöst.</li>
         </ul>
-        <h3><strong>Wiedergabe von Drucken</strong></h3>
+        <h2>Wiedergabe von Drucken</h2>
         <p>Die Transkription der Drucke wird in einer Form angeboten, die der textuellen
             Transkription der Handschriften im Wesentlichen entspricht. Vom typographischen
             Erscheinungsbild der einzelnen Drucke wird abstrahiert. Satzfehler bleiben gewahrt.
             Editorisch ergänzt werden diejenigen Zeichen, die durch mechanische Einflüsse des
             Druckvorgangs (z. B. geschwundene oder verschmutzte Lettern), Fehlstellen im Papier o.
             Ä. verlorengegangen oder unlesbar sind.</p>
-        <p><strong>XML-Kodierung</strong></p>
-        <p><strong>Zeichen und Differenzierungen in den XML-Transkriptionen</strong></p>
+        <p>XML-Kodierung</p>
+        <p>Zeichen und Differenzierungen in den XML-Transkriptionen</p>
         <p>Die genannten Zeichen und Differenzierungen, auf deren Wiedergabe in den für den Nutzer
             sichtbaren Transkriptionen verzichtet wird, sind in den XML-kodierten Basisdaten der
             Transkriptionen erhalten.<br/>[ausführlicher Text folgt noch]</p>
