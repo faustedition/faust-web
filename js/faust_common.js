@@ -143,6 +143,9 @@ var Faust = (function(){
             result[name] = value;
           });
         }
+        if (window.location.hash) {
+          result['#'] = window.location.hash.substr(1);
+        }
         return result;
       };
     })();

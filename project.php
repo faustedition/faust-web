@@ -2,35 +2,11 @@
       <section class="center pure-g-r">
         <article class="pure-u-1">
             <h1>Die Ausgabe</h1>
-            <p>Die digitale Faust-Edition besteht aus einem <a href="archives.php">Archiv</a> der Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a href="print/faust1.html">‚Faust II‘</a> sowie Visualisierungen zur <a href="chessboard_overview.php">Genese</a> des Werks.</p>
             <p>Die Ausgabe basiert auf dem von der Deutschen Forschungsgemeinschaft geförderten Projekt ‚Historisch-kritische Edition von Goethes Faust‘ (2009–2015), das von Anne Bohnenkamp (Freies Deutsches Hochstift, Frankfurt am Main), Silke Henke (Goethe- und Schiller-Archiv, Weimar) und Fotis Jannidis (Julius-Maximilians-Universität Würzburg) geleitet wurde. An der Edition mitgearbeitet haben Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.</p>
-            <p>Die digitale Faust-Edition ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
-            <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet. Erhalten ist ein umfangreicher Bestand an Handschriften, die von etwa 1774 bis 1831 reichen. 1790 erschien ‚Faust. Ein Fragment‘ im Druck. Zu einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod.</p>
 
 
-            <h2>Handschriften</h2>
-            <p>Die erhaltenen Handschriften bestehen aus Notizen, Entwürfen zu einzelnen Szenen und Versgruppen, Arbeitshandschriften, vorläufigen und überarbeiteten Reinschriften sowie Druckvorlagen. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus der Zeit seit der Wiederaufnahme der Arbeit am ‚Faust‘ im Jahr 1825. Der weitaus umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv (GSA). Der Bestand des GSA umfasst 429 Archivalieneinheiten mit insgesamt 1639 beschriebenen Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen, Frankreich, Italien und in den Vereinigten Staaten.</p>
-            <p>Das <a href="archives.php">digitale Archiv</a> macht die gesamte relevante Überlieferung des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter, Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit einer detaillierten Beschreibung versehen (<a href="metadata_info.php">Metadaten</a>).</p>
-            <p>Den Abbildungen stehen zwei Transkriptionen zur Seite, die <a href="transcription_guidelines.php#dok_Transkr_Hss">dokumentarische</a> und die <a href="transcription_guidelines.php#txt_Transkr_Hss">textuelle</a>. Die dokumentarische Transkription gibt die Niederschrift in ihren räumlichen Verhältnissen genau wieder. Sie dient der Erschließung der oftmals schwer entzifferbaren Handschriften. Die textuelle Transkription abstrahiert vom Erscheinungsbild der Handschriften und gibt den Text einer Handschrift wieder.</p>
 
-
-            <h2>Lesetext</h2>
-            <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ I ist dies der Druck im achten Band der ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des ‚Faust II‘ liegt die 187 Blätter umfassende sogenannte große Reinschrift zugrunde (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien wie bei den <a href="transcription_guidelines.php#txt_Transkr_Hss">textuellen Transkriptionen</a>. Im Unterschied zu den übrigen Textwiedergaben sind die Seitengrenzen der Vorlage im Lesetext nicht markiert.</p>
-            <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung. Durch Anklicken der einzelnen Zeilen können alle überlieferten Fassungen eines Verses, einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in zeilensynoptischer Anordnungen aufgerufen werden. Die Sigle am rechten Rand führt zur Einzeldarstellung des Zeugen im digitalen Archiv.</p>
-
-
-            <h2>Siglen</h2>
-            <p>Verwendung findet die jeweils gebräuchlichste Sigle. Im Fall der Handschriften ist dies die von Erich Schmidt, dem Herausgeber des ‚Faust‘ in den Bänden 14 und 15 der Weimarer Ausgabe (WA), eingeführte Sigle. Tragen Handschriften dort keine Sigle, treten die von der späteren Faust-Forschung vergebenen Bezeichnungen ein. Fehlen auch diese, so wird auf andere editorische Siglen oder die Archivsignatur zurückgegriffen. Drucke erhalten die durch Waltraud Hagen, ersatzweise die durch die WA eingeführten Siglen.</p>
-            <p>&nbsp;</p>
-            <p>
-              <a href="K_Angewandte_Verfahren.php">Angewandte Verfahren</a><br>
-              <a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a><br>
-              <a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a><br>
-              <a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a><br>
-            </p>
-            <p>&nbsp;</p>
-
-            <h2>Projektleitung und -mitarbeiter</h2>
+            <h1>Projektleitung und -mitarbeiter</h2>
 
         <div class="pure-u-1-2 pure-gap">
                     <h3>Projektleitung</h3>
@@ -107,12 +83,6 @@
                       Anna Sievert, Marie Vorländer
                     </p>
         </div>
-
-            <h2>Zitierempfehlung</h2>
-            <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
-
-            <h2 id="updates">Updates</h2>
-            <p class="pure-fade-50">[Download aller verfügbaren Versionen der Ausgabe (oder Teilen davon)]</p>
 
       </article>
       </section>

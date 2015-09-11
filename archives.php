@@ -201,7 +201,8 @@
               // handle print witnesses
               if(tableElementData.isPrint) {
                 var textTranscriptName = metadata.text.substr(0, metadata.text.lastIndexOf("."));
-                tableElementData.printResourceName = {"A8_IIIB18": "A8_IIIB18.all.html", "B9_IIIB20-2": "B9_IIIB20-2.all.html", "Ba9_A101286": "Ba9_A101286.all.html", "C(1)12_IIIB23-1": "C(1)12_IIIB23-1.all.html", "C(1)4_IIIB24": "C(1)4_IIIB24.html", "C(2a)4_IIIB28": "C(2a)4_IIIB28.html", "C(3)12_IIIB27": "C(3)12_IIIB27.all.html", "C(3)4_IIIB27_chartUngleich": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.all.html", "D(1)_IV3-1": "D(1)_IV3-1.all.html", "D(2)_IV3-6": "D(2)_IV3-6.all.html", "GSA_30-447-1_S_214-217": "GSA_30-447-1_S_214-217.html", "GSA_32_1420": "GSA_32_1420.html", "J_XIIA149-1808": "J_XIIA149-1808.html", "KuA_IIIE43-5-1": "KuA_IIIE43-5-1.html", "S(o)_IIIB11-2": "S(o)_IIIB11-2.all.html"}[textTranscriptName];
+                // XXX this shouldn't be hard-coded
+                tableElementData.printResourceName = {"A8_IIIB18": "A8_IIIB18.html", "B9_IIIB20-2": "B9_IIIB20-2.html", "Ba9_A101286": "Ba9_A101286.html", "C(1)12_IIIB23-1": "C(1)12_IIIB23-1.html", "C(1)4_IIIB24": "C(1)4_IIIB24.html", "C(2a)4_IIIB28": "C(2a)4_IIIB28.html", "C(3)12_IIIB27": "C(3)12_IIIB27.html", "C(3)4_IIIB27_chartUngleich": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)_IV3-1": "D(1)_IV3-1.html", "D(2)_IV3-6": "D(2)_IV3-6.html", "GSA_30-447-1_S_214-217": "GSA_30-447-1_S_214-217.html", "GSA_32_1420": "GSA_32_1420.html", "J_XIIA149-1808": "J_XIIA149-1808.html", "KuA_IIIE43-5-1": "KuA_IIIE43-5-1.html", "S(o)_IIIB11-2": "S(o)_IIIB11-2.html"}[textTranscriptName];
               }
               return tableElementData;
             };
@@ -452,9 +453,13 @@
               document.getElementById('concordance-table-container').style.display = 'none';
               document.getElementById('print-container').style.display = 'block';
             }
+
+            history.replaceState(history.state, undefined, window.location.pathname + "?view=" + newView);
+
           }
 
-          setActiveView("manuscript-concordance");
+          var params = Faust.url.getParameters();
+          setActiveView(params.view? params.view : "manuscript-concordance");
         </script>
 
 

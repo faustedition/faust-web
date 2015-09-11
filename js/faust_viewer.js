@@ -107,6 +107,7 @@ var createDocumentViewer = (function(){
           faustDocumentsMetadata.metadata.forEach(function(currentMetadata){
             if(currentMetadata.document === relativeFaustUri) {
               doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
+              doc.faustMetadata = currentMetadata;
               doc.pageCount = doc.metadata.pageCount;
             }
           });
@@ -169,8 +170,7 @@ var createDocumentViewer = (function(){
         };
       })();
 
-      var documentXmlMetadataLoaded = (function(){
-        return function(documentXmlMetadata) {
+      var documentXmlMetadataLoaded = function(documentXmlMetadata) {
           var lockedPages;
 
           // create elements for previews
@@ -206,8 +206,12 @@ var createDocumentViewer = (function(){
           structureSvgDiv.appendChild(structureSvg);
 
           // create dom elements for metadata display
-          var metadataTextContent = metadataText.transformXml(documentXmlMetadata);
-          var metadataDiv = Faust.dom.createElement({name: "div", id: "metadataDiv", class: "metadata-div", children: [metadataTextContent]});
+          var metadataDiv = Faust.dom.createElement({name: "div", id: "metadataDiv", class: "metadata-div"});
+          var baseName = doc.metadata.documentUri.replace(/^.*\/(\S+)\.xml/, '$1');
+          Faust.xhr.getResponseText("metadata/" + baseName + '.html', function(documentHtml) {
+            metadataDiv.innerHTML = documentHtml;
+            metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
+          }); 
 
           // function used to get preview images. this function is used so that images once loaded
           // will be buffered so that images are downloaded once and only once (chrome would buffer
@@ -358,7 +362,9 @@ var createDocumentViewer = (function(){
           // set current active page on structure view
           structureSvg.setLockedGroup(state.page);
 
-          metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
+          // XXX Was soll DAS HIER???
+          // Es bewirkt offenbar die Scrollbarkeit, aber wieso?
+          // metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
           structureDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
           window.addEventListener("resize", function() {
             metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
@@ -366,7 +372,6 @@ var createDocumentViewer = (function(){
           });
 
         };
-      })();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -530,7 +535,11 @@ var createDocumentViewer = (function(){
 
           // remove all breadcrumbs (if exist)
           Faust.dom.removeAllChildren(breadcrumbs);
-          breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: doc.sigil}]));
+          var repository = doc.faustMetadata.sigils.repository;
+          breadcrumbs.appendChild(Faust.createBreadcrumbs([
+            {caption: "Archiv", link: "archives.php"}, 
+            {caption: archives[repository].name, link: "archiveDetail.php?archiveId=" + repository},
+            {caption: doc.sigil}]));
 
           // get information about scene that contains current page
           sceneData = getSceneData(doc.faustUri, pageNum);
@@ -540,9 +549,9 @@ var createDocumentViewer = (function(){
             breadcrumbs.appendChild(document.createElement("br"));
 
             if(sceneData.id.split(".")[0] === "1") {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             } else {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese (Übersicht)", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             }
           }
 

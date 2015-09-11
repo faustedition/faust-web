@@ -26,6 +26,7 @@ var createPrintDiv = (function() {
       });
 
       // if multiple generates exists, load the combined html file
+      // XXX why?
       if(splitted) {
         printFilename = printFilename.replace(/(\.\d+)?\.html$/, ".all.html");
       }
