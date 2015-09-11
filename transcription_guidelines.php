@@ -3,7 +3,7 @@
     
     <article class="pure-u-1">
         
-        <h2><strong>Transkriptionsprinzipien</strong></h2>
+        <h1>Transkriptionsprinzipien</h1>
         <p>Die Transkription der Handschriften wird in verschiedenen Formen angeboten, die entweder
             auf eine dokumentarische Wiedergabe oder auf eine textuelle Deutung der
             handschriftlichen Verhältnisse zielen. In der jeweiligen Standardansicht gelten die
