@@ -88,6 +88,10 @@ footer a {
   text-decoration: none;
 }
 
+footer img[align="middle"] {
+  margin-top:-0.75em;
+}
+
 /* styling for navigation bar */
 .navigation-bar-container {
   position: fixed;
