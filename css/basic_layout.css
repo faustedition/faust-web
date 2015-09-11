@@ -1,9 +1,4 @@
 @font-face {
-  font-family: Ubuntu;
-  src: url(../fonts/Ubuntu-R.ttf) format("truetype");
-}
-
-@font-face {
   font-family: Symbola;
   src: url(../fonts/Symbola.ttf) format("truetype");
 }
@@ -165,7 +160,7 @@ p.para-start { margin-top: 1em; }
 }
 
 .print-center-column, .print-side-column {
-  font: 14px/1.5em "Ubuntu",Arial,Helvetica,sans-serif;
+  font-size: 14px;
   display: inline-block;
   letter-spacing: normal;
   word-spacing: normal;
