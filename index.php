@@ -30,7 +30,7 @@
 
         <div class="pure-u-1-3 pure-center">
 
-          <p><a href="project.php#updates">Updates</a></p>
+          <p><a href="intro.php#updates">Updates</a></p>
 
         </div>
 

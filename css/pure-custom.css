@@ -33,6 +33,7 @@ input:-ms-input-placeholder {color:rgb(221,221,221);} /* IE 10 */
 .pure-button {border-radius:4px;}
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {background-color:rgba(0,0,0,0.8); color:rgb(230, 230, 230);}
 
+.pure-g-r [class*="pure-u"] {font-family:"Ubuntu", Arial, Helvetica, sans-serif;}
 .pure-g-r [class*="pure-u"] [class*="pure-u"] + [class*="pure-u"] {margin-left:-.31em;} /* avoid whitespace between nested grid elements */
 .pure-g-r .pure-gap:first-of-type {padding-right:1em;}
 .pure-g-r .pure-gap ~ .pure-gap {padding:0 1em;}

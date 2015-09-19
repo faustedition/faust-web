@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400; /* regular */
+  src: url(../webfonts/ubuntu-regular-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntu-regular-webfont.woff) format('woff'),
+       url(../webfonts/ubuntu-regular-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400; /* regular */
+  src: url(../webfonts/ubuntu-italic-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntu-italic-webfont.woff) format('woff'),
+       url(../webfonts/ubuntu-italic-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: url(../webfonts/ubuntu-bold-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntu-bold-webfont.woff) format('woff'),
+       url(../webfonts/ubuntu-bold-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700; /* bold */
+  src: url(../webfonts/ubuntu-bolditalic-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntu-bolditalic-webfont.woff) format('woff'),
+       url(../webfonts/ubuntu-bolditalic-webfont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400; /* regular */
+  src: url(../webfonts/ubuntumono-regular-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntumono-regular-webfont.woff) format('woff'),
+       url(../webfonts/ubuntumono-regular-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: 400; /* regular */
+  src: url(../webfonts/ubuntumono-italic-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntumono-italic-webfont.woff) format('woff'),
+       url(../webfonts/ubuntumono-italic-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: url(../webfonts/ubuntumono-bold-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntumono-bold-webfont.woff) format('woff'),
+       url(../webfonts/ubuntumono-bold-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: 700; /* bold */
+  src: url(../webfonts/ubuntumono-bolditalic-webfont.woff2) format('woff2'),
+       url(../webfonts/ubuntumono-bolditalic-webfont.woff) format('woff'),
+       url(../webfonts/ubuntumono-bolditalic-webfont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../webfonts/fontawesome-webfont.woff2?v=4.4.0) format('woff2'),
+       url(../webfonts/fontawesome-webfont.woff?v=4.4.0) format('woff'),
+       url(../webfonts/fontawesome-webfont.ttf?v=4.4.0) format('truetype');
+}

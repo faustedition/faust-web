@@ -5,9 +5,6 @@
             <p>Die Ausgabe basiert auf dem von der Deutschen Forschungsgemeinschaft geförderten Projekt ‚Historisch-kritische Edition von Goethes Faust‘ (2009–2015), das von Anne Bohnenkamp (Freies Deutsches Hochstift, Frankfurt am Main), Silke Henke (Goethe- und Schiller-Archiv, Weimar) und Fotis Jannidis (Julius-Maximilians-Universität Würzburg) geleitet wurde. An der Edition mitgearbeitet haben Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.</p>
 
 
-
-            <h1>Projektleitung und -mitarbeiter</h2>
-
         <div class="pure-u-1-2 pure-gap">
                     <h3>Projektleitung</h3>
                     <p>

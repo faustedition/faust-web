@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/document-transcript.css">
     <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
     <link rel="stylesheet" href="css/document-transcript-interaction.css">
+    <link rel="stylesheet" href="css/webfonts.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
