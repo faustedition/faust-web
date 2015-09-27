@@ -52,9 +52,55 @@ def write_sigils_table(options):
                 options.excel_file, options.excel_sheet)
     df.to_excel(options.excel_file, sheet_name=options.excel_sheet)
 
+def write_new_sigils(options):
+    sheet = int(options.excel_sheet) \
+        if options.excel_sheet.isnumeric() else options.excel_sheet
+    df = pd.read_excel(options.excel_file, sheet, index_col=0, na_values=['?'])
+
+    for uri in df.index:
+        filename = os.path.join(options.directory, uri[12:])
+        newsigil = df.at[uri, options.column_name]
+        logger.debug('Will add %s to %s ...', newsigil, filename)
+        if not(newsigil) or not(isinstance(newsigil, str)):
+            logger.warn('%s: No valid sigil: %s', uri, newsigil)
+            continue
+        meta = etree.parse(filename)
+        exsigil = meta.xpath('//f:idno[@type="%s"]' % options.idno_type, namespaces=NS)
+        if exsigil:
+            if exsigil[0].text == newsigil:
+                logger.info('%s: idno %s already present.', uri, newsigil)
+                continue
+            elif options.overwrite_sigils:
+                logger.warn('%s: Replacing sigil "%s" with "%s"', uri,
+                            exsigil[0].text, newsigil)
+                exsigil[0].text = newsigil
+            else:
+                logger.error('%s: Refusing to replace sigil "%s" with "%s"',
+                             uri, exsigil[0].text, newsigil)
+                continue
+        else:
+            idnos = meta.xpath('/*/f:metadata/f:idno', namespaces=NS)
+            if idnos:
+                parent = idnos[0].getparent()
+                position = parent.index(idnos[0])
+                tail = idnos[0].tail
+            else:
+                parent = meta.xpath('/*/f:metadata', namespaces=NS)[0]
+                position = 0
+                tail = '\n   '
+            idno = parent.makeelement('idno',
+                                      attrib={'type': options.idno_type},
+                                      nsmap=NS)
+            idno.text = newsigil
+            idno.tail = tail
+            parent.insert(position, idno)
+            logger.info('%s: Added sigil %s', uri, newsigil)
+        meta.write(filename, encoding='utf-8')
+
+
 def get_argparser():
     parser = argparse.ArgumentParser(description='Tool to deal with the new sigils')
-    parser.add_argument('-d', '--directory', default='/home/tv/Faust',
+    parser.add_argument('-d', '--directory', default='.',
                         help='Source directory for XML files')
     parser.add_argument('-x', '--excel-file', default='sigils.xlsx',
                         help='Excel file for sigil maintenance')
@@ -64,6 +110,10 @@ def get_argparser():
                         help='Column label for the new sigil column')
     parser.add_argument('-w', '--write-sigils', action='store_true',
                         help='Write mode: Write sigils from table to metadata')
+    parser.add_argument('-W', '--overwrite-sigils', action='store_true',
+                        help='Overwrite existing sigils')
+    parser.add_argument('-i', '--idno-type', default='faustedition',
+                        help='Sigil type for new sigil')
     parser.add_argument('-v', '--verbose', action='count', default=0,
                         help='increase verbosity')
     parser.add_argument('-q', '--quiet', action='count', default=0,
@@ -77,7 +127,7 @@ def main():
                     + (10*options.quiet))
     logger.debug("Options: %s", options)
     if options.write_sigils:
-        logger.critical('Metadata writing is not implemented yet')
+        write_new_sigils(options)
     else:
         write_sigils_table(options)
 
