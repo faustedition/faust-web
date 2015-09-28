@@ -76,7 +76,7 @@
                       Eva Arnold, Chris Bethe,<br>
                       Melanie Blaschko, Michael Huber,<br>
                       Charlotte Köhler, Julia Kockel,<br>
-                      Susanne Mohr, Katharina Donata Ritter,<br>
+                      Susanne Mohr, Katharina Ritter,<br>
                       Anna Sievert, Marie Vorländer
                     </p>
         </div>
