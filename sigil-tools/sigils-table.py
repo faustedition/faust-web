@@ -7,7 +7,8 @@ import pandas as pd
 import argparse
 import sys
 import logging
-logging.basicConfig(level=logging.WARNING)
+logging.basicConfig(level=logging.WARNING,
+                    format='%(levelname)s:%(funcName)s:%(message)s')
 logger = logging.getLogger(__name__ if __name__ != '__main__' else sys.argv[0])
 
 NS={"f": "http://www.faustedition.net/ns", "tei": "http://www.tei-c.org/ns/1.0"}
@@ -48,9 +49,13 @@ def write_sigils_table(options):
 
     df.index.name = 'URI'
     logger.debug(df.describe())
-    logger.info('Writing %d records to excel file %s, sheet %s', len(df),
-                options.excel_file, options.excel_sheet)
-    df.to_excel(options.excel_file, sheet_name=options.excel_sheet)
+    if len(df) == 0:
+        logger.error('No Faust data found at %s, not writing %s',
+                     options.directory, options.excel_file)
+    else:
+        logger.info('Writing %d records to excel file %s, sheet %s', len(df),
+                    options.excel_file, options.excel_sheet)
+        df.to_excel(options.excel_file, sheet_name=options.excel_sheet)
 
 def write_new_sigils(options):
     sheet = int(options.excel_sheet) \
