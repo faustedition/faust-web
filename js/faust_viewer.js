@@ -34,7 +34,8 @@ var createDocumentViewer = (function(){
         pageCount: null,
         pages: [],
         textTranscript: null,
-        structure: undefined
+        structure: undefined,
+        sections: {}
       };
 
       // container holding references to each available view / div
@@ -382,39 +383,6 @@ var createDocumentViewer = (function(){
           var loadedDocs = {};
           var prevPage = pageNum;
 
-          if(doc.printLinks !== undefined) {
-            // try to load documents if pageNum / filename mappings were already loaded
-            loadDocs(pageNum); 
-          } else {
-            // otherwise get json file with page / filename mappings
-            Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
-              var pages, filename;
-              // parse json file ...
-              pages = JSON.parse(pagesJson);
-              // ... and extract information for current witness
-              printLinks = pages[doc.faustUri];
-
-              filename = printLinks[pageNum];
-              while (!filename && prevPage >= 0) {
-                prevPage = prevPage - 1;
-                filename = printLinks[prevPage];
-              }
-              if (!filename) { // FIXME obsolete when default === 0
-                filename = printLinks['default'];
-              }
-              if (state.section) {
-                if (state.section === filename) {
-                  state.section = undefined; // it's the default
-                } else {
-                  filename = state.section;
-                }
-              }
-              
-              // try to load document for current page
-              loadDocs(filename);
-            });
-          }
-          
           // load actual transcript html files
           var loadDocs = function(filename) {
             // if no html files are associated, return undefined
@@ -438,6 +406,50 @@ var createDocumentViewer = (function(){
             }
           };
 
+          // finds the section filename for the given pageNum. Requires doc.printLinks
+          var findSection = function findSection(pageNum) {
+              var printLinks = doc.printLinks,
+                  filename = printLinks[pageNum],
+                  prevPage = pageNum;
+
+              // no reference for pageNum? Look for smaller page numbers ...
+              while (!filename && prevPage >= 0) {
+                prevPage = prevPage - 1;
+                filename = printLinks[prevPage];
+              }
+              if (!filename) { // FIXME obsolete when default === 0
+                filename = printLinks['default'];
+              }
+
+              // now, a section parameter may override our choice.
+              if (state.section) {
+                if (state.section === filename) {
+                  state.section = undefined; // it's the default
+                } else {
+                  filename = state.section;
+                }
+              }
+              return filename;
+          }
+
+
+          if(doc.printLinks !== undefined) {
+            // try to load documents if pageNum / filename mappings were already loaded
+            loadDocs(findSection(pageNum)); 
+          } else {
+            // otherwise get json file with page / filename mappings
+            Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
+              var pages, filename;
+              // parse json file ...
+              pages = JSON.parse(pagesJson);
+              // ... and extract information for current witness
+              doc.printLinks = pages[doc.faustUri];
+              //
+              // try to load document for current page
+              loadDocs(findSection(pageNum));
+            });
+          }
+          
           // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
           var createPrintDiv = function(printString) {
             // create container element for the text and add print class to it
