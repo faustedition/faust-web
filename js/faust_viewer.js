@@ -380,10 +380,11 @@ var createDocumentViewer = (function(){
         return function(pageNum, callback) {
           var printLinks;
           var loadedDocs = {};
+          var prevPage = pageNum;
 
           if(doc.printLinks !== undefined) {
             // try to load documents if pageNum / filename mappings were already loaded
-            loadDocs(pageNum); // XXX? There's no handling for this!?
+            loadDocs(pageNum); 
           } else {
             // otherwise get json file with page / filename mappings
             Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
@@ -394,6 +395,13 @@ var createDocumentViewer = (function(){
               printLinks = pages[doc.faustUri];
 
               filename = printLinks[pageNum];
+              while (!filename && prevPage >= 0) {
+                prevPage = prevPage - 1;
+                filename = printLinks[prevPage];
+              }
+              if (!filename) { // FIXME obsolete when default === 0
+                filename = printLinks['default'];
+              }
               if (state.section) {
                 if (state.section === filename) {
                   state.section = undefined; // it's the default
