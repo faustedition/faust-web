@@ -737,7 +737,7 @@ var createDocumentViewer = (function(){
 
             loadTextTranscript(pageNum, function(text) {
               if(text !== undefined) {
-                var appText = text.app.cloneNode(true);
+                var appText = text.app; // .cloneNode(true);
                 currentPage.document_text.textContainer.appendChild(appText);
                 addPrintInteraction("", appText);
                 if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
@@ -772,7 +772,7 @@ var createDocumentViewer = (function(){
 
             loadTextTranscript(pageNum, function(text) {
               if(text !== undefined) {
-                var appText = text.app.cloneNode(true);
+                var appText = text.app; //.cloneNode(true);
                 currentPage.textTranscript.appendChild(appText);
                 addPrintInteraction("", appText);
                 if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
@@ -805,7 +805,7 @@ var createDocumentViewer = (function(){
 
             loadTextTranscript(pageNum, function(text) {
               if(text !== undefined) {
-                var printText = text.print.cloneNode(true);
+                var printText = text.print; // .cloneNode(true);
                 currentPage.print.appendChild(printText);
                 addPrintInteraction("", printText);
                 if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
