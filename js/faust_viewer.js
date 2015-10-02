@@ -601,6 +601,7 @@ var createDocumentViewer = (function(){
             domContainer.docTranscript.appendChild(currentPage.docTranscript);
           }
 
+          // ############## Facsimile View
           if(currentPage.facsimile === null) {
             currentMetadata = doc.metadata.pages[pageNum - 1];
 
@@ -640,6 +641,7 @@ var createDocumentViewer = (function(){
             currentPage.facsimile.setScale(state.scale);
           }
 
+          // ######### Facsimile | Documentary Transcript parallel view
           if(currentPage.facsimile_document === null) {
             var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div"});
             var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
@@ -708,12 +710,13 @@ var createDocumentViewer = (function(){
             domContainer.facsimile_document.appendChild(currentPage.facsimile_document);
           }
 
+          // ############ Document Transcript | Textual Transcript (Apparatus) parallel view
           if(currentPage.document_text === null) {
 
 
-            var documentTextContainer = Faust.dom.createElement({name: "div"});
-            var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer});
-            var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer});
+            var documentTextContainer = Faust.dom.createElement({name: "div", class: "dbg-documentTextContainer"});
+            var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-documentContainer'});
+            var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-textContainer'});
 
             documentTextContainer.style.height = "100%";
             documentTextContainer.style.padding = "0px";
@@ -747,8 +750,9 @@ var createDocumentViewer = (function(){
               transcriptTooltips(documentContainer);
             });
 
+            // load app into textual view of the doc|text parallel view
             loadTextTranscript(pageNum, function(text) {
-              if(text !== undefined) {
+              if(text !== undefined) {  // textual transcript has been found
                 var appText = text.app; // .cloneNode(true);
                 currentPage.document_text.textContainer.appendChild(appText);
                 addPrintInteraction("", appText);
@@ -760,17 +764,21 @@ var createDocumentViewer = (function(){
               }
             });
 
-          } else {
+          } else {  // currentPage.documentText !== null, i.e. parallel view already initialized
             Faust.dom.removeAllChildren(domContainer.document_text);
             domContainer.document_text.appendChild(currentPage.document_text);
+            // FIXME this doesn't handle when we switch pages across document boundaries, does it?
             if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
               domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
             }
           }
 
 
+          // ############## Textual Transcript (app) single view
           if(currentPage.textTranscript === null) {
-            // XXX do we have a _different_ tTC for each page?
+            // should we rather reuse the whole container document for the
+            // page? Ideally, we wouldn't redraw the page on a switch to a new
+            // page that is already displayed.
             var textTranscriptContainer = Faust.dom.createElement({name: "div"});
 
             textTranscriptContainer.style.width = "100%";
@@ -794,7 +802,8 @@ var createDocumentViewer = (function(){
                 currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
               }
             });
-          } else {
+          } else { // currentPage.textTranscript !== null
+            // TODO check whether we're already on the right section
             Faust.dom.removeAllChildren(domContainer.textTranscript);
             domContainer.textTranscript.appendChild(currentPage.textTranscript);
             if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
@@ -802,7 +811,7 @@ var createDocumentViewer = (function(){
             }
           }
 
-
+          // ############# Print (variant apparatus) single view
           if(currentPage.print === null) {
             var printContainer = Faust.dom.createElement({name: "div"});
 
@@ -823,11 +832,11 @@ var createDocumentViewer = (function(){
                 if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
                   domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
                 }
-              } else {
+              } else { // no textual transcript found
                 currentPage.print.innerHTML = contentHtml.missingTextTranscript;
               }
             });
-          } else {
+          } else { // currentPage.print !== null
             Faust.dom.removeAllChildren(domContainer.print);
             domContainer.print.appendChild(currentPage.print);
             if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
