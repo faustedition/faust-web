@@ -131,6 +131,16 @@ a.sigil {
 	text-align: left;
 }
 
+/*
+ * Tabellen für das tei:table-Element
+ * z.B. (/Germanen/) http://beta.faustedition.net/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_389850.xml&page=1&view=text&section=389850.html
+ */
+table.table {
+	font-size: inherit;
+	border-spacing: 1.5ex 0;
+	border-collapse:  separate;
+}
+
 /* print.html */
 dt {
 	margin-top: 1ex; 
