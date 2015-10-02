@@ -22,7 +22,8 @@ var createDocumentViewer = (function(){
         scale: undefined,
         imageBackgroundZoomLevel: 3,
         showOverlay: true,
-        section: undefined         // opt. file name for textual / apparatus view
+        section: undefined,         // opt. file name for textual / apparatus view
+        fragment: undefined
       };
 
       // allow other objects to listen to events
@@ -40,6 +41,18 @@ var createDocumentViewer = (function(){
 
       // container holding references to each available view / div
       var domContainer = {};
+
+      // updates the adress in the browser bar to a value calculated from state and doc
+      var updateLocation = function updateLocation() {
+        var url = window.location.pathname + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
+        if (state.section) {
+          url += '&section=' + state.section;
+        }
+        if (state.fragment) {
+          url += '#' + state.fragment;
+        }
+        history.replaceState(history.state, null, url);
+      };
 
       // initialisation of viewer component.
       var init = (function(){
@@ -146,6 +159,11 @@ var createDocumentViewer = (function(){
           if(getParameters.view && viewModes.reduce(function(result, view) {if(view === getParameters.view) {result = true;} return result;}, false)) {
             state.view = getParameters.view;
           }
+
+          if (getParameters['#']) {
+            state.fragment = getParameters['#'];
+          }
+
 
           // facsimile and documentary transcript can exist for every page of a witness. set view to
           // current page and try to load related files (if not already done)
@@ -546,7 +564,7 @@ var createDocumentViewer = (function(){
           var sceneData;
 
           // replace window location with current parameters
-          history.replaceState(history.state, null, window.location.pathname + "?faustUri=" + doc.faustUri + "&page=" + pageNum + "&view=" + state.view);
+          updateLocation();
 
           // set breadcrumbs
 
@@ -1165,7 +1183,7 @@ var createDocumentViewer = (function(){
             }
           });
 
-          history.replaceState(history.state, undefined, window.location.pathname + "?faustUri=" + doc.faustUri + "&page=" + state.page + "&view=" + state.view);
+          updateLocation();
 
           events.triggerEvent("viewChanged", state.view);
 
