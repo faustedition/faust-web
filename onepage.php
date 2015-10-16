@@ -15,6 +15,7 @@
 		"transcription_guidelines.php",
 		"multispectral_imaging.php",
 		"x-ray_spectrometry.php",
+		"watermarks.php",
 		],
 		placeholder = document.getElementById('placeholder');
 	pages.forEach(function(page) {

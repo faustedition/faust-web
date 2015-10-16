@@ -37,9 +37,12 @@
 			// add elements from the data-also-highlight attribute to the highlight list
 			var other = hovered.getAttribute("data-also-highlight");
 			if (other) {
+				var container = closest(hovered, /\bprint\b/);
 				var others = other.split(/\s+/).forEach(function(id) {
-					var el = document.getElementById(id);
-					if (el) newHighlight.push(el);
+					var otherEls = container.querySelectorAll('#'+id);
+					for (var i = 0; i < otherEls.length; i++) {
+					  newHighlight.push(otherEls[i]);
+					}
 				});				
 			}			
 			currentHighlight.forEach(removeCurrentClass);
