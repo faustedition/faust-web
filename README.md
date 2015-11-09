@@ -11,11 +11,14 @@ server are required to run them.
 
 ### Diplomatic transcript SVGs
 
-The scripts for generating the diplomatic transcripts are in the subfolder [svg_rendering](svg_rendering). To run them,
+The scripts for generating the diplomatic transcripts are in the subfolder [svg_rendering](svg_rendering). To prepare
 
 * put the Faust XML sources somewhere on the local hard disk
 * configure a local web server such that it serves the [page](svg_rendering/page) subdirectory
 * adapt the paths in <code>settings.json</code>
+
+Then, execute the following steps (or conveniently run [svg_rendering/generate-svgs.sh](svg_rendering/generate-svgs.sh))
+
 * start Chromium in background, using `9222` as debugging port:
 
 ```sh
