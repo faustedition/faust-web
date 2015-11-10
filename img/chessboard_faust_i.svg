@@ -247,16 +247,16 @@
           <rect x="150" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer II"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2073&amp;rangeEnd=2336">
-          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller in Leipzig"></rect>
+          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2337&amp;rangeEnd=2604">
           <rect x="200" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Hexenküche"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2605&amp;rangeEnd=2677">
-          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße. Faust Margarete"></rect>
+          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2678&amp;rangeEnd=2804">
-          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend. Ein kleines reinliches Zimmer"></rect>
+          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2805&amp;rangeEnd=2864">
           <rect x="275" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Spaziergang"></rect>
@@ -265,7 +265,7 @@
           <rect x="300" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Der Nachbarin Haus"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3025&amp;rangeEnd=3072">
-          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße. Faust Mephistopheles"></rect>
+          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3073&amp;rangeEnd=3204">
           <rect x="350" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Garten"></rect>
@@ -289,7 +289,7 @@
           <rect x="500" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zwinger"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3620&amp;rangeEnd=3775">
-          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht. Straße vor Gretchens Türe"></rect>
+          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3776&amp;rangeEnd=3834">
           <rect x="550" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Dom"></rect>
