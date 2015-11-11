@@ -4,18 +4,18 @@
     <![CDATA[
 
       .rowText {
-        font-family: Arial, Helvetica;
+        font-family: Ubuntu;
         font-weight: 400;
-        font-size: 20pt;
+        font-size: 15pt;
         font-style: normal;
         text-anchor: end;
         fill: black;
       }
 
       .columnText {
-        font-family: Arial, Helvetica;
+        font-family: Ubuntu;
         font-weight: 400;
-        font-size: 15pt;
+        font-size: 12pt;
         font-style: normal;
         text-anchor: start;
         fill: black;

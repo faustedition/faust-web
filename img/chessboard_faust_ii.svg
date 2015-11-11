@@ -4,7 +4,7 @@
     <![CDATA[
 
       .rowText {
-        font-family: Arial, Helvetica;
+        font-family: Ubuntu;
         font-weight: 400;
         font-size: 20pt;
         font-style: normal;
@@ -13,7 +13,7 @@
       }
 
       .columnText {
-        font-family: Arial, Helvetica;
+        font-family: Ubuntu;
         font-weight: 400;
         font-size: 25pt;
         font-weight: bold;
