@@ -197,10 +197,6 @@
         <ul>
             <li>Das lange s (ſ) wird als rundes s wiedergegeben. Die Buchstabenkombination ſs in der
                 lateinischen Schrift wird als ß wiedergegeben.</li>
-            <li>Fehlende Umlautzeichen werden ergänzt.</li>
-            <li>Die Umlaute Ae, Oe und Ue werden als Ä, Ö und Ü wiedergegeben, außer bei
-                lateinischen Fremd- und Lehnwörtern. Die Schreibungen ae, oe und ue bleiben von
-                dieser Regel unberührt.</li>
             <li>Geminationsstriche über n und m (n̄, m̄) und weiteren Buchstaben werden zu nn, mm
                 usw. aufgelöst.</li>
         </ul>
