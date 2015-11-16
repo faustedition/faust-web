@@ -26,6 +26,8 @@
 
 /* text properties */
 
+/* FIXME are these still used? */
+
 .tooltip-caption-property-under:before {content: 'darunterstehend';}
 .tooltip-caption-property-over:before {content: 'Daraufschreibung';}
 .tooltip-caption-property-patch:before {content: 'Aufklebung';}

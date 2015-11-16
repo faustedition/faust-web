@@ -1005,8 +1005,7 @@ var createDocumentViewer = (function(){
           var childTooltipContent;
           var childTooltipBottom;
 
-          var classTypesWriter = ["hand", "material", "script"];
-          var classTypesLine = ["text-decoration", "inline-decoration", "property"];
+          var classTypesWriter = ["hand", "material", "script", "text-decoration", "inline-decoration", "property"];
 
           return function(elementNode) {
             // the information for tooltips is contained in elements with the assigned class text-wrapper.
@@ -1043,10 +1042,6 @@ var createDocumentViewer = (function(){
                     } else {
                       appendClassSpecificElements(childClasses, classType, childTooltipContent, false);
                     }
-                  });
-
-                  classTypesLine.forEach(function(classType) {
-                    appendClassSpecificElements(childClasses, classType, childTooltipBottom, true);
                   });
 
                 }
