@@ -21,16 +21,17 @@
             Hofmannsthals sowie von den zum ‚Faust‘ gehörigen Streifen angefertigt. Gute Ergebnisse
             wurden bei der Kontrastierung verschiedenfarbiger Schreibmaterialien erzielt, wie etwa
             einem Brief Hofmannsthals, bei dem schwarze mit dunkelblauer Tinte gezielt unlesbar
-            gemacht worden war (Abb. 1). Die Separation war möglich, weil die dunkelblaue Tinte vom
+            gemacht worden war (Abb. 1, 2). Die Separation war möglich, weil die dunkelblaue Tinte vom
             menschlichen Auge zwar schwer von der schwarzen zu unterscheiden ist, für einen Teil des
             Lichtspektrums (Wellenlänge um 440 nm) aber einen hohen Reflexionsgrad aufweist.</p>
+        <p><img src="img/info/multispectral_imaging_image1a.jpg"/></p>
+        <p>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober 1912)</p>
         <p><img src="multispectral_imaging/media/image1.jpeg"/></p>
-        <p>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober 1912).
+        <p>Abb. 2: FDH 30942,17 (vgl. Abb. 1).
             Wellenlänge: 440 nm. Text: „unserem unsagbar schönen Wiederzusammenkommen im März, da
             waren ja auch <em>andere</em> herzige Munderln ganz nahe davor, sogar ein bisserl
             verkatert davon warst du noch und doch – oder gerade darum? Wer kennt die Geheimnisse
             des Lebens! –“ Die Transkription wurde durch Nicoletta Giacon (Mailand) angefertigt.</p>
-        <p>TODO Normallichtaufnahme („vorher“) zum Vergleich</p>
         <p>Die Aufnahme zeigt, dass die dunkelblaue Tinte einen bestimmten Teil des Lichtspektrums
             stark reflektiert, während die durch sie unlesbar gemachte schwarze Tinte auch diesen
             Teil des Lichtspektrums absorbiert und sich dadurch deutlich von der dunkelblauen
