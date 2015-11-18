@@ -1,21 +1,21 @@
-<svg version="1.1" baseProfile="full" width="950" height="542.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" baseProfile="full" width="950" height="442.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <style type="text/css" >
     <![CDATA[
 
       .rowText {
-        font-family: Arial, Helvetica;
+        font-family: Ubuntu;
         font-weight: 400;
-        font-size: 20pt;
+        font-size: 15pt;
         font-style: normal;
         text-anchor: end;
         fill: black;
       }
 
       .columnText {
-        font-family: Arial, Helvetica;
+        font-family: Ubuntu;
         font-weight: 400;
-        font-size: 15pt;
+        font-size: 12pt;
         font-style: normal;
         text-anchor: start;
         fill: black;
@@ -59,7 +59,7 @@
 
   <rect width="100%" height="100%" style="fill:none;"></rect>
 
-  <g transform="translate(145,275)">
+  <g transform="translate(145,175)">
     <g transform="translate(10,-5)">
       <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Zueignung</text>
       <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Vorspiel auf dem Theater</text>
@@ -68,13 +68,13 @@
       <text x="0" y="0" transform="translate(100,0) rotate(-45)" class="columnText">&nbsp;2 Vor dem Tor</text>
       <text x="0" y="0" transform="translate(125,0) rotate(-45)" class="columnText">&nbsp;3 Studierzimmer I</text>
       <text x="0" y="0" transform="translate(150,0) rotate(-45)" class="columnText">&nbsp;4 Studierzimmer II</text>
-      <text x="0" y="0" transform="translate(175,0) rotate(-45)" class="columnText">&nbsp;5 Auerbachs Keller in Leipzig</text>
+      <text x="0" y="0" transform="translate(175,0) rotate(-45)" class="columnText">&nbsp;5 Auerbachs Keller</text>
       <text x="0" y="0" transform="translate(200,0) rotate(-45)" class="columnText">&nbsp;6 Hexenküche</text>
-      <text x="0" y="0" transform="translate(225,0) rotate(-45)" class="columnText">&nbsp;7 Straße. Faust Margarete</text>
-      <text x="0" y="0" transform="translate(250,0) rotate(-45)" class="columnText">&nbsp;8 Abend. Ein kleines reinliches Zimmer</text>
+      <text x="0" y="0" transform="translate(225,0) rotate(-45)" class="columnText">&nbsp;7 Straße</text>
+      <text x="0" y="0" transform="translate(250,0) rotate(-45)" class="columnText">&nbsp;8 Abend</text>
       <text x="0" y="0" transform="translate(275,0) rotate(-45)" class="columnText">&nbsp;9 Spaziergang</text>
       <text x="0" y="0" transform="translate(300,0) rotate(-45)" class="columnText">10 Der Nachbarin Haus</text>
-      <text x="0" y="0" transform="translate(325,0) rotate(-45)" class="columnText">11 Straße. Faust Mephistopheles</text>
+      <text x="0" y="0" transform="translate(325,0) rotate(-45)" class="columnText">11 Straße</text>
       <text x="0" y="0" transform="translate(350,0) rotate(-45)" class="columnText">12 Garten</text>
       <text x="0" y="0" transform="translate(375,0) rotate(-45)" class="columnText">13 Ein Gartenhäuschen</text>
       <text x="0" y="0" transform="translate(400,0) rotate(-45)" class="columnText">14 Wald und Höhle</text>
@@ -82,7 +82,7 @@
       <text x="0" y="0" transform="translate(450,0) rotate(-45)" class="columnText">16 Marthens Garten</text>
       <text x="0" y="0" transform="translate(475,0) rotate(-45)" class="columnText">17 Am Brunnen</text>
       <text x="0" y="0" transform="translate(500,0) rotate(-45)" class="columnText">18 Zwinger</text>
-      <text x="0" y="0" transform="translate(525,0) rotate(-45)" class="columnText">19 Nacht. Straße vor Gretchens Türe</text>
+      <text x="0" y="0" transform="translate(525,0) rotate(-45)" class="columnText">19 Nacht</text>
       <text x="0" y="0" transform="translate(550,0) rotate(-45)" class="columnText">20 Dom</text>
       <text x="0" y="0" transform="translate(575,0) rotate(-45)" class="columnText">21 Walpurgisnacht</text>
       <text x="0" y="0" transform="translate(600,0) rotate(-45)" class="columnText">22 Walpurgisnachtstraum</text>
@@ -247,16 +247,16 @@
           <rect x="150" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer II"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2073&amp;rangeEnd=2336">
-          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller in Leipzig"></rect>
+          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2337&amp;rangeEnd=2604">
           <rect x="200" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Hexenküche"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2605&amp;rangeEnd=2677">
-          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße. Faust Margarete"></rect>
+          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2678&amp;rangeEnd=2804">
-          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend. Ein kleines reinliches Zimmer"></rect>
+          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=2805&amp;rangeEnd=2864">
           <rect x="275" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Spaziergang"></rect>
@@ -265,7 +265,7 @@
           <rect x="300" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Der Nachbarin Haus"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3025&amp;rangeEnd=3072">
-          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße. Faust Mephistopheles"></rect>
+          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3073&amp;rangeEnd=3204">
           <rect x="350" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Garten"></rect>
@@ -289,7 +289,7 @@
           <rect x="500" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zwinger"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3620&amp;rangeEnd=3775">
-          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht. Straße vor Gretchens Türe"></rect>
+          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
         </a>
         <a xlink:href="geneticBarGraph.php?rangeStart=3776&amp;rangeEnd=3834">
           <rect x="550" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Dom"></rect>

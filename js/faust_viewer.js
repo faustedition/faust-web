@@ -22,7 +22,8 @@ var createDocumentViewer = (function(){
         scale: undefined,
         imageBackgroundZoomLevel: 3,
         showOverlay: true,
-        section: undefined         // opt. file name for textual / apparatus view
+        section: undefined,         // opt. file name for textual / apparatus view
+        fragment: undefined
       };
 
       // allow other objects to listen to events
@@ -34,11 +35,24 @@ var createDocumentViewer = (function(){
         pageCount: null,
         pages: [],
         textTranscript: null,
-        structure: undefined
+        structure: undefined,
+        sections: {}
       };
 
       // container holding references to each available view / div
       var domContainer = {};
+
+      // updates the adress in the browser bar to a value calculated from state and doc
+      var updateLocation = function updateLocation() {
+        var url = window.location.pathname + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
+        if (state.section) {
+          url += '&section=' + state.section;
+        }
+        if (state.fragment) {
+          url += '#' + state.fragment;
+        }
+        history.replaceState(history.state, null, url);
+      };
 
       // initialisation of viewer component.
       var init = (function(){
@@ -145,6 +159,11 @@ var createDocumentViewer = (function(){
           if(getParameters.view && viewModes.reduce(function(result, view) {if(view === getParameters.view) {result = true;} return result;}, false)) {
             state.view = getParameters.view;
           }
+
+          if (getParameters['#']) {
+            state.fragment = getParameters['#'];
+          }
+
 
           // facsimile and documentary transcript can exist for every page of a witness. set view to
           // current page and try to load related files (if not already done)
@@ -380,33 +399,8 @@ var createDocumentViewer = (function(){
         return function(pageNum, callback) {
           var printLinks;
           var loadedDocs = {};
+          var prevPage = pageNum;
 
-          if(doc.printLinks !== undefined) {
-            // try to load documents if pageNum / filename mappings were already loaded
-            loadDocs(pageNum); // XXX? There's no handling for this!?
-          } else {
-            // otherwise get json file with page / filename mappings
-            Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
-              var pages, filename;
-              // parse json file ...
-              pages = JSON.parse(pagesJson);
-              // ... and extract information for current witness
-              printLinks = pages[doc.faustUri];
-
-              filename = printLinks[pageNum];
-              if (state.section) {
-                if (state.section === filename) {
-                  state.section = undefined; // it's the default
-                } else {
-                  filename = state.section;
-                }
-              }
-              
-              // try to load document for current page
-              loadDocs(filename);
-            });
-          }
-          
           // load actual transcript html files
           var loadDocs = function(filename) {
             // if no html files are associated, return undefined
@@ -430,6 +424,50 @@ var createDocumentViewer = (function(){
             }
           };
 
+          // finds the section filename for the given pageNum. Requires doc.printLinks
+          var findSection = function findSection(pageNum) {
+              var printLinks = doc.printLinks,
+                  filename = printLinks[pageNum],
+                  prevPage = pageNum;
+
+              // no reference for pageNum? Look for smaller page numbers ...
+              while (!filename && prevPage >= 0) {
+                prevPage = prevPage - 1;
+                filename = printLinks[prevPage];
+              }
+              if (!filename) { // FIXME obsolete when default === 0
+                filename = printLinks['default'];
+              }
+
+              // now, a section parameter may override our choice.
+              if (state.section) {
+                if (state.section === filename) {
+                  state.section = undefined; // it's the default
+                } else {
+                  filename = state.section;
+                }
+              }
+              return filename;
+          }
+
+
+          if(doc.printLinks !== undefined) {
+            // try to load documents if pageNum / filename mappings were already loaded
+            loadDocs(findSection(pageNum)); 
+          } else {
+            // otherwise get json file with page / filename mappings
+            Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
+              var pages, filename;
+              // parse json file ...
+              pages = JSON.parse(pagesJson);
+              // ... and extract information for current witness
+              doc.printLinks = pages[doc.faustUri];
+              //
+              // try to load document for current page
+              loadDocs(findSection(pageNum));
+            });
+          }
+          
           // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
           var createPrintDiv = function(printString) {
             // create container element for the text and add print class to it
@@ -517,6 +555,22 @@ var createDocumentViewer = (function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+     var addPatchHandlers = function addPatchHandlers(targetElement) {
+          var patches = targetElement.getElementsByClassName("element-patch");
+          for (var i = 0; i < patches.length; i++) {
+            patches[i].addEventListener("mouseenter", function() {
+              for (var i = 0; i < patches.length; i++) {
+                Faust.dom.addClassToElement(patches[i], 'patch-transparent');
+              }
+            });
+            patches[i].addEventListener("mouseleave", function() {
+              for (var i = 0; i < patches.length; i++) {
+                Faust.dom.removeClassFromElement(patches[i], 'patch-transparent');
+              }
+            });
+          }
+     }
+
       /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
          data to prevent multiple loading of same resources
        */
@@ -526,7 +580,7 @@ var createDocumentViewer = (function(){
           var sceneData;
 
           // replace window location with current parameters
-          history.replaceState(history.state, null, window.location.pathname + "?faustUri=" + doc.faustUri + "&page=" + pageNum + "&view=" + state.view);
+          updateLocation();
 
           // set breadcrumbs
 
@@ -581,6 +635,7 @@ var createDocumentViewer = (function(){
             domContainer.docTranscript.appendChild(currentPage.docTranscript);
           }
 
+          // ############## Facsimile View
           if(currentPage.facsimile === null) {
             currentMetadata = doc.metadata.pages[pageNum - 1];
 
@@ -620,6 +675,7 @@ var createDocumentViewer = (function(){
             currentPage.facsimile.setScale(state.scale);
           }
 
+          // ######### Facsimile | Documentary Transcript parallel view
           if(currentPage.facsimile_document === null) {
             var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div"});
             var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
@@ -680,6 +736,7 @@ var createDocumentViewer = (function(){
 
             events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
               docTranscriptContainer.appendChild(currentPage.docTranscript.cloneNode(true));
+              addPatchHandlers(docTranscriptContainer);
               transcriptTooltips(docTranscriptContainer);
             });
             
@@ -688,12 +745,13 @@ var createDocumentViewer = (function(){
             domContainer.facsimile_document.appendChild(currentPage.facsimile_document);
           }
 
+          // ############ Document Transcript | Textual Transcript (Apparatus) parallel view
           if(currentPage.document_text === null) {
 
 
-            var documentTextContainer = Faust.dom.createElement({name: "div"});
-            var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer});
-            var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer});
+            var documentTextContainer = Faust.dom.createElement({name: "div", class: "dbg-documentTextContainer"});
+            var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-documentContainer'});
+            var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-textContainer'});
 
             documentTextContainer.style.height = "100%";
             documentTextContainer.style.padding = "0px";
@@ -724,12 +782,14 @@ var createDocumentViewer = (function(){
 
             events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
               documentContainer.appendChild(currentPage.docTranscript.cloneNode(true));
+              addPatchHandlers(documentContainer);
               transcriptTooltips(documentContainer);
             });
 
+            // load app into textual view of the doc|text parallel view
             loadTextTranscript(pageNum, function(text) {
-              if(text !== undefined) {
-                var appText = text.app.cloneNode(true);
+              if(text !== undefined) {  // textual transcript has been found
+                var appText = text.app; // .cloneNode(true);
                 currentPage.document_text.textContainer.appendChild(appText);
                 addPrintInteraction("", appText);
                 if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
@@ -740,17 +800,21 @@ var createDocumentViewer = (function(){
               }
             });
 
-          } else {
+          } else {  // currentPage.documentText !== null, i.e. parallel view already initialized
             Faust.dom.removeAllChildren(domContainer.document_text);
             domContainer.document_text.appendChild(currentPage.document_text);
+            // FIXME this doesn't handle when we switch pages across document boundaries, does it?
             if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
               domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
             }
           }
 
 
+          // ############## Textual Transcript (app) single view
           if(currentPage.textTranscript === null) {
-            // XXX do we have a _different_ tTC for each page?
+            // should we rather reuse the whole container document for the
+            // page? Ideally, we wouldn't redraw the page on a switch to a new
+            // page that is already displayed.
             var textTranscriptContainer = Faust.dom.createElement({name: "div"});
 
             textTranscriptContainer.style.width = "100%";
@@ -764,7 +828,7 @@ var createDocumentViewer = (function(){
 
             loadTextTranscript(pageNum, function(text) {
               if(text !== undefined) {
-                var appText = text.app.cloneNode(true);
+                var appText = text.app; //.cloneNode(true);
                 currentPage.textTranscript.appendChild(appText);
                 addPrintInteraction("", appText);
                 if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
@@ -774,7 +838,8 @@ var createDocumentViewer = (function(){
                 currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
               }
             });
-          } else {
+          } else { // currentPage.textTranscript !== null
+            // TODO check whether we're already on the right section
             Faust.dom.removeAllChildren(domContainer.textTranscript);
             domContainer.textTranscript.appendChild(currentPage.textTranscript);
             if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
@@ -782,7 +847,7 @@ var createDocumentViewer = (function(){
             }
           }
 
-
+          // ############# Print (variant apparatus) single view
           if(currentPage.print === null) {
             var printContainer = Faust.dom.createElement({name: "div"});
 
@@ -797,17 +862,17 @@ var createDocumentViewer = (function(){
 
             loadTextTranscript(pageNum, function(text) {
               if(text !== undefined) {
-                var printText = text.print.cloneNode(true);
+                var printText = text.print; // .cloneNode(true);
                 currentPage.print.appendChild(printText);
                 addPrintInteraction("", printText);
                 if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
                   domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
                 }
-              } else {
+              } else { // no textual transcript found
                 currentPage.print.innerHTML = contentHtml.missingTextTranscript;
               }
             });
-          } else {
+          } else { // currentPage.print !== null
             Faust.dom.removeAllChildren(domContainer.print);
             domContainer.print.appendChild(currentPage.print);
             if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
@@ -851,6 +916,8 @@ var createDocumentViewer = (function(){
           Faust.dom.removeAllChildren(domContainer.docTranscript);
           domContainer.docTranscript.appendChild(docTranscriptDiv);
           transcriptTooltips(domContainer.docTranscript);
+
+
           events.triggerEvent("docTranscriptPage" + pageNum + "Loaded");
         };
       })();
@@ -958,8 +1025,7 @@ var createDocumentViewer = (function(){
           var childTooltipContent;
           var childTooltipBottom;
 
-          var classTypesWriter = ["hand", "material", "script"];
-          var classTypesLine = ["text-decoration", "inline-decoration", "property"];
+          var classTypesWriter = ["hand", "material", "script", "text-decoration", "inline-decoration", "property"];
 
           return function(elementNode) {
             // the information for tooltips is contained in elements with the assigned class text-wrapper.
@@ -996,10 +1062,6 @@ var createDocumentViewer = (function(){
                     } else {
                       appendClassSpecificElements(childClasses, classType, childTooltipContent, false);
                     }
-                  });
-
-                  classTypesLine.forEach(function(classType) {
-                    appendClassSpecificElements(childClasses, classType, childTooltipBottom, true);
                   });
 
                 }
@@ -1136,7 +1198,7 @@ var createDocumentViewer = (function(){
             }
           });
 
-          history.replaceState(history.state, undefined, window.location.pathname + "?faustUri=" + doc.faustUri + "&page=" + state.page + "&view=" + state.view);
+          updateLocation();
 
           events.triggerEvent("viewChanged", state.view);
 
