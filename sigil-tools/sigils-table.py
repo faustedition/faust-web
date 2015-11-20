@@ -64,8 +64,11 @@ def write_new_sigils(options):
                        na_values=['?'])
 
     for uri in df.index:
-        filename = os.path.join(options.directory, uri[12:])
         newsigil = df.at[uri, options.column_name]
+        if not(isinstance(uri, str)) or len(uri) <= 12:
+            logger.warn('%s: Skipping invalid URI for new sigil %s', uri, newsigil)
+            continue
+        filename = os.path.join(options.directory, uri[12:])
         logger.debug('Will add %s to %s ...', newsigil, filename)
         if not(newsigil) or not(isinstance(newsigil, str)):
             logger.warn('%s: No valid sigil: %s', uri, newsigil)
@@ -101,11 +104,12 @@ def write_new_sigils(options):
             idno.tail = tail
             parent.insert(position, idno)
             logger.info('%s: Added sigil %s', uri, newsigil)
-        meta.write(filename, encoding='utf-8')
+        meta.write(filename, encoding='utf-8', xml_declaration=True)
 
 
 def get_argparser():
-    parser = argparse.ArgumentParser(description='Tool to deal with the new sigils')
+    parser = argparse.ArgumentParser(description='Tool to deal with the new sigils',
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-d', '--directory', default='.',
                         help='Source directory for XML files')
     parser.add_argument('-x', '--excel-file', default='sigils.xlsx',
