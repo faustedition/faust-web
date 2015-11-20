@@ -60,7 +60,8 @@ def write_sigils_table(options):
 def write_new_sigils(options):
     sheet = int(options.excel_sheet) \
         if options.excel_sheet.isnumeric() else options.excel_sheet
-    df = pd.read_excel(options.excel_file, sheet, index_col=0, na_values=['?'])
+    df = pd.read_excel(options.excel_file, sheet, index_col=options.uri_column,
+                       na_values=['?'])
 
     for uri in df.index:
         filename = os.path.join(options.directory, uri[12:])
@@ -113,6 +114,8 @@ def get_argparser():
                         help='Name of excel sheet to use')
     parser.add_argument('-n', '--column-name', default='newSigil',
                         help='Column label for the new sigil column')
+    parser.add_argument('-u', '--uri-column', default=0, type=int,
+                        help='Column number of the URI column')
     parser.add_argument('-w', '--write-sigils', action='store_true',
                         help='Write mode: Write sigils from table to metadata')
     parser.add_argument('-W', '--overwrite-sigils', action='store_true',
