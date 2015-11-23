@@ -96,7 +96,9 @@ var determineSigil = function(sigils) {
 
   // go through all availabe sigil types until an appropriate sigil was found. The following
   // if/else if cascade is based on the 
-  if(sigils.idno_hagen !== undefined) {
+  if(sigils.idno_faustedition !== undefined) {
+      sigil = sigils.idno_faustedition;
+  } else if(sigils.idno_hagen !== undefined) {
     sigil = sigils.idno_hagen;
   } else if( (sigils.idno_wa_faust !== undefined) && (sigils.idno_wa_faust !== "none") ) {
     sigil = sigils.idno_wa_faust;
@@ -110,10 +112,6 @@ var determineSigil = function(sigils) {
     sigil = sigils.idno_wa_helenaank;
   } else if(sigils.idno_fa !== undefined) {
       sigil = sigils.idno_fa;
-  } else if(sigils.idno_faustedition !== undefined) {
-      sigil = sigils.idno_faustedition;
-
-      
   } else if(sigils.idno_gsa_2 !== undefined) {
       sigil = sigils.idno_gsa_2;
 
