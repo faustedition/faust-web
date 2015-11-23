@@ -58,10 +58,10 @@
           fs.appendFile(conf.errorLog, "  Chrome errormessage: " + JSON.stringify(svgResults.error) + "\n");
         }
         if(svgResults.diplomaticSvg !== undefined) {
-          fs.writeFileSync(path.join(data.diplomaticOutputDir, "page_" + data.pageNumber + ".svg"), svgResults.diplomaticSvg);
+          fs.writeFileSync(path.join(data.diplomaticOutputDir, "page_" + data.pageNumber + ".svg"), svgResults.diplomaticSvg.replace(/&nbsp;/g, '&#160;'));
         }
         if(svgResults.facsimileOverlaySvg !== undefined) {
-          fs.writeFileSync(path.join(data.facsimileOverlayOutputDir, "page_" + data.pageNumber + ".svg"), svgResults.facsimileOverlaySvg);
+          fs.writeFileSync(path.join(data.facsimileOverlayOutputDir, "page_" + data.pageNumber + ".svg"), svgResults.facsimileOverlaySvg.replace(/&nbsp;/g, '&#160;'));
         }
         taskFinishedCallback();
       };
