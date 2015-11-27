@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
     <link rel="stylesheet" href="css/document-transcript-interaction.css">
     <link rel="stylesheet" href="css/webfonts.css">
+    <link rel="stylesheet" href="css/fontawesome-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
@@ -40,6 +41,8 @@
           <li><a href="archives.php">Archiv</a></li>
           <li><a href="chessboard_overview.php">Genese</a></li>
           <li><a href="print/text.html">Text</a></li>
+          <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
+          <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>
           <!-- <li><form class="pure-form"><input autocomplete="off" id="quick-search" placeholder="Suche" type="text"/></form></li> -->
           </ul>
         </nav>

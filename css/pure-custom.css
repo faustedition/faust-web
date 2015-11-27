@@ -45,8 +45,9 @@ figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; fo
 .pure-g-r .pure-gap ~ .pure-gap {padding:0 1em;}
 .pure-g-r .pure-gap:last-of-type {padding-right:0;}
 
-.pure-menu li a {padding:0; margin:5px 10px; border-bottom: 3px solid white;}
-.pure-menu li:hover a, .pure-menu li.pure-menu-selected a {color:#fab400; border-bottom: 3px solid #FAB400;}
+.pure-menu li a {padding:0; margin:5px 10px;}
+.pure-menu li a small {margin-left:-5px; margin-right:-5px}
+.pure-menu li:hover a, .pure-menu li.pure-menu-selected a {color:#fab400;}
 .pure-menu li a:focus, .pure-menu li a:hover {background:none;}
 .pure-menu .pure-form input {margin: 0 0.7em; width:142px;}
 
