@@ -184,17 +184,23 @@
 <p>Es gab zwei abweichende Fälle: GSA 25/W 1360 und GSA 25/W 1375: Da es sich um zwei kleine Handschriften (Zettel) handelt, musste hier manuell eine andere Einstellung auch beim Durchlicht vorgenommen werden, da die Papierfläche für eine automatische Einstellung zu klein ist; bewährt hat sich vor allem der Wert von 1/50 Sekunde.</p>
 <p><strong>Bearbeitung der Aufnahmen mittels Subtraktion</strong></p>
 <p>Die Aufnahmen wurden mittels Subtraktionsverfahren bearbeitet und stehen in der Form in der Edition als TIFF und JPEG bereit. Unter Subtraktion ist das Herausrechnen der Beschriftung durch das Übereinanderlegen von einer Auf- und Durchlichtaufnahme desselben Blattes zu verstehen.</p>
-<p><img src="media/image1.jpeg" /></p>
-<p><em>Bild 1: Subtraktionsergebnis der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_all_TL30_100.jpg)</em></p>
+<figure>
+	<img src="/img/info/watermarks-image1.jpeg" />
+	<figcaption>Bild 1: Subtraktionsergebnis der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_all_TL30_100.jpg)</figcaption>
+</figure>
 <p>Wichtig für die Subtraktion ist, dass Auf- und Durchlichtaufnahme deckungsgleich sind, Handschrift als auch Kamera dürfen sich nicht verschieben. Weiterhin ist zu berücksichtigen, dass die Beschriftung auf der Handschrift, die herausgerechnet werden soll, von oben fotografiert wurde.</p>
 <p>Beim Übereinanderlegen einer Auf- und einer Durchlichtaufnahme zeigte sich, dass die Kombination DSC 0026 und DSC 0028 (s. Tabelle 1) das beste Ergebnis brachte (s. Bild 1).</p>
 <p>Neben Aufnahmen ganzer Seiten wurden hier auch Detailansichten (Seitenausschnitte mit dem Wasserzeichen) bereitgestellt (s. Bild 2).</p>
-<p><img src="media/image2.jpeg" /></p>
-<p><em>Bild 2: Detail aus Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_detail_TL30_100.jpg)</em></p>
+<figure>
+	<img src="/img/info/watermarks-image2.jpeg" />
+	<figcaption>Bild 2: Detail aus Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_detail_TL30_100.jpg)</figcaption>
+</figure>
 <p><strong>Anfertigung von Durchzeichnungen</strong></p>
 <p>Außerdem wurden Durchzeichnungen – manuelle Wiedergaben der Wasserzeichen – angefertigt.</p>
-<p><img src="media/image3.jpeg" /></p>
-<p><em>Bild 3: Durchzeichnung der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_hand_drawn_150.jpg)</em></p>
+<figure>
+	<img src="/img/info/watermarks-image3.jpeg" />
+	<figcaption>Bild 3: Durchzeichnung der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_hand_drawn_150.jpg)</figcaption>
+</figure>
 <p><strong>Beschreibung der Wasserzeichen</strong></p>
 <p>Zu jedem Wasserzeichen erfolgte eine Beschreibung, und zwar nicht nur für diejenigen, zu denen Aufnahmen angefertigt wurden, sondern zu allen in der Edition versammelten Handschriften.</p>
 <p><strong>2. Benennungssystem der Wasserzeichendigitalisate</strong></p>

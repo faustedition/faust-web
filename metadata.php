@@ -122,8 +122,10 @@
         <p>Die Konvolutdarstellung ist eine schematisierte
         Gesamtansicht des Überlieferungsträgers (in der Abbildung
         rechts). Mit ihrer Hilfe lassen sich Handschriften leicht
-        durchblättern.</p><img alt="" src="img/IH32struktur.PNG"
-        height="304" width="624" />
+        durchblättern.</p>
+        <figure>
+          <img src="/img/info/metadata-IH32struktur.PNG" class="large" />
+        </figure>
         <p>Waagerechte Linien entsprechen Blättern. Die obere Kante
         der Linie stellt die Vorderseite dar, die untere die
         Rückseite.</p>

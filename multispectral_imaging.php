@@ -9,6 +9,14 @@
             Deutschen Hochstifts angewendet. Dies diente dem Ziel, die Bleistift- sowohl gegenüber
             der Tintenschicht als auch gegenüber dem Papieruntergrund deutlicher hervortreten zu
             lassen.</p>
+        <figure class="pure-pull-right">
+            <img src="/img/info/multispectral_imaging-image1a.jpg"/>
+            <figcaption>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober 1912)</figcaption>
+        </figure>
+        <figure class="pure-pull-right">
+            <img src="/img/info/multispectral_imaging-image1.jpeg"/>
+            <figcaption>Abb. 2: FDH 30942,17 (vgl. auch Abb. 1). Wellenlänge: 440 nm</figcaption>
+        </figure>
         <p>Dabei kamen zwei Leuchten zum Einsatz, deren Strahlung in ihrer Zusammensetzung in etwa
             dem Tageslicht entspricht. Die Strahlungsleistung betrug je 850-Lumen und lag damit im
             Bereich zweier Glühlampen zwischen 60 und 75 Watt. Aus den vom Objekt reflektierten und
@@ -24,14 +32,6 @@
             gemacht worden war (Abb. 1, 2). Die Separation war möglich, weil die dunkelblaue Tinte vom
             menschlichen Auge zwar schwer von der schwarzen zu unterscheiden ist, für einen Teil des
             Lichtspektrums (Wellenlänge um 440 nm) aber einen hohen Reflexionsgrad aufweist.</p>
-        <p><img src="img/info/multispectral_imaging_image1a.jpg"/></p>
-        <p>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober 1912)</p>
-        <p><img src="multispectral_imaging/media/image1.jpeg"/></p>
-        <p>Abb. 2: FDH 30942,17 (vgl. Abb. 1).
-            Wellenlänge: 440 nm. Text: „unserem unsagbar schönen Wiederzusammenkommen im März, da
-            waren ja auch <em>andere</em> herzige Munderln ganz nahe davor, sogar ein bisserl
-            verkatert davon warst du noch und doch – oder gerade darum? Wer kennt die Geheimnisse
-            des Lebens! –“ Die Transkription wurde durch Nicoletta Giacon (Mailand) angefertigt.</p>
         <p>Die Aufnahme zeigt, dass die dunkelblaue Tinte einen bestimmten Teil des Lichtspektrums
             stark reflektiert, während die durch sie unlesbar gemachte schwarze Tinte auch diesen
             Teil des Lichtspektrums absorbiert und sich dadurch deutlich von der dunkelblauen
@@ -41,10 +41,14 @@
             Kooperation mit Manuel Raaf am 27. und 28. März 2013 angefertigt). Auch diese Tinten
             reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 2 und 3).</p>
-        <p><img src="multispectral_imaging/media/image2.png"/></p>
-        <p>Abb. 2: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</p>
-        <p><img src="multispectral_imaging/media/image3.png"/></p>
-        <p>Abb. 3: vgl. Abb. 2. Wellenlänge: 1000 nm.</p>
+        <figure>
+            <img src="/img/info/multispectral_imaging-image2.png"/>
+            <figcaption>Abb. 2: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite</figcaption>
+        </figure>
+        <figure>
+            <img src="/img/info/multispectral_imaging-image3.png"/>
+            <figcaption>Abb. 3: vgl. Abb. 2. Wellenlänge: 1000 nm</figcaption>
+        </figure>
         <p>Durch geeignete Kombination der Bilder aus verschiedenen Spektralbereichen konnten die
             Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein manuelles
             wie auch ein automatisches Verfahren zur Kombination der Spektralaufnahmen getestet.
@@ -54,10 +58,14 @@
             Helligkeitswerte aller Spektralaufnahmen die abhängige und der Helligkeitswert der
             Bleistiftspur die Zielvariable darstellte. Beide Verfahren lieferten vergleichbare
             Ergebnisse.</p>
-        <p><img src="hyperspectral_imaging/media/image4.png"/></p>
-        <p>Abb. 4: Vgl. Abbildung 2. Manuelles Verfahren.</p>
-        <p><img src="hyperspectral_imaging/media/image5.png"/></p>
-        <p>Abb. 5: vgl. Abbildung 2. Automatisches Verfahren.</p>
+        <figure>
+            <img src="hyperspectral_imaging/media/image4.png"/>
+            <figcaption>Abb. 4: Vgl. Abbildung 2. Manuelles Verfahren</figcaption>
+        </figure>
+        <figure>
+            <img src="hyperspectral_imaging/media/image5.png"/>
+            <figcaption>Abb. 5: vgl. Abbildung 2. Automatisches Verfahren</figcaption>
+        </figure>
         <p>Es gelang jedoch nicht, den Kontrast zwischen stark verwischten Bleistiftspuren und dem
             Papieruntergrund so zu verstärken, dass zuvor unlesbare Bleistiftspuren lesbar gemacht
             worden wären. Gegenüber der digitalen Manipulation vorhandener Abbildungen konnten hier

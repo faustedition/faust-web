@@ -23,6 +23,11 @@ pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgb(221,221,221);} /* IE 10 */
 
+figure {margin:1em 0px; text-align:center;}
+figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
+figure img.large {max-width:none !important;}
+figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; font-size:85%; font-style:italic;}
+
 .pure-table {width:100%; border-color:rgb(221,221,221);}
 .pure-table td, .pure-table th {border-color:rgb(221,221,221);}
 .pure-table thead {background-color:rgba(255,255,255,0.5);}
@@ -203,8 +208,8 @@ input:-ms-input-placeholder {color:rgb(221,221,221);} /* IE 10 */
 .pure-right{text-align:right !important;}
 .pure-left{text-align:left !important;}
 .pure-center{text-align:center !important;}
-.pure-pull-right{float:right !important; margin-left:.5em;}
-.pure-pull-left{float:left !important; margin-right:.5em;}
+.pure-pull-right{float:right !important; margin-left:.5em; clear:right;}
+.pure-pull-left{float:left !important; margin-right:.5em; clear:left;}
 .pure-clearfix{clear:both;content:"";*zoom: 1; display:block; height:0;}
 .pure-hide{display:none !important;}
 .pure-show{display:block !important;}

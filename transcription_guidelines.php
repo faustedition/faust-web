@@ -33,14 +33,15 @@
             Unterscheidung zwischen Groß- und Kleinschreibung jedoch oft, bei D/d fast immer vom
             Kontext abhängig.</p>
         <p>Die Ligatur ck wird als Buchstabenkombination ck transkribiert, selbst wenn nur der
-            Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist.<br/><img
-                src="Transkriptionsprinzipien/media/image1.jpeg"/><img
-                    src="Transkriptionsprinzipien/media/image2.jpeg"/></p>
+            Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist.</p>
+        <figure><img src="/img/info/transcription_guidelines-image1.jpeg"/></figure>
+        <figure><img src="/img/info/transcription_guidelines-image2.jpeg"/></figure>
         <p>Kontraktionen („ans“, „aufs“, „ins“ usw.) und Komposita mit kleingeschriebenem zweiten
             Kompositionsglied werden zusammengeschrieben wiedergegeben. Ein sichtbarer kleinerer
             Abstand zwischen den Wortbestandteilen („auf s“ usw.) markiert die Fuge, indiziert aber
-            keine Getrenntschreibung.<br/><img src="Transkriptionsprinzipien/media/image3.jpeg"
-            /><br/>Bei deutlichem Wortabstand wird trotz durchgezogener Buchstabenverbindung
+            keine Getrenntschreibung.<p>
+        <figure><img src="/img/info/transcription_guidelines-image3.jpeg"/></figure>
+        <p>Bei deutlichem Wortabstand wird trotz durchgezogener Buchstabenverbindung
             Getrenntschreibung wiedergegeben. [Bildbeispiel]</p>
         <p>Geschweifte Klammern zeigen unsichere Lesungen an. Dabei bedeutet</p>
         <ul>
@@ -97,10 +98,11 @@
             links von der Einfügungsstelle wird räumlich getreu wiedergegeben. Einfügungszeichen
             werden in der Ansicht vereinfacht. Einfügungslinien werden durch Winkelzeichen an der
             Einfügungsstelle repräsentiert: der Verlauf der Einfügungslinie wird nicht
-            nachgebildet.<br/><img src="Transkriptionsprinzipien/media/image4.jpeg"/><img
-                src="Transkriptionsprinzipien/media/image5.png"/><br/><br/><img
-                    src="Transkriptionsprinzipien/media/image6.jpeg"/><img
-                        src="Transkriptionsprinzipien/media/image7.png"/></p>
+            nachgebildet.</p>
+        <figure><img src="/img/info/transcription_guidelines-image4.jpeg"/></figure>
+        <figure><img src="/img/info/transcription_guidelines-image5.png"/></figure>
+        <figure><img src="/img/info/transcription_guidelines-image6.jpeg"/></figure>
+        <figure><img src="/img/info/transcription_guidelines-image7.png"/></figure>
         <p>Markierungen von Abschnitten (z. B. Zwischenstriche, waagerechte geschweifte Klammern)
             werden getreu wiedergegeben. [Auf die Wiedergabe von Randstrichen zur Begrenzung des
             Schriftspiegels wird verzichtet.]</p>
@@ -146,11 +148,13 @@
             vorliegenden Ausgabe gewählte Apparattyp hat ebenfalls nur vorläufigen Charakter. Er
             beruht auf dem Einblendungsapparat, der für die Akademie-Ausgabe der Werke Goethes
             entwickelt wurde (Abb. ###).</p>
-        <p><img src="einblendung/media/image1.png"/></p>
-        <p>Abb. ###: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
-            href="http://beta.faustedition.net/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
+        <figure>
+            <img src="/img/info/transcription_guidelines-image8.png"/>
+            <figcaption>Abb. ###: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
+            href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
             class="uri"
-            >http://beta.faustedition.net/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text</a>).</p>
+            >H P123.5</a>).</figcaption>
+        </figure>
         <p>Varianten werden stets als Abweichungen von der Grundschicht dargestellt. Unter der
             Grundschicht werden in diesem Zusammenhang alle Zeichen verstanden, die nicht entweder
             sofort getilgt (Sofortrevision) oder später hinzugefügt wurden. Der Text der

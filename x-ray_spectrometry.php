@@ -2,6 +2,10 @@
 <section class="center pure-g-r">
     <article class="pure-u-1">
         <h1>Untersuchung und Datierung von Tinten durch Röntgenfluoreszenzanalyse</h1>
+        <figure class="pure-pull-right">
+            <img src="/img/info/x-ray_spectrometry-image1.jpeg" />
+            <figcaption>Abb. 1: Messung mittels mobiler Röntgenfluoreszenzanalyse. GSA 25/W 1567 (WA: III H<sup>1</sup>), Bl. 4r mit über dem Objekt ruhendem Messkopf.</figcaption>
+        </figure>
         <p>Im Januar 2013 ist in Kooperation mit der Bundesanstalt für Materialforschung und
             -prüfung (BAM) an ausgewählten Handschriften im Goethe- und Schiller-Archiv die mobile
             Röntgenfluoreszenzanalyse (RFA) zum Einsatz gekommen. Auf der Grundlage der
@@ -26,9 +30,6 @@
             metallischen Nebenbestandteile in Relation zum Hauptbestandteil Eisen. Als am
             aussagekräftigsten erwiesen sich im Fall der für die RFA ausgewählten Handschriften die
             relativen Konzentrationen von Kupfer und Kalium.</p>
-        <p><img src="tintenanalyse/media/image1.jpeg"/></p>
-        <p>Abb. 1: Messung mittels mobiler Röntgenfluoreszenzanalyse. GSA 25/W 1567 (WA:
-                III H<sup>1</sup>), Bl. 4r mit über dem Objekt ruhendem Messkopf.</p>
         <p>An folgenden Handschriften wurden durch Oliver Hahn (Berlin / Hamburg) und Georg Dietz
             (Dresden) Messungen angestellt:</p>
         <ul>
@@ -46,10 +47,10 @@
             <li><p>GSA 68/152, St. 63 und 153</p></li>
         </ul>
         <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2).</p>
-        <p><img src="tintenanalyse/media/image2.png"/></p>
-        <p>Abb. 2: Relative Konzentrationen, ausgedrückt im sog. Fingerprint-Wert W, von Kupfer (Cu)
-            als Funktion der relativen Konzentration von Kalium (K). Dargestellt sind alle
-            Ergebnisse der Messungen.</p>
+        <figure>
+            <img src="/img/info/x-ray_spectrometry-image2.png" />
+            <figcaption>Abb. 2: Relative Konzentrationen, ausgedrückt im sog. Fingerprint-Wert W, von Kupfer (Cu) als Funktion der relativen Konzentration von Kalium (K). Dargestellt sind alle Ergebnisse der Messungen.</figcaption>
+        </figure>
         <p>Einen ersten Einblick in die den Messungen zugrundeliegenden Hypothesen und
             Fragestellungen geben faust://bibliography/bruening_et_al2013; ebd. ein Beispiel für
             mögliche Datierungen, die mit den Messergebnissen begründet werden können. Die
