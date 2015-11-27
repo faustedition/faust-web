@@ -9,18 +9,20 @@
             handschriftlichen Verhältnisse zielen. In der jeweiligen Standardansicht gelten die
             folgenden Bestimmungen: </p>
         <h2>Allgemein</h2>
-        <p>Die Handschriften und Drucke werden zeichengetreu wiedergegeben.</p>
-        <p>I und J sind in der deutschen Schrift nicht unterschieden. In der Transkription wird die
+        <ul>
+            <li>Die Handschriften und Drucke werden zeichengetreu wiedergegeben.</li>
+            <li>I und J sind in der deutschen Schrift nicht unterschieden. In der Transkription wird die
             Unterscheidung zwischen I und J gemäß Lautwert eingeführt. Die Unterscheidung zwischen i
-            und j ist davon unberührt.</p>
-        <p>Anführungszeichen werden stets mit öffnenden und schließenden Anführungszeichen „ “
-            wiedergegeben.</p>
-        <p>Abkürzungen werden nicht aufgelöst.</p>
-        <p>Alle Zeugen werden in unemendierter Form wiedergegeben. Offensichtliche, auch
+            und j ist davon unberührt.</li>
+            <li>Anführungszeichen werden stets mit öffnenden und schließenden Anführungszeichen „ “
+            wiedergegeben.</li>
+            <li>Abkürzungen werden nicht aufgelöst.</li>
+            <li>Alle Zeugen werden in unemendierter Form wiedergegeben. Offensichtliche, auch
             sinnentstellende Schreib- und Satzfehler bleiben gewahrt. Versehentlich ausgelassene
-            Zeichen und Wörter werden nicht ergänzt.</p>
-        <p>Editorische Ergänzungen sind mit eckigen Klammern gekennzeichnet. Vgl. im Einzelnen die
-            Abschnitte zur Transkription der Handschriften und Drucke.</p>
+            Zeichen und Wörter werden nicht ergänzt.</li>
+            <li>Editorische Ergänzungen sind mit eckigen Klammern gekennzeichnet. Vgl. im Einzelnen die
+            Abschnitte zur Transkription der Handschriften und Drucke.</li>
+        </ul>
         <h2>Wiedergabe von Handschriften</h2>
         <h3>Allgemeine Prinzipien der Handschriftenwiedergabe</h3>
         <p>Die Überlieferung zu Goethes ‚Faust‘ ist sehr vielfältig: Schemata, Exzerpte, einzelne
@@ -45,8 +47,8 @@
             Getrenntschreibung wiedergegeben. [Bildbeispiel]</p>
         <p>Geschweifte Klammern zeigen unsichere Lesungen an. Dabei bedeutet</p>
         <ul>
-            <li><p>{abc}: Die Lesung ist wahrscheinlich.</p></li>
-            <li><p>{{abc}}: Die Lesung ist möglich.</p></li>
+            <li>{abc}: Die Lesung ist wahrscheinlich.</li>
+            <li>{{abc}}: Die Lesung ist möglich.</li>
         </ul>
         <p>Nicht entzifferte Zeichen werden durch Kreuze angezeigt, jedes × steht für ein nicht
             entziffertes Zeichen. ×…× steht für eine unentzifferte Folge von nicht genau
@@ -68,16 +70,16 @@
             sind.</p>
         <p>Editorisch ergänzt werden</p>
         <ul>
-            <li><p>einzelne Zeichen, die durch Rasur oder Beschädigung verloren gegangen oder
-                unlesbar geworden sind, sowie</p></li>
-            <li><p>Zeichen, die in extrem flüchtigen Niederschriften nicht realisiert sind, nicht
-                einmal als unspezifische Bögen.</p></li>
+            <li>einzelne Zeichen, die durch Rasur oder Beschädigung verloren gegangen oder
+                unlesbar geworden sind, sowie</li>
+            <li>Zeichen, die in extrem flüchtigen Niederschriften nicht realisiert sind, nicht
+                einmal als unspezifische Bögen.</li>
         </ul>
         <p>Nicht ergänzt werden</p>
         <ul>
-            <li><p>Buchstaben und Wörter, die infolge von Schreibversehen fehlen;</p></li>
-            <li><p>ganze Zeilen sowie Zeilenanfänge oder -enden, die infolge von Beschädigung oder
-                Fragmentierung verloren gegangen sind.</p></li>
+            <li>Buchstaben und Wörter, die infolge von Schreibversehen fehlen;</li>
+            <li>ganze Zeilen sowie Zeilenanfänge oder -enden, die infolge von Beschädigung oder
+                Fragmentierung verloren gegangen sind.</li>
         </ul>
         <h3>Dokumentarische Transkription der Handschriften</h3>
         <p>Die dokumentarische Transkription gibt die Niederschrift in ihren strukturellen
@@ -89,11 +91,12 @@
             lässt sich zeilengetreu in die Anzeige der Faksimiles einblenden und ist auch in
             druckfähiger Form abrufbar.</p>
         <h4>Zeichenwiedergabe</h4>
-        <p>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der lateinischen
-            Schrift.</p>
-        <p>Fehlende Umlautzeichen werden nicht ergänzt.</p>
-        <p>Die Umlaute Ae, Oe und Ue bleiben gewahrt.</p>
-        <p>Gleiches gilt für Geminationsstriche über n und m (n̄, m̄).</p>
+        <ul>
+            <li>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der lateinischen Schrift.</li>
+            <li>Fehlende Umlautzeichen werden nicht ergänzt.</li>
+            <li>Die Umlaute Ae, Oe und Ue bleiben gewahrt.</li>
+            <li>Gleiches gilt für Geminationsstriche über n und m (n̄, m̄).</li>
+        </ul>
         <p>Die Stelle einer Einfügung in Interlinearzeilen oberhalb oder unterhalb, rechts oder
             links von der Einfügungsstelle wird räumlich getreu wiedergegeben. Einfügungszeichen
             werden in der Ansicht vereinfacht. Einfügungslinien werden durch Winkelzeichen an der
@@ -166,15 +169,15 @@
             Beschreibung der Änderung. Alle folgend genannten editorischen Zeichen und Kürzel werden
             so an Ort und Stelle erklärt:</p>
         <ul>
-            <li><p>&gt; steht zwischen dem sofort Getilgten und dem danach
-                Niedergeschriebenen,</p></li>
-            <li><p><em>erg</em> – „ergänzt“,</p></li>
-            <li><p><em>tilgt</em> – „tilgt“,</p></li>
-            <li><p><em>:</em> steht bei Ersetzungen zwischen dem Getilgten und dem
-                Hinzugefügten,</p></li>
-            <li><p><em>wdhst</em> – „wiederherstellt“</p></li>
-            <li><p><em>mon</em> – „moniert“</p></li>
-            <li><p><em>vorschl</em> (statt <em>propon</em>) – „vorschlägt“</p></li>
+            <li>&gt; steht zwischen dem sofort Getilgten und dem danach
+                Niedergeschriebenen,</li>
+            <li><em>erg</em> – „ergänzt“,</li>
+            <li><em>tilgt</em> – „tilgt“,</li>
+            <li><em>:</em> steht bei Ersetzungen zwischen dem Getilgten und dem
+                Hinzugefügten,</li>
+            <li><em>wdhst</em> – „wiederherstellt“</li>
+            <li><em>mon</em> – „moniert“</li>
+            <li><em>vorschl</em> (statt <em>propon</em>) – „vorschlägt“</li>
         </ul>
         <p>Umgestellter Wortlaut wird vorerst nur beziffert und nicht auch in der endgültigen
             Reihenfolge wiedergegeben.</p>
