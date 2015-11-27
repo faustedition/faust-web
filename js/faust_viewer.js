@@ -555,6 +555,22 @@ var createDocumentViewer = (function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+     var addPatchHandlers = function addPatchHandlers(targetElement) {
+          var patches = targetElement.getElementsByClassName("element-patch");
+          for (var i = 0; i < patches.length; i++) {
+            patches[i].addEventListener("mouseenter", function() {
+              for (var i = 0; i < patches.length; i++) {
+                Faust.dom.addClassToElement(patches[i], 'patch-transparent');
+              }
+            });
+            patches[i].addEventListener("mouseleave", function() {
+              for (var i = 0; i < patches.length; i++) {
+                Faust.dom.removeClassFromElement(patches[i], 'patch-transparent');
+              }
+            });
+          }
+     }
+
       /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
          data to prevent multiple loading of same resources
        */
@@ -720,6 +736,7 @@ var createDocumentViewer = (function(){
 
             events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
               docTranscriptContainer.appendChild(currentPage.docTranscript.cloneNode(true));
+              addPatchHandlers(docTranscriptContainer);
               transcriptTooltips(docTranscriptContainer);
             });
             
@@ -765,6 +782,7 @@ var createDocumentViewer = (function(){
 
             events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
               documentContainer.appendChild(currentPage.docTranscript.cloneNode(true));
+              addPatchHandlers(documentContainer);
               transcriptTooltips(documentContainer);
             });
 
@@ -898,6 +916,8 @@ var createDocumentViewer = (function(){
           Faust.dom.removeAllChildren(domContainer.docTranscript);
           domContainer.docTranscript.appendChild(docTranscriptDiv);
           transcriptTooltips(domContainer.docTranscript);
+
+
           events.triggerEvent("docTranscriptPage" + pageNum + "Loaded");
         };
       })();
@@ -1005,8 +1025,7 @@ var createDocumentViewer = (function(){
           var childTooltipContent;
           var childTooltipBottom;
 
-          var classTypesWriter = ["hand", "material", "script"];
-          var classTypesLine = ["text-decoration", "inline-decoration", "property"];
+          var classTypesWriter = ["hand", "material", "script", "text-decoration", "inline-decoration", "property"];
 
           return function(elementNode) {
             // the information for tooltips is contained in elements with the assigned class text-wrapper.
@@ -1043,10 +1062,6 @@ var createDocumentViewer = (function(){
                     } else {
                       appendClassSpecificElements(childClasses, classType, childTooltipContent, false);
                     }
-                  });
-
-                  classTypesLine.forEach(function(classType) {
-                    appendClassSpecificElements(childClasses, classType, childTooltipBottom, true);
                   });
 
                 }

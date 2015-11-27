@@ -78,6 +78,46 @@ var Faust = (function(){
         return descEnd(val1, val2);
       };
 
+      // Sort according to the faustedition sigil.
+      // A sigil like 2 III H.159:1 currently consists of three parts, basically:
+      // 1 - the part before the index number, here "2 III H.", sorted alphabetically
+      // 2 - the index number, here "159", sorted numerically
+      // 3 - the part after the index number, here ":1", sorted alphabetically.
+      var SIGIL = /^([12]?\s*[IV]{0,3}\s*[^0-9]+)(\d*)(.*)$/;
+      var splitSigil = function splitSigil(sigil) {
+          var split = SIGIL.exec(sigil);
+          if (split === null) {
+            console.warn("Failed to split sigil:", sigil);
+            return [sigil, sigil, 99999, ""];
+          }
+          if (split[1] == "H P") // Paraliponemon
+            split[1] = "3 H P";
+          if (split[2] == "")    // 2 H
+            split[2] = -1;
+          else
+            split[2] = parseInt(split[2], 10);
+
+          return split;
+      };
+
+      var sigil = function(val1, val2) {
+
+        var left = splitSigil(val1),
+            right = splitSigil(val2);
+
+        for (var i = 1; i <= 3; i++) {
+          if (left[i] < right[i])
+            return -1;
+          else if (left[i] > right[i])
+            return +1;
+        }
+        return 0;
+      }
+
+      var descSigil = function(val1, val2) {
+        return -sigil(val1, val2);
+      }
+
       // Map defined algorithms to sortAlgorithms object
       sortAlgorithms.asc = asc;
       sortAlgorithms.desc = desc;
@@ -85,6 +125,8 @@ var Faust = (function(){
       sortAlgorithms.descEnd = descEnd;
       sortAlgorithms.ascCiEnd = ascCiEnd;
       sortAlgorithms.descCiEnd = descCiEnd;
+      sortAlgorithms.sigil = sigil;
+      sortAlgorithms.descSigil = descSigil;
 
       return sortAlgorithms;
     })();

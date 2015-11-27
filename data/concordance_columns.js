@@ -1,5 +1,11 @@
 var concordanceColumns = [
   {
+    "column": "Sigle",
+    "sigils": [
+      "idno_faustedition"
+    ]
+  },
+  {
     "column": "Kurzbeschreibung",
     "sigils": [
       "headNote"

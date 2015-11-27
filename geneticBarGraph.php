@@ -139,7 +139,7 @@
           });
 
           // sort witnesses
-          selectedWitnesses = Faust.sort(selectedWitnesses, "ascEnd", "sigil");
+          selectedWitnesses = Faust.sort(selectedWitnesses, "sigil", "sigil");
 
 
 

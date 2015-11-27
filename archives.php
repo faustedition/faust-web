@@ -202,7 +202,7 @@
           var sortClickEventListener = (function(tableData, concordanceColumns, parentElement) {
             var currentColumn;
             var currentSort = 0;
-            var sortMethods = ["ascCiEnd", "descCiEnd"];
+            var sortMethods = ["sigil", "descSigil"];
 
             var sortedTableData;
             var tableDiv;
