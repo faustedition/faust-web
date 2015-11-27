@@ -30,27 +30,29 @@
             metallischen Nebenbestandteile in Relation zum Hauptbestandteil Eisen. Als am
             aussagekräftigsten erwiesen sich im Fall der für die RFA ausgewählten Handschriften die
             relativen Konzentrationen von Kupfer und Kalium.</p>
-        <p>An folgenden Handschriften wurden durch Oliver Hahn (Berlin / Hamburg) und Georg Dietz
-            (Dresden) Messungen angestellt:</p>
-        <ul>
-            <li><p>[[GSA 25/W 1493]]</p></li>
-            <li><p>[[GSA 25/W 1567]]</p></li>
-            <li><p>[[GSA 25/W 1589]]</p></li>
-            <li><p>[[GSA 25/W 1618]]</p></li>
-            <li><p>[[GSA 25/W 1698]]</p></li>
-            <li><p>[[GSA 25/W 1729]]</p></li>
-            <li><p>[[GSA 25/W 1752]]</p></li>
-            <li><p>[[GSA 25/W 1753]]</p></li>
-            <li><p>[[GSA 25/W 1800]]</p></li>
-            <li><p>GSA 28/1053, Bl. 123</p></li>
-            <li><p>GSA 29/553a,I</p></li>
-            <li><p>GSA 68/152, St. 63 und 153</p></li>
-        </ul>
-        <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2).</p>
-        <figure>
+        <figure class="pure-pull-left">
             <img src="/img/info/x-ray_spectrometry-image2.png" />
             <figcaption>Abb. 2: Relative Konzentrationen, ausgedrückt im sog. Fingerprint-Wert W, von Kupfer (Cu) als Funktion der relativen Konzentration von Kalium (K). Dargestellt sind alle Ergebnisse der Messungen.</figcaption>
         </figure>
+        <p>An folgenden Handschriften wurden durch Oliver Hahn (Berlin / Hamburg) und Georg Dietz
+            (Dresden) Messungen angestellt:</p>
+        <p>
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390905.xml&page=1&view=structure">GSA 25/W 1493</a>] - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_391347.xml&page=1&view=structure">GSA 25/W 1567</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_390903.xml&page=1&view=structure">GSA 25/W 1589</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_390544.xml&page=1&view=structure">GSA 25/W 1618</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.5/gsa_390883.xml&page=1&view=structure">GSA 25/W 1698</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.5/gsa_389867.xml&page=1&view=structure">GSA 25/W 1729</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390781.xml&page=1&view=structure">GSA 25/W 1752</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390826.xml&page=1&view=structure">GSA 25/W 1753</a> - 
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.5/gsa_390850.xml&page=1&view=structure">GSA 25/W 1800</a> - 
+            GSA 28/1053 - 
+            Bl. 123 - 
+            GSA 29/553a,I - 
+            GSA 68/152 - 
+            St. 63 und 153
+        </p>
+        <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2).</p>
         <p>Einen ersten Einblick in die den Messungen zugrundeliegenden Hypothesen und
             Fragestellungen geben faust://bibliography/bruening_et_al2013; ebd. ein Beispiel für
             mögliche Datierungen, die mit den Messergebnissen begründet werden können. Die
