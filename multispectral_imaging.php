@@ -42,9 +42,9 @@
             reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 2 und 3).</p>
         <p><img src="multispectral_imaging/media/image2.png"/></p>
-        <p>Abb. 2: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</p>
+        <p>Abb. 3: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</p>
         <p><img src="multispectral_imaging/media/image3.png"/></p>
-        <p>Abb. 3: vgl. Abb. 2. Wellenlänge: 1000 nm.</p>
+        <p>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm.</p>
         <p>Durch geeignete Kombination der Bilder aus verschiedenen Spektralbereichen konnten die
             Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein manuelles
             wie auch ein automatisches Verfahren zur Kombination der Spektralaufnahmen getestet.
@@ -55,9 +55,9 @@
             Bleistiftspur die Zielvariable darstellte. Beide Verfahren lieferten vergleichbare
             Ergebnisse.</p>
         <p><img src="hyperspectral_imaging/media/image4.png"/></p>
-        <p>Abb. 4: Vgl. Abbildung 2. Manuelles Verfahren.</p>
+        <p>Abb. 5: Vgl. Abbildung 2. Manuelles Verfahren.</p>
         <p><img src="hyperspectral_imaging/media/image5.png"/></p>
-        <p>Abb. 5: vgl. Abbildung 2. Automatisches Verfahren.</p>
+        <p>Abb. 6: vgl. Abbildung 2. Automatisches Verfahren.</p>
         <p>Es gelang jedoch nicht, den Kontrast zwischen stark verwischten Bleistiftspuren und dem
             Papieruntergrund so zu verstärken, dass zuvor unlesbare Bleistiftspuren lesbar gemacht
             worden wären. Gegenüber der digitalen Manipulation vorhandener Abbildungen konnten hier
