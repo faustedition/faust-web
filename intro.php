@@ -154,8 +154,18 @@
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
 
+        <h2>Angewandte Verfahren</h2>
+        <p>Im Rahmen der editorischen Arbeit sind eine Reihe von technischen Verfahren angewendet
+            worden, über die unter folgenden Stichworten berichtet wird:</p>
         <ul>
-            <li><a href="K_Angewandte_Verfahren.php">Angewandte Verfahren</a></li>
+            <li><a href="x-ray_spectrometry.php">Röntgenfluoreszenzspektrometrie
+                (Tintenanalyse)</a></li>
+            <li><a href="multispectral_imaging.php">Multispektrale Bildverarbeitung</a></li>
+            <li><a href="watermarks.php">Wasserzeichenreproduktion</a></li>
+        </ul>
+
+        <h2>Weitere Hinweise</h2>
+        <ul>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a></li>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>
