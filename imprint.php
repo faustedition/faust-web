@@ -1,9 +1,6 @@
       <?php include "includes/header.php"; ?>
       <section class="center pure-g-r">
-
-        <div class="pure-u-1-5"></div>
-
-        <article class="pure-u-3-5">
+        <article class="pure-u-1">
 
             <h1>Impressum</h1>
             
@@ -52,10 +49,7 @@
 
             <p><small>Quelle: Vorliegender Text basiert auf der Disclaimer-Vorlage von www.JuraForum.de.</small></p>
 
-            
         </article>
-
-        <div class="pure-u-1-5"></div>
 
       </section>
       <?php include "includes/footer.php"; ?>
