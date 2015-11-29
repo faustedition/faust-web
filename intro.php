@@ -154,7 +154,7 @@
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
 
-        <h2>Angewandte Verfahren</h2>
+            <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit sind eine Reihe von technischen Verfahren angewendet
             worden, über die unter folgenden Stichworten berichtet wird:</p>
         <ul>
