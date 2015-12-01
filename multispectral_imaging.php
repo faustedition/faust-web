@@ -24,10 +24,10 @@
             gemacht worden war (Abb. 1, 2). Die Separation war möglich, weil die dunkelblaue Tinte
             vom menschlichen Auge zwar schwer von der schwarzen zu unterscheiden ist, für einen Teil
             des Lichtspektrums (Wellenlänge um 440 nm) aber einen hohen Reflexionsgrad aufweist.</p>
-        <p><img src="img/info/multispectral_imaging_image1a.jpg"/></p>
+        <p><img src="img/info/multispectral_imaging-image1a.jpg"/></p>
         <p>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober
             1912)</p>
-        <p><img src="multispectral_imaging/media/image1.jpeg"/></p>
+        <p><img src="img/info/multispectral_imaging-image1.jpeg"/></p>
         <p>Abb. 2: FDH 30942,17 (vgl. Abb. 1). Wellenlänge: 440 nm. Text: „unserem unsagbar schönen
             Wiederzusammenkommen im März, da waren ja auch <em>andere</em> herzige Munderln ganz
             nahe davor, sogar ein bisserl verkatert davon warst du noch und doch – oder gerade
@@ -42,9 +42,9 @@
             Kooperation mit Manuel Raaf am 27. und 28. März 2013 angefertigt). Auch diese Tinten
             reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 3 und 4).</p>
-        <p><img src="multispectral_imaging/media/image2.png"/></p>
+        <p><img src="img/info/multispectral_imaging-image2.png"/></p>
         <p>Abb. 3: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</p>
-        <p><img src="multispectral_imaging/media/image3.png"/></p>
+        <p><img src="img/info/multispectral_imaging-image3.png"/></p>
         <p>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm.</p>
         <p>Durch rechnergestützte Kombination der Bilder aus verschiedenen Spektralbereichen konnten
             die Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein
@@ -63,9 +63,9 @@
             Trennung von einander überlagernden Tinten- und Bleistiftspuren erreicht. Da aber auch
             keine zusätzlichen Entzifferungsergebnisse erzielt wurden, wurde der Ansatz nicht auf
             die Gesamtheit der Aufnahmen angewandt.--></p>
-        <p><img src="hyperspectral_imaging/media/image4.png"/></p>
+        <p><img src="img/info/multispectral_imaging-image4.png"/></p>
         <p>Abb. 5: Vgl. Abb. 3. Manuelles Verfahren.</p>
-        <p><img src="hyperspectral_imaging/media/image5.png"/></p>
+        <p><img src="img/info/multispectral_imaging-image5.png"/></p>
         <p>Abb. 6: vgl. Abb. 3. Automatisches Verfahren.</p>
         <p>Es gelang letztlich nicht, den Kontrast zwischen stark verwischten Bleistiftspuren und
             dem Papieruntergrund so zu verstärken, dass zuvor unlesbare Bleistiftspuren lesbar
