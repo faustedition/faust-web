@@ -199,8 +199,12 @@ figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; fo
 
 .pure-tooltip{display:inline;position:relative;cursor:help;}
 .pure-tooltip:hover{text-decoration:none}
-.pure-tooltip:hover:after{ background:rgba(0,0,0,.8); border-radius:5px; bottom:1.5em; color:rgb(255,255,255); content:attr(title); display:block; left:10%; padding:0.5em 1em; position:absolute; white-space:nowrap; z-index:98;}
-.pure-tooltip:hover:before{ border:solid; border-color:rgba(0,0,0,.8) transparent; border-width:6px 6px 0 6px; bottom:1.1em; content:""; display:block; left:25%; position:absolute; z-index:99;M}
+.pure-tooltip:hover:after{background:rgba(0,0,0,.8); border-radius:5px; bottom:1.5em; color:rgb(255,255,255); content:attr(data-content); display:block; left:50%; margin-left:-150px; padding:0.5em 1em; position:absolute; z-index:98; width:300px;}
+.pure-tooltip:hover:before{border:solid; border-color:rgba(0,0,0,.8) transparent; border-width:6px 6px 0 6px; bottom:1.125em; content:""; display:block; left:50%; margin-left:-3px; position:absolute; z-index:99;}
+.pure-tooltip.pure-tooltip-left:hover:after{left:0; margin-left:0;}
+.pure-tooltip.pure-tooltip-left:hover:before{left:12px; margin-left:0;}
+.pure-tooltip.pure-tooltip-right:hover:after{left:auto; right:0; margin-left:0;}
+.pure-tooltip.pure-tooltip-right:hover:before{left:auto; right:12px; margin-left:0;}
 
 .pure-modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:hidden; width:500px; background-color:rgb(255,255,255); border:1px solid rgb(155,155,155); border-radius:4px; box-shadow:0 0 20px rgba(0,0,0,0.5);}
 .pure-modal-heading{background-color:rgba(155,155,155,0.2); padding:10px 15px;}

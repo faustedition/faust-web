@@ -63,7 +63,7 @@
             </figure>
             <figure>
                 <img src="/img/info/multispectral_imaging-image3.png"/>
-                <figcaption>Abb. 3: vgl. Abb. 2. Wellenlänge: 1000 nm</figcaption>
+                <figcaption>Abb. 3: vgl. Abb. 2. Wellenlänge: 1000 nm. <u class="pure-tooltip pure-tooltip-right" data-content="„unserem unsagbar schönen Wiederzusammenkommen im März, da waren ja auch andere herzige Munderln ganz nahe davor, sogar ein bisserl verkatert davon warst du noch und doch – oder gerade darum? Wer kennt die Geheimnisse des Lebens! –“ Die Transkription wurde durch Nicoletta Giacon (Mailand) angefertigt.">Text</u></figcaption>
             </figure>
             <figure>
                 <img src="hyperspectral_imaging/media/image4.png"/>
