@@ -81,6 +81,9 @@
                     </p>
         </div>
 
+        <h2>Danksagungen</h2>
+        <p>...</p>
+
       </article>
       </section>
       <?php include "includes/footer.php"; ?>
