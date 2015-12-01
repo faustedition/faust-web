@@ -178,17 +178,29 @@
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
 
+            <h2>Technische Untersuchungsverfahren</h2>
+        <p>Im Rahmen der editorischen Arbeit sind eine Reihe von technischen Verfahren angewendet
+            worden, über die unter folgenden Stichworten berichtet wird:</p>
         <ul>
-            <li><a href="K_Angewandte_Verfahren.php">Angewandte Verfahren</a></li>
+            <li><a href="x-ray_spectrometry.php">Röntgenfluoreszenzspektrometrie
+                (Tintenanalyse)</a></li>
+            <li><a href="multispectral_imaging.php">Multispektrale Bildverarbeitung</a></li>
+            <li><a href="watermarks.php">Wasserzeichenreproduktion</a></li>
+        </ul>
+
+        <h2>Weitere Hinweise</h2>
+        <ul>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a></li>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>
         </ul>
 
-        <h2 id="cite">Zitierempfehlung</h2> <?php // NOTE: see links in imprint.php ?>
+        <h2 id="cite">Zitierempfehlung</h2>
+        <?php // NOTE: see links in imprint.php ?>
         <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
 
-        <h2 id="updates">Updates</h2> <?php // NOTE: see links in index.php and imprint.php ?>
+        <h2 id="updates">Updates</h2>
+        <?php // NOTE: see links in index.php and imprint.php ?>
         <p class="pure-fade-50">[Download aller verfügbaren Versionen der Ausgabe (oder Teilen
             davon)]</p>
 
