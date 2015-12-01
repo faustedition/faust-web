@@ -22,16 +22,19 @@ hr {margin:1em 0; border:none; border-top:1px solid rgb(0,0,0,); clear:both;}
 code, kbd, pre, samp {font-family:"Ubuntu Mono",monospace,serif,Symbola;}
 pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
-input:-ms-input-placeholder {color:rgb(221,221,221);} /* IE 10 */
+input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
 
 figure {margin:1em 0px; text-align:center;}
 figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 figure img.large {max-width:none !important;}
 figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; font-size:85%; font-style:italic; line-height:1.5em;}
 
-.pure-table {width:100%; border-color:rgb(221,221,221);}
-.pure-table td, .pure-table th {border-color:rgb(221,221,221);}
-.pure-table thead {background-color:rgba(255,255,255,0.5);}
+.pure-table {width:100%; border:none;}
+.pure-table td, .pure-table th {border:none;}
+.pure-table tr ~ tr {border-top:1px solid rgb(221,221,221);}
+.pure-table tr:hover {background-color:rgba(155, 155, 155, 0.1);}
+.pure-table thead {background-color:rgba(155, 155, 155, 0.2);}
+
 .pure-form  input, .pure-form select, .pure-form textarea {background-color:rgba(255,255,255,0.5);}
 .pure-form input[type="text"], .pure-form input[type="password"], .pure-form input[type="email"], .pure-form input[type="url"], .pure-form input[type="date"], .pure-form input[type="month"], .pure-form input[type="time"], .pure-form input[type="datetime"], .pure-form input[type="datetime-local"], .pure-form input[type="week"], .pure-form input[type="number"], .pure-form input[type="search"], .pure-form input[type="tel"], .pure-form input[type="color"], .pure-form select, .pure-form textarea {font-size:0.95em;}
 .pure-form input[type="text"]:focus, .pure-form input[type="password"]:focus, .pure-form input[type="email"]:focus, .pure-form input[type="url"]:focus, .pure-form input[type="date"]:focus, .pure-form input[type="month"]:focus, .pure-form input[type="time"]:focus, .pure-form input[type="datetime"]:focus, .pure-form input[type="datetime-local"]:focus, .pure-form input[type="week"]:focus, .pure-form input[type="number"]:focus, .pure-form input[type="search"]:focus, .pure-form input[type="tel"]:focus, .pure-form input[type="color"]:focus, .pure-form select:focus, .pure-form textarea:focus {border-color:rgb(47,47,47);}
