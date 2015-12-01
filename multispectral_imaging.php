@@ -74,16 +74,14 @@
                 <figcaption>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm.</figcaption>
             </figure>
             <figure>
-                <img src="hyperspectral_imaging/media/image4.png"/>
+                <img src="/img/info/multispectral_imaging-image4.png"/>
                 <figcaption>Abb. 5: Vgl. Abb. 3. Manuelles Verfahren.</figcaption>
             </figure>
             <figure>
-                <img src="hyperspectral_imaging/media/image5.png"/>
+                <img src="/img/info/multispectral_imaging-image5.png"/>
                 <figcaption>Abb. 6: vgl. Abb. 3. Automatisches Verfahren.</figcaption>
             </figure>
         </div>
-=======
->>>>>>> 43669956928b7e46aec0ecca3dc3d1bc97d5158b
     </article>
 </section>
 <?php include "includes/footer.php"; ?>
