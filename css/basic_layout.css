@@ -15,6 +15,7 @@ html {
 /* style for header area */
 header {
   position: fixed;
+  z-index:2;
   top:0;
   padding: 0.5em 1em;
   width: 100%;
