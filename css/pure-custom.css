@@ -217,6 +217,7 @@ figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; fo
 .pure-show{display:block !important;}
 .pure-invisible{visibility:hidden;}
 .pure-disabled {cursor: not-allowed; opacity:0.4;}
+.pure-nowrap {white-space:nowrap;}
 
 @media print {
 	.pure-noprint {display:none !important;}
