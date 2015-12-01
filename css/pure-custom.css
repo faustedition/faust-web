@@ -27,7 +27,7 @@ input:-ms-input-placeholder {color:rgb(221,221,221);} /* IE 10 */
 figure {margin:1em 0px; text-align:center;}
 figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 figure img.large {max-width:none !important;}
-figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; font-size:85%; font-style:italic;}
+figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; font-size:85%; font-style:italic; line-height:1.5em;}
 
 .pure-table {width:100%; border-color:rgb(221,221,221);}
 .pure-table td, .pure-table th {border-color:rgb(221,221,221);}
