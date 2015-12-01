@@ -34,19 +34,6 @@
             Kooperation mit Manuel Raaf am 27. und 28. März 2013 angefertigt). Auch diese Tinten
             reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 3 und 4).</p>
-        <p>Durch geeignete Kombination der Bilder aus verschiedenen Spektralbereichen konnten die
-            Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein manuelles
-            wie auch ein automatisches Verfahren zur Kombination der Spektralaufnahmen getestet.
-            Beim manuellen Verfahren wurden zwei Spektralaufnahmen ausgewählt und mit einer
-            Bildverarbeitungssoftware subtrahierend übereinandergelegt. Beim automatischen Verfahren
-            wurde zu jedem Bildpunkt eine Regressionsanalyse durchgeführt, wobei der Vektor der
-            Helligkeitswerte aller Spektralaufnahmen die abhängige und der Helligkeitswert der
-            Bleistiftspur die Zielvariable darstellte. Beide Verfahren lieferten vergleichbare
-            Ergebnisse.</p>
-        <p>Es gelang jedoch nicht, den Kontrast zwischen stark verwischten Bleistiftspuren und dem
-            Papieruntergrund so zu verstärken, dass zuvor unlesbare Bleistiftspuren lesbar gemacht
-            worden wären. Gegenüber der digitalen Manipulation vorhandener Abbildungen konnten hier
-            keine Fortschritte in Form von möglichen Lesungen erzielt werden.</p>
         <p>Durch rechnergestützte Kombination der Bilder aus verschiedenen Spektralbereichen konnten
             die Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein
             manuelles wie auch ein automatisches Verfahren zur Kombination der Spektralaufnahmen
@@ -84,7 +71,7 @@
             </figure>
             <figure>
                 <img src="/img/info/multispectral_imaging-image3.png"/>
-                <figcaption>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm. <u class="pure-tooltip pure-tooltip-right" data-content="„unserem unsagbar schönen Wiederzusammenkommen im März, da waren ja auch andere herzige Munderln ganz nahe davor, sogar ein bisserl verkatert davon warst du noch und doch – oder gerade darum? Wer kennt die Geheimnisse des Lebens! –“ Die Transkription wurde durch Nicoletta Giacon (Mailand) angefertigt.">Text</u></figcaption>
+                <figcaption>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm.</figcaption>
             </figure>
             <figure>
                 <img src="hyperspectral_imaging/media/image4.png"/>
@@ -95,6 +82,8 @@
                 <figcaption>Abb. 6: vgl. Abb. 3. Automatisches Verfahren.</figcaption>
             </figure>
         </div>
+=======
+>>>>>>> 43669956928b7e46aec0ecca3dc3d1bc97d5158b
     </article>
 </section>
 <?php include "includes/footer.php"; ?>
