@@ -71,6 +71,36 @@ header .breadcrumbs {
   padding: 0.5em;
 }
 
+/* style for slider */
+.slider {
+  margin-top: -0.6em;
+  margin-bottom: 3em;
+  background: rgb(235,228,221); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgb(235,228,221) 0%, rgb(185,170,156) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgb(235,228,221) 0%,rgb(185,170,156) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgb(235,228,221) 0%,rgb(185,170,156) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe4dd', endColorstr='#b9aa9c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.slider .center {
+  min-height:300px;
+  overflow:hidden;
+  display:table;
+}
+
+.slider .center > * {
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.slider .center h2 {
+  margin-top:0;
+}
+
+.slider .center p {
+  margin-bottom:0;
+}
+
 /* style for footer area */
 footer {
   position: fixed;
