@@ -10,7 +10,7 @@
             </div>
           </div>
 
-          <div>
+          <div style="background:#b7b18f url(img/slider/2-II-H.1-bg.png) center center;">
             <div class="center">
               <img src="img/slider/2-II-H.1.png">
               <div class="text">
@@ -20,7 +20,7 @@
             </div>
           </div>
 
-          <div>
+          <div style="background:#d8d5ca url(img/slider/H-P123.5-hg.png) center center;">
             <div class="center">
               <img src="img/slider/H-P123.5.png">
               <div class="text">
@@ -30,7 +30,7 @@
             </div>
           </div>
 
-          <div>
+          <div style="background:#cdc6ac url(img/slider/2-H-hg.png) center center;">
             <div class="center">
               <div class="text">
                 <h2>Text</h2>
@@ -50,6 +50,7 @@
             autoplay: true,
             dots:true,
             autoplaySpeed: 3000,
+            pauseOnHover: true,
             responsive: [
               {
                 breakpoint: 1125,
