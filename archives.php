@@ -6,10 +6,10 @@
         <article class="pure-u-3-5 pure-center">
             <h1>Archiv</h1>
 
-            <p>
-             <a href="archives_locations.php" title="Aufbewahrungsorte" class="pure-button">Aufbewahrungsorte</a>
-             <a href="archives_manuscripts.php" title="Handschriftenkonkordanz" class="pure-button">Handschriften</a>
-             <a href="archives_print.php" title="Konkordanz der Drucke" class="pure-button">Drucke</a>
+            <p class="pure-tile">
+             <a href="archives_locations.php" title="Aufbewahrungsorte" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
+             <a href="archives_manuscripts.php" title="Handschriftenkonkordanz" class="pure-button pure-button-tile">Hand&shy;schriften</a>
+             <a href="archives_print.php" title="Konkordanz der Drucke" class="pure-button pure-button-tile">Drucke</a>
             </p>
         
         </article>
