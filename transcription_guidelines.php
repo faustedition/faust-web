@@ -224,11 +224,11 @@
             Editorisch ergänzt werden diejenigen Zeichen, die durch mechanische Einflüsse des
             Druckvorgangs (z. B. geschwundene oder verschmutzte Lettern), Fehlstellen im Papier o.
             Ä. verlorengegangen oder unlesbar sind.</p>
-        <p>XML-Kodierung</p>
+        <!--<h2>XML-Kodierung</p>
         <p>Zeichen und Differenzierungen in den XML-Transkriptionen</p>
         <p>Die genannten Zeichen und Differenzierungen, auf deren Wiedergabe in den für den Nutzer
             sichtbaren Transkriptionen verzichtet wird, sind in den XML-kodierten Basisdaten der
-            Transkriptionen erhalten.<br/>[ausführlicher Text folgt noch]</p>
+            Transkriptionen erhalten.<br/>[ausführlicher Text folgt noch]</p>-->
         
     </article>
     
