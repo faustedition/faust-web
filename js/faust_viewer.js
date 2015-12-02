@@ -592,7 +592,7 @@ var createDocumentViewer = (function(){
           var repository = doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
             {caption: "Archiv", link: "archives.php"}, 
-            {caption: archives[repository].name, link: "archiveDetail.php?archiveId=" + repository},
+            {caption: archives[repository].name, link: "archives_locations_detail.php?id=" + repository},
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page

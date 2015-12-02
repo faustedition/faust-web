@@ -25,14 +25,17 @@ input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
 
 figure {margin:0.2em 0 1em 0; text-align:center;}
-figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
-figure img.large {max-width:none !important;}
-figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
+figure img {max-width:90% !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
+figure figcaption {margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
+figure[class*='pure-pull'] img {max-width:300px !important;}
+figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 
 *:target {background-color:rgba(155, 155, 155, 0.2);}
 
 .pure-table {width:100%; border:none;}
-.pure-table td, .pure-table th {border:none;}
+.pure-table td, .pure-table th {border-color:rgb(255,255,255);}
+.pure-table th.pure-sortable {cursor:pointer;}
+.pure-table th .fa {line-height:1.5em;} /* sort icons */
 .pure-table tr ~ tr {border-top:1px solid rgb(221,221,221);}
 .pure-table tr:hover {background-color:rgba(155, 155, 155, 0.1);}
 .pure-table thead {background-color:rgba(155, 155, 155, 0.2);}
@@ -43,6 +46,9 @@ figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; fon
 .pure-form input:focus:invalid:focus, .pure-form textarea:focus:invalid:focus, .pure-form select:focus:invalid:focus {border-color:rgb(202,60,60);}
 .pure-button {border-radius:4px;}
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {background-color:rgba(0,0,0,0.8); color:rgb(230, 230, 230);}
+
+.pure-tiles {display:table; table-layout:fixed;}
+.pure-button-tile {display:table-cell; border:0.5em solid white; width:33%; white-space:initial; padding:1em; height:10em; vertical-align:middle;}
 
 .pure-g-r [class*="pure-u"] {font-family:"Ubuntu", Arial, Helvetica, sans-serif;}
 .pure-g-r [class*="pure-u"] [class*="pure-u"] + [class*="pure-u"] {margin-left:-.31em;} /* avoid whitespace between nested grid elements */

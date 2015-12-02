@@ -41,6 +41,9 @@ header .breadcrumbs {
 }
 
 /* style for main area */
+section {
+    padding:0 1em;
+}
 .center {
     max-width: 995px;
     margin: 0px auto;
@@ -75,8 +78,7 @@ header .breadcrumbs {
 /* style for slider */
 .slider {
   display:none;
-  margin-top: -0.6em;
-  margin-bottom: 3em;
+  margin:-0.6em -1em 3em -1em;
   background: rgb(235,228,221); /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  rgb(235,228,221) 0%, rgb(185,170,156) 100%); /* FF3.6-15 */
   background: -webkit-radial-gradient(center, ellipse cover,  rgb(235,228,221) 0%,rgb(185,170,156) 100%); /* Chrome10-25,Safari5.1-6 */
