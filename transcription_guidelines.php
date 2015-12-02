@@ -97,25 +97,25 @@
             lässt sich zeilengetreu in die Anzeige der Faksimiles einblenden und ist auch in
             druckfähiger Form abrufbar.</p>
         <h4>Zeichenwiedergabe</h4>
-        <figure class="pure-pull-right">
-            <img src="/img/info/transcription_guidelines-image3.png"/>
-            <figcaption>Abb. 3: ##########</figcaption>
-        </figure>
-        <figure class="pure-pull-right">
-            <img src="/img/info/transcription_guidelines-image4.png"/>
-            <figcaption>Abb. 4: ##########</figcaption>
-        </figure>
         <ul>
             <li>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der lateinischen Schrift.</li>
             <li>Fehlende Umlautzeichen werden nicht ergänzt.</li>
             <li>Die Umlaute Ae, Oe und Ue bleiben gewahrt.</li>
             <li>Gleiches gilt für Geminationsstriche über n und m (n̄, m̄).</li>
         </ul>
+        <figure>
+            <img src="/img/info/transcription_guidelines-image3.png"/>
+            <figcaption>Abb. 3: ##########</figcaption>
+        </figure>
         <p>Die Stelle einer Einfügung in Interlinearzeilen oberhalb oder unterhalb, rechts oder
             links von der Einfügungsstelle wird räumlich getreu wiedergegeben. Einfügungszeichen
             werden in der Ansicht vereinfacht. Einfügungslinien werden durch Winkelzeichen an der
             Einfügungsstelle repräsentiert: der Verlauf der Einfügungslinie wird nicht
             nachgebildet.</p>
+        <figure>
+            <img src="/img/info/transcription_guidelines-image4.png"/>
+            <figcaption>Abb. 4: ##########</figcaption>
+        </figure>
         <p>Markierungen von Abschnitten (z. B. Zwischenstriche, waagerechte geschweifte Klammern)
             werden getreu wiedergegeben. [Auf die Wiedergabe von Randstrichen zur Begrenzung des
             Schriftspiegels wird verzichtet.]</p>

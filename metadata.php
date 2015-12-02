@@ -124,7 +124,7 @@
         rechts). Mit ihrer Hilfe lassen sich Handschriften leicht
         durchblättern.</p>
         <figure>
-          <img src="/img/info/metadata-IH32struktur.PNG" class="large" />
+          <img src="/img/info/metadata-IH32struktur.PNG" />
         </figure>
         <p>Waagerechte Linien entsprechen Blättern. Die obere Kante
         der Linie stellt die Vorderseite dar, die untere die

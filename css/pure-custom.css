@@ -25,9 +25,10 @@ input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
 
 figure {margin:0.2em 0 1em 0; text-align:center;}
-figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
-figure img.large {max-width:none !important;}
-figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
+figure img {max-width:90% !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
+figure figcaption {margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
+figure[class*='pure-pull'] img {max-width:300px !important;}
+figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 
 *:target {background-color:rgba(155, 155, 155, 0.2);}
 
