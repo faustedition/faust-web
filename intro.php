@@ -76,7 +76,7 @@
 
         <h2>Lesetext</h2>
         <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
-            jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ I ist dies der Druck im achten Band der
+            jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ ist dies der Druck im achten Band der
             ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des
             ‚Faust II‘ liegt die 187 Blätter umfassende sogenannte große Reinschrift zugrunde
             (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien
@@ -138,36 +138,40 @@
             Kurzbezeichnungen für Zeugen, sog. Siglen, Verwendung. Diese basieren auf dem
             System der Siglierung, das Erich Schmidt, der Herausgeber des ‚Faust‘ in den Bänden 14
             und 15 der Weimarer Ausgabe (WA), für die Handschriften des ‚Faust&nbsp;II‘ eingeführt
-            hat. Die Handschriften werden dabei zunächst nach der Texterstreckung geordnet.
-            Maßgebend ist dabei nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
+            hat. Die Handschriften werden dabei nach der Texterstreckung geordnet.
+            Maßgebend ist nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
             mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Abschnitt
             einsetzt, wird vor einer Handschrift eingeordnet, die mit einem späteren Vers
             einsetzt.</p>
 
         <h3>Siglen der Handschriften zum ‚Faust&nbsp;I‘</h3>
         <p>Zum Faust&nbsp;I liegen vergleichsweise wenige Handschriften vor, zu jeder Szene meist
-            nur eine. Im Zusammenhang einer Szene spricht Erich Schmidt, der Herausgeber des ‚Faust‘
-            in den Bänden 14 und 15 der Weimarer Ausgabe (WA), dann einfach jeweils von „H“ als der
-            Handschrift zu der betreffenden Szene (WA&nbsp;I&nbsp;14). Die Göchhausensche Abschrift
-            erhielt die Bezeichnung „U“ für ‚Urfaust‘. Um eindeutige Kurzbezeichnungen für jede
+            nur eine. 
+            Erich Schmidt hat die Handschriften deshalb nicht fortlaufend numeriert; stattdessen spricht 
+            er einfach jeweils von „H“ als der
+            Handschrift zu der betreffenden Szene (WA&nbsp;I&nbsp;14); die Göchhausensche Abschrift
+            des ‚Urfaust‘ bezeichnet er mit „U“. 
+            Diese Praxis wird in der Faust-Edition nicht fortgesetzt. 
+            Um eindeutige Kurzbezeichnungen für jede
             Handschrift zu erhalten, werden die Handschriften zum ‚Faust&nbsp;I‘ in der
-            Faust-Edition stattdessen durchlaufend numerisch nach dem Prinzip der Texterstreckung
+            Faust-Edition durchlaufend numerisch nach dem Prinzip der Texterstreckung
             sigliert. </p>
 
         <h3>Siglen der Handschriften zum ‚Faust&nbsp;II‘</h3>
         <p>Der Großteil der Siglen zu den einzelnen Akten des ‚Faust&nbsp;II‘ wurde von Erich
             Schmidt gemäß dem oben beschriebenen Prinzip der Texterstreckung eingeführt. Seit dem
             Erscheinen von Bd.&nbsp;15.2 der WA neu aufgefundene Handschriften wurden teils schon
-            von Erich Schmidt durch Hinzufügung von Siglen in dieses System integriert. Um alle ihm
+            von Erich Schmidt durch Hinzufügung neuer Siglen in dieses System integriert. Um alle ihm
             noch unbekannten oder aus anderen Gründen nicht siglierten Handschriften mit einer
             eindeutigen Kurzbezeichnung versehen zu können, ist ein Teil der Siglen Erich Schmidts
             wie auch der späteren Faust-Forschung ersetzt worden:</p>
         <ol>
-            <li>Vor allem die von Schmidt für die auswärtigen Handschriften eingeführte
+            <li>Die von Schmidt für die außerhalb des Goethe- und Schiller-Archivs befindlichen Handschriften eingeführte
                 alphabetische Siglierung ließ sich nicht so fortsetzen, dass dabei das Prinzip der
-                Texterstreckung hätte aufrechterhalten lassen. Alle betreffenden Handschriften sind
-                in die Reihe der numerisch siglierten Handschriften eingefügt worden, beginnend mit
-                I&nbsp;H.0d für I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg
+                Texterstreckung hätte aufrechterhalten werden können. Alle betreffenden Handschriften sind
+                in die Reihe der numerisch siglierten Handschriften eingefügt worden. 
+                Dazu wurden die neue numerische Siglen mit einer Buchstabenerweiterung eingeführt, beginnend mit
+                I&nbsp;H.0d für die Handschrift mit der WA-Sigle I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg
                 (faust://bibliography/fischer-lamberg1955) verfahren.</li>
             <li>Einige der von Schmidt unter einer gemeinsamen Sigle zusammengefassten Handschriften
                 liegen heute unter verschiedenen Archivsignaturen oder sogar an verschiedenen
