@@ -530,4 +530,5 @@
         </script>
 
       </div>
+      <?php $showFooter = false; ?>
       <?php include "includes/footer.php"; ?>

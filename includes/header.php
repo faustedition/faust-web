@@ -1,4 +1,7 @@
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
+<?php
+  header('Content-Type: text/html; charset=utf-8');
+  $showFooter = true; // can be set in content pages
+?>
 <!DOCTYPE HTML>
 <html>
   <head>
