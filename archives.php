@@ -8,7 +8,7 @@
 
             <p>
              <a href="archives_locations.php" title="Aufbewahrungsorte" class="pure-button">Aufbewahrungsorte</a>
-             <a href="archives_manuscripts.php?view=manuscript-concordance" title="Handschriftenkonkordanz" class="pure-button">Handschriften</a>
+             <a href="archives_manuscripts.php" title="Handschriftenkonkordanz" class="pure-button">Handschriften</a>
              <a href="archives_print.php" title="Konkordanz der Drucke" class="pure-button">Drucke</a>
             </p>
         

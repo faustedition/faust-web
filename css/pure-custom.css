@@ -32,7 +32,9 @@ figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; fon
 *:target {background-color:rgba(155, 155, 155, 0.2);}
 
 .pure-table {width:100%; border:none;}
-.pure-table td, .pure-table th {border:none;}
+.pure-table td, .pure-table th {border-color:rgb(255,255,255);}
+.pure-table th.pure-sortable {cursor:pointer;}
+.pure-table th .fa {line-height:1.5em;} /* sort icons */
 .pure-table tr ~ tr {border-top:1px solid rgb(221,221,221);}
 .pure-table tr:hover {background-color:rgba(155, 155, 155, 0.1);}
 .pure-table thead {background-color:rgba(155, 155, 155, 0.2);}
