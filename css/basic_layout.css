@@ -74,6 +74,7 @@ header .breadcrumbs {
 
 /* style for slider */
 .slider {
+  display:none;
   margin-top: -0.6em;
   margin-bottom: 3em;
   background: rgb(235,228,221); /* Old browsers */
