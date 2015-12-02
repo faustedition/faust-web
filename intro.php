@@ -34,7 +34,6 @@
             <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
         </div>
         <div class="pure-u-1-8"></div>
-
         <h2>Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
             Erhalten ist ein umfangreicher Bestand an Handschriften, die von etwa 1774 bis 1831
@@ -43,10 +42,10 @@
             Versgruppen, Arbeitshandschriften, vorläufigen und überarbeiteten Reinschriften sowie
             Druckvorlagen. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus
             der Zeit seit der Wiederaufnahme der Arbeit am ‚Faust‘ im Jahr 1825. Der weitaus
-            umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv (GSA). Der
-            Bestand des GSA umfasst 429 Archivalieneinheiten mit insgesamt 1639 beschriebenen Seiten
-            zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im Besitz
-            von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
+            umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv in Weimar (GSA).
+            Der Bestand des GSA umfasst 429 Archivalieneinheiten mit insgesamt 1639 beschriebenen
+            Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im
+            Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
             Frankreich, Italien und in den Vereinigten Staaten.</p>
         <p>Das <a href="archives.php">digitale Archiv</a> macht die gesamte relevante Überlieferung
             des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter,
@@ -61,8 +60,14 @@
             Handschriften und gibt den Text einer Handschrift wieder.</p>
 
         <h2>Drucke</h2>
-        <p>1790 erschien ‚Faust. Ein Fragment‘ im Druck. Zu einer vollständigen Veröffentlichung des
-            ‚Faust II‘ kam es erst kurz nach Goethes Tod.</p>
+        <p>1790 erschien ‚Faust. Ein Fragment‘ im Druck. 1808 erschien in der ersten bei Cotta
+            erschienenen Gesamtausgabe ‚Faust. Eine Tragödie‘ mit „Der Tragödie erster Theil“. Zwei
+            Partien des zweiten Teils wurden 1827 und 1828 in der Ausgabe letzter Hand
+            veröffentlicht: ‚Helena, klassisch- romantische Phantasmagorie. Zwischenspiel zu Faust‘
+            sowie, unter dem Titel ‚Faust. Zweyter Theil‘, der spätere Beginn des ersten Akts. Zu
+            einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
+            1833.</p>
+        
         <p>Teil der Ausgabe sind alle textkritisch relevanten <a
                 href="archives.php?view=print-concordance">Drucke</a> und Teildrucke des ‚Faust‘.
             Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
@@ -131,9 +136,9 @@
         <h2>Siglen</h2>
         <p>In den tabellarischen Übersichten des Archivs, den Ansichten einzelner Handschriften und
             Drucke, der zeilensynoptischen Darstellung im Lesetext sowie im Balkendiagramm finden
-            Kurzbezeichnungen für Zeugen, sog. Siglen, Verwendung. Ausgangspunkt ist dabei das
+            Kurzbezeichnungen für Zeugen, sog. Siglen, Verwendung. Diese basieren auf dem
             System der Siglierung, das Erich Schmidt, der Herausgeber des ‚Faust‘ in den Bänden 14
-            und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ eingeführt
+            und 15 der Weimarer Ausgabe (WA), für die Handschriften des ‚Faust&nbsp;II‘ eingeführt
             hat. Die Handschriften werden dabei zunächst nach der Texterstreckung geordnet.
             Maßgebend ist dabei nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
             mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Abschnitt
@@ -166,19 +171,19 @@
                 I&nbsp;H.0d für I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg
                 (faust://bibliography/fischer-lamberg1955) verfahren.</li>
             <li>Einige der von Schmidt unter einer gemeinsamen Sigle zusammengefassten Handschriften
-                liegen unter verschiedenen Archivsignaturen oder sogar an verschiedenen
-                Aufbewahrungsorten. Um einzelne archivalische Objekte identifizierbar zu machen,
+                liegen heute unter verschiedenen Archivsignaturen oder sogar an verschiedenen
+                Aufbewahrungsorten. Um einzelne archivalische Objekte eindeutig referenzierbar zu machen,
                 wurden die betreffenden Siglen mit einem Zusatz erweitert.</li>
         </ol>
-        <p>Die von Erich Schmidt eingeführten numerischen Siglen blieben dagegen auch dann erhalten,
+        <p>Die von Erich Schmidt eingeführten numerischen Siglen blieben dagegen immer erhalten, auch
             wenn sie gegen das sonst geltende Prinzip der Texterstreckung verstoßen (z.B.
-            II&nbsp;H.74).</p>
+            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_391247.xml">II&nbsp;H.74</a>).</p>
 
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
 
-            <h2>Technische Untersuchungsverfahren</h2>
+        <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit sind eine Reihe von technischen Verfahren angewendet
             worden, über die unter folgenden Stichworten berichtet wird:</p>
         <ul>
