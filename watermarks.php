@@ -25,8 +25,8 @@
             1589, GSA 25/W 1699, GSA 25/W 1742, GSA 25/W 1743, GSA 25/W 1744, GSA 25/W 1745, GSA
             25/W 1747, GSA 25/W 1748, GSA 25/W 1749, GSA 25/W 1751, GSA 25/W 1752, GSA 25/W 1754,
             GSA 25/W 1755, GSA 25/W 1756 und GSA 25/W 1757.</p>
-        <p><strong>1. Vorgehensweise</strong></p>
-        <p><strong>Anfertigung von Auf- und Durchlichtaufnahmen</strong></p>
+        <h2>Vorgehensweise</h2>
+        <h3>Anfertigung von Auf- und Durchlichtaufnahmen</h3>
         <p>Es wurden hochauflösende Auf- und Durchlichtaufnahmen (mind. 300 dpi) der einzelnen
             Handschriftenblätter angefertigt. Dies geschah in oktagonaler Anordnung, Kamera- und
             Objektebene durften nicht verkantet sein. Es wurde stets die gesamte Seite eines
@@ -225,7 +225,7 @@
             Handschriften (Zettel) handelt, musste hier manuell eine andere Einstellung auch beim
             Durchlicht vorgenommen werden, da die Papierfläche für eine automatische Einstellung zu
             klein ist; bewährt hat sich vor allem der Wert von 1/50 Sekunde.</p>
-        <p><strong>Bearbeitung der Aufnahmen mittels Subtraktion</strong></p>
+        <h3>Bearbeitung der Aufnahmen mittels Subtraktion</h3>
         <p>Die Aufnahmen wurden mittels Subtraktionsverfahren bearbeitet und stehen in der Form in
             der Edition als TIFF und JPEG bereit. Unter Subtraktion ist das Herausrechnen der
             Beschriftung durch das Übereinanderlegen von einer Auf- und Durchlichtaufnahme desselben
@@ -249,7 +249,7 @@
             <figcaption>Bild 2: Detail aus Handschrift 2 III H.10, Einzelblatt (Datei
                 GSA_25-W_1589_wm_detail_TL30_100.jpg)</figcaption>
         </figure>
-        <p><strong>Anfertigung von Durchzeichnungen</strong></p>
+        <h3>Anfertigung von Durchzeichnungen</h3>
         <p>Außerdem wurden Durchzeichnungen – manuelle Wiedergaben der Wasserzeichen –
             angefertigt.</p>
         <figure>
@@ -257,11 +257,11 @@
             <figcaption>Bild 3: Durchzeichnung der Handschrift 2 III H.10, Einzelblatt (Datei
                 GSA_25-W_1589_wm_hand_drawn_150.jpg)</figcaption>
         </figure>
-        <p><strong>Beschreibung der Wasserzeichen</strong></p>
+        <h3>Beschreibung der Wasserzeichen</h3>
         <p>Zu jedem Wasserzeichen erfolgte eine Beschreibung, und zwar nicht nur für diejenigen, zu
             denen Aufnahmen angefertigt wurden, sondern zu allen in der Edition versammelten
             Handschriften.</p>
-        <p><strong>2. Benennungssystem der Wasserzeichendigitalisate</strong></p>
+        <h2>Benennungssystem der Wasserzeichendigitalisate</h2>
         <p>Die Dateinamen wurden als 'sprechende' semantisch gefüllt. So verraten sie zugleich
             wichtige Detailinformationen zu den Aufnahmebedingungen. Sie setzen sich wie folgt
             zusammen:</p>
@@ -284,7 +284,7 @@
             1589 vor, die für die ersten Probeläufe verwendet wurde; <em>TL</em> steht für
             Durchlichtaufnahmen (<em>transmitted light</em>); die Zahl zeigt an, welche der
             Durchlichtdateien der Subtraktion zugrunde lag.</p>
-        <p><strong>3. Kooperationspartner</strong></p>
+        <h2>Kooperationspartner</h2>
         <p>An der Reproduktion der Wasserzeichen, ihrer Bearbeitung und Beschreibung waren mehrere
             Institutionen und Personen beteiligt: Das GSA stellte die Handschriften bereit sowie die
             Technik und Räumlichkeiten, Carmen Knickmeier, Mitarbeiterin des GSA, übernahm die Auf-
@@ -297,7 +297,7 @@
             der Wasserzeichen an. Finanziert wurden die Aufnahmen und ihre Bearbeitung vom Lehrstuhl
             für Computerphilologie und Neuere Deutsche Literaturgeschichte (Prof. Dr. Fotis
             Jannidis) der Universität Würzburg.</p>
-        <p><strong>4. Ausblick</strong></p>
+        <h2>Ausblick</h2>
         <p>Die Bereitstellung von Wasserzeichenaufnahmen soll exemplarisch aufzeigen, welche
             Interpretationsmöglichkeiten sich mit der Einbindung dieser Materialien in eine digitale
             Edition für den Nutzer bieten. Eine systematische Wasserzeichenanalyse konkret von
