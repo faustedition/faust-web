@@ -17,14 +17,20 @@
             Es konnten aus Gründen des Bestandsschutzes nur Handschriften in ungebundener Form
             berücksichtigt werden, Konvolute wurden ausgeschieden.</p>
         <p>Bei den ausgewählten Handschriften handelt es sich um folgende 42 (Angabe der
-            Signaturen): GSA 25/W 1360, GSA 25/W 1361, GSA 25/W 1362, GSA 25/W 1371, GSA 25/W 1374,
-            GSA 25/W 1375, GSA 25/W 1376, GSA 25/W 1377, GSA 25/W 1378, GSA 25/W 1380, GSA 25/W
-            1383, GSA 25/W 1386, GSA 25/W 1387, GSA 25/W 1389, GSA 25/W 1390, GSA 25/W 1391, GSA
-            25/W 1392, GSA 25/W 1393, GSA 25/W 1394, GSA 25/W 1395, GSA 25/W 1397, GSA 25/W 1399,
-            GSA 25/W 1400, GSA 25/W 1418, GSA 25/W 1493, GSA 25/W 1579, GSA 25/W 1588, GSA 25/W
-            1589, GSA 25/W 1699, GSA 25/W 1742, GSA 25/W 1743, GSA 25/W 1744, GSA 25/W 1745, GSA
-            25/W 1747, GSA 25/W 1748, GSA 25/W 1749, GSA 25/W 1751, GSA 25/W 1752, GSA 25/W 1754,
-            GSA 25/W 1755, GSA 25/W 1756 und GSA 25/W 1757.</p>
+            Signaturen): GSA&nbsp;25/W&nbsp;1360 – GSA&nbsp;25/W&nbsp;1361 – GSA&nbsp;25/W&nbsp;1362
+            – GSA&nbsp;25/W&nbsp;1371 – GSA&nbsp;25/W&nbsp;1374 – GSA&nbsp;25/W&nbsp;1375 –
+            GSA&nbsp;25/W&nbsp;1376 – GSA&nbsp;25/W&nbsp;1377 – GSA&nbsp;25/W&nbsp;1378 –
+            GSA&nbsp;25/W&nbsp;1380 – GSA&nbsp;25/W&nbsp;1383 – GSA&nbsp;25/W&nbsp;1386 –
+            GSA&nbsp;25/W&nbsp;1387 – GSA&nbsp;25/W&nbsp;1389 – GSA&nbsp;25/W&nbsp;1390 –
+            GSA&nbsp;25/W&nbsp;1391, GSA&nbsp;25/W&nbsp;1392 – GSA&nbsp;25/W&nbsp;1393 –
+            GSA&nbsp;25/W&nbsp;1394 – GSA&nbsp;25/W&nbsp;1395 – GSA&nbsp;25/W&nbsp;1397 –
+            GSA&nbsp;25/W&nbsp;1399 – GSA&nbsp;25/W&nbsp;1400 – GSA&nbsp;25/W&nbsp;1418 –
+            GSA&nbsp;25/W&nbsp;1493 – GSA&nbsp;25/W&nbsp;1579 – GSA&nbsp;25/W&nbsp;1588 –
+            GSA&nbsp;25/W&nbsp;1589 – GSA&nbsp;25/W&nbsp;1699 – GSA&nbsp;25/W&nbsp;1742 –
+            GSA&nbsp;25/W&nbsp;1743 – GSA&nbsp;25/W&nbsp;1744 – GSA&nbsp;25/W&nbsp;1745,
+            GSA&nbsp;25/W&nbsp;1747 – GSA&nbsp;25/W&nbsp;1748 – GSA&nbsp;25/W&nbsp;1749 –
+            GSA&nbsp;25/W&nbsp;1751 – GSA&nbsp;25/W&nbsp;1752 – GSA&nbsp;25/W&nbsp;1754 –
+            GSA&nbsp;25/W&nbsp;1755 – GSA&nbsp;25/W&nbsp;1756 und GSA&nbsp;25/W&nbsp;1757.</p>
         <h2>Vorgehensweise</h2>
         <h3>Anfertigung von Auf- und Durchlichtaufnahmen</h3>
         <p>Es wurden hochauflösende Auf- und Durchlichtaufnahmen (mind. 300 dpi) der einzelnen
@@ -35,7 +41,7 @@
             Handschriftenseite gewählt, wo das Wasserzeichen klar 'von vorn' zu erkennen ist, die
             Beschriftungsreihenfolge und -anordnung spielte hingegen keine Rolle.</p>
         <p>Es fanden zwei Probeläufe am 8. März 2013 statt. Der erste Durchgang erfolgte mit der
-            Handschrift 2 III H.10 (Signatur GSA 25/W 1589). Folgende Einstellungen wurden
+            Handschrift 2 III H.10 (Signatur GSA&nbsp;25/W&nbsp;1589). Folgende Einstellungen wurden
             hintereinander ausprobiert:</p>
         <ul>
             <li><p>Automatik: ISO 200, Blende F 4, Belichtungszeit 1/250</p></li>
@@ -154,61 +160,61 @@
                     <td>ISO</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1589</td>
+                    <td>GSA&nbsp;25/W&nbsp;1589</td>
                     <td>Konzept</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1362</td>
+                    <td>GSA&nbsp;25/W&nbsp;1362</td>
                     <td>Konzept</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1742</td>
+                    <td>GSA&nbsp;25/W&nbsp;1742</td>
                     <td>Schreib</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1374</td>
+                    <td>GSA&nbsp;25/W&nbsp;1374</td>
                     <td>Schreib</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1376</td>
+                    <td>GSA&nbsp;25/W&nbsp;1376</td>
                     <td>Schreib</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1392</td>
+                    <td>GSA&nbsp;25/W&nbsp;1392</td>
                     <td>Schreib</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1752</td>
+                    <td>GSA&nbsp;25/W&nbsp;1752</td>
                     <td>Schreib</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1757</td>
+                    <td>GSA&nbsp;25/W&nbsp;1757</td>
                     <td>Schreib</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1360</td>
+                    <td>GSA&nbsp;25/W&nbsp;1360</td>
                     <td>Konzept</td>
                     <td>M</td>
                     <td>100</td>
                 </tr>
                 <tr>
-                    <td>GSA 25/W 1375</td>
+                    <td>GSA&nbsp;25/W&nbsp;1375</td>
                     <td>Konzept</td>
                     <td>M</td>
                     <td>100</td>
@@ -221,10 +227,11 @@
             Belichtungszeitangabe). Die Blende stellt sich in der Regel auf einen Wert von 4 bzw.
             nahe 4 ein, bei manueller Einstellung sollte demnach F 4 eingestellt werden. Die
             Belichtungszeit liegt im Regelfall bei 1/250 Sekunde.</p>
-        <p>Es gab zwei abweichende Fälle: GSA 25/W 1360 und GSA 25/W 1375: Da es sich um zwei kleine
-            Handschriften (Zettel) handelt, musste hier manuell eine andere Einstellung auch beim
-            Durchlicht vorgenommen werden, da die Papierfläche für eine automatische Einstellung zu
-            klein ist; bewährt hat sich vor allem der Wert von 1/50 Sekunde.</p>
+        <p>Es gab zwei abweichende Fälle: GSA&nbsp;25/W&nbsp;1360 und GSA&nbsp;25/W&nbsp;1375: Da es
+            sich um zwei kleine Handschriften (Zettel) handelt, musste hier manuell eine andere
+            Einstellung auch beim Durchlicht vorgenommen werden, da die Papierfläche für eine
+            automatische Einstellung zu klein ist; bewährt hat sich vor allem der Wert von 1/50
+            Sekunde.</p>
         <h3>Bearbeitung der Aufnahmen mittels Subtraktion</h3>
         <p>Die Aufnahmen wurden mittels Subtraktionsverfahren bearbeitet und stehen in der Form in
             der Edition als TIFF und JPEG bereit. Unter Subtraktion ist das Herausrechnen der
