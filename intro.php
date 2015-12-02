@@ -66,8 +66,7 @@
             veröffentlicht: ‚Helena, klassisch- romantische Phantasmagorie. Zwischenspiel zu Faust‘
             sowie, unter dem Titel ‚Faust. Zweyter Theil‘, der spätere Beginn des ersten Akts. Zu
             einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
-            1833.</p>
-        
+            1833.</p>        
         <p>Teil der Ausgabe sind alle textkritisch relevanten <a
                 href="archives.php?view=print-concordance">Drucke</a> und Teildrucke des ‚Faust‘.
             Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
@@ -87,13 +86,13 @@
         <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung.
             Durch Auswahl der einzelnen Zeilen können alle überlieferten Fassungen eines Verses,
             einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in
-            zeilensynoptischer Anordnungen aufgerufen werden. Die Sigle am rechten Rand führt zur
+            zeilensynoptischer Anordnung aufgerufen werden. Die Sigle am rechten Rand führt zur
             Einzeldarstellung des Zeugen im digitalen Archiv.</p>
 
         <h2>Genese</h2>
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend dar.</p>
-        <h2>Gesamtübersicht</h2>
+        <h3>Gesamtübersicht</h3>
         <p>In der linken Hälfte der <a href="chessboard_overview.php">Gesamtübersicht</a> sind all
             jene Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘
             erschienen sind. In der rechten Hälfte findet sich eine Übersicht zum ‚Faust&nbsp;II‘.
@@ -104,16 +103,16 @@
             Unabgeschlossenheit, Schwarz Fertigstellung.</p>
         <p>Die Auswahl einer Spalte in einer der beiden Hälften führt zu einer detaillierteren
             Darstellung.</p>
-        <h2>Übersichten zum ‚Faust&nbsp;I‘ und zum ‚Faust&nbsp;II‘</h2>
+        <h3>Übersichten zum ‚Faust&nbsp;I‘ und zum ‚Faust&nbsp;II‘</h3>
         <p>Die Übersicht zum <a href="chessboard_faust_i.php">‚Faust&nbsp;I‘</a> ist nach Szenen
             gegliedert. Die einleitenden Abschnitte ‚Zueignung‘, ‚Vorspiel‘ und ‚Prolog‘ bleiben
             unbeziffert, die nachfolgenden Szenen werden durchgezählt. Beim Ansteuern einer Spalte
             erscheint der Szenentitel.</p>
         <p>Die Übersicht zum <a href="chessboard_faust_ii.php">‚Faust&nbsp;II‘</a> ist nach Akten
-            gegliedert, die mit römischen Ziffern durchgezählt. Einzelne Spalten entsprechen Szenen,
-            deren Titel beim Ansteuern erscheint. Die im Zeitraum vor 1825 konzipierten oder
+            gegliedert, die mit römischen Ziffern durchgezählt sind. Einzelne Spalten entsprechen Szenen,
+            deren Titel beim Ansteuern erscheint. Die vor 1825 konzipierten oder
             entstandenen Szenen sind in der unteren Zeile zusammengefasst.</p>
-        <h2>Balkendiagramm zu einzelnen Szenen</h2>
+        <h3>Balkendiagramm zu einzelnen Szenen</h3>
         <p>Die Auswahl einer Spalte in den Übersichten zum ‚Faust&nbsp;I‘ und ‚Faust&nbsp;II‘ führt
             zu einem Balkendiagramm, in dem alle relevanten Handschriften und Drucke zu der
             betreffenden Szene angezeigt werden. Im Diagramm sind neben handschriftlichen und
