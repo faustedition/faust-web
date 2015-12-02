@@ -5,7 +5,7 @@
         <div class="pure-u-2-3 pure-gap">
         <p>In zahlreichen Handschriften werden Bleistiftspuren von späteren Niederschriften in Tinte
             überlagert. Die Bleistiftspuren sind hier wie auch generell oftmals stark verwischt. In
-            Kooperation mit Jost Gippert und Manuel Raaf (Frankfurt am Main) wurde multispektrale
+            Kooperation mit Jost Gippert und Manuel Raaf (beide Frankfurt am Main) wurde das Verfahren der multispektrale
             Bildverarbeitung an Handschriften des Goethe- und Schiller-Archivs und des Freien
             Deutschen Hochstifts angewendet. Dies diente dem Ziel, die Bleistift- sowohl gegenüber
             der Tintenschicht als auch gegenüber dem Papieruntergrund deutlicher hervortreten zu
@@ -18,7 +18,7 @@
             Infrarot-Strahlung eingesetzt, wenn der Farbunterschied zwischen den sich überlagernden
             Schreibmaterialien besonders gering war. Auf den Einsatz von Ultraviolettstrahlung wurde
             aus konservatorischen Gründen verzichtet.</p>
-        <p>Am 21. Juni 2012 wurden am Freien Deutschen Hochstift Aufnahmen von Briefen Hugo von
+        <p>Im Juni 2012 wurden am Freien Deutschen Hochstift Aufnahmen von Briefen Hugo von
             Hofmannsthals sowie von den zum ‚Faust‘ gehörigen Streifen angefertigt. Gute Ergebnisse
             wurden bei der Kontrastierung verschiedenfarbiger Schreibmaterialien erzielt, wie etwa
             einem Brief Hofmannsthals, bei dem schwarze mit dunkelblauer Tinte gezielt unlesbar
@@ -32,7 +32,7 @@
             oder durch Korrosion braun gewordenen Eisengallustinten der im Goethe- und
             Schiller-Archiv befindlichen Handschriften zum ‚Faust‘ (die Aufnahmen wurden in
             Kooperation mit Manuel Raaf am 27. und 28. März 2013 angefertigt). Auch diese Tinten
-            reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
+            reflektieren einen Teil des Lichtspektrums stärker als andere Teile und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 3 und 4).</p>
         <p>Durch rechnergestützte Kombination der Bilder aus verschiedenen Spektralbereichen konnten
             die Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein
