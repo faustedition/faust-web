@@ -117,8 +117,8 @@
         </div>
         <div>
             <h3 id="Drucke_Meta">2. Metadaten der Drucke</h3>
-            <p>Zu jedem Druck gibt es eine Beschreibung mit Angaben (Metadaten) zur Sigle des Drucks
-                in der maßgeblichen Bibliographie von Waltraud Hagen und weiteren Siglen, Nummer des
+            <p>Zu jedem Druck gibt es eine Beschreibung mit Angaben zur Sigle des Drucks
+                in der maßgeblichen Bibliographie von Waltraud Hagen und zu weiteren Siglen, zur Nummer des
                 Drucks bei Hagen, gegebenenfalls zum Status als Korrekturexemplar oder
                 Revisionsbogen. Bei Korrekturexemplaren und Revisionsbögen werden auch
                 Aufbewahrungsort und Archivsignatur angegeben.</p>
