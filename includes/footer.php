@@ -1,4 +1,5 @@
     </main>
+    <?php if ( $showFooter !== false ) : ?>
     <footer>
       <div class="pure-g-r">
         <div class="pure-u-1-2 pure-fade-50">
@@ -13,5 +14,6 @@
         </div>
       </div>
     </footer>
+    <?php endif; ?>
   </body>
 </html>

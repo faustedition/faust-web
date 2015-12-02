@@ -2,6 +2,7 @@
 <section class="center pure-g-r">
     <article class="pure-u-1">
         <h1>Multispektrale Bildverarbeitung</h1>
+        <div class="pure-u-2-3 pure-gap">
         <p>In zahlreichen Handschriften werden Bleistiftspuren von späteren Niederschriften in Tinte
             überlagert. Die Bleistiftspuren sind hier wie auch generell oftmals stark verwischt. In
             Kooperation mit Jost Gippert und Manuel Raaf (Frankfurt am Main) wurde multispektrale
@@ -24,15 +25,6 @@
             gemacht worden war (Abb. 1, 2). Die Separation war möglich, weil die dunkelblaue Tinte
             vom menschlichen Auge zwar schwer von der schwarzen zu unterscheiden ist, für einen Teil
             des Lichtspektrums (Wellenlänge um 440 nm) aber einen hohen Reflexionsgrad aufweist.</p>
-        <p><img src="img/info/multispectral_imaging-image1a.jpg"/></p>
-        <p>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober
-            1912)</p>
-        <p><img src="img/info/multispectral_imaging-image1.jpeg"/></p>
-        <p>Abb. 2: FDH 30942,17 (vgl. Abb. 1). Wellenlänge: 440 nm. Text: „unserem unsagbar schönen
-            Wiederzusammenkommen im März, da waren ja auch <em>andere</em> herzige Munderln ganz
-            nahe davor, sogar ein bisserl verkatert davon warst du noch und doch – oder gerade
-            darum? Wer kennt die Geheimnisse des Lebens! –“ Die Transkription wurde durch Nicoletta
-            Giacon (Mailand) angefertigt.</p>
         <p>Die Aufnahme zeigt, dass die dunkelblaue Tinte einen bestimmten Teil des Lichtspektrums
             stark reflektiert, während die durch sie unlesbar gemachte schwarze Tinte auch diesen
             Teil des Lichtspektrums absorbiert und sich dadurch deutlich von der dunkelblauen
@@ -42,10 +34,6 @@
             Kooperation mit Manuel Raaf am 27. und 28. März 2013 angefertigt). Auch diese Tinten
             reflektieren einen Teil des Lichtspektrums stärker als andere und geben so den Blick auf
             die zugrundeliegende Bleistiftschicht frei (Abb. 3 und 4).</p>
-        <p><img src="img/info/multispectral_imaging-image2.png"/></p>
-        <p>Abb. 3: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</p>
-        <p><img src="img/info/multispectral_imaging-image3.png"/></p>
-        <p>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm.</p>
         <p>Durch rechnergestützte Kombination der Bilder aus verschiedenen Spektralbereichen konnten
             die Tintenschichten vollständig unsichtbar gemacht werden. Dabei wurde sowohl ein
             manuelles wie auch ein automatisches Verfahren zur Kombination der Spektralaufnahmen
@@ -63,14 +51,37 @@
             Trennung von einander überlagernden Tinten- und Bleistiftspuren erreicht. Da aber auch
             keine zusätzlichen Entzifferungsergebnisse erzielt wurden, wurde der Ansatz nicht auf
             die Gesamtheit der Aufnahmen angewandt.--></p>
-        <p><img src="img/info/multispectral_imaging-image4.png"/></p>
-        <p>Abb. 5: Vgl. Abb. 3. Manuelles Verfahren.</p>
-        <p><img src="img/info/multispectral_imaging-image5.png"/></p>
-        <p>Abb. 6: vgl. Abb. 3. Automatisches Verfahren.</p>
         <p>Es gelang letztlich nicht, den Kontrast zwischen stark verwischten Bleistiftspuren und
             dem Papieruntergrund so zu verstärken, dass zuvor unlesbare Bleistiftspuren lesbar
             gemacht worden wären. Gegenüber der digitalen Manipulation vorhandener Abbildungen
             konnten hier keine Fortschritte in Form von möglichen Lesungen erzielt werden.</p>
+        </div>
+        <div class="pure-u-1-3 pure-gap">
+            <figure>
+                <img src="/img/info/multispectral_imaging-image1a.jpg"/>
+                <figcaption>Abb. 1: FDH 30942,17 (Hugo von Hofmannsthal an Gerty von Hofmannsthal, 15. Oktober 1912)</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/info/multispectral_imaging-image1.jpeg"/>
+                <figcaption>Abb. 2: FDH 30942,17 (vgl. Abb. 1). Wellenlänge: 440 nm. <u class="pure-tooltip pure-tooltip-right" data-content="„unserem unsagbar schönen Wiederzusammenkommen im März, da waren ja auch andere herzige Munderln ganz nahe davor, sogar ein bisserl verkatert davon warst du noch und doch – oder gerade darum? Wer kennt die Geheimnisse des Lebens! –“ Die Transkription wurde durch Nicoletta Giacon (Mailand) angefertigt.">Text</u></figcaption>
+            </figure>
+            <figure>
+                <img src="/img/info/multispectral_imaging-image2.png"/>
+                <figcaption>Abb. 3: GSA 25/W 1638 (WA: 2 III H<sup>58</sup>), Vorderseite.</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/info/multispectral_imaging-image3.png"/>
+                <figcaption>Abb. 4: vgl. Abb. 2. Wellenlänge: 1000 nm.</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/info/multispectral_imaging-image4.png"/>
+                <figcaption>Abb. 5: Vgl. Abb. 3. Manuelles Verfahren.</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/info/multispectral_imaging-image5.png"/>
+                <figcaption>Abb. 6: vgl. Abb. 3. Automatisches Verfahren.</figcaption>
+            </figure>
+        </div>
     </article>
 </section>
 <?php include "includes/footer.php"; ?>

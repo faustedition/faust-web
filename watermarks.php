@@ -15,186 +15,196 @@
 <li><p>ISO 800, Blende F 2.8, Belichtungszeit 1/800</p></li>
 </ul>
 <p>Ein zweiter Probelauf mit derselben Handschrift erfolgte unter folgenden Bedingungen (Tabelle 1):</p>
-<table>
+<table class="pure-table">
+<caption>Tabelle 1</caption>
+<thead>
+<tr>
+  <th>Aufnahmeart</th>
+  <th>Automatik (A) oder Manuell (M)</th>
+  <th>ISO</th>
+  <th>Blende</th>
+  <th>Belichtungszeit</th>
+  <th>Dateiname</th>
+  <th>Anmerkungen</th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Aufnahmeart</td>
-<td style="text-align: left;">Automatik (A) oder Manuell (M)</td>
-<td style="text-align: left;">ISO</td>
-<td style="text-align: left;">Blende</td>
-<td style="text-align: left;">Belichtungszeit</td>
-<td style="text-align: left;">Dateiname</td>
-<td style="text-align: left;">Anmerkungen</td>
+<tr>
+  <td>Auflicht</td>
+  <td>A</td>
+  <td></td>
+  <td>F 4</td>
+  <td>1/250</td>
+  <td>DSC 0024</td>
+  <td></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Auflicht</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">F 4</td>
-<td style="text-align: left;">1/250</td>
-<td style="text-align: left;">DSC 0024</td>
-<td style="text-align: left;"></td>
+<tr>
+  <td>Auflicht</td>
+  <td>M</td>
+  <td>800</td>
+  <td>F 2.8</td>
+  <td>1/500</td>
+  <td>DSC 0025</td>
+  <td>Streifigkeit</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Auflicht</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">800</td>
-<td style="text-align: left;">F 2.8</td>
-<td style="text-align: left;">1/500</td>
-<td style="text-align: left;">DSC 0025</td>
-<td style="text-align: left;">Streifigkeit</td>
+<tr>
+  <td>Auflicht</td>
+  <td>M</td>
+  <td>100</td>
+  <td>F 16</td>
+  <td>1/2</td>
+  <td>DSC 0026</td>
+  <td>Gute Qualität</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Auflicht</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">F 16</td>
-<td style="text-align: left;">1/2</td>
-<td style="text-align: left;">DSC 0026</td>
-<td style="text-align: left;">Gute Qualität</td>
+<tr>
+  <td>Auflicht</td>
+  <td>M</td>
+  <td>100</td>
+  <td>F 2.8</td>
+  <td>1/60</td>
+  <td>DSC 0027</td>
+  <td>Gute Qualität</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Auflicht</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">F 2.8</td>
-<td style="text-align: left;">1/60</td>
-<td style="text-align: left;">DSC 0027</td>
-<td style="text-align: left;">Gute Qualität</td>
+<tr>
+  <td>Durchlicht</td>
+  <td>A</td>
+  <td></td>
+  <td>F 4</td>
+  <td>1/250</td>
+  <td>DSC 0028</td>
+  <td></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Durchlicht</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">F 4</td>
-<td style="text-align: left;">1/250</td>
-<td style="text-align: left;">DSC 0028</td>
-<td style="text-align: left;"></td>
+<tr>
+  <td>Durchlicht</td>
+  <td>M</td>
+  <td>800</td>
+  <td>F 2.8</td>
+  <td></td>
+  <td>DSC 0029</td>
+  <td></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Durchlicht</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">800</td>
-<td style="text-align: left;">F 2.8</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">DSC 0029</td>
-<td style="text-align: left;"></td>
+<tr>
+  <td>Durchlicht</td>
+  <td>M</td>
+  <td>100</td>
+  <td>F 16</td>
+  <td>1/2</td>
+  <td>DSC 0030</td>
+  <td></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Durchlicht</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">F 16</td>
-<td style="text-align: left;">1/2</td>
-<td style="text-align: left;">DSC 0030</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Durchlicht</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;">F 2.8</td>
-<td style="text-align: left;">1/50</td>
-<td style="text-align: left;">DSC 0031</td>
-<td style="text-align: left;"></td>
+<tr>
+  <td>Durchlicht</td>
+  <td>M</td>
+  <td>100</td>
+  <td>F 2.8</td>
+  <td>1/50</td>
+  <td>DSC 0031</td>
+  <td></td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabelle 1</em></p>
 <p>Die Dateien DSC 0026 und 0027 verfügten also bei den Auflichtaufnahmen über die beste Qualität.</p>
 <p>Nach den zwei Probeläufen wurde ein Paket von zehn Handschriften aufgenommen. Die dazugehörigen Daten und Kriterien sind Tabelle 2 zu entnehmen:</p>
-<table>
+<table class="pure-table">
+<caption>Tabelle 2</caption>
+<thead>
+<tr>
+  <th>Signatur der Handschrift</th>
+  <th>Papiertyp</th>
+  <th>Auflichtaufnahme</th>
+  <th>Durchlichtaufnahme</th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Signatur der Handschrift</td>
-<td style="text-align: left;">Papiertyp</td>
-<td style="text-align: left;">Auflichtaufnahme</td>
-<td style="text-align: left;">Durchlichtaufnahme</td>
+<tr>
+  <td></td>
+  <td></td>
+  <td>Automatik (A) oder Manuell (M)</td>
+  <td>ISO</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Automatik (A) oder Manuell (M)</td>
-<td style="text-align: left;">ISO</td>
+<tr>
+  <td>GSA 25/W 1589</td>
+  <td>Konzept</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">GSA 25/W 1589</td>
-<td style="text-align: left;">Konzept</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1362</td>
+  <td>Konzept</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">GSA 25/W 1362</td>
-<td style="text-align: left;">Konzept</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1742</td>
+  <td>Schreib</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">GSA 25/W 1742</td>
-<td style="text-align: left;">Schreib</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1374</td>
+  <td>Schreib</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">GSA 25/W 1374</td>
-<td style="text-align: left;">Schreib</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1376</td>
+  <td>Schreib</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">GSA 25/W 1376</td>
-<td style="text-align: left;">Schreib</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1392</td>
+  <td>Schreib</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">GSA 25/W 1392</td>
-<td style="text-align: left;">Schreib</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1752</td>
+  <td>Schreib</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">GSA 25/W 1752</td>
-<td style="text-align: left;">Schreib</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1757</td>
+  <td>Schreib</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">GSA 25/W 1757</td>
-<td style="text-align: left;">Schreib</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1360</td>
+  <td>Konzept</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">GSA 25/W 1360</td>
-<td style="text-align: left;">Konzept</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GSA 25/W 1375</td>
-<td style="text-align: left;">Konzept</td>
-<td style="text-align: left;">M</td>
-<td style="text-align: left;">100</td>
+<tr>
+  <td>GSA 25/W 1375</td>
+  <td>Konzept</td>
+  <td>M</td>
+  <td>100</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabelle 2</em></p>
 <p>Bei der Auflichtaufnahme wurde stets manuell die gleiche Einstellung vorgenommen; die Einstellung der Durchlichtaufnahme erfolgte in den meisten Fällen automatisch (daher ist hier in der Tabelle kein ISO-Wert benannt und es fehlen teilweise Blenden- und Belichtungszeitangabe). Die Blende stellt sich in der Regel auf einen Wert von 4 bzw. nahe 4 ein, bei manueller Einstellung sollte demnach F 4 eingestellt werden. Die Belichtungszeit liegt im Regelfall bei 1/250 Sekunde.</p>
 <p>Es gab zwei abweichende Fälle: GSA 25/W 1360 und GSA 25/W 1375: Da es sich um zwei kleine Handschriften (Zettel) handelt, musste hier manuell eine andere Einstellung auch beim Durchlicht vorgenommen werden, da die Papierfläche für eine automatische Einstellung zu klein ist; bewährt hat sich vor allem der Wert von 1/50 Sekunde.</p>
 <p><strong>Bearbeitung der Aufnahmen mittels Subtraktion</strong></p>
 <p>Die Aufnahmen wurden mittels Subtraktionsverfahren bearbeitet und stehen in der Form in der Edition als TIFF und JPEG bereit. Unter Subtraktion ist das Herausrechnen der Beschriftung durch das Übereinanderlegen von einer Auf- und Durchlichtaufnahme desselben Blattes zu verstehen.</p>
-<p><img src="media/image1.jpeg" /></p>
-<p><em>Bild 1: Subtraktionsergebnis der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_all_TL30_100.jpg)</em></p>
+<figure>
+	<img src="/img/info/watermarks-image1.jpeg" />
+	<figcaption>Bild 1: Subtraktionsergebnis der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_all_TL30_100.jpg)</figcaption>
+</figure>
 <p>Wichtig für die Subtraktion ist, dass Auf- und Durchlichtaufnahme deckungsgleich sind, Handschrift als auch Kamera dürfen sich nicht verschieben. Weiterhin ist zu berücksichtigen, dass die Beschriftung auf der Handschrift, die herausgerechnet werden soll, von oben fotografiert wurde.</p>
 <p>Beim Übereinanderlegen einer Auf- und einer Durchlichtaufnahme zeigte sich, dass die Kombination DSC 0026 und DSC 0028 (s. Tabelle 1) das beste Ergebnis brachte (s. Bild 1).</p>
 <p>Neben Aufnahmen ganzer Seiten wurden hier auch Detailansichten (Seitenausschnitte mit dem Wasserzeichen) bereitgestellt (s. Bild 2).</p>
-<p><img src="media/image2.jpeg" /></p>
-<p><em>Bild 2: Detail aus Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_detail_TL30_100.jpg)</em></p>
+<figure>
+	<img src="/img/info/watermarks-image2.jpeg" />
+	<figcaption>Bild 2: Detail aus Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_detail_TL30_100.jpg)</figcaption>
+</figure>
 <p><strong>Anfertigung von Durchzeichnungen</strong></p>
 <p>Außerdem wurden Durchzeichnungen – manuelle Wiedergaben der Wasserzeichen – angefertigt.</p>
-<p><img src="media/image3.jpeg" /></p>
-<p><em>Bild 3: Durchzeichnung der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_hand_drawn_150.jpg)</em></p>
+<figure>
+	<img src="/img/info/watermarks-image3.jpeg" />
+	<figcaption>Bild 3: Durchzeichnung der Handschrift 2 III H.10, Einzelblatt (Datei GSA_25-W_1589_wm_hand_drawn_150.jpg)</figcaption>
+</figure>
 <p><strong>Beschreibung der Wasserzeichen</strong></p>
 <p>Zu jedem Wasserzeichen erfolgte eine Beschreibung, und zwar nicht nur für diejenigen, zu denen Aufnahmen angefertigt wurden, sondern zu allen in der Edition versammelten Handschriften.</p>
 <p><strong>2. Benennungssystem der Wasserzeichendigitalisate</strong></p>
