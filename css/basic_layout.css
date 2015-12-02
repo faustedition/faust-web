@@ -41,6 +41,9 @@ header .breadcrumbs {
 }
 
 /* style for main area */
+section {
+    padding:0 1em;
+}
 .center {
     max-width: 995px;
     margin: 0px auto;

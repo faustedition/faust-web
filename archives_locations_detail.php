@@ -1,25 +1,31 @@
       <?php include "includes/header.php"; ?>
-      <div class="main-content-container">
-        <style>
-        </style>
-        <div id="main-content" class="main-content">
-          <div id="archives-content" class="archives-content">
-            <div id="archive-details" class="archive-details">
-              <h1 id="archiveName"></h1>
-              <p id="institution"></p>
-              <p id="location"></p>
-              <a id="urlLink"><p id="url"></p></a>
-            </div>
-            <H2>Archivalien</H2>
-            <table id="archive-table" class="archive-table">
-              <tr id="archive-table-header" class="archive-table-header">
-                <th>#</th>
-                <th>Signatur</th>
-                <th>WA-Sigle</th>
+      <section class="center">
+
+        <article class="pure-center">
+            <h1 id="archiveName"></h1>
+            <p>
+              <span id="institution"></span><br>
+              <span id="location"></span><br>
+              <a id="urlLink"><span id="url"></span></a>
+            </p>
+
+            <h2>Archivalien</h2>
+            <table id="archive-table" class="pure-table">
+              <thead>
               <tr>
+                <th width="10" class="pure-center">#</th>
+                <th class="pure-left">Signatur</th>
+                <th class="pure-left">WA-Sigle</th>
+              <tr>
+              </thead>
+              <tbody>
+              </tbody>
             </table>
-          </div>
-        </div>
+        </article>
+
+      </section>
+      <?php $showFooter = false; ?>
+      <?php include "includes/footer.php"; ?>
 
         <script>
           var i;
@@ -36,13 +42,13 @@
           // get actual parameters
           var parameters = Faust.url.getParameters();
 
-          // if archiveId is set (should/must be), set repositoryName to that value
-          if(parameters["archiveId"]) {
-            repositoryName = parameters["archiveId"];
+          // if 'id' is set (mandatory), set repositoryName to that value
+          if(parameters["id"]) {
+            repositoryName = parameters["id"];
           }
 
           // set breadcrumbs
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv"}]));
+           document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: "Aufbewahrungsorte", link: "archives_locations.php"}, {caption: archives[repositoryName].name}]));
 
           // select only non-print witnesses from selected repository and remove test
           var repositoryNonPrintEntries = documentMetadata.metadata.filter(function(metadata) {
@@ -117,7 +123,9 @@
 
           // archive link
           if(archives[repositoryName].url) {
-            document.getElementById("url").appendChild(document.createTextNode(archives[repositoryName].url));
+            var link = document.createElement("a"); // need object to return hostname
+            link.href = archives[repositoryName].url;
+            document.getElementById("url").appendChild(document.createTextNode(link.hostname));
             document.getElementById("urlLink").href = archives[repositoryName].url;
             document.getElementById("urlLink").title = archives[repositoryName].displayName;
           }
@@ -125,7 +133,7 @@
 
 
           // write sigil table
-          var archiveTable = document.getElementById("archive-table");
+          var archiveTable = document.getElementById("archive-table").getElementsByTagName("tbody")[0];
           var tableRow;
 
           displayData.forEach(function(data, index){
@@ -135,15 +143,25 @@
 
             var tableColumn1 = document.createElement("td");
             var tableColumn2 = document.createElement("td");
+            tableColumn2.className = "pure-nowrap pure-left";
             var tableColumn3 = document.createElement("td");
+            tableColumn3.className = "pure-nowrap pure-left";
 
             tableColumn1.appendChild(document.createTextNode(index + 1));
-            tableColumn2.appendChild(document.createTextNode(data.repositorySigil));
+
+            var repositorySigilLink = document.createElement("a");
+            repositorySigilLink.href = "javascript:void();";
+            repositorySigilLink.appendChild(document.createTextNode(data.repositorySigil))
+            tableColumn2.appendChild(repositorySigilLink);
+
+            var waSigilLink = document.createElement("a");
+            waSigilLink.href = "javascript:void();";
             if(data.waSigil === "none" || data.waSigil === "-" || data.waSigil === "n.s.") {
-              tableColumn3.appendChild(document.createTextNode(""));
+              waSigilLink.appendChild(document.createTextNode(""));
             } else {
-              tableColumn3.appendChild(document.createTextNode(data.waSigil));
+              waSigilLink.appendChild(document.createTextNode(data.waSigil));
             }
+            tableColumn3.appendChild(waSigilLink);
 
             tableRow.appendChild(tableColumn1);
             tableRow.appendChild(tableColumn2);
