@@ -24,10 +24,10 @@ pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
 
-figure {margin:1em 0px; text-align:center;}
+figure {margin:0.2em 0 1em 0; text-align:center;}
 figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 figure img.large {max-width:none !important;}
-figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; font-size:85%; font-style:italic; line-height:1.5em;}
+figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
 
 *:target {background-color:rgba(155, 155, 155, 0.2);}
 
@@ -219,8 +219,8 @@ figure figcaption {max-width:400px !important; margin:0 auto; padding:0 15px; fo
 .pure-right, .pure-right > *{text-align:right !important;}
 .pure-left, .pure-left > *{text-align:left !important;}
 .pure-center, .pure-center > *{text-align:center !important;}
-.pure-pull-right{float:right !important; margin-left:.5em; clear:right;}
-.pure-pull-left{float:left !important; margin-right:.5em; clear:left;}
+.pure-pull-right{float:right !important; margin-left:1em; clear:right;}
+.pure-pull-left{float:left !important; margin-right:1em; clear:left;}
 .pure-clearfix{clear:both;content:"";*zoom: 1; display:block; height:0;}
 .pure-hide{display:none !important;}
 .pure-show{display:block !important;}

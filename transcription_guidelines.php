@@ -25,6 +25,14 @@
         </ul>
         <h2>Wiedergabe von Handschriften</h2>
         <h3>Allgemeine Prinzipien der Handschriftenwiedergabe</h3>
+        <figure class="pure-pull-left">
+            <img src="/img/info/transcription_guidelines-image1.png"/>
+            <figcaption>Abb. 1: ##########, (Ausschnitt; zum Vgl. siehe <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document">2 H</a>)</figcaption>
+        </figure>
+        <figure class="pure-pull-left">
+            <img src="/img/info/transcription_guidelines-image2.png"/>
+            <figcaption>Abb. 2: ##########, (Ausschnitt; zum Vgl. siehe <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document">2 II H.3</a>)</figcaption>
+        </figure>
         <p>Die Überlieferung zu Goethes ‚Faust‘ ist sehr vielfältig: Schemata, Exzerpte, einzelne
             Versentwürfe, eigenhändige Niederschriften ganzer Passagen in Bleistift, Abschriften und
             Diktate, Sammelhandschriften, Munda (Reinschriften sowie zur Weiterarbeit genutzte
@@ -35,14 +43,12 @@
             Unterscheidung zwischen Groß- und Kleinschreibung jedoch oft, bei D/d fast immer vom
             Kontext abhängig.</p>
         <p>Die Ligatur ck wird als Buchstabenkombination ck transkribiert, selbst wenn nur der
-            Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist.</p>
-        <figure><img src="/img/info/transcription_guidelines-image1.jpeg"/></figure>
-        <figure><img src="/img/info/transcription_guidelines-image2.jpeg"/></figure>
+            Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist (s. Abb. 1).</p>
         <p>Kontraktionen („ans“, „aufs“, „ins“ usw.) und Komposita mit kleingeschriebenem zweiten
             Kompositionsglied werden zusammengeschrieben wiedergegeben. Ein sichtbarer kleinerer
             Abstand zwischen den Wortbestandteilen („auf s“ usw.) markiert die Fuge, indiziert aber
-            keine Getrenntschreibung.<p>
-        <figure><img src="/img/info/transcription_guidelines-image3.jpeg"/></figure>
+            keine Getrenntschreibung (s. Abb. 2).<p>
+        <p>&nbsp;</p>
         <p>Bei deutlichem Wortabstand wird trotz durchgezogener Buchstabenverbindung
             Getrenntschreibung wiedergegeben. [Bildbeispiel]</p>
         <p>Geschweifte Klammern zeigen unsichere Lesungen an. Dabei bedeutet</p>
@@ -91,6 +97,14 @@
             lässt sich zeilengetreu in die Anzeige der Faksimiles einblenden und ist auch in
             druckfähiger Form abrufbar.</p>
         <h4>Zeichenwiedergabe</h4>
+        <figure class="pure-pull-right">
+            <img src="/img/info/transcription_guidelines-image3.png"/>
+            <figcaption>Abb. 3: ##########</figcaption>
+        </figure>
+        <figure class="pure-pull-right">
+            <img src="/img/info/transcription_guidelines-image4.png"/>
+            <figcaption>Abb. 4: ##########</figcaption>
+        </figure>
         <ul>
             <li>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der lateinischen Schrift.</li>
             <li>Fehlende Umlautzeichen werden nicht ergänzt.</li>
@@ -102,10 +116,6 @@
             werden in der Ansicht vereinfacht. Einfügungslinien werden durch Winkelzeichen an der
             Einfügungsstelle repräsentiert: der Verlauf der Einfügungslinie wird nicht
             nachgebildet.</p>
-        <figure><img src="/img/info/transcription_guidelines-image4.jpeg"/></figure>
-        <figure><img src="/img/info/transcription_guidelines-image5.png"/></figure>
-        <figure><img src="/img/info/transcription_guidelines-image6.jpeg"/></figure>
-        <figure><img src="/img/info/transcription_guidelines-image7.png"/></figure>
         <p>Markierungen von Abschnitten (z. B. Zwischenstriche, waagerechte geschweifte Klammern)
             werden getreu wiedergegeben. [Auf die Wiedergabe von Randstrichen zur Begrenzung des
             Schriftspiegels wird verzichtet.]</p>
@@ -138,26 +148,26 @@
             zeitgenösisschen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
+        
         <h3>Textuelle Transkription der Handschriften</h3>
         <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner textspezifischen
             Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
             unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten
             und daneben als letzte abhebbare Stufe, d.h. des Textes, der sich aus der Niederschrift
             und allen darin vorkommenden Änderungen ergibt.</p>
+        
         <h3>Darstellung der innerhandschriftlichen Varianten</h3>
+        <figure class="pure-pull-right">
+            <img src="/img/info/transcription_guidelines-image5.png"/>
+            <figcaption>Abb. 5: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe
+            <a href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text">H P123.5</a>).</figcaption>
+        </figure>
         <p>Für die Darstellung innerhandschriftlicher Varianten existiert in gedruckten Ausgaben
             bereits eine Vielfalt von Apparatformen. Die Entwicklung von entsprechenden
             Darstellungsformen im digitalen Medium steht dagegen noch in den Anfängen. Der in der
             vorliegenden Ausgabe gewählte Apparattyp hat ebenfalls nur vorläufigen Charakter. Er
             beruht auf dem Einblendungsapparat, der für die Akademie-Ausgabe der Werke Goethes
-            entwickelt wurde (Abb. ###).</p>
-        <figure>
-            <img src="/img/info/transcription_guidelines-image8.png"/>
-            <figcaption>Abb. ###: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
-            href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
-            class="uri"
-            >H P123.5</a>).</figcaption>
-        </figure>
+            entwickelt wurde (Abb. 5).</p>
         <p>Varianten werden stets als Abweichungen von der Grundschicht dargestellt. Unter der
             Grundschicht werden in diesem Zusammenhang alle Zeichen verstanden, die nicht entweder
             sofort getilgt (Sofortrevision) oder später hinzugefügt wurden. Der Text der
