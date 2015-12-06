@@ -11,6 +11,17 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
     return metadata.text !== "test.xml" && 
       (!repository || metadata.sigils.repository === repository)
   });
+
+  // if we're in single repository mode, we can remove the location and (except
+  // for gsa) the second archive signature column
+  if (repository) {
+    concordanceColumns = concordanceColumns.filter(function(column) {
+      return !(column.sigils[0] === 'repository' 
+	      || repository !== 'gsa' && column.sigils[0] === 'idno_gsa_1');
+    });
+  }
+
+
   // Map document metadata into format for table
   var concordanceTableData = documentMetadata.metadata.map((function(){
     return function(metadata){
