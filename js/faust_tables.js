@@ -185,22 +185,33 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       concordanceData.forEach(function(currentDocument, documentIndex) {
 	tableRow = document.createElement("tr");
 	if(currentDocument.isPrint) {
-	  // tableRow.addEventListener("click", function(){window.location = "print/" + currentDocument.printResourceName;});
 	  var documentLink = "print/" + currentDocument.printResourceName;
 	} else {
-	  // tableRow.addEventListener("click", function(){window.location = "documentViewer.php?faustUri=" + currentDocument.faustUri;});
 	  var documentLink = "documentViewer.php?faustUri=" + currentDocument.faustUri;
 	}
+	tableRow.addEventListener("click", function(event) {
+	  if (event.target.nodeName.toUpperCase() === "A"
+	      && event.target.href)
+	    window.location = event.target.href;
+	  else
+	    window.location = documentLink;
+	});
 
 	concordanceColumns.forEach(function(currentColumn, columnIndex) {
 	  tableData = document.createElement("td");
+	  var cellData = concordanceData[documentIndex][columnIndex];
 	  if (columnIndex == 0) {
 	    var tableDataLink = document.createElement("a");
 	    tableDataLink.href = documentLink;
-	    tableDataLink.appendChild(document.createTextNode(concordanceData[documentIndex][columnIndex].text));
+	    tableDataLink.appendChild(document.createTextNode(cellData.text));
 	    tableData.appendChild(tableDataLink);
+	  } else if ('repository' in cellData) {
+	    var repoLink = document.createElement("a");
+	    repoLink.href = 'archives_locations_detail.php?id=' + cellData['repository'];
+	    repoLink.appendChild(document.createTextNode(cellData.text));
+	    tableData.appendChild(repoLink);
 	  } else {
-	    tableData.appendChild(document.createTextNode(concordanceData[documentIndex][columnIndex].text));
+	    tableData.appendChild(document.createTextNode(cellData.text));
 	  }
 	  tableRow.appendChild(tableData);
 	});
