@@ -1,9 +1,15 @@
-var createConcordanceTable = function createConcordanceTable(container) {
-  // remove test
+/* The concordance table and the tables on the archive pages work basically in the same way. Differences:
+ *
+ * (1) The concordance table contains a repository column that is unneeded for the others
+ * (2) Each archive detail page contains only the documents from that archive
+ */
+
+
+var createConcordanceTable = function createConcordanceTable(container, repository) {
+  // remove test and the texts from the other repositories
   documentMetadata.metadata = documentMetadata.metadata.filter(function(metadata) {
-    if(!(metadata.text === "test.xml")) {
-      return true;
-    }
+    return metadata.text !== "test.xml" && 
+      (!repository || metadata.sigils.repository === repository)
   });
   // Map document metadata into format for table
   var concordanceTableData = documentMetadata.metadata.map((function(){
@@ -70,7 +76,7 @@ var createConcordanceTable = function createConcordanceTable(container) {
   concordanceManuscriptTableData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint;});
   concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
 
-  var concordanceTableContainer = document.getElementById("concordance-table-container");
+  var concordanceTableContainer = container;
 
   // create event listener to sort columns
   var sortClickEventListener = (function(tableData, concordanceColumns, parentElement) {
