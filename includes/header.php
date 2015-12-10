@@ -43,7 +43,7 @@
         <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right">
           <ul>
           <li><a href="archives.php">Archiv</a></li>
-          <li><a href="chessboard.php">Genese</a></li>
+          <li><a href="genesis.php">Genese</a></li>
           <li><a href="print/text.html">Text</a></li>
           <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
           <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>

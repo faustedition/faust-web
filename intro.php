@@ -7,7 +7,7 @@
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
                 href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a
-                href="chessboard.php">Genese</a> des Werks.</p>
+                href="genesis.php">Genese</a> des Werks.</p>
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
 
@@ -20,12 +20,12 @@
             <p><a class="pure-button" href="/archives.php?view=print-concordance" style="display:block;">Drucke</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/chessboard.php"><big><i class="fa fa-align-left"></i> Genese</big></a></p>
+            <p><a class="pure-button pure-button-primary" href="/genesis.php"><big><i class="fa fa-align-left"></i> Genese</big></a></p>
             <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/chessboard.php" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
+            <p><a class="pure-button" href="/genesis.php" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
             <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/chessboard_faust_i.php" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
-            <p><a class="pure-button" href="/chessboard_faust_iI.php" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
+            <p><a class="pure-button" href="/genesis_faust_i.php" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
+            <p><a class="pure-button" href="/genesis_faust_ii.php" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/print/text.html"><big><i class="fa fa-file-text-o"></i> Text</big></a></p>
@@ -93,7 +93,7 @@
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend dar.</p>
         <h3>Gesamtübersicht</h3>
-        <p>In der linken Hälfte der <a href="chessboard.php">Gesamtübersicht</a> sind all
+        <p>In der linken Hälfte der <a href="genesis.php">Gesamtübersicht</a> sind all
             jene Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘
             erschienen sind. In der rechten Hälfte findet sich eine Übersicht zum ‚Faust&nbsp;II‘.
             In beiden Hälften entsprechen die angetragenen Jahreszahlen entstehungsgeschichtlich
@@ -104,11 +104,11 @@
         <p>Die Auswahl einer Spalte in einer der beiden Hälften führt zu einer detaillierteren
             Darstellung.</p>
         <h3>Übersichten zum ‚Faust&nbsp;I‘ und zum ‚Faust&nbsp;II‘</h3>
-        <p>Die Übersicht zum <a href="chessboard_faust_i.php">‚Faust&nbsp;I‘</a> ist nach Szenen
+        <p>Die Übersicht zum <a href="genesis_faust_i.php">‚Faust&nbsp;I‘</a> ist nach Szenen
             gegliedert. Die einleitenden Abschnitte ‚Zueignung‘, ‚Vorspiel‘ und ‚Prolog‘ bleiben
             unbeziffert, die nachfolgenden Szenen werden durchgezählt. Beim Ansteuern einer Spalte
             erscheint der Szenentitel.</p>
-        <p>Die Übersicht zum <a href="chessboard_faust_ii.php">‚Faust&nbsp;II‘</a> ist nach Akten
+        <p>Die Übersicht zum <a href="genesis_faust_ii.php">‚Faust&nbsp;II‘</a> ist nach Akten
             gegliedert, die mit römischen Ziffern durchgezählt sind. Einzelne Spalten entsprechen Szenen,
             deren Titel beim Ansteuern erscheint. Die vor 1825 konzipierten oder
             entstandenen Szenen sind in der unteren Zeile zusammengefasst.</p>

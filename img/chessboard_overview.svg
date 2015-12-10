@@ -100,7 +100,7 @@
         <rect x="75" y="0" width="22.5" height="40" class="inProgress"></rect>
       </g>
 
-      <a xlink:href="chessboard_faust_i.php">
+      <a xlink:href="genesis_faust_i.php">
         <rect x="-180" y="-5" width="300" height="575" class="highlight show-tooltip" tooltipText="zu Faust I"></rect>
       </a>
 
@@ -181,7 +181,7 @@
         <rect x="100" y="0" width="22.5" height="40" class="inProgress"></rect>
       </g>
 
-      <a xlink:href="chessboard_faust_ii.php">
+      <a xlink:href="genesis_faust_ii.php">
         <rect x="-140" y="-5" width="300" height="575" class="highlight show-tooltip" tooltipText="zu Faust II"></rect>
       </a>
 
