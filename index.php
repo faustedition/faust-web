@@ -64,9 +64,8 @@
       <script type="text/javascript" src="js/jquery.slick.min.js"></script>
       <script type="text/javascript">
         jQuery(document).ready(function($){
-          $('.slider').slick({
+          var slideshow = $('.slider').slick({
             adaptiveHeight: true,
-            autoplay: true,
             dots:true,
             autoplaySpeed: 15000,
             pauseOnHover: true,
@@ -78,6 +77,10 @@
                 }
               }
             ]
+          });
+          slideshow.slick('slickPlay'); // autoplay
+          $('.slider *').click(function () {      
+              slideshow.slick('slickPause'); // stop on click
           });
         });
       </script>
