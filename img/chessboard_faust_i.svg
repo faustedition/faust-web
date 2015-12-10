@@ -6,7 +6,7 @@
       .rowText {
         font-family: Ubuntu;
         font-weight: 400;
-        font-size: 15pt;
+        font-size: 16pt;
         font-style: normal;
         text-anchor: end;
         fill: black;
@@ -44,7 +44,7 @@
 
       .highlight {
         opacity: 0;
-        fill: red;
+        fill: lightblue;
         fill-opacity: 0.25;
         stroke: black;
         stroke-width: 0.5;
