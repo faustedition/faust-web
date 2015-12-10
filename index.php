@@ -10,7 +10,7 @@
                         textkritisch relevanten Drucke zum ‚Faust‘, einem Lesetext des ‚<a
                             href="/print/faust1.html">Faust I</a> und des ‚<a
                             href="/print/faust2.html">Faust II</a>‘ sowie Visualisierungen zur <a
-                            href="/chessboard_overview.php">Genese</a> des Werks.</p>
+                            href="/chessboard.php">Genese</a> des Werks.</p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
                 <h2>Genese</h2>
                     <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘
                         gearbeitet. Verschiedene Grafiken stellen die <a
-                            href="/chessboard_overview.php">Genese</a> von Goethes ‚Faust‘
+                            href="/chessboard.php">Genese</a> von Goethes ‚Faust‘
                         retrospektiv, d.h. vom abgeschlossenen Werk ausgehend dar.</p>
               </div>
             </div>

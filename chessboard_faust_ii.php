@@ -2,7 +2,7 @@
       <div class="main-content-container">
         <script>
           window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust II"}]));
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard.php"}, {caption: "Faust II"}]));
         </script>
         <div id="main-content" class="main-content">
           <div style="float: left; padding-right: 2em;">
