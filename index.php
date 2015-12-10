@@ -68,7 +68,7 @@
             adaptiveHeight: true,
             autoplay: true,
             dots:true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 15000,
             pauseOnHover: true,
             responsive: [
               {
