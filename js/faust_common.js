@@ -801,23 +801,30 @@ var Faust = (function(){
     // create return element
     var breadcrumbs = document.createElement("span");
 
+    // count breadcrumbs
+    var num = data.length;
+
     // iterate through all breadcrumbs
     data.forEach(function(crumb, index) {
-      // add a spacer if there is more than one breadcrub
-      if(index > 0) {
-        breadcrumbs.appendChild(document.createTextNode(" > "));
+      // insert text for last breadcump into seperate element
+      if (index == num-1) {
+        document.getElementById("current").innerHTML = crumb.caption;
+        return;
       }
 
-      // create span for current breadcrumb
-      var crumbSpan = Faust.dom.createElement({name: "span", parent: breadcrumbs});
+      // add a spacer if there is more than one breadcrub
+      if(index > 0) {
+        var spacer = Faust.dom.createElement({name: "i", parent: breadcrumbs, class: 'fa fa-angle-right'});
+      }
+
+      // create a for breadcrumb
+      var crumbA = Faust.dom.createElement({name: "a", parent: breadcrumbs});
 
       // add a link for current element if a link was provided, otherwise only append the caption
       if(crumb.link !== undefined) {
-        var crumbA = Faust.dom.createElement({name: "a", parent: crumbSpan, attributes: [["href", crumb.link]]});
-        crumbA.appendChild(document.createTextNode(crumb.caption));
-      } else {
-        crumbSpan.appendChild(document.createTextNode(crumb.caption));
+        crumbA.href = crumb.link;
       }
+      crumbA.appendChild(document.createTextNode(crumb.caption));
     });
 
     // return breadcrumbs
