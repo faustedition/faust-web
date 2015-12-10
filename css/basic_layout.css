@@ -44,6 +44,7 @@ header .breadcrumbs {
 section {
     padding:0 1em;
 }
+
 .center {
     max-width: 995px;
     margin: 0px auto;
@@ -57,7 +58,6 @@ section {
   left: 0em;
   right: 0em;
   overflow: auto;
-  padding:0.5em;
 }
 
 .main-content-container * {
@@ -68,7 +68,6 @@ section {
 }
 
 .main-content {
-  border: 1px solid black;
   width: 100%;
   height: 100%;
   overflow: auto;
