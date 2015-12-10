@@ -1,37 +1,42 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
-    
+
     <article class="pure-u-1">
-        
+
         <h1>Transkriptionsprinzipien</h1>
         <p>Die Transkription der Handschriften wird in verschiedenen Formen angeboten, die entweder
-            auf eine dokumentarische Wiedergabe oder auf eine textuelle Deutung der
-            handschriftlichen Verhältnisse zielen. In der jeweiligen Standardansicht gelten die
-            folgenden Bestimmungen: </p>
+            auf eine dokumentarische Wiedergabe (dokumentarische Transkription )oder auf eine
+            textuelle Deutung der handschriftlichen Verhältnisse zielen (textuelle Transkription).
+            Die Transkription der Drucke entspricht der textuellen Transkription der Handschriften.
+            In der jeweiligen Standardansicht gelten die folgenden Bestimmungen: </p>
         <h2>Allgemein</h2>
         <ul>
             <li>Die Handschriften und Drucke werden zeichengetreu wiedergegeben.</li>
-            <li>I und J sind in der deutschen Schrift nicht unterschieden. In der Transkription wird die
-            Unterscheidung zwischen I und J gemäß Lautwert eingeführt. Die Unterscheidung zwischen i
-            und j ist davon unberührt.</li>
+            <li>I und J sind in der deutschen Schrift nicht unterschieden. In der Transkription wird
+                die Unterscheidung zwischen I und J gemäß Lautwert eingeführt. Die Unterscheidung
+                zwischen i und j ist davon unberührt.</li>
             <li>Anführungszeichen werden stets mit öffnenden und schließenden Anführungszeichen „ “
-            wiedergegeben.</li>
+                wiedergegeben.</li>
             <li>Abkürzungen werden nicht aufgelöst.</li>
             <li>Alle Zeugen werden in unemendierter Form wiedergegeben. Offensichtliche, auch
-            sinnentstellende Schreib- und Satzfehler bleiben gewahrt. Versehentlich ausgelassene
-            Zeichen und Wörter werden nicht ergänzt.</li>
-            <li>Editorische Ergänzungen sind mit eckigen Klammern gekennzeichnet. Vgl. im Einzelnen die
-            Abschnitte zur Transkription der Handschriften und Drucke.</li>
+                sinnentstellende Schreib- und Satzfehler bleiben gewahrt. Versehentlich ausgelassene
+                Zeichen und Wörter werden nicht ergänzt.</li>
+            <li>Editorische Ergänzungen sind mit eckigen Klammern gekennzeichnet. Vgl. im Einzelnen
+                die Abschnitte zur Transkription der Handschriften und Drucke.</li>
         </ul>
         <h2>Wiedergabe von Handschriften</h2>
         <h3>Allgemeine Prinzipien der Handschriftenwiedergabe</h3>
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image1.png"/>
-            <figcaption>Abb. 1: ##########, (Ausschnitt; zum Vgl. siehe <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document">2 H</a>)</figcaption>
+            <figcaption>Abb. 1: ##########, (Ausschnitt; zum Vgl. siehe <a
+                    href="/documentViewer.php?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document"
+                    >2 H</a>)</figcaption>
         </figure>
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image2.png"/>
-            <figcaption>Abb. 2: ##########, (Ausschnitt; zum Vgl. siehe <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document">2 II H.3</a>)</figcaption>
+            <figcaption>Abb. 2: ##########, (Ausschnitt; zum Vgl. siehe <a
+                    href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
+                    >2 II H.3</a>)</figcaption>
         </figure>
         <p>Die Überlieferung zu Goethes ‚Faust‘ ist sehr vielfältig: Schemata, Exzerpte, einzelne
             Versentwürfe, eigenhändige Niederschriften ganzer Passagen in Bleistift, Abschriften und
@@ -43,11 +48,12 @@
             Unterscheidung zwischen Groß- und Kleinschreibung jedoch oft, bei D/d fast immer vom
             Kontext abhängig.</p>
         <p>Die Ligatur ck wird als Buchstabenkombination ck transkribiert, selbst wenn nur der
-            Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist (s. Abb. 1).</p>
+            Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist (s. Abb.
+            1).</p>
         <p>Kontraktionen („ans“, „aufs“, „ins“ usw.) und Komposita mit kleingeschriebenem zweiten
             Kompositionsglied werden zusammengeschrieben wiedergegeben. Ein sichtbarer kleinerer
             Abstand zwischen den Wortbestandteilen („auf s“ usw.) markiert die Fuge, indiziert aber
-            keine Getrenntschreibung (s. Abb. 2).<p>
+            keine Getrenntschreibung (s. Abb. 2).</p>
         <p>&nbsp;</p>
         <p>Bei deutlichem Wortabstand wird trotz durchgezogener Buchstabenverbindung
             Getrenntschreibung wiedergegeben. [Bildbeispiel]</p>
@@ -58,8 +64,8 @@
         </ul>
         <p>Nicht entzifferte Zeichen werden durch Kreuze angezeigt, jedes × steht für ein nicht
             entziffertes Zeichen. ×…× steht für eine unentzifferte Folge von nicht genau
-            bestimmbarer Länge; der geschätzte Umfang ergibt sich aus der Länge der
-            Zeichenkette.</p>
+            bestimmbarer Länge; der geschätzte Umfang wird durch die Anzahl der Punkte
+            angedeutet.</p>
         <p>Abkürzung durch Suspensionsschleife wird mit einem Punkt wiedergegeben, ebenso Abkürzung
             durch eine Kombination von Suspensionsschleife und Punkt. Die Kombination von l und
             Suspensionsschleife wird als l und Punkt transkribiert (z. B. „Kayserl.“).</p>
@@ -76,8 +82,8 @@
             sind.</p>
         <p>Editorisch ergänzt werden</p>
         <ul>
-            <li>einzelne Zeichen, die durch Rasur oder Beschädigung verloren gegangen oder
-                unlesbar geworden sind, sowie</li>
+            <li>einzelne Zeichen, die durch Rasur oder Beschädigung verloren gegangen oder unlesbar
+                geworden sind, sowie</li>
             <li>Zeichen, die in extrem flüchtigen Niederschriften nicht realisiert sind, nicht
                 einmal als unspezifische Bögen.</li>
         </ul>
@@ -98,7 +104,8 @@
             druckfähiger Form abrufbar.</p>
         <h4>Zeichenwiedergabe</h4>
         <ul>
-            <li>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der lateinischen Schrift.</li>
+            <li>Das lange s (ſ) bleibt gewahrt, ebenso die Buchstabenkombination ſs in der
+                lateinischen Schrift.</li>
             <li>Fehlende Umlautzeichen werden nicht ergänzt.</li>
             <li>Die Umlaute Ae, Oe und Ue bleiben gewahrt.</li>
             <li>Gleiches gilt für Geminationsstriche über n und m (n̄, m̄).</li>
@@ -117,8 +124,9 @@
             <figcaption>Abb. 4: ##########</figcaption>
         </figure>
         <p>Markierungen von Abschnitten (z. B. Zwischenstriche, waagerechte geschweifte Klammern)
-            werden getreu wiedergegeben. [Auf die Wiedergabe von Randstrichen zur Begrenzung des
-            Schriftspiegels wird verzichtet.]</p>
+            werden getreu
+            wiedergegeben.<!-- [Auf die Wiedergabe von Randstrichen zur Begrenzung des
+            Schriftspiegels wird verzichtet.]--></p>
         <h4>Zeichenmanipulation</h4>
         <p>Alle Streichungen (auch mehrfache, schräge, senkrechte usw.) werden als einfach
             durchgestrichener Text wiedergegeben.</p>
@@ -129,7 +137,7 @@
             nicht nachgebildet.</p>
         <p>Bei Überschreibungen auf der Zeile (Daraufschreibung) wird der zuerst geschriebene Text
             mit kleineren, tiefergestellten, der daraufgeschriebene mit größeren, höhergestellten
-            Buchstaben wiedergegeben: <sub>a</sub><sup>b</sup>.</p>
+            Buchstaben wiedergegeben: <sub>a</sub><sup><big>b</big></sup>.</p>
         <p>Radierte und absichtlich verwischte Zeichen erscheinen in Konturschrift. Die Umwandlung
             eines Buchstabens in einen anderen durch Rasur (m→n, ß→ſ u. ä.) wird aber nicht wie eine
             Rasur, sondern als Daraufschreibung behandelt.</p>
@@ -145,22 +153,23 @@
             Friedrich Wilhelm Riemer und Violett für Karl Wilhelm Göttling.<br/>Unbekannte
             zeitgenössische Schreiber sind in intensivem Rosa farblich unterlegt; nicht
             zeitgenössische fremde Hände (v. a. archivarische) in Bordeauxrot. Alle übrigen
-            zeitgenösisschen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
+            zeitgenösischen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
-        
+
         <h3>Textuelle Transkription der Handschriften</h3>
         <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner textspezifischen
             Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
             unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten
             und daneben als letzte abhebbare Stufe, d.h. des Textes, der sich aus der Niederschrift
             und allen darin vorkommenden Änderungen ergibt.</p>
-        
+
         <h3>Darstellung der innerhandschriftlichen Varianten</h3>
         <figure class="pure-pull-right">
             <img src="/img/info/transcription_guidelines-image5.png"/>
-            <figcaption>Abb. 5: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe
-            <a href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text">H P123.5</a>).</figcaption>
+            <figcaption>Abb. 5: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
+                    href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
+                    >H P123.5</a>).</figcaption>
         </figure>
         <p>Für die Darstellung innerhandschriftlicher Varianten existiert in gedruckten Ausgaben
             bereits eine Vielfalt von Apparatformen. Die Entwicklung von entsprechenden
@@ -168,8 +177,8 @@
             vorliegenden Ausgabe gewählte Apparattyp hat ebenfalls nur vorläufigen Charakter. Er
             beruht auf dem Einblendungsapparat, der für die Akademie-Ausgabe der Werke Goethes
             entwickelt wurde (Abb. 5).</p>
-        <p>Varianten werden stets als Abweichungen von der Grundschicht dargestellt. Unter der
-            Grundschicht werden in diesem Zusammenhang alle Zeichen verstanden, die nicht entweder
+        <p>Varianten werden stets als Abweichungen von der Grundschicht dargestellt. Als
+            Grundschicht werden in diesem Zusammenhang alle Zeichen angesehen, die nicht entweder
             sofort getilgt (Sofortrevision) oder später hinzugefügt wurden. Der Text der
             Grundschicht steht außerhalb der Klammern ⟨…⟩. Innerhalb der Klammern stehen
             Sofortrevisionen und generell das Ergebnis von Änderungen. Die Klammern und der die
@@ -179,12 +188,10 @@
             Beschreibung der Änderung. Alle folgend genannten editorischen Zeichen und Kürzel werden
             so an Ort und Stelle erklärt:</p>
         <ul>
-            <li>&gt; steht zwischen dem sofort Getilgten und dem danach
-                Niedergeschriebenen,</li>
+            <li>&gt; steht zwischen dem sofort Getilgten und dem danach Niedergeschriebenen,</li>
             <li><em>erg</em> – „ergänzt“,</li>
             <li><em>tilgt</em> – „tilgt“,</li>
-            <li><em>:</em> steht bei Ersetzungen zwischen dem Getilgten und dem
-                Hinzugefügten,</li>
+            <li><em>:</em> steht bei Ersetzungen zwischen dem Getilgten und dem Hinzugefügten,</li>
             <li><em>wdhst</em> – „wiederherstellt“</li>
             <li><em>mon</em> – „moniert“</li>
             <li><em>vorschl</em> (statt <em>propon</em>) – „vorschlägt“</li>
@@ -224,13 +231,13 @@
             Editorisch ergänzt werden diejenigen Zeichen, die durch mechanische Einflüsse des
             Druckvorgangs (z. B. geschwundene oder verschmutzte Lettern), Fehlstellen im Papier o.
             Ä. verlorengegangen oder unlesbar sind.</p>
-        <p>XML-Kodierung</p>
+        <!--<h2>XML-Kodierung</p>
         <p>Zeichen und Differenzierungen in den XML-Transkriptionen</p>
         <p>Die genannten Zeichen und Differenzierungen, auf deren Wiedergabe in den für den Nutzer
             sichtbaren Transkriptionen verzichtet wird, sind in den XML-kodierten Basisdaten der
-            Transkriptionen erhalten.<br/>[ausführlicher Text folgt noch]</p>
-        
+            Transkriptionen erhalten.<br/>[ausführlicher Text folgt noch]</p>-->
+
     </article>
-    
+
 </section>
 <?php include "includes/footer.php"; ?>
