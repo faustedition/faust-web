@@ -2,7 +2,7 @@
       <section>
 
         <article>
-            <h1 class="pure-center">Handschriftenkonkordanz</h1>
+            <h1 class="pure-center">Handschriften</h1>
 
             <div id="concordance-table-container"></div>
         </article>
