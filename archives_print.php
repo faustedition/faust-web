@@ -2,7 +2,7 @@
       <section>
 
         <article>
-            <h1 class="pure-center">Konkordanz der Drucke</h1>
+            <h1 class="pure-center">Drucke</h1>
 
             <table id="prints" class="pure-table">
               <thead>
