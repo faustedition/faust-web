@@ -3,3 +3,8 @@ ErrorDocument 401 /error.php?status=401
 ErrorDocument 403 /error.php?status=403
 ErrorDocument 404 /error.php?status=404
 ErrorDocument 500 /error.php?status=500
+
+Redirect 301 /chessboard_overview.php /genesis.php
+Redirect 301 /chessboard_faust_i.php /genesis_faust_i.php
+Redirect 301 /chessboard_faust_ii.php /genesis_faust_ii.php
+Redirect 301 /geneticBarGraph.php /genesis_bargraph.php

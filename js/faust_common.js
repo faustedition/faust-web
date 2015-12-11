@@ -801,32 +801,71 @@ var Faust = (function(){
     // create return element
     var breadcrumbs = document.createElement("span");
 
+    // count breadcrumbs
+    var num = data.length;
+
     // iterate through all breadcrumbs
     data.forEach(function(crumb, index) {
-      // add a spacer if there is more than one breadcrub
-      if(index > 0) {
-        breadcrumbs.appendChild(document.createTextNode(" > "));
+      // insert text for last breadcump into seperate element
+      if (index == num-1) {
+        var current = '<span title="'+crumb.caption+'">'+crumb.caption+'</span>';
+        document.getElementById("current").innerHTML = current;
+
+        return;
       }
 
-      // create span for current breadcrumb
-      var crumbSpan = Faust.dom.createElement({name: "span", parent: breadcrumbs});
+      // add a spacer if there is more than one breadcrub
+      if(index > 0) {
+        var spacer = Faust.dom.createElement({name: "i", parent: breadcrumbs, class: 'fa fa-angle-right'});
+      }
+
+      // create a for breadcrumb
+      var crumbA = Faust.dom.createElement({name: "a", parent: breadcrumbs});
 
       // add a link for current element if a link was provided, otherwise only append the caption
       if(crumb.link !== undefined) {
-        var crumbA = Faust.dom.createElement({name: "a", parent: crumbSpan, attributes: [["href", crumb.link]]});
-        crumbA.appendChild(document.createTextNode(crumb.caption));
-      } else {
-        crumbSpan.appendChild(document.createTextNode(crumb.caption));
+        crumbA.href = crumb.link;
       }
+      crumbA.appendChild(document.createTextNode(crumb.caption));
     });
+
+    // wait a while that (hopefully) dom is loaded and adjust breadcrumb width for long titles
+    setTimeout(Faust.adjustBreadcrumbWidth, 100);
 
     // return breadcrumbs
     return breadcrumbs;
   };
 
 //###########################################################################
+// Faust.adjustBreadcrumbWidth
+//###########################################################################
+
+  // adjust breadcrumb with for long titles on the last element. This set as maximum width
+  // property and leads to ellipsis for the title
+  Faust.adjustBreadcrumbWidth = function() {
+    var header = document.getElementsByTagName('header')[0];
+
+    var children = header.children;
+    var headerWidth = header.offsetWidth;
+    var bodyWidth = document.getElementsByTagName('body')[0].offsetWidth;
+    var totalWidth = 0;
+
+    var headerPadding = parseInt(getComputedStyle(header, null).getPropertyValue('padding-left')) + parseInt(getComputedStyle(header, null).getPropertyValue('padding-right'));
+
+    // run if the header is wider than the body due to long title
+    if (headerWidth > bodyWidth) {
+      for (var i = 0; i < children.length; i++) {
+        // calculate width of other elements
+        if ( children[i].id != 'current' ) {
+          totalWidth += children[i].offsetWidth;
+        }
+      }
+      // adjust maximum with of current element to available space
+      document.getElementById("current").style = 'max-width:'+(bodyWidth-totalWidth-headerPadding)+'px;';
+    }
+  };
+
+//###########################################################################
 //###########################################################################
   return Faust;
 })();
-
-

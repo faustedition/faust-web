@@ -22,6 +22,20 @@ header {
   height:3.4em;
   background:white;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  display:table;
+}
+
+header > * {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+header > *:empty {
+  display: none;
+}
+
+header > * ~ * {
+  padding-left:2em;
 }
 
 header .logo a {
@@ -38,12 +52,32 @@ header .logo img {
 
 header .breadcrumbs {
   line-height: 1em;
+  padding-right:0.25em;
+}
+
+header .breadcrumbs a {
+  text-decoration:none;
+  margin:0 5px;
+}
+
+header .breadcrumbs a:first-child {
+  font-weight:bold;
+}
+
+header #current {
+  padding-left:0.25em;
+  font-size: 1.66em;
+  font-weight: 500;
+  border-left: 1px solid #CCC;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* style for main area */
 section {
     padding:0 1em;
 }
+
 .center {
     max-width: 995px;
     margin: 0px auto;
@@ -57,18 +91,9 @@ section {
   left: 0em;
   right: 0em;
   overflow: auto;
-  padding:0.5em;
-}
-
-.main-content-container * {
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
 }
 
 .main-content {
-  border: 1px solid black;
   width: 100%;
   height: 100%;
   overflow: auto;

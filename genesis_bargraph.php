@@ -1,36 +1,15 @@
       <?php include "includes/header.php"; ?>
-      <div class="main-content-container">
-        <style>
-          .genetic-bar-diagram-svg {
-          } 
+      <section>
 
-          /*.genetic-bar-diagram-svg * {
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
-          }*/
+        <article>
 
-          .genetic-bar-diagram-svg text {
-            font-size: 10;
-            fill: black;
-          }
+            <div id="genetic-bar-diagram-container"></div>
 
-          .genetic-bar-diagram-svg line {
-            stroke: #eeeeee;
-            stroke-width: 1;
-          }
-        </style>
+        </article>
 
-        <div id="main-content" class="main-content">
-          <div id="outer-genetic-bar-diagram-container" style="width: 100%; height: 100%;">
-            <div id="genetic-bar-diagram-container" style="width: 100%; display: inline-block;">
-            </div>
-          </div>
-        </div>
+      </section>
 
         <script>
-
           // remove test
           geneticBarGraphData = geneticBarGraphData.filter(function(graphData) {
             if(graphData.source.indexOf("test.xml") === -1) {
@@ -113,9 +92,9 @@
 
           // set breadcrumbs
           if(sceneLineMappingId.split(".")[0] === "1") {
-            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneTitle}]));
+            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust I", link: "genesis_faust_i.php"}, {caption: sceneTitle}]));
           } else {
-            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneTitle}]));
+            document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust II", link: "genesis_faust_ii.php"}, {caption: sceneTitle}]));
           }
 
           var horizontalDistance = 30;
@@ -401,5 +380,6 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
           Faust.tooltip.addToTooltipElements();
 
         </script>
-      </div>
+
+      <?php $showFooter = false; ?>
       <?php include "includes/footer.php"; ?>

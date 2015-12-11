@@ -10,7 +10,7 @@
                         textkritisch relevanten Drucke zum ‚Faust‘, einem Lesetext des ‚<a
                             href="/print/faust1.html">Faust I</a> und des ‚<a
                             href="/print/faust2.html">Faust II</a>‘ sowie Visualisierungen zur <a
-                            href="/chessboard_overview.php">Genese</a> des Werks.</p>
+                            href="/genesis.php">Genese</a> des Werks.</p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
                 <h2>Genese</h2>
                     <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘
                         gearbeitet. Verschiedene Grafiken stellen die <a
-                            href="/chessboard_overview.php">Genese</a> von Goethes ‚Faust‘
+                            href="/genesis.php">Genese</a> von Goethes ‚Faust‘
                         retrospektiv, d.h. vom abgeschlossenen Werk ausgehend dar.</p>
               </div>
             </div>
@@ -64,9 +64,8 @@
       <script type="text/javascript" src="js/jquery.slick.min.js"></script>
       <script type="text/javascript">
         jQuery(document).ready(function($){
-          $('.slider').slick({
+          var slideshow = $('.slider').slick({
             adaptiveHeight: true,
-            autoplay: true,
             dots:true,
             autoplaySpeed: 15000,
             pauseOnHover: true,
@@ -78,6 +77,10 @@
                 }
               }
             ]
+          });
+          slideshow.slick('slickPlay'); // autoplay
+          $('.slider *').click(function () {      
+              slideshow.slick('slickPause'); // stop on click
           });
         });
       </script>

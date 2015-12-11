@@ -32,25 +32,22 @@
   </head>
   <body>
     <header>
-      <div class="pure-g-r">
-        <div class="logo pure-u-1-3">
+        <div class="logo">
           <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
         </div>
-        <div class="breadcrumbs pure-u-1-3 pure-center pure-fade-50">
+        <div class="breadcrumbs pure-right pure-nowrap pure-fade-50">
           <small id="breadcrumbs"></small>
         </div>
-        <div class="pure-u-1-3 pure-noprint">
-        <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right">
+        <div id="current" class="pure-nowrap"></div>
+        <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
           <li><a href="archives.php">Archiv</a></li>
-          <li><a href="chessboard_overview.php">Genese</a></li>
+          <li><a href="genesis.php">Genese</a></li>
           <li><a href="print/text.html">Text</a></li>
           <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
           <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>
           <!-- <li><form class="pure-form"><input autocomplete="off" id="quick-search" placeholder="Suche" type="text"/></form></li> -->
           </ul>
         </nav>
-        </div>
-        </div>
     </header>
     <main>

@@ -603,9 +603,9 @@ var createDocumentViewer = (function(){
             breadcrumbs.appendChild(document.createElement("br"));
 
             if(sceneData.id.split(".")[0] === "1") {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust I", link: "chessboard_faust_i.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust I", link: "genesis_faust_i.php"}, {caption: sceneData.title, link: "genesis_bargraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             } else {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "chessboard_overview.php"}, {caption: "Faust II", link: "chessboard_faust_ii.php"}, {caption: sceneData.title, link: "geneticBarGraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust II", link: "genesis_faust_ii.php"}, {caption: sceneData.title, link: "genesis_bargraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             }
           }
 
