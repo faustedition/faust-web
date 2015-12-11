@@ -92,10 +92,13 @@
 
           <h2>Historisch-kritische Edition von Goethes Faust</h2>
           <p>Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis</p>
-          <p>Gefördert von: <a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
-          <p><a href="project.php">Informationen zum Projekt</a></p>
-          <p><a href="intro.php">Informationen zur Ausgabe</a></p>
+          <p class="pure-tiles">
+            <a class="pure-button pure-button-tile" href="project.php">Über das Projekt</a>
+            <a class="pure-button pure-button-tile" href="intro.php">Über die Ausgabe</a> 
+          </p>
 
+
+          <p class="pull-right"><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
         </article>
 
         <div class="pure-u-1-5"></div>
