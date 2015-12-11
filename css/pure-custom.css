@@ -47,7 +47,7 @@ figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 .pure-button {border-radius:4px;}
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {background-color:rgba(0,0,0,0.8); color:rgb(230, 230, 230);}
 
-.pure-tiles {display:table; table-layout:fixed;}
+.pure-tiles {display:table; table-layout:fixed; width:100%;}
 .pure-button-tile {display:table-cell; border:0.5em solid white; width:33%; white-space:initial; padding:1em; height:10em; vertical-align:middle;}
 
 .pure-g-r [class*="pure-u"] {font-family:"Ubuntu", Arial, Helvetica, sans-serif;}
