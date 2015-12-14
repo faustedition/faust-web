@@ -64,7 +64,7 @@
 
     <g id="leftGroup" transform="translate(180, 0)">
 
-      <g transform="translate(0,-10)">
+      <g transform="translate(15,-10)">
         <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">Zueignung</text>
         <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">Vorspiel</text>
         <text x="0" y="0" transform="translate(50,0) rotate(-45)" class="columnText">Prolog</text>
