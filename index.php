@@ -90,8 +90,10 @@
         
         <article class="pure-u-3-5 pure-gap">
 
-          <h2>Historisch-kritische Edition von Goethes Faust</h2>
+          <h2>Johann Wolfgang Goethe: Faust</h2>
+          <h3>Historisch-kritische Edition</h3>
           <p>Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis</p>
+          <p>Frankfurt am Main, Weimar, Würzburg 2016</p>
           <p class="pure-tiles">
             <a class="pure-button pure-button-tile" href="project.php">Über das Projekt</a>
             <a class="pure-button pure-button-tile" href="intro.php">Über die Ausgabe</a> 
