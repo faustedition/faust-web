@@ -7,9 +7,9 @@
               <div class="text">
                     <p>Die digitale Faust-Edition besteht aus einem <a href="/archives.php"
                             >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
-                        textkritisch relevanten Drucke zum ‚Faust‘, einem Lesetext des ‚<a
-                            href="/print/faust1.html">Faust I</a> und des ‚<a
-                            href="/print/faust2.html">Faust II</a>‘ sowie Visualisierungen zur <a
+                        textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
+                            href="/print/faust1.html">Faust I</a> und des <a
+                            href="/print/faust2.html">Faust II</a> sowie Visualisierungen zur <a
                             href="/genesis.php">Genese</a> des Werks.</p>
               </div>
             </div>
@@ -20,7 +20,7 @@
               <img src="img/slider/2-II-H.1.png">
               <div class="text">
                 <h2>Archiv</h2>
-                    <p>Zum ‚Faust‘ ist <a href="/archives_locations.php?view=archives">weltweit</a>
+                    <p>Zum Faust ist <a href="/archives_locations.php?view=archives">weltweit</a>
                         ein umfangreicher Bestand an <a
                             href="/archives_manuscripts.php?view=manuscript-concordance"
                             >Handschriften</a> und <a
@@ -37,9 +37,9 @@
               <img src="img/slider/H-P123.5.png">
               <div class="text">
                 <h2>Genese</h2>
-                    <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘
+                    <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt Faust
                         gearbeitet. Verschiedene Grafiken stellen die <a
-                            href="/genesis.php">Genese</a> von Goethes ‚Faust‘
+                            href="/genesis.php">Genese</a> von Goethes Faust
                         retrospektiv, d.h. vom abgeschlossenen Werk ausgehend dar.</p>
               </div>
             </div>
@@ -49,8 +49,8 @@
             <div class="center">
               <div class="text">
                 <h2>Text</h2>
-                    <p>Der Text des ‚<a href="/print/faust1.html">Faust I</a>‘ beruht auf dem
-                        Erstdruck von 1808, der des ‚<a href="/print/faust2.html">Faust II</a>‘ auf
+                    <p>Der Text des <a href="/print/faust1.html">Faust I</a> beruht auf dem
+                        Erstdruck von 1808, der des <a href="/print/faust2.html">Faust II</a> auf
                         der großen Reinschrift, die heute im Goethe- und Schiller-Archiv liegt. Vom
                         Text aus sind alle übrigen handschriftlichen und gedruckten Fassungen
                         erreichbar.</p>
