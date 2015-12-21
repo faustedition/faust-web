@@ -32,19 +32,19 @@ var sceneLineMapping = [
   {
     "rangeStart": 1178,
     "rangeEnd": 1529,
-    "title": "Studienzimmer I",
+    "title": "Studierzimmer I",
     "id": "1.6"
   },
   {
     "rangeStart": 1530,
     "rangeEnd": 2072,
-    "title": "Studienzimmer II",
+    "title": "Studierzimmer II",
     "id": "1.7"
   },
   {
     "rangeStart": 2073,
     "rangeEnd": 2336,
-    "title": "Auerbachs Keller in Leipzig",
+    "title": "Auerbachs Keller",
     "id": "1.8"
   },
   {
@@ -56,13 +56,13 @@ var sceneLineMapping = [
   {
     "rangeStart": 2605,
     "rangeEnd": 2677,
-    "title": "Straße. Faust Margarete",
+    "title": "Straße",
     "id": "1.10"
   },
   {
     "rangeStart": 2678,
     "rangeEnd": 2804,
-    "title": "Abend. Ein kleines reinliches Zimmer",
+    "title": "Abend",
     "id": "1.11"
   },
   {
@@ -80,7 +80,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 3025,
     "rangeEnd": 3072,
-    "title": "Straße. Faust Mephistopheles",
+    "title": "Straße",
     "id": "1.14"
   },
   {
@@ -128,7 +128,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 3620,
     "rangeEnd": 3775,
-    "title": "Nacht. Straße vor Gretchens Türe",
+    "title": "Nacht",
     "id": "1.22"
   },
   {
