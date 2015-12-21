@@ -182,7 +182,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 5065,
     "rangeEnd": 5986,
-    "title": "Weitläufiger Saal mit Nebengemächern",
+    "title": "Weitläufiger Saal",
     "id": "2.3"
   },
   {
