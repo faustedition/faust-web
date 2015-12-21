@@ -230,13 +230,13 @@ var sceneLineMapping = [
   {
     "rangeStart": 7249,
     "rangeEnd": 7494,
-    "title": "Peneios",
+    "title": "Peneius",
     "id": "2.11"
   },
   {
     "rangeStart": 7495,
     "rangeEnd": 8033,
-    "title": "Am oberen Peneios",
+    "title": "Am obern Peneios",
     "id": "2.12"
   },
   {
@@ -248,7 +248,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 8275,
     "rangeEnd": 8487,
-    "title": "Telchinen von Rhodos",
+    "title": "Telchinen von Rhodus",
     "id": "2.14"
   },
   {
@@ -266,7 +266,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 9574,
     "rangeEnd": 10038,
-    "title": "[Arkadien]",
+    "title": "Schattiger Hain",
     "id": "2.17"
   },
   {
