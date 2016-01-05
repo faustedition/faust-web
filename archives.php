@@ -8,8 +8,8 @@
 
             <p class="pure-tiles">
              <a href="archives_locations.php" title="Aufbewahrungsorte" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
-             <a href="archives_manuscripts.php" title="Handschriftenkonkordanz" class="pure-button pure-button-tile">Hand&shy;schriften</a>
-             <a href="archives_print.php" title="Konkordanz der Drucke" class="pure-button pure-button-tile">Drucke</a>
+             <a href="archives_manuscripts.php" title="Handschriften" class="pure-button pure-button-tile">Hand&shy;schriften</a>
+             <a href="archives_print.php" title="Drucke" class="pure-button pure-button-tile">Drucke</a>
             </p>
         
         </article>
