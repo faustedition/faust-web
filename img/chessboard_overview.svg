@@ -62,7 +62,7 @@
 
   <g transform="translate(0, 75)">
 
-    <g id="leftGroup" transform="translate(180, 0)">
+    <g id="leftGroup" transform="translate(170, 0)">
 
       <g transform="translate(15,-10)">
         <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">Zueignung</text>
@@ -101,7 +101,7 @@
       </g>
 
       <a xlink:href="genesis_faust_i.php">
-        <rect x="-180" y="-5" width="300" height="575" class="highlight show-tooltip" tooltipText="zu Faust I"></rect>
+        <rect x="-155" y="-5" width="290" height="575" class="highlight show-tooltip" tooltipText="zu Faust I"></rect>
       </a>
 
     </g>
@@ -182,7 +182,7 @@
       </g>
 
       <a xlink:href="genesis_faust_ii.php">
-        <rect x="-140" y="-5" width="300" height="575" class="highlight show-tooltip" tooltipText="zu Faust II"></rect>
+        <rect x="-130" y="-5" width="290" height="575" class="highlight show-tooltip" tooltipText="zu Faust II"></rect>
       </a>
 
     </g>
