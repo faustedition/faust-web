@@ -15,9 +15,9 @@
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/archive.php"><big>Archiv</big></a></p>
             <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/archive.php?view=archives" style="display:block;">Aufbewahrungsorte</a></p>
-            <p><a class="pure-button" href="/archive.php?view=manuscript-concordance" style="display:block;">Handschriften</a></p>
-            <p><a class="pure-button" href="/archive.php?view=print-concordance" style="display:block;">Drucke</a></p>
+            <p><a class="pure-button" href="/archive_locations.php" style="display:block;">Aufbewahrungsorte</a></p>
+            <p><a class="pure-button" href="/archive_manuscripts.php" style="display:block;">Handschriften</a></p>
+            <p><a class="pure-button" href="/archive_prints.php" style="display:block;">Drucke</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/genesis.php"><big>Genese</big></a></p>
@@ -68,7 +68,7 @@
             einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
             1833.</p>        
         <p>Teil der Ausgabe sind alle textkritisch relevanten <a
-                href="archive.php?view=print-concordance">Drucke</a> und Teildrucke des ‚Faust‘.
+                href="archive_prints.php">Drucke</a> und Teildrucke des ‚Faust‘.
             Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
             Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
             Revisionsbogen.</p>
