@@ -44,9 +44,9 @@
           <li><a href="archives.php">Archiv</a></li>
           <li><a href="genesis.php">Genese</a></li>
           <li><a href="print/text.html">Text</a></li>
-          <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
+          <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" placeholder="Suche" type="text"/></form></li> 
           <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>
-          <!-- <li><form class="pure-form"><input autocomplete="off" id="quick-search" placeholder="Suche" type="text"/></form></li> -->
+          <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
           </ul>
         </nav>
     </header>

@@ -367,7 +367,7 @@
           <rect x="25" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Saal des Thrones"></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=5065&amp;rangeEnd=5986">
-          <rect x="50" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Weitläufiger Saal mit Nebengemächern"></rect>
+          <rect x="50" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Weitläufiger Saal"></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=5987&amp;rangeEnd=6172">
           <rect x="75" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Lustgarten"></rect>
@@ -392,16 +392,16 @@
           <rect x="250" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Pharsalische Felder"></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=7249&amp;rangeEnd=7494">
-          <rect x="275" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Peneios"></rect>
+          <rect x="275" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Peneius"></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=7495&amp;rangeEnd=8033">
-          <rect x="300" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Am oberen Peneios"></rect>
+          <rect x="300" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Am obern Peneios "></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=8034&amp;rangeEnd=8274">
           <rect x="325" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Felsbuchten des ägäischen Meers"></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=8275&amp;rangeEnd=8487">
-          <rect x="350" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Telchinen von Rhodos"></rect>
+          <rect x="350" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Telchinen von Rhodus"></rect>
         </a>
 
 
@@ -412,7 +412,7 @@
           <rect x="425" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Innerer Burghof"></rect>
         </a>
         <a xlink:href="genesis_bargraph.php?rangeStart=9574&amp;rangeEnd=10038">
-          <rect x="450" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="[Arkadien]"></rect>
+          <rect x="450" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Schattiger Hain"></rect>
         </a>
 
 

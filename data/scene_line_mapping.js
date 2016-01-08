@@ -32,19 +32,19 @@ var sceneLineMapping = [
   {
     "rangeStart": 1178,
     "rangeEnd": 1529,
-    "title": "Studienzimmer I",
+    "title": "Studierzimmer I",
     "id": "1.6"
   },
   {
     "rangeStart": 1530,
     "rangeEnd": 2072,
-    "title": "Studienzimmer II",
+    "title": "Studierzimmer II",
     "id": "1.7"
   },
   {
     "rangeStart": 2073,
     "rangeEnd": 2336,
-    "title": "Auerbachs Keller in Leipzig",
+    "title": "Auerbachs Keller",
     "id": "1.8"
   },
   {
@@ -56,13 +56,13 @@ var sceneLineMapping = [
   {
     "rangeStart": 2605,
     "rangeEnd": 2677,
-    "title": "Straße. Faust Margarete",
+    "title": "Straße",
     "id": "1.10"
   },
   {
     "rangeStart": 2678,
     "rangeEnd": 2804,
-    "title": "Abend. Ein kleines reinliches Zimmer",
+    "title": "Abend",
     "id": "1.11"
   },
   {
@@ -80,7 +80,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 3025,
     "rangeEnd": 3072,
-    "title": "Straße. Faust Mephistopheles",
+    "title": "Straße",
     "id": "1.14"
   },
   {
@@ -128,7 +128,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 3620,
     "rangeEnd": 3775,
-    "title": "Nacht. Straße vor Gretchens Türe",
+    "title": "Nacht",
     "id": "1.22"
   },
   {
@@ -182,7 +182,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 5065,
     "rangeEnd": 5986,
-    "title": "Weitläufiger Saal mit Nebengemächern",
+    "title": "Weitläufiger Saal",
     "id": "2.3"
   },
   {
@@ -230,13 +230,13 @@ var sceneLineMapping = [
   {
     "rangeStart": 7249,
     "rangeEnd": 7494,
-    "title": "Peneios",
+    "title": "Peneius",
     "id": "2.11"
   },
   {
     "rangeStart": 7495,
     "rangeEnd": 8033,
-    "title": "Am oberen Peneios",
+    "title": "Am obern Peneios",
     "id": "2.12"
   },
   {
@@ -248,7 +248,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 8275,
     "rangeEnd": 8487,
-    "title": "Telchinen von Rhodos",
+    "title": "Telchinen von Rhodus",
     "id": "2.14"
   },
   {
@@ -266,7 +266,7 @@ var sceneLineMapping = [
   {
     "rangeStart": 9574,
     "rangeEnd": 10038,
-    "title": "[Arkadien]",
+    "title": "Schattiger Hain",
     "id": "2.17"
   },
   {
