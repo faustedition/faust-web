@@ -61,7 +61,10 @@ a[href].pure-button {border:none;}
 .pure-menu li a small {margin-left:-5px; margin-right:-5px}
 .pure-menu li:hover a, .pure-menu li.pure-menu-selected a {color:#fab400;}
 .pure-menu li a:focus, .pure-menu li a:hover {background:none;}
-.pure-menu .pure-form input {margin: 0 0.7em; width:142px;}
+.pure-menu .pure-form {position:relative; margin: 0 0.7em;}
+.pure-menu .pure-form input {width:3em; position:relative; z-index:2; background:transparent; transition:width .5s;}
+.pure-menu .pure-form input:focus {width:10em; padding-right:3em;}
+.pure-menu .pure-form button {position:absolute; z-index:1; top:0; right:0; width:2.9em; padding:0.5em 0; background:transparent; border:none;}
 
 .pure-submenu li a {padding:5px 10px; margin:0; border-bottom:none !important;}
 .pure-submenu {padding:0; font-size: 0.9em;}
