@@ -57,7 +57,7 @@ a[href].pure-button {border:none;}
 .pure-g-r .pure-gap {padding:0 .5em;}
 .pure-g-r .pure-gap:last-of-type {padding-right:0;}
 
-.pure-menu li a {padding:0; margin:5px 10px;}
+.pure-menu li a {padding:0; margin:5px 10px; color:rgb(125,125,125);}
 .pure-menu li a small {margin-left:-5px; margin-right:-5px}
 .pure-menu li:hover a, .pure-menu li.pure-menu-selected a {color:#fab400;}
 .pure-menu li a:focus, .pure-menu li a:hover {background:none;}
