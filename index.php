@@ -88,7 +88,7 @@
       <section class="center pure-g-r">
         <div class="pure-u-1-5"></div>
         
-        <article class="pure-u-3-5 pure-gap">
+        <article class="pure-u-3-5 pure-gap pure-center">
 
           <h2>Johann Wolfgang Goethe: Faust</h2>
           <h3>Historisch-kritische Edition</h3>
@@ -100,7 +100,7 @@
           </p>
 
 
-          <p class="pull-right"><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
+          <p><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
         </article>
 
         <div class="pure-u-1-5"></div>
