@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Digitale Faust-Edition</title>
+    <title>Digitale Faust-Edition [beta]</title>
 
     <script type="text/javascript" src="data/archives.js"></script>
     <script type="text/javascript" src="data/concordance_columns.js"></script>
@@ -34,6 +34,7 @@
     <header>
         <div class="logo">
           <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
+          <sup class="pure-fade-50"><mark>beta</mark></sup>
         </div>
         <div class="breadcrumbs pure-right pure-nowrap pure-fade-50">
           <small id="breadcrumbs"></small>

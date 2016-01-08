@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {line-height:1.125em;}
 h1, h2, h3 {font-weight:500;}
 p,pre  {text-align:justify; hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto;}
 a {color:rgb(0,0,0);}
-mark {background-color:rgb(250,190,0);}
+mark {padding:0px 0.25em; background-color:rgb(250,190,0);}
 abbr[title], acronym[title] {border-bottom: 1px dotted; cursor:help;}
 blockquote {font-style:italic;}
 blockquote:before {font-family:"FontAwesome"; content:"\f10e"; text-decoration:inherit; display: inline-block; speak: none; color:rgba(0,0,0,0.1); padding-right:.25em; font-size:2em;}
