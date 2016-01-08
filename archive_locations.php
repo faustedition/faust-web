@@ -28,7 +28,7 @@
 
         <script type="text/javascript">
           // set breadcrumbs
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: "Aufbewahrungsorte"}]));
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive.php"}, {caption: "Aufbewahrungsorte"}]));
         </script>
 
         <script type="text/javascript">
@@ -77,7 +77,7 @@
               archiveTr.appendChild(archiveNumCell);
 
               var archiveDetailLink = document.createElement("a");
-              archiveDetailLink.href = "archives_locations_detail.php?id=" + currentChild["id"];
+              archiveDetailLink.href = "archive_locations_detail.php?id=" + currentChild["id"];
 
               var archiveNameCell = document.createElement("td");
               var archiveName = document.createElement("strong");

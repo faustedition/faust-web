@@ -41,7 +41,7 @@
         <div id="current" class="pure-nowrap"></div>
         <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li><a href="archives.php">Archiv</a></li>
+          <li><a href="archive.php">Archiv</a></li>
           <li><a href="genesis.php">Genese</a></li>
           <li><a href="print/text.html">Text</a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" placeholder="Suche" type="text"/></form></li> 

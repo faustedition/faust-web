@@ -591,8 +591,8 @@ var createDocumentViewer = (function(){
           Faust.dom.removeAllChildren(breadcrumbs);
           var repository = doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
-            {caption: "Archiv", link: "archives.php"}, 
-            {caption: archives[repository].name, link: "archives_locations_detail.php?id=" + repository},
+            {caption: "Archiv", link: "archive.php"}, 
+            {caption: archives[repository].name, link: "archive_locations_detail.php?id=" + repository},
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page

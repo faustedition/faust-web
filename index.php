@@ -5,7 +5,7 @@
             <div class="center">
               <img src="img/slider/mephisto.png">
               <div class="text">
-                    <p>Die digitale Faust-Edition besteht aus einem <a href="/archives.php"
+                    <p>Die digitale Faust-Edition besteht aus einem <a href="/archive.php"
                             >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
                         textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
                             href="/print/faust1.html">Faust I</a> und des <a
@@ -20,12 +20,12 @@
               <img src="img/slider/2-II-H.1.png">
               <div class="text">
                 <h2>Archiv</h2>
-                    <p>Zum Faust ist <a href="/archives_locations.php?view=archives">weltweit</a>
+                    <p>Zum Faust ist <a href="/archive_locations.php?view=archives">weltweit</a>
                         ein umfangreicher Bestand an <a
-                            href="/archives_manuscripts.php?view=manuscript-concordance"
+                            href="/archive_manuscripts.php?view=manuscript-concordance"
                             >Handschriften</a> und <a
-                            href="/archives_manuscripts.php?view=print-concordance">Drucken</a> aus
-                        der Zeit von von etwa 1774 bis 1831 erhalten. Das <a href="/archives.php"
+                            href="/archive_manuscripts.php?view=print-concordance">Drucken</a> aus
+                        der Zeit von von etwa 1774 bis 1831 erhalten. Das <a href="/archive.php"
                             >Archiv</a> macht die gesamte Überlieferung in Abbildungen,
                         Transkriptionen und Zeugenbeschreibungen zugänglich.</p>
               </div>

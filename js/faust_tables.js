@@ -207,7 +207,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	    tableData.appendChild(tableDataLink);
 	  } else if ('repository' in cellData) {
 	    var repoLink = document.createElement("a");
-	    repoLink.href = 'archives_locations_detail.php?id=' + cellData['repository'];
+	    repoLink.href = 'archive_locations_detail.php?id=' + cellData['repository'];
 	    repoLink.appendChild(document.createTextNode(cellData.text));
 	    tableData.appendChild(repoLink);
 	  } else {

@@ -24,7 +24,7 @@
 
         <script type="text/javascript">
           // set breadcrumbs
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: "Drucke"}]));
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive.php"}, {caption: "Drucke"}]));
         </script>
 
         <script>

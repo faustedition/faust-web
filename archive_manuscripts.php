@@ -12,7 +12,7 @@
         <script type="text/javascript" src="js/faust_tables.js"></script>
         <script type="text/javascript">
           // set breadcrumbs
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: "Handschriften"}]));
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive.php"}, {caption: "Handschriften"}]));
           createConcordanceTable(document.getElementById("concordance-table-container"));
         </script>
 
