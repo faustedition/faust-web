@@ -38,6 +38,10 @@ header > * ~ * {
   padding-left:2em;
 }
 
+header a[href] {
+  border:none;
+}
+
 header .logo a {
   display:block;
   margin-top:0.5em;
@@ -149,9 +153,10 @@ footer {
   background-color: #F5F5F5;
 }
 
-footer a {
+footer a[href] {
   margin:0 .5em;
   text-decoration: none;
+  border:none;
 }
 
 footer img[align="middle"] {
@@ -276,6 +281,7 @@ p.para-start { margin-top: 1em; }
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+  border:none;
 }
 
 a.lineno {
