@@ -12,6 +12,11 @@ html {
   padding:4em 0 2em;
 }
 
+
+/* ********************** */
+/* Layout
+/* ********************** */
+
 /* style for header area */
 header {
   position: fixed;
@@ -104,22 +109,6 @@ section {
     padding:0 1em;
 }
 
-.main-content-container {
-  position: absolute;
-  top: 3.4em;
-  bottom: 1.8em;
-  left: 0em;
-  right: 0em;
-  overflow: auto;
-}
-
-.main-content {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 0.5em;
-}
-
 /* style for slider */
 .slider {
   display:none;
@@ -172,6 +161,10 @@ footer img[align="middle"] {
   margin-top:-0.75em;
 }
 
+/* ********************** */
+/* Dokumenten Viewer
+/* ********************** */
+
 /* styling for navigation bar */
 .navigation-bar-container {
   position: fixed;
@@ -181,16 +174,6 @@ footer img[align="middle"] {
   height: 2.25em;
   overflow: hidden;
 }
-
-/*
-.navigation-bar-container * {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-*/
-
 .navigation-bar-content {
   display: inline-block;
   padding: 0.25em 0.5em;
@@ -198,7 +181,6 @@ footer img[align="middle"] {
   overflow: auto;
   text-align: center;
 }
-
 .navigation-button {
   display: inline-block;
   border: 1px solid black;
@@ -213,7 +195,6 @@ footer img[align="middle"] {
 .button-active {
   background-color: #F9CB9C;
 }
-
 .navigation-button:hover {
   background-color: #F9CB9C;
 }
@@ -364,7 +345,6 @@ a.pageno {
 }
 
 /* structure view */
-
 #structureContainer {
   overflow: visible;
   display: table;
@@ -386,11 +366,18 @@ a.pageno {
 }
 
 .facsimile-preview {
-  vertical-align: top;
   display: inline-block;
-  height: 362px;
-  width: 242px;
-  border: 1px solid black;
+  vertical-align:top;
+  text-align: center;
+  font-size:0.8em;
+  color:#7D7D7D;
+  height: 360px;
+  width: 240px;
+  background-color:rgba(155,155,155,0.2);
+}
+
+.facsimile-preview.right-page-preview {
+  padding-left:2px;
 }
 
 .structure-div {
@@ -455,12 +442,8 @@ a.pageno {
   opacity: 1;
 }
 
-.metadata-div {
-  overflow: auto;
-}
-
 .metadata-div div > div {
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
 }
 
 .metadata-title {
@@ -472,8 +455,8 @@ a.pageno {
 .metadata-container {
   width: 100%;
   overflow: auto;
-  margin: 0;
-  padding: 0.5em 0.5em;
+  padding-left:1em;
+  padding-right:1em;
 }
 
 /*

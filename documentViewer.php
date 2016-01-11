@@ -2,15 +2,21 @@
       <div class="main-content-container">
         <style>
 .main-content-container {
-  margin-bottom: 2em;
+  position: absolute;
+  top: 3.4em;
+  bottom: 1.8em;
+  left: 0em;
+  right: 0em;
+  overflow: auto;
+  margin-bottom: 2.5em;
 }
 
-.main-content2 {
-  border: 1px solid black;
+.main-content {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
 /*svg:not(:root) { overflow: hidden; }*/
       .view-content {
         display: none;
@@ -21,6 +27,7 @@
 
       .facsimile-content {
         overflow: hidden;
+        background-color:rgba(155,155,155,0.2);
       }
 
       /*
@@ -60,6 +67,14 @@
         width: 100%;
         height: 100%;
         overflow: auto;
+        text-align: center;
+        font-size:0.8em;
+        color:#7D7D7D;
+        cursor:move;
+      }
+
+      .image-container svg g {
+        cursor:initial;
       }
 
       .rotate-container {
@@ -183,7 +198,7 @@ div g.element-line-hidden:hover > * {
 }
         </style>
 
-        <div id="main-content2" class="main-content2">
+        <div id="main-content" class="main-content">
 
         </div>
         <div id="navigation-bar-container" class="navigation-bar-container">
@@ -227,7 +242,7 @@ div g.element-line-hidden:hover > * {
           // create viewer and assign parent element
           var viewer = (function(){
             "use strict";
-            var viewer = createDocumentViewer(documentMetadata, document.getElementById("main-content2"));
+            var viewer = createDocumentViewer(documentMetadata, document.getElementById("main-content"));
             if(viewer.getCurrentView() === "facsimile" || viewer.getCurrentView() === "facsimile_document") {
               document.getElementById("facsimile-settings").style.display="block";
             }

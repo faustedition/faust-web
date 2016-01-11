@@ -691,8 +691,7 @@ var createDocumentViewer = (function(){
             facsimileContainer.style.display = "inline-block";
             facsimileContainer.style.width = "50%";
             facsimileContainer.style.height = "100%";
-            facsimileContainer.style.border = "0px solid black";
-            facsimileContainer.style.borderRightWidth = "1px";
+            facsimileContainer.style.background = "#EBEBEB";
             facsimileContainer.style.overflow = "auto";
 
             docTranscriptContainer.style.display = "inline-block";
@@ -700,6 +699,8 @@ var createDocumentViewer = (function(){
             docTranscriptContainer.style.height = "100%";
             docTranscriptContainer.style.overflow = "auto";
             docTranscriptContainer.style.textAlign = "center";
+            docTranscriptContainer.style.paddingLeft = "1em";
+            docTranscriptContainer.style.paddingRight = "1em";
 
             currentPage.facsimile_document = facsimileDocTranscriptContainer;
             currentMetadata = doc.metadata.pages[pageNum - 1];
@@ -760,10 +761,11 @@ var createDocumentViewer = (function(){
             documentTextContainer.textContainer = textContainer;
 
             documentContainer.style.display = "inline-block";
-            documentContainer.style.paddingTop = "1em";
+            documentContainer.style.paddingLeft = "1em";
+            documentContainer.style.paddingRight = "1em";
             documentContainer.style.width = "50%";
             documentContainer.style.height = "100%";
-            documentContainer.style.border = "0px solid black";
+            documentContainer.style.border = "0px solid #CCC";
             documentContainer.style.borderRightWidth = "1px";
             documentContainer.style.overflow = "auto";
             documentContainer.style.textAlign = "center";
@@ -906,6 +908,7 @@ var createDocumentViewer = (function(){
         return function(docTranscriptHtml, pageNum) {
           var docTranscriptDiv = document.createElement("div");
           docTranscriptDiv.style.margin = "auto";
+          docTranscriptDiv.style.paddingTop = "1em";
           if(docTranscriptHtml) {
             docTranscriptDiv.innerHTML = docTranscriptHtml;
           } else {
