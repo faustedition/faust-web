@@ -35,7 +35,7 @@ header > *:empty {
 }
 
 header > * ~ * {
-  padding-left:2em;
+  padding-left:1em;
 }
 
 header a[href] {
@@ -56,14 +56,23 @@ header .logo img {
 
 /* beta */
 header .logo sup {
-position: absolute;
-top: 1em;
-left: 290px;
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  font-size: 60%;
 }
 
 header .breadcrumbs {
   line-height: 1em;
-  padding-right:0.25em;
+}
+
+header .breadcrumbs span:empty {
+  display: none;
+}
+
+header .breadcrumbs span {
+  padding-left:0.5em;
+  padding-right:0.5em;
 }
 
 header .breadcrumbs a {
@@ -76,7 +85,7 @@ header .breadcrumbs a:first-child {
 }
 
 header #current {
-  padding-left:0.25em;
+  padding-left:0.5em;
   font-size: 1.66em;
   font-weight: 500;
   border-left: 1px solid #CCC;

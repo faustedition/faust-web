@@ -4,8 +4,6 @@
         <div class="pure-u-1-5"></div>
         
         <article class="pure-u-3-5 pure-center">
-            <h1>Archiv</h1>
-
             <p class="pure-tiles">
              <a href="archive_locations.php" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
              <a href="archive_manuscripts.php" class="pure-button pure-button-tile">Hand&shy;schriften</a>
@@ -18,3 +16,8 @@
 
       </section>
       <?php include "includes/footer.php"; ?>
+
+      <script type="text/javascript">
+        // set breadcrumbs
+        document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv"}]));
+      </script>
