@@ -47,7 +47,7 @@
           <li><a href="print/text.html">Text</a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
           <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>
-          <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
+          <li><a href="help.php"><i class="fa fa-help-circled fa-lg"></i></a></li>
           </ul>
         </nav>
     </header>
