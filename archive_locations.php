@@ -2,8 +2,6 @@
       <section>
 
         <article>
-            <h1 class="pure-center">Aufbewahrungsorte</h1>
-
             <table id="locations" class="pure-table">
               <thead>
                 <tr>
