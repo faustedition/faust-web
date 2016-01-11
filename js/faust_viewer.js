@@ -1192,11 +1192,11 @@ var createDocumentViewer = (function(){
           }
 
           // set active button
-          Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .navigation-button")).forEach(function(button) {
+          Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .pure-button")).forEach(function(button) {
             if(button.id !== "toggle-overlay-button") {
-              Faust.dom.removeClassFromElement(button, "button-active");
+              Faust.dom.removeClassFromElement(button, "pure-button-primary");
               if(button.id === "show-" + state.view + "-button") {
-                Faust.dom.addClassToElement(button, "button-active");
+                Faust.dom.addClassToElement(button, "pure-button-primary");
               }
             }
           });
@@ -1250,10 +1250,10 @@ var createDocumentViewer = (function(){
         return function() {
           if(state.showOverlay === true) {
             state.showOverlay = false;
-            Faust.dom.removeClassFromElement(document.getElementById("toggle-overlay-button"), "button-active");
+            Faust.dom.removeClassFromElement(document.getElementById("toggle-overlay-button"), "pure-button-primary");
           } else {
             state.showOverlay = true;
-            Faust.dom.addClassToElement(document.getElementById("toggle-overlay-button"), "button-active");
+            Faust.dom.addClassToElement(document.getElementById("toggle-overlay-button"), "pure-button-primary");
           }
           if(doc.pages[state.page - 1]) {
             doc.pages[state.page - 1].facsimile.showOverlay(state.showOverlay);

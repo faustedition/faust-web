@@ -14,22 +14,22 @@
         <div class="pure-u-1-8"></div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/archive.php"><big>Archiv</big></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/archive_locations.php" style="display:block;">Aufbewahrungsorte</a></p>
             <p><a class="pure-button" href="/archive_manuscripts.php" style="display:block;">Handschriften</a></p>
             <p><a class="pure-button" href="/archive_prints.php" style="display:block;">Drucke</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/genesis.php"><big>Genese</big></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/genesis.php" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/genesis_faust_i.php" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
             <p><a class="pure-button" href="/genesis_faust_ii.php" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/print/faust1.html" style="display:block;">Faust I</a></p>
             <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
         </div>

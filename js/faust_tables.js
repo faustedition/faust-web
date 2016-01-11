@@ -123,9 +123,9 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       tableDiv.getElementsByTagName("th")[currentColumn].className = "pure-nowrap pure-col-sorted pure-sortable";
 
       if(currentSort === 0) {
-	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-asc pure-pull-right";
+	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-up pure-pull-right";
       } else if (currentSort === 1) {
-	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-desc pure-pull-right";
+	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-down pure-pull-right";
       }
 
       while(parentElement.firstChild) {
