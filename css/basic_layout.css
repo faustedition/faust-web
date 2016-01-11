@@ -165,6 +165,44 @@ footer img[align="middle"] {
 /* Dokumenten Viewer
 /* ********************** */
 
+/* main container */
+.main-content-container {
+  position: absolute;
+  top: 3.4em;
+  bottom: 1.8em;
+  left: 0em;
+  right: 0em;
+  overflow: auto;
+  margin-bottom: 2.5em;
+}
+.main-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.view-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.view-content > div {
+  padding-top:1em;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size:0.8em;
+  color:#7D7D7D;
+  cursor:move;
+}
+.image-container svg g {
+  cursor:initial;
+}
+
 /* styling for navigation bar */
 .navigation-bar-container {
   position: fixed;
@@ -191,12 +229,25 @@ footer img[align="middle"] {
   background-color: #e5e5e5;
   cursor: pointer;
 }
-
 .button-active {
   background-color: #F9CB9C;
 }
 .navigation-button:hover {
   background-color: #F9CB9C;
+}
+.facsimile-settings {
+  display: none;
+  position: absolute;
+  top: 0.25em;
+  left: 0.5em;
+}
+.page-navigation {
+  display: inline-block;
+}
+.view-select {
+  position: absolute;
+  top: 0.25em;
+  right: 0.5em;
 }
 
 /* tooltip styling */
@@ -204,9 +255,29 @@ footer img[align="middle"] {
   position: fixed;
   pointer-events: none;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid black;
-  padding: 0em 0.33em;
+  padding: 0em 0.25em;
+}
+.transcript-tooltip-span {
+  padding-right: 0.5em;
+}
+.transcript-tooltip-span:last-child {
+  padding-right: 0em;
+}
+.transcript-tooltip-hand {
+  font-weight: bold;
+}
+.transcript-tooltip-material {
+  font-style: italic;
+}
+.transcript-tooltip-text-decoration {
+}
+.transcript-tooltip-property {
+}
+.transcript-tooltip-script {
+}
+.transcript-tooltip-inline-decoration {
 }
 
 /* styling of prints and texts in synoptic view */
@@ -344,27 +415,84 @@ a.pageno {
     color:  #805F40;
 }
 
+/* facsimile view */
+.facsimile-content {
+  overflow: hidden;
+  background-color:rgba(155,155,155,0.2);
+}
+.rotate-container {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  overflow: hidden;
+  transform-origin: 0px 0px;
+}
+.scale-container {
+  transform-origin: 0px 0px;
+}
+.overlay-container {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+.image-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.tile-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.text-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.image-info {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+}
+svg.diplomatic .element-line {
+  text-shadow: -0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em -0.5em 0.5em rgba(255, 255, 255, 0.5), 0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em 0.5em 0.5em rgba(255, 255, 255, 0.5);
+}
+g.element-line .bgBox {
+  opacity: 0;
+}
+g.element-line:hover .bgBox {
+  opacity: 1;
+  stroke: #ffc20e;
+  stroke-width: 0.1em;
+}
+g.element-line-hidden > * {
+  opacity: 0;
+}
+div g.element-line-hidden:hover > * {
+  opacity: 1;
+}
+
 /* structure view */
 #structureContainer {
   overflow: visible;
   display: table;
 }
-
 .structure-container > div {
   display: table-cell;
   height: 100%;
   vertical-align: top;
   overflow: auto;
 }
-
 .preview-div {
   width: 500px;
-  padding: 5px;
   white-space: nowrap;
   text-align: center;
   vertical-align: top;
 }
-
 .facsimile-preview {
   display: inline-block;
   vertical-align:top;
@@ -374,6 +502,9 @@ a.pageno {
   height: 360px;
   width: 240px;
   background-color:rgba(155,155,155,0.2);
+}
+.metadata-div {
+  padding-top:0 !important;
 }
 
 .facsimile-preview.right-page-preview {
@@ -508,7 +639,15 @@ cite {
   margin-right: 0.1em; /* Kursivausgleich */
 }
 
-/* print layout */
+/* documentary transcript view */
+.doc-transcript-content {
+  text-align: center;
+}
+
+/* ********************** */
+/* Print
+/* ********************** */
+
 @media print {
   html {
     padding:0;
