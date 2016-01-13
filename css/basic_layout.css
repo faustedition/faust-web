@@ -169,11 +169,10 @@ footer img[align="middle"] {
 .main-content-container {
   position: absolute;
   top: 3.4em;
-  bottom: 2.5em;
+  bottom: 2.75em;
   left: 0em;
   right: 0em;
   overflow: auto;
-  margin-bottom: 2.5em;
 }
 .main-content {
   width: 100%;
@@ -207,7 +206,7 @@ footer img[align="middle"] {
 .navigation-bar-container {
   position: fixed;
   left: 0px;
-  bottom: 2em;
+  bottom: 0;
   width: 100%;
   height: 2.75em;
   overflow: hidden;
