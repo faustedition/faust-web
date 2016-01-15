@@ -2,8 +2,6 @@
       <section>
 
         <article>
-            <h1 class="pure-center">Drucke</h1>
-
             <table id="prints" class="pure-table">
               <thead>
                 <tr>
@@ -24,7 +22,7 @@
 
         <script type="text/javascript">
           // set breadcrumbs
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: "Drucke"}]));
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive.php"}, {caption: "Drucke"}]));
         </script>
 
         <script>

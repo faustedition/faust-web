@@ -591,8 +591,8 @@ var createDocumentViewer = (function(){
           Faust.dom.removeAllChildren(breadcrumbs);
           var repository = doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
-            {caption: "Archiv", link: "archives.php"}, 
-            {caption: archives[repository].name, link: "archives_locations_detail.php?id=" + repository},
+            {caption: "Archiv", link: "archive.php"}, 
+            {caption: archives[repository].name, link: "archive_locations_detail.php?id=" + repository},
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page
@@ -691,8 +691,7 @@ var createDocumentViewer = (function(){
             facsimileContainer.style.display = "inline-block";
             facsimileContainer.style.width = "50%";
             facsimileContainer.style.height = "100%";
-            facsimileContainer.style.border = "0px solid black";
-            facsimileContainer.style.borderRightWidth = "1px";
+            facsimileContainer.style.background = "#EBEBEB";
             facsimileContainer.style.overflow = "auto";
 
             docTranscriptContainer.style.display = "inline-block";
@@ -700,6 +699,8 @@ var createDocumentViewer = (function(){
             docTranscriptContainer.style.height = "100%";
             docTranscriptContainer.style.overflow = "auto";
             docTranscriptContainer.style.textAlign = "center";
+            docTranscriptContainer.style.paddingLeft = "1em";
+            docTranscriptContainer.style.paddingRight = "1em";
 
             currentPage.facsimile_document = facsimileDocTranscriptContainer;
             currentMetadata = doc.metadata.pages[pageNum - 1];
@@ -760,10 +761,11 @@ var createDocumentViewer = (function(){
             documentTextContainer.textContainer = textContainer;
 
             documentContainer.style.display = "inline-block";
-            documentContainer.style.paddingTop = "1em";
+            documentContainer.style.paddingLeft = "1em";
+            documentContainer.style.paddingRight = "1em";
             documentContainer.style.width = "50%";
             documentContainer.style.height = "100%";
-            documentContainer.style.border = "0px solid black";
+            documentContainer.style.border = "0px solid #CCC";
             documentContainer.style.borderRightWidth = "1px";
             documentContainer.style.overflow = "auto";
             documentContainer.style.textAlign = "center";
@@ -906,6 +908,7 @@ var createDocumentViewer = (function(){
         return function(docTranscriptHtml, pageNum) {
           var docTranscriptDiv = document.createElement("div");
           docTranscriptDiv.style.margin = "auto";
+          docTranscriptDiv.style.paddingTop = "1em";
           if(docTranscriptHtml) {
             docTranscriptDiv.innerHTML = docTranscriptHtml;
           } else {
@@ -1189,11 +1192,11 @@ var createDocumentViewer = (function(){
           }
 
           // set active button
-          Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .navigation-button")).forEach(function(button) {
+          Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .pure-button")).forEach(function(button) {
             if(button.id !== "toggle-overlay-button") {
-              Faust.dom.removeClassFromElement(button, "button-active");
+              Faust.dom.removeClassFromElement(button, "pure-button-primary");
               if(button.id === "show-" + state.view + "-button") {
-                Faust.dom.addClassToElement(button, "button-active");
+                Faust.dom.addClassToElement(button, "pure-button-primary");
               }
             }
           });
@@ -1247,10 +1250,10 @@ var createDocumentViewer = (function(){
         return function() {
           if(state.showOverlay === true) {
             state.showOverlay = false;
-            Faust.dom.removeClassFromElement(document.getElementById("toggle-overlay-button"), "button-active");
+            Faust.dom.removeClassFromElement(document.getElementById("toggle-overlay-button"), "pure-button-primary");
           } else {
             state.showOverlay = true;
-            Faust.dom.addClassToElement(document.getElementById("toggle-overlay-button"), "button-active");
+            Faust.dom.addClassToElement(document.getElementById("toggle-overlay-button"), "pure-button-primary");
           }
           if(doc.pages[state.page - 1]) {
             doc.pages[state.page - 1].facsimile.showOverlay(state.showOverlay);

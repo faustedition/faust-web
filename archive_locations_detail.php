@@ -37,7 +37,7 @@
           }
 
           // set breadcrumbs
-           document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archives.php"}, {caption: "Aufbewahrungsorte", link: "archives_locations.php"}, {caption: archives[repositoryName].name}]));
+           document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive.php"}, {caption: "Aufbewahrungsorte", link: "archive_locations.php"}, {caption: archives[repositoryName].name}]));
 
           // write archive information
 

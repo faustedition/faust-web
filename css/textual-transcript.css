@@ -75,6 +75,7 @@ ul.toc {
 .toc a {
 	color: #444;
 	font-weight: 500;
+	border:none;
 }
 .toc a:hover {
 	color: black;

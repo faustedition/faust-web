@@ -8,8 +8,8 @@ html, button, input, select, textarea {font:16px/1.5em "Ubuntu", Arial, Helvetic
 h1, h2, h3, h4, h5, h6 {line-height:1.125em;}
 h1, h2, h3 {font-weight:500;}
 p,pre  {text-align:justify; hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto;}
-a {color:rgb(0,0,0);}
-mark {background-color:rgb(250,190,0);}
+a[href] {color:rgb(0,0,0); text-decoration:none; border-bottom:1px solid rgb(175,175,175);}
+mark {padding:0px 0.25em; background-color:rgb(250,190,0);}
 abbr[title], acronym[title] {border-bottom: 1px dotted; cursor:help;}
 blockquote {font-style:italic;}
 blockquote:before {font-family:"FontAwesome"; content:"\f10e"; text-decoration:inherit; display: inline-block; speak: none; color:rgba(0,0,0,0.1); padding-right:.25em; font-size:2em;}
@@ -23,7 +23,7 @@ code, kbd, pre, samp {font-family:"Ubuntu Mono",monospace,serif,Symbola;}
 pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
-
+table {margin:1em 0;}
 figure {margin:0.2em 0 1em 0; text-align:center;}
 figure img {max-width:90% !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 figure figcaption {margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
@@ -45,10 +45,11 @@ figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 .pure-form input[type="text"]:focus, .pure-form input[type="password"]:focus, .pure-form input[type="email"]:focus, .pure-form input[type="url"]:focus, .pure-form input[type="date"]:focus, .pure-form input[type="month"]:focus, .pure-form input[type="time"]:focus, .pure-form input[type="datetime"]:focus, .pure-form input[type="datetime-local"]:focus, .pure-form input[type="week"]:focus, .pure-form input[type="number"]:focus, .pure-form input[type="search"]:focus, .pure-form input[type="tel"]:focus, .pure-form input[type="color"]:focus, .pure-form select:focus, .pure-form textarea:focus {border-color:rgb(47,47,47);}
 .pure-form input:focus:invalid:focus, .pure-form textarea:focus:invalid:focus, .pure-form select:focus:invalid:focus {border-color:rgb(202,60,60);}
 .pure-button {border-radius:4px;}
+a[href].pure-button {border:none;}
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {background-color:rgba(0,0,0,0.8); color:rgb(230, 230, 230);}
 
 .pure-tiles {display:table; table-layout:fixed; width:100%;}
-.pure-button-tile {display:table-cell; border:0.5em solid white; width:33%; white-space:initial; padding:1em; height:10em; vertical-align:middle;}
+.pure-button-tile, a[href].pure-button-tile {display:table-cell; border:0.5em solid white; width:33%; white-space:initial; padding:1em; height:10em; vertical-align:middle;}
 
 .pure-g-r [class*="pure-u"] {font-family:"Ubuntu", Arial, Helvetica, sans-serif;}
 .pure-g-r [class*="pure-u"] [class*="pure-u"] + [class*="pure-u"] {margin-left:-.31em;} /* avoid whitespace between nested grid elements */
@@ -56,11 +57,14 @@ figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 .pure-g-r .pure-gap {padding:0 .5em;}
 .pure-g-r .pure-gap:last-of-type {padding-right:0;}
 
-.pure-menu li a {padding:0; margin:5px 10px;}
+.pure-menu li a {padding:0; margin:5px 10px; color:rgb(125,125,125);}
 .pure-menu li a small {margin-left:-5px; margin-right:-5px}
 .pure-menu li:hover a, .pure-menu li.pure-menu-selected a {color:#fab400;}
 .pure-menu li a:focus, .pure-menu li a:hover {background:none;}
-.pure-menu .pure-form input {margin: 0 0.7em; width:142px;}
+.pure-menu .pure-form {position:relative; margin: 0 0.7em;}
+.pure-menu .pure-form input {width:3em; position:relative; z-index:2; background:transparent; transition:width .5s;}
+.pure-menu .pure-form input:focus {width:10em; padding-right:3em;}
+.pure-menu .pure-form button {position:absolute; z-index:1; top:0; right:0; width:2.9em; padding:0.5em 0; background:transparent; border:none;}
 
 .pure-submenu li a {padding:5px 10px; margin:0; border-bottom:none !important;}
 .pure-submenu {padding:0; font-size: 0.9em;}

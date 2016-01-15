@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Digitale Faust-Edition</title>
+    <title>Digitale Faust-Edition [beta]</title>
 
     <script type="text/javascript" src="data/archives.js"></script>
     <script type="text/javascript" src="data/concordance_columns.js"></script>
@@ -34,6 +34,7 @@
     <header>
         <div class="logo">
           <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
+          <sup class="pure-fade-50"><mark>beta</mark></sup>
         </div>
         <div class="breadcrumbs pure-right pure-nowrap pure-fade-50">
           <small id="breadcrumbs"></small>
@@ -41,12 +42,12 @@
         <div id="current" class="pure-nowrap"></div>
         <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li><a href="archives.php">Archiv</a></li>
+          <li><a href="archive.php">Archiv</a></li>
           <li><a href="genesis.php">Genese</a></li>
           <li><a href="print/text.html">Text</a></li>
-          <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" placeholder="Suche" type="text"/></form></li> 
+          <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
           <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>
-          <li><a href="help.php"><i class="fa fa-question-circle fa-lg"></i></a></li>
+          <li><a href="help.php"><i class="fa fa-help-circled fa-lg"></i></a></li>
           </ul>
         </nav>
     </header>

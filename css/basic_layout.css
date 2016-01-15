@@ -12,6 +12,11 @@ html {
   padding:4em 0 2em;
 }
 
+
+/* ********************** */
+/* Layout
+/* ********************** */
+
 /* style for header area */
 header {
   position: fixed;
@@ -35,7 +40,11 @@ header > *:empty {
 }
 
 header > * ~ * {
-  padding-left:2em;
+  padding-left:1em;
+}
+
+header a[href] {
+  border:none;
 }
 
 header .logo a {
@@ -50,9 +59,25 @@ header .logo img {
   height:22px;
 }
 
+/* beta */
+header .logo sup {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  font-size: 60%;
+}
+
 header .breadcrumbs {
   line-height: 1em;
-  padding-right:0.25em;
+}
+
+header .breadcrumbs span:empty {
+  display: none;
+}
+
+header .breadcrumbs span {
+  padding-left:0.5em;
+  padding-right:0.5em;
 }
 
 header .breadcrumbs a {
@@ -65,7 +90,7 @@ header .breadcrumbs a:first-child {
 }
 
 header #current {
-  padding-left:0.25em;
+  padding-left:0.5em;
   font-size: 1.66em;
   font-weight: 500;
   border-left: 1px solid #CCC;
@@ -82,22 +107,6 @@ section {
     max-width: 995px;
     margin: 0px auto;
     padding:0 1em;
-}
-
-.main-content-container {
-  position: absolute;
-  top: 3.4em;
-  bottom: 1.8em;
-  left: 0em;
-  right: 0em;
-  overflow: auto;
-}
-
-.main-content {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 0.5em;
 }
 
 /* style for slider */
@@ -142,34 +151,66 @@ footer {
   background-color: #F5F5F5;
 }
 
-footer a {
+footer a[href] {
   margin:0 .5em;
   text-decoration: none;
+  border:none;
 }
 
 footer img[align="middle"] {
   margin-top:-0.75em;
 }
 
+/* ********************** */
+/* Dokumenten Viewer
+/* ********************** */
+
+/* main container */
+.main-content-container {
+  position: absolute;
+  top: 3.4em;
+  bottom: 2.75em;
+  left: 0em;
+  right: 0em;
+  overflow: auto;
+}
+.main-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.view-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.view-content > div {
+  padding-top:1em;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size:0.8em;
+  color:#7D7D7D;
+  cursor:move;
+}
+.image-container svg g {
+  cursor:initial;
+}
+
 /* styling for navigation bar */
 .navigation-bar-container {
   position: fixed;
   left: 0px;
-  bottom: 2em;
+  bottom: 0;
   width: 100%;
-  height: 2.25em;
+  height: 2.75em;
   overflow: hidden;
 }
-
-/*
-.navigation-bar-container * {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-*/
-
 .navigation-bar-content {
   display: inline-block;
   padding: 0.25em 0.5em;
@@ -177,24 +218,30 @@ footer img[align="middle"] {
   overflow: auto;
   text-align: center;
 }
-
-.navigation-button {
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 4px;
-  text-align: center;
-  height: 1.75em;
-  padding: 0em 0.5em;
-  background-color: #e5e5e5;
-  cursor: pointer;
+.navigation-bar-content .pure-button {
+  min-width:2.5em;
+  padding: 0.5em 0.8em;
 }
 
 .button-active {
   background-color: #F9CB9C;
 }
-
 .navigation-button:hover {
   background-color: #F9CB9C;
+}
+.facsimile-settings {
+  display: none;
+  position: absolute;
+  top: 0.25em;
+  left: 0.5em;
+}
+.page-navigation {
+  display: inline-block;
+}
+.view-select {
+  position: absolute;
+  top: 0.25em;
+  right: 0.5em;
 }
 
 /* tooltip styling */
@@ -202,9 +249,29 @@ footer img[align="middle"] {
   position: fixed;
   pointer-events: none;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid black;
-  padding: 0em 0.33em;
+  padding: 0em 0.25em;
+}
+.transcript-tooltip-span {
+  padding-right: 0.5em;
+}
+.transcript-tooltip-span:last-child {
+  padding-right: 0em;
+}
+.transcript-tooltip-hand {
+  font-weight: bold;
+}
+.transcript-tooltip-material {
+  font-style: italic;
+}
+.transcript-tooltip-text-decoration {
+}
+.transcript-tooltip-property {
+}
+.transcript-tooltip-script {
+}
+.transcript-tooltip-inline-decoration {
 }
 
 /* styling of prints and texts in synoptic view */
@@ -269,6 +336,7 @@ p.para-start { margin-top: 1em; }
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+  border:none;
 }
 
 a.lineno {
@@ -341,34 +409,100 @@ a.pageno {
     color:  #805F40;
 }
 
-/* structure view */
+/* facsimile view */
+.facsimile-content {
+  overflow: hidden;
+  background-color:rgba(155,155,155,0.2);
+}
+.rotate-container {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  overflow: hidden;
+  transform-origin: 0px 0px;
+}
+.scale-container {
+  transform-origin: 0px 0px;
+}
+.overlay-container {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+.image-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.tile-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.text-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.image-info {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+}
+svg.diplomatic .element-line {
+  text-shadow: -0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em -0.5em 0.5em rgba(255, 255, 255, 0.5), 0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em 0.5em 0.5em rgba(255, 255, 255, 0.5);
+}
+g.element-line .bgBox {
+  opacity: 0;
+}
+g.element-line:hover .bgBox {
+  opacity: 1;
+  stroke: #ffc20e;
+  stroke-width: 0.1em;
+}
+g.element-line-hidden > * {
+  opacity: 0;
+}
+div g.element-line-hidden:hover > * {
+  opacity: 1;
+}
 
+/* structure view */
 #structureContainer {
   overflow: visible;
   display: table;
 }
-
 .structure-container > div {
   display: table-cell;
   height: 100%;
   vertical-align: top;
   overflow: auto;
 }
-
 .preview-div {
   width: 500px;
-  padding: 5px;
   white-space: nowrap;
   text-align: center;
   vertical-align: top;
 }
-
 .facsimile-preview {
-  vertical-align: top;
   display: inline-block;
-  height: 362px;
-  width: 242px;
-  border: 1px solid black;
+  vertical-align:top;
+  text-align: center;
+  font-size:0.8em;
+  color:#7D7D7D;
+  height: 360px;
+  width: 240px;
+  background-color:rgba(155,155,155,0.2);
+}
+.metadata-div {
+  padding-top:0 !important;
+}
+
+.facsimile-preview.right-page-preview {
+  padding-left:2px;
 }
 
 .structure-div {
@@ -433,12 +567,8 @@ a.pageno {
   opacity: 1;
 }
 
-.metadata-div {
-  overflow: auto;
-}
-
 .metadata-div div > div {
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
 }
 
 .metadata-title {
@@ -450,8 +580,8 @@ a.pageno {
 .metadata-container {
   width: 100%;
   overflow: auto;
-  margin: 0;
-  padding: 0.5em 0.5em;
+  padding-left:1em;
+  padding-right:1em;
 }
 
 /*
@@ -503,7 +633,15 @@ cite {
   margin-right: 0.1em; /* Kursivausgleich */
 }
 
-/* print layout */
+/* documentary transcript view */
+.doc-transcript-content {
+  text-align: center;
+}
+
+/* ********************** */
+/* Print
+/* ********************** */
+
 @media print {
   html {
     padding:0;

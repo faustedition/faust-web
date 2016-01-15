@@ -1,215 +1,32 @@
       <?php include "includes/header.php"; ?>
       <div class="main-content-container">
-        <style>
-.main-content-container {
-  margin-bottom: 2em;
-}
+        
+        <div id="main-content" class="main-content"></div>
 
-.main-content2 {
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-/*svg:not(:root) { overflow: hidden; }*/
-      .view-content {
-        display: none;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-      }
-
-      .facsimile-content {
-        overflow: hidden;
-      }
-
-      /*
-      .facsimile-content * {
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-      }
-
-      .facsimile-document-content * {
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-      }
-      */
-
-      .doc-transcript-content {
-        text-align: center;
-      }
-
-       /*
-      .doc-transcript-content * {
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
-      }
-      */
-
-      .text-transcript-content {
-      }
-
-      .image-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-      }
-
-      .rotate-container {
-        position: absolute;
-        top: 0px;
-        left:0px;
-        overflow: hidden;
-        transform-origin: 0px 0px;
-      }
-
-      .scale-container {
-        transform-origin: 0px 0px;
-      }
-
-      .overlay-container {
-        position: relative;
-        background-color: black;
-        overflow: hidden;
-      }
-
-      .image-layer {
-        position: absolute;
-        top: 0px;
-        left:0px;
-      }
-
-      .tile-layer {
-        position: absolute;
-        top: 0px;
-        left:0px;
-      }
-
-      .text-layer {
-        position: absolute;
-        top: 0px;
-        left:0px;
-      }
-
-      .image-info {
-        pointer-events: none;
-        position: absolute;
-        top: 0px;
-        left:0px;
-        width: 100%;
-        height: 100%;
-      }
-
-svg.diplomatic .element-line {
-  text-shadow: -0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em -0.5em 0.5em rgba(255, 255, 255, 0.5), 0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em 0.5em 0.5em rgba(255, 255, 255, 0.5);
-}
-
-g.element-line .bgBox {
-  opacity: 0;
-}
-
-g.element-line:hover .bgBox {
-  opacity: 1;
-  stroke: #ffc20e;
-  stroke-width: 0.1em;
-}
-
-g.element-line-hidden > * {
-  opacity: 0;
-}
-
-div g.element-line-hidden:hover > * {
-  opacity: 1;
-}
-
-.tooltip {
-  position: fixed;
-  background: white;
-  border-radius: 4px;
-  border: 1px solid black;
-  padding: 0em 0.25em;
-}
-
-.transcript-tooltip-span {
-  padding-right: 0.5em;
-}
-
-.transcript-tooltip-span:last-child {
-  padding-right: 0em;
-}
-
-.transcript-tooltip-hand {
-  font-weight: bold;
-}
-
-.transcript-tooltip-material {
-  font-style: italic;
-}
-
-.transcript-tooltip-text-decoration {
-}
-
-.transcript-tooltip-property {
-}
-
-.transcript-tooltip-script {
-}
-
-.transcript-tooltip-inline-decoration {
-}
-
-.page-navigation {
-  display: inline-block;
-}
-
-.facsimile-settings {
-  display: none;
-  position: absolute;
-  top: 0.25em;
-  left: 0.5em;
-}
-
-.view-select {
-  position: absolute;
-  top: 0.25em;
-  right: 0.5em;
-}
-        </style>
-
-        <div id="main-content2" class="main-content2">
-
-        </div>
         <div id="navigation-bar-container" class="navigation-bar-container">
           <div id="navigation-bar-content" class="navigation-bar-content">
             <div id="facsimile-settings" class="facsimile-settings">
-              <div id="zoom-in-button" class="zoom-in-button navigation-button" style="font-family: FontAwesome" onclick="viewer.zoomIn()" title="Vergrößern">&#xf067;</div>
-              <div id="zoom-out-button" class="zoom-out-button navigation-button" style="font-family: FontAwesome" onclick="viewer.zoomOut()" title="Verkleinern">&#xf068;</div>
-              <div id="rotate-left" class="rotate-left-button navigation-button" style="font-family: FontAwesome" onclick="viewer.rotateLeft()" title="Nach links drehen">&#xf0e2;</div>
-              <div id="rotate-right" class="rotate-right-button navigation-button" style="font-family: FontAwesome" onclick="viewer.rotateRight()" title="Nach rechts drehen">&#xf01e;</div>
-              <div id="toggle-overlay-button" class="toggle-overlay-button button-active navigation-button" onclick="viewer.toggleOverlay()" title="Überblendung ein-/ausschalten"><span style="font-family: FontAwesome;">&#xf1fc;</span></div>
+              <div id="zoom-in-button" class="pure-button" onclick="viewer.zoomIn()" title="Vergrößern"><i class="fa fa-plus"></i></div>
+              <div id="zoom-out-button" class="pure-button" onclick="viewer.zoomOut()" title="Verkleinern"><i class="fa fa-minus"></i></div>
+              <div id="rotate-left" class="pure-button" onclick="viewer.rotateLeft()" title="Nach links drehen"><i class="fa fa-ccw"></i></div>
+              <div id="rotate-right" class="pure-button" onclick="viewer.rotateRight()" title="Nach rechts drehen"><i class="fa fa-cw"></i></div>
+              <div id="toggle-overlay-button" class="pure-button pure-button-primary" onclick="viewer.toggleOverlay()" title="Überblendung ein-/ausschalten"><i class="fa fa-text-overlay"></i></div>
             </div>
             <div id="page-navigation" class="page-navigation">
-              <div id="first-page-button" class="first-page-button navigation-button" style="font-family: FontAwesome" onclick="viewer.setPage(1);" title="Erste Seite">&#xf053;&#xf053;</div>
-              <div id="previous-page-button" class="previous-page-button navigation-button" style="font-family: FontAwesome" onclick="viewer.previousPage();" title="Vorherige Seite">&#xf053;</div>
+              <div id="first-page-button" class="pure-button" onclick="viewer.setPage(1);" title="Erste Seite"><i class="fa fa-angle-double-left"></i></div>
+              <div id="previous-page-button" class="pure-button" onclick="viewer.previousPage();" title="Vorherige Seite"><i class="fa fa-angle-left"></i></div>
               <div id="pageCount" style="display:inline-block;"></div>
-              <div id="next-page-button" class="next-page-button navigation-button" style="font-family: FontAwesome" onclick="viewer.nextPage();" title="Nächste Seite">&#xf054;</div>
-              <div id="last-page-button" class="last-page-button navigation-button" style="font-family: FontAwesome" onclick="viewer.setPage(viewer.getPageCount());" title="Letzte Seite">&#xf054;&#xf054;</div>
+              <div id="next-page-button" class="pure-button" onclick="viewer.nextPage();" title="Nächste Seite"><i class="fa fa-angle-right"></i></div>
+              <div id="last-page-button" class="pure-button" onclick="viewer.setPage(viewer.getPageCount());" title="Letzte Seite"><i class="fa fa-angle-double-right"></i></div>
             </div>
             <div id="view-select" class="view-select">
-              <div id="show-structure-button" class="show-structure-button navigation-button" onclick="viewer.setView('structure');" title="Metadaten/Lagenstruktur"><span style="font-size: smaller; font-family: FontAwesome;">&#xf0cb;</span></div>
-              <div id="show-facsimile-button" class="show-facsimile-button navigation-button" onclick="viewer.setView('facsimile');" title="Faksimile"><span style="font-family: FontAwesome;">&#xf03e;</span></div>
-              <div id="show-facsimile_document-button" class="show-facsimile-button navigation-button" onclick="viewer.setView('facsimile_document');" title="Faksimile | Dokumentarische Transkription"><span style="font-family: FontAwesome;">&#xf03e;</span>|<span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span></div>
-              <div id="show-document-button" class="show-document-button navigation-button" onclick="viewer.setView('document');" title="Dokumentarische Transkription"><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span></div>
-              <div id="show-document_text-button" class="show-document-button navigation-button" onclick="viewer.setView('document_text');" title="Dokumentarische Transkription | Textuelle Transkription"><span style="font-size: smaller; font-family: FontAwesome;">&#xf037;</span>|<span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">⟨T⟩</span></div>
-              <div id="show-text-button" class="show-text-button navigation-button" onclick="viewer.setView('text');" title="Textuelle Transkription"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">⟨T⟩</span></div>
-              <div id="show-print-button" class="show-text-button navigation-button" onclick="viewer.setView('print');" title="Variantenapparat"><span style="font-weight: bold; font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;">T</span></div>
+              <div id="show-structure-button" class="pure-button" onclick="viewer.setView('structure');" title="Metadaten/Lagenstruktur"><i class="fa fa-structure"></i></div>
+              <div id="show-facsimile-button" class="pure-button" onclick="viewer.setView('facsimile');" title="Faksimile"><i class="fa fa-picture"></i></div>
+              <div id="show-facsimile_document-button" class="pure-button" onclick="viewer.setView('facsimile_document');" title="Faksimile | Dokumentarische Transkription"><i class="fa fa-picture"></i> | <i class="fa fa-doc-transscript"></i></div>
+              <div id="show-document-button" class="pure-button" onclick="viewer.setView('document');" title="Dokumentarische Transkription"><i class="fa fa-doc-transscript"></i></div>
+              <div id="show-document_text-button" class="pure-button" onclick="viewer.setView('document_text');" title="Dokumentarische Transkription | Textuelle Transkription"><i class="fa fa-doc-transscript"></i> | <i class="fa fa-text-transscript"></i></div>
+              <div id="show-text-button" class="pure-button" onclick="viewer.setView('text');" title="Textuelle Transkription"><i class="fa fa-text-transscript"></i></div>
+              <div id="show-print-button" class="pure-button" onclick="viewer.setView('print');" title="Variantenapparat"><i class="fa fa-variants"></i></div>
             </div>
           </div>
         </div>
@@ -227,7 +44,7 @@ div g.element-line-hidden:hover > * {
           // create viewer and assign parent element
           var viewer = (function(){
             "use strict";
-            var viewer = createDocumentViewer(documentMetadata, document.getElementById("main-content2"));
+            var viewer = createDocumentViewer(documentMetadata, document.getElementById("main-content"));
             if(viewer.getCurrentView() === "facsimile" || viewer.getCurrentView() === "facsimile_document") {
               document.getElementById("facsimile-settings").style.display="block";
             }
@@ -255,4 +72,5 @@ div g.element-line-hidden:hover > * {
           });
         </script>
       </div>
+      <?php $showFooter = false; ?>
       <?php include "includes/footer.php"; ?>

@@ -8,3 +8,9 @@ Redirect 301 /chessboard_overview.php /genesis.php
 Redirect 301 /chessboard_faust_i.php /genesis_faust_i.php
 Redirect 301 /chessboard_faust_ii.php /genesis_faust_ii.php
 Redirect 301 /geneticBarGraph.php /genesis_bargraph.php
+
+Redirect 301 /archives.php /archive.php
+Redirect 301 /archives_locations.php /archive_locations.php
+Redirect 301 /archives_locations_detail.php /archive_locations_detail.php
+Redirect 301 /archives_print.php /archive_prints.php
+Redirect 301 /archives_manuscripts.php /archive_manuscripts.php

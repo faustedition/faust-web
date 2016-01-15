@@ -3,7 +3,7 @@
 <section class="center pure-g-r">
     <article class="pure-u-1">
         <h1>Die Ausgabe</h1>
-        <p>Die digitale Faust-Edition besteht aus einem <a href="archives.php">Archiv</a> der
+        <p>Die digitale Faust-Edition besteht aus einem <a href="archive.php">Archiv</a> der
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
                 href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a
@@ -13,23 +13,23 @@
 
         <div class="pure-u-1-8"></div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/archives.php"><big><i class="fa fa-archive"></i> Archiv</big></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/archives.php?view=archives" style="display:block;">Aufbewahrungsorte</a></p>
-            <p><a class="pure-button" href="/archives.php?view=manuscript-concordance" style="display:block;">Handschriften</a></p>
-            <p><a class="pure-button" href="/archives.php?view=print-concordance" style="display:block;">Drucke</a></p>
+            <p><a class="pure-button pure-button-primary" href="/archive.php"><big>Archiv</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
+            <p><a class="pure-button" href="/archive_locations.php" style="display:block;">Aufbewahrungsorte</a></p>
+            <p><a class="pure-button" href="/archive_manuscripts.php" style="display:block;">Handschriften</a></p>
+            <p><a class="pure-button" href="/archive_prints.php" style="display:block;">Drucke</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/genesis.php"><big><i class="fa fa-align-left"></i> Genese</big></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><a class="pure-button pure-button-primary" href="/genesis.php"><big>Genese</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/genesis.php" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/genesis_faust_i.php" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
             <p><a class="pure-button" href="/genesis_faust_ii.php" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/print/text.html"><big><i class="fa fa-file-text-o"></i> Text</big></a></p>
-            <p><i class="fa fa-chevron-circle-down fa-lg pure-fade-20"></i></p>
+            <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/print/faust1.html" style="display:block;">Faust I</a></p>
             <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
         </div>
@@ -47,7 +47,7 @@
             Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im
             Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
             Frankreich, Italien und in den Vereinigten Staaten.</p>
-        <p>Das <a href="archives.php">digitale Archiv</a> macht die gesamte relevante Überlieferung
+        <p>Das <a href="archive.php">digitale Archiv</a> macht die gesamte relevante Überlieferung
             des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter,
             Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit
             einer detaillierten Beschreibung versehen (<a href="metadata.php">Metadaten</a>).</p>
@@ -68,7 +68,7 @@
             einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
             1833.</p>        
         <p>Teil der Ausgabe sind alle textkritisch relevanten <a
-                href="archives.php?view=print-concordance">Drucke</a> und Teildrucke des ‚Faust‘.
+                href="archive_prints.php">Drucke</a> und Teildrucke des ‚Faust‘.
             Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
             Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
             Revisionsbogen.</p>

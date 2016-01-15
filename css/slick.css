@@ -198,11 +198,11 @@
 }
 .slick-prev:before
 {
-    content: '\f137';
+    content: '\e8b0';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '\f138';
+    content: '\e8b1';
 }
 
 .slick-next
@@ -216,11 +216,11 @@
 }
 .slick-next:before
 {
-    content: '\f138';
+    content: '\e8b1';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '\f137';
+    content: '\e8b0';
 }
 
 .slick-dots
@@ -292,7 +292,7 @@
     width: 20px;
     height: 20px;
 
-    content: '\f111';
+    content: '\e91f';
     text-align: center;
 
     opacity: .75;

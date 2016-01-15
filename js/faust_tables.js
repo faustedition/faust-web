@@ -123,9 +123,9 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       tableDiv.getElementsByTagName("th")[currentColumn].className = "pure-nowrap pure-col-sorted pure-sortable";
 
       if(currentSort === 0) {
-	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-asc pure-pull-right";
+	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-up pure-pull-right";
       } else if (currentSort === 1) {
-	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-desc pure-pull-right";
+	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-down pure-pull-right";
       }
 
       while(parentElement.firstChild) {
@@ -207,7 +207,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	    tableData.appendChild(tableDataLink);
 	  } else if ('repository' in cellData) {
 	    var repoLink = document.createElement("a");
-	    repoLink.href = 'archives_locations_detail.php?id=' + cellData['repository'];
+	    repoLink.href = 'archive_locations_detail.php?id=' + cellData['repository'];
 	    repoLink.appendChild(document.createTextNode(cellData.text));
 	    tableData.appendChild(repoLink);
 	  } else {

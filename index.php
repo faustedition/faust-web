@@ -5,7 +5,7 @@
             <div class="center">
               <img src="img/slider/mephisto.png">
               <div class="text">
-                    <p>Die digitale Faust-Edition besteht aus einem <a href="/archives.php"
+                    <p>Die digitale Faust-Edition besteht aus einem <a href="/archive.php"
                             >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
                         textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
                             href="/print/faust1.html">Faust I</a> und des <a
@@ -20,12 +20,12 @@
               <img src="img/slider/2-II-H.1.png">
               <div class="text">
                 <h2>Archiv</h2>
-                    <p>Zum Faust ist <a href="/archives_locations.php?view=archives">weltweit</a>
+                    <p>Zum Faust ist <a href="/archive_locations.php?view=archives">weltweit</a>
                         ein umfangreicher Bestand an <a
-                            href="/archives_manuscripts.php?view=manuscript-concordance"
+                            href="/archive_manuscripts.php?view=manuscript-concordance"
                             >Handschriften</a> und <a
-                            href="/archives_manuscripts.php?view=print-concordance">Drucken</a> aus
-                        der Zeit von von etwa 1774 bis 1831 erhalten. Das <a href="/archives.php"
+                            href="/archive_manuscripts.php?view=print-concordance">Drucken</a> aus
+                        der Zeit von von etwa 1774 bis 1831 erhalten. Das <a href="/archive.php"
                             >Archiv</a> macht die gesamte Überlieferung in Abbildungen,
                         Transkriptionen und Zeugenbeschreibungen zugänglich.</p>
               </div>
@@ -88,7 +88,7 @@
       <section class="center pure-g-r">
         <div class="pure-u-1-5"></div>
         
-        <article class="pure-u-3-5 pure-gap">
+        <article class="pure-u-3-5 pure-gap pure-center">
 
           <h2>Johann Wolfgang Goethe: Faust</h2>
           <h3>Historisch-kritische Edition</h3>
@@ -100,7 +100,7 @@
           </p>
 
 
-          <p class="pull-right"><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
+          <p><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
         </article>
 
         <div class="pure-u-1-5"></div>
