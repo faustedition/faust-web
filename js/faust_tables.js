@@ -203,6 +203,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	  if (columnIndex == 0) {
 	    var tableDataLink = document.createElement("a");
 	    tableDataLink.href = documentLink;
+	    tableDataLink.classList.add('pure-nowrap');
 	    tableDataLink.appendChild(document.createTextNode(cellData.text));
 	    tableData.appendChild(tableDataLink);
 	  } else if ('repository' in cellData) {
