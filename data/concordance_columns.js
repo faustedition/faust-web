@@ -32,6 +32,8 @@ var concordanceColumns = [
     "column": "Archivsignatur",
     "sigils": [
       "idno_gsa_2",
+      "idno_gsa_1",
+      "subidno_gsa_1",
       "idno_agad_warszawa",
       "idno_bb_cologny",
       "idno_bb_vicenza",
@@ -54,11 +56,5 @@ var concordanceColumns = [
       "idno_ul_yale",
       "idno_veste_coburg"
     ]
-  }, {
-    "column": "GSA-Signatur (alt)",
-    "sigils": [
-      "idno_gsa_1",
-      "subidno_gsa_1"
-    ]
-  }
+  } 
 ];
