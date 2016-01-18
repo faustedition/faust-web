@@ -555,6 +555,19 @@ var createDocumentViewer = (function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+     var revealState = function revealState(doc, pageNum) {
+        if(doc.querySelector("#dt" + pageNum) !== null) {
+          doc.querySelector("#dt" + pageNum).scrollIntoView();
+        }
+        if (state.fragment !== '') {
+          var currentTarget = doc.querySelector("#" + state.fragment);
+          if (currentTarget) {
+            currentTarget.scrollIntoView();
+            currentTarget.classList.add("target");
+          }
+        }
+     }
+
      var addPatchHandlers = function addPatchHandlers(targetElement) {
           var patches = targetElement.getElementsByClassName("element-patch");
           for (var i = 0; i < patches.length; i++) {
@@ -794,9 +807,7 @@ var createDocumentViewer = (function(){
                 var appText = text.app; // .cloneNode(true);
                 currentPage.document_text.textContainer.appendChild(appText);
                 addPrintInteraction("", appText);
-                if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
-                  domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
-                }
+                revealState(domContainer.document_text, pageNum);
               } else {
                 currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
               }
@@ -805,10 +816,13 @@ var createDocumentViewer = (function(){
           } else {  // currentPage.documentText !== null, i.e. parallel view already initialized
             Faust.dom.removeAllChildren(domContainer.document_text);
             domContainer.document_text.appendChild(currentPage.document_text);
+
+            revealState(domContainer.document_text, pageNum);
+
             // FIXME this doesn't handle when we switch pages across document boundaries, does it?
-            if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
-              domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
-            }
+            // if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
+            //  domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
+            // }
           }
 
 
@@ -833,9 +847,10 @@ var createDocumentViewer = (function(){
                 var appText = text.app; //.cloneNode(true);
                 currentPage.textTranscript.appendChild(appText);
                 addPrintInteraction("", appText);
-                if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
-                  domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
-                }
+                revealState(domContainer.textTranscript, pageNum);
+//                if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
+//                  domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
+//                }
               } else {
                 currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
               }
@@ -844,9 +859,10 @@ var createDocumentViewer = (function(){
             // TODO check whether we're already on the right section
             Faust.dom.removeAllChildren(domContainer.textTranscript);
             domContainer.textTranscript.appendChild(currentPage.textTranscript);
-            if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
-              domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
-            }
+            revealState(domContainer.textTranscript, pageNum);
+//            if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
+//              domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
+//            }
           }
 
           // ############# Print (variant apparatus) single view
@@ -867,9 +883,10 @@ var createDocumentViewer = (function(){
                 var printText = text.print; // .cloneNode(true);
                 currentPage.print.appendChild(printText);
                 addPrintInteraction("", printText);
-                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
-                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
-                }
+                revealState(domContainer.print, pageNum);
+//                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
+//                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
+//                }
               } else { // no textual transcript found
                 currentPage.print.innerHTML = contentHtml.missingTextTranscript;
               }
@@ -877,9 +894,10 @@ var createDocumentViewer = (function(){
           } else { // currentPage.print !== null
             Faust.dom.removeAllChildren(domContainer.print);
             domContainer.print.appendChild(currentPage.print);
-            if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
-              domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
-            }
+            revealState(domContainer.print, pageNum);
+//            if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
+//              domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
+//           }
           }
 
           // finally set correct page on structure view
@@ -1174,19 +1192,22 @@ var createDocumentViewer = (function(){
             domContainer.docTranscript.style.display = "block";
           } else if (state.view === "document_text") {
             domContainer.document_text.style.display = "block";
-            if(domContainer.document_text.querySelector("#dt" + state.page) !== null) {
-              domContainer.document_text.querySelector("#dt" + state.page).scrollIntoView();
-            }
+            revealState(domContainer.document_text, pageNum);
+            //if(domContainer.document_text.querySelector("#dt" + state.page) !== null) {
+              //domContainer.document_text.querySelector("#dt" + state.page).scrollIntoView();
+            //}
           } else if (state.view === "text") {
             domContainer.textTranscript.style.display = "block";
-            if(domContainer.textTranscript.querySelector("#dt" + state.page) !== null) {
-              domContainer.textTranscript.querySelector("#dt" + state.page).scrollIntoView();
-            }
+            revealState(domContainer.textTranscript, pageNum);
+            //if(domContainer.textTranscript.querySelector("#dt" + state.page) !== null) {
+              //domContainer.textTranscript.querySelector("#dt" + state.page).scrollIntoView();
+            //}
           } else if (state.view === "print") {
             domContainer.print.style.display = "block";
-            if(domContainer.print.querySelector("#dt" + state.page) !== null) {
-              domContainer.print.querySelector("#dt" + state.page).scrollIntoView();
-            }
+            revealState(domContainer.print, pageNum);
+            //if(domContainer.print.querySelector("#dt" + state.page) !== null) {
+              //domContainer.print.querySelector("#dt" + state.page).scrollIntoView();
+            //}
           } else if (state.view === "structure") {
             domContainer.structure.style.display = "table";
           }

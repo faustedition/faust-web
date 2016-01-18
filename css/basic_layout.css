@@ -355,6 +355,11 @@ a.lineno.invisible {
   opacity:0;
 }
 
+:target a.lineno, .target a.lineno {
+  opacity:1;
+  color: #FABE00;  /* someone a better idea? */
+}
+
 div:hover > a.lineno, a.lineno:hover {
   opacity: 1 !important;  
 }
