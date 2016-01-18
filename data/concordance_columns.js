@@ -16,13 +16,10 @@ var concordanceColumns = [
       "idno_wa_faust"
     ]
   }, {
-    "column": "Sigle Bohnenkamp",
+    "column": "Weitere Siglen",
+    "tooltip": "Bohnenkamp, Fischer-Lamberg und Landeck",
     "sigils": [
-      "idno_bohnenkamp"
-    ]
-  }, {
-    "column": "Sigle (andere)",
-    "sigils": [
+      "idno_bohnenkamp",
       "idno_fischer_lamberg",
       "idno_landeck"
     ]
