@@ -23,6 +23,10 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 
 
   // Map document metadata into format for table
+  // This creates a two-dimensonal (docs × columns) array of cellData objects. Each cellData object features
+  // * .text – the (plain) text to use for sort & in most cases display
+  // * .key=value – the 
+  // * .sigils = { idno, value }
   var concordanceTableData = documentMetadata.metadata.map((function(){
     return function(metadata){
       var i, j;
@@ -31,17 +35,21 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       // for each element in document metadata iterate through all concordance columns and write data
       // from metadata if it is part of one of the concordance colimns
       for(i = 0; i < concordanceColumns.length; i++) {
-	var tableElementColumnData = {};
-	tableElementColumnData.text = "";
+	var tableElementColumnData = {
+	  text: "",
+	  sigils: []
+	};
 
 	// marker to find out if the current concordance column field contains more than one sigil.
 	firstSigil = true;
 	// iterate through each sigil that will make up the data for the current concordance column
 	for(j = 0; j < concordanceColumns[i].sigils.length; j++) {
+	  var sigil_key = concordanceColumns[i].sigils[j],
+	      sigil = metadata.sigils[sigil_key];
 	  // current sigil found in document's metadata
-	  if(metadata.sigils[concordanceColumns[i].sigils[j]]) {
+	  if(sigil) {
 	    // if there are more than one sigil in the document for the current column separate
-	    // all sigils with ", "
+	    // all sigils with ", ". FIXME turn off
 	    if(firstSigil) {
 	      firstSigil = false;
 	    } else {
@@ -50,15 +58,16 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 
 	    // Now write the actual sigil value from document metadata to concordance table. If the current column is
 	    // "repository", than replace the sigil with it's textual representation (archive displayName)
-	    if(concordanceColumns[i].sigils[j] === "repository" && archives[metadata.sigils[concordanceColumns[i].sigils[j]]]) {
-	      tableElementColumnData.text = tableElementColumnData.text + archives[metadata.sigils[concordanceColumns[i].sigils[j]]].displayName;
-	      tableElementColumnData["displayName"] = archives[metadata.sigils[concordanceColumns[i].sigils[j]]].displayName;
+	    if(sigil_key === "repository" && archives[metadata.sigils[concordanceColumns[i].sigils[j]]]) {
+	      tableElementColumnData.text = tableElementColumnData.text + archives[sigil].displayName;
+	      tableElementColumnData["displayName"] = archives[sigil].displayName;
 	    } else {
 	      // if the sigil isn't "repository" write it to the result string for the current column.
 	      // if the value of the current sigil equals "none" or "n.s." than mute the output. otherwise write sigil.
-	      if( ( metadata.sigils[concordanceColumns[i].sigils[j]] !== "none" ) && ( metadata.sigils[concordanceColumns[i].sigils[j]] !== "n.s." ) ) {
+	      if( ( sigil !== "none" ) && ( sigil !== "n.s." ) ) {
 		// next condition: sigil idno_gsa_1 may only be written, if the attached repository is gsa. otherwise mute output of idno_gsa_1 sigil
-		if( !( (concordanceColumns[i].sigils[j] === "idno_gsa_1") && !(metadata.sigils["repository"] === "gsa") ) ) {
+		if( !( (sigil_key === "idno_gsa_1") && !(metadata.sigils["repository"] === "gsa") ) ) {
+		  tableElementColumnData.sigils.push({key: sigil_key, value: sigil});
 		  tableElementColumnData.text = tableElementColumnData.text + metadata.sigils[concordanceColumns[i].sigils[j]];
 		}
 	      }
@@ -211,6 +220,18 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	    repoLink.href = 'archive_locations_detail.php?id=' + cellData['repository'];
 	    repoLink.appendChild(document.createTextNode(cellData.text));
 	    tableData.appendChild(repoLink);
+	  } else if (cellData.sigils.length > 0) {
+	    tableData.setAttribute('data-sort', cellData.text);
+	    cellData.sigils.forEach(function(sigilData, sigilIndex, sigils) {
+	      var elem = document.createElement('span');
+	      // elem.classList.add('pure-nowrap');
+	      elem.setAttribute('title', sigilData.key); // FIXME use label
+	      elem.textContent = sigilData.value;
+	      tableData.appendChild(elem);
+	      if (sigilIndex + 1 < sigils.length) {
+		tableData.appendChild(document.createTextNode(', '));
+	      }
+	    });
 	  } else {
 	    tableData.appendChild(document.createTextNode(cellData.text));
 	  }
