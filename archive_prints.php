@@ -5,9 +5,7 @@
             <table id="prints" class="pure-table">
               <thead>
                 <tr>
-                  <th class="pure-center" width="10">#</th>
                   <th>Sigle</th>
-                  <th>Siglenbezeichnung</th>
                   <th>Kurzbeschreibung</th>
                 </tr>
               </thead>
@@ -58,21 +56,12 @@
                 // add link / click event listener pointing to the document
                 // tableRow.addEventListener("click", function(){window.location = "print" + dt.firstElementChild.href.substr(dt.firstElementChild.href.lastIndexOf("/"));});
 
-                // add count
-                var tableData = Faust.dom.createElement({name: "td", parent: tableRow});
-                tableData.appendChild(document.createTextNode(num));
-                num++;
-
                 // add sigil
                 var tableData = Faust.dom.createElement({name: "td", class: "pure-nowrap", parent: tableRow});
                 var printLink = document.createElement("a");
                 printLink.href = "print" + dt.firstElementChild.href.substr(dt.firstElementChild.href.lastIndexOf("/"));
                 printLink.appendChild(document.createTextNode(dt.firstElementChild.firstChild.textContent));
                 tableData.appendChild(printLink);
-
-                // add sigil type
-                tableData = Faust.dom.createElement({name: "td", parent: tableRow});
-                tableData.appendChild(document.createTextNode(dt.title));
 
                 // add document description
                 tableData = Faust.dom.createElement({name: "td", parent: tableRow});
