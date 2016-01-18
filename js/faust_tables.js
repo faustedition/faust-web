@@ -269,6 +269,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	    cellData.sigils.forEach(function(sigilData, sigilIndex, sigils) {
 	      var elem = document.createElement('span');
 	      elem.classList.add('sigil');
+	      elem.classList.add('pure-nowrap');
 	      var tooltip;
 	      if (sigilLabels[sigilData.key]) 
 		tooltip = sigilLabels[sigilData.key];
