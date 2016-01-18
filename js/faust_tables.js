@@ -221,6 +221,8 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	tableData.appendChild(span);
 
 	tableData.appendChild(document.createTextNode(concordanceColumns[i].column));
+	if (concordanceColumns[i].tooltip)
+	    tableData.setAttribute('title', concordanceColumns[i].tooltip);
 
 	tableRow.appendChild(tableData);
       }
