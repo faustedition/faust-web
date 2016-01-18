@@ -76,7 +76,6 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
     return function(metadata){
       var i, j;
       var tableElementData = [];
-      var firstSigil;
       // for each element in document metadata iterate through all concordance columns and write data
       // from metadata if it is part of one of the concordance colimns
       for(i = 0; i < concordanceColumns.length; i++) {
@@ -86,21 +85,12 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	};
 
 	// marker to find out if the current concordance column field contains more than one sigil.
-	firstSigil = true;
 	// iterate through each sigil that will make up the data for the current concordance column
 	for(j = 0; j < concordanceColumns[i].sigils.length; j++) {
 	  var sigil_key = concordanceColumns[i].sigils[j],
 	      sigil = metadata.sigils[sigil_key];
 	  // current sigil found in document's metadata
 	  if(sigil) {
-	    // if there are more than one sigil in the document for the current column separate
-	    // all sigils with ", ". FIXME turn off
-	    if(firstSigil) {
-	      firstSigil = false;
-	    } else {
-	      tableElementColumnData.text = tableElementColumnData.text + ", ";
-	    }
-
 	    // Now write the actual sigil value from document metadata to concordance table. If the current column is
 	    // "repository", than replace the sigil with it's textual representation (archive displayName)
 	    if(sigil_key === "repository" && archives[metadata.sigils[concordanceColumns[i].sigils[j]]]) {
@@ -115,7 +105,9 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 		  if (concordanceColumns[i].sigils.length > 1) {
 		    tableElementColumnData.sigils.push({key: sigil_key, value: sigil});
 		  }
-		  tableElementColumnData.text = tableElementColumnData.text + metadata.sigils[concordanceColumns[i].sigils[j]];
+		  // only retain the first valid sigil in the `text` attribute to be used for sorting
+		  if (tableElementColumnData.text === "")
+		    tableElementColumnData.text = sigil;
 		}
 	      }
 	    }
