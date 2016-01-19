@@ -17,11 +17,13 @@ var concordanceColumns = [
     ]
   }, {
     "column": "Weitere Siglen",
-    "tooltip": "Bohnenkamp, Fischer-Lamberg und Landeck",
+    "tooltip": "Bohnenkamp, Fischer-Lamberg, Landeck, Frankfurter und Münchner Ausgabe",
     "sigils": [
       "idno_bohnenkamp",
       "idno_fischer_lamberg",
-      "idno_landeck"
+      "idno_landeck",
+      "idno_fa",
+      "idno_ma"
     ]
   }, {
     "column": "Archiv",
