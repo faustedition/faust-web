@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Digitale Faust-Edition [beta]</title>
+    <title>Faust-Edition [beta]</title>
 
     <script type="text/javascript" src="data/archives.js"></script>
     <script type="text/javascript" src="data/concordance_columns.js"></script>
