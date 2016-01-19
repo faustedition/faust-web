@@ -1192,19 +1192,19 @@ var createDocumentViewer = (function(){
             domContainer.docTranscript.style.display = "block";
           } else if (state.view === "document_text") {
             domContainer.document_text.style.display = "block";
-            revealState(domContainer.document_text, pageNum);
+            revealState(domContainer.document_text, state.page);
             //if(domContainer.document_text.querySelector("#dt" + state.page) !== null) {
               //domContainer.document_text.querySelector("#dt" + state.page).scrollIntoView();
             //}
           } else if (state.view === "text") {
             domContainer.textTranscript.style.display = "block";
-            revealState(domContainer.textTranscript, pageNum);
+            revealState(domContainer.textTranscript, state.page);
             //if(domContainer.textTranscript.querySelector("#dt" + state.page) !== null) {
               //domContainer.textTranscript.querySelector("#dt" + state.page).scrollIntoView();
             //}
           } else if (state.view === "print") {
             domContainer.print.style.display = "block";
-            revealState(domContainer.print, pageNum);
+            revealState(domContainer.print, state.page);
             //if(domContainer.print.querySelector("#dt" + state.page) !== null) {
               //domContainer.print.querySelector("#dt" + state.page).scrollIntoView();
             //}
