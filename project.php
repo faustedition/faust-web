@@ -39,9 +39,6 @@
         <div class="pure-u-1-2 pure-gap">
                     <h3>Projektmitarbeiter</h3>
                     <p>
-                    <strong>Thorsten Vitt</strong><br>
-                      <a href="mailto:thorsten.vitt@uni-wuerzburg.de">thorsten.vitt@uni-wuerzburg.de</a>
-                    </p>
                     <strong>Dr. Gerrit Brüning</strong><br>
                       <a href="mailto:bruening@faustedition.de">bruening@faustedition.de</a>
                     </p>
@@ -61,11 +58,15 @@
                       <strong>Dr. Dietmar Pravida</strong><br>
                       <a href="mailto:pravida@faustedition.de">pravida@faustedition.de</a></p>
                     <p>
+                    <strong>Thorsten Vitt</strong><br>
+                      <a href="mailto:thorsten.vitt@uni-wuerzburg.de">thorsten.vitt@uni-wuerzburg.de</a>
+                    </p>
+                    <p>
                       <strong>Moritz Wissenbach</strong><br>
                       <a href="mailto:wissenbach@faustedition.de">wissenbach@faustedition.de</a><br>
                     </p>
 
-                    <h3>Korrekturlesen</h3>
+                    <h3>Redaktoren</h3>
                     <p>
                       <strong>Dr. Renate Moering</strong><br>
                       <strong>Wolfgang Ritschel</strong>
