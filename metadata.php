@@ -17,26 +17,25 @@
                 <li>Klassifikation</li>
             </ul>
             <h3>Detailinformationen</h3>
+            <p>Fakultative Angaben stehen in Klammern.</p>
             <ul>
                 <li>Dokumenteigenschaften <ul>
-                        <li>(Überlieferung/Provenienz)</li>
-                        <li>(Historische Aufbewahrungsform) – Zeitgenössische Behälter, z. B.
+                        <li>(Überlieferung / Provenienz)</li>
+                        <li>(Frühere Aufbewahrungsform) – Zeitgenössische Behälter, z. B.
                             Kassetten oder Kapseln, werden ausführlicher beschrieben, etwa mit
                             Angaben zu Entstehungszeit, Stärke, Material und Form.</li>
                         <li>(Einband)</li>
                         <li>(Vorgefundene Zählungen) – Z.&#160;B. Foliierung oder Paginierung.</li>
-                        <li>(Erhaltungszustand der Handschrift)</li>
+                        <li>(Erhaltungszustand)</li>
                     </ul>
                 </li>
                 <li>Blatteigenschaften <ul>
-                        <li>Blattmaße – Gemessen werden Breite × Höhe in Millimetern. Bei
-                            ungleichmäßig geschnittenen Papieren werden die größten und die
-                            kleinsten gemessenenen Zahlen angegeben.</li>
-                        <li>Format – Es gibt die Zahlenwerte 2 (für Folio), 4 (für Quarto), 8 (für
-                            Oktav), 12 (für Duodez) und 16 (für Sedez).</li>
+                        <li>Blattmaße – Breite × Höhe in Millimetern (ggf. die größten und die
+                            kleinsten gemessenenen Werte).</li>
+                        <li>Format.</li>
                         <li>(Bindematerial) – Z.&#160;B. Faden, Leim, Siegellack.</li>
-                        <li>(Stichlöcher) – Die Abstände werden vom oberen Blattrand ausgehend in
-                            Millimetern angegeben.</li>
+                        <li>(Stichlöcher) – Abstände vom oberen Blattrand in
+                            Millimetern.</li>
                         <li>(Erhaltungszustand des Blattes)</li>
                         <li>(Rand) – Beschnitten oder unbeschnitten.</li>
                     </ul>
@@ -48,15 +47,14 @@
                         <li>(Steglinienabstand) – Der Abstand der Steglinien wird in Millimetern
                             gemessen.</li>
                         <li>(Papiermühle)</li>
-                        <li>Wasserzeichen – Angaben erfolgen als Listenkürzel.</li>
-                        <li>Gegenzeichen – Angaben erfolgen als Listenkürzel.</li>
+                        <li>Wasserzeichen.</li>
+                        <li>Gegenzeichen.</li>
                     </ul>
                 </li>
-                <li>(Eigenschaften von Anbringungen) – Unter Anbringungen sind an- oder aufgeklebte
-                    Zettel zu verstehen. <ul>
+                <li>(Eigenschaften an- oder aufgeklebter
+                    Zettel)<ul>
                         <li>Maße</li>
-                        <li>Art der Anbringung – Ein Zettel kann angeklebt, angesteckt oder
-                            losgelöst sein.</li>
+                        <li>Art der Anbringung</li>
                         <li>Papiersorte der Anbringung</li>
                         <li>Papierfarbe der Anbringung</li>
                         <li>(Steglinienabstand der Anbringung)</li>
@@ -65,15 +63,11 @@
                         <li>Gegenzeichen der Anbringung</li>
                     </ul>
                 </li>
-                <li>Drucknachweise und Literaturangaben – Kurzbezeichnung und Seitenangabe, bei
-                    mehreren Titeln in chronologischer Folge. <ul>
-                        <li>(Handschriftenbeschreibung) – Literaturangaben zu
-                            Handschriftenbeschreibungen.</li>
-                        <li>(Faksimiledruck) – Drucknachweise von Handschriftenfaksimiles.</li>
-                        <li>(Textwiedergabe der Handschrift) – Angabe früherer
-                            Veröffentlichungsorte.</li>
-                        <li>(Forschungsliteratur) – Nachweis von Publikationen mit
-                            entstehungsgeschichtlichen Informationen.</li>
+                <li>Drucknachweise und Literaturangaben.<ul>
+                        <li>(Handschriftenbeschreibung).</li>
+                        <li>(Faksimiledruck).</li>
+                        <li>(Frühere Veröffentlichungsorte)</li>
+                        <li>(Forschungsliteratur)</li>
                     </ul>
                 </li>
             </ul>
@@ -101,7 +95,7 @@
         <div>
             <h3 id="Drucke_Meta">2. Metadaten der Drucke</h3>
             <p>Zu jedem Druck gibt es eine Beschreibung mit Angaben zur Sigle des Drucks
-                in der maßgeblichen Bibliographie von Waltraud Hagen und zu weiteren Siglen, zur Nummer des
+                nach der Bibliographie von Waltraud Hagen und zu weiteren Siglen, zur Nummer des
                 Drucks bei Hagen, gegebenenfalls zum Status als Korrekturexemplar oder
                 Revisionsbogen. Bei Korrekturexemplaren und Revisionsbögen werden auch
                 Aufbewahrungsort und Archivsignatur angegeben.</p>
@@ -112,9 +106,9 @@
             <ul>
                 <li>beschreibende Nachweise des Drucks in wissenschaftlichen Ausgaben und in der
                     Forschungsliteratur;</li>
-                <li>wissenschaftliche Ausgaben, deren Text auf dem betreffenden Druck beruht;</li>
+                <li>wissenschaftliche Ausgaben;</li>
                 <li>photomechanische Nachdrucke;</li>
-                <li>Angaben und Erörterungen über den stemmatologischen Ort eines Drucks in
+                <li>Angaben zum stemmatischen Ort eines Drucks in
                     wissenschaftlichen Ausgaben und in der Forschungsliteratur.</li>
             </ul>
         </div>
