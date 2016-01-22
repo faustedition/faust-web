@@ -3,37 +3,20 @@
     <article class="pure-u-1">
         <h1>Beschreibung der Überlieferungsträger (Metadaten)</h1>
         <div>
-            <h3 class="c2">1. Handschriftenbeschreibung</h3>
+            <h2 class="c2">1. Handschriftenbeschreibung</h2>
             <p>Zu jeder einzelnen Handschrift gibt es eine Beschreibung mit Angaben (Metadaten) zu
                 Siglen, Aufbewahrungsort, Überlieferung, Blatt- und Papiereigenschaften sowie
-                Konvolutstruktur, die in der Strukturansicht angezeigt werden. Sie ist unterteilt in
-                einen kürzeren Teil mit grundlegenden Angaben zur gesamten Handschrift und ihrer
-                Zuordnung zum Faust-Text und einen zusätzlich einblendbaren längeren Teil mit
-                ausführlichen Detailinformationen.</p>
-            <p>Zwischen einem negativen Befund und dem Vermeiden einer Angabe wird in der Anzeige
-                nicht unterschieden, aber in den zugrundeliegenden Dateien wird die Differenzierung
-                beachtet („none“ für negativen Befund versus „n.s.“ = „not specified“).</p>
-        </div>
-        <div>
-            <h4>1.1. Grundlegende Angaben</h4>
+                Konvolutstruktur. Der obere Teil gibt grundlegende Angaben, Detailangaben stehen darunter.</p>
+            <h3>Grundlegende Angaben</h3>
             <ul>
-                <li>Handschriftensiglen [todo Verlinkung zur Siglenerläuterung]</li>
+                <li>Sigle</li>
                 <li>Allgemeine Kurzbeschreibung der Handschrift mit Werkzuordnung</li>
                 <li>Aufbewahrungsort</li>
-                <li>Archiv-Signatur/en</li>
-                <li>Handschriftentyp <ul>
-                        <li>Schema</li>
-                        <li>Notiz</li>
-                        <li>Konzept</li>
-                        <li>Arbeitsmundum</li>
-                        <li>Mundum</li>
-                    </ul>
-                </li>
+                <li>Archivsignatur (u.U. mehrere)</li>
+                <li>weitere Siglen</li>
+                <li>Klassifikation</li>
             </ul>
-        </div>
-        <div>
-            <h4>1.2. Detailinformationen</h4>
-            <p>Fakultative Angaben stehen in Klammern.</p>
+            <h3>Detailinformationen</h3>
             <ul>
                 <li>Dokumenteigenschaften <ul>
                         <li>(Überlieferung/Provenienz)</li>
