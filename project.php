@@ -82,7 +82,7 @@
                     </p>
         </div>
 
-        <h2>Danksagungen</h2>
+        <h2>Danksagung</h2>
         <p>...</p>
 
       </article>
