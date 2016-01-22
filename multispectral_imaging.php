@@ -3,23 +3,23 @@
     <article class="pure-u-1">
         <h1>Multispektrale Bildverarbeitung</h1>
         <div class="pure-u-2-3 pure-gap">
-        <p>In zahlreichen Handschriften werden Bleistiftspuren von späteren Niederschriften in Tinte
-            überlagert. Die Bleistiftspuren sind hier wie auch generell oftmals stark verwischt. In
-            Kooperation mit Jost Gippert und Manuel Raaf (beide Frankfurt am Main) wurde das Verfahren der multispektrale
+        <p>In zahlreichen Handschriften sind Bleistiftspuren durch spätere Niederschriften in Tinte
+            überlagert. Die Bleistiftspuren sind hier oft stark verwischt. In
+            Kooperation mit dem LOEWE-Schwerpunkt Digital Humanities Hessen wurde multispektrale
             Bildverarbeitung an Handschriften des Goethe- und Schiller-Archivs und des Freien
-            Deutschen Hochstifts angewendet. Dies diente dem Ziel, die Bleistift- sowohl gegenüber
-            der Tintenschicht als auch gegenüber dem Papieruntergrund deutlicher hervortreten zu
-            lassen.</p>
-        <p>Dabei kamen zwei Leuchten zum Einsatz, deren Strahlung in ihrer Zusammensetzung in etwa
-            dem Tageslicht entspricht. Die Strahlungsleistung betrug je 850-Lumen und lag damit im
-            Bereich zweier Glühlampen zwischen 60 und 75 Watt. Aus den vom Objekt reflektierten und
+            Deutschen Hochstifts angewendet. Damit sollten Bleistift-  und Tintenschicht sowie der 
+            Papieruntergrund  
+            voneinander abgehoben werden.</p>
+        <p>Es kamen zwei Leuchten zum Einsatz, deren Strahlung in etwa
+            dem Tageslicht entspricht. Die Strahlungsleistung betrug je 850-Lumen und lag im
+            Bereich zweier Glühlampen zwischen 60 und 75 Watt. Aus den reflektierten und
             in die Kamera einfallenden Strahlen wurden in Abständen über das gesamte Lichtspektrum
-            verteilte Wellenlängenbereiche herausgefiltert. Anstelle der Leuchten wurde
-            Infrarot-Strahlung eingesetzt, wenn der Farbunterschied zwischen den sich überlagernden
-            Schreibmaterialien besonders gering war. Auf den Einsatz von Ultraviolettstrahlung wurde
+            verteilte Wellenlängenbereiche herausgefiltert.
+            Wenn der Farbunterschied zwischen den sich überlagernden Schreibmaterialien besonders gering war, wurde  
+            Anstelle der Leuchten Infrarot-Strahlung eingesetzt. Auf den Einsatz von Ultraviolettstrahlung wurde
             aus konservatorischen Gründen verzichtet.</p>
         <p>Im Juni 2012 wurden am Freien Deutschen Hochstift Aufnahmen von Briefen Hugo von
-            Hofmannsthals sowie von den zum ‚Faust‘ gehörigen Streifen angefertigt. Gute Ergebnisse
+            Hofmannsthals und von den zum ‚Faust‘ gehörigen Streifen angefertigt. Gute Ergebnisse
             wurden bei der Kontrastierung verschiedenfarbiger Schreibmaterialien erzielt, wie etwa
             einem Brief Hofmannsthals, bei dem schwarze mit dunkelblauer Tinte gezielt unlesbar
             gemacht worden war (Abb. 1, 2). Die Separation war möglich, weil die dunkelblaue Tinte
