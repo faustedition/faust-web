@@ -169,7 +169,7 @@
         <h2>Weitere Hinweise</h2>
         <ul>
             <li><a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a></li>
-            <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>
+            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>-->
             <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>
         </ul>
 
