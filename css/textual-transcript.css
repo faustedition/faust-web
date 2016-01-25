@@ -207,6 +207,11 @@ abbr.app {
 .restored {
     border-bottom: #aaa dashed;
 }
+.alt {
+    border-bottom: black dotted;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
 
 
 .affected {
@@ -218,6 +223,7 @@ abbr.app {
 .delted .affected .affected {
 	border-bottom-width: 3px;
 }
+
 
 .appnote {
 	cursor: help;
@@ -239,3 +245,4 @@ abbr.app {
 	color: blue;
 	transition: all 0.5s ease-out;
 }
+
