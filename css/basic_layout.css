@@ -398,15 +398,6 @@ div.text {
 	font-style: normal;
 }
 
-.alt {
-  border-bottom: 1px dotted black;
-  /*
-   * alternative:
-   * text-decoration underline dotted;
-   * wird aber nur von firefox unterstrützt 
-   */
-}
-
 a.pageno {
     float: right;
     font-weight: normal;
