@@ -166,12 +166,14 @@
             <li><a href="watermarks.php">Wasserzeichenreproduktion</a></li>
         </ul>
 
-        <h2>Weitere Hinweise</h2>
-        <ul>
-            <li><a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a></li>
+        <h2>Bibliographie</h2>
+        
+            <!-- <li><a href="bibliography.php">Abkürzungen</a></li> -->
             <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>-->
-            <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>
-        </ul>
+            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>-->
+        <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der 
+        <a href="bibliography.php">Bibliographie</a> gesammelt aufgeführt.</p>
+        
 
         <h2 id="cite">Zitierempfehlung</h2>
         <?php // NOTE: see links in imprint.php ?>
