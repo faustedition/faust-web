@@ -30,7 +30,7 @@ figure figcaption {margin:0 auto; padding:0 1em; font-size:85%; font-style:itali
 figure[class*='pure-pull'] img {max-width:300px !important;}
 figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 
-*:target {background-color:rgba(155, 155, 155, 0.2);}
+*:target, .target {background-color:rgba(155, 155, 155, 0.2);}
 
 .pure-table {width:100%; border:none;}
 .pure-table td, .pure-table th {border-color:rgb(255,255,255);}

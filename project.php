@@ -2,7 +2,7 @@
       <section class="center pure-g-r">
         <article class="pure-u-1">
             <h1>Das Projekt</h1>
-            <p>Die Ausgabe basiert auf dem von der Deutschen Forschungsgemeinschaft geförderten Projekt ‚Historisch-kritische Edition von Goethes Faust‘ (2009–2015), das von Anne Bohnenkamp (Freies Deutsches Hochstift, Frankfurt am Main), Silke Henke (Goethe- und Schiller-Archiv, Weimar) und Fotis Jannidis (Julius-Maximilians-Universität Würzburg) geleitet wurde. An der Edition mitgearbeitet haben Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.</p>
+            <p>Die Ausgabe basiert auf dem von der Deutschen Forschungsgemeinschaft geförderten Projekt ‚Historisch-kritische Edition von Goethes Faust‘ (2009–2015).</p>
 
 
         <div class="pure-u-1-2 pure-gap">
@@ -39,9 +39,6 @@
         <div class="pure-u-1-2 pure-gap">
                     <h3>Projektmitarbeiter</h3>
                     <p>
-                    <strong>Thorsten Vitt</strong><br>
-                      <a href="mailto:thorsten.vitt@uni-wuerzburg.de">thorsten.vitt@uni-wuerzburg.de</a>
-                    </p>
                     <strong>Dr. Gerrit Brüning</strong><br>
                       <a href="mailto:bruening@faustedition.de">bruening@faustedition.de</a>
                     </p>
@@ -61,11 +58,15 @@
                       <strong>Dr. Dietmar Pravida</strong><br>
                       <a href="mailto:pravida@faustedition.de">pravida@faustedition.de</a></p>
                     <p>
+                    <strong>Thorsten Vitt</strong><br>
+                      <a href="mailto:thorsten.vitt@uni-wuerzburg.de">thorsten.vitt@uni-wuerzburg.de</a>
+                    </p>
+                    <p>
                       <strong>Moritz Wissenbach</strong><br>
                       <a href="mailto:wissenbach@faustedition.de">wissenbach@faustedition.de</a><br>
                     </p>
 
-                    <h3>Korrekturlesen</h3>
+                    <h3>Redaktoren</h3>
                     <p>
                       <strong>Dr. Renate Moering</strong><br>
                       <strong>Wolfgang Ritschel</strong>
@@ -81,7 +82,7 @@
                     </p>
         </div>
 
-        <h2>Danksagungen</h2>
+        <h2>Danksagung</h2>
         <p>...</p>
 
       </article>

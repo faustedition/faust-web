@@ -1,4 +1,11 @@
       <?php include "includes/header.php"; ?>
+      <style>
+         .genetic-bar-diagram-svg line {
+            stroke: #eeeeee;
+            stroke-width: 1;
+          }
+      </style>
+
       <section>
 
         <article>

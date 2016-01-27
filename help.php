@@ -3,7 +3,7 @@
 
         <article class="pure-u-1">
             
-            <p><i class="pure-fade-50">[Kurzanleitung für Nutzung der Edition mit Screenshots]</i></p>
+            <p><i class="pure-fade-50"><!--[Kurzanleitung für Nutzung der Edition mit Screenshots]</i>--></p>
 
         </article>
       

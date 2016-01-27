@@ -102,6 +102,10 @@ var Faust = (function(){
 
       var sigil = function(val1, val2) {
 
+        var space = emptyValuesToEnd(val1, val2);
+        if (space !== 0)
+          return space;
+
         var left = splitSigil(val1),
             right = splitSigil(val2);
 
@@ -115,6 +119,9 @@ var Faust = (function(){
       }
 
       var descSigil = function(val1, val2) {
+        var space = emptyValuesToEnd(val1, val2);
+        if (space !== 0)
+          return space;
         return -sigil(val1, val2);
       }
 

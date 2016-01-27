@@ -5,7 +5,7 @@
 
         <h1>Transkriptionsprinzipien</h1>
         <p>Die Transkription der Handschriften wird in verschiedenen Formen angeboten, die entweder
-            auf eine dokumentarische Wiedergabe (dokumentarische Transkription )oder auf eine
+            auf eine dokumentarische Wiedergabe (dokumentarische Transkription) oder auf eine
             textuelle Deutung der handschriftlichen Verhältnisse zielen (textuelle Transkription).
             Die Transkription der Drucke entspricht der textuellen Transkription der Handschriften.
             In der jeweiligen Standardansicht gelten die folgenden Bestimmungen: </p>
@@ -38,20 +38,18 @@
                     href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
                     >2 II H.3</a>)</figcaption>
         </figure>
-        <p>Die Überlieferung zu Goethes ‚Faust‘ ist sehr vielfältig: Schemata, Exzerpte, einzelne
+        <p>Die Überlieferung zu Goethes ‚Faust‘ ist vielfältig: Schemata, Exzerpte, einzelne
             Versentwürfe, eigenhändige Niederschriften ganzer Passagen in Bleistift, Abschriften und
             Diktate, Sammelhandschriften, Munda (Reinschriften sowie zur Weiterarbeit genutzte
-            sogenannte Arbeitsmunda) und Druckvorlagen und Drucke. Die Transkription bemüht sich,
-            diese Überlieferungsverhältnisse jeweils adäquat zu behandeln.</p>
-        <p>Generell gilt:</p>
+            sogenannte Arbeitsmunda) und Druckvorlagen und Drucke.</p>
         <p>Eindeutige Groß- und Kleinschreibungen werden stets gewahrt. Bei H/h und F/f ist die
             Unterscheidung zwischen Groß- und Kleinschreibung jedoch oft, bei D/d fast immer vom
             Kontext abhängig.</p>
-        <p>Die Ligatur ck wird als Buchstabenkombination ck transkribiert, selbst wenn nur der
+        <p>Die Ligatur ck wird als Buchstabenkombination ck transkribiert, auch wenn nur der
             Buchstabe k vorhanden, aber in seiner ligaturspezifischen Form ausgeprägt ist (s. Abb.
             1).</p>
         <p>Kontraktionen („ans“, „aufs“, „ins“ usw.) und Komposita mit kleingeschriebenem zweiten
-            Kompositionsglied werden zusammengeschrieben wiedergegeben. Ein sichtbarer kleinerer
+            Kompositionsglied werden zusammengeschrieben wiedergegeben. Ein kleinerer
             Abstand zwischen den Wortbestandteilen („auf s“ usw.) markiert die Fuge, indiziert aber
             keine Getrenntschreibung (s. Abb. 2).</p>
         <p>&nbsp;</p>
@@ -63,9 +61,8 @@
             <li>{{abc}}: Die Lesung ist möglich.</li>
         </ul>
         <p>Nicht entzifferte Zeichen werden durch Kreuze angezeigt, jedes × steht für ein nicht
-            entziffertes Zeichen. ×…× steht für eine unentzifferte Folge von nicht genau
-            bestimmbarer Länge; der geschätzte Umfang wird durch die Anzahl der Punkte
-            angedeutet.</p>
+            entziffertes Zeichen. ×…× steht für eine unentzifferte Folge nicht genau
+            bestimmbarer Länge; die Anzahl der Punkte gibt den geschätzten Umfang an.</p>
         <p>Abkürzung durch Suspensionsschleife wird mit einem Punkt wiedergegeben, ebenso Abkürzung
             durch eine Kombination von Suspensionsschleife und Punkt. Die Kombination von l und
             Suspensionsschleife wird als l und Punkt transkribiert (z. B. „Kayserl.“).</p>
@@ -73,12 +70,12 @@
             … :|) werden als runde Klammern wiedergegeben, Sonderformen (z. B. eckige Klammern)
             bleiben gewahrt.</p>
         <p>Häufig sind in flüchtigen eigenhändigen Entwürfen Teile einzelner Wörter, gelegentlich
-            sogar ganze nachfolgende Wörter, nicht als distinkte Buchstaben realisiert, sondern
-            durch uneindeutige Auf- oder Abstriche, Bögen und Linien angedeutet. Solche
-            unspezifischen Bögen werden mit der entsprechenden Folge distinkter Buchstaben
+            ganze nachfolgende Wörter, nicht mit distinkten Buchstaben realisiert, sondern
+            durch 
+            unspezifische Bögen werden mit der entsprechenden Folge distinkter Buchstaben
             wiedergegeben. Echte Unsicherheiten werden gekennzeichnet.</p>
-        <p>Verlöschte, aber lesbare Bleistiftzüge werden nicht besonders gekennzeichnet, das gilt
-            auch bei Bleistiftzügen, die durch Tintenüberschreibung nicht mehr klar erkennbar
+        <p>Verwischte, aber lesbare Bleistiftzüge werden nicht besonders gekennzeichnet, das gilt
+            auch bei Bleistiftzügen, die durch Tintenüberschreibung überdeckt
             sind.</p>
         <p>Editorisch ergänzt werden</p>
         <ul>
@@ -117,7 +114,7 @@
         <p>Die Stelle einer Einfügung in Interlinearzeilen oberhalb oder unterhalb, rechts oder
             links von der Einfügungsstelle wird räumlich getreu wiedergegeben. Einfügungszeichen
             werden in der Ansicht vereinfacht. Einfügungslinien werden durch Winkelzeichen an der
-            Einfügungsstelle repräsentiert: der Verlauf der Einfügungslinie wird nicht
+            Einfügungsstelle dargestellt: der Verlauf der Einfügungslinie wird nicht
             nachgebildet.</p>
         <figure>
             <img src="/img/info/transcription_guidelines-image4.png"/>
@@ -129,39 +126,39 @@
             Schriftspiegels wird verzichtet.]--></p>
         <h4>Zeichenmanipulation</h4>
         <p>Alle Streichungen (auch mehrfache, schräge, senkrechte usw.) werden als einfach
-            durchgestrichener Text wiedergegeben.</p>
+            durchstrichener Text wiedergegeben.</p>
         <p>Von Durchstreichungen zu unterscheiden sind Erledigungsmarkierungen, die verdeutlichen,
             dass der markierte Abschnitt (oft die ganze Seite) aus dem Arbeitsprozess ausgeschieden
-            ist. Sie werden durch eine gestrichelte, stets von links oben nach rechts unten
+            ist. Sie werden durch eine gestrichelte, von links oben nach rechts unten
             verlaufende Diagonale wiedergegeben, der Verlauf der handschriftlichen Markierung wird
             nicht nachgebildet.</p>
-        <p>Bei Überschreibungen auf der Zeile (Daraufschreibung) wird der zuerst geschriebene Text
-            mit kleineren, tiefergestellten, der daraufgeschriebene mit größeren, höhergestellten
+        <p>Bei Überschreibungen auf der Zeile (Daraufschreibungen) wird der zuerst geschriebene Text
+            mit kleineren, tiefgestellten, der daraufgeschriebene mit größeren, hochgestellten
             Buchstaben wiedergegeben: <sub>a</sub><sup><big>b</big></sup>.</p>
         <p>Radierte und absichtlich verwischte Zeichen erscheinen in Konturschrift. Die Umwandlung
-            eines Buchstabens in einen anderen durch Rasur (m→n, ß→ſ u. ä.) wird aber nicht wie eine
+            eines Buchstabens in einen anderen durch Rasur (m→n, ß→ſ u. ä.) wird nicht als 
             Rasur, sondern als Daraufschreibung behandelt.</p>
         <h4>Schreiberhand und Schreibmaterial</h4>
-        <p>Serifenschrift steht für Eigenhändiges (von Goethe Geschriebenes), Serifenlose für andere
+        <p>Serifenschrift steht für Eigenhändiges (von Goethe Geschriebenes), serifenlose Schrift für andere
             zeitgenössische Schreiber, Festbreitenschrift für spätere Eintragungen.</p>
         <p>Schwarze Schriftfarbe steht für Tinte, Hellgrau für Bleistift, Dunkelgrau für Kohle,
             Hellrot für rote Tinte und Dunkelrot für Rötel.</p>
         <p>Jeder Schreiberhand ist eine eigene Hintergrundfarbe zugewiesen:<br/>Goethes
-            professionelle Schreiber erhalten Pastellfarben: Hellgrün für Christian Schuchardt, Rosa
+            Schreiber erhalten Pastellfarben: Hellgrün für Christian Schuchardt, Rosa
             für Johann John und Hellblau für Ludwig Geist.<br/>Goethes Mitarbeiter erhalten
             Vollfarben: Orange für Theodor Kräuter, Gelb für Johann Peter Eckermann, Blau für
             Friedrich Wilhelm Riemer und Violett für Karl Wilhelm Göttling.<br/>Unbekannte
-            zeitgenössische Schreiber sind in intensivem Rosa farblich unterlegt; nicht
-            zeitgenössische fremde Hände (v. a. archivarische) in Bordeauxrot. Alle übrigen
+            zeitgenössische Schreiber erhalten Rosa, nicht
+            zeitgenössische fremde Hände (v. a. archivarische) Bordeauxrot. Alle übrigen
             zeitgenösischen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
 
         <h3>Textuelle Transkription der Handschriften</h3>
-        <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner textspezifischen
+        <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner gattungsspezifischen
             Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
             unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten
-            und daneben als letzte abhebbare Stufe, d.h. des Textes, der sich aus der Niederschrift
+            und als letzte abhebbare Stufe, die sich aus der Niederschrift
             und allen darin vorkommenden Änderungen ergibt.</p>
 
         <h3>Darstellung der innerhandschriftlichen Varianten</h3>
@@ -171,42 +168,42 @@
                     href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
                     >H P123.5</a>).</figcaption>
         </figure>
-        <p>Für die Darstellung innerhandschriftlicher Varianten existiert in gedruckten Ausgaben
-            bereits eine Vielfalt von Apparatformen. Die Entwicklung von entsprechenden
-            Darstellungsformen im digitalen Medium steht dagegen noch in den Anfängen. Der in der
-            vorliegenden Ausgabe gewählte Apparattyp hat ebenfalls nur vorläufigen Charakter. Er
+        <p>Für die Darstellung innerhandschriftlicher Varianten gibt es in gedruckten Ausgaben
+            eine Vielfalt von Apparatformen. Der in der
+            vorliegenden Ausgabe gewählte Apparattyp hat hingegen nur vorläufigen Charakter. Er
             beruht auf dem Einblendungsapparat, der für die Akademie-Ausgabe der Werke Goethes
             entwickelt wurde (Abb. 5).</p>
-        <p>Varianten werden stets als Abweichungen von der Grundschicht dargestellt. Als
+        <p>Varianten werden als Abweichungen von der Grundschicht dargestellt. Als
             Grundschicht werden in diesem Zusammenhang alle Zeichen angesehen, die nicht entweder
             sofort getilgt (Sofortrevision) oder später hinzugefügt wurden. Der Text der
             Grundschicht steht außerhalb der Klammern ⟨…⟩. Innerhalb der Klammern stehen
-            Sofortrevisionen und generell das Ergebnis von Änderungen. Die Klammern und der die
-            Änderungen beschreibende kursive Editortext sind durch graue Schrift abgehoben, von
+            Sofortrevisionen und das Ergebnis von Änderungen. Die Klammern und der 
+            kursive Editortext sind durch graue Schrift abgehoben, von
             einer späteren Änderung betroffene Teile der Grundschicht sind durch Unterstreichung
             u.ä. markiert. Beim Ansteuern des Bereichs einer Variante erscheint eine verbale
-            Beschreibung der Änderung. Alle folgend genannten editorischen Zeichen und Kürzel werden
-            so an Ort und Stelle erklärt:</p>
+            Beschreibung der Änderung. Alle editorischen Zeichen und Kürzel werden
+            an Ort und Stelle erklärt:</p>
         <ul>
-            <li>&gt; steht zwischen dem sofort Getilgten und dem danach Niedergeschriebenen,</li>
+            <li>&gt; steht zwischen sofort Getilgtem und danach Niedergeschriebenem,</li>
             <li><em>erg</em> – „ergänzt“,</li>
             <li><em>tilgt</em> – „tilgt“,</li>
-            <li><em>:</em> steht bei Ersetzungen zwischen dem Getilgten und dem Hinzugefügten,</li>
+            <li><em>:</em> steht bei Ersetzungen zwischen Getilgtem und Hinzugefügtem,</li>
             <li><em>wdhst</em> – „wiederherstellt“</li>
             <li><em>mon</em> – „moniert“</li>
             <li><em>vorschl</em> (statt <em>propon</em>) – „vorschlägt“</li>
         </ul>
-        <p>Umgestellter Wortlaut wird vorerst nur beziffert und nicht auch in der endgültigen
-            Reihenfolge wiedergegeben.</p>
+        <p>An folgenden Stellen weicht die Darstellung von derjenigen in der AA ab:</p>
         <ol>
-            <li>Änderungen werden vorerst nicht wie in der AA auf ganze Wörter expandiert.
+        <li>Umgestellter Wortlaut wird nur beziffert und nicht auch in der endgültigen
+            Reihenfolge wiedergegeben.</li>
+            <li>Änderungen werden nicht immer auf ganze Wörter expandiert.
                 Änderungen, die in Zeugen als Änderungen einzelner Buchstaben vorgenommen worden
                 sind, erscheinen vielfach auch in der Edition als Änderungen einzelner
                 Buchstaben.</li>
-            <li>Vor ⟨ wird vorläufig kein Leerzeichen gesetzt (aus Rücksicht auf die eben
+            <li>Vor ⟨ wird kein Leerzeichen gesetzt (aus Rücksicht auf die eben
                 beschriebene Darstellung von Änderungen im Wortinneren, die noch nicht expandiert
                 werden).</li>
-            <li>Umfangreichere Tilgungen erhalten vorerst keine durchgehende Markierung, sondern nur
+            <li>Umfangreichere Tilgungen erhalten keine durchgehende Markierung, sondern nur
                 Zeichen am Anfangs- und Endpunkt.</li>
             <li>Schreibersiglen kommen nur bei vorgeschlagenen Änderungen und bei Monierungen vor.
                 Die in der AA gebräuchliche Syntax „Variante <i>tilgt / erg G</i>“ verkürzt sich
@@ -226,8 +223,8 @@
         </ul>
         <h2>Wiedergabe von Drucken</h2>
         <p>Die Transkription der Drucke wird in einer Form angeboten, die der textuellen
-            Transkription der Handschriften im Wesentlichen entspricht. Vom typographischen
-            Erscheinungsbild der einzelnen Drucke wird abstrahiert. Satzfehler bleiben gewahrt.
+            Transkription der Handschriften entspricht. Vom typographischen
+            Erscheinungsbild der einzelnen Drucke wird abstrahiert. Satzfehler bleiben erhalten.
             Editorisch ergänzt werden diejenigen Zeichen, die durch mechanische Einflüsse des
             Druckvorgangs (z. B. geschwundene oder verschmutzte Lettern), Fehlstellen im Papier o.
             Ä. verlorengegangen oder unlesbar sind.</p>

@@ -16,15 +16,14 @@ var concordanceColumns = [
       "idno_wa_faust"
     ]
   }, {
-    "column": "Sigle Bohnenkamp",
+    "column": "Weitere Siglen",
+    "tooltip": "Bohnenkamp, Fischer-Lamberg, Landeck, Frankfurter und Münchner Ausgabe",
     "sigils": [
-      "idno_bohnenkamp"
-    ]
-  }, {
-    "column": "Sigle (andere)",
-    "sigils": [
+      "idno_bohnenkamp",
       "idno_fischer_lamberg",
-      "idno_landeck"
+      "idno_landeck",
+      "idno_fa",
+      "idno_ma"
     ]
   }, {
     "column": "Archiv",
@@ -35,6 +34,8 @@ var concordanceColumns = [
     "column": "Archivsignatur",
     "sigils": [
       "idno_gsa_2",
+      "idno_gsa_1",
+      "subidno_gsa_1",
       "idno_agad_warszawa",
       "idno_bb_cologny",
       "idno_bb_vicenza",
@@ -57,11 +58,5 @@ var concordanceColumns = [
       "idno_ul_yale",
       "idno_veste_coburg"
     ]
-  }, {
-    "column": "GSA-Signatur (alt)",
-    "sigils": [
-      "idno_gsa_1",
-      "subidno_gsa_1"
-    ]
-  }
+  } 
 ];

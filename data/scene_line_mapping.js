@@ -171,162 +171,162 @@ var sceneLineMapping = [
     "rangeStart": 4613,
     "rangeEnd": 4727,
     "title": "Anmutige Gegend",
-    "id": "2.1"
+    "id": "2.1.1"
   },
   {
     "rangeStart": 4728,
     "rangeEnd": 5064,
     "title": "Saal des Thrones",
-    "id": "2.2"
+    "id": "2.1.2"
   },
   {
     "rangeStart": 5065,
     "rangeEnd": 5986,
     "title": "Weitläufiger Saal",
-    "id": "2.3"
+    "id": "2.1.3"
   },
   {
     "rangeStart": 5987,
     "rangeEnd": 6172,
     "title": "Lustgarten",
-    "id": "2.4"
+    "id": "2.1.4"
   },
   {
     "rangeStart": 6173,
     "rangeEnd": 6306,
     "title": "Finstere Galerie",
-    "id": "2.5"
+    "id": "2.1.5"
   },
   {
     "rangeStart": 6307,
     "rangeEnd": 6376,
     "title": "Hell erleuchtete Säle",
-    "id": "2.6"
+    "id": "2.1.6"
   },
   {
     "rangeStart": 6377,
     "rangeEnd": 6565,
     "title": "Rittersaal",
-    "id": "2.7"
+    "id": "2.1.7"
   },
   {
     "rangeStart": 6566,
     "rangeEnd": 6818,
     "title": "Hochgewölbtes, enges gotisches Zimmer",
-    "id": "2.8"
+    "id": "2.2.1"
   },
   {
     "rangeStart": 6819,
     "rangeEnd": 7004,
     "title": "Laboratorium",
-    "id": "2.9"
+    "id": "2.2.2"
   },
   {
     "rangeStart": 7005,
     "rangeEnd": 7248,
     "title": "Pharsalische Felder",
-    "id": "2.10"
+    "id": "2.2.3"
   },
   {
     "rangeStart": 7249,
     "rangeEnd": 7494,
     "title": "Peneius",
-    "id": "2.11"
+    "id": "2.2.4"
   },
   {
     "rangeStart": 7495,
     "rangeEnd": 8033,
     "title": "Am obern Peneios",
-    "id": "2.12"
+    "id": "2.2.5"
   },
   {
     "rangeStart": 8034,
     "rangeEnd": 8274,
     "title": "Felsbuchten des ägäischen Meers",
-    "id": "2.13"
+    "id": "2.2.6"
   },
   {
     "rangeStart": 8275,
     "rangeEnd": 8487,
     "title": "Telchinen von Rhodus",
-    "id": "2.14"
+    "id": "2.2.7"
   },
   {
     "rangeStart": 8488,
     "rangeEnd": 9126,
     "title": "Vor dem Palaste des Menelas zu Sparta",
-    "id": "2.15"
+    "id": "2.3.1"
   },
   {
     "rangeStart": 9127,
     "rangeEnd": 9573,
     "title": "Innerer Burghof",
-    "id": "2.16"
+    "id": "2.3.2"
   },
   {
     "rangeStart": 9574,
     "rangeEnd": 10038,
     "title": "Schattiger Hain",
-    "id": "2.17"
+    "id": "2.3.3"
   },
   {
     "rangeStart": 10039,
     "rangeEnd": 10344,
     "title": "Hochgebirg",
-    "id": "2.18"
+    "id": "2.4.1"
   },
   {
     "rangeStart": 10345,
     "rangeEnd": 10782,
     "title": "Auf dem Vorgebirg",
-    "id": "2.19"
+    "id": "2.4.2"
   },
   {
     "rangeStart": 10783,
     "rangeEnd": 11042,
     "title": "Des Gegenkaisers Zelt",
-    "id": "2.20"
+    "id": "2.4.3"
   },
   {
     "rangeStart": 11043,
     "rangeEnd": 11142,
     "title": "Offene Gegend",
-    "id": "2.21"
+    "id": "2.5.1"
   },
   {
     "rangeStart": 11143,
     "rangeEnd": 11287,
     "title": "Palast",
-    "id": "2.22"
+    "id": "2.5.2"
   },
   {
     "rangeStart": 11288,
     "rangeEnd": 11383,
     "title": "Tiefe Nacht",
-    "id": "2.23"
+    "id": "2.5.3"
   },
   {
     "rangeStart": 11384,
     "rangeEnd": 11510,
     "title": "Mitternacht",
-    "id": "2.24"
+    "id": "2.5.4"
   },
   {
     "rangeStart": 11511,
     "rangeEnd": 11603,
     "title": "Großer Vorhof des Palasts",
-    "id": "2.25"
+    "id": "2.5.5"
   },
   {
     "rangeStart": 11604,
     "rangeEnd": 11843,
     "title": "Grablegung",
-    "id": "2.26"
+    "id": "2.5.6"
   },
   {
     "rangeStart": 11844,
     "rangeEnd": 12111,
     "title": "Bergschluchten",
-    "id": "2.27"
+    "id": "2.5.7"
   }
 ]

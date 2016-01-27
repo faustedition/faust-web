@@ -91,7 +91,7 @@
 
         <h2>Genese</h2>
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
-            abgeschlossenen Werk ausgehend dar.</p>
+            abgeschlossenen Werk ausgehend, dar.</p>
         <h3>Gesamtübersicht</h3>
         <p>In der linken Hälfte der <a href="genesis.php">Gesamtübersicht</a> sind all
             jene Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘
@@ -133,62 +133,32 @@
             eines Balkens führt zur entsprechenden Stelle im Textzeugen.</p>
 
         <h2>Siglen</h2>
-        <p>In den tabellarischen Übersichten des Archivs, den Ansichten einzelner Handschriften und
-            Drucke, der zeilensynoptischen Darstellung im Lesetext sowie im Balkendiagramm finden
-            Kurzbezeichnungen für Zeugen, sog. Siglen, Verwendung. Diese basieren auf dem
-            System der Siglierung, das Erich Schmidt, der Herausgeber des ‚Faust‘ in den Bänden 14
-            und 15 der Weimarer Ausgabe (WA), für die Handschriften des ‚Faust&nbsp;II‘ eingeführt
-            hat. Die Handschriften werden dabei nach der Texterstreckung geordnet.
+        <p>Die für Handschriften und
+            Drucke basieren auf dem
+            System der Siglierung, das in den Bänden 14
+            und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden dabei nach der Texterstreckung geordnet.
             Maßgebend ist nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
-            mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Abschnitt
+            mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Vers 
             einsetzt, wird vor einer Handschrift eingeordnet, die mit einem späteren Vers
             einsetzt.</p>
 
         <h3>Siglen der Handschriften zum ‚Faust&nbsp;I‘</h3>
-        <p>Zum Faust&nbsp;I liegen vergleichsweise wenige Handschriften vor, zu jeder Szene meist
-            nur eine. 
-            Erich Schmidt hat die Handschriften deshalb nicht fortlaufend numeriert; stattdessen spricht 
-            er einfach jeweils von „H“ als der
-            Handschrift zu der betreffenden Szene (WA&nbsp;I&nbsp;14); die Göchhausensche Abschrift
-            des ‚Urfaust‘ bezeichnet er mit „U“. 
-            Diese Praxis wird in der Faust-Edition nicht fortgesetzt. 
-            Um eindeutige Kurzbezeichnungen für jede
-            Handschrift zu erhalten, werden die Handschriften zum ‚Faust&nbsp;I‘ in der
-            Faust-Edition durchlaufend numerisch nach dem Prinzip der Texterstreckung
-            sigliert. </p>
+        <p>Die Siglen zu den Handschriften des Faust&nbsp;I wurden nach dem angegebenen Prinzip neu 
+        eingeführt, da die WA dafür keine durchlaufende Zählung vorgesehen hat.</p>
 
         <h3>Siglen der Handschriften zum ‚Faust&nbsp;II‘</h3>
-        <p>Der Großteil der Siglen zu den einzelnen Akten des ‚Faust&nbsp;II‘ wurde von Erich
-            Schmidt gemäß dem oben beschriebenen Prinzip der Texterstreckung eingeführt. Seit dem
-            Erscheinen von Bd.&nbsp;15.2 der WA neu aufgefundene Handschriften wurden teils schon
-            von Erich Schmidt durch Hinzufügung neuer Siglen in dieses System integriert. Um alle ihm
-            noch unbekannten oder aus anderen Gründen nicht siglierten Handschriften mit einer
-            eindeutigen Kurzbezeichnung versehen zu können, ist ein Teil der Siglen Erich Schmidts
-            wie auch der späteren Faust-Forschung ersetzt worden:</p>
-        <ol>
-            <li>Die von Schmidt für die außerhalb des Goethe- und Schiller-Archivs befindlichen Handschriften eingeführte
-                alphabetische Siglierung ließ sich nicht so fortsetzen, dass dabei das Prinzip der
-                Texterstreckung hätte aufrechterhalten werden können. Alle betreffenden Handschriften sind
-                in die Reihe der numerisch siglierten Handschriften eingefügt worden. 
-                Dazu wurden die neue numerische Siglen mit einer Buchstabenerweiterung eingeführt, beginnend mit
-                I&nbsp;H.0d für die Handschrift mit der WA-Sigle I&nbsp;H.a. Im Prinzip ist so schon Renate Fischer-Lamberg
-                (faust://bibliography/fischer-lamberg1955) verfahren.</li>
-            <li>Einige der von Schmidt unter einer gemeinsamen Sigle zusammengefassten Handschriften
-                liegen heute unter verschiedenen Archivsignaturen oder sogar an verschiedenen
-                Aufbewahrungsorten. Um einzelne archivalische Objekte eindeutig referenzierbar zu machen,
-                wurden die betreffenden Siglen mit einem Zusatz erweitert.</li>
-        </ol>
-        <p>Die von Erich Schmidt eingeführten numerischen Siglen blieben dagegen immer erhalten, auch
-            wenn sie gegen das sonst geltende Prinzip der Texterstreckung verstoßen (z.B.
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_391247.xml">II&nbsp;H.74</a>).</p>
+        <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
+        gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
+        Zählung durch Hinzufüfung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
+        ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
+        H.0a usw.).</p>
 
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
 
         <h2>Technische Untersuchungsverfahren</h2>
-        <p>Im Rahmen der editorischen Arbeit sind eine Reihe von technischen Verfahren angewendet
-            worden, über die unter folgenden Stichworten berichtet wird:</p>
+        <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
         <ul>
             <li><a href="x-ray_spectrometry.php">Röntgenfluoreszenzspektrometrie
                 (Tintenanalyse)</a></li>
@@ -196,12 +166,14 @@
             <li><a href="watermarks.php">Wasserzeichenreproduktion</a></li>
         </ul>
 
-        <h2>Weitere Hinweise</h2>
-        <ul>
-            <li><a href="K_Abk_Glossar_Bibliographie.php#Abk">Abkürzungen</a></li>
-            <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>
-            <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>
-        </ul>
+        <h2>Bibliographie</h2>
+        
+            <!-- <li><a href="bibliography.php">Abkürzungen</a></li> -->
+            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>-->
+            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>-->
+        <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der 
+        <a href="bibliography.php">Bibliographie</a> gesammelt aufgeführt.</p>
+        
 
         <h2 id="cite">Zitierempfehlung</h2>
         <?php // NOTE: see links in imprint.php ?>
