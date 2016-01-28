@@ -11,29 +11,40 @@
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
 
-        <div class="pure-u-1-8"></div>
+        <div class="pure-u-1-8"/>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/archive.php"><big>Archiv</big></a></p>
-            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/archive_locations.php" style="display:block;">Aufbewahrungsorte</a></p>
-            <p><a class="pure-button" href="/archive_manuscripts.php" style="display:block;">Handschriften</a></p>
-            <p><a class="pure-button" href="/archive_prints.php" style="display:block;">Drucke</a></p>
+            <p><a class="pure-button pure-button-primary" href="/archive.php"
+                ><big>Archiv</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"/></p>
+            <p><a class="pure-button" href="/archive_locations.php" style="display:block;"
+                    >Aufbewahrungsorte</a></p>
+            <p><a class="pure-button" href="/archive_manuscripts.php" style="display:block;"
+                    >Handschriften</a></p>
+            <p><a class="pure-button" href="/archive_prints.php" style="display:block;"
+                >Drucke</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/genesis.php"><big>Genese</big></a></p>
-            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/genesis.php" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
-            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/genesis_faust_i.php" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
-            <p><a class="pure-button" href="/genesis_faust_ii.php" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
+            <p><a class="pure-button pure-button-primary" href="/genesis.php"
+                ><big>Genese</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"/></p>
+            <p><a class="pure-button" href="/genesis.php" style="display:block;"
+                        >Werkgenese<br/><small class="pure-fade-50">Gesamtansicht</small></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"/></p>
+            <p><a class="pure-button" href="/genesis_faust_i.php" style="display:block;">Genese
+                    Faust I<br/><small class="pure-fade-50">Szenen</small></a></p>
+            <p><a class="pure-button" href="/genesis_faust_ii.php" style="display:block;">Genese
+                    Faust II<br/><small class="pure-fade-50">Akte</small></a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
-            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/print/faust1.html" style="display:block;">Faust I</a></p>
-            <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
+            <p><a class="pure-button pure-button-primary" href="/print/text.html"
+                    ><big>Text</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"/></p>
+            <p><a class="pure-button" href="/print/faust1.html" style="display:block;">Faust
+                I</a></p>
+            <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust
+                II</a></p>
         </div>
-        <div class="pure-u-1-8"></div>
+        <div class="pure-u-1-8"/>
         <h2>Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
             Erhalten ist ein umfangreicher Bestand an Handschriften, die von etwa 1774 bis 1831
@@ -66,12 +77,11 @@
             veröffentlicht: ‚Helena, klassisch- romantische Phantasmagorie. Zwischenspiel zu Faust‘
             sowie, unter dem Titel ‚Faust. Zweyter Theil‘, der spätere Beginn des ersten Akts. Zu
             einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
-            1833.</p>        
-        <p>Teil der Ausgabe sind alle textkritisch relevanten <a
-                href="archive_prints.php">Drucke</a> und Teildrucke des ‚Faust‘.
-            Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
-            Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
-            Revisionsbogen.</p>
+            1833.</p>
+        <p>Teil der Ausgabe sind alle textkritisch relevanten <a href="archive_prints.php"
+                >Drucke</a> und Teildrucke des ‚Faust‘. Dazu gehören neben den Drucken im Rahmen von
+            Gesamtausgaben, den Einzel- und Journaldrucken auch handschriftlich bearbeitete
+            Korrekturexemplare und Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
 
         <h2>Lesetext</h2>
@@ -93,11 +103,11 @@
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend, dar.</p>
         <h3>Gesamtübersicht</h3>
-        <p>In der linken Hälfte der <a href="genesis.php">Gesamtübersicht</a> sind all
-            jene Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘
-            erschienen sind. In der rechten Hälfte findet sich eine Übersicht zum ‚Faust&nbsp;II‘.
-            In beiden Hälften entsprechen die angetragenen Jahreszahlen entstehungsgeschichtlich
-            relevanten, an Arbeitsphasen orientierten Daten.</p>
+        <p>In der linken Hälfte der <a href="genesis.php">Gesamtübersicht</a> sind all jene
+            Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘ erschienen
+            sind. In der rechten Hälfte findet sich eine Übersicht zum ‚Faust&nbsp;II‘. In beiden
+            Hälften entsprechen die angetragenen Jahreszahlen entstehungsgeschichtlich relevanten,
+            an Arbeitsphasen orientierten Daten.</p>
         <p>Die verschiedenen Einfärbungen der Felder zeigen den Ausarbeitungsgrad an. Weiß bedeutet,
             dass der betroffene Textabschnitt zu dieser Zeit nicht vorliegt. Grau indiziert
             Unabgeschlossenheit, Schwarz Fertigstellung.</p>
@@ -109,8 +119,8 @@
             unbeziffert, die nachfolgenden Szenen werden durchgezählt. Beim Ansteuern einer Spalte
             erscheint der Szenentitel.</p>
         <p>Die Übersicht zum <a href="genesis_faust_ii.php">‚Faust&nbsp;II‘</a> ist nach Akten
-            gegliedert, die mit römischen Ziffern durchgezählt sind. Einzelne Spalten entsprechen Szenen,
-            deren Titel beim Ansteuern erscheint. Die vor 1825 konzipierten oder
+            gegliedert, die mit römischen Ziffern durchgezählt sind. Einzelne Spalten entsprechen
+            Szenen, deren Titel beim Ansteuern erscheint. Die vor 1825 konzipierten oder
             entstandenen Szenen sind in der unteren Zeile zusammengefasst.</p>
         <h3>Balkendiagramm zu einzelnen Szenen</h3>
         <p>Die Auswahl einer Spalte in den Übersichten zum ‚Faust&nbsp;I‘ und ‚Faust&nbsp;II‘ führt
@@ -133,32 +143,34 @@
             eines Balkens führt zur entsprechenden Stelle im Textzeugen.</p>
 
         <h2>Siglen</h2>
-        <p>Die Siglen für Handschriften und Drucke basieren auf dem System der Siglierung, das in den Bänden 14
-            und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet.
-            Maßgebend ist nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
-            mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Vers 
-            einsetzt, wird vor einer Handschrift eingeordnet, die mit einem späteren Vers
-            einsetzt. 
-            Die Zugehörigkeit einer Handschrift zum Faust&nbsp;I oder Faust&nbsp;II wird durch die Präfixe 1 
-            und 2 kenntlich gemacht.</p>
+        <p>Die Siglen für Handschriften und Drucke basieren auf dem System der Siglierung, das in
+            den Bänden 14 und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘
+            verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet. Maßgebend
+            ist nicht der Umfang einer Handschrift, sondern die Stelle im Werktext, mit der eine
+            Handschrift einsetzt. Eine Handschrift, die mit einem früheren Vers einsetzt, wird vor
+            einer Handschrift eingeordnet, die mit einem späteren Vers einsetzt. Die Zugehörigkeit
+            einer Handschrift zum Faust&nbsp;I oder Faust&nbsp;II wird durch die Präfixe 1 und 2
+            kenntlich gemacht.</p>
 
         <h3>Siglen der Handschriften zum Faust&nbsp;I</h3>
-        <p>Die Siglen zu den Handschriften des Faust&nbsp;I wurden nach dem angegebenen Prinzip neu 
-        eingeführt, da die WA dafür keine durchlaufende Zählung vorgesehen hat.</p>
+        <p>Die Siglen zu den Handschriften des Faust&nbsp;I wurden nach dem angegebenen Prinzip neu
+            eingeführt, da die WA dafür keine durchlaufende Zählung vorgesehen hat.</p>
 
         <h3>Siglen der Handschriften zum Faust&nbsp;II</h3>
-        <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
-        gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
-        Zählung durch Hinzufüfung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
-        ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
-        H.0a usw.).</p>
+        <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne
+            Ziffer alphanumerisch gezählten (z.B. H.a) und die erst in späterer Zeit bekannt
+            gewordenen Siglen werden in die numerische Zählung durch Hinzufüfung alphanumerischer
+            Indizes integriert (z.B. H.1a). Liegt der erste Vers vor dem ersten Vers einer
+            Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B.
+            H.0, H.0a usw.).</p>
 
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
 
         <h2>Technische Untersuchungsverfahren</h2>
-        <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
+        <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren
+            angewendet:</p>
         <ul>
             <li><a href="x-ray_spectrometry.php">Röntgenfluoreszenzspektrometrie
                 (Tintenanalyse)</a></li>
@@ -167,13 +179,13 @@
         </ul>
 
         <h2>Bibliographie</h2>
-        
-            <!-- <li><a href="bibliography.php">Abkürzungen</a></li> -->
-            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>-->
-            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>-->
-        <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der 
-        <a href="bibliography.php">Bibliographie</a> gesammelt aufgeführt.</p>
-        
+
+        <!-- <li><a href="bibliography.php">Abkürzungen</a></li> -->
+        <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>-->
+        <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>-->
+        <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der <a
+                href="bibliography.php">Bibliographie</a> gesammelt aufgeführt.</p>
+
 
         <h2 id="cite">Zitierempfehlung</h2>
         <?php // NOTE: see links in imprint.php ?>
