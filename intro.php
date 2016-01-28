@@ -133,20 +133,20 @@
             eines Balkens führt zur entsprechenden Stelle im Textzeugen.</p>
 
         <h2>Siglen</h2>
-        <p>Die für Handschriften und
-            Drucke basieren auf dem
-            System der Siglierung, das in den Bänden 14
-            und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden dabei nach der Texterstreckung geordnet.
+        <p>Die Siglen für Handschriften und Drucke basieren auf dem System der Siglierung, das in den Bänden 14
+            und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet.
             Maßgebend ist nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
             mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Vers 
             einsetzt, wird vor einer Handschrift eingeordnet, die mit einem späteren Vers
-            einsetzt.</p>
+            einsetzt. 
+            Die Zugehörigkeit einer Handschrift zum Faust&nbsp;I oder Faust&nbsp;II wird durch die Präfixe 1 
+            und 2 kenntlich gemacht.</p>
 
-        <h3>Siglen der Handschriften zum ‚Faust&nbsp;I‘</h3>
+        <h3>Siglen der Handschriften zum Faust&nbsp;I</h3>
         <p>Die Siglen zu den Handschriften des Faust&nbsp;I wurden nach dem angegebenen Prinzip neu 
         eingeführt, da die WA dafür keine durchlaufende Zählung vorgesehen hat.</p>
 
-        <h3>Siglen der Handschriften zum ‚Faust&nbsp;II‘</h3>
+        <h3>Siglen der Handschriften zum Faust&nbsp;II</h3>
         <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
         gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
         Zählung durch Hinzufüfung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
