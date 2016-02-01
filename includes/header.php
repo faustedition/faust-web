@@ -13,6 +13,7 @@
     <script type="text/javascript" src="data/document_metadata.js"></script>
     <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
     <script type="text/javascript" src="data/scene_line_mapping.js"></script>
+    <script type="text/javascript" src="data/copyright_notes.js"></script>
 
     <script type="text/javascript" src="js/faust_common.js"></script>
 

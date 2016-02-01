@@ -36,7 +36,18 @@ var createDocumentViewer = (function(){
         pages: [],
         textTranscript: null,
         structure: undefined,
-        sections: {}
+        sections: {},
+        getFacsCopyright: function getFacsCopyright() {
+          if (this.faustUri in copyright_notes)
+            return copyright_notes[this.faustUri];
+          else {
+            var repository = this.faustMetadata.sigils.repository;
+            if (repository in copyright_notes)
+              return copyright_notes[repository];
+            else
+              return null;
+          };
+        }
       };
 
       // container holding references to each available view / div
@@ -664,7 +675,8 @@ var createDocumentViewer = (function(){
                 "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                 "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
                 "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                "backgroundZoomLevel":  state.imageBackgroundZoomLevel
+                "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                "copyright": doc.getFacsCopyright()
               });
             } else {
               facsimile = imageOverlay.createImageOverlay({"hasFacsimile": false});
