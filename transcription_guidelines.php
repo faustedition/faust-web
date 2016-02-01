@@ -29,13 +29,13 @@
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image1.png"/>
             <figcaption>Abb. 1: ##########, (Ausschnitt; zum Vgl. siehe <a
-                    href="/documentViewer.php?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document"
+                    href="/documentViewer?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document"
                     >2 H</a>)</figcaption>
         </figure>
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image2.png"/>
             <figcaption>Abb. 2: ##########, (Ausschnitt; zum Vgl. siehe <a
-                    href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
+                    href="/documentViewer?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
                     >2 II H.3</a>)</figcaption>
         </figure>
         <p>Die Überlieferung zu Goethes ‚Faust‘ ist vielfältig: Schemata, Exzerpte, einzelne
@@ -165,7 +165,7 @@
         <figure class="pure-pull-right">
             <img src="/img/info/transcription_guidelines-image5.png"/>
             <figcaption>Abb. 5: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
-                    href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
+                    href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
                     >H P123.5</a>).</figcaption>
         </figure>
         <p>Für die Darstellung innerhandschriftlicher Varianten gibt es in gedruckten Ausgaben

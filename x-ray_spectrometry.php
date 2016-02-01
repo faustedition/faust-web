@@ -37,15 +37,15 @@
         <p>An folgenden Handschriften wurden durch Oliver Hahn (Berlin / Hamburg) und Georg Dietz
             (Dresden) Messungen angestellt:</p>
         <p>
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.2/gsa_390905.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1493</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_391347.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1567</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_390903.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1589</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_390544.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1618</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.5/gsa_390883.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1698</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.5/gsa_389867.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1729</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390781.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1752</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/paralipomena/gsa_390826.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1753</a> &ndash; 
-            <a href="/documentViewer.php?faustUri=faust://xml/document/faust/2.5/gsa_390850.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1800</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.2/gsa_390905.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1493</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.3/gsa_391347.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1567</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.3/gsa_390903.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1589</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.3/gsa_390544.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1618</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.5/gsa_390883.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1698</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.5/gsa_389867.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1729</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390781.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1752</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390826.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1753</a> &ndash; 
+            <a href="/documentViewer?faustUri=faust://xml/document/faust/2.5/gsa_390850.xml&page=1&view=structure" class="pure-nowrap">GSA 25/W 1800</a> &ndash; 
             GSA 28/1053, Bl. 123 &ndash; 
             GSA 29/553a,I &ndash; 
             GSA 68/152, St. 63 und 153

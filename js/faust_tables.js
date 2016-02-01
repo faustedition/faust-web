@@ -237,7 +237,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	if(currentDocument.isPrint) {
 	  var documentLink = "print/" + currentDocument.printResourceName;
 	} else {
-	  var documentLink = "documentViewer.php?faustUri=" + currentDocument.faustUri;
+	  var documentLink = "documentViewer?faustUri=" + currentDocument.faustUri;
 	}
 	tableRow.addEventListener("click", function(event) {
 	  if (event.target.nodeName.toUpperCase() === "A"
@@ -260,7 +260,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	  // repo column: Explicit link to repo page
 	  } else if ('repository' in cellData) {
 	    var repoLink = document.createElement("a");
-	    repoLink.href = 'archive_locations_detail.php?id=' + cellData['repository'];
+	    repoLink.href = 'archive_locations_detail?id=' + cellData['repository'];
 	    repoLink.appendChild(document.createTextNode(cellData.text));
 	    tableData.appendChild(repoLink);
 	  // sigils in cells that can come from more than one sigil always get tooltips etc.

@@ -5,12 +5,12 @@
             <div class="center">
               <img src="img/slider/mephisto.png">
               <div class="text">
-                    <p>Die digitale Faust-Edition besteht aus einem <a href="/archive.php"
+                    <p>Die digitale Faust-Edition besteht aus einem <a href="/archive"
                             >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
                         textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
                             href="/print/faust1.html">Faust I</a> und des <a
                             href="/print/faust2.html">Faust II</a> sowie Visualisierungen zur <a
-                            href="/genesis.php">Genese</a> des Werks.</p>
+                            href="/genesis">Genese</a> des Werks.</p>
               </div>
             </div>
           </div>
@@ -20,12 +20,12 @@
               <img src="img/slider/2-II-H.1.png">
               <div class="text">
                 <h2>Archiv</h2>
-                    <p>Zum Faust ist <a href="/archive_locations.php?view=archives">weltweit</a>
+                    <p>Zum Faust ist <a href="/archive_locations?view=archives">weltweit</a>
                         ein umfangreicher Bestand an <a
-                            href="/archive_manuscripts.php?view=manuscript-concordance"
+                            href="/archive_manuscripts?view=manuscript-concordance"
                             >Handschriften</a> und <a
-                            href="/archive_manuscripts.php?view=print-concordance">Drucken</a> aus
-                        der Zeit von von etwa 1774 bis 1831 erhalten. Das <a href="/archive.php"
+                            href="/archive_manuscripts?view=print-concordance">Drucken</a> aus
+                        der Zeit von von etwa 1774 bis 1831 erhalten. Das <a href="/archive"
                             >Archiv</a> macht die gesamte Überlieferung in Abbildungen,
                         Transkriptionen und Zeugenbeschreibungen zugänglich.</p>
               </div>
@@ -39,7 +39,7 @@
                 <h2>Genese</h2>
                     <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt Faust
                         gearbeitet. Verschiedene Grafiken stellen die <a
-                            href="/genesis.php">Genese</a> von Goethes Faust
+                            href="/genesis">Genese</a> von Goethes Faust
                         retrospektiv, d.h. vom abgeschlossenen Werk ausgehend dar.</p>
               </div>
             </div>
@@ -95,8 +95,8 @@
           <p>Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis</p>
           <p>Frankfurt am Main, Weimar, Würzburg 2016</p>
           <p class="pure-tiles">
-            <a class="pure-button pure-button-tile" href="project.php">Über das Projekt</a>
-            <a class="pure-button pure-button-tile" href="intro.php">Über die Ausgabe</a> 
+            <a class="pure-button pure-button-tile" href="project">Über das Projekt</a>
+            <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe</a> 
           </p>
 
 

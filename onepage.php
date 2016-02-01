@@ -10,14 +10,14 @@
 	   Jeweils nur der Inhalt der ersten <section>.
 	*/
 	var pages = [
-		"project.php",
-		"intro.php",
-		"metadata.php",
-		"transcription_guidelines.php",
-		"multispectral_imaging.php",
-		"x-ray_spectrometry.php",
-		"watermarks.php",
-		"imprint.php",
+		"project",
+		"intro",
+		"metadata",
+		"transcription_guidelines",
+		"multispectral_imaging",
+		"x-ray_spectrometry",
+		"watermarks",
+		"imprint",
 		],
 		placeholder = document.getElementById('placeholder');
 	pages.forEach(function(page) {

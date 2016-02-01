@@ -3,29 +3,29 @@
 <section class="center pure-g-r">
     <article class="pure-u-1">
         <h1>Die Ausgabe</h1>
-        <p>Die digitale Faust-Edition besteht aus einem <a href="archive.php">Archiv</a> der
+        <p>Die digitale Faust-Edition besteht aus einem <a href="archive">Archiv</a> der
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
                 href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a
-                href="genesis.php">Genese</a> des Werks.</p>
+                href="genesis">Genese</a> des Werks.</p>
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
 
         <div class="pure-u-1-8"></div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/archive.php"><big>Archiv</big></a></p>
+            <p><a class="pure-button pure-button-primary" href="/archive"><big>Archiv</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/archive_locations.php" style="display:block;">Aufbewahrungsorte</a></p>
-            <p><a class="pure-button" href="/archive_manuscripts.php" style="display:block;">Handschriften</a></p>
-            <p><a class="pure-button" href="/archive_prints.php" style="display:block;">Drucke</a></p>
+            <p><a class="pure-button" href="/archive_locations" style="display:block;">Aufbewahrungsorte</a></p>
+            <p><a class="pure-button" href="/archive_manuscripts" style="display:block;">Handschriften</a></p>
+            <p><a class="pure-button" href="/archive_prints" style="display:block;">Drucke</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/genesis.php"><big>Genese</big></a></p>
+            <p><a class="pure-button pure-button-primary" href="/genesis"><big>Genese</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/genesis.php" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
+            <p><a class="pure-button" href="/genesis" style="display:block;">Werkgenese<br><small class="pure-fade-50">Gesamtansicht</small></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/genesis_faust_i.php" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
-            <p><a class="pure-button" href="/genesis_faust_ii.php" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
+            <p><a class="pure-button" href="/genesis_faust_i" style="display:block;">Genese Faust I<br><small class="pure-fade-50">Szenen</small></a></p>
+            <p><a class="pure-button" href="/genesis_faust_ii" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
@@ -47,13 +47,13 @@
             Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im
             Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
             Frankreich, Italien und in den Vereinigten Staaten.</p>
-        <p>Das <a href="archive.php">digitale Archiv</a> macht die gesamte relevante Überlieferung
+        <p>Das <a href="archive">digitale Archiv</a> macht die gesamte relevante Überlieferung
             des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter,
             Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit
-            einer detaillierten Beschreibung versehen (<a href="metadata.php">Metadaten</a>).</p>
+            einer detaillierten Beschreibung versehen (<a href="metadata">Metadaten</a>).</p>
         <p>Den Abbildungen stehen zwei Transkriptionen zur Seite, die <a
-                href="transcription_guidelines.php#dok_Transkr_Hss">dokumentarische</a> und die <a
-                href="transcription_guidelines.php#txt_Transkr_Hss">textuelle</a>. Die
+                href="transcription_guidelines#dok_Transkr_Hss">dokumentarische</a> und die <a
+                href="transcription_guidelines#txt_Transkr_Hss">textuelle</a>. Die
             dokumentarische Transkription gibt die Niederschrift in ihren räumlichen Verhältnissen
             genau wieder. Sie dient der Erschließung der oftmals schwer entzifferbaren
             Handschriften. Die textuelle Transkription abstrahiert vom Erscheinungsbild der
@@ -68,7 +68,7 @@
             einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
             1833.</p>        
         <p>Teil der Ausgabe sind alle textkritisch relevanten <a
-                href="archive_prints.php">Drucke</a> und Teildrucke des ‚Faust‘.
+                href="archive_prints">Drucke</a> und Teildrucke des ‚Faust‘.
             Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
             Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
             Revisionsbogen.</p>
@@ -80,7 +80,7 @@
             ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des
             ‚Faust II‘ liegt die 187 Blätter umfassende sogenannte große Reinschrift zugrunde
             (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien
-            wie bei den <a href="transcription_guidelines.php#txt_Transkr_Hss">textuellen
+            wie bei den <a href="transcription_guidelines#txt_Transkr_Hss">textuellen
                 Transkriptionen</a>. Im Unterschied zu den übrigen Textwiedergaben sind die
             Seitengrenzen der Vorlage im Lesetext nicht markiert.</p>
         <p>Die Lesetexte dienen als Bezugstexte für die Verszählung und die genetische Darstellung.
@@ -93,7 +93,7 @@
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend, dar.</p>
         <h3>Gesamtübersicht</h3>
-        <p>In der linken Hälfte der <a href="genesis.php">Gesamtübersicht</a> sind all
+        <p>In der linken Hälfte der <a href="genesis">Gesamtübersicht</a> sind all
             jene Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘
             erschienen sind. In der rechten Hälfte findet sich eine Übersicht zum ‚Faust&nbsp;II‘.
             In beiden Hälften entsprechen die angetragenen Jahreszahlen entstehungsgeschichtlich
@@ -104,11 +104,11 @@
         <p>Die Auswahl einer Spalte in einer der beiden Hälften führt zu einer detaillierteren
             Darstellung.</p>
         <h3>Übersichten zum ‚Faust&nbsp;I‘ und zum ‚Faust&nbsp;II‘</h3>
-        <p>Die Übersicht zum <a href="genesis_faust_i.php">‚Faust&nbsp;I‘</a> ist nach Szenen
+        <p>Die Übersicht zum <a href="genesis_faust_i">‚Faust&nbsp;I‘</a> ist nach Szenen
             gegliedert. Die einleitenden Abschnitte ‚Zueignung‘, ‚Vorspiel‘ und ‚Prolog‘ bleiben
             unbeziffert, die nachfolgenden Szenen werden durchgezählt. Beim Ansteuern einer Spalte
             erscheint der Szenentitel.</p>
-        <p>Die Übersicht zum <a href="genesis_faust_ii.php">‚Faust&nbsp;II‘</a> ist nach Akten
+        <p>Die Übersicht zum <a href="genesis_faust_ii">‚Faust&nbsp;II‘</a> ist nach Akten
             gegliedert, die mit römischen Ziffern durchgezählt sind. Einzelne Spalten entsprechen Szenen,
             deren Titel beim Ansteuern erscheint. Die vor 1825 konzipierten oder
             entstandenen Szenen sind in der unteren Zeile zusammengefasst.</p>
@@ -160,27 +160,27 @@
         <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
         <ul>
-            <li><a href="x-ray_spectrometry.php">Röntgenfluoreszenzspektrometrie
+            <li><a href="x-ray_spectrometry">Röntgenfluoreszenzspektrometrie
                 (Tintenanalyse)</a></li>
-            <li><a href="multispectral_imaging.php">Multispektrale Bildverarbeitung</a></li>
-            <li><a href="watermarks.php">Wasserzeichenreproduktion</a></li>
+            <li><a href="multispectral_imaging">Multispektrale Bildverarbeitung</a></li>
+            <li><a href="watermarks">Wasserzeichenreproduktion</a></li>
         </ul>
 
         <h2>Bibliographie</h2>
         
-            <!-- <li><a href="bibliography.php">Abkürzungen</a></li> -->
-            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Glossar">Glossar</a></li>-->
-            <!-- <li><a href="K_Abk_Glossar_Bibliographie.php#Bibl">Bibliographie</a></li>-->
+            <!-- <li><a href="bibliography">Abkürzungen</a></li> -->
+            <!-- <li><a href="K_Abk_Glossar_Bibliographie#Glossar">Glossar</a></li>-->
+            <!-- <li><a href="K_Abk_Glossar_Bibliographie#Bibl">Bibliographie</a></li>-->
         <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der 
-        <a href="bibliography.php">Bibliographie</a> gesammelt aufgeführt.</p>
+        <a href="bibliography">Bibliographie</a> gesammelt aufgeführt.</p>
         
 
         <h2 id="cite">Zitierempfehlung</h2>
-        <?php // NOTE: see links in imprint.php ?>
+        <?php // NOTE: see links in imprint ?>
         <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
 
         <h2 id="updates">Updates</h2>
-        <?php // NOTE: see links in index.php and imprint.php ?>
+        <?php // NOTE: see links in index and imprint ?>
         <p class="pure-fade-50">[Download aller verfügbaren Versionen der Ausgabe (oder Teilen
             davon)]</p>
 

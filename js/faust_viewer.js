@@ -604,8 +604,8 @@ var createDocumentViewer = (function(){
           Faust.dom.removeAllChildren(breadcrumbs);
           var repository = doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
-            {caption: "Archiv", link: "archive.php"}, 
-            {caption: archives[repository].name, link: "archive_locations_detail.php?id=" + repository},
+            {caption: "Archiv", link: "archive"}, 
+            {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page
@@ -616,9 +616,9 @@ var createDocumentViewer = (function(){
             breadcrumbs.appendChild(document.createElement("br"));
 
             if(sceneData.id.split(".")[0] === "1") {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust I", link: "genesis_faust_i.php"}, {caption: sceneData.title, link: "genesis_bargraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             } else {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust II", link: "genesis_faust_ii.php"}, {caption: sceneData.title, link: "genesis_bargraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             }
           }
 
