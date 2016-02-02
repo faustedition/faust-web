@@ -181,8 +181,7 @@ var imageOverlay = (function(){
             overlayContainer.appendChild(text);
       imageContainer.appendChild(imageInfo);
       imageContainer.appendChild(facsCopyright);
-        facsCopyright.appendChild(facsCopyrightP);
-      imageContainer.facsCopyrightP = facsCopyrightP;
+      imageContainer.facsCopyright = facsCopyright;
 
       // append direct element access to container
       imageContainer.rotateContainer = rotateContainer;
@@ -702,7 +701,7 @@ var imageOverlay = (function(){
       }
 
       if (args.copyright) {
-        var facsCopyright = domNodes.facsCopyrightP;
+        var facsCopyright = domNodes.facsCopyright;
         facsCopyright.textContent = args.copyright;
       }
 
