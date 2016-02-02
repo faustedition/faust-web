@@ -92,11 +92,15 @@ ul.toc {
 }
 a.sigil {
 	float: none !important;	/* rm from basic_layout.css */
-	cursor: help;
 }
 .sigils {
 	float: right;
 	/* do we need a max-width here? */
+
+	/* override style from others ... */
+	text-transform: none;
+	font-size: inherit;
+	font-style: normal;
 }
 .variants:after {
     display: table;
