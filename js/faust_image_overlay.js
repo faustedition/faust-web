@@ -703,6 +703,11 @@ var imageOverlay = (function(){
       if (args.copyright) {
         var facsCopyright = domNodes.facsCopyright;
         facsCopyright.textContent = args.copyright;
+        var closeBtn = document.createElement('i');
+        closeBtn.className = "fa fa-cancel closebtn";
+        closeBtn.addEventListener("click", function closeFacs() { 
+          facsCopyright.innerHTML = ""; });
+        facsCopyright.appendChild(closeBtn);
       }
 
       // Add event handler to zoom in and out by using the scroll wheel.
