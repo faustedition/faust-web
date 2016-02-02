@@ -742,7 +742,8 @@ var createDocumentViewer = (function(){
                 "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                 "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
                 "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                "backgroundZoomLevel":  state.imageBackgroundZoomLevel
+                "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                "copyright": doc.getFacsCopyright()
               });
             } else {
               facsimileParallel = imageOverlay.createImageOverlay({"hasFacsimile": false});
