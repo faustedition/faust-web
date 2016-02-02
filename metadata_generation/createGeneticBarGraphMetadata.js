@@ -75,11 +75,11 @@ var createVerseLineResultObject = function() {
   verseLineResultObject.getVerseLineIntervals = function() {
     var result = [];
 
-    result = result.concat(verseLinesToIntervals(verseLines.normal, "verseLine"));
-    result = result.concat(verseLinesToIntervals(verseLines.uncertain, "verseLineUncertain"));
-    result = result.concat(verseLinesToIntervals(verseLines.variant, "verseLineVariant"));
-    result = result.concat(verseLinesToIntervals(verseLines.paralipomenon, "paralipomena"));
     result = result.concat(verseLinesToIntervals(verseLines.paralipomenonUncertain, "paralipomenaUncertain"));
+    result = result.concat(verseLinesToIntervals(verseLines.paralipomenon, "paralipomena"));
+    result = result.concat(verseLinesToIntervals(verseLines.variant, "verseLineVariant"));
+    result = result.concat(verseLinesToIntervals(verseLines.uncertain, "verseLineUncertain"));
+    result = result.concat(verseLinesToIntervals(verseLines.normal, "verseLine"));
 
     return result;
 
