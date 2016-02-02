@@ -452,10 +452,11 @@ a.pageno {
 
 /* Copyright note that is overlaid to the facsimile */
 .facs-copyright {
-  font: 10px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
+  font: 12px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
+  color: white;
+  text-shadow: black 0px 0px 1px;
   position: fixed;
-  bottom: 4.5em;
-  vertical-align: bottom;
+  bottom: 3.5em;
   z-index: 10; 
   margin: 3pt 3pt;
   pointer-events: all;
