@@ -9,8 +9,8 @@
         <div class="pure-u-1-2 pure-right pure-fade-50 pure-noprint">
           <a href="help">Hilfe</a>
           <a href="contact">Kontakt</a>
-          <a href="imprint">Impressum</a>
           <a href="project">Projekt</a>
+          <a href="intro">Ausgabe</a>
         </div>
       </div>
     </footer>
