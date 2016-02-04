@@ -66,7 +66,7 @@
                       <a href="mailto:wissenbach@faustedition.de">wissenbach@faustedition.de</a><br>
                     </p>
 
-                    <h3>Redaktoren</h3>
+                    <h3>Externe Redaktoren</h3>
                     <p>
                       <strong>Dr. Renate Moering</strong><br>
                       <strong>Wolfgang Ritschel</strong>
