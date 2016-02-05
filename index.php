@@ -96,13 +96,13 @@
             Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
             Frankfurt am Main, Weimar, Würzburg 2016
           </p>
-          <p class="pure-tiles">
+          <p>
             <a class="pure-button pure-button-tile" href="project">Über das Projekt</a>
             <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe</a> 
           </p>
 
 
-          <p><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-12px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
+          <p><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-8px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
         </article>
 
         <div class="pure-u-1-5"></div>
