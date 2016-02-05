@@ -52,7 +52,9 @@
         </p>
         <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2).</p>
         <p>Einen ersten Einblick in die den Messungen zugrundeliegenden Hypothesen und
-            Fragestellungen geben faust://bibliography/bruening_et_al2013; ebd. ein Beispiel für
+            Fragestellungen geben <a href="bibliography#bruening_et_al2013"
+                data-bib-uri="faust://bibliography/bruening_et_al2013"
+                >Brüning u.a. 2013</a>; ebd. ein Beispiel für
             mögliche Datierungen, die mit den Messergebnissen begründet werden können. Die
             Auswertung der Messergebnisse dauert zurzeit noch an.</p>
     </article>

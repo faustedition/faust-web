@@ -154,7 +154,8 @@
             H.0a usw.).</p>
         
         <h3>Siglen der Drucke</h3>
-        <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
+        <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
+            data-bib-uri="faust://bibliography/hagen1983">Hagen 1983</a>), ersatzweise
             die durch die WA eingeführte Sigle.</p>
         
         <h2>Technische Untersuchungsverfahren</h2>
