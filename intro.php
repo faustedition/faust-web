@@ -7,10 +7,10 @@
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
                 href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a
-                href="genesis">Genese</a> des Werks.</p>
+                    href="genesis">Genese</a> des Werks.</p>
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
-
+        
         <div class="pure-u-1-8"></div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/archive"><big>Archiv</big></a></p>
@@ -52,13 +52,13 @@
             Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit
             einer detaillierten Beschreibung versehen (<a href="metadata">Metadaten</a>).</p>
         <p>Den Abbildungen stehen zwei Transkriptionen zur Seite, die <a
-                href="transcription_guidelines#dok_Transkr_Hss">dokumentarische</a> und die <a
+            href="transcription_guidelines#dok_Transkr_Hss">dokumentarische</a> und die <a
                 href="transcription_guidelines#txt_Transkr_Hss">textuelle</a>. Die
             dokumentarische Transkription gibt die Niederschrift in ihren räumlichen Verhältnissen
             genau wieder. Sie dient der Erschließung der oftmals schwer entzifferbaren
             Handschriften. Die textuelle Transkription abstrahiert vom Erscheinungsbild der
             Handschriften und gibt den Text einer Handschrift wieder.</p>
-
+        
         <h2>Drucke</h2>
         <p>1790 erschien ‚Faust. Ein Fragment‘ im Druck. 1808 erschien in der ersten bei Cotta
             erschienenen Gesamtausgabe ‚Faust. Eine Tragödie‘ mit „Der Tragödie erster Theil“. Zwei
@@ -68,12 +68,12 @@
             einer vollständigen Veröffentlichung des ‚Faust II‘ kam es erst kurz nach Goethes Tod,
             1833.</p>        
         <p>Teil der Ausgabe sind alle textkritisch relevanten <a
-                href="archive_prints">Drucke</a> und Teildrucke des ‚Faust‘.
+            href="archive_prints">Drucke</a> und Teildrucke des ‚Faust‘.
             Dazu gehören neben den Drucken im Rahmen von Gesamtausgaben, den Einzel- und
             Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
             Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
-
+        
         <h2>Lesetext</h2>
         <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
             jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ ist dies der Druck im achten Band der
@@ -88,7 +88,7 @@
             einer Überschrift, einer Sprecherbezeichnung, einer Bühnenanweisung etc. in
             zeilensynoptischer Anordnung aufgerufen werden. Die Sigle am rechten Rand führt zur
             Einzeldarstellung des Zeugen im digitalen Archiv.</p>
-
+        
         <h2>Genese</h2>
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend, dar.</p>
@@ -131,7 +131,7 @@
         <p>Beim Ansteuern eines Balkens werden das zugehörige Versintervall und die
             Überlieferungsform (Handschrift, Druck, Paralipomenon, Schema) angezeigt. Die Auswahl
             eines Balkens führt zur entsprechenden Stelle im Textzeugen.</p>
-
+        
         <h2>Siglen</h2>
         <p>Die Siglen für Handschriften und Drucke basieren auf dem System der Siglierung, das in den Bänden 14
             und 15 der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet.
@@ -141,22 +141,22 @@
             einsetzt. 
             Die Zugehörigkeit einer Handschrift zum Faust&nbsp;I oder Faust&nbsp;II wird durch die Präfixe 1 
             und 2 kenntlich gemacht.</p>
-
+        
         <h3>Siglen der Handschriften zum Faust&nbsp;I</h3>
         <p>Die Siglen zu den Handschriften des Faust&nbsp;I wurden nach dem angegebenen Prinzip neu 
-        eingeführt, da die WA dafür keine durchlaufende Zählung vorgesehen hat.</p>
-
+            eingeführt, da die WA dafür keine durchlaufende Zählung vorgesehen hat.</p>
+        
         <h3>Siglen der Handschriften zum Faust&nbsp;II</h3>
         <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
-        gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
-        Zählung durch Hinzufüfung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
-        ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
-        H.0a usw.).</p>
-
+            gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
+            Zählung durch Hinzufüfung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
+            ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
+            H.0a usw.).</p>
+        
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (faust://bibliography/hagen1983), ersatzweise
             die durch die WA eingeführte Sigle.</p>
-
+        
         <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
         <ul>
@@ -165,25 +165,25 @@
             <li><a href="multispectral_imaging">Multispektrale Bildverarbeitung</a></li>
             <li><a href="watermarks">Wasserzeichenreproduktion</a></li>
         </ul>
-
+        
         <h2>Bibliographie</h2>
         
-            <!-- <li><a href="bibliography">Abkürzungen</a></li> -->
-            <!-- <li><a href="K_Abk_Glossar_Bibliographie#Glossar">Glossar</a></li>-->
-            <!-- <li><a href="K_Abk_Glossar_Bibliographie#Bibl">Bibliographie</a></li>-->
+        <!-- <li><a href="bibliography">Abkürzungen</a></li> -->
+        <!-- <li><a href="K_Abk_Glossar_Bibliographie#Glossar">Glossar</a></li>-->
+        <!-- <li><a href="K_Abk_Glossar_Bibliographie#Bibl">Bibliographie</a></li>-->
         <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der 
-        <a href="bibliography">Bibliographie</a> gesammelt aufgeführt.</p>
+            <a href="bibliography">Bibliographie</a> gesammelt aufgeführt.</p>
         
-
+        
         <h2 id="cite">Zitierempfehlung</h2>
         <?php // NOTE: see links in imprint ?>
         <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
-
+        
         <h2 id="updates">Updates</h2>
         <?php // NOTE: see links in index and imprint ?>
         <p class="pure-fade-50">[Download aller verfügbaren Versionen der Ausgabe (oder Teilen
             davon)]</p>
-
+        
     </article>
 </section>
 <?php include "includes/footer.php"; ?>
