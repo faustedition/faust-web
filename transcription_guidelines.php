@@ -1,8 +1,8 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
-
+    
     <article class="pure-u-1">
-
+        
         <h1>Transkriptionsprinzipien</h1>
         <p>Die Transkription der Handschriften wird in verschiedenen Formen angeboten, die entweder
             auf eine dokumentarische Wiedergabe (dokumentarische Transkription) oder auf eine
@@ -29,14 +29,14 @@
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image1.png"/>
             <figcaption>Abb. 1: ##########, (Ausschnitt; zum Vgl. siehe <a
-                    href="/documentViewer?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document"
-                    >2 H</a>)</figcaption>
+                href="/documentViewer?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document"
+                >2 H</a>)</figcaption>
         </figure>
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image2.png"/>
             <figcaption>Abb. 2: ##########, (Ausschnitt; zum Vgl. siehe <a
-                    href="/documentViewer?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
-                    >2 II H.3</a>)</figcaption>
+                href="/documentViewer?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
+                >2 II H.3</a>)</figcaption>
         </figure>
         <p>Die Überlieferung zu Goethes ‚Faust‘ ist vielfältig: Schemata, Exzerpte, einzelne
             Versentwürfe, eigenhändige Niederschriften ganzer Passagen in Bleistift, Abschriften und
@@ -153,20 +153,20 @@
             zeitgenösischen Schreiber (wie Anna Jameson oder Luise von Göchhausen) sind mit braunem
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
-
+        
         <h3>Textuelle Transkription der Handschriften</h3>
         <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner gattungsspezifischen
             Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
             unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten
             und als letzte abhebbare Stufe, die sich aus der Niederschrift
             und allen darin vorkommenden Änderungen ergibt.</p>
-
+        
         <h3>Darstellung der innerhandschriftlichen Varianten</h3>
         <figure class="pure-pull-right">
             <img src="/img/info/transcription_guidelines-image5.png"/>
             <figcaption>Abb. 5: faust://bibliography/aa_ls_6, S. 750 (Ausschnitt; zum Vgl. siehe <a
-                    href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
-                    >H P123.5</a>).</figcaption>
+                href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
+                >H P123.5</a>).</figcaption>
         </figure>
         <p>Für die Darstellung innerhandschriftlicher Varianten gibt es in gedruckten Ausgaben
             eine Vielfalt von Apparatformen. Der in der
@@ -194,8 +194,8 @@
         </ul>
         <p>An folgenden Stellen weicht die Darstellung von derjenigen in der AA ab:</p>
         <ol>
-        <li>Umgestellter Wortlaut wird nur beziffert und nicht auch in der endgültigen
-            Reihenfolge wiedergegeben.</li>
+            <li>Umgestellter Wortlaut wird nur beziffert und nicht auch in der endgültigen
+                Reihenfolge wiedergegeben.</li>
             <li>Änderungen werden nicht immer auf ganze Wörter expandiert.
                 Änderungen, die in Zeugen als Änderungen einzelner Buchstaben vorgenommen worden
                 sind, erscheinen vielfach auch in der Edition als Änderungen einzelner
@@ -233,8 +233,8 @@
         <p>Die genannten Zeichen und Differenzierungen, auf deren Wiedergabe in den für den Nutzer
             sichtbaren Transkriptionen verzichtet wird, sind in den XML-kodierten Basisdaten der
             Transkriptionen erhalten.<br/>[ausführlicher Text folgt noch]</p>-->
-
+        
     </article>
-
+    
 </section>
 <?php include "includes/footer.php"; ?>
