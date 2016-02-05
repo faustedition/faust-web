@@ -3,7 +3,7 @@
         <div class="slider">
           <div>
             <div class="center">
-              <img src="img/slider/mephisto.png">
+              <img src="img/slider/mephisto.png" height="256">
               <div class="text">
                     <p>Die digitale Faust-Edition besteht aus einem <a href="/archive"
                             >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
@@ -17,7 +17,7 @@
 
           <div style="background:#b7b18f url(img/slider/2-II-H.1-bg.png) center center;">
             <div class="center">
-              <img src="img/slider/2-II-H.1.png">
+              <img src="img/slider/2-II-H.1.png" height="256">
               <div class="text">
                 <h2>Archiv</h2>
                     <p>Zum Faust ist <a href="/archive_locations?view=archives">weltweit</a>
@@ -34,7 +34,7 @@
 
           <div style="background:#d8d5ca url(img/slider/H-P123.5-hg.png) center center;">
             <div class="center">
-              <img src="img/slider/H-P123.5.png">
+              <img src="img/slider/H-P123.5.png" height="256">
               <div class="text">
                 <h2>Genese</h2>
                     <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt Faust
@@ -55,7 +55,7 @@
                         Text aus sind alle übrigen handschriftlichen und gedruckten Fassungen
                         erreichbar.</p>
               </div>
-              <img src="img/slider/2-H.png">
+              <img src="img/slider/2-H.png" height="256">
             </div>
           </div>
         </div>
@@ -92,8 +92,10 @@
 
           <h2>Johann Wolfgang Goethe: Faust</h2>
           <h3>Historisch-kritische Edition</h3>
-          <p>Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis</p>
-          <p>Frankfurt am Main, Weimar, Würzburg 2016</p>
+          <p>
+            Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
+            Frankfurt am Main, Weimar, Würzburg 2016
+          </p>
           <p class="pure-tiles">
             <a class="pure-button pure-button-tile" href="project">Über das Projekt</a>
             <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe</a> 
