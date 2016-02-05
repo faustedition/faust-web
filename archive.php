@@ -5,9 +5,9 @@
         
         <article class="pure-u-3-5 pure-center">
             <p class="pure-tiles">
-             <a href="archive_locations.php" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
-             <a href="archive_manuscripts.php" class="pure-button pure-button-tile">Hand&shy;schriften</a>
-             <a href="archive_prints.php" class="pure-button pure-button-tile">Drucke</a>
+             <a href="archive_locations" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
+             <a href="archive_manuscripts" class="pure-button pure-button-tile">Hand&shy;schriften</a>
+             <a href="archive_prints" class="pure-button pure-button-tile">Drucke</a>
             </p>
         
         </article>

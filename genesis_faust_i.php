@@ -12,6 +12,6 @@
 
       <script type="text/javascript">
         window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
-          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust I"}]));
+          document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I"}]));
       </script>
       <?php include "includes/footer.php"; ?>

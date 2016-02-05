@@ -92,11 +92,15 @@ ul.toc {
 }
 a.sigil {
 	float: none !important;	/* rm from basic_layout.css */
-	cursor: help;
 }
 .sigils {
 	float: right;
 	/* do we need a max-width here? */
+
+	/* override style from others ... */
+	text-transform: none;
+	font-size: inherit;
+	font-style: normal;
 }
 .variants:after {
     display: table;
@@ -134,7 +138,7 @@ a.sigil {
 
 /*
  * Tabellen für das tei:table-Element
- * z.B. (/Germanen/) http://beta.faustedition.net/documentViewer.php?faustUri=faust://xml/document/faust/2.3/gsa_389850.xml&page=1&view=text&section=389850.html
+ * z.B. (/Germanen/) http://beta.faustedition.net/documentViewer?faustUri=faust://xml/document/faust/2.3/gsa_389850.xml&page=1&view=text&section=389850.html
  */
 table.table {
 	font-size: inherit;

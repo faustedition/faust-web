@@ -148,6 +148,8 @@ var imageOverlay = (function(){
               var tile = document.createElement("div");
               var text = document.createElement("div");
         var imageInfo = document.createElement("div");
+          var facsCopyright = document.createElement("div");
+            var facsCopyrightP = document.createElement("p");
 
       imageContainer.id = "image-container";
       imageContainer.className = "image-container";
@@ -166,6 +168,10 @@ var imageOverlay = (function(){
       imageInfo.id = "image-info";
       imageInfo.className = "image-info";
 
+      facsCopyright.id = "facs-copyright";
+      facsCopyright.className = "facs-copyright";
+
+
       // appending all children to parents
       imageContainer.appendChild(rotateContainer);
         rotateContainer.appendChild(scaleContainer);
@@ -174,6 +180,8 @@ var imageOverlay = (function(){
             overlayContainer.appendChild(tile);
             overlayContainer.appendChild(text);
       imageContainer.appendChild(imageInfo);
+      imageContainer.appendChild(facsCopyright);
+      imageContainer.facsCopyright = facsCopyright;
 
       // append direct element access to container
       imageContainer.rotateContainer = rotateContainer;
@@ -690,6 +698,16 @@ var imageOverlay = (function(){
       } else {
         // else try to get metadata
         Faust.xhr.getXhr(args.imageMetadataUrl, metadataLoadHandler);
+      }
+
+      if (args.copyright) {
+        var facsCopyright = domNodes.facsCopyright;
+        facsCopyright.textContent = args.copyright;
+        var closeBtn = document.createElement('i');
+        closeBtn.className = "fa fa-cancel closebtn";
+        closeBtn.addEventListener("click", function closeFacs() { 
+          facsCopyright.innerHTML = ""; });
+        facsCopyright.appendChild(closeBtn);
       }
 
       // Add event handler to zoom in and out by using the scroll wheel.

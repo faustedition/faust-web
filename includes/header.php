@@ -13,6 +13,7 @@
     <script type="text/javascript" src="data/document_metadata.js"></script>
     <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
     <script type="text/javascript" src="data/scene_line_mapping.js"></script>
+    <script type="text/javascript" src="data/copyright_notes.js"></script>
 
     <script type="text/javascript" src="js/faust_common.js"></script>
 
@@ -42,12 +43,12 @@
         <div id="current" class="pure-nowrap"></div>
         <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li><a href="archive.php">Archiv</a></li>
-          <li><a href="genesis.php">Genese</a></li>
-          <li><a href="print/text.html">Text</a></li>
+          <li><a href="archive">Archiv</a></li>
+          <li><a href="genesis">Genese</a></li>
+          <li><a href="print/text">Text</a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
-          <li><a href="imprint.php"><small class="pure-fade-50">Impressum</small></a></li>
-          <li><a href="help.php"><i class="fa fa-help-circled fa-lg"></i></a></li>
+          <li><a href="imprint"><small class="pure-fade-50">Impressum</small></a></li>
+          <li><a href="help"><i class="fa fa-help-circled fa-lg"></i></a></li>
           </ul>
         </nav>
     </header>

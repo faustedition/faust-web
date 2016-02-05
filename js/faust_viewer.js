@@ -36,7 +36,18 @@ var createDocumentViewer = (function(){
         pages: [],
         textTranscript: null,
         structure: undefined,
-        sections: {}
+        sections: {},
+        getFacsCopyright: function getFacsCopyright() {
+          if (this.faustUri in copyright_notes)
+            return copyright_notes[this.faustUri];
+          else {
+            var repository = this.faustMetadata.sigils.repository;
+            if (repository in copyright_notes)
+              return copyright_notes[repository];
+            else
+              return null;
+          };
+        }
       };
 
       // container holding references to each available view / div
@@ -604,8 +615,8 @@ var createDocumentViewer = (function(){
           Faust.dom.removeAllChildren(breadcrumbs);
           var repository = doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
-            {caption: "Archiv", link: "archive.php"}, 
-            {caption: archives[repository].name, link: "archive_locations_detail.php?id=" + repository},
+            {caption: "Archiv", link: "archive"}, 
+            {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page
@@ -616,9 +627,9 @@ var createDocumentViewer = (function(){
             breadcrumbs.appendChild(document.createElement("br"));
 
             if(sceneData.id.split(".")[0] === "1") {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust I", link: "genesis_faust_i.php"}, {caption: sceneData.title, link: "genesis_bargraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             } else {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis.php"}, {caption: "Faust II", link: "genesis_faust_ii.php"}, {caption: sceneData.title, link: "genesis_bargraph.php?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
+              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
             }
           }
 
@@ -664,7 +675,8 @@ var createDocumentViewer = (function(){
                 "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                 "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
                 "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                "backgroundZoomLevel":  state.imageBackgroundZoomLevel
+                "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                "copyright": doc.getFacsCopyright()
               });
             } else {
               facsimile = imageOverlay.createImageOverlay({"hasFacsimile": false});
@@ -730,7 +742,8 @@ var createDocumentViewer = (function(){
                 "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                 "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
                 "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                "backgroundZoomLevel":  state.imageBackgroundZoomLevel
+                "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                "copyright": doc.getFacsCopyright()
               });
             } else {
               facsimileParallel = imageOverlay.createImageOverlay({"hasFacsimile": false});

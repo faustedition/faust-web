@@ -225,88 +225,88 @@
       </g>
 
       <g transform="translate(-2,-2)">
-        <a xlink:href="genesis_bargraph.php?rangeStart=1&amp;rangeEnd=32">
+        <a xlink:href="genesis_bargraph?rangeStart=1&amp;rangeEnd=32">
           <rect x="0" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zueignung"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=33&amp;rangeEnd=242">
+        <a xlink:href="genesis_bargraph?rangeStart=33&amp;rangeEnd=242">
           <rect x="25" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vorspiel auf dem Theater"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=243&amp;rangeEnd=353">
+        <a xlink:href="genesis_bargraph?rangeStart=243&amp;rangeEnd=353">
           <rect x="50" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Prolog im Himmel"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=354&amp;rangeEnd=807">
+        <a xlink:href="genesis_bargraph?rangeStart=354&amp;rangeEnd=807">
           <rect x="75" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=808&amp;rangeEnd=1177">
+        <a xlink:href="genesis_bargraph?rangeStart=808&amp;rangeEnd=1177">
           <rect x="100" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vor dem Tor"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=1178&amp;rangeEnd=1529">
+        <a xlink:href="genesis_bargraph?rangeStart=1178&amp;rangeEnd=1529">
           <rect x="125" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer I"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=1530&amp;rangeEnd=2072">
+        <a xlink:href="genesis_bargraph?rangeStart=1530&amp;rangeEnd=2072">
           <rect x="150" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer II"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=2073&amp;rangeEnd=2336">
+        <a xlink:href="genesis_bargraph?rangeStart=2073&amp;rangeEnd=2336">
           <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=2337&amp;rangeEnd=2604">
+        <a xlink:href="genesis_bargraph?rangeStart=2337&amp;rangeEnd=2604">
           <rect x="200" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Hexenküche"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=2605&amp;rangeEnd=2677">
+        <a xlink:href="genesis_bargraph?rangeStart=2605&amp;rangeEnd=2677">
           <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=2678&amp;rangeEnd=2804">
+        <a xlink:href="genesis_bargraph?rangeStart=2678&amp;rangeEnd=2804">
           <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=2805&amp;rangeEnd=2864">
+        <a xlink:href="genesis_bargraph?rangeStart=2805&amp;rangeEnd=2864">
           <rect x="275" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Spaziergang"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=2865&amp;rangeEnd=3024">
+        <a xlink:href="genesis_bargraph?rangeStart=2865&amp;rangeEnd=3024">
           <rect x="300" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Der Nachbarin Haus"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3025&amp;rangeEnd=3072">
+        <a xlink:href="genesis_bargraph?rangeStart=3025&amp;rangeEnd=3072">
           <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3073&amp;rangeEnd=3204">
+        <a xlink:href="genesis_bargraph?rangeStart=3073&amp;rangeEnd=3204">
           <rect x="350" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Garten"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3205&amp;rangeEnd=3216">
+        <a xlink:href="genesis_bargraph?rangeStart=3205&amp;rangeEnd=3216">
           <rect x="375" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Ein Gartenhäuschen"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3217&amp;rangeEnd=3373">
+        <a xlink:href="genesis_bargraph?rangeStart=3217&amp;rangeEnd=3373">
           <rect x="400" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Wald und Höhle"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3374&amp;rangeEnd=3413">
+        <a xlink:href="genesis_bargraph?rangeStart=3374&amp;rangeEnd=3413">
           <rect x="425" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Gretchens Stube"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3414&amp;rangeEnd=3543">
+        <a xlink:href="genesis_bargraph?rangeStart=3414&amp;rangeEnd=3543">
           <rect x="450" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Marthens Garten"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3544&amp;rangeEnd=3586">
+        <a xlink:href="genesis_bargraph?rangeStart=3544&amp;rangeEnd=3586">
           <rect x="475" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Am Brunnen"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3587&amp;rangeEnd=3619">
+        <a xlink:href="genesis_bargraph?rangeStart=3587&amp;rangeEnd=3619">
           <rect x="500" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zwinger"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3620&amp;rangeEnd=3775">
+        <a xlink:href="genesis_bargraph?rangeStart=3620&amp;rangeEnd=3775">
           <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3776&amp;rangeEnd=3834">
+        <a xlink:href="genesis_bargraph?rangeStart=3776&amp;rangeEnd=3834">
           <rect x="550" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Dom"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=3835&amp;rangeEnd=4222">
+        <a xlink:href="genesis_bargraph?rangeStart=3835&amp;rangeEnd=4222">
           <rect x="575" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnacht"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=4223&amp;rangeEnd=4398">
+        <a xlink:href="genesis_bargraph?rangeStart=4223&amp;rangeEnd=4398">
           <rect x="600" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnachtstraum"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=4389&amp;rangeEnd=4399">
+        <a xlink:href="genesis_bargraph?rangeStart=4389&amp;rangeEnd=4399">
           <rect x="625" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Trüber Tag. Feld"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=4399&amp;rangeEnd=4404">
+        <a xlink:href="genesis_bargraph?rangeStart=4399&amp;rangeEnd=4404">
           <rect x="650" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht, offen Feld"></rect>
         </a>
-        <a xlink:href="genesis_bargraph.php?rangeStart=4405&amp;rangeEnd=4612">
+        <a xlink:href="genesis_bargraph?rangeStart=4405&amp;rangeEnd=4612">
           <rect x="675" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Kerker"></rect>
         </a>
       </g>

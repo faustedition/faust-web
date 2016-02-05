@@ -1,11 +1,21 @@
       <?php include "includes/header.php"; ?>
-      <section class="center pure-g-r">
+      <section class="center pure-g-r wip">
 
-        <article class="pure-u-1">
-            
-            <p><!--[Kurzanleitung für Nutzung der Edition mit Screenshots]--></p>
+        <div class="pure-u-1-5"></div>
+
+        <article class="pure-u-3-5">
+          <h1>Hilfe</h1>
+          <h3>folgt demnächst</h3>
+
+          <p>Die Hilfefunktion ist noch in Arbeit und wird in einer der nächsten Versionen ergänzt.</p>
+
+          <p>Einige Benutzungshinweise finden Sie <a href="intro">in der Einführung in die Ausgabe</a>.</p>
+
 
         </article>
+
+        <div class="pure-u-1-5">
+        </div>
       
       </section>
       <?php include "includes/footer.php"; ?>
