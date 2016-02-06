@@ -154,7 +154,7 @@
             Farbton kenntlich gemacht.</p>
         <p>Die deutsche Kurrentschrift wird recte dargestellt, lateinische kursiv.</p>
         
-        <h3>Textuelle Transkription der Handschriften</h3>
+        <h3 id="txt_Transkr_Hss">Textuelle Transkription der Handschriften</h3>
         <p>Die textuelle Transkription der Handschriften gibt den Text mit seiner gattungsspezifischen
             Gliederung wieder (z. B. als Dramentext, Liste, Gedicht, Exzerpt). Sie wird in zwei
             unterschiedlichen Formen angeboten: als Darstellung der innerhandschriftlichen Varianten

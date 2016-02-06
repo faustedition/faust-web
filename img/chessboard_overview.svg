@@ -106,7 +106,7 @@
 
     </g>
 
-    <g id="rightGroup" transform="translate(505, 0)">
+    <g id="rightGroup" transform="translate(520, 0)">
 
       <g transform="translate(10,-10)">
         <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">Akt I</text>
@@ -182,7 +182,7 @@
       </g>
 
       <a xlink:href="genesis_faust_ii">
-        <rect x="-130" y="-5" width="290" height="575" class="highlight show-tooltip" tooltipText="zu Faust II"></rect>
+        <rect x="-125" y="-5" width="290" height="575" class="highlight show-tooltip" tooltipText="zu Faust II"></rect>
       </a>
 
     </g>

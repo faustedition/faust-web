@@ -279,7 +279,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	      elem.textContent = sigilData.value;
 	      tableData.appendChild(elem);
 	      if (sigilIndex + 1 < sigils.length) {
-		tableData.appendChild(document.createTextNode(', '));
+		tableData.appendChild(document.createTextNode('; '));
 	      }
 	    });
 	  // everything else: Just put the text in
