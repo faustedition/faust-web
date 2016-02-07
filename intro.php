@@ -134,8 +134,8 @@
         
         <h2>Siglen</h2>
         <p>Die Siglen für Handschriften und Drucke basieren auf dem System der Siglierung, das in Band <a href="bibliography#wa_I_15_2"
-                data-bib-uri="faust://bibliography/wa_I_15_2"
-                >15</a> der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet.
+            data-bib-uri="faust://bibliography/wa_I_15_2"
+            >15</a> der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet.
             Maßgebend ist nicht der Umfang einer Handschrift, sondern die Stelle im Werktext,
             mit der eine Handschrift einsetzt. Eine Handschrift, die mit einem früheren Vers 
             einsetzt, wird vor einer Handschrift eingeordnet, die mit einem späteren Vers
