@@ -172,7 +172,7 @@
         <!-- <li><a href="bibliography">Abkürzungen</a></li> -->
         <!-- <li><a href="K_Abk_Glossar_Bibliographie#Glossar">Glossar</a></li>-->
         <!-- <li><a href="K_Abk_Glossar_Bibliographie#Bibl">Bibliographie</a></li>-->
-        <p>Die Literatur, auf die in den Handschriftenbeschreibungen verwiesen wird, ist in der 
+        <p>Die Literatur, auf die in den Handschriftenbeschreibungen und Erläuterungstexten über die Ausgabe verwiesen wird, ist in der 
             <a href="bibliography">Bibliographie</a> gesammelt aufgeführt.</p>
         
         
