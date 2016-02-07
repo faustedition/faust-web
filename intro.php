@@ -34,6 +34,8 @@
             <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
         </div>
         <div class="pure-u-1-8"></div>
+        <h2>Beta-Version</h2>
+        <p></p>
         <h2>Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
             Erhalten ist ein umfangreicher Bestand an Handschriften, die von etwa 1774 bis 1831
