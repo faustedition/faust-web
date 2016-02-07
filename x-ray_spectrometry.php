@@ -12,7 +12,9 @@
             Zusammensetzung der verwendeten Eisengallustinten sollten entstehungsgeschichtliche
             Erkenntnisse über spezielle Teile des handschriftlichen Materials gewonnen werden. Wie
             im Fall der ähnlich angelegten Untersuchungen im Rahmen der Marburger Ausgabe der Werke
-            Georg Büchners in den Jahren 2003 bis 2005 (vgl. faust://bibliography/dedner_et_al2005),
+            Georg Büchners in den Jahren 2003 bis 2005 (vgl. <a href="bibliography#dedner_et_al2005"
+                data-bib-uri="faust://bibliography/dedner_et_al2005"
+                >Dedner u.a. 2005</a>),
             wurde sowohl eine Datierung von Handschriften insgesamt als auch eine besser fundierte
             Unterscheidung von Bearbeitungsschichten innerhalb von Handschriften angestrebt, an
             denen Goethe längere Zeit oder in großen Abständen gearbeitet hat.</p>
@@ -23,7 +25,9 @@
             Element schließen lässt. Aufgrund der detektierten Energieverteilung der
             Röntgenfluoreszenzstrahlung können die vorhandenen Elemente identifiziert und auch ihr
             Mengenverhältnis bestimmt werden (für weitere Angaben zur RFA, zum eingesetzten Gerät
-            sowie zu weiterführender Literatur vgl. faust://bibliography/bruening_et_al2013).
+            sowie zu weiterführender Literatur vgl. <a href="bibliography#bruening_et_al2013"
+                data-bib-uri="faust://bibliography/bruening_et_al2013"
+                >Brüning u.a. 2013</a>).
             Eisengallustinte, wie sie auch Goethe und seine Schreiber verwendeten, wird generell auf
             die metallischen Bestandteile des zur Herstellung verwendeten Eisenvitriols hin
             untersucht. Die Differenzierung der Tinten basiert auf der Konzentration der
