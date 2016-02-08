@@ -126,7 +126,7 @@
       </g>
 
       <g transform="translate(0,75)">
-        <text x="-10" y="30" class="rowText">1797-1801</text>
+        <text x="-10" y="30" class="rowText">1797–1801</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
