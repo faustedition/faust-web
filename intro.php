@@ -161,7 +161,68 @@
         <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
             data-bib-uri="faust://bibliography/hagen1983">Hagen 1983</a>), ersatzweise
             die durch die WA eingeführte Sigle.</p>
-        
+
+
+        <h2 id="volltextsuche">Volltextsuche</h2>
+        <p>Über das Sucheingabefeld <i class="fa fa-search"></i> steht eine einfache Volltextsuche zur Verfügung. Gesucht wird im <a href="/intro#lesetext">Lesetext</a> sowie in den <a href="/transcription_guidelines#txt_Transkr_Hss">textuellen Transkripten</a>, allerdings nicht in den Metadaten.</p>
+        <p>Ungefähre Suchen sind mit Metazeichen in jedem Suchbegriff möglich:</p>
+        <table class="pure-table">
+            <thead>
+                <tr class="header">
+                    <th align="left">Zeichen</th>
+                    <th align="left">Bedeutung</th>
+                    <th align="left">Beispiel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left"><code>*</code></td>
+                    <td align="left">mehrere beliebige Zeichen</td>
+                    <td align="left"><a href="/search?q=pudel*">pudel*</a></td>
+                </tr>
+                <tr class="even">
+                    <td align="left"><code>?</code></td>
+                    <td align="left">ein beliebiges Zeichen</td>
+                    <td align="left"><a href="/search?q=ker%3F">ker?</a></td>
+                </tr>
+                <tr class="odd">
+                    <td align="left"><code>~</code>, <code>~0.5</code></td>
+                    <td align="left">Ähnlichkeitssuche nach Levenshtein-Distanz</td>
+                    <td align="left"><a href="/search?q=medizin%7E">medizin~</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Dabei können <code>*</code> und <code>?</code> am Ende des Suchbegriffs oder in seiner Mitte stehen. <code>~</code> steht am Ende, dahinter kann mit einer Zahl zwischen 0 und 1 der Grad an Ähnlichkeit vorgegeben werden.</p>
+        <p>Mehrere Suchbegriffe können miteinander kombiniert werden:</p>
+        <table class="pure-table">
+            <thead>
+                <tr class="header">
+                    <th align="left">Suchanfrage</th>
+                    <th align="left">Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td align="left"><code>juristerey medizin</code></td>
+                    <td align="left">einer der Begriffe muss vorkommen</td>
+                </tr>
+                <tr class="even">
+                    <td align="left"><code>juristerey AND medizin</code></td>
+                    <td align="left">beide Begriffe müssen vorkommen</td>
+                </tr>
+                <tr class="odd">
+                    <td align="left"><code>+juristerey -medizin</code></td>
+                    <td align="left">Begriffe, vor denen ein <code>+</code> steht, müssen vorkommen; Begriffe mit <code>-</code> dürfen nicht vorkommen</td>
+                </tr>
+                <tr class="even">
+                    <td align="left"><code>&quot;juristerey und medizin&quot;</code></td>
+                    <td align="left">Suche nach der Phrase <em>juristerey und medizin</em></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In komplexeren Suchen können Teilausdrücke mit Klammern <code>()</code> zusammengefasst werden.</p>
+
+                
         <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
         <ul>
