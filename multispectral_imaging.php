@@ -1,4 +1,7 @@
 <?php include "includes/header.php"; ?>
+<div class="main-content-container" style="margin-bottom:0em;">
+<div id="main-content" class="main-content">
+  <div style="display: block;" class="archive-content view-content" id="archive-content">
 <section class="center pure-g-r">
     <article class="pure-u-1">
         <h1>Multispektrale Bildverarbeitung</h1>
@@ -84,4 +87,5 @@
         </div>
     </article>
 </section>
+</div></div></div>
 <?php include "includes/footer.php"; ?>
