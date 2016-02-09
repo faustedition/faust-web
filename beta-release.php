@@ -16,8 +16,8 @@
             sollen. Die Texte und Angaben in den Handschriftenbeschreibungen (Metadaten) und ihre
             Darstellung sind teils noch nicht ausgereift und werden gerade überarbeitet. In der
             Version 1.0 sollen die vorliegenden Angaben über Datierungen und die relative
-            Chronologie aufgenommen werden. Auch an der Korrektur der Transkriptionen wird zurzeit
-            noch gearbeitet. Etwaige Fehler können jederzeit per E-Mail an Gerrit Brüning (<a
+            Chronologie aufgenommen werden. Auch an der Korrektur der Transkriptionen und den daraus 
+            generierten Textdarstellungen wird zurzeit noch gearbeitet. Etwaige Fehler können jederzeit per E-Mail an Gerrit Brüning (<a
                 href="mailto:bruening@faustedition.de">bruening@faustedition.de</a>) gemeldet
             werden.</p>
         <p>Im Bereich <strong> Genese</strong> liefert die Betaversion grafische
