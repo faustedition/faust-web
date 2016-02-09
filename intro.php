@@ -169,7 +169,7 @@
 
 
         <h2 id="volltextsuche">Volltextsuche</h2>
-        <p>Über das Sucheingabefeld <i class="fa fa-search"></i> steht eine einfache Volltextsuche zur Verfügung. Gesucht wird im <a href="/intro#lesetext">Lesetext</a> sowie in den <a href="/transcription_guidelines#txt_Transkr_Hss">textuellen Transkripten</a>, allerdings nicht in den Metadaten.</p>
+        <p>Über das Sucheingabefeld <i class="fa fa-search"></i> steht eine einfache Volltextsuche zur Verfügung. Gesucht wird im <a href="intro#lesetext">Lesetext</a> sowie in den <a href="transcription_guidelines#txt_Transkr_Hss">textuellen Transkripten</a>, allerdings nicht in den Metadaten.</p>
         <p>Ungefähre Suchen sind mit Metazeichen in jedem Suchbegriff möglich:</p>
         <table class="pure-table">
             <thead>
