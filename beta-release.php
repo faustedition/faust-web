@@ -35,10 +35,10 @@
             sortiert werden.</p>
         <p>Die Funktionalität der Ausgabe soll in der Version 1.0 durch eine spezielle
             <strong>Hilfe</strong>-Funktion noch intuitiver erschlossen werden.</p>
-        <p>Die <strong>Such</strong>-Funktion soll ebenfalls noch wesentlich verbessert werden.</p>
-        <p>Der Code der gesamten Applikation wird auf <a href="https://github.com/faustedition"
+        <p>Die <strong>Suche</strong> soll ebenfalls noch wesentlich verbessert werden.</p>
+        <p>Der <strong>Code</strong> der gesamten Applikation wird auf <a href="https://github.com/faustedition"
             >GitHub</a> verwaltet. Eventuelle Fehler oder Mängel der Web-Funktionalität können
-            unter <a href="https://github.com/faustedition/faust-web/issues">hier</a> gemeldet
+            <a href="https://github.com/faustedition/faust-web/issues">hier</a> gemeldet
             werden.</p>
         <p>Rosemarie Schillemeit gewährte umfassenden Einblick in die Aufzeichnungen im Nachlass
             <strong> Jost Schillemeits </strong> und stellte ihre Transkription dieser
