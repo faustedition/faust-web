@@ -19,7 +19,8 @@
             Chronologie aufgenommen werden. Auch an der Korrektur der Transkriptionen und den daraus 
             generierten Textdarstellungen wird zurzeit noch gearbeitet. Etwaige Fehler können jederzeit per E-Mail an Gerrit Brüning (<a
                 href="mailto:bruening@faustedition.de">bruening@faustedition.de</a>) gemeldet
-            werden.</p>
+            werden. Die Transkriptionen werden in einer der nächsten Beta-Versionen auch zum Download bereitgestellt.</p>
+        <p></p>
         <p>Im Bereich <strong> Genese</strong> liefert die Betaversion grafische
             Übersichtsdarstellungen und Detailansichten. Das Balkendiagramm, das die
             Gesamtüberlieferung visualisiert, ist zurzeit, wie die Übersichtstabellen der
