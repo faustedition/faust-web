@@ -28,13 +28,13 @@
         <h3>Allgemeine Prinzipien der Handschriftenwiedergabe</h3>
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image1.png"/>
-            <figcaption>Abb. 1: ##########, (Ausschnitt; zum Vgl. siehe <a
+            <figcaption>Abb. 1: „merck ich“ mit dem Buchstaben k in seiner ligaturspezifischen Form, aber ohne deutlich ausgeprägtes c (Ausschnitt; zum Vgl. siehe <a
                 href="/documentViewer?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=35&view=facsimile_document"
                 >2 H</a>)</figcaption>
         </figure>
         <figure class="pure-pull-left">
             <img src="/img/info/transcription_guidelines-image2.png"/>
-            <figcaption>Abb. 2: ##########, (Ausschnitt; zum Vgl. siehe <a
+            <figcaption>Abb. 2: „Seys“ mit Abstand zwischen den Wortbestandteilen (Ausschnitt; zum Vgl. siehe <a
                 href="/documentViewer?faustUri=faust://xml/document/faust/2.2/gsa_390642.xml&page=2&view=facsimile_document"
                 >2 II H.3</a>)</figcaption>
         </figure>
@@ -109,7 +109,7 @@
         </ul>
         <figure>
             <img src="/img/info/transcription_guidelines-image3.png"/>
-            <figcaption>Abb. 3: ##########</figcaption>
+            <figcaption>Abb. 3: dokumentarische Transkription mit Wiedergabe einer Einfügungslinie (Ausschnitt; zum Vgl. siehe <a href="/documentViewer?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=135&view=document">2 H</a>)</figcaption>
         </figure>
         <p>Die Stelle einer Einfügung in Interlinearzeilen oberhalb oder unterhalb, rechts oder
             links von der Einfügungsstelle wird räumlich getreu wiedergegeben. Einfügungszeichen
@@ -118,7 +118,7 @@
             nachgebildet.</p>
         <figure>
             <img src="/img/info/transcription_guidelines-image4.png"/>
-            <figcaption>Abb. 4: ##########</figcaption>
+            <figcaption>Abb. 4: dokumentarische Transkription mit Wiedergabe einer Einfügungslinie (Ausschnitt; zum Vgl. siehe <a href="/documentViewer?faustUri=faust://xml/document/faust/2/gsa_391098.xml&page=365&view=document">2 H</a>)</figcaption>
         </figure>
         <p>Markierungen von Abschnitten (z. B. Zwischenstriche, waagerechte geschweifte Klammern)
             werden getreu
