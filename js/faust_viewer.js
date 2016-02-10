@@ -238,7 +238,7 @@ var createDocumentViewer = (function(){
           // create dom elements for metadata display
           var metadataDiv = Faust.dom.createElement({name: "div", id: "metadataDiv", class: "metadata-div"});
           var baseName = doc.metadata.documentUri.replace(/^.*\/(\S+)\.xml/, '$1');
-          Faust.xhr.getResponseText("metadata/" + baseName + '.html', function(documentHtml) {
+          Faust.xhr.getResponseText("meta/" + baseName + '.html', function(documentHtml) {
             metadataDiv.innerHTML = documentHtml;
             metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
           }); 
