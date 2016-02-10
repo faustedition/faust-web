@@ -83,7 +83,7 @@
         </div>
 
         <h2>Danksagung</h2>
-        <p>Der Beitrag weiterer Personen und Institut wird in der <a href="credits">Danksagung</a> gewürdigt.</p>
+        <p>Der Beitrag weiterer Personen und Institutionen wird in der <a href="credits">Danksagung</a> gewürdigt.</p>
 
       </article>
       </section>
