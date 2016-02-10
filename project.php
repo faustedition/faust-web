@@ -68,9 +68,9 @@
 
                     <h3>Externe Redaktoren</h3>
                     <p>
-                      <strong>Dr. Renate Moering</strong><br>
-                      <strong>Wolfgang Ritschel</strong>
-                    </p>
+                    Dr. Renate Moering<br>
+                      Wolfgang Ritschel
+                      </p>
 
                     <h3>Studentische Hilfskräfte</h3>
                     <p>
