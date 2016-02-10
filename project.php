@@ -5,7 +5,7 @@
             <p>Die Ausgabe basiert auf dem von der Deutschen Forschungsgemeinschaft geförderten Projekt ‚Historisch-kritische Edition von Goethes Faust‘ (2009–2015).</p>
 
 
-        <div class="pure-u-1-2 pure-gap">
+        <div class="pure-u-1-3 pure-gap">
                     <h3>Projektleitung</h3>
                     <p>
                       <strong>Prof. Dr. Anne Bohnenkamp-Renken</strong><br>
@@ -36,7 +36,7 @@
                     </p>
         </div>
 
-        <div class="pure-u-1-2 pure-gap">
+        <div class="pure-u-1-3 pure-gap">
                     <h3>Projektmitarbeiter</h3>
                     <p>
                     <strong>Dr. Gerrit Brüning</strong><br>
@@ -65,6 +65,8 @@
                       <strong>Moritz Wissenbach</strong><br>
                       <a href="mailto:wissenbach@faustedition.de">wissenbach@faustedition.de</a><br>
                     </p>
+        </div>
+        <div class="pure-u-1-3 pure-left">
 
                     <h3>Externe Redaktoren</h3>
                     <p>
@@ -74,17 +76,17 @@
 
                     <h3>Studentische Hilfskräfte</h3>
                     <p>
-                      Eva Arnold, Chris Bethe,<br>
-                      Melanie Blaschko, Michael Huber,<br>
-                      Charlotte Köhler, Julia Kockel,<br>
-                      Susanne Mohr, Katharina Ritter,<br>
+                      Eva Arnold, Chris Bethe,
+                      Melanie Blaschko, Michael Huber,
+                      Charlotte Köhler, Julia Kockel,
+                      Susanne Mohr, Katharina Ritter,
                       Anna Sievert, Marie Vorländer
                     </p>
                     <h3>Praktikanten</h3>
                     <p>
-                      Bozena Anna Badura, Keli Du, <br>
-                      Ksenia Gorbunova, Christoph Daniel Hempel, <br>
-                      Dana Machwitz, Ievgeniia Pylypenko, <br>
+                      Bozena Anna Badura, Keli Du, 
+                      Ksenia Gorbunova, Christoph Daniel Hempel,
+                      Dana Machwitz, Ievgeniia Pylypenko, 
                       Christopher Rüther, Tilman Schreiber 
                     </p>
         </div>
