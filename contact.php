@@ -18,7 +18,7 @@
             </p>
 
             <p>
-              Mail: <a href="mailto:bruening@faustedition.de" title="E-Mail">kontakt@faustedition.de</a>
+              Mail: <a href="mailto:bruening@faustedition.de" title="E-Mail">bruening@faustedition.de</a>
             </p>
         
         </article>
