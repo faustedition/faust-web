@@ -80,6 +80,13 @@
                       Susanne Mohr, Katharina Ritter,<br>
                       Anna Sievert, Marie Vorländer
                     </p>
+                    <h3>Praktikanten</h3>
+                    <p>
+                      Bozena Anna Badura, Keli Du, <br>
+                      Ksenia Gorbunova, Christoph Daniel Hempel, <br>
+                      Dana Machwitz, Ievgeniia Pylypenko, <br>
+                      Christopher Rüther, Tilman Schreiber 
+                    </p>
         </div>
 
         <h2>Danksagung</h2>
