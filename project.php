@@ -12,7 +12,7 @@
                       Direktorin<br>
                       Frankfurter Goethe-Haus<br>
                       Freies Deutsches Hochstift<br>
-                      Großer Hirschgraben 23-25<br>
+                      Großer Hirschgraben 23–25<br>
                       60311 Frankfurt am Main<br>
                       Tel.: +49 (0)69 / 138 80 243<br>
                       <a href="mailto:abohnenkamp@goethehaus-frankfurt.de">abohnenkamp@goethehaus-frankfurt.de</a>
