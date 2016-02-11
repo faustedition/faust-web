@@ -90,10 +90,9 @@
                       Christopher Rüther, Tilman Schreiber 
                     </p>
         </div>
-
-        <h2>Danksagung</h2>
-        <p>Der Beitrag weiterer Personen und Institutionen wird in der <a href="credits">Danksagung</a> gewürdigt.</p>
-
+                  <p>
+            <a class="pure-button pure-button-tile" href="credits">Danksagung</a>
+          </p>
       </article>
       </section>
 </div></div></div>
