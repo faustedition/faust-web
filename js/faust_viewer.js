@@ -134,6 +134,7 @@ var createDocumentViewer = (function(){
               doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
               doc.faustMetadata = currentMetadata;
               doc.pageCount = doc.metadata.pageCount;
+              doc.sigil = currentMetadata.sigils.idno_faustedition;
             }
           });
           
