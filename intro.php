@@ -41,7 +41,7 @@
         <div class="pure-u-1-8"></div>
         <h2>Beta-Version</h2>
         <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern 
-        eine Beta-Version. Ausführlichere Informationen <a href="beta-release">hier</a>.</p>
+        eine <a href="beta-release">Beta-Version</a>. <a href="beta-release">Ausführlichere Informationen hier</a>.</p>
         <h2>Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
             Erhalten ist ein umfangreicher Bestand an Handschriften, die von etwa 1774 bis 1831
