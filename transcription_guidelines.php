@@ -93,7 +93,7 @@
             <li>ganze Zeilen sowie Zeilenanfänge oder -enden, die infolge von Beschädigung oder
                 Fragmentierung verloren gegangen sind.</li>
         </ul>
-        <h3>Dokumentarische Transkription der Handschriften</h3>
+        <h3 id="doctranscript">Dokumentarische Transkription der Handschriften</h3>
         <p>Die dokumentarische Transkription gibt die Niederschrift in ihren strukturellen
             räumlichen Relationen wieder. Erfasst und als zusätzliche Information eingeblendet
             werden auch die verschiedenen Arten der Zeichenmanipulation (Unterstreichungen,

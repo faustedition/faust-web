@@ -42,7 +42,7 @@
         <h2>Beta-Version</h2>
         <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern 
         eine <a href="beta-release">Beta-Version</a>. <a href="beta-release">Ausführlichere Informationen hier</a>.</p>
-        <h2>Handschriften</h2>
+        <h2 id="handschriften">Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
             Erhalten ist ein umfangreicher Bestand an Handschriften, die von etwa 1774 bis 1831
             reichen.</p>
@@ -67,7 +67,7 @@
             Handschriften. Die textuelle Transkription abstrahiert vom Erscheinungsbild der
             Handschriften und gibt den Text einer Handschrift wieder.</p>
         
-        <h2>Drucke</h2>
+        <h2 id="drucke">Drucke</h2>
         <p>1790 erschien ‚Faust. Ein Fragment‘ im Druck. 1808 erschien in der ersten bei Cotta
             erschienenen Gesamtausgabe ‚Faust. Eine Tragödie‘ mit „Der Tragödie erster Theil“. Zwei
             Partien des zweiten Teils wurden 1827 und 1828 in der Ausgabe letzter Hand
@@ -82,7 +82,7 @@
             Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
         
-        <h2>Lesetext</h2>
+        <h2 id="lesetext">Lesetext</h2>
         <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
             jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ ist dies der Druck im achten Band der
             ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des
@@ -97,10 +97,10 @@
             zeilensynoptischer Anordnung aufgerufen werden. Die Sigle am rechten Rand führt zur
             Einzeldarstellung des Zeugen im digitalen Archiv.</p>
         
-        <h2>Genese</h2>
+        <h2 id="genesis">Genese</h2>
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes ‚Faust‘ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend, dar.</p>
-        <h3>Gesamtübersicht</h3>
+        <h3 id="genesis_overview">Gesamtübersicht</h3>
         <p>In der linken Hälfte der <a href="genesis">Gesamtübersicht</a> sind all
             jene Werkteile versammelt, die im Jahr 1808 unter dem Titel ‚Faust. Eine Tragödie‘
             erschienen sind. In der rechten Hälfte findet sich eine Übersicht zum ‚Faust&nbsp;II‘.
@@ -111,7 +111,7 @@
             Unabgeschlossenheit, Schwarz Fertigstellung.</p>
         <p>Die Auswahl einer Spalte in einer der beiden Hälften führt zu einer detaillierteren
             Darstellung.</p>
-        <h3>Übersichten zum ‚Faust&nbsp;I‘ und zum ‚Faust&nbsp;II‘</h3>
+        <h3 id="genesis_part">Übersichten zum ‚Faust&nbsp;I‘ und zum ‚Faust&nbsp;II‘</h3>
         <p>Die Übersicht zum <a href="genesis_faust_i">‚Faust&nbsp;I‘</a> ist nach Szenen
             gegliedert. Die einleitenden Abschnitte ‚Zueignung‘, ‚Vorspiel‘ und ‚Prolog‘ bleiben
             unbeziffert, die nachfolgenden Szenen werden durchgezählt. Beim Ansteuern einer Spalte
@@ -120,7 +120,7 @@
             gegliedert, die mit römischen Ziffern durchgezählt sind. Einzelne Spalten entsprechen Szenen,
             deren Titel beim Ansteuern erscheint. Die vor 1825 konzipierten oder
             entstandenen Szenen sind in der unteren Zeile zusammengefasst.</p>
-        <h3>Balkendiagramm zu einzelnen Szenen</h3>
+        <h3 id="genesis_bargraph">Balkendiagramm zu einzelnen Szenen</h3>
         <p>Die Auswahl einer Spalte in den Übersichten zum ‚Faust&nbsp;I‘ und ‚Faust&nbsp;II‘ führt
             zu einem Balkendiagramm, in dem alle relevanten Handschriften und Drucke zu der
             betreffenden Szene angezeigt werden. Im Diagramm sind neben handschriftlichen und
@@ -140,7 +140,7 @@
             Überlieferungsform (Handschrift, Druck, Paralipomenon, Schema) angezeigt. Die Auswahl
             eines Balkens führt zur entsprechenden Stelle im Textzeugen.</p>
         
-        <h2>Siglen</h2>
+        <h2 id="siglen">Siglen</h2>
         <p>Die Siglen für Handschriften und Drucke basieren auf dem System der Siglierung, das in Band <a href="bibliography#wa_I_15_2"
             data-bib-uri="faust://bibliography/wa_I_15_2"
             >15</a> der Weimarer Ausgabe (WA) für die Handschriften des ‚Faust&nbsp;II‘ verwendet wird. Die Handschriften werden nach der Texterstreckung geordnet.
