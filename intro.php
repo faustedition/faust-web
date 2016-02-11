@@ -248,7 +248,12 @@
         
         <h2 id="cite">Zitierempfehlung</h2>
         <?php // NOTE: see links in imprint ?>
-        <p class="pure-fade-50">[Beispiel(e) für Zitieren aus der Ausgabe: Primärquellen, Texte]</p>
+        <p>Johann Wolfgang Goethe: Faust. Historisch-kritische Edition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. Frankfurt am Main, Weimar, Würzburg 2016, <span span class="pure-fade-50">Sigle</span>, <span span class="pure-fade-50">Seite</span> (<span span class="pure-fade-50">Ansicht</span>), <span span class="pure-fade-50">URL</span>, <span span class="pure-fade-50">Abrufdatum</span>.</p>
+        <p>Beispiel:</p>
+        <p>Johann Wolfgang Goethe: Faust. Historisch-kritische Edition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. Frankfurt am Main, Weimar, Würzburg 2016, 1 H.5, S.&nbsp;1 (Faksimile / dokumentarische Transkription), URL: http://beta.faustedition.net/documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&page=1&view=facsimile_document, abgerufen am 11.2.2016.</p>
+        <p>Hinweis für Zitationen in gedruckten Publikationen: Die Siglen enthalten einen Punkt verstehen sich aber wie die aus gedruckten Editionen bekannten Siglen, z.B.: „1 H<sup>5</sup>“.</p>
+        <p>Mit einer der nächsten Beta-Versionen auf zu jeder Seite eine automatisch generierte Zitierempfehlung abrufbar sein.</p>
+
         
         <!-- <h2 id="updates">Updates</h2>
         <?php // NOTE: see links in index and imprint ?>
