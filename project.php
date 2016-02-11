@@ -68,7 +68,7 @@
         </div>
         <div class="pure-u-1-3 pure-left">
 
-                    <h3>Externe Redaktoren</h3>
+                    <h3>Korrekturleser</h3>
                     <p>
                     Dr. Renate Moering<br>
                       Wolfgang Ritschel
