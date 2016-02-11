@@ -86,7 +86,7 @@
         <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
             jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ ist dies der Druck im achten Band der
             ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des
-            ‚Faust II‘ liegt die 187 Blätter umfassende sogenannte große Reinschrift zugrunde
+            ‚Faust II‘ liegt die 187 Blätter umfassende große Reinschrift zugrunde
             (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien
             wie bei den <a href="transcription_guidelines#txt_Transkr_Hss">textuellen
                 Transkriptionen</a>. Im Unterschied zu den übrigen Textwiedergaben sind die
