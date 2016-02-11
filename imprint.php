@@ -7,7 +7,7 @@
             <p>Anbieter i.S.d. § 5 TMG</p>
 
             <p>
-              <strong style="font-weight: bold; font-style: normal;">Digitale Faust-Edition</strong><br>
+              <strong style="font-weight: bold; font-style: normal;">Faust-Edition</strong><br>
               Frankfurter Goethe-Haus<br>
               Freies Deutsches Hochstift<br>
               Großer Hirschgraben 23-25<br>
