@@ -13,6 +13,8 @@ function inurl($substring) {
 elseif (inurl('/print/faust'))  	$target = 'intro#lesetext';
 elseif (inurl('/print/text')) 		$target = 'intro#lesetext';
 elseif (inurl('/print/')) 		$target = 'intro#drucke';
+elseif (inurl('/meta/')) 		$target = 'metadata';
+elseif (inurl('view=structure')) 	$target = 'metadata';
 elseif (inurl('genesis_faust')) 	$target = 'intro#genesis_part';
 elseif (inurl('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
 elseif (inurl('genesis')) 		$target = 'intro#genesis';
