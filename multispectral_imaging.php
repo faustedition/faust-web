@@ -88,4 +88,8 @@
     </article>
 </section>
 </div></div></div>
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Ausgabe", link: "intro"}, {caption: "Multispektrale Bildverarbeitung"}]));
+</script>
 <?php include "includes/footer.php"; ?>

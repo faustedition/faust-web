@@ -13,7 +13,7 @@
             </p>
 
             <p>
-              <strong>Thorsten Vitt </strong><br>
+              <strong>Thorsten Vitt</strong><br>
               Julius-Maximilians-Universität Würzburg
             </p>
 

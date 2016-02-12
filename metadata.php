@@ -114,4 +114,8 @@
         </div>
     </article>
 </section>
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Ausgabe", link: "intro"}, {caption: "Metadaten", link: "metadata"}]));
+</script>
 <?php include "includes/footer.php"; ?>

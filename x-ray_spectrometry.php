@@ -63,4 +63,8 @@
             Auswertung der Messergebnisse dauert zurzeit noch an.</p>
     </article>
 </section>
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Ausgabe", link: "intro"}, {caption: "Röntgenfluoreszenzanalyse"}]));
+</script>
 <?php include "includes/footer.php"; ?>

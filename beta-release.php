@@ -1,7 +1,7 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <h1>Die Beta-Version (Release am 15.2.2016)</h1>
+        <h1>Die Beta-Version (Release am 15. Februar 2016)</h1>
         <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern
             eine Beta-Version. Mit den drei Säulen „Archiv“, „Genese“ und „Text“ sind hier jedoch 
             bereits alle grundlegenden Funktionalitäten realisiert.</p>
@@ -51,4 +51,8 @@
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
     </article>
 </section>
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Ausgabe", link: "intro"}, {caption: "Beta-Version"}]));
+</script>
 <?php include "includes/footer.php"; ?>
