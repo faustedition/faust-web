@@ -157,6 +157,8 @@ dt {
     border-right-width: 12pt;
 }
 
+/* # Witnesses */
+.varcount-0  { border-color:  #fff; } /* error, though */
 .varcount-1  { border-color:  #fff; }
 .varcount-2  { border-color:  #eee; }
 .varcount-3  { border-color:  #ddd; }
@@ -174,6 +176,7 @@ dt {
 .varcount-15 { border-color:  #111; }
 .varcount-16 { border-color:  #000; }
 
+/* # Variants – ie different from current */
 .variants-0 { background-color: rgb(255,255,255); }
 .variants-1 { background-color: rgb(245,245,245); }
 .variants-2 { background-color: rgb(235,235,235); }
