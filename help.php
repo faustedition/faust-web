@@ -15,7 +15,7 @@ elseif (inurl('/print/text')) 		$target = 'intro#lesetext';
 elseif (inurl('/print/')) 		$target = 'intro#drucke';
 elseif (inurl('genesis_faust')) 	$target = 'intro#genesis_part';
 elseif (inurl('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
-elseif (inurl('genesis')) 		$target = 'intro#genesis_overview';
+elseif (inurl('genesis')) 		$target = 'intro#genesis';
 elseif (inurl('search')) 		$target = 'intro#volltextsuche';
 elseif (inurl('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inurl('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
