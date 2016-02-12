@@ -21,8 +21,8 @@ elseif (inurl('genesis')) 		$target = 'intro#genesis';
 elseif (inurl('search')) 		$target = 'intro#volltextsuche';
 elseif (inurl('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inurl('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
-elseif (inurl('view=document')) 	$target = 'transcription_guidelines#doctranscript';
-elseif (inurl('view=facsimile_document')) 	$target = 'transcription_guidelines#doctranscript';
+elseif (inurl('view=document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
+elseif (inurl('view=facsimile_document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
 
 
 if ($target) {
