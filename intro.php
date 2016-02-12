@@ -158,7 +158,7 @@
         <h3>Siglen der Handschriften zum Faust&nbsp;II</h3>
         <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
             gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
-            Zählung durch Hinzufüfung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
+            Zählung durch Hinzufügung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
             ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
             H.0a usw.).</p>
         
@@ -251,8 +251,8 @@
         <p>Johann Wolfgang Goethe: Faust. Historisch-kritische Edition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. <span class="pure-fade-50">Version</span>. Frankfurt am Main, Weimar, Würzburg 2016, <span class="pure-fade-50">Sigle</span>, <span class="pure-fade-50">Seite</span> (<span class="pure-fade-50">Ansicht</span>), <span class="pure-fade-50">URL</span>, <span class="pure-fade-50">Abrufdatum</span>.</p>
         <p>Beispiel:</p>
         <p>Johann Wolfgang Goethe: Faust. Historisch-kritische Edition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. Beta-Version 1. Frankfurt am Main, Weimar, Würzburg 2016, 1 H.5, S.&nbsp;1 (Faksimile / dokumentarische Transkription), URL: <a href="http://beta.faustedition.net/documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&amp;page=1&amp;view=facsimile_document">http://beta.faustedition.net/documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&amp;page=1&amp;view=facsimile_document</a>, abgerufen am 11. Februar 2016.</p>
-        <p>Hinweis für Zitationen in gedruckten Publikationen: Die Siglen enthalten einen Punkt verstehen sich aber wie die aus gedruckten Editionen bekannten Siglen, z.B.: „1 H<sup>5</sup>“.</p>
-        <p>Mit einer der nächsten Beta-Versionen auf zu jeder Seite eine automatisch generierte Zitierempfehlung abrufbar sein.</p>
+        <p>Hinweis für Zitationen in gedruckten Publikationen: Die Siglen enthalten einen Punkt, verstehen sich aber wie die aus gedruckten Editionen bekannten Siglen, z.B.: „1 H<sup>5</sup>“.</p>
+        <p>Mit einer der nächsten Beta-Versionen wird zu jeder Seite eine automatisch generierte Zitierempfehlung abrufbar sein.</p>
 
         
         <!-- <h2 id="updates">Updates</h2>
