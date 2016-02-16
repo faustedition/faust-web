@@ -16,7 +16,8 @@
             sollen. Die Texte und Angaben in den Handschriftenbeschreibungen (Metadaten) 
             werden noch überarbeitet. In der
             Version 1.0 sollen ergänzend Angaben über Datierungen und die relative
-            Chronologie aufgenommen werden. Die Darstellung der textuellen Transkriptionen 
+            Chronologie aufgenommen werden, zudem werden die Transkriptionen mit Persistent 
+            Identifiern versehen. Die Darstellung der textuellen Transkriptionen 
             ist automatisch generiert und wird zurzeit noch überprüft. Etwaige Fehler können per E-Mail an Gerrit Brüning (<a
                 href="mailto:bruening@faustedition.de">bruening@faustedition.de</a>) gemeldet
             werden.</p>
