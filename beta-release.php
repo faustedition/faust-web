@@ -46,6 +46,7 @@
             >GitHub</a> verwaltet. Eventuelle Fehler oder Mängel der Web-Funktionalität können
             <a href="https://github.com/faustedition/faust-web/issues">hier</a> gemeldet
             werden.</p>
+        <p>Wenn Sie über <strong>neue Versionen</strong> der Ausgabe informiert werden wollen, können Sie sich <a href="http://www.listserv.dfn.de/cgi-bin/wa?SUBED1=faustedition-news&amp;X=&amp;Y=">hier in eine Ankündigungsliste</a> eintragen.</p>
         <p>Rosemarie Schillemeit gewährte umfassenden Einblick in die Materialien zur Faust-Genese im Nachlass
             <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
             Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem

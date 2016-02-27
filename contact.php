@@ -20,7 +20,12 @@
             <p>
               Mail: <a href="mailto:info@faustedition.de" title="E-Mail">info@faustedition.de</a>
             </p>
+
+            <p>
+               Wenn Sie über neue Versionen der Ausgabe informiert werden wollen, können Sie sich <a href="http://www.listserv.dfn.de/cgi-bin/wa?SUBED1=faustedition-news&amp;X=&amp;Y=">hier in eine Ankündigungsliste</a> eintragen.
+            </p>
         
+
         </article>
         
         <div class="pure-u-1-5"></div>
