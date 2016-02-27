@@ -94,6 +94,7 @@
           <h3>Historisch-kritische Edition</h3>
           <p>
             Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
+            unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida,  Thorsten Vitt und Moritz Wissenbach<br>
             Frankfurt am Main, Weimar, Würzburg 2016
           </p>
           <p>
