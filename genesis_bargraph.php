@@ -98,7 +98,7 @@
           });
 
           // set breadcrumbs
-          if(sceneLineMappingId.split(".")[0] === "1") {
+          if(sceneLineMappingId && sceneLineMappingId.split(".")[0] === "1") {
             document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneTitle}]));
           } else {
             document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneTitle}]));
