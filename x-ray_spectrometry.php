@@ -54,17 +54,21 @@
             GSA 29/553a,I &ndash; 
             GSA 68/152, St. 63 und 153
         </p>
-        <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2).</p>
-        <p>Einen ersten Einblick in die den Messungen zugrundeliegenden Hypothesen und
-            Fragestellungen geben <a href="bibliography#bruening_et_al2013"
-                data-bib-uri="faust://bibliography/bruening_et_al2013"
-                >Brüning u.a. 2013</a>; ebd. ein Beispiel für
-            mögliche Datierungen, die mit den Messergebnissen begründet werden können. Die
+        <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2). Die
             Auswertung der Messergebnisse dauert zurzeit noch an.</p>
+        <h2>Weiterführende Hinweise</h2>
+        <ul>        
+            <li<a href="bibliography#bruening_et_al2013"
+                data-bib-uri="faust://bibliography/bruening_et_al2013"
+                >Brüning u.a. 2013</a> (mit einem Beispiel für
+            mögliche Datierungen, die mit den Messergebnissen begründet werden können) </li>
+            <li><a href="http://www.itug.de/Jahrestagung2015.html">Vortrag auf Einladung der Freundesgesellschaft des GSA im Rahmen der 
+                22. Jahrestagung der ITUG (Weimar 2015)</a></li>
+        </ul>    
     </article>
 </section>
 <script type="text/javascript">
     document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Röntgenfluoreszenzanalyse"}]));
+    [{caption: "Ausgabe", link: "intro"}, {caption: "Röntgenfluoreszenzanalyse"}]));
 </script>
 <?php include "includes/footer.php"; ?>
