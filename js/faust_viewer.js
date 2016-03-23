@@ -607,6 +607,16 @@ var createDocumentViewer = (function(){
           // replace window location with current parameters
           updateLocation();
 
+          // update the PDF button (DEBUG)
+          try {
+            var pdfButton = document.getElementById('diplomatic-pdf-button');
+            pdfButton.removeAttribute('disabled');
+            pdfButton.href = doc.faustUri.replace(/^faust:\/\/xml\/document/, 'transcript/diplomatic') + '/page_' + state.page + '.pdf';
+          } catch (e) {
+            // no PDF button -> NOP
+            console.log(e);
+          }
+
           // set breadcrumbs
 
           // get breadcrumbs element
