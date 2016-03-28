@@ -466,8 +466,11 @@ a.pageno {
   cursor: pointer;
   padding-left: 0.5ex;
 }
-
-svg.diplomatic .element-line {
+/*
+ * The following rule causes much too wide line spacing when used during SVG
+ * generation, so we enable it only for SVG display (by means of .main-content)
+ */
+.main-content svg.diplomatic .element-line {
   text-shadow: -0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em -0.5em 0.5em rgba(255, 255, 255, 0.5), 0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em 0.5em 0.5em rgba(255, 255, 255, 0.5);
 }
 g.element-line .bgBox {
