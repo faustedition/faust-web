@@ -609,9 +609,12 @@ var createDocumentViewer = (function(){
 
           // update the PDF button (DEBUG)
           try {
-            var pdfButton = document.getElementById('diplomatic-pdf-button');
+            var pdfButton = document.getElementById('diplomatic-pdf-button'),
+                debugButton = document.getElementById('diplomatic-debug-button');
             pdfButton.removeAttribute('disabled');
             pdfButton.href = doc.faustUri.replace(/^faust:\/\/xml\/document/, 'transcript/diplomatic') + '/page_' + state.page + '.pdf';
+            debugButton.removeAttribute('disabled');
+            debugButton.href = "debug.html" + window.location.search;
           } catch (e) {
             // no PDF button -> NOP
             console.log(e);
