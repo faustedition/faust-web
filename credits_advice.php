@@ -41,6 +41,7 @@
             <li> Wolfgang Lukas </li>
             <li> Christoph Mackert </li>
             <li> Sebastian Mangold </li>
+            <li>Wolfgang Mecklenburg</li>
             <li>Alexander Mehler</li>
             <li> Ulrike Müller-Harang </li>
             <li>Rüdiger Nutt-Kofoth</li>
