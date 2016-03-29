@@ -64,6 +64,7 @@
             mögliche Datierungen, die mit den Messergebnissen begründet werden können) </li>
             <li><a href="http://www.itug.de/Jahrestagung2015.html">Vortrag auf Einladung der Freundesgesellschaft des GSA im Rahmen der 
                 22. Jahrestagung der ITUG (Weimar 2015)</a></li>
+            <li>Wolfgang Hirsch: <a href="http://www.tlz.de/web/zgt/kultur/detail/-/specific/Das-letzte-Raetsel-um-Goethes-Faust-II-1374848641">Das letzte Rätsel um Goethes Faust II</a>, in: Thüringische Landeszeitung vom 7. Oktober 2015.</li>
         </ul>    
     </article>
 </section>
