@@ -413,6 +413,8 @@ var createDocumentViewer = (function(){
           var loadedDocs = {};
           var prevPage = pageNum;
 
+          try {
+
           // load actual transcript html files
           var loadDocs = function(filename) {
             // if no html files are associated, return undefined
@@ -471,12 +473,16 @@ var createDocumentViewer = (function(){
             Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
               var pages, filename;
               // parse json file ...
-              pages = JSON.parse(pagesJson);
-              // ... and extract information for current witness
-              doc.printLinks = pages[doc.faustUri];
-              //
-              // try to load document for current page
-              loadDocs(findSection(pageNum));
+              try {
+                pages = JSON.parse(pagesJson);
+                // ... and extract information for current witness
+                doc.printLinks = pages[doc.faustUri];
+                //
+                // try to load document for current page
+                loadDocs(findSection(pageNum));
+              } catch (e) {
+                Faust.error("Fehler beim Laden des Dokuments", e);
+              }
             });
           }
           
@@ -501,6 +507,9 @@ var createDocumentViewer = (function(){
 
             return printParentNode;
           };
+          } catch (e) {
+            Faust.error("Fehler beim Laden des Textuellen Transkripts.", e);
+          }
         };
       })();
 
