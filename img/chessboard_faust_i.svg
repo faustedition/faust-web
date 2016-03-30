@@ -300,7 +300,7 @@
         <a xlink:href="genesis_bargraph?rangeStart=4223&amp;rangeEnd=4398">
           <rect x="600" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnachtstraum"></rect>
         </a>
-        <a xlink:href="genesis_bargraph?rangeStart=4389&amp;rangeEnd=4399">
+        <a xlink:href="genesis_bargraph?rangeStart=4398&amp;rangeEnd=4399">
           <rect x="625" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Trüber Tag. Feld"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4399&amp;rangeEnd=4404">
