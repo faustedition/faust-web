@@ -38,15 +38,15 @@ h3.head, .body > .div > .head {
 
 /* Versnummern */
 
-a.lineno {
+.print a.lineno {
   margin-left: -5em;
   width: 4.5em;
   float: left;
   position: relative;
   text-align: right;
   text-indent: 0pt;
-  color: #777;
-  font-weight: lighter;
+  color: #aaa;
+  font-weight: normal;
   font-size: 80%;  
 }
 
@@ -72,7 +72,7 @@ div:hover > a.lineno, a.lineno:hover {
 .pageno {
     float: right;
     padding-right: 12pt;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     font-size: smaller;
     color:  #805F40;
 }

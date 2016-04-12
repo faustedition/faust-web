@@ -92,7 +92,7 @@ header .breadcrumbs a:first-child {
 header #current {
   padding-left:0.5em;
   font-size: 1.66em;
-  font-weight: 500;
+  font-weight: normal; /* 500; */
   border-left: 1px solid #CCC;
   overflow: hidden;
   text-overflow: ellipsis;
