@@ -358,12 +358,9 @@ div.text {
   margin-bottom: 1.5em;
 }
 
-.l.rend-indented {
-	text-indent: inherit;
-}
-.rend-indented {
-  text-indent: 2em;
-}
+.sp { text-indent: 0.5em; }
+.sp > .speaker { text-indent: 0; }
+.lg.rend-indented { text-indent: 2em; }
 
 .l .emph {
 	font-style: italic;
