@@ -36,6 +36,33 @@ h3.head, .body > .div > .head {
 	padding: 0.5ex 0ex;
 }
 
+/* Versnummern */
+
+a.lineno {
+  margin-left: -5em;
+  width: 4.5em;
+  float: left;
+  position: relative;
+  text-align: right;
+  text-indent: 0pt;
+  color: #777;
+  font-weight: lighter;
+  font-size: 80%;  
+}
+
+a.lineno.invisible {
+  opacity:0;
+}
+
+div:hover > a.lineno, a.lineno:hover {
+  opacity: 1 !important;  
+}
+
+:target a.lineno, .target a.lineno {
+  opacity:1;
+  color: #FABE00;  /* someone a better idea? */
+}
+
 
 /* Seitenzahlen */
 .pb {
@@ -49,6 +76,14 @@ h3.head, .body > .div > .head {
     font-size: smaller;
     color:  #805F40;
 }
+
+a.pageno {
+    float: right;
+    font-weight: normal;
+    font-size: smaller;
+    color:  #805F40;
+}
+
 
 .speaker {    
 	padding-top: 1.5ex;
@@ -87,9 +122,6 @@ ul.toc {
 	margin: 0em;	/* statt kursivausgleich */
 }
 
-.l.rend-indented {
-	text-indent: inherit;
-}
 a.sigil {
 	float: none !important;	/* rm from basic_layout.css */
 }
@@ -120,6 +152,7 @@ a.sigil {
  * 
  */
  
+.stage { font-style: italic; }
 .stage > .hi { 
 	margin-left: 0.1em;
 }
@@ -253,6 +286,90 @@ abbr.app {
 	transition: all 0.5s ease-out;
 }
 
+
+/* Navigationsbalken Textbereich */
+
 .print nav .fa-li {
     top: .35em;
 }
+
+.print nav {
+  white-space: normal;
+  height: initial; 
+}
+
+.print nav.print-navigation a {  
+  border: none;
+  color: black;
+}
+
+.print .icons-ul {
+  margin: 1em 1em 1em 2em;
+  padding: 0px;
+}
+
+
+################
+
+
+
+.fw {
+  color: #ddd;
+}
+
+.centered {
+  text-align: center;
+}
+
+.letter-spaced {
+  letter-spacing: 1pt;
+}
+
+.print a {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border:none;
+}
+
+a.sigil {
+  float: right;
+  color: #777;
+}
+
+div:hover > a.sigil {
+  color: black;
+}
+
+.variants {
+  border: 1px solid black;
+  padding: 0em 0.25em;
+}
+
+.variants > * {
+  clear: right;
+}
+
+.lg, .p, .head {
+  margin-bottom: 0.75em;
+}
+
+div.text {
+  margin-bottom: 1.5em;
+}
+
+.l.rend-indented {
+	text-indent: inherit;
+}
+.rend-indented {
+  text-indent: 2em;
+}
+
+.l .emph {
+	font-style: italic;
+}
+.stage .hi, .stage .emph {
+	font-variant: small-caps;
+	font-style: normal;
+}
+
