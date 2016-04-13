@@ -355,15 +355,15 @@ div.text {
   margin-bottom: 1.5em;
 }
 
-.sp { text-indent: 0.5em; }
+.sp { text-indent: 1.5em; }
 .sp > .speaker { text-indent: 0; }
-.lg.rend-indented { text-indent: 2em; }
+.lg.rend-indented { text-indent: 3em; }
 
 .l .emph {
 	font-style: italic;
 }
+
 .stage .hi, .stage .emph {
 	font-variant: small-caps;
 	font-style: normal;
 }
-
