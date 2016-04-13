@@ -69,19 +69,12 @@ div:hover > a.lineno, a.lineno:hover {
 	clear: right;
 }
 
-.pageno {
-    float: right;
-    padding-right: 12pt;
-    /* font-weight: lighter; */
-    font-size: smaller;
-    color:  #805F40;
-}
-
 a.pageno {
     float: right;
-    font-weight: normal;
+    padding-right: 12pt;
     font-size: smaller;
-    color:  #805F40;
+    color:  #aaa;
+    font-weight: normal !important;
 }
 
 
