@@ -296,6 +296,10 @@ abbr.app {
   color: black;
 }
 
+nav.print-navigation {
+  position: fixed;
+}
+
 .print .icons-ul {
   margin: 1em 1em 1em 2em;
   padding: 0px;
