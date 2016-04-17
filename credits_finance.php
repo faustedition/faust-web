@@ -4,7 +4,7 @@
         <h2>Finanzielle Förderung</h2>
         <p>Das Projekt wurde von 2009 bis 2014 von der Deutsche Forschungsgemeinschaft finanziell
             getragen.</p>
-        <p>Die Effi Biedrzynski-Stiftung stellte eine namhafte Summe zur Förderung des Projekts zur
+        <p>Die Richard und Effi Biedrzynski-Stiftung stellte eine namhafte Summe zur Förderung des Projekts zur
             Verfügung.</p>
     </article>
 </section>
