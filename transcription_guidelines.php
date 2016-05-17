@@ -75,7 +75,7 @@
         <p>Häufig sind in flüchtigen eigenhändigen Entwürfen Teile einzelner Wörter, gelegentlich
             ganze nachfolgende Wörter, nicht mit distinkten Buchstaben realisiert, sondern
             durch 
-            unspezifische Bögen werden mit der entsprechenden Folge distinkter Buchstaben
+            unspezifische Bögen. Diese werden mit der entsprechenden Folge distinkter Buchstaben
             wiedergegeben. Echte Unsicherheiten werden gekennzeichnet.</p>
         <p>Verwischte, aber lesbare Bleistiftzüge werden nicht besonders gekennzeichnet, das gilt
             auch bei Bleistiftzügen, die durch Tintenüberschreibung überdeckt
