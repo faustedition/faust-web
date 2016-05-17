@@ -138,6 +138,8 @@
         <p>Bei Überschreibungen auf der Zeile (Daraufschreibungen) wird der zuerst geschriebene Text
             mit kleineren, tiefgestellten, der daraufgeschriebene mit größeren, hochgestellten
             Buchstaben wiedergegeben: <sub>a</sub><sup><big>b</big></sup>.</p>
+        <p>Fixierungen von mit Bleistift geschriebenen Passagen durch Tintennachzug und alle anderen Formen der Verdeutlichung 
+        von Zeichen werden durch Textverdopplung wiedergegeben.</p>
         <p>Radierte und absichtlich verwischte Zeichen erscheinen in Konturschrift. Die Umwandlung
             eines Buchstabens in einen anderen durch Rasur (m→n, ß→ſ u. ä.) wird nicht als 
             Rasur, sondern als Daraufschreibung behandelt.</p>
