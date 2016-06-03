@@ -340,9 +340,24 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
 
                 barEnd = Math.min(end - start + 1, numberOfLines - barStart);
 
+                function toolTipLabel(type, start, stop, sigil, page) {
+                  var typeLabels = { 
+                        verseLine: "handschriftliche Fassung",
+                        verseLineUncertain: "handschriftliche Fassung (unsicher)",
+                        print: "gedruckte Fassung",
+                        paralipomena: "Paralipomenon",
+                        paralipomenaUncertain: "Paralipomenon (unsicher)"
+                    },
+                    typeLabel = typeLabels[type];
+                    if (type === 'print') { typeLabel = typeLabels.print; }
+                    return typeLabel + " von v. " + start + " – " + stop + " in " + sigil + ", S. " + page;
+                }
+                
+
+
                 // create rectangle for interval
                 var relatedLines = createSvgElement({name: "rect", 
-                                                     attributes: [["tooltiptext", "[" + start + "," + end + "]"],
+                                                     attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, start, end, witness.sigil, interval.page)],
                                                                   ["class", "show-tooltip"],
                                                                   ["x", barStart * horizontalDistance],
                                                                   ["y", "0"],
