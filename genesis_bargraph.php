@@ -342,15 +342,15 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
 
                 function toolTipLabel(type, start, stop, sigil, page) {
                   var typeLabels = { 
-                        verseLine: "handschriftliche Fassung",
-                        verseLineUncertain: "handschriftliche Fassung (unsicher)",
-                        print: "gedruckte Fassung",
-                        paralipomena: "Paralipomenon",
-                        paralipomenaUncertain: "Paralipomenon (unsicher)"
+                        verseLine: "handschriftliche Fassung von",
+                        verseLineUncertain: "handschriftliche Fassung (unsicher) von",
+                        print: "gedruckte Fassung von",
+                        paralipomena: "Paralipomenon zu",
+                        paralipomenaUncertain: "Paralipomenon (unsicher) zu"
                     },
                     typeLabel = typeLabels[type];
                     if (type === 'print') { typeLabel = typeLabels.print; }
-                    return typeLabel + " von v. " + start + " – " + stop + " in " + sigil + ", S. " + page;
+                    return typeLabel + " v. " + start + " – " + stop + " in " + sigil + ", S. " + page;
                 }
                 
 
