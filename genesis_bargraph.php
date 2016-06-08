@@ -350,7 +350,9 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
                     },
                     typeLabel = typeLabels[type];
                     if (type === 'print') { typeLabel = typeLabels.print; }
-                    return typeLabel + " v. " + start + " – " + stop + " in " + sigil + ", S. " + page;
+                    var result = typeLabel + " v. " + start + " – " + stop + " in " + sigil;
+                    if (type !== 'print') { result += ", S. " + page; }
+                    return result;
                 }
                 
 
