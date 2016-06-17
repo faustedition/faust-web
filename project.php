@@ -94,9 +94,8 @@
           </p>
       </article>
       </section>
-</div></div></div>
-<script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Das Projekt", link: "project"}]));
-</script>
+      <script type="text/javascript">
+          document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+              [{caption: "Das Projekt", link: "project"}]));
+      </script>
       <?php include "includes/footer.php"; ?>
