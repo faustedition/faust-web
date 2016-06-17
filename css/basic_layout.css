@@ -588,11 +588,11 @@ cite {
 }
 
 #genetic-bar-diagram-verse-bars rect.verse.variant {
-  fill:rgb(250, 200, 50);
+  fill:rgb(250, 230, 75);
 }
 
 #genetic-bar-diagram-verse-bars rect.verse.uncertain {
-  fill:rgb(250, 210, 100);
+  fill:rgb(250, 240, 150);
 }
 
 #genetic-bar-diagram-verse-bars rect.paralipomena {
