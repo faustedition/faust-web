@@ -1,3 +1,4 @@
+<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
   
