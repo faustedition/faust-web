@@ -33,9 +33,11 @@
         </ul>
     </article>
 </section>
+
 <script type="text/javascript">
     document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
         [{caption: "Projekt", link: "project"}, {caption: "Danksagung", link: "credits"},
          {caption: "Besitzer von Handschriften"}]));
 </script>
+
 <?php include "includes/footer.php"; ?>

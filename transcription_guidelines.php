@@ -1,12 +1,7 @@
 <?php include "includes/header.php"; ?>
-<div class="main-content-container" style="margin-bottom:0em;">
-<div id="main-content" class="main-content">
-  <div style="display: block;" class="archive-content view-content" id="archive-content">
 <section class="center pure-g-r">
     
     <article class="pure-u-1">
-        
-        <h1>Transkriptionsprinzipien</h1>
         <p>Die Transkription der Handschriften wird in verschiedenen Formen angeboten, die entweder
             auf eine dokumentarische Wiedergabe (dokumentarische Transkription) oder auf eine
             textuelle Deutung der handschriftlichen Verhältnisse zielen (textuelle Transkription).
@@ -243,7 +238,6 @@
     </article>
     
 </section>
-</div></div></div>
 <script type="text/javascript">
     document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
         [{caption: "Ausgabe", link: "intro"}, {caption: "Transkriptionsprinzipien"}]));
