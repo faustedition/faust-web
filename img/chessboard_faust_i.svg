@@ -126,7 +126,7 @@
       </g>
 
       <g transform="translate(0,75)">
-        <text x="-10" y="30" class="rowText">1797-1801</text>
+        <text x="-10" y="30" class="rowText">1797–1801</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -300,7 +300,7 @@
         <a xlink:href="genesis_bargraph?rangeStart=4223&amp;rangeEnd=4398">
           <rect x="600" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnachtstraum"></rect>
         </a>
-        <a xlink:href="genesis_bargraph?rangeStart=4389&amp;rangeEnd=4399">
+        <a xlink:href="genesis_bargraph?rangeStart=4398&amp;rangeEnd=4399">
           <rect x="625" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Trüber Tag. Feld"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4399&amp;rangeEnd=4404">

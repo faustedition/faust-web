@@ -1,5 +1,5 @@
 /* Die richtige Schrift auch auf der Testinstanz ... */
-@import url(//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+/* @import url(//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic); */
 
 
 
@@ -36,19 +36,47 @@ h3.head, .body > .div > .head {
 	padding: 0.5ex 0ex;
 }
 
+/* Versnummern */
+
+.print a.lineno {
+  margin-left: -5em;
+  width: 4.5em;
+  float: left;
+  position: relative;
+  text-align: right;
+  text-indent: 0pt;
+  color: #aaa;
+  font-weight: normal;
+  font-size: 80%;  
+}
+
+a.lineno.invisible {
+  opacity:0;
+}
+
+div:hover > a.lineno, a.lineno:hover {
+  opacity: 1 !important;  
+}
+
+:target a.lineno, .target a.lineno {
+  opacity:1;
+  color: #FABE00;  /* someone a better idea? */
+}
+
 
 /* Seitenzahlen */
 .pb {
 	clear: right;
 }
 
-.pageno {
+a.pageno {
     float: right;
     padding-right: 12pt;
-    font-weight: lighter;
     font-size: smaller;
-    color:  #805F40;
+    color:  #aaa;
+    font-weight: normal !important;
 }
+
 
 .speaker {    
 	padding-top: 1.5ex;
@@ -87,9 +115,6 @@ ul.toc {
 	margin: 0em;	/* statt kursivausgleich */
 }
 
-.l.rend-indented {
-	text-indent: inherit;
-}
 a.sigil {
 	float: none !important;	/* rm from basic_layout.css */
 }
@@ -112,7 +137,7 @@ a.sigil {
     margin-bottom: 0 !important;
 }
 .lg > *:last-child {
-    padding-bottom: 1ex;
+    padding-bottom: 2ex;
 }
 
 /*
@@ -120,6 +145,7 @@ a.sigil {
  * 
  */
  
+.stage { font-style: italic; }
 .stage > .hi { 
 	margin-left: 0.1em;
 }
@@ -157,6 +183,8 @@ dt {
     border-right-width: 12pt;
 }
 
+/* # Witnesses */
+.varcount-0  { border-color:  #fff; } /* error, though */
 .varcount-1  { border-color:  #fff; }
 .varcount-2  { border-color:  #eee; }
 .varcount-3  { border-color:  #ddd; }
@@ -174,6 +202,7 @@ dt {
 .varcount-15 { border-color:  #111; }
 .varcount-16 { border-color:  #000; }
 
+/* # Variants – ie different from current */
 .variants-0 { background-color: rgb(255,255,255); }
 .variants-1 { background-color: rgb(245,245,245); }
 .variants-2 { background-color: rgb(235,235,235); }
@@ -250,3 +279,91 @@ abbr.app {
 	transition: all 0.5s ease-out;
 }
 
+
+/* Navigationsbalken Textbereich */
+
+.print nav .fa-li {
+    top: .35em;
+}
+
+.print nav {
+  white-space: normal;
+  height: initial; 
+}
+
+.print nav.print-navigation a {  
+  border: none;
+  color: black;
+}
+
+nav.print-navigation {
+  position: fixed;
+}
+
+.print .icons-ul {
+  margin: 1em 1em 1em 2em;
+  padding: 0px;
+}
+
+
+################
+
+
+
+.fw {
+  color: #ddd;
+}
+
+.centered {
+  text-align: center;
+}
+
+.letter-spaced {
+  letter-spacing: 1pt;
+}
+
+.print a {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border:none;
+}
+
+a.sigil {
+  float: right;
+  color: #777;
+}
+
+div:hover > a.sigil {
+  color: black;
+}
+
+.variants {
+  border: 1px solid black;
+  padding: 0em 0.25em;
+}
+
+.variants > * {
+  clear: right;
+}
+
+.lg, .p, .head {
+  margin-bottom: 0.75em;
+}
+
+div.text {
+  margin-bottom: 1.5em;
+}
+
+.sp { text-indent: 1.5em; }
+.sp > .speaker { text-indent: 0; }
+.lg.rend-indented { text-indent: 3em; }
+
+.l .emph {
+	font-style: italic;
+}
+
+.stage .hi, .stage .emph {
+	font-variant: small-caps;
+	font-style: normal;
+}

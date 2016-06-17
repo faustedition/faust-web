@@ -7,7 +7,7 @@
             <p>Anbieter i.S.d. § 5 TMG</p>
 
             <p>
-              <strong style="font-weight: bold; font-style: normal;">Digitale Faust-Edition</strong><br>
+              <strong style="font-weight: bold; font-style: normal;">Faust-Edition</strong><br>
               Frankfurter Goethe-Haus<br>
               Freies Deutsches Hochstift<br>
               Großer Hirschgraben 23-25<br>
@@ -45,7 +45,7 @@
 
             <h3>Besondere Nutzungsbedingungen</h3>
             <p>Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Nummern 1. bis 4. abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.</p>
-            <p>Zum Zitieren von Inhalten dieser Website s. <a href="intro#cite">Zitierempfehlung</a>, zur Versionierung s. <a href="intro#updates">Updates</a>.</p>
+            <p>Zum Zitieren von Inhalten dieser Website s. <a href="intro#cite">Zitierempfehlung</a>, zur Versionierung s. <a href="beta-release">Beta-Version</a>.</p>
 
             <p><small>Quelle: Vorliegender Text basiert auf der Disclaimer-Vorlage von www.JuraForum.de.</small></p>
 

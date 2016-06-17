@@ -2,7 +2,6 @@
       <section class="center pure-g-r">
         
         <article class="pure-u-1 pure-center">
-            <h1>Werkgenese retrospektiv</h1>
 
             <?php include "img/chessboard_faust_ii.svg";?>
         

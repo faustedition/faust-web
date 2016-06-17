@@ -314,4 +314,8 @@
             Gerhard Femmel sowie auf Einzelstudien, maßgeblich von David Lee, aufbauen.</p>
     </article>
 </section>
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Ausgabe", link: "intro"}, {caption: "Wasserzeichenaufnahmen"}]));
+</script>
 <?php include "includes/footer.php"; ?>

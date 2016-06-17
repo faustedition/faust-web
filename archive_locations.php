@@ -35,8 +35,10 @@
           var i;
 
           // select only non-print witnesses from selected repository 
+          var HERMAPHRODITE = "archival/dla_marbach/Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.xml"; // print + manuscript
+          var TEST = "test/test.xml"
           var repositoryNonPrintEntries = documentMetadata.metadata.filter(function(metadata) {
-            if( !(metadata.type === "print") ) {
+            if( !(metadata.type === "print" || metadata.document === TEST) || metadata.document === HERMAPHRODITE ) {
               return metadata;
             }
           });

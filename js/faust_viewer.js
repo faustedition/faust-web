@@ -134,6 +134,7 @@ var createDocumentViewer = (function(){
               doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
               doc.faustMetadata = currentMetadata;
               doc.pageCount = doc.metadata.pageCount;
+              doc.sigil = currentMetadata.sigils.idno_faustedition;
             }
           });
           
@@ -238,7 +239,7 @@ var createDocumentViewer = (function(){
           // create dom elements for metadata display
           var metadataDiv = Faust.dom.createElement({name: "div", id: "metadataDiv", class: "metadata-div"});
           var baseName = doc.metadata.documentUri.replace(/^.*\/(\S+)\.xml/, '$1');
-          Faust.xhr.getResponseText("metadata/" + baseName + '.html', function(documentHtml) {
+          Faust.xhr.getResponseText("meta/" + baseName + '.html', function(documentHtml) {
             metadataDiv.innerHTML = documentHtml;
             metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px";
           }); 
@@ -412,6 +413,8 @@ var createDocumentViewer = (function(){
           var loadedDocs = {};
           var prevPage = pageNum;
 
+          try {
+
           // load actual transcript html files
           var loadDocs = function(filename) {
             // if no html files are associated, return undefined
@@ -470,12 +473,16 @@ var createDocumentViewer = (function(){
             Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
               var pages, filename;
               // parse json file ...
-              pages = JSON.parse(pagesJson);
-              // ... and extract information for current witness
-              doc.printLinks = pages[doc.faustUri];
-              //
-              // try to load document for current page
-              loadDocs(findSection(pageNum));
+              try {
+                pages = JSON.parse(pagesJson);
+                // ... and extract information for current witness
+                doc.printLinks = pages[doc.faustUri];
+                //
+                // try to load document for current page
+                loadDocs(findSection(pageNum));
+              } catch (e) {
+                Faust.error("Fehler beim Laden des Dokuments", e);
+              }
             });
           }
           
@@ -500,6 +507,9 @@ var createDocumentViewer = (function(){
 
             return printParentNode;
           };
+          } catch (e) {
+            Faust.error("Fehler beim Laden des Textuellen Transkripts.", e);
+          }
         };
       })();
 
@@ -605,6 +615,19 @@ var createDocumentViewer = (function(){
 
           // replace window location with current parameters
           updateLocation();
+
+          // update the PDF button (DEBUG)
+          try {
+            var pdfButton = document.getElementById('diplomatic-pdf-button'),
+                debugButton = document.getElementById('diplomatic-debug-button');
+            pdfButton.removeAttribute('disabled');
+            pdfButton.href = doc.faustUri.replace(/^faust:\/\/xml\/document/, 'transcript/diplomatic') + '/page_' + state.page + '.pdf';
+            debugButton.removeAttribute('disabled');
+            debugButton.href = "debug.html" + window.location.search;
+          } catch (e) {
+            // no PDF button -> NOP
+            console.log(e);
+          }
 
           // set breadcrumbs
 

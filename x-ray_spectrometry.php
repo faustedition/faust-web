@@ -12,7 +12,9 @@
             Zusammensetzung der verwendeten Eisengallustinten sollten entstehungsgeschichtliche
             Erkenntnisse über spezielle Teile des handschriftlichen Materials gewonnen werden. Wie
             im Fall der ähnlich angelegten Untersuchungen im Rahmen der Marburger Ausgabe der Werke
-            Georg Büchners in den Jahren 2003 bis 2005 (vgl. faust://bibliography/dedner_et_al2005),
+            Georg Büchners in den Jahren 2003 bis 2005 (vgl. <a href="bibliography#dedner_et_al2005"
+                data-bib-uri="faust://bibliography/dedner_et_al2005"
+                >Dedner u.a. 2005</a>),
             wurde sowohl eine Datierung von Handschriften insgesamt als auch eine besser fundierte
             Unterscheidung von Bearbeitungsschichten innerhalb von Handschriften angestrebt, an
             denen Goethe längere Zeit oder in großen Abständen gearbeitet hat.</p>
@@ -23,7 +25,9 @@
             Element schließen lässt. Aufgrund der detektierten Energieverteilung der
             Röntgenfluoreszenzstrahlung können die vorhandenen Elemente identifiziert und auch ihr
             Mengenverhältnis bestimmt werden (für weitere Angaben zur RFA, zum eingesetzten Gerät
-            sowie zu weiterführender Literatur vgl. faust://bibliography/bruening_et_al2013).
+            sowie zu weiterführender Literatur vgl. <a href="bibliography#bruening_et_al2013"
+                data-bib-uri="faust://bibliography/bruening_et_al2013"
+                >Brüning u.a. 2013</a>).
             Eisengallustinte, wie sie auch Goethe und seine Schreiber verwendeten, wird generell auf
             die metallischen Bestandteile des zur Herstellung verwendeten Eisenvitriols hin
             untersucht. Die Differenzierung der Tinten basiert auf der Konzentration der
@@ -50,11 +54,22 @@
             GSA 29/553a,I &ndash; 
             GSA 68/152, St. 63 und 153
         </p>
-        <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2).</p>
-        <p>Einen ersten Einblick in die den Messungen zugrundeliegenden Hypothesen und
-            Fragestellungen geben faust://bibliography/bruening_et_al2013; ebd. ein Beispiel für
-            mögliche Datierungen, die mit den Messergebnissen begründet werden können. Die
+        <p>Die Ergebnisse liegen in Form eines Diagramms vor (vgl. Abb. 2). Die
             Auswertung der Messergebnisse dauert zurzeit noch an.</p>
+        <h2>Weiterführende Hinweise</h2>
+        <ul>        
+            <li<a href="bibliography#bruening_et_al2013"
+                data-bib-uri="faust://bibliography/bruening_et_al2013"
+                >Brüning u.a. 2013</a> (mit einem Beispiel für
+            mögliche Datierungen, die mit den Messergebnissen begründet werden können) </li>
+            <li><a href="http://www.itug.de/Jahrestagung2015.html">Vortrag auf Einladung der Freundesgesellschaft des GSA im Rahmen der 
+                22. Jahrestagung der ITUG (Weimar 2015)</a></li>
+            <li>Wolfgang Hirsch: <a href="http://www.tlz.de/web/zgt/kultur/detail/-/specific/Das-letzte-Raetsel-um-Goethes-Faust-II-1374848641">Das letzte Rätsel um Goethes Faust II</a>, in: Thüringische Landeszeitung vom 7. Oktober 2015.</li>
+        </ul>    
     </article>
 </section>
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+    [{caption: "Ausgabe", link: "intro"}, {caption: "Röntgenfluoreszenzanalyse"}]));
+</script>
 <?php include "includes/footer.php"; ?>

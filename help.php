@@ -1,3 +1,40 @@
+<?php
+
+
+$target = '';
+
+function inurl($substring) { 
+  $referrer = $_SERVER['HTTP_REFERER'];
+  return strpos($referrer, $substring) !== false; 
+}
+
+
+    if (inurl('archive_prints')) 	$target = 'intro#drucke';
+elseif (inurl('/print/faust'))  	$target = 'intro#lesetext';
+elseif (inurl('/print/text')) 		$target = 'intro#lesetext';
+elseif (inurl('/print/')) 		$target = 'intro#drucke';
+elseif (inurl('/meta/')) 		$target = 'metadata';
+elseif (inurl('view=structure')) 	$target = 'metadata';
+elseif (inurl('genesis_faust')) 	$target = 'intro#genesis_part';
+elseif (inurl('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
+elseif (inurl('genesis')) 		$target = 'intro#genesis';
+elseif (inurl('search')) 		$target = 'intro#volltextsuche';
+elseif (inurl('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
+elseif (inurl('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
+elseif (inurl('view=document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
+elseif (inurl('view=facsimile_document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
+
+
+if ($target) {
+  header('Location: ' . $target);
+  exit();
+}
+
+
+
+?>
+
+
       <?php include "includes/header.php"; ?>
       <section class="center pure-g-r wip">
 
@@ -10,7 +47,6 @@
           <p>Die Hilfefunktion ist noch in Arbeit und wird in einer der nächsten Versionen ergänzt.</p>
 
           <p>Einige Benutzungshinweise finden Sie <a href="intro">in der Einführung in die Ausgabe</a>.</p>
-
 
         </article>
 

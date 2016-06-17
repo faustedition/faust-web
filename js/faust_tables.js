@@ -132,7 +132,8 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
     };
   })());
 
-  concordanceManuscriptTableData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint;});
+  var HERMAPHRODITE = "faust://xml/document/archival/dla_marbach/Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.xml"; // print + manuscript
+  concordanceManuscriptTableData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.faustUri == HERMAPHRODITE});
   concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
 
   var concordanceTableContainer = container;
@@ -279,7 +280,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	      elem.textContent = sigilData.value;
 	      tableData.appendChild(elem);
 	      if (sigilIndex + 1 < sigils.length) {
-		tableData.appendChild(document.createTextNode(', '));
+		tableData.appendChild(document.createTextNode('; '));
 	      }
 	    });
 	  // everything else: Just put the text in

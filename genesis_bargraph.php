@@ -98,7 +98,7 @@
           });
 
           // set breadcrumbs
-          if(sceneLineMappingId.split(".")[0] === "1") {
+          if(sceneLineMappingId && sceneLineMappingId.split(".")[0] === "1") {
             document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneTitle}]));
           } else {
             document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneTitle}]));
@@ -340,9 +340,26 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
 
                 barEnd = Math.min(end - start + 1, numberOfLines - barStart);
 
+                function toolTipLabel(type, start, stop, sigil, page) {
+                  var typeLabels = { 
+                        verseLine: "handschriftliche Fassung von",
+                        verseLineUncertain: "handschriftliche Fassung (unsicher) von",
+                        print: "gedruckte Fassung von",
+                        paralipomena: "Paralipomenon zu",
+                        paralipomenaUncertain: "Paralipomenon (unsicher) zu"
+                    },
+                    typeLabel = typeLabels[type];
+                    if (type === 'print') { typeLabel = typeLabels.print; }
+                    var result = typeLabel + " v. " + start + " – " + stop + " in " + sigil;
+                    if (type !== 'print') { result += ", S. " + page; }
+                    return result;
+                }
+                
+
+
                 // create rectangle for interval
                 var relatedLines = createSvgElement({name: "rect", 
-                                                     attributes: [["tooltiptext", "[" + start + "," + end + "]"],
+                                                     attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, start, end, witness.sigil, interval.page)],
                                                                   ["class", "show-tooltip"],
                                                                   ["x", barStart * horizontalDistance],
                                                                   ["y", "0"],
