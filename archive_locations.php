@@ -5,7 +5,6 @@
             <table id="locations" class="pure-table">
               <thead>
                 <tr>
-                  <th class="pure-center" width="10">#</th>
                   <th>Archiv</th>
                   <th>Ort</th>
                   <th class="pure-center">Zeugen</th>
@@ -70,11 +69,6 @@
           for(var i = 0; i < sortedArchives.length; i++) {
               var currentChild = sortedArchives[i];
               var archiveTr = document.createElement("tr");
-
-              var archiveNumCell = document.createElement("td");
-              archiveNumCell.className = "pure-center";
-              archiveNumCell.appendChild(document.createTextNode(i + 1));
-              archiveTr.appendChild(archiveNumCell);
 
               var archiveDetailLink = document.createElement("a");
               archiveDetailLink.href = "archive_locations_detail?id=" + currentChild["id"];
