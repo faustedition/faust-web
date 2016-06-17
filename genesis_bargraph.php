@@ -248,7 +248,7 @@ bins.forEach(function(bin) {
                                  ["y", "-" + (verticalDistance / 2)],
                                  ["text-anchor", "middle"],
                                  ["transform", "scale(" + 1/geneticBarDiagramGridScale + ",1)"],
-                                 ["style", "font-weight: normal; font-size: " + (verticalDistance/2) + "px"],
+                                 ["style", "font-size: " + (verticalDistance/2) + "px"],
                                 ],
                     children: [document.createTextNode(bin)],
                     parent: geneticBarDiagramGrid});
@@ -258,7 +258,7 @@ bins.forEach(function(bin) {
                                  ["y", (selectedWitnesses.length + 0.5) * verticalDistance],
                                  ["text-anchor", "middle"],
                                  ["transform", "scale(" + 1/geneticBarDiagramGridScale + ",1)"],
-                                 ["style", "font-weight: normal; font-size: " + (verticalDistance/2) + "px"],
+                                 ["style", "font-size: " + (verticalDistance/2) + "px"],
                                 ],
                     children: [document.createTextNode(bin)],
                     parent: geneticBarDiagramGrid});
@@ -360,7 +360,6 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
                 // create rectangle for interval
                 var relatedLines = createSvgElement({name: "rect", 
                                                      attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, start, end, witness.sigil, interval.page)],
-                                                                  ["class", "show-tooltip"],
                                                                   ["x", barStart * horizontalDistance],
                                                                   ["y", "0"],
                                                                   ["width", barEnd * horizontalDistance],
@@ -370,17 +369,17 @@ selectedWitnesses.forEach(function(witness, witnessIndex) {
                 var relatedLinesLink = createSvgElement({name: "a", parent: witnessGroup, children: [relatedLines]});
 
                 if(witness.print === true) {
-                  relatedLines.setAttribute("fill", "black");
+                  relatedLines.setAttribute("class", "show-tooltip printed");
                 } else if (interval.type === "verseLine") {
-                  relatedLines.setAttribute("fill", "blue");
+                  relatedLines.setAttribute("class", "show-tooltip verse");
                 } else if (interval.type === "verseLineVariant") {
-                  relatedLines.setAttribute("fill", "lightblue");
+                  relatedLines.setAttribute("class", "show-tooltip verse variant");
                 } else if (interval.type === "verseLineUncertain") {
-                  relatedLines.setAttribute("fill", "orange");
+                  relatedLines.setAttribute("class", "show-tooltip verse uncertain");
                 } else if (interval.type === "paralipomena") {
-                  relatedLines.setAttribute("fill", "green");
+                  relatedLines.setAttribute("class", "show-tooltip paralipomena");
                 } else if (interval.type === "paralipomenaUncertain") {
-                  relatedLines.setAttribute("fill", "lightgreen");
+                  relatedLines.setAttribute("class", "show-tooltip paralipomena uncertain");
                 }
 
                 // set surrounding link for witness

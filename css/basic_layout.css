@@ -556,6 +556,21 @@ cite {
 }
 
 /* ********************** */
+/* Genetic Bar
+/* ********************** */
+
+#genetic-bar-diagram-grid text {
+  font-weight: normal;
+}
+
+#genetic-bar-diagram-verse-bars rect.printed {fill:rgb(70,70,70);}
+#genetic-bar-diagram-verse-bars rect.verse {fill:rgb(250,190,0);}
+#genetic-bar-diagram-verse-bars rect.verse.variant {fill:rgb(250, 200, 50);}
+#genetic-bar-diagram-verse-bars rect.verse.uncertain {fill:rgb(250, 210, 100);}
+#genetic-bar-diagram-verse-bars rect.paralipomena {fill:rgb(170, 160, 130);}
+#genetic-bar-diagram-verse-bars rect.paralipomena.uncertain {fill:rgb(220, 220, 200);}
+
+/* ********************** */
 /* Print
 /* ********************** */
 
