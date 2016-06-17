@@ -465,8 +465,9 @@ div g.element-line-hidden:hover > * {
 .structure-rect {
   transition: opacity 0.75s ease-in-out;
   shape-rendering: crispEdges;
-  fill: gray;
+  fill: rgb(125, 125, 125);
   opacity: 0;
+  cursor:pointer;
 }
 
 .structure-page-num {
@@ -479,7 +480,7 @@ div g.element-line-hidden:hover > * {
 }
 
 .pages-locked > .structure-rect {
-  fill: red;
+  fill: rgb(250,190,0);
   opacity: 1;
 }
 
