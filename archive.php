@@ -8,6 +8,8 @@
              <a href="archive_locations" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
              <a href="archive_manuscripts" class="pure-button pure-button-tile">Hand&shy;schriften</a>
              <a href="archive_prints" class="pure-button pure-button-tile">Drucke</a>
+             <!-- Where does this really belong? -->
+             <a href="paralipomena" class="pure-button pure-button-tile">Paralipomena</a>
             </p>
         
         </article>
