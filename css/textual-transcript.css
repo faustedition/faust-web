@@ -205,15 +205,15 @@ dt {
 
 /* # Variants – ie different from current */
 .variants-0 { background-color: rgb(255,255,255); }
-.variants-1 { background-color: rgb(245,245,245); }
-.variants-2 { background-color: rgb(235,235,235); }
-.variants-3 { background-color: rgb(225,225,225); }
-.variants-4 { background-color: rgb(215,215,215); }
-.variants-5 { background-color: rgb(205,205,205); }
-.variants-6 { background-color: rgb(195,195,195); }
-.variants-7 { background-color: rgb(185,185,185); }
-.variants-8 { background-color: rgb(175,175,175); }
-.variants-9 { background-color: rgb(165,165,165); }
+.variants-1 { background-color: rgb(245,245,240); }
+.variants-2 { background-color: rgb(235,235,230); }
+.variants-3 { background-color: rgb(225,225,220); }
+.variants-4 { background-color: rgb(215,215,210); }
+.variants-5 { background-color: rgb(205,205,200); }
+.variants-6 { background-color: rgb(195,195,190); }
+.variants-7 { background-color: rgb(185,185,180); }
+.variants-8 { background-color: rgb(175,175,170); }
+.variants-9 { background-color: rgb(165,165,160); }
 
 
 
