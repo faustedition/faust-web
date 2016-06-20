@@ -37,8 +37,12 @@ h3.head, .body > .div > .head {
 	padding: 0.5ex 0ex;
 }
 
-/* Versnummern */
+.print a {
+  text-decoration: none;
+  cursor: pointer;
+}
 
+/* Versnummern */
 .print a.lineno {
   margin-left: -5em;
   width: 4.5em;
@@ -47,8 +51,8 @@ h3.head, .body > .div > .head {
   text-align: right;
   text-indent: 0pt;
   color: #aaa;
-  font-weight: normal;
-  font-size: 80%;  
+  font-size: 80%;
+  border: none;
 }
 
 a.lineno.invisible {
@@ -323,13 +327,6 @@ nav.print-navigation {
   letter-spacing: 1pt;
 }
 
-.print a {
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  border:none;
-}
-
 a.sigil {
   float: right;
   color: #777;
@@ -340,8 +337,18 @@ div:hover > a.sigil {
 }
 
 .variants {
-  border: 1px solid black;
-  padding: 0em 0.25em;
+  border: 1px solid #aaa;
+  padding: .25em 1em .25em 0;
+  position: relative;
+}
+
+.variants::before {
+  font:normal normal normal 14px/1 FontAwesome;
+  content:'\e8c7';
+  position: absolute;
+  left:46%;
+  top:-.25em;
+  color:#aaa;
 }
 
 .variants > * {
@@ -356,7 +363,7 @@ div.text {
   margin-bottom: 1.5em;
 }
 
-.sp { text-indent: 1.5em; }
+.sp { text-indent: 1em; }
 .sp > .speaker { text-indent: 0; }
 .lg.rend-indented { text-indent: 3em; }
 
