@@ -23,8 +23,9 @@ h4.head, .type-scene > .head, .body > .head {
 
 /* Zueignung, Vorspiel, ... */
 h3.head, .body > .div > .head {
+    margin-top: 4ex;
 	padding-bottom: 2ex;
-	padding-top: 4ex;
+	padding-top: 2ex;
 	font-weight: bold;
 	font-size: 16px;
 }
