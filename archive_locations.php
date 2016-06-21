@@ -19,6 +19,7 @@
 
 </section>
 
+<script type="text/javascript" src="data/document_metadata.js"></script>
 <script type="text/javascript" src="data/archives.js"></script>
 
 <script type="text/javascript">

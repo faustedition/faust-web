@@ -20,7 +20,6 @@
     <meta charset='utf-8'>
     <title>Faust-Edition [beta]</title>
 
-    <script type="text/javascript" src="data/document_metadata.js"></script>
     <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
     <script type="text/javascript" src="data/scene_line_mapping.js"></script>
     <script type="text/javascript" src="data/copyright_notes.js"></script>
