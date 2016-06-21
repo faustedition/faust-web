@@ -1,13 +1,6 @@
 <?php include "includes/header.php"; ?>
-
-<div class="main-content-container" style="margin-bottom:0em;">
-<div id="main-content" class="main-content">
-  <div style="display: block;" class="archive-content view-content" id="archive-content">
- 
-
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <h1>Die Ausgabe</h1>
         <p>Die digitale Faust-Edition besteht aus einem <a href="archive">Archiv</a> der
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
@@ -262,8 +255,8 @@
         
     </article>
 </section>
-
-</div></div></div>
-
-
+<script type="text/javascript">
+    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Die Ausgabe", link: "intro"}]));
+</script>
 <?php include "includes/footer.php"; ?>

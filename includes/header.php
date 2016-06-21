@@ -1,6 +1,16 @@
 <?php
   header('Content-Type: text/html; charset=utf-8');
-  $showFooter = true; // can be set in content pages
+  
+  function inurl($substring) { 
+    $referrer = $_SERVER['REQUEST_URI'];
+    return strpos($referrer, $substring) !== false; 
+  }
+
+  if (!isset($showFooter)) $showFooter = true;
+
+  $classes = array();
+  if (!$showFooter) array_push($classes, 'nofooter');
+  if (inurl('documentViewer')) array_push($classes, 'document');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -52,4 +62,4 @@
           </ul>
         </nav>
     </header>
-    <main>
+    <main class="<?php echo implode(' ', $classes); ?>">
