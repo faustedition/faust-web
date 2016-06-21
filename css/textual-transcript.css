@@ -338,8 +338,12 @@ div:hover > a.sigil {
 
 .variants {
   border: 1px solid #aaa;
-  padding: .25em 1em .25em 0;
+  padding: .25em 1em .25em .25em;
   position: relative;
+}
+
+.sp .variants {
+  padding-left: 0;
 }
 
 .variants::before {
