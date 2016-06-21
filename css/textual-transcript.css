@@ -353,10 +353,12 @@ div:hover > a.sigil {
   content:'\e8c7';
   position: absolute;
   left:50%;
-  top:-.25em;
+  top:-.5em;
   color:#aaa;
   margin-left:-0.5em;
   text-indent: 0;
+  background:white;
+  border-radius:100%;
 }
 
 .variants > * {
