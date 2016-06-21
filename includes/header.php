@@ -31,10 +31,11 @@
     <link rel="stylesheet" href="css/document-transcript.css">
     <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
     <link rel="stylesheet" href="css/document-transcript-interaction.css">
-    <link rel="stylesheet" href="css/textual-transcript.css" />
+    <link rel="stylesheet" href="css/textual-transcript.css">
     <?php endif; ?>
     <?php if (inurl('index')) : ?>
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-custom.css">
     <?php endif; ?>
     
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
