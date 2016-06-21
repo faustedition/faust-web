@@ -16,6 +16,7 @@
 
 </section>
 
+<script type="text/javascript" src="data/concordance_columns.js"></script>
 <script type="text/javascript" src="data/archives.js"></script>
 
 <script type="text/javascript" src="js/faust_tables.js"></script>
