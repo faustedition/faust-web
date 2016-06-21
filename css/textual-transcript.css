@@ -350,9 +350,11 @@ div:hover > a.sigil {
   font:normal normal normal 14px/1 FontAwesome;
   content:'\e8c7';
   position: absolute;
-  left:46%;
+  left:50%;
   top:-.25em;
   color:#aaa;
+  margin-left:-0.5em;
+  text-indent: 0;
 }
 
 .variants > * {
