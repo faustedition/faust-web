@@ -1,0 +1,36 @@
+/* ********************** */
+/* Genetic Bar
+/* ********************** */
+
+#genetic-bar-diagram-grid line {
+  stroke: #eeeeee;
+  stroke-width: 1;
+}
+
+#genetic-bar-diagram-grid text {
+  font-weight: normal;
+}
+
+#genetic-bar-diagram-verse-bars rect.printed {
+  fill:rgb(70,70,70);
+}
+
+#genetic-bar-diagram-verse-bars rect.verse {
+  fill:rgb(250,190,0);
+}
+
+#genetic-bar-diagram-verse-bars rect.verse.variant {
+  fill:rgb(250, 230, 75);
+}
+
+#genetic-bar-diagram-verse-bars rect.verse.uncertain {
+  fill:rgb(250, 240, 150);
+}
+
+#genetic-bar-diagram-verse-bars rect.paralipomena {
+  fill:rgb(170, 160, 130);
+}
+
+#genetic-bar-diagram-verse-bars rect.paralipomena.uncertain {
+  fill:rgb(220, 220, 200);
+}
