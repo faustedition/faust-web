@@ -10,6 +10,7 @@
 
 </section>
 
+<script type="text/javascript" src="data/scene_line_mapping.js"></script>
 <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
 
 <script>
