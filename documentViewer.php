@@ -32,7 +32,6 @@
   </div>
 </div>
 
-<link rel="stylesheet" href="css/textual-transcript.css" />
 <script type="text/javascript" src="js/faust_structure.js"></script>
 <script type="text/javascript" src="js/faust_metadata.js"></script>
 <script type="text/javascript" src="js/faust_image_overlay.js"></script>

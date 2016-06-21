@@ -3,7 +3,9 @@
   
   function inurl($substring) { 
     $request = $_SERVER['REQUEST_URI'];
-    return strpos($request, $substring) !== false; 
+
+    if ($_SERVER['REQUEST_URI'] == '/' && $substring == 'index') return true;
+    else return strpos($request, $substring) !== false; 
   }
 
   if (!isset($showFooter)) $showFooter = true;
@@ -27,16 +29,20 @@
 
     <script type="text/javascript" src="js/faust_common.js"></script>
 
+    <link rel="stylesheet" href="css/webfonts.css">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/pure-custom.css">
+    <link rel="stylesheet" href="css/basic_layout.css">
+    <?php if (inurl('documentViewer')) : ?>
     <link rel="stylesheet" href="css/document-text.css">
     <link rel="stylesheet" href="css/document-transcript.css">
     <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
     <link rel="stylesheet" href="css/document-transcript-interaction.css">
-    <link rel="stylesheet" href="css/webfonts.css">
-    <link rel="stylesheet" href="css/fontawesome-min.css">
-    <link rel="stylesheet" href="css/pure-min.css">
-    <link rel="stylesheet" href="css/pure-custom.css">
-    <link rel="stylesheet" href="css/basic_layout.css">
+    <link rel="stylesheet" href="css/textual-transcript.css" />
+    <?php endif; ?>
+    <?php if (inurl('index')) : ?>
     <link rel="stylesheet" href="css/slick.css">
+    <?php endif; ?>
     
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
