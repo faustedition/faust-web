@@ -2,8 +2,8 @@
   header('Content-Type: text/html; charset=utf-8');
   
   function inurl($substring) { 
-    $referrer = $_SERVER['REQUEST_URI'];
-    return strpos($referrer, $substring) !== false; 
+    $request = $_SERVER['REQUEST_URI'];
+    return strpos($request, $substring) !== false; 
   }
 
   if (!isset($showFooter)) $showFooter = true;
@@ -37,9 +37,9 @@
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
     <link rel="stylesheet" href="css/slick.css">
-
+    
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   </head>
   <body>
     <header>
