@@ -17,6 +17,8 @@
 
 </section>
 
+<script type="text/javascript" src="data/archives.js"></script>
+
 <script type="text/javascript">
   // set breadcrumbs
   document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Drucke"}]));
