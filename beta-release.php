@@ -53,8 +53,10 @@
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
     </article>
 </section>
+
 <script type="text/javascript">
     document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
         [{caption: "Ausgabe", link: "intro"}, {caption: "Beta-Version"}]));
 </script>
+
 <?php include "includes/footer.php"; ?>
