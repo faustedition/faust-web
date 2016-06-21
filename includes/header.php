@@ -20,9 +20,6 @@
     <meta charset='utf-8'>
     <title>Faust-Edition [beta]</title>
 
-    
-    <script type="text/javascript" src="data/copyright_notes.js"></script>
-
     <script type="text/javascript" src="js/faust_common.js"></script>
 
     <link rel="stylesheet" href="css/webfonts.css">
