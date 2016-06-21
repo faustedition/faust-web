@@ -137,6 +137,7 @@ a.sigil {
 	text-transform: none;
 	font-size: inherit;
 	font-style: normal;
+  font-weight: normal;
 }
 .variants:after {
     display: table;

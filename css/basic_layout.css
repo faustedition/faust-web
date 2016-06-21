@@ -297,14 +297,14 @@ p.para-start { margin-top: 1em; } /* unused? */
   letter-spacing: -0.31em;
 }
 
-.print .docTitle span {
+.print span.docTitle span {
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1.125em;
   margin: .83em 0;
 }
 
-.print .docTitle span:first-of-type {
+.print span.docTitle span:first-of-type {
   font-size: 2em;
   margin: .67em 0;
 }
