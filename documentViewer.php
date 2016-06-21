@@ -32,6 +32,7 @@
   </div>
 </div>
 
+<script type="text/javascript" src="data/genetic_bar_graph.js"></script>
 <script type="text/javascript" src="data/document_metadata.js"></script>
 <script type="text/javascript" src="data/archives.js"></script>
 
