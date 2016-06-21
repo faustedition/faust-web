@@ -3,6 +3,11 @@
 
 
 
+.text {
+  margin-bottom: 1.5em;
+  text-indent: 0.25em;
+}
+
 /*
  * Überschriften
  */
@@ -17,7 +22,7 @@ h5.head, .type-subscene > .head {
 
 h4.head, .type-scene > .head, .body > .head {
 	padding-bottom: 1ex;
-	padding-top: 2ex;
+	padding-top: 1ex;
 	font-weight: bold;
 }
 
@@ -95,6 +100,7 @@ a.pageno {
 	color: inherit !important;
 	text-transform: uppercase;
 	font-size: 90%;
+    text-indent: 0.25em;
 }
 
 br.swelledRule, br.line {
@@ -142,7 +148,7 @@ a.sigil {
     margin-bottom: 0 !important;
 }
 .lg > *:last-child {
-    padding-bottom: 2ex;
+    margin-bottom: 2ex;
 }
 
 /*
@@ -182,10 +188,10 @@ dt {
 	margin-top: 1ex; 
 }
 
-
 .hasvars {
     border-right-style: solid;
     border-right-width: 12pt;
+    cursor: pointer;
 }
 
 /* # Witnesses */
@@ -338,12 +344,8 @@ div:hover > a.sigil {
 
 .variants {
   border: 1px solid #aaa;
-  padding: .25em 1em .25em .25em;
+  padding: .25em 1em .25em 0;
   position: relative;
-}
-
-.sp .variants {
-  padding-left: 0;
 }
 
 .variants::before {
@@ -359,19 +361,20 @@ div:hover > a.sigil {
 
 .variants > * {
   clear: right;
+  padding: 0;
+}
+
+.sp {
+    text-indent: 1.5em;
+}
+
+.lg.rend-indented {
+    text-indent: 3em;
 }
 
 .lg, .p, .head {
   margin-bottom: 0.75em;
 }
-
-div.text {
-  margin-bottom: 1.5em;
-}
-
-.sp { text-indent: 1em; }
-.sp > .speaker { text-indent: 0; }
-.lg.rend-indented { text-indent: 3em; }
 
 .l .emph {
 	font-style: italic;
