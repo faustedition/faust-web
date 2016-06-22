@@ -5,7 +5,7 @@
       <table id="paralipomena" class="pure-table">
         <thead>
           <tr>
-            <th class="pure-center" width="10">Paralipomenon</th>
+            <th class="pure-center" width="10">WA-Nummer</th>
             <th>Zeuge</th>
             <th>Incipit</th>
           </tr>
@@ -32,9 +32,15 @@
       function createSigilLink(sigil, uri) {
         return Faust.dom.createElement({name: "a", attributes: [["href", getViewerURI(uri)]], children: [document.createTextNode(sigil)]});
       }
+      function createParaLink(paralipomenon) {
+        var href = getViewerURI(paralipomenon.uri) + '&view=text';
+        if (paralipomenon.page) { href = href + '&page=' + paralipomenon.page; }
+        if (paralipomenon.line) { href = href + '#l' + paralipomenon.line; }
+        return Faust.dom.createElement({name: "a", attributes: [["href", href]], children: [document.createTextNode(paralipomenon.n)]});
+      }
       function createParaRow(paralipomenon) {
         var row  = Faust.dom.createElement({name: "tr"}),
-            n    = Faust.dom.createElement({name: "td", parent: row, children: [document.createTextNode(paralipomenon.n)]}),
+            n    = Faust.dom.createElement({name: "td", parent: row, children: [createParaLink(paralipomenon)]}),
             sigil= Faust.dom.createElement({name: "td", parent: row, 
                         children: [createSigilLink(paralipomenon.sigil, paralipomenon.uri)]}),
             text = Faust.dom.createElement({name: "td", parent: row, 
