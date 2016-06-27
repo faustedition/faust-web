@@ -149,7 +149,7 @@ a.sigil {
     margin-bottom: 0 !important;
 }
 .lg > *:last-child {
-    margin-bottom: 2ex;
+    padding-bottom: 2ex;
 }
 
 /*
