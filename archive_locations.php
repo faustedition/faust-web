@@ -87,17 +87,14 @@
 
       var archiveLocationCell = document.createElement("td");
       if(currentChild.city || currentChild.country) {
-        var locationString;
+        var locationString = [];
         if(currentChild.city) {
-          locationString = currentChild.city;
+          locationString.push(currentChild.city);
         }
         if(currentChild.country) {
-          if(locationString) {
-            locationString = locationString + ", " + currentChild.country;
-          } else {
-            locationString = currentChild.country;
-          }
+          locationString.push(currentChild.country);
         }
+        locationString = (locationString.length > 1) ? locationString.join(", ") : locationString
         archiveLocationCell.appendChild(document.createTextNode(locationString));
       }
       archiveTr.appendChild(archiveLocationCell);
