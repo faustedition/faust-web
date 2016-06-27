@@ -1,9 +1,6 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
   <article class="pure-u-1">
-
-      <h1>Impressum</h1>
-      
       <p>Anbieter i.S.d. § 5 TMG</p>
 
       <p>
@@ -52,4 +49,9 @@
   </article>
 
 </section>
+
+<script type="text/javascript">
+  // set breadcrumbs
+  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Impressum"}]));
+</script>
 <?php include "includes/footer.php"; ?>

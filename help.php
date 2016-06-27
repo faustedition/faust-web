@@ -39,7 +39,6 @@ if ($target) {
   <div class="pure-u-1-5"></div>
 
   <article class="pure-u-3-5">
-    <h1>Hilfe</h1>
     <h3>folgt demnächst</h3>
 
     <p>Die Hilfefunktion ist noch in Arbeit und wird in einer der nächsten Versionen ergänzt.</p>
@@ -63,5 +62,10 @@ var a = "testxm.hpdocumentieweraustrif/"
 c[b] = a.substr(9,8) + "V" + a.substr(17,5) + a.substr(6,1) + a.substr(8,1) + a.substr(7,1) + a.substr(8,1) + "?" + a.substr(28,1) + a.substr(22,4) + "U" + a.substr(26,2) + "=" + a.substr(28,1) + a.substr(22,4) + ":" + a.substr(29,1) + a.substr(29,1) + a.substr(4,2) + "l" + a.substr(29,1) + a.substr(9,8) + a.substr(29,1) + a.substr(0,4) + a.substr(29,1) + a.substr(0,4) + "." + a.substr(4,2) + "l"
 }
 });
+</script>
+
+<script type="text/javascript">
+  // set breadcrumbs
+  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Hilfe"}]));
 </script>
 <?php include "includes/footer.php"; ?>

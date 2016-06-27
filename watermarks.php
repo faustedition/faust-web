@@ -1,7 +1,6 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <h1>Wasserzeichenaufnahmen in der Faust-Edition</h1>
         <p>Anhand von Wasserzeichen können Hypothesen zu Handschriftendatierungen überprüft werden:
             Ein Vergleich genutzter Papiere lässt Rückschlüsse auf die Entstehungsbedingungen des
             Werks zu; bei der Rekonstruktion historischer Konvolutstrukturen von Handschriften etwa

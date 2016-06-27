@@ -4,7 +4,6 @@
   <div class="pure-u-1-5"></div>
   
   <article class="pure-u-3-5">
-      <h1>Kontakt</h1>
       <h3>Historisch-kritische Edition von Goethes Faust</h3>
 
       <p><strong>Dr. Gerrit Brüning</strong><br>
@@ -31,4 +30,9 @@
   <div class="pure-u-1-5"></div>
 
 </section>
+
+<script type="text/javascript">
+  // set breadcrumbs
+  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Kontakt"}]));
+</script>
 <?php include "includes/footer.php"; ?>

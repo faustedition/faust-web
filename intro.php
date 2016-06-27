@@ -257,6 +257,6 @@
 </section>
 <script type="text/javascript">
     document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Die Ausgabe", link: "intro"}]));
+        [{caption: "Ausgabe", link: "intro"}]));
 </script>
 <?php include "includes/footer.php"; ?>

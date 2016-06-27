@@ -3,7 +3,6 @@
 <section class="center">
 
   <article class="pure-center">
-      <h1 id="archiveName"></h1>
       <p>
         <span id="institution"><br></span>
         <span id="location"><br></span>
@@ -43,9 +42,6 @@
    document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Aufbewahrungsorte", link: "archive_locations"}, {caption: archives[repositoryName].name}]));
 
   // write archive information
-
-  // archive name
-  document.getElementById("archiveName").appendChild(document.createTextNode(archives[repositoryName].name));
 
   // archive institution
   var institutionContainer = document.getElementById("institution");
