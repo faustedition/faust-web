@@ -190,9 +190,25 @@ dt {
 }
 
 .hasvars {
-    border-right-style: solid;
-    border-right-width: 12pt;
-    cursor: pointer;
+  position: relative;
+  border-right-style: solid;
+  border-right-width: 12pt;
+  cursor: pointer;
+}
+
+.hasvars:hover::before {
+  font:normal normal normal 14px/1 FontAwesome;
+  content:'\e824';
+  position: absolute;
+  top:50%;
+  right:0.5em;
+  margin-top:-0.5em;
+  color:#aaa;
+  text-indent: 0;
+}
+
+.hasvars.show:hover::before {
+  content:'\e828';
 }
 
 /* # Witnesses */

@@ -46,6 +46,9 @@ var addPrintInteraction = function(rootDir, node) {
                 // set flags that variants are loaded and currently shown
                 currentLine.variantsLoaded = true;
                 currentLine.isShown = true;
+
+                // set css class
+                currentLine.classList.add('show');
               }
             });
           }
@@ -55,10 +58,12 @@ var addPrintInteraction = function(rootDir, node) {
           if(currentLine.isShown === true) {
             currentLine.isShown = false;
             currentLine.parentNode.removeChild(currentLine.variantsDiv);
+            currentLine.classList.remove('show');
           } else if (currentLine.isShown === false) {
             currentLine.isShown = true;
 //              currentLine.parentNode.insertBefore(currentLine.variantsDiv, currentLine);
             currentLine.parentNode.insertBefore(currentLine.variantsDiv, currentLine.nextElementSibling);
+            currentLine.classList.add('show');
           }
         }
       };
