@@ -23,7 +23,7 @@
 
   <script type="text/javascript">
     // set breadcrumbs
-    document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Paralipomena"}]));
+    document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text", link: "text"}, {caption: "Paralipomena"}]));
   </script>
 
   <script type="text/javascript">
@@ -48,7 +48,7 @@
 
         row.addEventListener("click", function(event) {
             if (event.target.nodeName.toLowerCase() === "a" && event.target.href)
-              wndow.location = event.target.href;
+              window.location = event.target.href;
             else
               window.location = getViewerURI(paralipomen.uri);
         });
