@@ -10,6 +10,26 @@
 
 </section>
 
+<?php /* 
+<div id="navigation-bar-container" class="navigation-bar-container">
+  <div id="navigation-bar-content" class="navigation-bar-content">
+    <div id="facsimile-settings" class="facsimile"></div>
+    <div id="page-navigation" class="page">
+      <div id="first-page-button" class="pure-button" onclick="viewer.setPage(1);" title="Erste Seite"><i class="fa fa-angle-double-left"></i></div>
+      <div id="previous-page-button" class="pure-button" onclick="viewer.previousPage();" title="Vorherige Seite"><i class="fa fa-angle-left"></i></div>
+      <div id="pageCount" class="pure-form">
+        <input type="text" size="1" class="pure-center" value="<?php echo filter_input(INPUT_GET, "rangeStart", FILTER_SANITIZE_NUMBER_INT); ?>">
+        bis
+        <input type="text" size="1" class="pure-center" value="<?php echo filter_input(INPUT_GET, "rangeEnd", FILTER_SANITIZE_NUMBER_INT); ?>">
+      </div>
+      <div id="next-page-button" class="pure-button" onclick="viewer.nextPage();" title="Nächste Seite"><i class="fa fa-angle-right"></i></div>
+      <div id="last-page-button" class="pure-button" onclick="viewer.setPage(viewer.getPageCount());" title="Letzte Seite"><i class="fa fa-angle-double-right"></i></div>
+    </div>
+    <div id="view-select" class="view"></div>
+  </div>
+</div>
+*/ ?>
+
 <script type="text/javascript" src="data/scene_line_mapping.js"></script>
 <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
 

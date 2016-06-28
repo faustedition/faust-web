@@ -4,21 +4,21 @@
 
 <div id="navigation-bar-container" class="navigation-bar-container">
   <div id="navigation-bar-content" class="navigation-bar-content">
-    <div id="facsimile-settings" class="facsimile-settings">
+    <div id="facsimile-settings" class="facsimile">
       <div id="zoom-in-button" class="pure-button" onclick="viewer.zoomIn()" title="Vergrößern"><i class="fa fa-plus"></i></div>
       <div id="zoom-out-button" class="pure-button" onclick="viewer.zoomOut()" title="Verkleinern"><i class="fa fa-minus"></i></div>
       <div id="rotate-left" class="pure-button" onclick="viewer.rotateLeft()" title="Nach links drehen"><i class="fa fa-ccw"></i></div>
       <div id="rotate-right" class="pure-button" onclick="viewer.rotateRight()" title="Nach rechts drehen"><i class="fa fa-cw"></i></div>
       <div id="toggle-overlay-button" class="pure-button pure-button-primary" onclick="viewer.toggleOverlay()" title="Überblendung ein-/ausschalten"><i class="fa fa-text-overlay"></i></div>
     </div>
-    <div id="page-navigation" class="page-navigation">
+    <div id="page-navigation" class="page">
       <div id="first-page-button" class="pure-button" onclick="viewer.setPage(1);" title="Erste Seite"><i class="fa fa-angle-double-left"></i></div>
       <div id="previous-page-button" class="pure-button" onclick="viewer.previousPage();" title="Vorherige Seite"><i class="fa fa-angle-left"></i></div>
-      <div id="pageCount" style="display:inline-block;"></div>
+      <div id="pageCount"></div>
       <div id="next-page-button" class="pure-button" onclick="viewer.nextPage();" title="Nächste Seite"><i class="fa fa-angle-right"></i></div>
       <div id="last-page-button" class="pure-button" onclick="viewer.setPage(viewer.getPageCount());" title="Letzte Seite"><i class="fa fa-angle-double-right"></i></div>
     </div>
-    <div id="view-select" class="view-select">
+    <div id="view-select" class="view">
       <a id="diplomatic-debug-button" class="pure-button" title="Dokumentarische Transkription debuggen" disabled="disabled"><i class="fa fa-bug"></i></a>
       <a id="diplomatic-pdf-button" class="pure-button" title="Dokumentarische Transkription / PDF" disabled="disabled"><i class="fa fa-file-pdf"></i></a>
       <div id="show-structure-button" class="pure-button" onclick="viewer.setView('structure');" title="Metadaten/Lagenstruktur"><i class="fa fa-structure"></i></div>

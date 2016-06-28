@@ -13,6 +13,7 @@
   $classes = array();
   if (!$showFooter) array_push($classes, 'nofooter');
   if (inurl('documentViewer')) array_push($classes, 'document');
+  /* if (inurl('bargraph')) array_push($classes, 'bargraph'); */
 ?>
 <!DOCTYPE HTML>
 <html>
