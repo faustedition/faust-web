@@ -2,8 +2,10 @@
   header('Content-Type: text/html; charset=utf-8');
   
   function inurl($substring) { 
-    $referrer = $_SERVER['REQUEST_URI'];
-    return strpos($referrer, $substring) !== false; 
+    $request = $_SERVER['REQUEST_URI'];
+
+    if ($_SERVER['REQUEST_URI'] == '/' && $substring == 'index') return true;
+    else return strpos($request, $substring) !== false; 
   }
 
   if (!isset($showFooter)) $showFooter = true;
@@ -11,6 +13,7 @@
   $classes = array();
   if (!$showFooter) array_push($classes, 'nofooter');
   if (inurl('documentViewer')) array_push($classes, 'document');
+  /* if (inurl('bargraph')) array_push($classes, 'bargraph'); */
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -18,28 +21,31 @@
     <meta charset='utf-8'>
     <title>Faust-Edition [beta]</title>
 
-    <script type="text/javascript" src="data/archives.js"></script>
-    <script type="text/javascript" src="data/concordance_columns.js"></script>
-    <script type="text/javascript" src="data/document_metadata.js"></script>
-    <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
-    <script type="text/javascript" src="data/scene_line_mapping.js"></script>
-    <script type="text/javascript" src="data/copyright_notes.js"></script>
-
     <script type="text/javascript" src="js/faust_common.js"></script>
 
+    <link rel="stylesheet" href="css/webfonts.css">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/pure-custom.css">
+    <link rel="stylesheet" href="css/basic_layout.css">
+    <?php if (inurl('documentViewer')) : ?>
+    <link rel="stylesheet" href="css/document-viewer.css">
     <link rel="stylesheet" href="css/document-text.css">
     <link rel="stylesheet" href="css/document-transcript.css">
     <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
     <link rel="stylesheet" href="css/document-transcript-interaction.css">
-    <link rel="stylesheet" href="css/webfonts.css">
-    <link rel="stylesheet" href="css/fontawesome-min.css">
-    <link rel="stylesheet" href="css/pure-min.css">
-    <link rel="stylesheet" href="css/pure-custom.css">
-    <link rel="stylesheet" href="css/basic_layout.css">
+    <link rel="stylesheet" href="css/textual-transcript.css">
+    <link rel="stylesheet" href="css/prints-viewer.css">
+    <?php endif; ?>
+    <?php if (inurl('genesis')) : ?>
+    <link rel="stylesheet" href="css/genesis-bargraph.css">
+    <?php endif; ?>
+    <?php if (inurl('index')) : ?>
     <link rel="stylesheet" href="css/slick.css">
-
+    <link rel="stylesheet" href="css/slick-custom.css">
+    <?php endif; ?>
+    
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   </head>
   <body>
     <header>

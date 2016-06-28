@@ -1,7 +1,7 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <h1>Untersuchung und Datierung von Tinten durch Röntgenfluoreszenzanalyse</h1>
+        <h2>Untersuchung und Datierung von Tinten durch Röntgenfluoreszenzanalyse</h2>
         <figure class="pure-pull-right">
             <img src="/img/info/x-ray_spectrometry-image1.jpeg" />
             <figcaption>Abb. 1: Messung mittels mobiler Röntgenfluoreszenzanalyse. GSA 25/W 1567 (WA: III H<sup>1</sup>), Bl. 4r mit über dem Objekt ruhendem Messkopf.</figcaption>

@@ -81,10 +81,13 @@ div:hover > a.lineno, a.lineno:hover {
 
 a.pageno {
     float: right;
-    padding-right: 12pt;
+    margin-right: 2em;
     font-size: smaller;
     color:  #aaa;
-    font-weight: normal !important;
+    text-indent: 0;
+    position: relative;
+    z-index: 1;
+    border:none;
 }
 
 
@@ -137,6 +140,7 @@ a.sigil {
 	text-transform: none;
 	font-size: inherit;
 	font-style: normal;
+  font-weight: normal;
 }
 .variants:after {
     display: table;
@@ -148,7 +152,7 @@ a.sigil {
     margin-bottom: 0 !important;
 }
 .lg > *:last-child {
-    margin-bottom: 2ex;
+    padding-bottom: 2ex;
 }
 
 /*
@@ -189,10 +193,32 @@ dt {
 }
 
 .hasvars {
-    border-right-style: solid;
-    border-right-width: 12pt;
-    cursor: pointer;
+  position: relative;
+  border-right-style: solid;
+  border-right-width: 12pt;
+  cursor: pointer;
 }
+
+.hasvars:hover::before {
+  font:normal normal normal 14px/1 FontAwesome;
+  content:'\e824';
+  position: absolute;
+  top:50%;
+  right:0.5em;
+  margin-top:-0.5em;
+  color:#aaa;
+  text-indent: 0;
+}
+
+a.pageno + .hasvars:hover::before {
+	right:2.5em;
+}
+
+.hasvars.show:hover::before {
+  content:'\e828';
+}
+
+
 
 /* # Witnesses */
 .varcount-0  { border-color:  rgb(255,255,255); } /* error, though */
@@ -315,11 +341,6 @@ nav.print-navigation {
   margin: 1em 1em 1em 2em;
   padding: 0px;
 }
-
-
-################
-
-
 
 .fw {
   color: #ddd;

@@ -3,26 +3,26 @@
 
 $target = '';
 
-function inurl($substring) { 
+function inreferer($substring) { 
   $referrer = $_SERVER['HTTP_REFERER'];
   return strpos($referrer, $substring) !== false; 
 }
 
 
-    if (inurl('archive_prints')) 	$target = 'intro#drucke';
-elseif (inurl('/print/faust'))  	$target = 'intro#lesetext';
-elseif (inurl('/print/text')) 		$target = 'intro#lesetext';
-elseif (inurl('/print/')) 		$target = 'intro#drucke';
-elseif (inurl('/meta/')) 		$target = 'metadata';
-elseif (inurl('view=structure')) 	$target = 'metadata';
-elseif (inurl('genesis_faust')) 	$target = 'intro#genesis_part';
-elseif (inurl('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
-elseif (inurl('genesis')) 		$target = 'intro#genesis';
-elseif (inurl('search')) 		$target = 'intro#volltextsuche';
-elseif (inurl('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
-elseif (inurl('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
-elseif (inurl('view=document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
-elseif (inurl('view=facsimile_document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
+    if (inreferer('archive_prints')) 	$target = 'intro#drucke';
+elseif (inreferer('/print/faust'))  	$target = 'intro#lesetext';
+elseif (inreferer('/print/text')) 		$target = 'intro#lesetext';
+elseif (inreferer('/print/')) 		$target = 'intro#drucke';
+elseif (inreferer('/meta/')) 		$target = 'metadata';
+elseif (inreferer('view=structure')) 	$target = 'metadata';
+elseif (inreferer('genesis_faust')) 	$target = 'intro#genesis_part';
+elseif (inreferer('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
+elseif (inreferer('genesis')) 		$target = 'intro#genesis';
+elseif (inreferer('search')) 		$target = 'intro#volltextsuche';
+elseif (inreferer('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
+elseif (inreferer('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
+elseif (inreferer('view=document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
+elseif (inreferer('view=facsimile_document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
 
 
 if ($target) {
@@ -39,7 +39,6 @@ if ($target) {
   <div class="pure-u-1-5"></div>
 
   <article class="pure-u-3-5">
-    <h1>Hilfe</h1>
     <h3>folgt demnächst</h3>
 
     <p>Die Hilfefunktion ist noch in Arbeit und wird in einer der nächsten Versionen ergänzt.</p>
@@ -63,5 +62,10 @@ var a = "testxm.hpdocumentieweraustrif/"
 c[b] = a.substr(9,8) + "V" + a.substr(17,5) + a.substr(6,1) + a.substr(8,1) + a.substr(7,1) + a.substr(8,1) + "?" + a.substr(28,1) + a.substr(22,4) + "U" + a.substr(26,2) + "=" + a.substr(28,1) + a.substr(22,4) + ":" + a.substr(29,1) + a.substr(29,1) + a.substr(4,2) + "l" + a.substr(29,1) + a.substr(9,8) + a.substr(29,1) + a.substr(0,4) + a.substr(29,1) + a.substr(0,4) + "." + a.substr(4,2) + "l"
 }
 });
+</script>
+
+<script type="text/javascript">
+  // set breadcrumbs
+  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Hilfe"}]));
 </script>
 <?php include "includes/footer.php"; ?>

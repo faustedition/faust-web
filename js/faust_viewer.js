@@ -492,6 +492,7 @@ var createDocumentViewer = (function(){
             var printParentNode = document.createElement("div");
             printParentNode.className = "print";
             printParentNode.style.textAlign = "initial";
+            printParentNode.style.paddingTop = "1em";
 
             // create temporary div to parse received html
             var tempDiv = document.createElement("div");

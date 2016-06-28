@@ -1,0 +1,286 @@
+/* ********************** */
+/* Dokumenten Viewer
+/* ********************** */
+main.document {
+  bottom: 2.75em;
+  overflow: hidden;
+}
+
+/* main container */
+.main-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.view-content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size:0.8em;
+  color:#7D7D7D;
+  cursor:move;
+}
+.image-container svg g {
+  cursor:initial;
+}
+
+/* facsimile view */
+.facsimile-content {
+  overflow: hidden;
+  background-color:rgba(155,155,155,0.2);
+}
+.rotate-container {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  overflow: hidden;
+  transform-origin: 0px 0px;
+}
+.scale-container {
+  transform-origin: 0px 0px;
+}
+.overlay-container {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+.image-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.tile-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.text-layer {
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+.image-info {
+  /* Notes like 'facsimile could not be loaded */
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Copyright note that is overlaid to the facsimile */
+.facs-copyright {
+  font: 12px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
+  color: white;
+  text-shadow: black 0px 0px 1px;
+  position: fixed;
+  bottom: 3.5em;
+  z-index: 10; 
+  margin: 3pt 3pt;
+  pointer-events: all;
+  cursor: text;
+}
+.facs-copyright .closebtn {
+  cursor: pointer;
+  padding-left: 0.5ex;
+}
+/*
+ * The following rule causes much too wide line spacing when used during SVG
+ * generation, so we enable it only for SVG display (by means of .main-content)
+ */
+.main-content svg.diplomatic .element-line {
+  text-shadow: -0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em -0.5em 0.5em rgba(255, 255, 255, 0.5), 0.5em 0em 0.5em rgba(255, 255, 255, 0.5), 0em 0.5em 0.5em rgba(255, 255, 255, 0.5);
+}
+g.element-line .bgBox {
+  opacity: 0;
+}
+g.element-line:hover .bgBox {
+  opacity: 1;
+  stroke: #ffc20e;
+  stroke-width: 0.1em;
+}
+g.element-line-hidden > * {
+  opacity: 0;
+}
+div g.element-line-hidden:hover > * {
+  opacity: 1;
+}
+
+/* structure view */
+#structureContainer {
+  overflow: visible;
+  display: table;
+}
+.structure-container > div {
+  display: table-cell;
+  height: 100%;
+  vertical-align: top;
+  overflow: auto;
+}
+.preview-div {
+  width: 500px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: top;
+  padding: 1em 0;
+}
+.facsimile-preview {
+  display: inline-block;
+  vertical-align:top;
+  text-align: center;
+  font-size:0.8em;
+  color:#7D7D7D;
+  height: 360px;
+  width: 240px;
+  background-color:rgba(155,155,155,0.2);
+}
+.metadata-div {
+  padding-top:0 !important;
+}
+
+.facsimile-preview.right-page-preview {
+  padding-left:2px;
+}
+
+.structure-div {
+  width: 295px;
+  text-align: center;
+}
+
+.structure-svg-div {
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.structure-button {
+  transition: fill-opacity 0.3s ease;
+  fill: gray; 
+  fill-opacity: 0;
+  stroke: none;
+}
+
+.structure-button:hover {
+  fill-opacity: 0.7;
+}
+
+.structure-vertical-line {
+  stroke-width: 1.5;
+  shape-rendering: crispEdges;
+  stroke: black;
+}
+
+.structure-line {
+  pointer-events: none;
+  stroke-width: 3;
+  stroke: black;
+}
+
+.structure-sheet-connector {
+  stroke-width: 3;
+  stroke: black;
+  stroke-linecap: round;
+}
+
+.structure-rect {
+  transition: opacity 0.75s ease-in-out;
+  shape-rendering: crispEdges;
+  fill: rgb(125, 125, 125);
+  opacity: 0;
+  cursor:pointer;
+}
+
+.structure-page-num {
+  font-size: 0.75em;
+}
+
+.pages-group:hover > .structure-rect {
+  transition: opacity 0.15s ease-in-out;
+  opacity: 0.7;
+}
+
+.pages-locked > .structure-rect {
+  fill: rgb(250,190,0);
+  opacity: 1;
+}
+
+.metadata-div div > div {
+  padding-bottom: 0.5em;
+}
+
+.metadata-title {
+  padding-right: 0.25em;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.metadata-container {
+  width: 100%;
+  overflow: auto;
+  padding-left:1em;
+  padding-right:1em;
+}
+
+/*
+ * Normale <dl> sieht schön aus, nimmt aber zuviel platz weg.
+ * horizontale <dl> sieht doof aus.
+ *
+ * Das folgende ist ein Hack, kriegen wir das irgendwie besser hin?
+ */
+
+.metadata-container dt {
+  display: inline;
+}
+.metadata-container dt:after {
+  content: " ";
+}
+.metadata-container dd {
+  display: inline;
+  margin-left: 0;
+}
+.metadata-container dd:after {
+  display: block;
+  content: '\A';
+  margin-bottom: 0.5ex;
+}
+.metadata-container dd > dl {
+  display: block;
+  margin-left: 2em;
+  margin-top: 0;
+}
+.md-note { line-height: normal; }
+.md-level {
+  margin-left: 2em;
+  margin-top: 0;
+}
+.md-level > h3 {
+  margin-left: -2em;
+  margin-bottom: 0;
+}
+
+/* :) */
+.wip {
+  color: #111;
+  background: url(../img/wip-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+cite {
+  margin-right: 0.1em; /* Kursivausgleich */
+}
+
+/* documentary transcript view */
+.doc-transcript-content {
+  text-align: center;
+}

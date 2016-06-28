@@ -1,8 +1,6 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-
-        <h2>Kooperationspartner</h2>
         <ul>
             <li>DFG-NEH-Projekt “Diachronic Markup and Presentation Practices for Text Editions in
                 Digital Research Environments”</li>

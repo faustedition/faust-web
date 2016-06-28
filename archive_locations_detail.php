@@ -3,11 +3,10 @@
 <section class="center">
 
   <article class="pure-center">
-      <h1 id="archiveName"></h1>
       <p>
-        <span id="institution"></span><br>
-        <span id="location"></span><br>
-        <a id="urlLink"><span id="url"></span></a>
+        <span id="institution"><br></span>
+        <span id="location"><br></span>
+        <a id="url"></a>
       </p>
 
       <h2>Archivalien</h2>
@@ -15,6 +14,10 @@
   </article>
 
 </section>
+
+<script type="text/javascript" src="data/document_metadata.js"></script>
+<script type="text/javascript" src="data/concordance_columns.js"></script>
+<script type="text/javascript" src="data/archives.js"></script>
 
 <script type="text/javascript" src="js/faust_tables.js"></script>
 <script>
@@ -40,37 +43,44 @@
 
   // write archive information
 
-  // archive name
-  document.getElementById("archiveName").appendChild(document.createTextNode(archives[repositoryName].name));
-
   // archive institution
+  var institutionContainer = document.getElementById("institution");
   if(archives[repositoryName].institution) {
-    document.getElementById("institution").appendChild(document.createTextNode(archives[repositoryName].institution));
+    institutionContainer.insertBefore(document.createTextNode(archives[repositoryName].institution), institutionContainer.childNodes[0]);
+  } else {
+  	institutionContainer.style.display = "none";
   }
 
   // archive location
+  var locationContainer = document.getElementById("location");
   if(archives[repositoryName].country || archives[repositoryName].city) {
-    var locationString = "";
+    var locationString = [];
     if(archives[repositoryName].city) {
-      locationString = archives[repositoryName].city;
+      locationString.push(archives[repositoryName].city);
     }
     if(archives[repositoryName].country) {
-      if(locationString !== "") {
-        locationString = locationString + ", ";
-      }
-      locationString = locationString + archives[repositoryName].country;
+      locationString.push(archives[repositoryName].country);
     }
-    document.getElementById("location").appendChild(document.createTextNode(locationString));
+    locationString = (locationString.length > 1) ? locationString.join(", ") : locationString;
+    locationContainer.insertBefore(document.createTextNode(locationString), locationContainer.childNodes[0]);
+  } else {
+  	locationContainer.style.display = "none";
   }
 
   // archive link
+  var urlContainer = document.getElementById("url");
   if(archives[repositoryName].url) {
     var link = document.createElement("a"); // need object to return hostname
     link.href = archives[repositoryName].url;
-    document.getElementById("url").appendChild(document.createTextNode(link.hostname));
-    document.getElementById("urlLink").href = archives[repositoryName].url;
-    document.getElementById("urlLink").title = archives[repositoryName].displayName;
+    urlContainer.appendChild(document.createTextNode(link.hostname));
+    urlContainer.href = archives[repositoryName].url;
+    urlContainer.title = archives[repositoryName].displayName;
+  } else {
+  	urlContainer.style.display = "none";
   }
+
+  // write table
+
   createConcordanceTable(document.getElementById("archive-table-container"), repositoryName);
 
 </script>

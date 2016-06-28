@@ -1,7 +1,6 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <h2>Finanzielle Förderung</h2>
         <p>Das Projekt wurde von 2009 bis 2014 von der Deutsche Forschungsgemeinschaft finanziell
             getragen.</p>
         <p>Die Richard und Effi Biedrzynski-Stiftung stellte eine namhafte Summe zur Förderung des Projekts zur

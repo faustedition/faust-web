@@ -1,7 +1,6 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <h1>Beschreibung der Überlieferungsträger (Metadaten)</h1>
         <div>
             <h2 class="c2">1. Handschriftenbeschreibung</h2>
             <p>Zu jeder einzelnen Handschrift gibt es eine Beschreibung mit Angaben (Metadaten) zu
