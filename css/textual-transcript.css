@@ -81,10 +81,13 @@ div:hover > a.lineno, a.lineno:hover {
 
 a.pageno {
     float: right;
-    padding-right: 12pt;
+    margin-right: 2em;
     font-size: smaller;
     color:  #aaa;
-    font-weight: normal !important;
+    text-indent: 0;
+    position: relative;
+    z-index: 1;
+    border:none;
 }
 
 
@@ -207,9 +210,15 @@ dt {
   text-indent: 0;
 }
 
+a.pageno + .hasvars:hover::before {
+	right:2.5em;
+}
+
 .hasvars.show:hover::before {
   content:'\e828';
 }
+
+
 
 /* # Witnesses */
 .varcount-0  { border-color:  rgb(255,255,255); } /* error, though */

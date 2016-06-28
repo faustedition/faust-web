@@ -154,6 +154,7 @@ footer img[align="middle"] {
 /* tooltips */
 .tooltip {
   position: fixed;
+  z-index:100;
   pointer-events: none;
   background-color: white;
   border-radius: 4px;
