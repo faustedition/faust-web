@@ -1164,19 +1164,27 @@ var createDocumentViewer = (function(){
         };
       })();
 
+
+      var browsePage = function browsePage(by) {
+        for (var page = state.page + by; 0 < page && page < doc.pageCount; page += by) {
+          var pageMd = doc.metadata.pages[page-1]
+          if (pageMd !== undefined 
+              && pageMd.docTranscriptCount > 0
+              && pageMd.docTranscripts[0].hasImages)
+            return setPage(page);
+        }
+        return setPage(page);
+      };
+
       // switch to next page
-      var nextPage = (function(){
-        return function() {
-          return setPage(state.page + 1);
-        };
-      })();
+      var nextPage = function nextPage() {
+          return browsePage(+1);
+      };
 
       // switch to previous page
-      var previousPage = (function(){
-        return function() {
-          return setPage(state.page - 1);
-        };
-      })();
+      var previousPage = function previousPage() {
+          return browsePage(-1);
+      };
 
       // return the number of the page currently in view
       var getCurrentPage = (function(){
