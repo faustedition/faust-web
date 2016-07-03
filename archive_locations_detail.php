@@ -9,7 +9,6 @@
         <a id="url"></a>
       </p>
 
-      <h2>Archivalien</h2>
       <div id="archive-table-container" class="pure-left"></div>
   </article>
 
