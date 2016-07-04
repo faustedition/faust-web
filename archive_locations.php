@@ -3,7 +3,7 @@
 <section>
 
   <article>
-      <table id="locations" class="pure-table">
+      <table id="locations" class="pure-table" data-sortable>
         <thead>
           <tr>
             <th>Archiv</th>
@@ -21,6 +21,7 @@
 
 <script type="text/javascript" src="data/document_metadata.js"></script>
 <script type="text/javascript" src="data/archives.js"></script>
+<script type="text/javascript" src="js/sortable.min.js"></script>
 
 <script type="text/javascript">
   // set breadcrumbs
@@ -112,6 +113,8 @@
       var table = document.getElementById("locations");
       table.getElementsByTagName("tbody")[0].appendChild(archiveTr);
   } 
+  Sortable.init();
+  document.getElementById("locations").getElementsByTagName("th")[0].click();
 </script>
 
 <?php include "includes/footer.php"; ?>

@@ -232,6 +232,31 @@ footer img[align="middle"] {
 }
 
 /* ********************** */
+/* Tables                 */
+/* ********************** */
+
+th[data-sorted] {
+  cursor: pointer;
+}
+th[data-sorted]:after {
+  font-family: FontAwesome;
+  float: right;
+}
+th[data-sorted='false']:after {
+  content: "\e94f"; /* .fa-sort */
+  opacity: 0.2;
+}
+th[data-sorted='true']:after {
+  color: black;
+}
+th[data-sorted-direction='ascending']:after {
+  content: "\e951"; /* .fa-sort-up */
+}
+th[data-sorted-direction='descending']:after {
+  content: "\e950"; /* .fa-sort-down */
+}
+
+/* ********************** */
 /* Prints
 /* ********************** */
 /* styling of prints and texts in synoptic view */
