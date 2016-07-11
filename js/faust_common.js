@@ -90,9 +90,9 @@ var Faust = (function(){
             console.warn("Failed to split sigil:", sigil);
             return [sigil, sigil, 99999, ""];
           }
-          if (split[1] == "H P") // Paraliponemon
+          if (split[1] === "H P") // Paraliponemon
             split[1] = "3 H P";
-          if (split[2] == "")    // 2 H
+          if (split[2] === "")    // 2 H
             split[2] = -1;
           else
             split[2] = parseInt(split[2], 10);
@@ -125,6 +125,52 @@ var Faust = (function(){
         return -sigil(val1, val2);
       }
 
+
+    var NUMBERPLUS = /^(-?[\d,.]+)\s?(\w*)$/;
+    var matchSpace = function matchSpace(a) { return a.match(/^\s*$/); }
+    Sortable.setupTypes([
+      { name: 'numericplus',
+        defaultSortDirection: 'ascending',
+        match: function(a) { return NUMBERPLUS.test(a); },
+        compare: function(a, b) {
+          console.log('numericplus compare');
+          var _a = NUMBERPLUS.exec(a),
+              _b = NUMBERPLUS.exec(b),
+              na = parseFloat(_a[1], 10) || 0,
+              nb = parseFloat(_b[1], 10) || 0,
+              n_cmp = na - nb;
+
+          if (n_cmp === 0) {
+            return _a[2].localeCompare(_b[2]);
+          } else {
+            return n_cmp;
+          }               
+        }
+      },
+      {
+        name: 'sigil',
+        defaultSortDirection: 'ascending',
+        match: function(a) { return false; },
+        compare: sigil,
+        bottom: matchSpace
+      },
+      {
+      name: 'alpha',
+      defaultSortDirection: 'ascending',
+      match: function() { return false; },
+      compare: function(a, b) {
+        if (!a)
+          return +1;
+        else if (!b)
+          return -1;
+        else
+          return a.localeCompare(b);
+      },
+      bottom: matchSpace
+    }
+    
+    ]);
+
       // Map defined algorithms to sortAlgorithms object
       sortAlgorithms.asc = asc;
       sortAlgorithms.desc = desc;
@@ -134,6 +180,8 @@ var Faust = (function(){
       sortAlgorithms.descCiEnd = descCiEnd;
       sortAlgorithms.sigil = sigil;
       sortAlgorithms.descSigil = descSigil;
+
+
 
       return sortAlgorithms;
     })();
@@ -162,6 +210,7 @@ var Faust = (function(){
 
     return sort;
   })();
+
 
 //###########################################################################
 // Faust.url
@@ -886,6 +935,8 @@ var Faust = (function(){
     parent.insertBefore(container, parent.firstChild);
     console.error(title, msg);
   };
+
+
 
 //###########################################################################
 //###########################################################################

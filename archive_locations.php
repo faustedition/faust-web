@@ -6,10 +6,10 @@
       <table id="locations" class="pure-table" data-sortable>
         <thead>
           <tr>
-            <th>Archiv</th>
-            <th>Ort</th>
-            <th class="pure-center">Zeugen</th>
-            <th class="pure-center">Seiten</th>
+            <th data-sortable-type="alpha">Archiv</th>
+            <th data-sortable-type="alpha">Ort</th>
+            <th data-sortable-type="numericplus" class="pure-center">Zeugen</th>
+            <th data-sortable-type="numericplus" class="pure-center">Seiten</th>
           </tr>
         </thead>
         <tbody>
@@ -62,12 +62,9 @@
     archiveArray[archiveArray.length - 1]["id"] = archiveId;
   }
 
-  // sort archives asc
-  var sortedArchives = Faust.sort(archiveArray, "asc", "name");
-
   // create output and append to page
-  for(var i = 0; i < sortedArchives.length; i++) {
-      var currentChild = sortedArchives[i];
+  for(var i = 0; i < archiveArray.length; i++) {
+      var currentChild = archiveArray[i];
       var archiveTr = document.createElement("tr");
 
       var archiveDetailLink = document.createElement("a");

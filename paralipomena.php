@@ -2,11 +2,11 @@
 <section>
 
   <article>
-      <table id="paralipomena" class="pure-table">
+      <table id="paralipomena" class="pure-table" data-sortable>
         <thead>
           <tr>
-            <th class="pure-center" width="10">WA-Nummer</th>
-            <th>Zeuge</th>
+            <th data-sortable-type="numericplus" class="pure-center" width="12">WA-Nummer</th>
+            <th data-sortable-type="sigil">Zeuge</th>
             <th>Incipit</th>
           </tr>
         </thead>
@@ -18,6 +18,7 @@
 </section>
 <?php $showFooter = false; ?>
 <?php include "includes/footer.php"; ?>
+
 
   <script src="data/paralipomena.js"></script>
 
@@ -44,7 +45,7 @@
             sigil= Faust.dom.createElement({name: "td", parent: row, 
                         children: [createSigilLink(paralipomenon.sigil, paralipomenon.uri)]}),
             text = Faust.dom.createElement({name: "td", parent: row, 
-                        children: [document.createTextNode(paralipomenon.text)]});
+                        children: [document.createTextNode(paralipomenon.text + " …")]});
 
         row.addEventListener("click", function(event) {
             if (event.target.nodeName.toLowerCase() === "a" && event.target.href)
@@ -62,4 +63,5 @@
       }
     };
     createParalipomenaTable();
+    Sortable.init();
   </script>
