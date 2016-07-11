@@ -4,7 +4,6 @@
  * (2) Each archive detail page contains only the documents from that archive
  */
 
-
 var createConcordanceTable = function createConcordanceTable(container, repository) {
 
   // run sigil-labels-json.xsl on sigil-labels.xml (faust-gen-html) to get this list:
@@ -72,8 +71,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
   // * .text – the (plain) text to use for sort & in most cases display
   // * .key=value – the 
   // * .sigils = { idno, value }
-  var concordanceTableData = documentMetadata.metadata.map((function(){
-    return function(metadata){
+  var concordanceTableData = documentMetadata.metadata.map(function(metadata) {
       var i, j;
       var tableElementData = [];
       // for each element in document metadata iterate through all concordance columns and write data
@@ -129,76 +127,16 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 	tableElementData.printResourceName = {"A8_IIIB18": "A8_IIIB18.html", "B9_IIIB20-2": "B9_IIIB20-2.html", "Ba9_A101286": "Ba9_A101286.html", "C(1)12_IIIB23-1": "C(1)12_IIIB23-1.html", "C(1)4_IIIB24": "C(1)4_IIIB24.html", "C(2a)4_IIIB28": "C(2a)4_IIIB28.html", "C(3)12_IIIB27": "C(3)12_IIIB27.html", "C(3)4_IIIB27_chartUngleich": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)_IV3-1": "D(1)_IV3-1.html", "D(2)_IV3-6": "D(2)_IV3-6.html", "GSA_30-447-1_S_214-217": "GSA_30-447-1_S_214-217.html", "GSA_32_1420": "GSA_32_1420.html", "J_XIIA149-1808": "J_XIIA149-1808.html", "KuA_IIIE43-5-1": "KuA_IIIE43-5-1.html", "S(o)_IIIB11-2": "S(o)_IIIB11-2.html"}[textTranscriptName];
       }
       return tableElementData;
-    };
-  })());
+    });
 
   var HERMAPHRODITE = "faust://xml/document/archival/dla_marbach/Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.xml"; // print + manuscript
-  concordanceManuscriptTableData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.faustUri == HERMAPHRODITE});
-  concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
+  concordanceData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.faustUri == HERMAPHRODITE});
+  // concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
 
   var concordanceTableContainer = container;
 
-  // create event listener to sort columns
-  var sortClickEventListener = (function(tableData, concordanceColumns, parentElement) {
-    var currentColumn;
-    var currentSort = 0;
-    var sortMethods = ["sigil", "descSigil"];
-
-    var sortedTableData;
-    var tableDiv;
-
-    var eventListener = function(event) {
-      // determine sort direction 
-      if(event && currentColumn === this.cellIndex && currentSort === 0) {
-	currentSort = 1;
-      } else {
-	currentSort = 0;
-      }
-
-      // store clicked cell index. if no cellIndex exists (function called directly; not als eventHandler) set default sort direction and column
-      // test if cellIndex is an integer
-      if(this.cellIndex === parseInt(this.cellIndex, 10)) {
-	currentColumn = parseInt(this.cellIndex);
-      }
-      // if currentColumn is not an integer (i.e. undefined) set default column
-      if(!(currentColumn === parseInt(currentColumn, 10))) {
-	currentColumn = 0;
-      }
-
-      // add new Table. first sort data, then generate table, last remove all parent children and add new table
-      sortedTableData = Faust.sort(tableData, sortMethods[currentSort], currentColumn + ".text");
-
-      tableDiv = createConcordanceTable(concordanceColumns, sortedTableData);
-      tableDiv.getElementsByTagName("th")[currentColumn].className = "pure-nowrap pure-col-sorted pure-sortable";
-
-      if(currentSort === 0) {
-	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-up pure-pull-right";
-      } else if (currentSort === 1) {
-	tableDiv.getElementsByTagName("th")[currentColumn].firstElementChild.className = "fa fa-sort-down pure-pull-right";
-      }
-
-      while(parentElement.firstChild) {
-	parentElement.removeChild(parentElement.firstChild);
-      }
-
-      parentElement.appendChild(tableDiv);
-
-      // set scrollTop to 0 so that the table begin is shown.
-      parentElement.scrollTop = 0;
-
-    }
-
-    eventListener.setData = function(newTableData) {
-      tableData = newTableData; 
-      eventListener();
-    };
-
-    return eventListener;
-  })(concordanceTableData, concordanceColumns, concordanceTableContainer);
-
   // create function for table generation
-  var createConcordanceTable = (function() {
-    return function(concordanceColumns, concordanceData) {
+  // return function createConcordanceTable(concordanceColumns, concordanceData) {
       var span;
       var i, j;
 
@@ -207,6 +145,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       var concordanceTable = document.createElement("table");
       concordanceTable.id = "concordanceTable";
       concordanceTable.className = "pure-table";
+      concordanceTable.dataset.sortable = true;
 
       var tableHead = document.createElement("thead");
       var tableRow = document.createElement("tr");
@@ -214,16 +153,12 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       // create table header row
       for(i = 0; i < concordanceColumns.length; i++) {
 	var tableData = document.createElement("th");
-	tableData.className = "pure-nowrap pure-sortable";
-	tableData.addEventListener("click", sortClickEventListener);
-
-	var span = document.createElement("i");
-	span.className = "fa fa-sort pure-pull-right pure-fade-20";
-	tableData.appendChild(span);
 
 	tableData.appendChild(document.createTextNode(concordanceColumns[i].column));
 	if (concordanceColumns[i].tooltip)
 	    tableData.setAttribute('title', concordanceColumns[i].tooltip);
+	if (concordanceColumns[i].type)
+	    tableData.dataset.sortableType = concordanceColumns[i].type;
 
 	tableRow.appendChild(tableData);
       }
@@ -293,9 +228,9 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       });
       concordanceTable.appendChild(tableBody);
 
-      return concordanceTable;
-    };
-  })();
+      container.appendChild(concordanceTable);
+      Sortable.initTable(concordanceTable);
 
-  sortClickEventListener.setData(concordanceManuscriptTableData); // initialize function
+      //return concordanceTable;
+      //};
 }
