@@ -235,9 +235,10 @@ footer img[align="middle"] {
 /* Tables                 */
 /* ********************** */
 
-th[data-sorted] {
-  cursor: pointer;
-}
+/* Adjustment for the sort icons: */
+table[data-sortable] th {cursor: pointer; padding-right: 24px;}
+table[data-sortable] th:after {line-height: 1.5em; margin-right: -17px; margin-left: 0;}
+
 th[data-sorted]:after {
   font-family: FontAwesome;
   float: right;
