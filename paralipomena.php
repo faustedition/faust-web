@@ -5,9 +5,9 @@
       <table id="paralipomena" class="pure-table" data-sortable>
         <thead>
           <tr>
-            <th data-sortable-type="numericplus" class="pure-center" width="12">WA-Nummer</th>
-            <th data-sortable-type="sigil">Zeuge</th>
-            <th>Incipit</th>
+            <th data-sorted="true" data-sorted-direction="ascending" data-sortable-type="numericplus" class="pure-center" width="12">WA-Nummer</th>
+            <th data-sorted="false" data-sortable-type="sigil">Zeuge</th>
+            <th data-sorted="false" data-sortable-type="alpha">Incipit</th>
           </tr>
         </thead>
         <tbody>

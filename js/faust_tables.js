@@ -152,15 +152,21 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
 
       // create table header row
       for(i = 0; i < concordanceColumns.length; i++) {
-	var tableData = document.createElement("th");
+	var th = document.createElement("th");
 
-	tableData.appendChild(document.createTextNode(concordanceColumns[i].column));
+	th.appendChild(document.createTextNode(concordanceColumns[i].column));
+	if (i === 0) {
+	  th.dataset.sorted = true;
+	  th.dataset.sortedDirection = "ascending";
+	} else {
+	  th.dataset.sorted = false;
+	}
 	if (concordanceColumns[i].tooltip)
-	    tableData.setAttribute('title', concordanceColumns[i].tooltip);
+	    th.setAttribute('title', concordanceColumns[i].tooltip);
 	if (concordanceColumns[i].type)
-	    tableData.dataset.sortableType = concordanceColumns[i].type;
+	    th.dataset.sortableType = concordanceColumns[i].type;
 
-	tableRow.appendChild(tableData);
+	tableRow.appendChild(th);
       }
       tableHead.appendChild(tableRow);
       concordanceTable.appendChild(tableHead);
