@@ -128,49 +128,51 @@ var Faust = (function(){
 
     var NUMBERPLUS = /^(-?[\d,.]+)\s?(\w*)$/;
     var matchSpace = function matchSpace(a) { return a.match(/^\s*$/); }
-    Sortable.setupTypes([
-      { name: 'numericplus',
-        defaultSortDirection: 'ascending',
-        match: function(a) { return NUMBERPLUS.test(a); },
-        compare: function(a, b) {
-          console.log('numericplus compare');
-          var _a = NUMBERPLUS.exec(a),
+    if (typeof(Sortable) !== "undefined") {
+      Sortable.setupTypes([
+        { name: 'numericplus',
+          defaultSortDirection: 'ascending',
+          match: function(a) { return NUMBERPLUS.test(a); },
+          compare: function(a, b) {
+            console.log('numericplus compare');
+            var _a = NUMBERPLUS.exec(a),
               _b = NUMBERPLUS.exec(b),
-              na = parseFloat(_a[1], 10) || 0,
-              nb = parseFloat(_b[1], 10) || 0,
-              n_cmp = na - nb;
+                na = parseFloat(_a[1], 10) || 0,
+                  nb = parseFloat(_b[1], 10) || 0,
+                    n_cmp = na - nb;
 
-          if (n_cmp === 0) {
-            return _a[2].localeCompare(_b[2]);
-          } else {
-            return n_cmp;
-          }               
+                    if (n_cmp === 0) {
+                      return _a[2].localeCompare(_b[2]);
+                    } else {
+                      return n_cmp;
+                    }               
+          }
+        },
+        {
+          name: 'sigil',
+          defaultSortDirection: 'ascending',
+          match: function(a) { return false; },
+          compare: sigil,
+          bottom: matchSpace
+        },
+        {
+          name: 'alpha',
+          defaultSortDirection: 'ascending',
+          match: function() { return false; },
+          compare: function(a, b) {
+            if (!a)
+              return +1;
+            else if (!b)
+              return -1;
+            else
+              return a.localeCompare(b);
+          },
+          bottom: matchSpace
         }
-      },
-      {
-        name: 'sigil',
-        defaultSortDirection: 'ascending',
-        match: function(a) { return false; },
-        compare: sigil,
-        bottom: matchSpace
-      },
-      {
-      name: 'alpha',
-      defaultSortDirection: 'ascending',
-      match: function() { return false; },
-      compare: function(a, b) {
-        if (!a)
-          return +1;
-        else if (!b)
-          return -1;
-        else
-          return a.localeCompare(b);
-      },
-      bottom: matchSpace
-    }
-    
-    ]);
 
+      ]);
+
+    }
       // Map defined algorithms to sortAlgorithms object
       sortAlgorithms.asc = asc;
       sortAlgorithms.desc = desc;
