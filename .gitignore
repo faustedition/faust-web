@@ -4,4 +4,8 @@ transcript
 xml
 meta
 *~
+.*.swp
 tags
+debug.html
+js-gen/
+json/
