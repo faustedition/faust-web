@@ -127,29 +127,69 @@ var Faust = (function(){
 
 
     var NUMBERPLUS = /^(-?[\d,.]+)\s?(\w*)$/;
+    var DATE_DE    = /^(?:(?:(\d\d))\.(\d\d))\.?(\d+)$/;
+    var BIB        = /^(\D+)(\d+)(\D+)(\d+)(\D+)/;
     var matchSpace = function matchSpace(a) { return a.match(/^\s*$/); }
     if (typeof(Sortable) !== "undefined") {
       Sortable.setupTypes([
-        { name: 'numericplus',
+        { name: 'numericplus',  // number + optional suffix, e.g., 123a
           defaultSortDirection: 'ascending',
           match: function(a) { return NUMBERPLUS.test(a); },
           compare: function(a, b) {
-            console.log('numericplus compare');
-            var _a = NUMBERPLUS.exec(a),
-              _b = NUMBERPLUS.exec(b),
+            var empty = emptyValuesToEnd(a, b);
+            if (empty) return empty;
+            var _a = NUMBERPLUS.exec(a) || ['', 0, ''],
+                _b = NUMBERPLUS.exec(b) || ['', 0, ''],
                 na = parseFloat(_a[1], 10) || 0,
-                  nb = parseFloat(_b[1], 10) || 0,
-                    n_cmp = na - nb;
-
-                    if (n_cmp === 0) {
-                      return _a[2].localeCompare(_b[2]);
-                    } else {
-                      return n_cmp;
-                    }               
-          }
+                nb = parseFloat(_b[1], 10) || 0;
+            return na - nb || _a[2].localeCompare(_b[2]);
+          },
+          bottom: matchSpace
         },
         {
-          name: 'sigil',
+          name: 'date-de',    // e.g., 12.03.1810 or 1793
+          defaultSortDirection: 'ascending',
+          match: function(a) { return DATE_DE.test(a); },
+          comparator: function(a) {
+            var split = DATE_DE.exec(a);
+            var result;
+            if (split) 
+              result = split[3] + "-" + split[2] + "-" + split[1];
+            else
+              result = "9999-99-99";
+            return result;
+          },
+          bottom: matchSpace
+        },
+        {
+          name: 'bibliography',   
+          defaultSortDirection: 'ascending',
+          match: function() { return false; },
+          compare: function(a, b) {
+            var empty = emptyValuesToEnd(a, b);
+            if (empty) return empty;
+            var _a = BIB.exec(a),
+                _b = BIB.exec(b);
+            if (_a == null) {
+              if (_b == null) {
+                return 0;
+              } else {
+                return 1;
+              }
+            }
+            if (_b == null)
+              return -1;
+
+            return _a[1].localeCompare(_b[1]) || 
+                   _a[2] - _b[2] || 
+                   _a[3].localeCompare(_b[3]) || 
+                   _a[4] - _b[4] ||
+                   _a[5].localeCompare(_b[5]);
+          },
+          bottom: matchSpace
+        },
+        {
+          name: 'sigil',   // Faustedition sigil
           defaultSortDirection: 'ascending',
           match: function(a) { return false; },
           compare: sigil,
