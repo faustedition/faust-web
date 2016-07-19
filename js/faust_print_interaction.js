@@ -36,7 +36,7 @@ var addPrintInteraction = function(rootDir, node) {
                 resultContainer.innerHTML = xhr.responseText;
 
                 // loaded html contains variants for several lines. find right one
-                variantsDiv = resultContainer.querySelector("#v" + verseLine);
+                variantsDiv = resultContainer.querySelector("#v" + verseLine.replace(' ', '_'));
 
                 // append resulting div to node for later re-appending and append to dom
                 currentLine.variantsDiv = variantsDiv;
