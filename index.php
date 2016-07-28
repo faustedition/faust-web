@@ -98,8 +98,8 @@
       Frankfurt am Main, Weimar, Würzburg 2016
     </p>
     <p>
-      <a class="pure-button pure-button-tile" href="project">Über das Projekt</a>
       <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe (Beta-Version)</a> 
+      <a class="pure-button pure-button-tile" href="project">Mitwirkende</a>
     </p>
 
 
