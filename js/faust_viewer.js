@@ -55,7 +55,8 @@ var createDocumentViewer = (function(){
 
       // updates the adress in the browser bar to a value calculated from state and doc
       var updateLocation = function updateLocation() {
-        var url = window.location.pathname + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
+        var fixedPath = window.location.pathname.replace(/^\/+/, '/');
+        var url = fixedPath + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
         if (state.section) {
           url += '&section=' + state.section;
         }
