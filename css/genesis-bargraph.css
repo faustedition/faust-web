@@ -31,9 +31,11 @@ main.bargraph {
 }
 
 #genetic-bar-diagram-verse-bars rect.paralipomena {
-  fill:rgb(170, 160, 130);
+ fill:rgb(191, 160, 54);
 }
 
+/*
 #genetic-bar-diagram-verse-bars rect.paralipomena.uncertain {
   fill:rgb(220, 220, 200);
 }
+*/
