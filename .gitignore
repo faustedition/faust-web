@@ -6,7 +6,7 @@ meta
 *~
 .*.swp
 tags
-debug.html
+debug*.html
 js-gen/
 json/
 archive_prints.html
