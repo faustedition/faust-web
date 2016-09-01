@@ -36,11 +36,11 @@
       function createParaLink(paralipomenon) {
         var href = getViewerURI(paralipomenon.uri) + '&view=text';
         if (paralipomenon.page) { href = href + '&page=' + paralipomenon.page; }
-        if (paralipomenon.line) { href = href + '#l' + paralipomenon.line; }
+        href = href + '#' + paralipomenon.id;
         return Faust.dom.createElement({name: "a", attributes: [["href", href]], children: [document.createTextNode(paralipomenon.n)]});
       }
       function createParaRow(paralipomenon) {
-        var row  = Faust.dom.createElement({name: "tr"}),
+        var row  = Faust.dom.createElement({name: "tr", attributes: [["id", paralipomenon.id]]}),
             n    = Faust.dom.createElement({name: "td", parent: row, children: [createParaLink(paralipomenon)]}),
             sigil= Faust.dom.createElement({name: "td", parent: row, 
                         children: [createSigilLink(paralipomenon.sigil, paralipomenon.uri)]}),
