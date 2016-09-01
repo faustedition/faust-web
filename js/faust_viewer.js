@@ -582,7 +582,7 @@ var createDocumentViewer = (function(){
         if(doc.querySelector("#dt" + pageNum) !== null) {
           doc.querySelector("#dt" + pageNum).scrollIntoView();
         }
-        if (state.fragment !== '') {
+        if (state.fragment) {
           var currentTarget = doc.querySelector("#" + state.fragment.replace('.', '\\.'));
           if (currentTarget) {
             currentTarget.scrollIntoView();
