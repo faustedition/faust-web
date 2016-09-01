@@ -79,7 +79,7 @@ div:hover > a.lineno, a.lineno:hover {
 	clear: right;
 }
 
-a.pageno {
+a.pageno, a.paralipomenon {
     float: right;
     margin-right: 2em;
     font-size: smaller;
@@ -89,7 +89,6 @@ a.pageno {
     z-index: 1;
     border:none;
 }
-
 
 .speaker {    
 	padding-top: 1.5ex;
