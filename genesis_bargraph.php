@@ -404,8 +404,8 @@ var horizontalLine = createSvgElement({name: "line",
           // select filename from metadata filename
           var metadataName = witness.source.substring(witness.source.lastIndexOf("/") + 1, witness.source.lastIndexOf("."));
           // select print document that belongs to metadata name
-          var printResourceName = { "A8": "A8_IIIB18.html", "B(a)9": "Ba9_A101286.html", "B9": "B9_IIIB20-2.html", "C(1)12": "C(1)12_IIIB23-1.html", "C(1)4": "C(1)4_IIIB24.html", "C(2alpha)4": "C(2a)4_IIIB28.html", "C(3)12": "C(3)12_IIIB27.html", "C(3)4": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)": "D(1)_IV3-1.html", "D(2)": "D(2)_IV3-6.html", "GSA_30-447-1": "GSA_30-447-1_S_214-217.html", "J_1808": "J_XIIA149-1808.html", "KuA_VI_1": "KuA_IIIE43-5-1.html", "S(o)": "S(o)_IIIB11-2.html", "seckendorff1782": "GSA_32_1420.html" }[metadataName];
-          relatedLinesLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "print/" + printResourceName);
+          // var printResourceName = { "A8": "A8_IIIB18.html", "B(a)9": "Ba9_A101286.html", "B9": "B9_IIIB20-2.html", "C(1)12": "C(1)12_IIIB23-1.html", "C(1)4": "C(1)4_IIIB24.html", "C(2alpha)4": "C(2a)4_IIIB28.html", "C(3)12": "C(3)12_IIIB27.html", "C(3)4": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)": "D(1)_IV3-1.html", "D(2)": "D(2)_IV3-6.html", "GSA_30-447-1": "GSA_30-447-1_S_214-217.html", "J_1808": "J_XIIA149-1808.html", "KuA_VI_1": "KuA_IIIE43-5-1.html", "S(o)": "S(o)_IIIB11-2.html", "seckendorff1782": "GSA_32_1420.html" }[metadataName];
+          relatedLinesLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "print/" + interval.section);
         } else {
           relatedLinesLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "documentViewer?faustUri=" + witness.source + "&page=" + interval.page + "&view=facsimile");
         }
