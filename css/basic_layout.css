@@ -257,6 +257,19 @@ th[data-sorted-direction='descending']:after {
   content: "\e950"; /* .fa-sort-down */
 }
 
+/* *********************** */
+/* External Links          */
+/* *********************** */
+a[href^="//"]:after, a[href^="https://"]:after, a[href^="http://"]:after {
+  content: "\e832"; /* .fa-link-ext */
+  font-family: FontAwesome;
+  color: rgb(175,175,175);
+  margin-left: 3px;
+}
+a[href^="http://beta.faustedition.net/"]:after, a.undecorated:after {
+  content: "";
+}
+
 /* ********************** */
 /* Prints
 /* ********************** */

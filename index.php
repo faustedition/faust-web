@@ -103,7 +103,7 @@
     </p>
 
 
-    <p><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-8px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
+    <p><a class="undecorated" href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-8px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
   </article>
 
   <div class="pure-u-1-5"></div>
