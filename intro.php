@@ -46,9 +46,9 @@
             umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv in Weimar (GSA).
             Der Bestand des GSA umfasst 455 archivalische Dokumente<!-- //f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] 22.9.16 --> 
             mit insgesamt 1800 beschriebenen<!-- 1803 //f:page[ancestor::f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] and child::f:metadata/f:docTranscript/@uri[contains(.,".xml")]] 22.9.16 -->
-            Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im
-            Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
-            Frankreich, Italien und in den Vereinigten Staaten.</p>
+            Seiten zum ‚Faust‘. 89 Handschriften<!-- -1 (Tesths.) +1 (1 H.1) //f:archivalDocument[//f:repository/text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown"))]] --> mit 600<!-- 604 -32 (Tesths.) + 234 (1 H.1) //f:page[ancestor::f:archivalDocument[//f:repository/text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown"))]] and child::f:metadata/f:docTranscript/@uri[contains(.,".xml")]] 22.9.16 --> beschriebenen Seiten befinden sich im
+            Besitz von 24 weiteren Institutionen<!-- //f:repository[text()[not(contains(.,"location_unknown")) and not(contains(.,"privatbesitz"))]] --> in Deutschland, der Schweiz, Großbritannien, Polen,
+            Frankreich, Italien und in den Vereinigten Staaten sowie in Privatbesitz.</p>
         <p>Das <a href="archive">digitale Archiv</a> macht die gesamte relevante Überlieferung
             des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter,
             Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit
