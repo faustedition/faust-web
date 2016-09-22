@@ -49,6 +49,7 @@
             Seiten zum ‚Faust‘. 89 Handschriften<!-- -1 (Tesths.) +1 (1 H.1) //f:archivalDocument[//f:repository/text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown"))]] --> mit 600<!-- 604 -32 (Tesths.) + 234 (1 H.1) //f:page[ancestor::f:archivalDocument[//f:repository/text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown"))]] and child::f:metadata/f:docTranscript/@uri[contains(.,".xml")]] 22.9.16 --> beschriebenen Seiten befinden sich im
             Besitz von 24 weiteren Institutionen<!-- //f:repository[text()[not(contains(.,"location_unknown")) and not(contains(.,"privatbesitz"))]] --> in Deutschland, der Schweiz, Großbritannien, Polen,
             Frankreich, Italien und in den Vereinigten Staaten sowie in Privatbesitz.</p>
+            <!-- For human-generated statistical information see Bohnenkamp et al. in JbFDH 2011 and https://docs.google.com/spreadsheets/d/1wCYH1zKNK38QAdT2x01S2pDnkKxpSOU-QocRpRQNcxU/edit#gid=0 -->
         <p>Das <a href="archive">digitale Archiv</a> macht die gesamte relevante Überlieferung
             des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter,
             Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit
