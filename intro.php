@@ -44,7 +44,8 @@
             Druckvorlagen. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus
             der Zeit seit der Wiederaufnahme der Arbeit am ‚Faust‘ im Jahr 1825. Der weitaus
             umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv in Weimar (GSA).
-            Der Bestand des GSA umfasst 429 Archivalieneinheiten mit insgesamt 1639 beschriebenen
+            Der Bestand des GSA umfasst 455 archivalische Dokumente<!-- //f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] 22.9.16 --> 
+            mit insgesamt 1800 beschriebenen<!-- 1803 //f:page[ancestor::f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] and child::f:metadata/f:docTranscript/@uri[contains(.,".xml")]] 22.9.16 -->
             Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im
             Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
             Frankreich, Italien und in den Vereinigten Staaten.</p>
