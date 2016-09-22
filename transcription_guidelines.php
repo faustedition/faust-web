@@ -166,7 +166,7 @@
             <img src="/img/info/transcription_guidelines-image5.png"/>
             <figcaption>Abb. 5: <a href="bibliography#aa_ls_6"
                 data-bib-uri="faust://bibliography/aa_ls_6">AA Ls 6</a>, S. 750 (Ausschnitt; zum Vgl. siehe <a
-                href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=document_text"
+                href="/documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390340.xml&amp;page=11&amp;view=text"
                 >H P123.5</a>).</figcaption>
         </figure>
         <p>Für die Darstellung innerhandschriftlicher Varianten gibt es in gedruckten Ausgaben
