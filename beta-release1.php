@@ -51,8 +51,6 @@
             <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
             Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
-        <h2>Frühere Versionen</h2>
-        <p>Informationen über die Release der Beta-Version 1 <a href="beta-release1">hier</a>.</p>
     </article>
 </section>
 
