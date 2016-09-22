@@ -16,6 +16,7 @@
             <p><a class="pure-button" href="/archive_locations" style="display:block;">Aufbewahrungsorte</a></p>
             <p><a class="pure-button" href="/archive_manuscripts" style="display:block;">Handschriften</a></p>
             <p><a class="pure-button" href="/archive_prints" style="display:block;">Drucke</a></p>
+            <p><a class="pure-button" href="/archive_testimonies" style="display:block;"><small class="pure-fade-50">Dokumente zur</small><br>Entstehungsgeschichte</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/genesis"><big>Genese</big></a></p>
@@ -28,8 +29,9 @@
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/print/faust1.html" style="display:block;">Faust I</a></p>
-            <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
+            <p><a class="pure-button" href="/print/faust1" style="display:block;">Faust I</a></p>
+            <p><a class="pure-button" href="/print/faust2" style="display:block;">Faust II</a></p>
+            <p><a class="pure-button" href="paralipomena" style="display:block;">Paralipomena</a></p>
         </div>
         <div class="pure-u-1-8"></div>
         <h2>Beta-Version</h2>
