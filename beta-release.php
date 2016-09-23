@@ -81,6 +81,20 @@
             <li>In den Varianten zur Szene ‚<a ref="###">Trüber Tag. Feld</a>‘ erscheint nun auch der ‚Urfaust‘ 
             (<a ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&page=85&view=facsimile_document">1 H.5</a>).</li>
         </ul>
+        <h3>Suche</h3>
+        <ul>
+            <li>Die Suche wurde neuimplementiert, so dass größere Ergebnismengen nun schneller ausgeliefert werden. Zur Erhöhung der Übersichtlichkeit geschieht dies auf einer Seite.</li>
+            <li>Die Ergebnisse werden nach den Kriterien Relevanz, Sigle und Textstelle sortiert.</li>
+            <li>Auch nach Zeugensiglen und Archivsignaturen kann nun gesucht werden, siehe <a ref="intro.php/volltextsuche">Volltextsuche</a>.</li>
+        </ul>
+        <h3>Sonstiges</h3>
+        <p>Über die genannten hinaus wurden u.a. folgende Verbesserungen vorgenommen:</p>
+        <ul>
+            <li>korrekte Sortierung der <a ref="bibliography">Bibliographie</a></li>
+            <li>Kennzeichnung externer Links</li>
+            <li>Vereinheitlichung der Seitentitel (‚Breadcrumbs‘).</li>
+            <li>diverse Detailverbesserungen und Bugfixes</li>
+        </ul>
         <h2>Frühere Versionen</h2>
         <p>Informationen über die Release der Beta-Version 1 <a href="beta-release1">hier</a>.</p>
     </article>
