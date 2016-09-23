@@ -17,7 +17,7 @@ copyright_notes = {
  "gm_duesseldorf": "Goethe-Museum Düsseldorf",
  "faust://xml/document/archival/sb_berlin/SBB-Ms_germ_qu_475.xml": "Staatsbibliothek zu Berlin – PK, Handschriftenabt., Ms. germ. qu. 475",
  "tml_new_york": "Morgan Library & Museum, New York",
- "ul_yale": "Yale University Library",
+ "ul_yale": "Yale Collection of German Literature, Beinecke Rare Book and Manuscript Library",
  "faust://xml/document/archival/location_unknown/hartung-und-hartung_auktion112-2492.xml": "Hartung & Hartung",
  "bb_cologny": "Bibliotheca Bodmeriana, Cologny",
  "ub_bonn": "Universitäts- und Landesbibliothek Bonn",
