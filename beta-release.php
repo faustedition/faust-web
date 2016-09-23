@@ -25,7 +25,6 @@
             Gesamtüberlieferung visualisiert, ist zurzeit, wie die Übersichtstabellen der
             handschriftlichen und gedruckten Überlieferung, nach Siglen sortiert. In der Version 1.0
             soll eine chronologische Sortierung angeboten werden.</p>
-        <p>Die Möglichkeit, verschiedene Fassungen frei nach Benutzerwunsch parallel anzuzeigen, befindet sich in der Erprobung.</p>
         <p>Als <strong>Lesetext</strong> wird in der Beta-Version  eine getreue, unemendierte Wiedergabe des ‚Faust&nbsp;I‘ nach dem Druck 
         im achten Band der ersten Cotta’schen Gesamtausgabe (A) sowie des ‚Faust&nbsp;II‘ nach der großen Reinschrift (H) angeboten. 
         Ein konstituierter Lesetext soll in der Version 1.0 folgen. In den Lesetext ist eine zeilensynoptische
