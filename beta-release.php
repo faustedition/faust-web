@@ -1,8 +1,7 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <p><b>Release am 15. Februar 2016</b></p>
-        <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern
+        <p>Die zurzeit sichtbare Version der Ausgabe ist noch nicht endgültig, sondern
             eine Beta-Version. Mit den drei Säulen „Archiv“, „Genese“ und „Text“ sind hier jedoch 
             bereits alle grundlegenden Funktionalitäten realisiert.</p>
         <p>Die Erscheinung der Version 1.0 ist für das Frühjahr 2017 vorgesehen. Sie soll einige
@@ -51,6 +50,8 @@
             <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
             Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
+        <h2>Release am ###. September 2016 (Beta-Version 2)</h2>
+        
         <h2>Frühere Versionen</h2>
         <p>Informationen über die Release der Beta-Version 1 <a href="beta-release1">hier</a>.</p>
     </article>
