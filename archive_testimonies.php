@@ -233,7 +233,7 @@
       <td>Brief</td>
       <td>August Mylius</td>
       <td>Johann Heinrich Merck</td>
-      <td>Briefe an und von Johann Heinrich Merck. Eine ...</td>
+      <td>Briefe an und von Johann Heinrich Merck. Eine selbständige Folge der im Jahr 1835 erschienenen Briefe an J. H. Merck. Aus den Handschriften hrsg. von Dr. Karl Wagner. Darmstadt 1838, 53f</td>
     </tr>
     <tr>
       <td></td>
@@ -242,7 +242,7 @@
       <td>Brief</td>
       <td>Leopold von Stolberg</td>
       <td>Henriette von Stolberg</td>
-      <td>F.L. Graf von Stolberg. Hrsg. Janssen. Freibur...</td>
+      <td>F.L. Graf von Stolberg. Hrsg. Janssen. Freiburg, 1877. 1, 63</td>
     </tr>
     <tr>
       <td></td>
@@ -251,7 +251,7 @@
       <td>Brief</td>
       <td>Johann Heinrich Merck</td>
       <td>Christoph Friedrich Nicolai</td>
-      <td>Vierteljahresschrift für Literaturgeschichte. ...</td>
+      <td>Vierteljahresschrift für Literaturgeschichte. 4, 334</td>
     </tr>
     <tr>
       <td></td>
@@ -287,7 +287,7 @@
       <td>Brief</td>
       <td>Johann Gottfried Herder</td>
       <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 18...</td>
+      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 1835. 2, 300</td>
     </tr>
     <tr>
       <td></td>
@@ -296,7 +296,7 @@
       <td>Rezension</td>
       <td>?</td>
       <td></td>
-      <td>Berliner Litteratur- und Theaterzeitung 2 (177...</td>
+      <td>Berliner Litteratur- und Theaterzeitung 2 (1779), S. 237</td>
     </tr>
     <tr>
       <td></td>
@@ -323,7 +323,7 @@
       <td>Brief</td>
       <td>Karl August Sachsen-Weimar und Eisenach</td>
       <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 18...</td>
+      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 1835. 1, 119</td>
     </tr>
     <tr>
       <td></td>
@@ -332,7 +332,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>Seckendorff. „Volks- und andere Lieder, mit Be...</td>
+      <td>Seckendorff. „Volks- und andere Lieder, mit Begleitung des Fortepiano“, 3. Heft, 1782</td>
     </tr>
     <tr>
       <td>861</td>
@@ -377,7 +377,7 @@
       <td>Text</td>
       <td>ohne Verfasser</td>
       <td></td>
-      <td>Journal von und für Deutschland, hg. von Siegm...</td>
+      <td>Journal von und für Deutschland, hg. von Siegmund Frh. von Bibra. 3, 1786 St 6, 575-78.</td>
     </tr>
     <tr>
       <td>863b</td>
@@ -620,7 +620,7 @@
       <td>Brief</td>
       <td>Johann Gottfried Herder</td>
       <td>Joseph Friedrich Racknitz</td>
-      <td>M. Lengenfeld'sche Buchhandlung, Antiquariats-...</td>
+      <td>M. Lengenfeld'sche Buchhandlung, Antiquariats-Katalog 42, 1932 Nr. 204</td>
     </tr>
     <tr>
       <td>871</td>
@@ -638,7 +638,7 @@
       <td>Gespräch</td>
       <td>Karl Friedrich Klischnig</td>
       <td></td>
-      <td>Klischnig. Lebensgeschichte des Hofrath Moritz...</td>
+      <td>Klischnig. Lebensgeschichte des Hofrath Moritz. Berlin, 1794. 210f</td>
     </tr>
     <tr>
       <td>872</td>
@@ -1034,7 +1034,7 @@
       <td>Text</td>
       <td>Georg Joachim Göschen</td>
       <td></td>
-      <td>Journal des Luxus und der Moden. Hg. Von Fried...</td>
+      <td>Journal des Luxus und der Moden. Hg. Von Friedrich Justin Bertuch und Georg Melchior Kraus. Bd 5.Weimar 1790. Intelligenzbl Nr 5, LX-LXII</td>
     </tr>
     <tr>
       <td>897</td>
@@ -1160,7 +1160,7 @@
       <td>Brief</td>
       <td>Wilhelm von Humboldt</td>
       <td>Friedrich Schiller</td>
-      <td>Humboldts Briefwechsel mit Schiller. Hrsg. Lei...</td>
+      <td>Humboldts Briefwechsel mit Schiller. Hrsg. Leitzmann. Stuttgart, 1900. 59, 34-36</td>
     </tr>
     <tr>
       <td>903</td>
@@ -1682,7 +1682,7 @@
       <td>Gespräch</td>
       <td>Jean Paul Friedrich Richter</td>
       <td></td>
-      <td>Jean Pauls Briefwechsel mit G. Hrsg. Paul Nerr...</td>
+      <td>Jean Pauls Briefwechsel mit G. Hrsg. Paul Nerrlich, Berlin 1902. 79</td>
     </tr>
     <tr>
       <td></td>
@@ -1691,7 +1691,7 @@
       <td>Brief</td>
       <td>Johann Friedrich von Cotta</td>
       <td>Friedrich Schiller</td>
-      <td>Cottas Briefwechsel mit Schiller. Hrsg. Vollme...</td>
+      <td>Cottas Briefwechsel mit Schiller. Hrsg. Vollmer. Stuttgart, 1876. 329</td>
     </tr>
     <tr>
       <td></td>
@@ -3122,7 +3122,7 @@
       <td>Brief</td>
       <td>Wilhelm von Humboldt</td>
       <td>Karoline von Wolzogen</td>
-      <td>Hase 1848-1849, Bd. 2, S. 8-12 (Wolzogens lite...</td>
+      <td>Hase 1848-1849, Bd. 2, S. 8-12 (Wolzogens literarischer Nachlass. ?, ?. 2, 12)</td>
     </tr>
     <tr>
       <td>1062a</td>
@@ -3131,7 +3131,7 @@
       <td>Gespräch</td>
       <td>Heinrich Luden</td>
       <td></td>
-      <td>Rückblicke in mein Leben. Aus dem Nachlasse vo...</td>
+      <td>Rückblicke in mein Leben. Aus dem Nachlasse von Heinrich Luden. 1847, S. 19</td>
     </tr>
     <tr>
       <td>1063</td>
@@ -3248,7 +3248,7 @@
       <td>Brief</td>
       <td>Charlotte von Stein</td>
       <td>Fritz von Stein</td>
-      <td>Heinrich Düntzer: Charlotte von Stein: Charlot...</td>
+      <td>Heinrich Düntzer: Charlotte von Stein: Charlotte von Stein, Goethes Freundin. Stuttgart 1874, II, 273f</td>
     </tr>
     <tr>
       <td>1072</td>
@@ -3311,7 +3311,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
-      <td>Briefe an Cotta. Das Zeitalter Goethes und Nap...</td>
+      <td>Briefe an Cotta. Das Zeitalter Goethes und Napoleons 1794-1815. Hrsg. von Maria Fehling. Stuttgart 1925, 98</td>
     </tr>
     <tr>
       <td></td>
@@ -3527,7 +3527,7 @@
       <td>Brief</td>
       <td>Wilhelm von Humboldt</td>
       <td>Caroline von Humboldt</td>
-      <td>Wilhelm und Caroline von Humboldt in ihren Bri...</td>
+      <td>Wilhelm und Caroline von Humboldt in ihren Briefen. Hrsg. von Anna von Sydow. Bd. III, Berlin 1909, 20-24</td>
     </tr>
     <tr>
       <td>1091</td>
@@ -3563,7 +3563,7 @@
       <td>Brief</td>
       <td>Henriette von Knebel</td>
       <td>Karl Ludwig von Knebel</td>
-      <td>Karl Ludwig von Knebels Briefwechsel mit seine...</td>
+      <td>Karl Ludwig von Knebels Briefwechsel mit seiner Schwester Henriette (1774-1813). Hrsg. von Heinrich Düntzer. Jena 1858, 354</td>
     </tr>
     <tr>
       <td>1093</td>
@@ -3653,7 +3653,7 @@
       <td>Brief</td>
       <td>Wilhelm Grimm</td>
       <td>Ludwig Joachim Arnim</td>
-      <td>Jahrbuch des Freien Deutschen Hochstifts 1912,...</td>
+      <td>Jahrbuch des Freien Deutschen Hochstifts 1912, 305</td>
     </tr>
     <tr>
       <td>1098</td>
@@ -3932,7 +3932,7 @@
       <td>Gespräch</td>
       <td>Karl Ludwig von Knebel</td>
       <td></td>
-      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer, Jen...</td>
+      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer, Jena 1858, 542</td>
     </tr>
     <tr>
       <td>1129</td>
@@ -3977,7 +3977,7 @@
       <td>Gespräch</td>
       <td>Karl Ludwig von Knebel</td>
       <td></td>
-      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer, Jen...</td>
+      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer, Jena 1858, 551</td>
     </tr>
     <tr>
       <td>1132</td>
@@ -4049,7 +4049,7 @@
       <td>Gespräch</td>
       <td>Friedrich Albert Brockhaus</td>
       <td></td>
-      <td>F. A. Brockhaus. Leben und Wirken. Hrsg. H. E....</td>
+      <td>F. A. Brockhaus. Leben und Wirken. Hrsg. H. E. Brockhaus. Leipzig, 1872. 1, 275</td>
     </tr>
     <tr>
       <td>1140</td>
@@ -4238,7 +4238,7 @@
       <td></td>
       <td>Friedrich von Müller</td>
       <td></td>
-      <td>Goethes Unterhaltungen mit dem Kanzler Friedri...</td>
+      <td>Goethes Unterhaltungen mit dem Kanzler Friedrich v. Müller, hg. v. C.A.H. Burkhardt, Stuttgart 1870, 9ff</td>
     </tr>
     <tr>
       <td>1154</td>
@@ -4274,7 +4274,7 @@
       <td>Gespräch</td>
       <td>Karl Eberwein</td>
       <td></td>
-      <td>"Europa. Chronik der Gebildeten Welt." 1853 (N...</td>
+      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 337</td>
     </tr>
     <tr>
       <td>1157a</td>
@@ -4355,7 +4355,7 @@
       <td>Gespräch</td>
       <td>Sulpiz Boisserée</td>
       <td></td>
-      <td>Eduard Firmenich-Richartz: Die Brüder Boisseré...</td>
+      <td>Eduard Firmenich-Richartz: Die Brüder Boisserée, Bd. I, Jena 1916, 419-420</td>
     </tr>
     <tr>
       <td>1165</td>
@@ -4364,7 +4364,7 @@
       <td>Gespräch</td>
       <td>Karl Eberwein</td>
       <td></td>
-      <td>"Europa. Chronik der Gebildeten Welt." 1853 (N...</td>
+      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 337</td>
     </tr>
     <tr>
       <td>1166</td>
@@ -4481,7 +4481,7 @@
       <td>Gespräch</td>
       <td>Johannes Daniel Falk</td>
       <td></td>
-      <td>Falk, Goethe aus näherm persönlichem Umgange d...</td>
+      <td>Falk, Goethe aus näherm persönlichem Umgange dargestellt, Leipzig 1832, 94ff</td>
     </tr>
     <tr>
       <td>1175</td>
@@ -4499,7 +4499,7 @@
       <td>Gespräch</td>
       <td>Charlotte von Schiller</td>
       <td></td>
-      <td>Charl. Schiller - Knebel, Briefe von Schiller'...</td>
+      <td>Charl. Schiller - Knebel, Briefe von Schiller's Gattin an einen vertrauten Freund. Hsg. Von Heinrich von Düntzer. Leipzig: F. A. Brockhaus. 1856., 301f</td>
     </tr>
     <tr>
       <td>1177</td>
@@ -4517,7 +4517,7 @@
       <td>Tagebuch</td>
       <td>George Ticknor</td>
       <td></td>
-      <td>Life, Letters, and Journals of George Ticknor....</td>
+      <td>Life, Letters, and Journals of George Ticknor. Vol. I. Second edition. London 1876, 95-96</td>
     </tr>
     <tr>
       <td>1178</td>
@@ -4616,7 +4616,7 @@
       <td>Gespräch</td>
       <td>Johannes Daniel Falk</td>
       <td></td>
-      <td>G. aus persönlichem Umgang. Hrsg. Falk. Leipzi...</td>
+      <td>G. aus persönlichem Umgang. Hrsg. Falk. Leipzig, 1856. 82-84</td>
     </tr>
     <tr>
       <td></td>
@@ -4697,7 +4697,7 @@
       <td>Gespräch</td>
       <td>Karl Ludwig von Knebel</td>
       <td></td>
-      <td>Charlotte von Schiller und ihre Freunde. Stutt...</td>
+      <td>Charlotte von Schiller und ihre Freunde. Stuttgart, 1860-65. 3, 382f</td>
     </tr>
     <tr>
       <td>1196</td>
@@ -4796,7 +4796,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Graf Karl von Brühl</td>
-      <td>Teichmann. Hrsg. Franz Dingelstedt. Stuttgart,...</td>
+      <td>Teichmann. Hrsg. Franz Dingelstedt. Stuttgart, 1863. 249</td>
     </tr>
     <tr>
       <td>1206</td>
@@ -4877,7 +4877,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 3, 87</td>
     </tr>
     <tr>
       <td>1213</td>
@@ -4886,7 +4886,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 3, 107</td>
     </tr>
     <tr>
       <td>1214</td>
@@ -4940,7 +4940,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Christoph Ludwig Friedrich Schultz</td>
-      <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Le...</td>
+      <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Leipzig, 1856. 214</td>
     </tr>
     <tr>
       <td>1217</td>
@@ -4967,7 +4967,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ernst Schubarth</td>
-      <td>Schubarths Briefwechsel mit G. In: Deutsche Ru...</td>
+      <td>Schubarths Briefwechsel mit G. In: Deutsche Rundschau 1875 (5), 1. 30</td>
     </tr>
     <tr>
       <td>1220</td>
@@ -5048,7 +5048,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 3,  203</td>
     </tr>
     <tr>
       <td>1228</td>
@@ -5201,7 +5201,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübi...</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 215</td>
     </tr>
     <tr>
       <td>1244</td>
@@ -5210,7 +5210,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Hermann Friedrich Wilhelm Hinrichs</td>
-      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1...</td>
+      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1, 269</td>
     </tr>
     <tr>
       <td>1245</td>
@@ -5228,7 +5228,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 3, 279</td>
     </tr>
     <tr>
       <td>1247</td>
@@ -5462,7 +5462,7 @@
       <td>Gespräch</td>
       <td>Friedrich von Matthisson</td>
       <td></td>
-      <td>Matthisson, F. Schriften. Zürich, 1825-29. Bd....</td>
+      <td>Matthisson, F. Schriften. Zürich, 1825-29. Bd. 7, 294</td>
     </tr>
     <tr>
       <td>1267</td>
@@ -5480,7 +5480,7 @@
       <td>Brief</td>
       <td>Friedrich von Matthisson</td>
       <td>Friedrich Haug</td>
-      <td>Friedrich von Matthisson, Schriften. Ausgabe l...</td>
+      <td>Friedrich von Matthisson, Schriften. Ausgabe letzter Hand, Bd. 7, Zürich 1827, 293f</td>
     </tr>
     <tr>
       <td></td>
@@ -5507,7 +5507,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Christoph Ludwig Friedrich Schultz</td>
-      <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Le...</td>
+      <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Leipzig, 1856. 308</td>
     </tr>
     <tr>
       <td></td>
@@ -5516,7 +5516,7 @@
       <td>Brief</td>
       <td>Johann Peter Eckermann</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 188...</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 1, 110-2</td>
     </tr>
     <tr>
       <td>1270</td>
@@ -5903,7 +5903,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Wilhelm Riemer</td>
-      <td>Briefe von und an G. Hrsg. Riemer. Leipzig, 18...</td>
+      <td>Briefe von und an G. Hrsg. Riemer. Leipzig, 1846. 225f</td>
     </tr>
     <tr>
       <td>1302</td>
@@ -6074,7 +6074,7 @@
       <td>Gespräch</td>
       <td>Johann Peter Eckermann</td>
       <td></td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 188...</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 1, 143f</td>
     </tr>
     <tr>
       <td>1319</td>
@@ -6173,7 +6173,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. M...</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 7</td>
     </tr>
     <tr>
       <td>1327</td>
@@ -6335,7 +6335,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. M...</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 11</td>
     </tr>
     <tr>
       <td>1336</td>
@@ -6353,7 +6353,7 @@
       <td>Text</td>
       <td></td>
       <td></td>
-      <td>Faust am Hofe des Kaisers. Hrsg. Tewes. Berlin...</td>
+      <td>Faust am Hofe des Kaisers. Hrsg. Tewes. Berlin, 1901. S. X</td>
     </tr>
     <tr>
       <td>1338</td>
@@ -6362,7 +6362,7 @@
       <td>Gespräch</td>
       <td>Johann Peter Eckermann</td>
       <td></td>
-      <td>Faust am Hofe des Kaisers. Hrsg. Tewes. Berlin...</td>
+      <td>Faust am Hofe des Kaisers. Hrsg. Tewes. Berlin, 1901. S. XIII</td>
     </tr>
     <tr>
       <td>1339</td>
@@ -6731,7 +6731,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübi...</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 270</td>
     </tr>
     <tr>
       <td>1371</td>
@@ -6857,7 +6857,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 171</td>
     </tr>
     <tr>
       <td>1381a</td>
@@ -6974,7 +6974,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Caroline Friederike von Berg</td>
-      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1...</td>
+      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1, 53</td>
     </tr>
     <tr>
       <td>1392</td>
@@ -7088,10 +7088,10 @@
       <td></td>
       <td></td>
       <td>19.07.1826</td>
-      <td>Anzeige von Goethe's sämmtlichen Werken, volls...</td>
+      <td>Anzeige von Goethe's sämmtlichen Werken, vollständige Ausgabe letzter Hand</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>Morgenblatt 1826, Intelligenzbl Nr 25, 97-99; ...</td>
+      <td>Morgenblatt 1826, Intelligenzbl Nr 25, 97-99; Beilage zu Nr 171</td>
     </tr>
     <tr>
       <td>1401</td>
@@ -7208,7 +7208,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Kaspar von Sternberg</td>
-      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek...</td>
+      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 163</td>
     </tr>
     <tr>
       <td>1412</td>
@@ -7217,7 +7217,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübi...</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 274</td>
     </tr>
     <tr>
       <td>1413</td>
@@ -7235,7 +7235,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Christoph Ludwig Friedrich Schultz</td>
-      <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Le...</td>
+      <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Leipzig, 1856. 335</td>
     </tr>
     <tr>
       <td>1415</td>
@@ -7244,7 +7244,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. M...</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 13</td>
     </tr>
     <tr>
       <td>1416</td>
@@ -7280,7 +7280,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Wilhelm von Humboldt</td>
-      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. B...</td>
+      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 279</td>
     </tr>
     <tr>
       <td>1420</td>
@@ -7703,7 +7703,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
-      <td>Cottas Briefwechsel mit Schiller. Hrsg. Vollme...</td>
+      <td>Cottas Briefwechsel mit Schiller. Hrsg. Vollmer. Stuttgart, 1876. 580f</td>
     </tr>
     <tr>
       <td>1459</td>
@@ -7838,7 +7838,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübi...</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 284</td>
     </tr>
     <tr>
       <td>1466a</td>
@@ -7874,7 +7874,7 @@
       <td>Brief</td>
       <td>Friedrich von Müller</td>
       <td>Johann Karl Ludwig Schorn</td>
-      <td>Adelheid von Schorn, Das nachklassische Weimar...</td>
+      <td>Adelheid von Schorn, Das nachklassische Weimar, Weimar 1911, 76</td>
     </tr>
     <tr>
       <td>1469</td>
@@ -7892,7 +7892,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 290</td>
     </tr>
     <tr>
       <td></td>
@@ -7946,7 +7946,7 @@
       <td>Brief</td>
       <td></td>
       <td>Philipp Albert Stapfer</td>
-      <td>Faust, Tragédie de G. Par Gérard de Nerval. Pa...</td>
+      <td>Faust, Tragédie de G. Par Gérard de Nerval. Paris, 1828. 145</td>
     </tr>
     <tr>
       <td>1474a</td>
@@ -8027,7 +8027,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Georg Wilhelm Friedrich Hegel</td>
-      <td>Briefe von Hegel. Hrsg. Von K. Hegel. Leipzig,...</td>
+      <td>Briefe von Hegel. Hrsg. Von K. Hegel. Leipzig, 1887. 2, 237</td>
     </tr>
     <tr>
       <td></td>
@@ -8063,7 +8063,7 @@
       <td>Text</td>
       <td>Karl von Holtei</td>
       <td></td>
-      <td>Karl von Holtei, Nachlese, Bd. 1, Breslau 1870...</td>
+      <td>Karl von Holtei, Nachlese, Bd. 1, Breslau 1870, 21</td>
     </tr>
     <tr>
       <td>1483</td>
@@ -8108,7 +8108,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 310</td>
     </tr>
     <tr>
       <td>1488</td>
@@ -8171,7 +8171,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. M...</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 19</td>
     </tr>
     <tr>
       <td>1495</td>
@@ -8198,7 +8198,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 340</td>
     </tr>
     <tr>
       <td>1497</td>
@@ -8261,7 +8261,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer. Jen...</td>
+      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer. Jena, 1858. 2, 375</td>
     </tr>
     <tr>
       <td>1503</td>
@@ -8270,7 +8270,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer. Jen...</td>
+      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer. Jena, 1858. 2, 378</td>
     </tr>
     <tr>
       <td>1504</td>
@@ -8423,7 +8423,7 @@
       <td>Text</td>
       <td>Friedrich von Müller</td>
       <td></td>
-      <td>F. Müller, Goethe in seiner praktischen Wirksa...</td>
+      <td>F. Müller, Goethe in seiner praktischen Wirksamkeit, Weimar 1832, 33</td>
     </tr>
     <tr>
       <td>1518</td>
@@ -8585,7 +8585,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 401</td>
     </tr>
     <tr>
       <td>1535</td>
@@ -8675,7 +8675,7 @@
       <td>Tagebuch</td>
       <td>Karl Viktor Meyer</td>
       <td></td>
-      <td>H. Kasten, Goethes Bremer Freund Dr. Nicolaus ...</td>
+      <td>H. Kasten, Goethes Bremer Freund Dr. Nicolaus Meyer, Bremen 1926, 364f</td>
     </tr>
     <tr>
       <td></td>
@@ -8747,7 +8747,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 437</td>
     </tr>
     <tr>
       <td>1551</td>
@@ -8819,7 +8819,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer. Jen...</td>
+      <td>Knebels Briefwechsel mit G. Hrsg. Düntzer. Jena, 1858. 2, 379f</td>
     </tr>
     <tr>
       <td>1556</td>
@@ -8855,7 +8855,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 442f</td>
     </tr>
     <tr>
       <td>1560</td>
@@ -8891,7 +8891,7 @@
       <td>Gespräch</td>
       <td>Friedrich Förster</td>
       <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Klet...</td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 37f</td>
     </tr>
     <tr>
       <td>1564</td>
@@ -8900,7 +8900,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 443</td>
     </tr>
     <tr>
       <td></td>
@@ -9080,7 +9080,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Wilhelm Riemer</td>
-      <td>Briefe von und an G. Hrsg. Riemer. Leipzig, 18...</td>
+      <td>Briefe von und an G. Hrsg. Riemer. Leipzig, 1846. 228</td>
     </tr>
     <tr>
       <td>1574</td>
@@ -9152,7 +9152,7 @@
       <td>Text</td>
       <td>Augustus Bozzi Granville</td>
       <td></td>
-      <td>A.B. Granville, St. Petersbugh, vol. II, Londo...</td>
+      <td>A.B. Granville, St. Petersbugh, vol. II, Londoon 1828, 674ff</td>
     </tr>
     <tr>
       <td>1580</td>
@@ -9296,7 +9296,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 4</td>
     </tr>
     <tr>
       <td>1593</td>
@@ -9323,7 +9323,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübi...</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 295</td>
     </tr>
     <tr>
       <td>1596</td>
@@ -9440,7 +9440,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 21f</td>
     </tr>
     <tr>
       <td>1606</td>
@@ -9458,7 +9458,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Graf Kaspar Maria von Sternberg</td>
-      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek...</td>
+      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 156</td>
     </tr>
     <tr>
       <td>1608</td>
@@ -9566,7 +9566,7 @@
       <td>Gespräch</td>
       <td>Friedrich Förster</td>
       <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Klet...</td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 216f</td>
     </tr>
     <tr>
       <td>?</td>
@@ -9575,7 +9575,7 @@
       <td>Gespräch</td>
       <td>Friedrich Förster</td>
       <td></td>
-      <td>Kunst und Leben. Aus Friedrich Förster's Nachl...</td>
+      <td>Kunst und Leben. Aus Friedrich Förster's Nachlass. Hrsg. von Hermann Kletke. Berlin, 1873. 211-215</td>
     </tr>
     <tr>
       <td>1618</td>
@@ -9629,7 +9629,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 29f</td>
     </tr>
     <tr>
       <td>1624</td>
@@ -9638,7 +9638,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Nikolai Borchardt</td>
-      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1...</td>
+      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1, 78</td>
     </tr>
     <tr>
       <td>1625</td>
@@ -9683,7 +9683,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 43f</td>
     </tr>
     <tr>
       <td></td>
@@ -9692,7 +9692,7 @@
       <td>Text</td>
       <td>Karl von Holtei</td>
       <td></td>
-      <td>Holtei, K. Vierzig Jahre. Breslau, 2. Aufl. 18...</td>
+      <td>Holtei, K. Vierzig Jahre. Breslau, 2. Aufl. 1859. 4, 93f</td>
     </tr>
     <tr>
       <td>1630</td>
@@ -9719,7 +9719,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Graf Kaspar Maria von Sternberg</td>
-      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek...</td>
+      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 162</td>
     </tr>
     <tr>
       <td>1633</td>
@@ -9791,7 +9791,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 77</td>
     </tr>
     <tr>
       <td>1639</td>
@@ -9971,7 +9971,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. M...</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 62</td>
     </tr>
     <tr>
       <td>1656</td>
@@ -10088,7 +10088,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Wilhelm Zahn</td>
-      <td>Krieg, Literatur und Theater. Hrsg. Dorow. Lei...</td>
+      <td>Krieg, Literatur und Theater. Hrsg. Dorow. Leipzig, 1845. 189</td>
     </tr>
     <tr>
       <td>1668</td>
@@ -10106,7 +10106,7 @@
       <td>Gespräch</td>
       <td>Johann Peter Eckermann</td>
       <td></td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 188...</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 3, 189</td>
     </tr>
     <tr>
       <td>1670</td>
@@ -10169,7 +10169,7 @@
       <td>Gespräch</td>
       <td>Johann Karl August von La Roche</td>
       <td></td>
-      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., ...</td>
+      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., Heilbronn 1886, XCVf</td>
     </tr>
     <tr>
       <td></td>
@@ -10178,7 +10178,7 @@
       <td>Gespräch</td>
       <td>Joseph Karl August von La Roche</td>
       <td></td>
-      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., ...</td>
+      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., Heilbronn 1886, XCVIIff</td>
     </tr>
     <tr>
       <td>1676</td>
@@ -10196,7 +10196,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 146</td>
     </tr>
     <tr>
       <td>1678</td>
@@ -10277,7 +10277,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 159</td>
     </tr>
     <tr>
       <td>1687</td>
@@ -10304,7 +10304,7 @@
       <td>Gespräch (in einem Brief)</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Adele Schopenhauer</td>
-      <td>Schopenhauer, J. Briefe an Holtei. Leipzig, 18...</td>
+      <td>Schopenhauer, J. Briefe an Holtei. Leipzig, 1870.46</td>
     </tr>
     <tr>
       <td>1690</td>
@@ -10376,7 +10376,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. M...</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 73</td>
     </tr>
     <tr>
       <td>1696</td>
@@ -10430,7 +10430,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 184</td>
     </tr>
     <tr>
       <td>1700</td>
@@ -10466,7 +10466,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 184</td>
     </tr>
     <tr>
       <td>1704</td>
@@ -10502,7 +10502,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 215</td>
     </tr>
     <tr>
       <td>1707</td>
@@ -10511,7 +10511,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 244</td>
     </tr>
     <tr>
       <td>1708</td>
@@ -10520,7 +10520,7 @@
       <td>Brief</td>
       <td></td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 261</td>
     </tr>
     <tr>
       <td>1709</td>
@@ -10529,7 +10529,7 @@
       <td>Gespräch</td>
       <td>Karl Eberwein</td>
       <td></td>
-      <td>"Europa. Chronik der Gebildeten Welt." 1853 (N...</td>
+      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 340</td>
     </tr>
     <tr>
       <td>1710</td>
@@ -10655,7 +10655,7 @@
       <td>Gespräch</td>
       <td>Victor Pavie</td>
       <td></td>
-      <td>Mémoires de la sociéte nationale d'agriculture...</td>
+      <td>Mémoires de la sociéte nationale d'agriculture. Tome XVII (1874). 114</td>
     </tr>
     <tr>
       <td>1723</td>
@@ -10664,7 +10664,7 @@
       <td>Gespräch</td>
       <td>Karl Eberwein</td>
       <td></td>
-      <td>"Europa. Chronik der Gebildeten Welt." 1853 (N...</td>
+      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 340</td>
     </tr>
     <tr>
       <td></td>
@@ -10718,7 +10718,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Rochlitz</td>
-      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann...</td>
+      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann. Leipzig, 1887. 332f</td>
     </tr>
     <tr>
       <td>1729</td>
@@ -10763,14 +10763,14 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Rochlitz</td>
-      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann...</td>
+      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann. Leipzig, 1887. 338</td>
     </tr>
     <tr>
       <td>1734</td>
       <td>720</td>
       <td>03.10.1829</td>
       <td>Gespräch</td>
-      <td>Karl Friedrich Ludwig Freiherr Löw von und zu ...</td>
+      <td>Karl Friedrich Ludwig Freiherr Löw von und zu Steinfurt</td>
       <td></td>
       <td>Biedermann 10, 182</td>
     </tr>
@@ -10781,7 +10781,7 @@
       <td>Gespräch</td>
       <td>Friedrich Förster</td>
       <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Klet...</td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 188ff</td>
     </tr>
     <tr>
       <td></td>
@@ -10844,7 +10844,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 329f</td>
     </tr>
     <tr>
       <td>1740</td>
@@ -10997,7 +10997,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 340</td>
     </tr>
     <tr>
       <td>1755</td>
@@ -11355,7 +11355,7 @@
       <td></td>
       <td>31.01.1830</td>
       <td>Gespräch</td>
-      <td>Frédéric Soret; Karl Alexander von Sachsen-Wei...</td>
+      <td>Frédéric Soret; Karl Alexander von Sachsen-Weimar-Eisenach</td>
       <td></td>
       <td>Biedermann 7, 195f</td>
     </tr>
@@ -11636,7 +11636,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 411</td>
     </tr>
     <tr>
       <td>1820</td>
@@ -11932,8 +11932,8 @@
       <td>06.06.1830</td>
       <td>Brief</td>
       <td>Felix Bartholdy Mendelssohn</td>
-      <td>Abraham Mendelssohn Bartholdy; Lea Mendelssohn...</td>
-      <td>Felix Mendelssohn-Barholdy, Reisebriefe. Hg. v...</td>
+      <td>Abraham Mendelssohn Bartholdy; Lea Mendelssohn Bartholdy</td>
+      <td>Felix Mendelssohn-Barholdy, Reisebriefe. Hg. v. P. Mendelssohn-Barholdy, Leipzig 1861, 12f</td>
     </tr>
     <tr>
       <td>1850</td>
@@ -12041,7 +12041,7 @@
       <td>Brief</td>
       <td>Johann Peter Eckermann</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 188...</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 2, 155</td>
     </tr>
     <tr>
       <td>1860</td>
@@ -12068,7 +12068,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Peter Eckermann</td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 188...</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 2, 168</td>
     </tr>
     <tr>
       <td>1863</td>
@@ -12203,7 +12203,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 104</td>
     </tr>
     <tr>
       <td>1878</td>
@@ -12221,7 +12221,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 110</td>
     </tr>
     <tr>
       <td></td>
@@ -12347,7 +12347,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 160</td>
     </tr>
     <tr>
       <td></td>
@@ -12554,7 +12554,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 193</td>
     </tr>
     <tr>
       <td></td>
@@ -12617,7 +12617,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Marianne Willmer</td>
-      <td>Willemers Briefwechsel mit G. Hrsg. Creizenach...</td>
+      <td>Willemers Briefwechsel mit G. Hrsg. Creizenach. Stuttgart, 1878. 306</td>
     </tr>
     <tr>
       <td>1916</td>
@@ -12635,7 +12635,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 196f</td>
     </tr>
     <tr>
       <td>1918</td>
@@ -12644,7 +12644,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 212</td>
     </tr>
     <tr>
       <td>1919</td>
@@ -12752,7 +12752,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 233</td>
     </tr>
     <tr>
       <td>1931</td>
@@ -12923,7 +12923,7 @@
       <td>Gespräch</td>
       <td>Friedrich Förster</td>
       <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Klet...</td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 224ff</td>
     </tr>
     <tr>
       <td>1948</td>
@@ -12932,7 +12932,7 @@
       <td>Gespräch</td>
       <td>Friedrich Förster</td>
       <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Klet...</td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 216ff</td>
     </tr>
     <tr>
       <td>1949</td>
@@ -12941,7 +12941,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berl...</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 282</td>
     </tr>
     <tr>
       <td>1950</td>
@@ -12950,7 +12950,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübi...</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 322</td>
     </tr>
     <tr>
       <td>1951</td>
@@ -13049,7 +13049,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Wilhelm von Humboldt</td>
-      <td>Gebrüder Humboldt Briefwechsel mit G. Hrsg. Br...</td>
+      <td>Gebrüder Humboldt Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 295f</td>
     </tr>
     <tr>
       <td>1962</td>
@@ -13085,7 +13085,7 @@
       <td>Brief</td>
       <td>Wilhelm von Humboldt</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. B...</td>
+      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 298f</td>
     </tr>
     <tr>
       <td>1965</td>
@@ -13229,7 +13229,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ernst Schubarth</td>
-      <td>Schubarths Briefwechsel mit G. In: Deutsche Ru...</td>
+      <td>Schubarths Briefwechsel mit G. In: Deutsche Rundschau 1875 (2), 1. 30</td>
     </tr>
     <tr>
       <td>1981</td>
@@ -13238,7 +13238,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Wilhelm von Humboldt</td>
-      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. B...</td>
+      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 302</td>
     </tr>
     <tr>
       <td></td>
