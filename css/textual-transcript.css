@@ -186,6 +186,9 @@ table.table {
 	border-collapse:  separate;
 }
 
+
+.note { float: right; }
+
 /* print.html */
 dt {
 	margin-top: 1ex; 
