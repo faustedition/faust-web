@@ -227,8 +227,8 @@
         <p>In komplexeren Suchen können Teilausdrücke mit Klammern <code>()</code> zusammengefasst werden.</p>
         <p>Auch nach Zeugensiglen und Archivsignaturen kann gesucht werden. Die Eingabe einer vollständigen Sigle der Faustedition, z.B. „2&nbsp;Vnbsp;H.2“ führt direkt 
         zum <a ref="documentViewer?faustUri=faust://xml/document/faust/2.5/gsa_390883.xml&page=1&view=structure">betreffenden Zeugen</a> (Leerzeichen 
-        und Punkt können auch weggelassen werden, die Suche „2vh2“ führt zu derselben Stelle). Verkürzte Suchanfragen wie „<a ref="search?q=V+H.2">V&nbsp;H.2</a>“ führen zur 
-        Ausgabe einer Liste von Siglen, in denen diese Zeichenfolge vorkommt.</p>
+        und Punkt können hier auch weggelassen werden, die Suche „2vh2“ führt zu derselben Stelle). Verkürzte Suchanfragen wie „<a ref="search?q=V+H.2">V&nbsp;H.2</a>“ führen zur 
+        Ausgabe einer Liste von Siglen, in denen diese Zeichenfolge vorkommt. Dabei wird auch in alternativen Siglensystemen, Archivsignaturen und der Kurzbeschreibung gesucht. Diese Siglensuche ist eine einfache Teilstringsuche, die für den Volltext zur Verfügung stehenden Wildcards gibt es hier nicht.</p>
                 
         <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
