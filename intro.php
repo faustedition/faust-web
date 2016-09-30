@@ -123,15 +123,13 @@
         <p>Die Auswahl einer Spalte in den Übersichten zum ‚Faust&nbsp;I‘ und ‚Faust&nbsp;II‘ führt
             zu einem Balkendiagramm, in dem alle relevanten Handschriften und Drucke zu der
             betreffenden Szene angezeigt werden. Im Diagramm sind neben handschriftlichen und
-            gedruckten Fassungen auch Paralipomena und Schemata berücksichtigt. Damit werden auch
+            gedruckten Fassungen auch Paralipomena berücksichtigt. Damit werden auch
             skizzenartige und stichworthafte Niederschriften ohne direkte Entsprechung im Werktext
             erfasst.</p>
         <p>Die Balken zeigen an, welchem Abschnitt des Werktextes ein Zeuge entspricht.
-            Handschriftliche Fassungen sind blau, Drucke schwarz, Paralipomena grün und Schemata
-            violett dargestellt. Lücken in einem Balken bedeuten, dass der Zeuge an dieser Stelle
-            keine Entsprechung zum Werktext aufweist. Helle Farbabstufungen drücken bei den
-            Paralipomena und Schemata Unsicherheit in der Zuordnung, bei den handschriftlichen
-            Fassungen hohen Abweichungsgrad aus.</p>
+            Handschriftliche Fassungen sind in der Grundfarbe der Edition (gelb), Drucke schwarz, Paralipomena braun 
+            dargestellt. Lücken in einem Balken bedeuten, dass der Zeuge an dieser Stelle
+            keine Entsprechung zum Werktext aufweist.</p>
         <p>Die Verszahlen des Werktextes sind von links nach rechts angetragen, die Siglen der
             Zeugen in chronologischer Folge von unten nach oben. Explizit macht das Diagramm nur
             Angaben zur chronologischen Ordnung von Fassungen, die gemeinsamen Text aufweisen.</p>
