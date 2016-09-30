@@ -36,7 +36,7 @@
             sortiert werden.</p>
         <p>Die Funktionalität der Ausgabe soll in der Version 1.0 durch eine spezielle
             <strong>Hilfe</strong>-Funktion noch intuitiver erschlossen werden.</p>
-        <p>Die <strong>Suche</strong> soll ebenfalls noch wesentlich verbessert werden.</p>
+        <p>Die <strong>Suche</strong> soll ebenfalls noch verbessert werden.</p>
         <p>Beginnend mit einer der nächsten Beta-Versionen werden die Transkriptionen 
          in Form der 
             zugrundeliegenden TEI-XML-Codierung sowie nach und nach auch alle weiteren Inhalte der Edition zum Download bereitgestellt werden.</p>
@@ -49,7 +49,7 @@
             <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
             Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
-        <h2>Release am ###. September 2016 (Beta-Version 2)</h2>
+        <h2>Release am ###. Oktober 2016 (Beta-Version 2)</h2>
         <p>Die Beta-Version 2 bringt zahlreiche Änderungen der Benutzeroberfläche mit sich, von denen hier nur die wichtigsten genannt werden können:</p>
         <h3>Archiv</h3>
         <ul>
@@ -64,9 +64,10 @@
         <h3>Genese</h3>
         <ul>
             <li>Das Farbschema der grafischen Übersichten zu einzelnen Szenen (Balkendiagramm) ist auf das grundlegende Design der Ausgabe abgestimmt.</li>
+            <li>Tooltips liefern Detailinformationen zu den einzelnen Balkenabschnitten.</li>
             <li>Die von dort aus auf die einzelnen Druck verweisenden Links führen zum betreffenden Textabschnitt.</li>
-            <li>Durch Anpassen der Zahlen im letzten Teils der URL (z.B. <code>rangeStart=1&amp;rangeEnd=32</code>) kann das Balkendiagramm auf ein beliebiges Intervall von Versen 
-            ausgedehnt oder eingeschränkt werden. Benutzerfreundliche Eingabefelder dazu folgen in der nächsten Version.</li>
+            <!--li>Durch Anpassen der Zahlen im letzten Teils der URL (z.B. <code>rangeStart=1&amp;rangeEnd=32</code>) kann das Balkendiagramm auf ein beliebiges Intervall von Versen 
+            ausgedehnt oder eingeschränkt werden. Benutzerfreundliche Eingabefelder dazu folgen in der nächsten Version.</li-->
         </ul>
         <h3>Text</h3>
         <ul>
@@ -83,9 +84,9 @@
         </ul>
         <h3>Suche</h3>
         <ul>
-            <li>Die Suche wurde neuimplementiert, so dass größere Ergebnismengen nun schneller ausgeliefert werden. Zur Erhöhung der Übersichtlichkeit geschieht dies auf einer Seite.</li>
-            <li>Die Ergebnisse werden nach den Kriterien Relevanz, Sigle und Textstelle sortiert.</li>
-            <li>Auch nach Zeugensiglen und Archivsignaturen kann nun gesucht werden, siehe <a ref="intro.php/volltextsuche">Volltextsuche</a>.</li>
+            <li>Die Suche wurde neuimplementiert, so dass größere Ergebnismengen nun schneller ausgeliefert werden. Zur Erhöhung der Übersichtlichkeit geschieht dies nun auf einer Seite.</li>
+            <li>Die Ergebnisse können nach den Kriterien Relevanz, Sigle und Textstelle sortiert werden.</li>
+            <li>Auch nach Zeugensiglen und Archivsignaturen kann nun gesucht werden, siehe <a ref="intro#volltextsuche">Volltextsuche</a>.</li>
         </ul>
         <h3>Sonstiges</h3>
         <p>Über die genannten hinaus wurden u.a. folgende Verbesserungen vorgenommen:</p>
