@@ -160,6 +160,22 @@
             ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
             H.0a usw.).</p>
         
+        <h3>Siglen der Handschriften mit Paralipomena zum Faust</h3>
+        <p>Eine große Zahl von Vorarbeiten und fragmentarische Fassungen zum Faust lässt sich nicht nach dem Prinzip 
+            von Textübereinstimmung und -abweichung auf eine konkrete Passage des endgültigen Textes beziehen. Diese 
+            Vorarbeiten und Bruchstücke werden in der Forschung als Paralipomena bezeichnet. Handschriften mit solchen 
+            Paralipomena können daher nicht in das beschriebene System der Siglierung integriert werden. Anstatt diese 
+            Handschriften zu siglieren, führte Erich Schmidt eine bis heute gebräuchliche Zählung der Paralipomena ein. 
+            Im Anschluss an diese Zählung werden die Paralipomena-Handschriften bei <a 
+            ref="bibliography#bohnenkamp1994">Bohnenkamp 1994</a> nach dem auf ihnen befindlichen Paralipomenon 
+            bezeichnet, angefangen mit <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390720.xml">H&nbsp;P1</a> 
+            für die Handschrift mit dem Paralipomenon 1. Handschriften, die mehr als ein Paralipomenon tragen, werden „nach 
+            dem auf ihnen befindlichen ‚Paralipomenon‘ mit der niedrigsten Ziffer“ sigliert, z.B. 
+            <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390782.xml">H&nbsp;P6</a>. Die durch Bohnenkamp 
+            eingeführten gelten auch für die Faustedition, mit Ausnahme der Handschriften, die auch nach dem oben beschriebenen 
+            Prinzip sigliert werden können, z.B. <a 
+            ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2.</p>
+        
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
             data-bib-uri="faust://bibliography/hagen1983">Hagen 1983</a>), ersatzweise
