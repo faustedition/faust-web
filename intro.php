@@ -170,7 +170,8 @@
             ref="bibliography#bohnenkamp1994">Bohnenkamp 1994</a> nach dem auf ihnen befindlichen Paralipomenon 
             bezeichnet, angefangen mit <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390720.xml">H&nbsp;P1</a> 
             für die Handschrift mit dem Paralipomenon 1. Handschriften, die mehr als ein Paralipomenon tragen, werden „nach 
-            dem auf ihnen befindlichen ‚Paralipomenon‘ mit der niedrigsten Ziffer“ sigliert, z.B. 
+            dem auf ihnen befindlichen ‚Paralipomenon‘ mit der niedrigsten Ziffer“ sigliert (<a 
+            ref="bibliography#bohnenkamp1994">Bohnenkamp 1994</a>, S.&nbsp;79), z.B. 
             <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390782.xml">H&nbsp;P6</a>. Die durch Bohnenkamp 
             eingeführten gelten auch für die Faustedition, mit Ausnahme der Handschriften, die auch nach dem oben beschriebenen 
             Prinzip sigliert werden können, z.B. <a 
