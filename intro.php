@@ -160,7 +160,7 @@
             ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
             H.0a usw.).</p>
         
-        <h3>Siglen der Handschriften mit Paralipomena zum Faust</h3>
+        <h3>Siglen der Paralipomena-Handschriften</h3>
         <p>Eine große Zahl von Vorarbeiten und fragmentarische Fassungen zum Faust lässt sich nicht nach dem Prinzip 
             von Textübereinstimmung und -abweichung auf eine konkrete Passage des endgültigen Textes beziehen. Diese 
             Vorarbeiten und Bruchstücke werden in der Forschung als Paralipomena bezeichnet. Handschriften mit solchen 
