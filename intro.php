@@ -43,7 +43,7 @@
             reichen.</p>
         <p>Die erhaltenen Handschriften bestehen aus Notizen, Entwürfen zu einzelnen Szenen und
             Versgruppen, Arbeitshandschriften, vorläufigen und überarbeiteten Reinschriften sowie
-            Druckvorlagen. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus
+            Druckvorlagen. Aber auch Abschriften von fremder Hand, Tagebucheinträge und Briefe gehören dazu, sofern sie Fassungen oder Varianten enthalten. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus
             der Zeit seit der Wiederaufnahme der Arbeit am ‚Faust‘ im Jahr 1825. Der weitaus
             umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv in Weimar (GSA).
             Der Bestand des GSA umfasst 455 Handschriften<!-- //f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] 22.9.16 --> 
