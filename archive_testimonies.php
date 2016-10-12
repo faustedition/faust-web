@@ -30,768 +30,12 @@
     </tr>
     <tr>
       <td></td>
-      <td>7</td>
-      <td>1773</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Friedrich Wilhelm Gotter</td>
-      <td>GJ 3, 325</td>
-    </tr>
-    <tr>
-      <td>850</td>
       <td></td>
-      <td>06.1773</td>
+      <td>09.1774</td>
       <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Christian Kestner</td>
-      <td>WA IV, 2, 91f</td>
-    </tr>
-    <tr>
-      <td>850a</td>
-      <td></td>
-      <td></td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johanna Fahlmer</td>
-      <td>WA IV, 2, 111</td>
-    </tr>
-    <tr>
-      <td>850b</td>
-      <td></td>
-      <td>25.12.1773</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Christian Kestner</td>
-      <td>WA IV, 2, 113</td>
-    </tr>
-    <tr>
-      <td>851</td>
-      <td></td>
-      <td>01.06.1774</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Gottlob Friedrich Ernst Schönborn</td>
-      <td>WA IV, 2, 172</td>
-    </tr>
-    <tr>
-      <td>851a</td>
-      <td>11</td>
-      <td>28.06.1774</td>
-      <td>Gespräch</td>
       <td>Johann Kaspar Lavater</td>
-      <td></td>
-      <td>SdGG 16, 292</td>
-    </tr>
-    <tr>
-      <td>852</td>
-      <td>11</td>
-      <td>10.1774</td>
-      <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Johanna Fahlmer</td>
-      <td>WA IV, 2, 202</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>12</td>
-      <td>15.10.1774</td>
-      <td>Gespräch</td>
-      <td>Heinrich Christian Boie</td>
-      <td></td>
-      <td>Weinhold. H.C. Boie. Halle, 1868. 70</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>13</td>
-      <td>23.12.1774</td>
-      <td>Gespräch</td>
-      <td>Karl Ludwig von Knebel</td>
-      <td></td>
-      <td>Deutsche Rundschau (12) 1877. 519</td>
-    </tr>
-    <tr>
-      <td>853</td>
-      <td></td>
-      <td>28.12.1774</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Ludwig von Knebel</td>
-      <td>WA IV, 2, 222</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>15</td>
-      <td>07.01.1775</td>
-      <td>?</td>
-      <td>?</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>854</td>
-      <td></td>
-      <td>13.01.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Ludwig von Knebel</td>
-      <td>WA IV, 2, 226</td>
-    </tr>
-    <tr>
-      <td>854a</td>
-      <td></td>
-      <td>13.02.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Auguste zu Stolberg</td>
-      <td>WA IV, 2, 233</td>
-    </tr>
-    <tr>
-      <td>854b</td>
-      <td></td>
-      <td>17.02.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Gottfried August Bürger</td>
-      <td>WA IV, 2, 237</td>
-    </tr>
-    <tr>
-      <td>855</td>
-      <td>16</td>
-      <td>07.03.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Auguste zu Stolberg</td>
-      <td>WA IV, 2, 242</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>20</td>
-      <td>15.06.1775</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 1, 1</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>15.06.1775</td>
-      <td>Brief</td>
-      <td>Johann Jakob Bodmer</td>
-      <td>Johann Kaspar Schinz</td>
-      <td>GJ 5, 193</td>
-    </tr>
-    <tr>
-      <td>856</td>
-      <td>21</td>
-      <td>14.09.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Auguste zu Stolberg</td>
-      <td>WA IV, 2, 292</td>
-    </tr>
-    <tr>
-      <td>857</td>
-      <td>22</td>
-      <td>09.1775</td>
-      <td>Gespräch</td>
-      <td>Johann Georg von Zimmermann</td>
-      <td></td>
-      <td>Rehberg. G. und sein Jahrhundert. Jena, 1835</td>
-    </tr>
-    <tr>
-      <td>858</td>
-      <td>22</td>
-      <td>09.1775</td>
-      <td>Gespräch</td>
-      <td>August Wilhelm von Schlegel</td>
-      <td>Abraham Hayward</td>
-      <td>Biedermann 10, 10</td>
-    </tr>
-    <tr>
-      <td>859</td>
-      <td>23</td>
-      <td>07.10.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Heinrich Merck</td>
-      <td>WA IV, 2, 299</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>24</td>
-      <td>11.10.1775</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Sophie von La Roche</td>
-      <td>WA IV, 2, 300</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>24.10.1775</td>
-      <td>Brief</td>
-      <td>August Mylius</td>
-      <td>Johann Heinrich Merck</td>
-      <td>Briefe an und von Johann Heinrich Merck. Eine selbständige Folge der im Jahr 1835 erschienenen Briefe an J. H. Merck. Aus den Handschriften hrsg. von Dr. Karl Wagner. Darmstadt 1838, 53f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>26</td>
-      <td>06.12.1775</td>
-      <td>Brief</td>
-      <td>Leopold von Stolberg</td>
-      <td>Henriette von Stolberg</td>
-      <td>F.L. Graf von Stolberg. Hrsg. Janssen. Freiburg, 1877. 1, 63</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>27</td>
-      <td>19.01.1776</td>
-      <td>Brief</td>
-      <td>Johann Heinrich Merck</td>
-      <td>Christoph Friedrich Nicolai</td>
-      <td>Vierteljahresschrift für Literaturgeschichte. 4, 334</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>05.01.1776</td>
-      <td>Brief</td>
-      <td>Johann Georg Zimmermann</td>
-      <td>Philipp Erasmus Reich</td>
-      <td>GJ 11, 267-268</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>11.05.1777</td>
-      <td>Brief</td>
-      <td>Karl Gottlob Küttner</td>
-      <td>Friedrich Justin Bertuch</td>
-      <td>GJ 2, 392-394</td>
-    </tr>
-    <tr>
-      <td>860</td>
-      <td>29</td>
-      <td>01.12.1777</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Caspar Goethe</td>
-      <td>WA IV, 3, 320</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>30</td>
-      <td>1778</td>
-      <td>Brief</td>
-      <td>Johann Gottfried Herder</td>
-      <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 1835. 2, 300</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>1779</td>
-      <td>Rezension</td>
-      <td>?</td>
-      <td></td>
-      <td>Berliner Litteratur- und Theaterzeitung 2 (1779), S. 237</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>31</td>
-      <td>23.03.1780</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 1, 111</td>
-    </tr>
-    <tr>
-      <td>860a</td>
-      <td></td>
-      <td>14.05.1780</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Christian Kestner</td>
-      <td>WA IV, 4, 221</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>32</td>
-      <td>17.07.1780</td>
-      <td>Brief</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>Karl Ludwig von Knebel</td>
-      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 1835. 1, 119</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>34</td>
-      <td>1782</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>Seckendorff. „Volks- und andere Lieder, mit Begleitung des Fortepiano“, 3. Heft, 1782</td>
-    </tr>
-    <tr>
-      <td>861</td>
-      <td></td>
-      <td>09.02.1782</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 5, 260</td>
-    </tr>
-    <tr>
-      <td>862</td>
-      <td></td>
-      <td>19.02.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Gräfin Christine Brühl</td>
-      <td>WA IV, 7, 180f</td>
-    </tr>
-    <tr>
-      <td>863</td>
-      <td>35</td>
-      <td>28.06.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Friedrich Justin Bertuch; Georg Joachim Göschen</td>
-      <td>WA IV, 7, 234f</td>
-    </tr>
-    <tr>
-      <td>863a</td>
-      <td>36</td>
-      <td>06.07.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 7, 237</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>15.07.1786</td>
-      <td>Text</td>
-      <td>ohne Verfasser</td>
-      <td></td>
-      <td>Journal von und für Deutschland, hg. von Siegmund Frh. von Bibra. 3, 1786 St 6, 575-78.</td>
-    </tr>
-    <tr>
-      <td>863b</td>
-      <td></td>
-      <td>02.09.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 12</td>
-    </tr>
-    <tr>
-      <td>863c</td>
-      <td>37</td>
-      <td>02.09.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 8, 14</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>14.10.1786</td>
-      <td>Brief</td>
-      <td>Marie von Graevemeyer</td>
-      <td>Caroline von Beulwitz</td>
-      <td>GJ 10, 145-146</td>
-    </tr>
-    <tr>
-      <td>864</td>
-      <td>38</td>
-      <td>12.12.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 83</td>
-    </tr>
-    <tr>
-      <td>864a</td>
-      <td></td>
-      <td>16.12.1786</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 8, 94</td>
-    </tr>
-    <tr>
-      <td>864b</td>
-      <td>39</td>
-      <td>13.01.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Philipp Seidel</td>
-      <td>WA IV, 8, 125</td>
-    </tr>
-    <tr>
-      <td>864c</td>
-      <td>40</td>
-      <td>13.01.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Philipp Christoph Kayser</td>
-      <td>WA IV, 8, 129</td>
-    </tr>
-    <tr>
-      <td>865</td>
-      <td>41</td>
-      <td>17.01.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 8, 143</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.1787</td>
-      <td>Tabelle</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 483</td>
-    </tr>
-    <tr>
-      <td>865a</td>
-      <td></td>
-      <td>02.02.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 8, 159</td>
-    </tr>
-    <tr>
-      <td>865b</td>
-      <td>42</td>
-      <td>06.02.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Philipp Chritoph Kayser</td>
-      <td>WA IV, 8, 175</td>
-    </tr>
-    <tr>
-      <td>865c</td>
-      <td>43</td>
-      <td>02.1787</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 40, 191</td>
-    </tr>
-    <tr>
-      <td>865d</td>
-      <td></td>
-      <td>20.02.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 8, 198</td>
-    </tr>
-    <tr>
-      <td>865e</td>
-      <td>44</td>
-      <td>27.05.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 225</td>
-    </tr>
-    <tr>
-      <td>865f</td>
-      <td>45</td>
-      <td>08.06.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 8, 231</td>
-    </tr>
-    <tr>
-      <td>866</td>
-      <td>46</td>
-      <td>04.08.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Charlotte von Stein</td>
-      <td>WA IV, 8, 239</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>11.08.1787</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 57</td>
-    </tr>
-    <tr>
-      <td>867</td>
-      <td>47</td>
-      <td>11.08.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 241</td>
-    </tr>
-    <tr>
-      <td>868</td>
-      <td>48</td>
-      <td>11.08.1787</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 57</td>
-    </tr>
-    <tr>
-      <td>869</td>
-      <td>49</td>
-      <td>15.08.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 8, 246</td>
-    </tr>
-    <tr>
-      <td>869a</td>
-      <td></td>
-      <td>01.10.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Christian Friedrich Schnauß</td>
-      <td>WA IV, 8, 264</td>
-    </tr>
-    <tr>
-      <td>869b</td>
-      <td></td>
-      <td>05.10.1787</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 105</td>
-    </tr>
-    <tr>
-      <td>869c</td>
-      <td></td>
-      <td>24.10.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Christian Kestner</td>
-      <td>WA IV, 8, 276</td>
-    </tr>
-    <tr>
-      <td>869d</td>
-      <td></td>
-      <td>27.10.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 8, 278</td>
-    </tr>
-    <tr>
-      <td>870</td>
-      <td>50</td>
-      <td>03.11.1787</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 136</td>
-    </tr>
-    <tr>
-      <td>870a</td>
-      <td></td>
-      <td>03.11.1787</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 137</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>29.11.1787</td>
-      <td>Brief</td>
-      <td>Johann Gottfried Herder</td>
-      <td>Joseph Friedrich Racknitz</td>
-      <td>M. Lengenfeld'sche Buchhandlung, Antiquariats-Katalog 42, 1932 Nr. 204</td>
-    </tr>
-    <tr>
-      <td>871</td>
-      <td>51</td>
-      <td>08.12.1787</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 305</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>64</td>
-      <td>1788</td>
-      <td>Gespräch</td>
-      <td>Karl Friedrich Klischnig</td>
-      <td></td>
-      <td>Klischnig. Lebensgeschichte des Hofrath Moritz. Berlin, 1794. 210f</td>
-    </tr>
-    <tr>
-      <td>872</td>
-      <td>53</td>
-      <td>10.01.1788</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 210</td>
-    </tr>
-    <tr>
-      <td>872a</td>
-      <td></td>
-      <td>25.01.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 329</td>
-    </tr>
-    <tr>
-      <td>873</td>
-      <td>54</td>
-      <td>09.02.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 8, 341</td>
-    </tr>
-    <tr>
-      <td>874</td>
-      <td>55</td>
-      <td>16.02.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 347</td>
-    </tr>
-    <tr>
-      <td>875</td>
-      <td>56</td>
-      <td>01.03.1788</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 32, 288</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>07.03.1788</td>
-      <td>Schema</td>
-      <td></td>
-      <td></td>
-      <td>WA I, 32, 480</td>
-    </tr>
-    <tr>
-      <td>876</td>
-      <td></td>
-      <td>17.03.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 357</td>
-    </tr>
-    <tr>
-      <td>876a</td>
-      <td></td>
-      <td>21.03.1789</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 8, 363</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>65</td>
-      <td>21.03.1788</td>
-      <td>Brief</td>
-      <td>Johann Heinrich Lips</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>SdGG (1890) 5, 155-158</td>
-    </tr>
-    <tr>
-      <td>877</td>
-      <td>57</td>
-      <td>28.03.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl August Sachsen-Weimar und Eisenach</td>
-      <td>WA IV, 8, 367</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>03.1788</td>
-      <td>Schema</td>
-      <td></td>
-      <td></td>
-      <td>WA I, 32, 465</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>03.1788</td>
-      <td>Schema</td>
-      <td></td>
-      <td></td>
-      <td>WA I, 32, 467</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>03.1788</td>
-      <td>Tabelle</td>
-      <td></td>
-      <td></td>
-      <td>WA I, 32, 487</td>
-    </tr>
-    <tr>
-      <td>878</td>
-      <td>59</td>
-      <td>05.04.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Friedrich Justin Bertuch</td>
-      <td>WA IV, 8, 369</td>
-    </tr>
-    <tr>
-      <td>878a</td>
-      <td></td>
-      <td>05.04.1788</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Georg Joachim Göschen</td>
-      <td>WA IV, 18, 27</td>
-    </tr>
-    <tr>
-      <td>879</td>
-      <td>60</td>
-      <td>08.06.1788</td>
-      <td>Paralipomenon</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 14, 292</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>62</td>
-      <td>07.1788</td>
-      <td>Brief</td>
-      <td>Johann Friedrich Reiffenstein</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>SdGG (1890) 5, 44-45</td>
+      <td>Funck 1901, S. 40, Z. 17-19</td>
     </tr>
     <tr>
       <td>879a</td>
@@ -803,6 +47,96 @@
       <td>WA IV, 9, 2</td>
     </tr>
     <tr>
+      <td>1563</td>
+      <td></td>
+      <td>12.1827</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 37f</td>
+    </tr>
+    <tr>
+      <td>1564</td>
+      <td></td>
+      <td>04.12.1827</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 443</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>953</td>
+      <td>08.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 11 [2 I H34]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>954</td>
+      <td>08.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 10 [2 I H9]</td>
+    </tr>
+    <tr>
+      <td>1565</td>
+      <td>592</td>
+      <td>11.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 147</td>
+    </tr>
+    <tr>
+      <td>1566</td>
+      <td>593</td>
+      <td>12.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 147</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>594</td>
+      <td>16.12.1827</td>
+      <td>Paralipomenon</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 12 [2 I H43]</td>
+    </tr>
+    <tr>
+      <td>1567</td>
+      <td></td>
+      <td>18.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 150</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>955</td>
+      <td>20.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 10 [2 I H11]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.12.1827</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>QuZ II, 521</td>
+    </tr>
+    <tr>
       <td>880</td>
       <td>61</td>
       <td>21.07.1788</td>
@@ -810,6 +144,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Heinrich Jacobi</td>
       <td>WA IV, 9, 4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>596</td>
+      <td>22.12.1827</td>
+      <td>Paralipomenon</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 12</td>
+    </tr>
+    <tr>
+      <td>1568</td>
+      <td>595</td>
+      <td>22.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>956</td>
+      <td>22.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 10 [2 I H42]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>957</td>
+      <td>22.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 12 [2 I H43]</td>
+    </tr>
+    <tr>
+      <td>1569</td>
+      <td>597</td>
+      <td>23.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 152</td>
+    </tr>
+    <tr>
+      <td>1570</td>
+      <td></td>
+      <td>24.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>943</td>
+      <td>24.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 13 [2 I Hc, 2 I Hd]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>599</td>
+      <td>24.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 13 [Hb,He,Hf]</td>
+    </tr>
+    <tr>
+      <td>1571</td>
+      <td>600</td>
+      <td>25.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 153</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>959</td>
+      <td>27.12.1827</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 12 [2 I H45]</td>
     </tr>
     <tr>
       <td>880a</td>
@@ -821,6 +245,96 @@
       <td>WA IV, 9, 18</td>
     </tr>
     <tr>
+      <td>1572</td>
+      <td>601</td>
+      <td>28.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 154</td>
+    </tr>
+    <tr>
+      <td>1573</td>
+      <td>603</td>
+      <td>29.12.1827</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>Briefe von und an G. Hrsg. Riemer. Leipzig, 1846. 228</td>
+    </tr>
+    <tr>
+      <td>1574</td>
+      <td>604</td>
+      <td>29.12.1827</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Reichel</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>29.12.1827</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Reichel</td>
+      <td>QuZ II, 524-525</td>
+    </tr>
+    <tr>
+      <td>1575</td>
+      <td>602</td>
+      <td>29.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 155</td>
+    </tr>
+    <tr>
+      <td>1576</td>
+      <td>605</td>
+      <td>30.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 155</td>
+    </tr>
+    <tr>
+      <td>1577</td>
+      <td>606</td>
+      <td>31.12.1827</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 156</td>
+    </tr>
+    <tr>
+      <td>1578</td>
+      <td>607</td>
+      <td>01.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 157</td>
+    </tr>
+    <tr>
+      <td>1579</td>
+      <td>608</td>
+      <td>02.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 157</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.01.1828</td>
+      <td>Text</td>
+      <td>Augustus Bozzi Granville</td>
+      <td></td>
+      <td>A.B. Granville, St. Petersbugh, vol. II, Londoon 1828, 674ff</td>
+    </tr>
+    <tr>
       <td>881</td>
       <td></td>
       <td>09.10.1788</td>
@@ -828,6 +342,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Georg Joachim Göschen</td>
       <td>WA IV, 18, 32</td>
+    </tr>
+    <tr>
+      <td>1580</td>
+      <td>609</td>
+      <td>03.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 158</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>610</td>
+      <td>04.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 158</td>
+    </tr>
+    <tr>
+      <td>1581</td>
+      <td>611</td>
+      <td>05.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 159</td>
+    </tr>
+    <tr>
+      <td>1582</td>
+      <td>612</td>
+      <td>06.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 160</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>613</td>
+      <td>07.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 160</td>
+    </tr>
+    <tr>
+      <td>1583</td>
+      <td>614</td>
+      <td>10.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 162</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11.01.1828</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ II, 527f</td>
+    </tr>
+    <tr>
+      <td>1584</td>
+      <td>615</td>
+      <td>12.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 163</td>
+    </tr>
+    <tr>
+      <td>1585</td>
+      <td>616</td>
+      <td>13.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 164</td>
+    </tr>
+    <tr>
+      <td>1586</td>
+      <td>617</td>
+      <td>14.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 164</td>
     </tr>
     <tr>
       <td>882</td>
@@ -839,6 +443,96 @@
       <td>WA III, 2, 323</td>
     </tr>
     <tr>
+      <td>1587</td>
+      <td>618</td>
+      <td>15.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 165</td>
+    </tr>
+    <tr>
+      <td>1588</td>
+      <td>619</td>
+      <td>16.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 165</td>
+    </tr>
+    <tr>
+      <td>1589</td>
+      <td>620</td>
+      <td>18.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 166</td>
+    </tr>
+    <tr>
+      <td>1590</td>
+      <td>621</td>
+      <td>22.01.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Reichel</td>
+      <td>G-Schiller-Archiv</td>
+    </tr>
+    <tr>
+      <td>1591</td>
+      <td>622</td>
+      <td>23.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 169</td>
+    </tr>
+    <tr>
+      <td>1592</td>
+      <td>623</td>
+      <td>24.01.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 4</td>
+    </tr>
+    <tr>
+      <td>1593</td>
+      <td></td>
+      <td>24.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 169</td>
+    </tr>
+    <tr>
+      <td>1594</td>
+      <td>624</td>
+      <td>25.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 169</td>
+    </tr>
+    <tr>
+      <td>1595</td>
+      <td>625</td>
+      <td>28.01.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich von Reinhard</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 295</td>
+    </tr>
+    <tr>
+      <td>1596</td>
+      <td>626</td>
+      <td>30.01.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 173</td>
+    </tr>
+    <tr>
       <td>883</td>
       <td></td>
       <td>04.07.1789</td>
@@ -846,6 +540,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ludwig von Knebel</td>
       <td>WA IV, 9, 137</td>
+    </tr>
+    <tr>
+      <td>1597</td>
+      <td></td>
+      <td>01.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 174</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>07.02.1828</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>QuZ II, 533</td>
+    </tr>
+    <tr>
+      <td>1598</td>
+      <td>627</td>
+      <td>08.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 176</td>
+    </tr>
+    <tr>
+      <td>1599</td>
+      <td>634</td>
+      <td>09.02.1828</td>
+      <td>Gespräch</td>
+      <td>Karl von Holtei</td>
+      <td></td>
+      <td>Biedermann 6, 266</td>
+    </tr>
+    <tr>
+      <td>1600</td>
+      <td></td>
+      <td>09.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 176</td>
+    </tr>
+    <tr>
+      <td>1601</td>
+      <td></td>
+      <td>10.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 177</td>
+    </tr>
+    <tr>
+      <td>1602</td>
+      <td>591</td>
+      <td>12.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 178</td>
+    </tr>
+    <tr>
+      <td>1603</td>
+      <td>628</td>
+      <td>15.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 179</td>
+    </tr>
+    <tr>
+      <td>1604</td>
+      <td>629</td>
+      <td>16.02.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Reichel</td>
+      <td>G-Schiller-Archiv</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28.02.1828</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>QuZ II, 538f</td>
     </tr>
     <tr>
       <td>884</td>
@@ -859,11 +643,191 @@
     <tr>
       <td></td>
       <td></td>
+      <td>28.02.1828</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ II, 539f</td>
+    </tr>
+    <tr>
+      <td>1605</td>
+      <td></td>
+      <td>28.02.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 21f</td>
+    </tr>
+    <tr>
+      <td>1606</td>
+      <td>634</td>
+      <td>29.02.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 185</td>
+    </tr>
+    <tr>
+      <td>1607</td>
+      <td></td>
+      <td>02.03.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Graf Kaspar Maria von Sternberg</td>
+      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 156</td>
+    </tr>
+    <tr>
+      <td>1608</td>
+      <td></td>
+      <td>02.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 186</td>
+    </tr>
+    <tr>
+      <td>1609</td>
+      <td>630</td>
+      <td>04.03.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Reichel</td>
+      <td>G-Schiller-Archiv</td>
+    </tr>
+    <tr>
+      <td>1610</td>
+      <td>631</td>
+      <td>11.03.1828</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 6, 281</td>
+    </tr>
+    <tr>
+      <td>1611</td>
+      <td>637</td>
+      <td>12.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 191</td>
+    </tr>
+    <tr>
+      <td>1612</td>
+      <td>637</td>
+      <td>14.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 192</td>
+    </tr>
+    <tr>
+      <td>1613</td>
+      <td>637</td>
+      <td>15.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 193</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>03.08.1789</td>
       <td>Brief</td>
       <td>Karl August Sachsen-Weimar und Eisenach</td>
       <td>Anna Amalia Sachen-Weimar und Eisenach</td>
       <td>Bergmann, 92</td>
+    </tr>
+    <tr>
+      <td>1614</td>
+      <td>632</td>
+      <td>22.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 196</td>
+    </tr>
+    <tr>
+      <td>1615</td>
+      <td>633</td>
+      <td>23.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 196</td>
+    </tr>
+    <tr>
+      <td>1615a</td>
+      <td></td>
+      <td>24.03.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 196</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24.03.1828</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Karl Friedrich von Reinhard</td>
+      <td>Grumach, 345</td>
+    </tr>
+    <tr>
+      <td>1616</td>
+      <td>630</td>
+      <td>28.03.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Reichel</td>
+      <td>G-Schiller-Archiv</td>
+    </tr>
+    <tr>
+      <td>1617</td>
+      <td>974</td>
+      <td>03.1828</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 216f</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td></td>
+      <td>03.1828</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Kunst und Leben. Aus Friedrich Förster's Nachlass. Hrsg. von Hermann Kletke. Berlin, 1873. 211-215</td>
+    </tr>
+    <tr>
+      <td>1618</td>
+      <td></td>
+      <td>03.1828</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Biedermann 7, 154f</td>
+    </tr>
+    <tr>
+      <td>1619</td>
+      <td>976</td>
+      <td>03.1828</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Biedermann 7, 155-61</td>
+    </tr>
+    <tr>
+      <td>1620</td>
+      <td></td>
+      <td>03.1828</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Ueber Kunst und Alterthum 6 (2), 426f</td>
     </tr>
     <tr>
       <td>884a</td>
@@ -875,6 +839,96 @@
       <td>WA IV, 18, 39</td>
     </tr>
     <tr>
+      <td>1621</td>
+      <td></td>
+      <td>07.04.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Sulpiz Boisserée</td>
+      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 507</td>
+    </tr>
+    <tr>
+      <td>1622</td>
+      <td>591</td>
+      <td>08.04.1828</td>
+      <td>Brief</td>
+      <td></td>
+      <td></td>
+      <td>WA III, 11, 202</td>
+    </tr>
+    <tr>
+      <td>1623</td>
+      <td>635</td>
+      <td>22.04.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 29f</td>
+    </tr>
+    <tr>
+      <td>1624</td>
+      <td></td>
+      <td>01.05.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Nikolai Borchardt</td>
+      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1, 78</td>
+    </tr>
+    <tr>
+      <td>1625</td>
+      <td></td>
+      <td>04.05.1828</td>
+      <td>Gespräch</td>
+      <td>Jenny von Pappenheim</td>
+      <td></td>
+      <td>Biedermann 10, 197</td>
+    </tr>
+    <tr>
+      <td>1626</td>
+      <td>636</td>
+      <td>09.05.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 216</td>
+    </tr>
+    <tr>
+      <td>1627</td>
+      <td>636</td>
+      <td>12.05.1828</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Ueber Kunst und Alterthum 6 (2), 387-391</td>
+    </tr>
+    <tr>
+      <td>1628</td>
+      <td>637</td>
+      <td>02.05.1828</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Ueber Kunst und Alterthum 6 (2), 429f</td>
+    </tr>
+    <tr>
+      <td>1629</td>
+      <td>637</td>
+      <td>21.05.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 43f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl von Holtei</td>
+      <td>Holtei, K. Vierzig Jahre. Breslau, 2. Aufl. 1859. 4, 93f</td>
+    </tr>
+    <tr>
       <td>884b</td>
       <td></td>
       <td>09.09.1789</td>
@@ -884,13 +938,202 @@
       <td>WA IV, 18, 39</td>
     </tr>
     <tr>
+      <td>1630</td>
+      <td>640</td>
+      <td>05.1828</td>
+      <td>Gespräch</td>
+      <td>August von Goethe</td>
+      <td></td>
+      <td>Holtei, K. Vierzig Jahre. Breslau, 1859. 4, 94</td>
+    </tr>
+    <tr>
+      <td>1631</td>
+      <td>639</td>
+      <td>25.05.1828</td>
+      <td>Gespräch</td>
+      <td>Joseph Karl Stieler</td>
+      <td></td>
+      <td>Biedermann 8, 380</td>
+    </tr>
+    <tr>
+      <td>1632</td>
+      <td></td>
+      <td>10.06.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Graf Kaspar Maria von Sternberg</td>
+      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 162</td>
+    </tr>
+    <tr>
+      <td>1633</td>
+      <td>637</td>
+      <td>16.06.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Thomas Carlyle</td>
+      <td>Carlyles Briefwechsel mit G. Berlin, 1887. 47f</td>
+    </tr>
+    <tr>
+      <td>1634</td>
+      <td>640</td>
+      <td>06.1828</td>
+      <td>Gespräch</td>
+      <td>August von Goethe</td>
+      <td></td>
+      <td>Holtei, K. Vierzig Jahre. Breslau, 1859. 4, 99</td>
+    </tr>
+    <tr>
+      <td>1635</td>
+      <td></td>
+      <td>28.06.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 237</td>
+    </tr>
+    <tr>
+      <td>1635a</td>
+      <td></td>
+      <td>28.06.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 237</td>
+    </tr>
+    <tr>
+      <td>1636</td>
+      <td>638</td>
+      <td>29.06.1828</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Ueber Kunst und Alterthum 6 (2), 428f</td>
+    </tr>
+    <tr>
+      <td>1637</td>
+      <td></td>
+      <td>01.07.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 238</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>09.07.1828</td>
+      <td>Tagebuch</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>Jahrbuch der Sammlung Kippenberg 4, 50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.10.1774</td>
+      <td>Brief</td>
+      <td>Johann Kaspar Lavater</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Funck 1901, S. 43, Z. 16-17</td>
+    </tr>
+    <tr>
       <td></td>
       <td>67</td>
       <td>18.09.1789</td>
       <td>Brief</td>
       <td>Karl Ludwig von Knebel</td>
       <td>Luise von Imhoff</td>
-      <td>Düntzer. G.'s Faust. ?, 1857. 81 Anm.</td>
+      <td>Düntzer 1857, Bd. 1,, S. 81, Anm.</td>
+    </tr>
+    <tr>
+      <td>1638</td>
+      <td>641</td>
+      <td>26.07.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 77</td>
+    </tr>
+    <tr>
+      <td>1639</td>
+      <td>642</td>
+      <td>01.09.1828</td>
+      <td>Gespräch</td>
+      <td>Karl Konstantin Kraukling</td>
+      <td></td>
+      <td>Biedermann 6, 320f</td>
+    </tr>
+    <tr>
+      <td>1640</td>
+      <td>643</td>
+      <td>18.09.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 280</td>
+    </tr>
+    <tr>
+      <td>1641</td>
+      <td>644</td>
+      <td>19.09.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 280</td>
+    </tr>
+    <tr>
+      <td>1642</td>
+      <td>645</td>
+      <td>26.09.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 282</td>
+    </tr>
+    <tr>
+      <td>1643</td>
+      <td>646</td>
+      <td>28.09.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 283</td>
+    </tr>
+    <tr>
+      <td>1644</td>
+      <td>647</td>
+      <td>29.09.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 284</td>
+    </tr>
+    <tr>
+      <td>1645</td>
+      <td>648</td>
+      <td>30.09.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 284</td>
+    </tr>
+    <tr>
+      <td>1646</td>
+      <td>649</td>
+      <td>02.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 285</td>
+    </tr>
+    <tr>
+      <td>1647</td>
+      <td>650</td>
+      <td>09.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 288</td>
     </tr>
     <tr>
       <td>884c</td>
@@ -902,6 +1145,96 @@
       <td>WA IV, 9, 157</td>
     </tr>
     <tr>
+      <td>1648</td>
+      <td>651</td>
+      <td>13.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 290</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>Jahrbuch der Sammlung Kippenberg 4, 54</td>
+    </tr>
+    <tr>
+      <td>1649</td>
+      <td>652</td>
+      <td>16.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 291</td>
+    </tr>
+    <tr>
+      <td>1650</td>
+      <td>653</td>
+      <td>17.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 291</td>
+    </tr>
+    <tr>
+      <td>1651</td>
+      <td>654</td>
+      <td>17.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 292</td>
+    </tr>
+    <tr>
+      <td>1651a</td>
+      <td></td>
+      <td>20.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 293</td>
+    </tr>
+    <tr>
+      <td>1652</td>
+      <td>655</td>
+      <td>21.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 293</td>
+    </tr>
+    <tr>
+      <td>1653</td>
+      <td>656</td>
+      <td>22.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 294</td>
+    </tr>
+    <tr>
+      <td>1654</td>
+      <td>657</td>
+      <td>27.10.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 296</td>
+    </tr>
+    <tr>
+      <td>1655</td>
+      <td></td>
+      <td>01.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 297</td>
+    </tr>
+    <tr>
       <td>885</td>
       <td>69</td>
       <td>02.11.1789</td>
@@ -909,6 +1242,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich Reichardt</td>
       <td>WA IV, 9, 159</td>
+    </tr>
+    <tr>
+      <td>1655a</td>
+      <td>658</td>
+      <td>08.11.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Wilhelm Göttling</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 62</td>
+    </tr>
+    <tr>
+      <td>1656</td>
+      <td>659</td>
+      <td>10.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 301</td>
+    </tr>
+    <tr>
+      <td>1657</td>
+      <td>660</td>
+      <td>11.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 301</td>
+    </tr>
+    <tr>
+      <td>1658</td>
+      <td>661</td>
+      <td>12.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 301</td>
+    </tr>
+    <tr>
+      <td>1659</td>
+      <td>662</td>
+      <td>13.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 301</td>
+    </tr>
+    <tr>
+      <td>1660</td>
+      <td></td>
+      <td>11.1828</td>
+      <td>Gespräch</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>Faust. Hrsg. Schröer. Leipzig, 1896-8. 1, CXf</td>
+    </tr>
+    <tr>
+      <td>1661</td>
+      <td>663</td>
+      <td>19.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 304</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19.11.1828</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Karl Friedrich von Reinhard</td>
+      <td>Grumach, 353</td>
+    </tr>
+    <tr>
+      <td>1662</td>
+      <td>664</td>
+      <td>21.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 305</td>
+    </tr>
+    <tr>
+      <td>1663</td>
+      <td>698</td>
+      <td>23.11.1828</td>
+      <td>Gespräch</td>
+      <td>Ottilie von Goethe</td>
+      <td></td>
+      <td>Faust. Hrsg. Schröer. Leipzig, 1896-8. 1, CXI</td>
     </tr>
     <tr>
       <td>886</td>
@@ -920,6 +1343,96 @@
       <td>WA IV, 9, 160</td>
     </tr>
     <tr>
+      <td>1664</td>
+      <td></td>
+      <td>23.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 306</td>
+    </tr>
+    <tr>
+      <td>1665</td>
+      <td>665</td>
+      <td>26.11.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 307</td>
+    </tr>
+    <tr>
+      <td>1666</td>
+      <td>666</td>
+      <td>02.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 309</td>
+    </tr>
+    <tr>
+      <td>1667</td>
+      <td>667</td>
+      <td>12.12.1828</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm Zahn</td>
+      <td>Krieg, Literatur und Theater. Hrsg. Dorow. Leipzig, 1845. 189</td>
+    </tr>
+    <tr>
+      <td>1668</td>
+      <td>668</td>
+      <td>16.12.1828</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 6, 361</td>
+    </tr>
+    <tr>
+      <td>1669</td>
+      <td></td>
+      <td>21.12.1828</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 3, 189</td>
+    </tr>
+    <tr>
+      <td>1670</td>
+      <td>669</td>
+      <td>21.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 318</td>
+    </tr>
+    <tr>
+      <td>1671</td>
+      <td>670</td>
+      <td>23.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 318</td>
+    </tr>
+    <tr>
+      <td>1672</td>
+      <td>671</td>
+      <td>24.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 319</td>
+    </tr>
+    <tr>
+      <td>1673</td>
+      <td>672</td>
+      <td>25.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 320</td>
+    </tr>
+    <tr>
       <td>887</td>
       <td>71</td>
       <td>20.11.1789</td>
@@ -927,6 +1440,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl August Sachsen-Weimar und Eisenach</td>
       <td>WA IV, 9, 163</td>
+    </tr>
+    <tr>
+      <td>1674</td>
+      <td>673</td>
+      <td>26.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 320</td>
+    </tr>
+    <tr>
+      <td>1675</td>
+      <td>674</td>
+      <td>30.12.1828</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 11, 322</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.1828</td>
+      <td>Gespräch</td>
+      <td>Johann Karl August von La Roche</td>
+      <td></td>
+      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., Heilbronn 1886, XCVf</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1829</td>
+      <td>Gespräch</td>
+      <td>Joseph Karl August von La Roche</td>
+      <td></td>
+      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., Heilbronn 1886, XCVIIff</td>
+    </tr>
+    <tr>
+      <td>1676</td>
+      <td>675</td>
+      <td>01.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 1</td>
+    </tr>
+    <tr>
+      <td>1677</td>
+      <td></td>
+      <td>06.01.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 146</td>
+    </tr>
+    <tr>
+      <td>1678</td>
+      <td>676</td>
+      <td>06.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 3</td>
+    </tr>
+    <tr>
+      <td>1679</td>
+      <td>677</td>
+      <td>09.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 4</td>
+    </tr>
+    <tr>
+      <td>1680</td>
+      <td>678</td>
+      <td>11.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 6</td>
+    </tr>
+    <tr>
+      <td>1681</td>
+      <td>679</td>
+      <td>12.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 6</td>
     </tr>
     <tr>
       <td>888</td>
@@ -938,6 +1541,96 @@
       <td>WA IV, 9, 165</td>
     </tr>
     <tr>
+      <td>1682</td>
+      <td>680</td>
+      <td>13.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 6</td>
+    </tr>
+    <tr>
+      <td>1683</td>
+      <td>681</td>
+      <td>14.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 7</td>
+    </tr>
+    <tr>
+      <td>1684</td>
+      <td>682</td>
+      <td>15.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 7</td>
+    </tr>
+    <tr>
+      <td>1685</td>
+      <td>683</td>
+      <td>16.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 8</td>
+    </tr>
+    <tr>
+      <td>1686</td>
+      <td>685</td>
+      <td>18.01.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 159</td>
+    </tr>
+    <tr>
+      <td>1687</td>
+      <td>684</td>
+      <td>18.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 8</td>
+    </tr>
+    <tr>
+      <td>1688</td>
+      <td></td>
+      <td>01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 12</td>
+    </tr>
+    <tr>
+      <td>1689</td>
+      <td></td>
+      <td>27.01.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Adele Schopenhauer</td>
+      <td>Schopenhauer, J. Briefe an Holtei. Leipzig, 1870.46</td>
+    </tr>
+    <tr>
+      <td>1690</td>
+      <td>686</td>
+      <td>28.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 13</td>
+    </tr>
+    <tr>
+      <td>1691</td>
+      <td></td>
+      <td>28.01.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 1</td>
+    </tr>
+    <tr>
       <td>889</td>
       <td>72</td>
       <td>14.12.1789</td>
@@ -945,6 +1638,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Anna Amalia Sachsen-Weimar und Eisenach</td>
       <td>WA IV, 9, 168</td>
+    </tr>
+    <tr>
+      <td>1692</td>
+      <td>687</td>
+      <td>29.01.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 14</td>
+    </tr>
+    <tr>
+      <td>1693</td>
+      <td>688</td>
+      <td>01.02.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 16</td>
+    </tr>
+    <tr>
+      <td>1694</td>
+      <td>689</td>
+      <td>02.02.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 17</td>
+    </tr>
+    <tr>
+      <td>1695</td>
+      <td>690</td>
+      <td>07.02.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>691</td>
+      <td>09.02.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 21</td>
+    </tr>
+    <tr>
+      <td>1695a</td>
+      <td></td>
+      <td>09.02.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Wilhelm Göttling</td>
+      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 73</td>
+    </tr>
+    <tr>
+      <td>1696</td>
+      <td>692; 6</td>
+      <td>10.02.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 9</td>
+    </tr>
+    <tr>
+      <td>1697</td>
+      <td>693</td>
+      <td>12.02.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>694</td>
+      <td>14.02.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 23</td>
+    </tr>
+    <tr>
+      <td>1698</td>
+      <td>695</td>
+      <td>17.02.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 18f</td>
     </tr>
     <tr>
       <td>890</td>
@@ -956,22 +1739,301 @@
       <td>WA III, 2, 1</td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td>19.02.1829</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Cottasche Buchhandlung</td>
+      <td>QuZ IV, 542</td>
+    </tr>
+    <tr>
+      <td>1699</td>
+      <td></td>
+      <td>04.03.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 184</td>
+    </tr>
+    <tr>
+      <td>1700</td>
+      <td>696</td>
+      <td>23.03.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 36f</td>
+    </tr>
+    <tr>
+      <td>1701</td>
+      <td>697</td>
+      <td>24.03.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 43</td>
+    </tr>
+    <tr>
+      <td>1702</td>
+      <td>698</td>
+      <td>27.03.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 45</td>
+    </tr>
+    <tr>
+      <td>1703</td>
+      <td>699</td>
+      <td>28.03.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 184</td>
+    </tr>
+    <tr>
+      <td>1704</td>
+      <td>700; 58</td>
+      <td>10.04.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 82</td>
+    </tr>
+    <tr>
+      <td>1705</td>
+      <td>702</td>
+      <td>14.04.1829</td>
+      <td>Gespräch</td>
+      <td>Max von Gagern</td>
+      <td></td>
+      <td>Biedermann 7, 95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26.04.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 428f</td>
+    </tr>
+    <tr>
+      <td>1706</td>
+      <td>701</td>
+      <td>28.04.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 215</td>
+    </tr>
+    <tr>
       <td>891</td>
       <td></td>
       <td>10.01.1790</td>
       <td>Verzeichnis</td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA IV, 9, 393</td>
+    </tr>
+    <tr>
+      <td>1707</td>
+      <td></td>
+      <td>11.06.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 244</td>
+    </tr>
+    <tr>
+      <td>1708</td>
+      <td>703</td>
+      <td>19.07.1829</td>
+      <td>Brief</td>
+      <td></td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 261</td>
+    </tr>
+    <tr>
+      <td>1709</td>
+      <td>705</td>
+      <td>19.07.1829</td>
+      <td>Gespräch</td>
+      <td>Karl Eberwein</td>
+      <td></td>
+      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 340</td>
+    </tr>
+    <tr>
+      <td>1710</td>
+      <td>704</td>
+      <td>19.07.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 99</td>
+    </tr>
+    <tr>
+      <td>1711</td>
+      <td>712</td>
+      <td>02.08.1829</td>
+      <td>Gespräch</td>
+      <td>Henry Crabb Robinson</td>
+      <td></td>
+      <td>Biedermann 7, 107</td>
+    </tr>
+    <tr>
+      <td>1712</td>
+      <td>705</td>
+      <td>03.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 105</td>
+    </tr>
+    <tr>
+      <td>1713</td>
+      <td>706</td>
+      <td>04.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 106</td>
+    </tr>
+    <tr>
+      <td>1714</td>
+      <td>707</td>
+      <td>05.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 106</td>
+    </tr>
+    <tr>
+      <td>1715</td>
+      <td>708</td>
+      <td>07.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 108</td>
+    </tr>
+    <tr>
+      <td>1716</td>
+      <td>709</td>
+      <td>08.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 108</td>
     </tr>
     <tr>
       <td>892</td>
       <td></td>
       <td>23.01.1790</td>
       <td>Verzeichnis</td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA IV, 9, 393</td>
+    </tr>
+    <tr>
+      <td>1717</td>
+      <td>710</td>
+      <td>12.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 110</td>
+    </tr>
+    <tr>
+      <td>1718</td>
+      <td>712</td>
+      <td>13.08.1829</td>
+      <td>Gespräch</td>
+      <td>Henry Crabb Robinson</td>
+      <td></td>
+      <td>Biedermann 7, 108</td>
+    </tr>
+    <tr>
+      <td>1719</td>
+      <td></td>
+      <td>13.08.1829</td>
+      <td>Gespräch</td>
+      <td>Henry Crabb Robinson</td>
+      <td></td>
+      <td>Biedermann 7, 110</td>
+    </tr>
+    <tr>
+      <td>1720</td>
+      <td>711</td>
+      <td>14.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 112</td>
+    </tr>
+    <tr>
+      <td>1721</td>
+      <td></td>
+      <td>16.08.1829</td>
+      <td>Gespräch</td>
+      <td>Henry Crabb Robinson</td>
+      <td></td>
+      <td>Biedermann 7, 111</td>
+    </tr>
+    <tr>
+      <td>1722</td>
+      <td></td>
+      <td>18.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 113</td>
+    </tr>
+    <tr>
+      <td>1722a</td>
+      <td></td>
+      <td>08.1829</td>
+      <td>Gespräch</td>
+      <td>Victor Pavie</td>
+      <td></td>
+      <td>Mémoires de la sociéte nationale d'agriculture. Tome XVII (1874). 114</td>
+    </tr>
+    <tr>
+      <td>1723</td>
+      <td></td>
+      <td>08.1829</td>
+      <td>Gespräch</td>
+      <td>Karl Eberwein</td>
+      <td></td>
+      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 340</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>713</td>
+      <td>20.08.1829</td>
+      <td>Gespräch</td>
+      <td>Alexandre Dumas (Senior)</td>
+      <td></td>
+      <td>Biedermann 10, 172</td>
+    </tr>
+    <tr>
+      <td>1724</td>
+      <td></td>
+      <td>29.08.1829</td>
+      <td>Gespräch</td>
+      <td>Antoni Edward Odyniec</td>
+      <td></td>
+      <td>Biedermann 7, 138</td>
+    </tr>
+    <tr>
+      <td>852</td>
+      <td>11</td>
+      <td>10.1774</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johanna Fahlmer</td>
+      <td>WA IV, 2, 202</td>
     </tr>
     <tr>
       <td>893</td>
@@ -981,6 +2043,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl August Sachsen-Weimar und Eisenach</td>
       <td>WA IV, 9, 173</td>
+    </tr>
+    <tr>
+      <td>1725</td>
+      <td>714</td>
+      <td>29.08.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 119</td>
+    </tr>
+    <tr>
+      <td>1726</td>
+      <td></td>
+      <td>30.08.1829</td>
+      <td>Gespräch</td>
+      <td>Karl von Holtei</td>
+      <td></td>
+      <td>Biedermann 7, 141</td>
+    </tr>
+    <tr>
+      <td>1727</td>
+      <td>715</td>
+      <td>01.09.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 120</td>
+    </tr>
+    <tr>
+      <td>1728</td>
+      <td>716</td>
+      <td>02.09.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Friedrich Rochlitz</td>
+      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann. Leipzig, 1887. 332f</td>
+    </tr>
+    <tr>
+      <td>1729</td>
+      <td></td>
+      <td>06.09.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 122</td>
+    </tr>
+    <tr>
+      <td>1730</td>
+      <td>717</td>
+      <td>08.09.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 123</td>
+    </tr>
+    <tr>
+      <td>1731</td>
+      <td>718</td>
+      <td>09.09.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Ludwig Tieck</td>
+      <td>SdGG 13, 311</td>
+    </tr>
+    <tr>
+      <td>1732</td>
+      <td></td>
+      <td>18.09.1829</td>
+      <td>Text</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>Kunst und Alterthum 6 (3), 626</td>
+    </tr>
+    <tr>
+      <td>1733</td>
+      <td>719</td>
+      <td>29.09.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Friedrich Rochlitz</td>
+      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann. Leipzig, 1887. 338</td>
+    </tr>
+    <tr>
+      <td>1734</td>
+      <td>720</td>
+      <td>03.10.1829</td>
+      <td>Gespräch</td>
+      <td>Karl Friedrich Ludwig Freiherr Löw von und zu Steinfurt</td>
+      <td></td>
+      <td>Biedermann 10, 182</td>
     </tr>
     <tr>
       <td></td>
@@ -994,11 +2146,191 @@
     <tr>
       <td></td>
       <td></td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 188ff</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24.10.1829</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Cottasche Buchhandlung</td>
+      <td>QuZ II, 631</td>
+    </tr>
+    <tr>
+      <td>1735</td>
+      <td></td>
+      <td>01.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 147</td>
+    </tr>
+    <tr>
+      <td>1736</td>
+      <td>721</td>
+      <td>06.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 149</td>
+    </tr>
+    <tr>
+      <td>1737</td>
+      <td>722</td>
+      <td>07.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 150</td>
+    </tr>
+    <tr>
+      <td>1737a</td>
+      <td></td>
+      <td>08.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 150</td>
+    </tr>
+    <tr>
+      <td>1738</td>
+      <td></td>
+      <td>19.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 155</td>
+    </tr>
+    <tr>
+      <td>1739</td>
+      <td>723</td>
+      <td>20.11.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 329f</td>
+    </tr>
+    <tr>
+      <td>1740</td>
+      <td></td>
+      <td>21.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 156</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.11.1829</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Cottasche Buchhandlung</td>
+      <td>QuZ II, 637</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>20.02.1790</td>
       <td>Brief</td>
       <td>Georg Joachim Göschen</td>
       <td>Friedrich Justin Bertuch</td>
       <td>QuZ I, 185</td>
+    </tr>
+    <tr>
+      <td>1741</td>
+      <td></td>
+      <td>25.11.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 158</td>
+    </tr>
+    <tr>
+      <td>1742</td>
+      <td>724</td>
+      <td>01.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 160</td>
+    </tr>
+    <tr>
+      <td>1743</td>
+      <td>725</td>
+      <td>02.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 160</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.12.1829</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Karl Friedrich Martius</td>
+      <td>Grumach, 357</td>
+    </tr>
+    <tr>
+      <td>1744</td>
+      <td>727</td>
+      <td>06.12.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 161f</td>
+    </tr>
+    <tr>
+      <td>1745</td>
+      <td>726</td>
+      <td>06.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 163</td>
+    </tr>
+    <tr>
+      <td>1746</td>
+      <td>728</td>
+      <td>07.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 163</td>
+    </tr>
+    <tr>
+      <td>1747</td>
+      <td>729</td>
+      <td>08.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 163</td>
+    </tr>
+    <tr>
+      <td>1748</td>
+      <td>730</td>
+      <td>09.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 164</td>
+    </tr>
+    <tr>
+      <td>1749</td>
+      <td>731</td>
+      <td>10.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 164</td>
     </tr>
     <tr>
       <td>894</td>
@@ -1010,6 +2342,96 @@
       <td>WA IV, 9, 181</td>
     </tr>
     <tr>
+      <td>1750</td>
+      <td>732</td>
+      <td>12.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 165</td>
+    </tr>
+    <tr>
+      <td>1751</td>
+      <td>733</td>
+      <td>13.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 165</td>
+    </tr>
+    <tr>
+      <td>1752</td>
+      <td>734</td>
+      <td>14.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 166</td>
+    </tr>
+    <tr>
+      <td>1753</td>
+      <td>735</td>
+      <td>15.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 166</td>
+    </tr>
+    <tr>
+      <td>1754</td>
+      <td>737</td>
+      <td>16.12.1829</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 340</td>
+    </tr>
+    <tr>
+      <td>1755</td>
+      <td>738</td>
+      <td>16.12.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 165ff</td>
+    </tr>
+    <tr>
+      <td>1756</td>
+      <td>736</td>
+      <td>16.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 167</td>
+    </tr>
+    <tr>
+      <td>1757</td>
+      <td>739</td>
+      <td>20.12.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 171ff</td>
+    </tr>
+    <tr>
+      <td>1758</td>
+      <td>740</td>
+      <td>26.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 172</td>
+    </tr>
+    <tr>
+      <td>1759</td>
+      <td>742</td>
+      <td>27.12.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 173ff</td>
+    </tr>
+    <tr>
       <td>895</td>
       <td></td>
       <td>03.03.1790</td>
@@ -1017,6 +2439,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Georg Joachim Göschen</td>
       <td>GJ 22, 74</td>
+    </tr>
+    <tr>
+      <td>1760</td>
+      <td>741</td>
+      <td>27.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 173</td>
+    </tr>
+    <tr>
+      <td>1761</td>
+      <td>743</td>
+      <td>28.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 173</td>
+    </tr>
+    <tr>
+      <td>1762</td>
+      <td></td>
+      <td>29.12.1829</td>
+      <td>Gespräch</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>Riemer 2, 1, 396</td>
+    </tr>
+    <tr>
+      <td>1763</td>
+      <td>744</td>
+      <td>29.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 173</td>
+    </tr>
+    <tr>
+      <td>1764</td>
+      <td>745</td>
+      <td>30.12.1829</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 175</td>
+    </tr>
+    <tr>
+      <td>1765</td>
+      <td>746</td>
+      <td>30.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 173</td>
+    </tr>
+    <tr>
+      <td>1766</td>
+      <td>747</td>
+      <td>31.12.1829</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 174</td>
+    </tr>
+    <tr>
+      <td>1767</td>
+      <td>748</td>
+      <td>01.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 175</td>
+    </tr>
+    <tr>
+      <td>1768</td>
+      <td>750</td>
+      <td>03.01.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 177f</td>
+    </tr>
+    <tr>
+      <td>1769</td>
+      <td>749</td>
+      <td>03.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 176</td>
     </tr>
     <tr>
       <td>896</td>
@@ -1028,6 +2540,96 @@
       <td>WA IV, 9, 183</td>
     </tr>
     <tr>
+      <td>1770</td>
+      <td>751</td>
+      <td>04.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 176</td>
+    </tr>
+    <tr>
+      <td>1771</td>
+      <td>752</td>
+      <td>05.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 177</td>
+    </tr>
+    <tr>
+      <td>1772</td>
+      <td>753</td>
+      <td>06.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 177</td>
+    </tr>
+    <tr>
+      <td>1773</td>
+      <td>754</td>
+      <td>07.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 178</td>
+    </tr>
+    <tr>
+      <td>1774</td>
+      <td>755</td>
+      <td>08.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 178</td>
+    </tr>
+    <tr>
+      <td>1775</td>
+      <td>756</td>
+      <td>09.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 178</td>
+    </tr>
+    <tr>
+      <td>1776</td>
+      <td>758</td>
+      <td>10.01.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 178f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 449</td>
+    </tr>
+    <tr>
+      <td>1777</td>
+      <td>757</td>
+      <td>10.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 179</td>
+    </tr>
+    <tr>
+      <td>1778</td>
+      <td>759</td>
+      <td>11.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 179</td>
+    </tr>
+    <tr>
       <td></td>
       <td></td>
       <td>15.04.1790</td>
@@ -1035,6 +2637,96 @@
       <td>Georg Joachim Göschen</td>
       <td></td>
       <td>Journal des Luxus und der Moden. Hg. Von Friedrich Justin Bertuch und Georg Melchior Kraus. Bd 5.Weimar 1790. Intelligenzbl Nr 5, LX-LXII</td>
+    </tr>
+    <tr>
+      <td>1779</td>
+      <td>760</td>
+      <td>13.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 181</td>
+    </tr>
+    <tr>
+      <td>1780</td>
+      <td>761</td>
+      <td>16.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 182</td>
+    </tr>
+    <tr>
+      <td>1781</td>
+      <td>762</td>
+      <td>17.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 183</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 450</td>
+    </tr>
+    <tr>
+      <td>1782</td>
+      <td>763</td>
+      <td>18.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 183</td>
+    </tr>
+    <tr>
+      <td>1783</td>
+      <td>764</td>
+      <td>19.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 183</td>
+    </tr>
+    <tr>
+      <td>1784</td>
+      <td></td>
+      <td>20.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 184</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>765</td>
+      <td>20.01.1830</td>
+      <td>Text</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>WA I, 15 (2), 9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 451</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 453</td>
     </tr>
     <tr>
       <td>897</td>
@@ -1046,6 +2738,96 @@
       <td>WA IV, 9, 394</td>
     </tr>
     <tr>
+      <td>1785</td>
+      <td>766</td>
+      <td>24.01.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 188</td>
+    </tr>
+    <tr>
+      <td>1786</td>
+      <td></td>
+      <td>24.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 186</td>
+    </tr>
+    <tr>
+      <td>1787</td>
+      <td>767</td>
+      <td>28.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 188</td>
+    </tr>
+    <tr>
+      <td>1788</td>
+      <td>768</td>
+      <td>29.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 188</td>
+    </tr>
+    <tr>
+      <td>1789</td>
+      <td></td>
+      <td>31.01.1830</td>
+      <td>Gespräch</td>
+      <td>Frédéric Soret; Karl Alexander von Sachsen-Weimar-Eisenach</td>
+      <td></td>
+      <td>Biedermann 7, 195f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31.01.1831</td>
+      <td></td>
+      <td>Frédéric Soret</td>
+      <td></td>
+      <td>Houben, Soret, 359ff</td>
+    </tr>
+    <tr>
+      <td>1790</td>
+      <td>769</td>
+      <td>31.01.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 190</td>
+    </tr>
+    <tr>
+      <td>1791</td>
+      <td>770</td>
+      <td>01.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 190</td>
+    </tr>
+    <tr>
+      <td>1792</td>
+      <td>771</td>
+      <td>02.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 191</td>
+    </tr>
+    <tr>
+      <td>1793</td>
+      <td>772</td>
+      <td>03.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 192</td>
+    </tr>
+    <tr>
       <td>898</td>
       <td>77</td>
       <td>01.07.1790</td>
@@ -1053,6 +2835,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl August Sachsen-Weimar und Eisenach</td>
       <td>WA IV, 9, 212</td>
+    </tr>
+    <tr>
+      <td>1794</td>
+      <td>773</td>
+      <td>04.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 192</td>
+    </tr>
+    <tr>
+      <td>1795</td>
+      <td>774</td>
+      <td>05.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 193</td>
+    </tr>
+    <tr>
+      <td>1796</td>
+      <td>775</td>
+      <td>06.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 193</td>
+    </tr>
+    <tr>
+      <td>1797</td>
+      <td>776</td>
+      <td>07.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 193</td>
+    </tr>
+    <tr>
+      <td>1798</td>
+      <td>777</td>
+      <td>09.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 194</td>
+    </tr>
+    <tr>
+      <td>1799</td>
+      <td>779</td>
+      <td>10.02.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 203</td>
+    </tr>
+    <tr>
+      <td>1800</td>
+      <td>778</td>
+      <td>10.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 195</td>
+    </tr>
+    <tr>
+      <td>1801</td>
+      <td>780</td>
+      <td>12.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 196</td>
+    </tr>
+    <tr>
+      <td>1802</td>
+      <td>781</td>
+      <td>13.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 196</td>
+    </tr>
+    <tr>
+      <td>1803</td>
+      <td>783</td>
+      <td>14.02.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 208</td>
     </tr>
     <tr>
       <td>899</td>
@@ -1064,6 +2936,105 @@
       <td>WA IV, 9, 213</td>
     </tr>
     <tr>
+      <td>1804</td>
+      <td>782</td>
+      <td>14.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 197</td>
+    </tr>
+    <tr>
+      <td>1805</td>
+      <td>784</td>
+      <td>15.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 197</td>
+    </tr>
+    <tr>
+      <td>1806</td>
+      <td>785</td>
+      <td>16.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 198</td>
+    </tr>
+    <tr>
+      <td>1807</td>
+      <td>786</td>
+      <td>17.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 198</td>
+    </tr>
+    <tr>
+      <td>1808</td>
+      <td>788</td>
+      <td>21.02.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 220</td>
+    </tr>
+    <tr>
+      <td>1809</td>
+      <td>787</td>
+      <td>21.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 200</td>
+    </tr>
+    <tr>
+      <td>1810</td>
+      <td>789</td>
+      <td>22.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 200</td>
+    </tr>
+    <tr>
+      <td>1811</td>
+      <td>790</td>
+      <td>23.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 201</td>
+    </tr>
+    <tr>
+      <td>1812</td>
+      <td>792</td>
+      <td>24.02.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 223</td>
+    </tr>
+    <tr>
+      <td>1813</td>
+      <td>791</td>
+      <td>24.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 201</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>12</td>
+      <td>15.10.1774</td>
+      <td>Gespräch</td>
+      <td>Heinrich Christian Boie</td>
+      <td></td>
+      <td>Weinhold 1868, S. 70</td>
+    </tr>
+    <tr>
       <td></td>
       <td></td>
       <td>12.07.1790</td>
@@ -1071,6 +3042,96 @@
       <td>Johann Heinrich Lips</td>
       <td>Georg Joachim Göschen</td>
       <td>QuZ I, 192</td>
+    </tr>
+    <tr>
+      <td>1814</td>
+      <td>793</td>
+      <td>25.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 202</td>
+    </tr>
+    <tr>
+      <td>1815</td>
+      <td>794</td>
+      <td>26.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 203</td>
+    </tr>
+    <tr>
+      <td>1816</td>
+      <td>795</td>
+      <td>27.02.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 203</td>
+    </tr>
+    <tr>
+      <td>1817</td>
+      <td>797</td>
+      <td>01.03.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 231</td>
+    </tr>
+    <tr>
+      <td>1818</td>
+      <td>796</td>
+      <td>01.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 204</td>
+    </tr>
+    <tr>
+      <td>1819</td>
+      <td></td>
+      <td>02.03.1830</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 411</td>
+    </tr>
+    <tr>
+      <td>1820</td>
+      <td>798</td>
+      <td>02.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 205</td>
+    </tr>
+    <tr>
+      <td>1821</td>
+      <td>799</td>
+      <td>03.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 205</td>
+    </tr>
+    <tr>
+      <td>1822</td>
+      <td>800</td>
+      <td>04.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 206</td>
+    </tr>
+    <tr>
+      <td>1823</td>
+      <td>801</td>
+      <td>05.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 206</td>
     </tr>
     <tr>
       <td>900</td>
@@ -1082,6 +3143,96 @@
       <td>WA IV, 9, 246</td>
     </tr>
     <tr>
+      <td>1824</td>
+      <td>803</td>
+      <td>05.03.1830</td>
+      <td>Gespräch</td>
+      <td>Frédéric Soret</td>
+      <td></td>
+      <td>Biedermann 7, 237f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>05.03.1830</td>
+      <td></td>
+      <td>Frédéric Soret</td>
+      <td></td>
+      <td>Houben, Soret, 390ff</td>
+    </tr>
+    <tr>
+      <td>1825</td>
+      <td>802</td>
+      <td>06.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 207</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>07.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben I, 471</td>
+    </tr>
+    <tr>
+      <td>1826</td>
+      <td>804</td>
+      <td>07.03.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 239ff</td>
+    </tr>
+    <tr>
+      <td>1827</td>
+      <td>805</td>
+      <td>10.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 210</td>
+    </tr>
+    <tr>
+      <td>1828</td>
+      <td></td>
+      <td>12.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 211</td>
+    </tr>
+    <tr>
+      <td>1829</td>
+      <td>806</td>
+      <td>13.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 212</td>
+    </tr>
+    <tr>
+      <td>1830</td>
+      <td>807</td>
+      <td>14.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 212</td>
+    </tr>
+    <tr>
+      <td>1831</td>
+      <td>808</td>
+      <td>15.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 212</td>
+    </tr>
+    <tr>
       <td></td>
       <td>79</td>
       <td>12.04.1791</td>
@@ -1089,6 +3240,96 @@
       <td>Friedrich Heinrich Jacobi</td>
       <td>Johann Wolfgang Goethe</td>
       <td>G.-Jakobi S. 128</td>
+    </tr>
+    <tr>
+      <td>1832</td>
+      <td>809</td>
+      <td>17.03.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 264</td>
+    </tr>
+    <tr>
+      <td>1833</td>
+      <td>810</td>
+      <td>18.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 214</td>
+    </tr>
+    <tr>
+      <td>1834</td>
+      <td>812</td>
+      <td>21.03.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 276</td>
+    </tr>
+    <tr>
+      <td>1835</td>
+      <td>811</td>
+      <td>21.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 215</td>
+    </tr>
+    <tr>
+      <td>1836</td>
+      <td>813</td>
+      <td>22.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 216</td>
+    </tr>
+    <tr>
+      <td>1837</td>
+      <td>814</td>
+      <td>23.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 216</td>
+    </tr>
+    <tr>
+      <td>1838</td>
+      <td></td>
+      <td>24.03.1830</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 7, 280</td>
+    </tr>
+    <tr>
+      <td>1839</td>
+      <td>815</td>
+      <td>26.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 218</td>
+    </tr>
+    <tr>
+      <td>1840</td>
+      <td>816</td>
+      <td>27.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 219</td>
+    </tr>
+    <tr>
+      <td>1841</td>
+      <td>817</td>
+      <td>28.03.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 219</td>
     </tr>
     <tr>
       <td>900a</td>
@@ -1100,22 +3341,292 @@
       <td>WA IV, 9, 277</td>
     </tr>
     <tr>
+      <td>1842</td>
+      <td>818</td>
+      <td>14.04.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 226</td>
+    </tr>
+    <tr>
+      <td>1843</td>
+      <td>819</td>
+      <td>18.04.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 227</td>
+    </tr>
+    <tr>
+      <td>1844</td>
+      <td>820</td>
+      <td>24.04.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 231</td>
+    </tr>
+    <tr>
+      <td>1845</td>
+      <td>821</td>
+      <td>27.04.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 232</td>
+    </tr>
+    <tr>
+      <td>1846</td>
+      <td></td>
+      <td>08.05.1830</td>
+      <td>Gespräch</td>
+      <td>Graf Andrzej Edward Kozmian</td>
+      <td></td>
+      <td>Biedermann 7, 230</td>
+    </tr>
+    <tr>
+      <td>1847</td>
+      <td></td>
+      <td>15.05.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 242</td>
+    </tr>
+    <tr>
+      <td>1848</td>
+      <td></td>
+      <td>02.06.1830</td>
+      <td>Gespräch</td>
+      <td>Felix Bartholdy Mendelssohn</td>
+      <td></td>
+      <td>Biedermann 7, 310</td>
+    </tr>
+    <tr>
+      <td>1849</td>
+      <td></td>
+      <td>02.06.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 251</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>06.06.1830</td>
+      <td>Brief</td>
+      <td>Felix Bartholdy Mendelssohn</td>
+      <td>Abraham Mendelssohn Bartholdy; Lea Mendelssohn Bartholdy</td>
+      <td>Felix Mendelssohn-Barholdy, Reisebriefe. Hg. v. P. Mendelssohn-Barholdy, Leipzig 1861, 12f</td>
+    </tr>
+    <tr>
+      <td>1850</td>
+      <td>822</td>
+      <td>08.06.1830</td>
+      <td>Gespräch</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>Biedermann 7, 314</td>
+    </tr>
+    <tr>
       <td></td>
       <td>81</td>
       <td>1794</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>Wilhelm Meisters Lehrjahre. 1 Bd. 330, 1794.</td>
+      <td>Goethe 1794, S. 330</td>
+    </tr>
+    <tr>
+      <td>1851</td>
+      <td>823</td>
+      <td>12.06.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 255</td>
+    </tr>
+    <tr>
+      <td>1852</td>
+      <td>824</td>
+      <td>14.06.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 256</td>
+    </tr>
+    <tr>
+      <td>1853</td>
+      <td>825</td>
+      <td>15.06.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 257</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>826</td>
+      <td>18.06.1830</td>
+      <td>Paralipomenon</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 224f.</td>
+    </tr>
+    <tr>
+      <td>1854</td>
+      <td>827</td>
+      <td>25.06.1830</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>August von Goethe</td>
+      <td>GJ 11, 99</td>
+    </tr>
+    <tr>
+      <td>1855</td>
+      <td></td>
+      <td>28.06.1830</td>
+      <td>Gespräch</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>Biedermann 7, 317</td>
+    </tr>
+    <tr>
+      <td>1856</td>
+      <td>828</td>
+      <td>09.07.1830</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>WA I, 15 (2), 4</td>
+    </tr>
+    <tr>
+      <td>1857</td>
+      <td>829</td>
+      <td>13.07.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 273</td>
+    </tr>
+    <tr>
+      <td>1858</td>
+      <td>830</td>
+      <td>31.07.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 282</td>
+    </tr>
+    <tr>
+      <td>1859</td>
+      <td>831</td>
+      <td>09.08.1830</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Peter Eckermann</td>
+      <td>WA I, 15 (2), 9</td>
     </tr>
     <tr>
       <td>901</td>
       <td></td>
-      <td>16.09.1794</td>
+      <td></td>
       <td>Gespräch</td>
       <td>Friedrich Schiller</td>
       <td>Charlotte von Schiller</td>
       <td>Biedermann 1, 152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>832</td>
+      <td>14.09.1830</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 2, 155</td>
+    </tr>
+    <tr>
+      <td>1860</td>
+      <td>833</td>
+      <td>08.10.1830</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Ernst Schubarth</td>
+      <td>G-Schiller-Archiv</td>
+    </tr>
+    <tr>
+      <td>1861</td>
+      <td>17</td>
+      <td>15.11.1830</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 29, 97</td>
+    </tr>
+    <tr>
+      <td>1862</td>
+      <td>834</td>
+      <td>30.11.1830</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 2, 168</td>
+    </tr>
+    <tr>
+      <td>1863</td>
+      <td>835</td>
+      <td>02.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 337</td>
+    </tr>
+    <tr>
+      <td>1864</td>
+      <td>836; 837</td>
+      <td>04.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 338</td>
+    </tr>
+    <tr>
+      <td>1865</td>
+      <td></td>
+      <td>06.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 339</td>
+    </tr>
+    <tr>
+      <td>1866</td>
+      <td></td>
+      <td>07.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 339</td>
+    </tr>
+    <tr>
+      <td>1867</td>
+      <td>838</td>
+      <td>11.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 341</td>
+    </tr>
+    <tr>
+      <td>1868</td>
+      <td>839</td>
+      <td>12.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 342</td>
     </tr>
     <tr>
       <td>902</td>
@@ -1127,13 +3638,193 @@
       <td>WA IV, 10, 209</td>
     </tr>
     <tr>
+      <td>1869</td>
+      <td></td>
+      <td>13.12.1830</td>
+      <td>Gespräch</td>
+      <td>Verfasser des Artikels</td>
+      <td></td>
+      <td>GJ 24, 37</td>
+    </tr>
+    <tr>
+      <td>1870</td>
+      <td>840</td>
+      <td>13.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 343</td>
+    </tr>
+    <tr>
+      <td>1871</td>
+      <td>841</td>
+      <td>14.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 343</td>
+    </tr>
+    <tr>
+      <td>1872</td>
+      <td>842</td>
+      <td>15.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 343</td>
+    </tr>
+    <tr>
+      <td>1873</td>
+      <td>843</td>
+      <td>16.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 344</td>
+    </tr>
+    <tr>
+      <td>1874</td>
+      <td>844</td>
+      <td>17.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 345</td>
+    </tr>
+    <tr>
+      <td>1875</td>
+      <td>845</td>
+      <td>21.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 347</td>
+    </tr>
+    <tr>
+      <td>1876</td>
+      <td></td>
+      <td>30.12.1830</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 12, 352</td>
+    </tr>
+    <tr>
+      <td>1877</td>
+      <td>846</td>
+      <td>04.01.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 104</td>
+    </tr>
+    <tr>
+      <td>1878</td>
+      <td>847</td>
+      <td>05.01.1831</td>
+      <td>Gespräch</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>Biedermann 8, 3</td>
+    </tr>
+    <tr>
       <td></td>
       <td>83</td>
-      <td>1795</td>
+      <td>1794</td>
       <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
       <td>Charlotte von Kalb</td>
+      <td>Düntzer, 1857, Bd. 1, S. 83f.</td>
+    </tr>
+    <tr>
+      <td>1879</td>
+      <td>848</td>
+      <td>08.01.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 110</td>
+    </tr>
+    <tr>
       <td></td>
-      <td>Düntzer. G.'s Faust. ?, 1857. 83f</td>
+      <td></td>
+      <td>22.01.1831</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>QuZ II, 693-695</td>
+    </tr>
+    <tr>
+      <td>1880</td>
+      <td></td>
+      <td>10.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 27</td>
+    </tr>
+    <tr>
+      <td>1881</td>
+      <td>849</td>
+      <td>11.02.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 525ff</td>
+    </tr>
+    <tr>
+      <td>1882</td>
+      <td>850</td>
+      <td>12.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 28</td>
+    </tr>
+    <tr>
+      <td>1883</td>
+      <td>851</td>
+      <td>13.02.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 9f</td>
+    </tr>
+    <tr>
+      <td>1884</td>
+      <td></td>
+      <td>13.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 28</td>
+    </tr>
+    <tr>
+      <td>1885</td>
+      <td>853</td>
+      <td>17.02.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 20ff</td>
+    </tr>
+    <tr>
+      <td>1886</td>
+      <td>852</td>
+      <td>17.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 31</td>
     </tr>
     <tr>
       <td></td>
@@ -1142,7 +3833,97 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 4, 93</td>
+      <td>Jonas 1892-1897, Bd. 4, S. 93</td>
+    </tr>
+    <tr>
+      <td>1887</td>
+      <td>854</td>
+      <td>20.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 33</td>
+    </tr>
+    <tr>
+      <td>1888</td>
+      <td>855</td>
+      <td>21.02.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 31ff</td>
+    </tr>
+    <tr>
+      <td>1889</td>
+      <td></td>
+      <td>25.02.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 37</td>
+    </tr>
+    <tr>
+      <td>1890</td>
+      <td>856</td>
+      <td>02.03.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 36</td>
+    </tr>
+    <tr>
+      <td>1891</td>
+      <td></td>
+      <td>09.03.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 160</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16.03.1831</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Friedrich Rochlitz</td>
+      <td>Rochlitz' Briefwechsel mit G., 476f</td>
+    </tr>
+    <tr>
+      <td>1892</td>
+      <td>857</td>
+      <td>27.03.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 65</td>
+    </tr>
+    <tr>
+      <td>1893</td>
+      <td></td>
+      <td>05.04.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 57</td>
+    </tr>
+    <tr>
+      <td>1894</td>
+      <td></td>
+      <td>06.04.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 58</td>
+    </tr>
+    <tr>
+      <td>1895</td>
+      <td>858</td>
+      <td>09.04.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 59</td>
     </tr>
     <tr>
       <td></td>
@@ -1151,7 +3932,106 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 69 [H42]</td>
+      <td>WA I, 15 (2), 69 [2 III H40]</td>
+    </tr>
+    <tr>
+      <td>1896</td>
+      <td></td>
+      <td>17.04.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Jakob Schmied</td>
+      <td></td>
+      <td>Biedermann 8, 80</td>
+    </tr>
+    <tr>
+      <td>1897</td>
+      <td></td>
+      <td>24.04.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Lyser</td>
+      <td></td>
+      <td>Euphorion (1902) 9, 340</td>
+    </tr>
+    <tr>
+      <td>1898</td>
+      <td>859</td>
+      <td>30.04.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 70</td>
+    </tr>
+    <tr>
+      <td>1899</td>
+      <td>860</td>
+      <td>01.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 70</td>
+    </tr>
+    <tr>
+      <td>1900</td>
+      <td>862</td>
+      <td>02.05.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 82</td>
+    </tr>
+    <tr>
+      <td>1901</td>
+      <td>861</td>
+      <td>02.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 71</td>
+    </tr>
+    <tr>
+      <td>1902</td>
+      <td>863</td>
+      <td>03.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 72</td>
+    </tr>
+    <tr>
+      <td>1903</td>
+      <td>864</td>
+      <td>04.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 72</td>
+    </tr>
+    <tr>
+      <td>1904</td>
+      <td>865</td>
+      <td>05.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 72</td>
+    </tr>
+    <tr>
+      <td>1905</td>
+      <td>866</td>
+      <td>06.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 73</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>06.11.1774</td>
+      <td>Brief</td>
+      <td>Georg Wilhelm Petersen</td>
+      <td>Friedrich Nicolai</td>
+      <td>Bräuning-Oktavio 1911, S. 558</td>
     </tr>
     <tr>
       <td></td>
@@ -1163,6 +4043,96 @@
       <td>Humboldts Briefwechsel mit Schiller. Hrsg. Leitzmann. Stuttgart, 1900. 59, 34-36</td>
     </tr>
     <tr>
+      <td>1906</td>
+      <td>867</td>
+      <td>07.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 74</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>08.05.1831</td>
+      <td>Gespräch</td>
+      <td>Frédéric Soret</td>
+      <td></td>
+      <td>Biedermann (2) IV, 369</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Houben, Soret, 535f</td>
+    </tr>
+    <tr>
+      <td>1907</td>
+      <td>868</td>
+      <td>11.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 76</td>
+    </tr>
+    <tr>
+      <td>1908</td>
+      <td>869</td>
+      <td>12.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 76</td>
+    </tr>
+    <tr>
+      <td>1909</td>
+      <td>870</td>
+      <td>14.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 77</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>871</td>
+      <td>16.05.1831</td>
+      <td>Paralipomenon</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 15 (2), 133 [2 IV H22]</td>
+    </tr>
+    <tr>
+      <td>1910</td>
+      <td>874</td>
+      <td>05.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 193</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15.05.1831</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ II, 705-707</td>
+    </tr>
+    <tr>
+      <td>1911</td>
+      <td>872</td>
+      <td>17.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 79</td>
+    </tr>
+    <tr>
       <td>903</td>
       <td>86</td>
       <td>17.08.1795</td>
@@ -1172,13 +4142,193 @@
       <td>WA IV, 10, 286</td>
     </tr>
     <tr>
+      <td>1912</td>
+      <td>873</td>
+      <td>21.05.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 81</td>
+    </tr>
+    <tr>
+      <td>1913</td>
+      <td>911</td>
+      <td>01.06.1831</td>
+      <td>Gespräch</td>
+      <td>Friedrich Rochlitz</td>
+      <td></td>
+      <td>GJ 18, 156</td>
+    </tr>
+    <tr>
+      <td>1914</td>
+      <td>876</td>
+      <td>06.06.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 93f</td>
+    </tr>
+    <tr>
+      <td>1915</td>
+      <td>875</td>
+      <td>06.06.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 86</td>
+    </tr>
+    <tr>
+      <td>1915a</td>
+      <td></td>
+      <td>07.06.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Marianne Willmer</td>
+      <td>Willemers Briefwechsel mit G. Hrsg. Creizenach. Stuttgart, 1878. 306</td>
+    </tr>
+    <tr>
+      <td>1916</td>
+      <td>877</td>
+      <td>07.06.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 86</td>
+    </tr>
+    <tr>
+      <td>1917</td>
+      <td></td>
+      <td>09.06.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 196f</td>
+    </tr>
+    <tr>
+      <td>1918</td>
+      <td></td>
+      <td>18.06.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 212</td>
+    </tr>
+    <tr>
+      <td>1919</td>
+      <td>878</td>
+      <td>26.06.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 100</td>
+    </tr>
+    <tr>
+      <td>1920</td>
+      <td>879</td>
+      <td>28.06.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 101</td>
+    </tr>
+    <tr>
       <td></td>
       <td>87</td>
       <td>21.08.1795</td>
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Wilhelm von Humboldt</td>
-      <td>Schillers Briefe 4, 241</td>
+      <td>Jonas 1892-1897, Bd. 4, S. 241</td>
+    </tr>
+    <tr>
+      <td>1921</td>
+      <td>880</td>
+      <td>29.06.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 102</td>
+    </tr>
+    <tr>
+      <td>1922</td>
+      <td>881</td>
+      <td>30.06.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 102</td>
+    </tr>
+    <tr>
+      <td>1923</td>
+      <td>882</td>
+      <td>01.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 103</td>
+    </tr>
+    <tr>
+      <td>1924</td>
+      <td>883</td>
+      <td>02.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 103</td>
+    </tr>
+    <tr>
+      <td>1925</td>
+      <td>884</td>
+      <td>03.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 104</td>
+    </tr>
+    <tr>
+      <td>1926</td>
+      <td>885</td>
+      <td>04.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 104</td>
+    </tr>
+    <tr>
+      <td>1927</td>
+      <td>886</td>
+      <td>05.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 104</td>
+    </tr>
+    <tr>
+      <td>1928</td>
+      <td>887</td>
+      <td>06.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 105</td>
+    </tr>
+    <tr>
+      <td>1929</td>
+      <td>888</td>
+      <td>07.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 105</td>
+    </tr>
+    <tr>
+      <td>1930</td>
+      <td></td>
+      <td>08.07.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 233</td>
     </tr>
     <tr>
       <td></td>
@@ -1187,7 +4337,97 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Friedrich von Cotta</td>
-      <td>Schillers Briefe 4, 252</td>
+      <td>Jonas 1892-1897, Bd. 4, S. 252</td>
+    </tr>
+    <tr>
+      <td>1931</td>
+      <td>889</td>
+      <td>08.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 105</td>
+    </tr>
+    <tr>
+      <td>1932</td>
+      <td>890</td>
+      <td>09.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 106</td>
+    </tr>
+    <tr>
+      <td>1933</td>
+      <td>891</td>
+      <td>10.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 106</td>
+    </tr>
+    <tr>
+      <td>1934</td>
+      <td>892</td>
+      <td>11.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 107</td>
+    </tr>
+    <tr>
+      <td>1935</td>
+      <td>893</td>
+      <td>12.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 107</td>
+    </tr>
+    <tr>
+      <td>1936</td>
+      <td>894</td>
+      <td>13.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 108</td>
+    </tr>
+    <tr>
+      <td>1937</td>
+      <td>895</td>
+      <td>14.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 108</td>
+    </tr>
+    <tr>
+      <td>1938</td>
+      <td>896</td>
+      <td>15.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 109</td>
+    </tr>
+    <tr>
+      <td>1939</td>
+      <td>897</td>
+      <td>18.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 110</td>
+    </tr>
+    <tr>
+      <td>1940</td>
+      <td>898</td>
+      <td>19.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 110</td>
     </tr>
     <tr>
       <td></td>
@@ -1199,6 +4439,96 @@
       <td>WA IV, 12, 58</td>
     </tr>
     <tr>
+      <td>1941</td>
+      <td>900</td>
+      <td>20.07.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Heinrich Meyer</td>
+      <td>Kunst und Alterthum 6 (3), 618f</td>
+    </tr>
+    <tr>
+      <td>1942</td>
+      <td>899</td>
+      <td>20.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 111</td>
+    </tr>
+    <tr>
+      <td>1943</td>
+      <td>901</td>
+      <td>21.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 112</td>
+    </tr>
+    <tr>
+      <td>1944</td>
+      <td>903</td>
+      <td>22.07.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Sulpiz Boisserée</td>
+      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 571</td>
+    </tr>
+    <tr>
+      <td>1945</td>
+      <td>902</td>
+      <td>22.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 112</td>
+    </tr>
+    <tr>
+      <td>1946</td>
+      <td>904</td>
+      <td>25.07.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 114</td>
+    </tr>
+    <tr>
+      <td>1947</td>
+      <td>876</td>
+      <td>08.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Biedermann 8, 100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>08.1831</td>
+      <td>Gespräch</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Houben 1, 588f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>04.08.1831</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 224ff</td>
+    </tr>
+    <tr>
+      <td>1948</td>
+      <td></td>
+      <td>25.08.1831</td>
+      <td>Gespräch</td>
+      <td>Friedrich Förster</td>
+      <td></td>
+      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 216ff</td>
+    </tr>
+    <tr>
       <td>904</td>
       <td>90</td>
       <td>07.1796</td>
@@ -1206,6 +4536,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA I, 5 (1), 244</td>
+    </tr>
+    <tr>
+      <td>1949</td>
+      <td>905</td>
+      <td>04.09.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich Zelter</td>
+      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 282</td>
+    </tr>
+    <tr>
+      <td>1950</td>
+      <td>906</td>
+      <td>07.09.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Friedrich von Reinhard</td>
+      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 322</td>
+    </tr>
+    <tr>
+      <td>1951</td>
+      <td>907</td>
+      <td>08.09.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Sulpiz Boisserée</td>
+      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 574</td>
+    </tr>
+    <tr>
+      <td>1952</td>
+      <td>909</td>
+      <td>10.09.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 136</td>
+    </tr>
+    <tr>
+      <td>1953</td>
+      <td></td>
+      <td>19.09.1831</td>
+      <td>Brief</td>
+      <td></td>
+      <td>Karl Nehrlich</td>
+      <td>Kürschners hist. krit. Ausgabe 30, 611 Anm.</td>
+    </tr>
+    <tr>
+      <td>1954</td>
+      <td>908</td>
+      <td>27.09.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Sulpiz Boisserée</td>
+      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 577</td>
+    </tr>
+    <tr>
+      <td>1955</td>
+      <td></td>
+      <td>16.10.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 156</td>
+    </tr>
+    <tr>
+      <td>1956</td>
+      <td></td>
+      <td>02.11.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 164</td>
+    </tr>
+    <tr>
+      <td>1957</td>
+      <td></td>
+      <td>10.11.1831</td>
+      <td>Text</td>
+      <td>Meyer, Heinrich</td>
+      <td></td>
+      <td>WA I, 49 (1), 346f</td>
+    </tr>
+    <tr>
+      <td>1958</td>
+      <td></td>
+      <td>10.11.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Nehrlich</td>
+      <td>G-Schiller-Archiv</td>
     </tr>
     <tr>
       <td>905</td>
@@ -1217,6 +4637,96 @@
       <td>WA III, 2, 72</td>
     </tr>
     <tr>
+      <td>1959</td>
+      <td>910</td>
+      <td>24.11.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Sulpiz Boisserée</td>
+      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 581f</td>
+    </tr>
+    <tr>
+      <td>1960</td>
+      <td></td>
+      <td>26.11.1831</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 178</td>
+    </tr>
+    <tr>
+      <td>1961</td>
+      <td>912</td>
+      <td>01.12.1831</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm von Humboldt</td>
+      <td>Gebrüder Humboldt Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 295f</td>
+    </tr>
+    <tr>
+      <td>1962</td>
+      <td>853</td>
+      <td>1831</td>
+      <td>Gespräch</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>Biedermann 8, 123f</td>
+    </tr>
+    <tr>
+      <td>1963</td>
+      <td>975</td>
+      <td>1831</td>
+      <td>Gespräch</td>
+      <td>Graf S.</td>
+      <td></td>
+      <td>Biedermann 8, 218f</td>
+    </tr>
+    <tr>
+      <td>1964</td>
+      <td>913</td>
+      <td>02.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 199</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>914</td>
+      <td>06.01.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm von Humboldt</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 298f</td>
+    </tr>
+    <tr>
+      <td>1965</td>
+      <td>915</td>
+      <td>08.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 203</td>
+    </tr>
+    <tr>
+      <td>1966</td>
+      <td>916</td>
+      <td>09.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 204</td>
+    </tr>
+    <tr>
+      <td>1967</td>
+      <td>917</td>
+      <td>12.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 205</td>
+    </tr>
+    <tr>
       <td>906</td>
       <td>93</td>
       <td>22.06.1797</td>
@@ -1224,6 +4734,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Schiller</td>
       <td>WA IV, 12, 167</td>
+    </tr>
+    <tr>
+      <td>1968</td>
+      <td>918</td>
+      <td>13.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 206</td>
+    </tr>
+    <tr>
+      <td>1969</td>
+      <td>919</td>
+      <td>14.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 206</td>
+    </tr>
+    <tr>
+      <td>1970</td>
+      <td>920</td>
+      <td>15.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 206</td>
+    </tr>
+    <tr>
+      <td>1971</td>
+      <td>921</td>
+      <td>16.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 207</td>
+    </tr>
+    <tr>
+      <td>1972</td>
+      <td>922</td>
+      <td>17.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 207</td>
+    </tr>
+    <tr>
+      <td>1973</td>
+      <td>924</td>
+      <td>18.01.1832</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 5 (1), 109</td>
+    </tr>
+    <tr>
+      <td>1974</td>
+      <td>923</td>
+      <td>18.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 207</td>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td></td>
+      <td>19.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 207</td>
+    </tr>
+    <tr>
+      <td>1976</td>
+      <td>925</td>
+      <td>20.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 208</td>
+    </tr>
+    <tr>
+      <td>1977</td>
+      <td>926</td>
+      <td>24.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 210</td>
     </tr>
     <tr>
       <td>907</td>
@@ -1235,13 +4835,202 @@
       <td>WA IV, 12, 464</td>
     </tr>
     <tr>
+      <td>1978</td>
+      <td>927</td>
+      <td>27.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 211</td>
+    </tr>
+    <tr>
+      <td>1979</td>
+      <td>928</td>
+      <td>29.01.1832</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 13, 212</td>
+    </tr>
+    <tr>
+      <td>1980</td>
+      <td>929</td>
+      <td>14.02.1832</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Ernst Schubarth</td>
+      <td>Schubarths Briefwechsel mit G. In: Deutsche Rundschau 1875 (2), 1. 30</td>
+    </tr>
+    <tr>
+      <td>1981</td>
+      <td>930</td>
+      <td>17.03.1832</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Wilhelm von Humboldt</td>
+      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 302</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.04.1832</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>03-04-1832</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Friedrich Rochlitz</td>
+      <td>QuZ III, 20, A. 2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25.04.1832</td>
+      <td>Brief</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>Georg Andreas Reimer</td>
+      <td>QuZ III, 19f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>27.04.1832</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>08.05.1832</td>
+      <td>Gespräch</td>
+      <td>Frédéric Soret</td>
+      <td></td>
+      <td>Houben, Soret, 535f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22.05.1832</td>
+      <td>Brief (Konzept)</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 20-23</td>
+    </tr>
+    <tr>
       <td></td>
       <td>95</td>
       <td>23.06.1797</td>
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 205</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 205</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23.05.1832</td>
+      <td>Brief (Entwurf)</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 23-25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.07.1832</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 36f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.08.1832</td>
+      <td>Brief</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17.09.1832</td>
+      <td>Tagebuch</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>QuZ III, 42, Anm. 7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.09.1832</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.09.1832</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 59, A. 4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20.09.1832</td>
+      <td>Tagebuch</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>Pollmer (b), 34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.09.1832</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>Houben II, 27f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.09.1832</td>
+      <td>Tagebuch</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>Pollmer (b), 34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.09.1832</td>
+      <td>Brief</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>23.12.1774</td>
+      <td>Gespräch</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td></td>
+      <td>Schöll 1877, S. 519</td>
     </tr>
     <tr>
       <td>908</td>
@@ -1253,6 +5042,96 @@
       <td>WA III, 2, 74</td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td>01.10.1832</td>
+      <td>Tagebuch</td>
+      <td>Friedrich von Müller</td>
+      <td></td>
+      <td>QuZ III, 63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>03.10.1832</td>
+      <td>Brief</td>
+      <td>Cottasche Buchhandlung</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 64</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14.10.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 65f.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21.10.1832</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 71-73</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24.10.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 75f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>26.10.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28.10.1832</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 78f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>28.10.1832</td>
+      <td>Brief (Konzept)</td>
+      <td>Friedrich von Müller</td>
+      <td>Wilhelm Reichel</td>
+      <td>QuZ III, 79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30.10.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.11.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 82</td>
+    </tr>
+    <tr>
       <td>909</td>
       <td>97</td>
       <td>24.06.1797</td>
@@ -1260,6 +5139,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA I, 14, 5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>03.11.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 82</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>06.11.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 85</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10.11.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13.11.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17.11.1832</td>
+      <td>Brief</td>
+      <td>Johann Georg von Cotta</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>19.11.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 91f.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.12.1832</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.12.1832</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Nach 01.12.1832</td>
+      <td>Brief</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>09.12.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 96</td>
     </tr>
     <tr>
       <td>910</td>
@@ -1271,6 +5240,96 @@
       <td>WA I, 14, 15</td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td>12.12.1832</td>
+      <td>Brief (Konzept)</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>QuZ III, 101</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23.12.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 110</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30.12.1832</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 113f.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.01.1833</td>
+      <td>Brief (Konzept)</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Georg Cotta</td>
+      <td>QuZ III, 114</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.01.1833</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 115</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>06.01.1833</td>
+      <td>Brief</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 116</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(21. bis 23. 01.1833)</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 129</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(vor 12.02.1833)</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 139</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.02.1833</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Wilhelm Reichel</td>
+      <td>QuZ III, 139f.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.02.1833</td>
+      <td>Text</td>
+      <td>Friedrich von Müller</td>
+      <td>Wilhelm Reichel</td>
+      <td>QuZ III, 140f.</td>
+    </tr>
+    <tr>
       <td>911</td>
       <td>96</td>
       <td>24.06.1797</td>
@@ -1278,6 +5337,96 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Schiller</td>
       <td>WA IV, 12, 168</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(24.01.1833)</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 146</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25.01.1833</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 146</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25.02.1833</td>
+      <td>Brief (Konzept)</td>
+      <td>Friedrich von Müller</td>
+      <td>Wilhelm Reichel</td>
+      <td>QuZ III, 147</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>25.02.1833</td>
+      <td>Text</td>
+      <td>Friedrich von Müller</td>
+      <td>Wilhelm Reichel</td>
+      <td>QuZ III, 148-150</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.03.1833</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 151</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>04.03.1833</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>08.03.1833</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 159f.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11.03.1833</td>
+      <td>Brief</td>
+      <td>Wilhelm Reichel</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 163</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(13.03.1833)</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 164</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.04.1833</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Georg Cotta</td>
+      <td>QuZ III, 193-195</td>
     </tr>
     <tr>
       <td>912</td>
@@ -1290,12 +5439,156 @@
     </tr>
     <tr>
       <td></td>
+      <td></td>
+      <td>08.04.1833</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Peter Eckermann</td>
+      <td>QuZ III, 204</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>08.04.1833</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 204-206</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15.04.1833</td>
+      <td>Brief</td>
+      <td>Johann Friedrich von Cotta</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 207-208</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>08.07.1834</td>
+      <td>Brief (Konzept)</td>
+      <td>Friedrich von Müller</td>
+      <td>Johann Georg Cotta</td>
+      <td>QuZ III, 286-287</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>09.11.1834</td>
+      <td>Text</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>QuZ III, 292-293</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>29.12.1834</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 316f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30.01.1835</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td>QuZ III, 330</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(Ende Jan./Anf. Febr. 1835)</td>
+      <td>Text</td>
+      <td>Friedrich Wilhelm Riemer</td>
+      <td></td>
+      <td>QuZ III, 331-332</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>05.01.1836</td>
+      <td>Brief</td>
+      <td>Christian Theodor Musculus</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 358</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Beilage</td>
+      <td>Christian Theodor Musculus</td>
+      <td></td>
+      <td>QuZ III, 358-359</td>
+    </tr>
+    <tr>
+      <td></td>
       <td>99</td>
       <td>26.06.1797</td>
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 206-208</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 206-208</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.06.1836</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 388</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>02.06.1836</td>
+      <td>Brief</td>
+      <td>Johann Peter Eckermann</td>
+      <td>Friedrich von Müller</td>
+      <td>QuZ III, 388-389</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13.06.1836</td>
+      <td>Brief</td>
+      <td>Friedrich von Müller</td>
+      <td>Cottasche Buchhandlung</td>
+      <td>QuZ III, 390-391</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Caroline von Wolzogen</td>
+      <td>Gleichen-Rußwurm 1930, S. 211</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Peter Eckermann</td>
+      <td></td>
+      <td>Tewes, Faust, S. Xff.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1845</td>
+      <td>Gespräch</td>
+      <td>Theodor Siebs</td>
+      <td></td>
+      <td>Th. Siebs, Hermann Allmers, Berlin 1915, 79.</td>
     </tr>
     <tr>
       <td>913</td>
@@ -1335,12 +5628,21 @@
     </tr>
     <tr>
       <td></td>
+      <td></td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td></td>
+      <td>Knebel 1854, S. 325f.</td>
+    </tr>
+    <tr>
+      <td></td>
       <td>103</td>
       <td>30.06.1797</td>
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 210-212</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 210-212</td>
     </tr>
     <tr>
       <td>917</td>
@@ -1358,7 +5660,7 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 213-214</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 213-214</td>
     </tr>
     <tr>
       <td>918</td>
@@ -1421,7 +5723,16 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 295-296</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 295-296</td>
+    </tr>
+    <tr>
+      <td>853</td>
+      <td></td>
+      <td>28.12.1774</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td>WA IV, 2, 222</td>
     </tr>
     <tr>
       <td>923</td>
@@ -1439,7 +5750,7 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Christian Gottfried Körner</td>
-      <td>Schillers Briefe 5, 306-307</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 306-307</td>
     </tr>
     <tr>
       <td>924</td>
@@ -1605,12 +5916,21 @@
     </tr>
     <tr>
       <td></td>
+      <td></td>
+      <td>11.01.1775</td>
+      <td>Brief</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td>Friedrich Hildebrand von Einsiedel</td>
+      <td>Deetjen 1928, S. 80f.</td>
+    </tr>
+    <tr>
+      <td></td>
       <td>128</td>
       <td>21.04.1798</td>
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 369-370</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 369-370</td>
     </tr>
     <tr>
       <td></td>
@@ -1619,7 +5939,7 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 372-373</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 372-373</td>
     </tr>
     <tr>
       <td>941</td>
@@ -1637,7 +5957,7 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 375-376</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 375-376</td>
     </tr>
     <tr>
       <td>942</td>
@@ -1664,7 +5984,7 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Wolfgang Goethe</td>
-      <td>Schillers Briefe 5, 379</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 379</td>
     </tr>
     <tr>
       <td>944</td>
@@ -1691,7 +6011,25 @@
       <td>Brief</td>
       <td>Johann Friedrich von Cotta</td>
       <td>Friedrich Schiller</td>
-      <td>Cottas Briefwechsel mit Schiller. Hrsg. Vollmer. Stuttgart, 1876. 329</td>
+      <td>Vollmer 1876, S. 329</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>06.1773</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Friedrich Wilhelm Gotter</td>
+      <td>DjG2 3, S. 48-49</td>
+    </tr>
+    <tr>
+      <td>854</td>
+      <td></td>
+      <td>13.01.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td>WA IV, 2, 226</td>
     </tr>
     <tr>
       <td></td>
@@ -1700,7 +6038,7 @@
       <td>Brief</td>
       <td>Friedrich Schiller</td>
       <td>Johann Friedrich von Cotta</td>
-      <td>Schillers Briefe 5, 470-472</td>
+      <td>Jonas 1892-1897, Bd. 5, S. 470-472</td>
     </tr>
     <tr>
       <td></td>
@@ -1782,6 +6120,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 2, 259</td>
+    </tr>
+    <tr>
+      <td>854a</td>
+      <td></td>
+      <td>13.02.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Auguste zu Stolberg</td>
+      <td>WA IV, 2, 233</td>
     </tr>
     <tr>
       <td>952</td>
@@ -1874,6 +6221,15 @@
       <td>WA IV, 15, 56</td>
     </tr>
     <tr>
+      <td>854b</td>
+      <td></td>
+      <td>17.02.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Gottfried August Bürger</td>
+      <td>WA IV, 2, 237</td>
+    </tr>
+    <tr>
       <td>957</td>
       <td>148</td>
       <td>11.04.1800</td>
@@ -1962,6 +6318,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 2, 287</td>
+    </tr>
+    <tr>
+      <td>855</td>
+      <td>16</td>
+      <td>07.03.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Auguste zu Stolberg</td>
+      <td>WA IV, 2, 242</td>
     </tr>
     <tr>
       <td>967</td>
@@ -2054,6 +6419,15 @@
       <td>WA IV, 15, 95</td>
     </tr>
     <tr>
+      <td></td>
+      <td>18</td>
+      <td>15.04.1775</td>
+      <td>Brief</td>
+      <td>Friedrich Nicolai</td>
+      <td>Johann Georg Zimmermann</td>
+      <td>Bodemann 1878, S. 303f.</td>
+    </tr>
+    <tr>
       <td>974</td>
       <td>167</td>
       <td>01.08.1800</td>
@@ -2142,6 +6516,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 2, 305</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>15.06.1775</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 1, 1</td>
     </tr>
     <tr>
       <td>981</td>
@@ -2235,6 +6618,15 @@
     </tr>
     <tr>
       <td></td>
+      <td>19</td>
+      <td>15.06.1775</td>
+      <td>Brief</td>
+      <td>Johann Jakob Bodmer</td>
+      <td>Johann Kaspar Schinz</td>
+      <td>Crueger 1884, S. 193</td>
+    </tr>
+    <tr>
+      <td></td>
       <td>186</td>
       <td>26.09.1800</td>
       <td>Brief</td>
@@ -2322,6 +6714,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Ludwig von Knebel</td>
       <td>WA IV, 15, 136</td>
+    </tr>
+    <tr>
+      <td>856</td>
+      <td>21</td>
+      <td>14.09.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Auguste zu Stolberg</td>
+      <td>WA IV, 2, 292</td>
     </tr>
     <tr>
       <td>995</td>
@@ -2414,6 +6815,15 @@
       <td>WA III, 2, 313</td>
     </tr>
     <tr>
+      <td>857</td>
+      <td>22</td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Anonymus 1835, S. 86</td>
+    </tr>
+    <tr>
       <td>1005</td>
       <td>199</td>
       <td>16.12.1800</td>
@@ -2502,6 +6912,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 3, 6</td>
+    </tr>
+    <tr>
+      <td>858</td>
+      <td>22</td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Biedermann 10, 10</td>
     </tr>
     <tr>
       <td>1014</td>
@@ -2594,6 +7013,24 @@
       <td>WA III, 3, 7</td>
     </tr>
     <tr>
+      <td></td>
+      <td>7</td>
+      <td>06.1773</td>
+      <td>Brief</td>
+      <td>Friedrich Wilhelm Gotter</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>DjG2 6, S. 267</td>
+    </tr>
+    <tr>
+      <td>859</td>
+      <td>23</td>
+      <td>07.10.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Heinrich Merck</td>
+      <td>WA IV, 2, 299</td>
+    </tr>
+    <tr>
       <td>1024</td>
       <td>217</td>
       <td>23.02.1801</td>
@@ -2682,6 +7119,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 3, 9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>24</td>
+      <td>11.10.1775</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Sophie von La Roche</td>
+      <td>WA IV, 2, 300</td>
     </tr>
     <tr>
       <td>1034</td>
@@ -2774,6 +7220,15 @@
       <td>Schillers Briefe 6, 320-322</td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td>24.10.1775</td>
+      <td>Brief</td>
+      <td>August Mylius</td>
+      <td>Johann Heinrich Merck</td>
+      <td>Wagner 1838, S. 53f.</td>
+    </tr>
+    <tr>
       <td>1041</td>
       <td>235</td>
       <td>17.12.1801</td>
@@ -2833,7 +7288,7 @@
       <td>02.10.1804</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
-      <td></td>
+      <td>Johann Friedrich von Cotta</td>
       <td>QuZ I, 377</td>
     </tr>
     <tr>
@@ -2864,6 +7319,15 @@
       <td>GJ 2, 420</td>
     </tr>
     <tr>
+      <td></td>
+      <td>26</td>
+      <td>06.12.1775</td>
+      <td>Brief</td>
+      <td>Leopold von Stolberg</td>
+      <td>Henriette von Stolberg</td>
+      <td>Janssen 1877, 1, S. 63</td>
+    </tr>
+    <tr>
       <td>1045</td>
       <td>242</td>
       <td>01.05.1805</td>
@@ -2877,7 +7341,7 @@
       <td></td>
       <td>01.05.1805</td>
       <td>Text</td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
       <td>QuZ I, 385</td>
     </tr>
@@ -2886,8 +7350,8 @@
       <td></td>
       <td>20.08.1805</td>
       <td>Text</td>
-      <td></td>
       <td>Johann Friedrich von Cotta</td>
+      <td></td>
       <td>QuZ I, 395</td>
     </tr>
     <tr>
@@ -2929,7 +7393,7 @@
     <tr>
       <td></td>
       <td></td>
-      <td>1806</td>
+      <td></td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -2952,6 +7416,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 3, 119</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>28</td>
+      <td>01.01.1776</td>
+      <td>Text</td>
+      <td>Christoph Martin Wieland</td>
+      <td></td>
+      <td>Wieland 1776, S. 12-16</td>
     </tr>
     <tr>
       <td>1048b</td>
@@ -3044,6 +7517,15 @@
       <td>WA III, 3, 123</td>
     </tr>
     <tr>
+      <td></td>
+      <td>28</td>
+      <td>06.01.1776</td>
+      <td>Text</td>
+      <td>Friedrich Hildebrand von Einsiedel</td>
+      <td></td>
+      <td>Keil 1875, S. 32</td>
+    </tr>
+    <tr>
       <td>1056</td>
       <td>254</td>
       <td>03.04.1806</td>
@@ -3134,6 +7616,15 @@
       <td>Rückblicke in mein Leben. Aus dem Nachlasse von Heinrich Luden. 1847, S. 19</td>
     </tr>
     <tr>
+      <td></td>
+      <td>27</td>
+      <td>19.01.1776</td>
+      <td>Brief</td>
+      <td>Johann Heinrich Merck</td>
+      <td>Christoph Friedrich Nicolai</td>
+      <td>Pniower 1891, S. 334</td>
+    </tr>
+    <tr>
       <td>1063</td>
       <td>262</td>
       <td>18.08.1806</td>
@@ -3147,7 +7638,7 @@
       <td>261</td>
       <td>19.08.1806</td>
       <td>Text</td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
       <td>WA IV, 19, 505</td>
     </tr>
@@ -3183,7 +7674,7 @@
       <td></td>
       <td>26.10.1806</td>
       <td>Text</td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
       <td>WA IV, 19, 512</td>
     </tr>
@@ -3222,6 +7713,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
       <td>WA IV, 19, 405</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Cohn 1889</td>
     </tr>
     <tr>
       <td>1070</td>
@@ -3315,6 +7815,15 @@
     </tr>
     <tr>
       <td></td>
+      <td>91</td>
+      <td>11.1775</td>
+      <td>Gespräch</td>
+      <td>Christoph Martin Wieland</td>
+      <td>Karl August Böttiger</td>
+      <td>Böttiger 1838, 1, S. 21</td>
+    </tr>
+    <tr>
+      <td></td>
       <td></td>
       <td>14.04.1808</td>
       <td>Brief</td>
@@ -3330,15 +7839,6 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
       <td>WA IV, 20, 48</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>271</td>
-      <td>04.1808</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 14, 251</td>
     </tr>
     <tr>
       <td>1075</td>
@@ -3410,7 +7910,16 @@
       <td>Text</td>
       <td>Friedrich Wilhelm Riemer</td>
       <td></td>
-      <td>Deutsche Revue 11 (4), 28</td>
+      <td>Keil 1886-1887,III, S. 28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11.05.1777</td>
+      <td>Brief</td>
+      <td>Karl Gottlob Küttner</td>
+      <td>Friedrich Justin Bertuch</td>
+      <td>Geiger 1882, 392-394</td>
     </tr>
     <tr>
       <td>1083</td>
@@ -3503,6 +8012,24 @@
       <td>WA IV, 20, 137</td>
     </tr>
     <tr>
+      <td>850</td>
+      <td></td>
+      <td>06.1773</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Christian Kestner</td>
+      <td>WA IV, 2, 91f</td>
+    </tr>
+    <tr>
+      <td>860</td>
+      <td>29</td>
+      <td>01.12.1777</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Caspar Goethe</td>
+      <td>WA IV, 3, 320</td>
+    </tr>
+    <tr>
       <td>1090a</td>
       <td></td>
       <td>16.08.1808</td>
@@ -3554,7 +8081,7 @@
       <td>Text</td>
       <td>Friedrich Wilhelm Riemer</td>
       <td></td>
-      <td>Deutsche Revue 11 (4), 35</td>
+      <td>Keil 1886-1887,III, S. 35</td>
     </tr>
     <tr>
       <td></td>
@@ -3595,6 +8122,15 @@
     <tr>
       <td></td>
       <td></td>
+      <td>30.01.1778</td>
+      <td>Brief</td>
+      <td>Georg Wilhelm Petersen</td>
+      <td>Christoph Friedrich Nicolai</td>
+      <td>Bräuning-Oktavio 1911, S. 613</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>23.12.1808</td>
       <td>Brief</td>
       <td>Cottasche Buchhandlung</td>
@@ -3613,10 +8149,10 @@
     <tr>
       <td></td>
       <td></td>
-      <td>1808</td>
-      <td>Text</td>
+      <td>09.1808</td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
       <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
       <td>Biedermann (3), II, 360-361</td>
     </tr>
     <tr>
@@ -3681,6 +8217,15 @@
       <td>Karl August Varnhagen von Ense</td>
       <td></td>
       <td>Biedermann 9, 112</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1778</td>
+      <td>Text</td>
+      <td>ohne Verfasser</td>
+      <td>Heinrich August Ottokar Reichard</td>
+      <td>Reichard 1778a, S. 18</td>
     </tr>
     <tr>
       <td>1101</td>
@@ -3773,6 +8318,15 @@
       <td>WA IV, 21, 416</td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td>1778</td>
+      <td>Text</td>
+      <td>ohne Verfasser</td>
+      <td></td>
+      <td>Reichard 1778b, S. 82</td>
+    </tr>
+    <tr>
       <td>1111</td>
       <td></td>
       <td>17.11.1810</td>
@@ -3863,6 +8417,15 @@
       <td>Biedermann 3, 6</td>
     </tr>
     <tr>
+      <td></td>
+      <td>30</td>
+      <td>1778</td>
+      <td>Brief</td>
+      <td>Johann Gottfried Herder</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td>Mundt 1835, 2, S. 300</td>
+    </tr>
+    <tr>
       <td>1121</td>
       <td></td>
       <td>03.05.1811</td>
@@ -3950,7 +8513,16 @@
       <td>Text</td>
       <td>Friedrich Wilhelm Riemer</td>
       <td></td>
-      <td>Jahrbuch der Sammlung Kippenberg 3, 37</td>
+      <td>Pollmer 1923, S. 37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1779</td>
+      <td>Text</td>
+      <td>N.N.</td>
+      <td></td>
+      <td>Berliner Litteratur- und Theaterzeitung 2 (1779), S. 237</td>
     </tr>
     <tr>
       <td>1130</td>
@@ -3965,10 +8537,10 @@
       <td></td>
       <td></td>
       <td>06.1811</td>
-      <td>Text</td>
+      <td>Gespräch</td>
       <td>Friedrich Wilhelm Riemer</td>
       <td></td>
-      <td>Riemer 2, 396</td>
+      <td>Riemer 1841, 1, 396</td>
     </tr>
     <tr>
       <td>1131</td>
@@ -4043,6 +8615,15 @@
       <td>WA IV, 22, 176</td>
     </tr>
     <tr>
+      <td></td>
+      <td>31</td>
+      <td>23.03.1780</td>
+      <td>Tagebuch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA III, 1, 111</td>
+    </tr>
+    <tr>
       <td>1139</td>
       <td></td>
       <td>01.1812</td>
@@ -4085,7 +8666,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 27, 320</td>
+      <td>WA I, 27, 320f.</td>
     </tr>
     <tr>
       <td>1143</td>
@@ -4133,6 +8714,15 @@
       <td>WA III, 4, 337</td>
     </tr>
     <tr>
+      <td>860a</td>
+      <td></td>
+      <td>14.05.1780</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Christian Kestner</td>
+      <td>WA IV, 4, 221</td>
+    </tr>
+    <tr>
       <td>1148*</td>
       <td></td>
       <td>12.11.1812</td>
@@ -4146,8 +8736,8 @@
       <td></td>
       <td>12.11.1812</td>
       <td>Text</td>
-      <td></td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Friedrich von Cotta</td>
       <td>WA IV, 23, 133</td>
     </tr>
     <tr>
@@ -4184,16 +8774,16 @@
       <td>Text</td>
       <td>Friedrich Wilhelm Riemer</td>
       <td></td>
-      <td>Jahrbuch der Sammlung Kippenberg 3, 61</td>
+      <td>Polmer 1923, S. 61</td>
     </tr>
     <tr>
-      <td>1151a</td>
+      <td>1151a; 485</td>
       <td></td>
       <td>04.04.1813</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 29, 173</td>
+      <td>WA I, 29, 182</td>
     </tr>
     <tr>
       <td>1152</td>
@@ -4205,7 +8795,7 @@
       <td>WA III, 5, 102</td>
     </tr>
     <tr>
-      <td>1152a</td>
+      <td>1152a; 2582</td>
       <td></td>
       <td>10.04.1814</td>
       <td>Text</td>
@@ -4221,6 +8811,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Fürst Anton Heinrich Radziwill</td>
       <td>WA IV, 24, 219; 375</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>32</td>
+      <td>17.07.1780</td>
+      <td>Brief</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>Karl Ludwig von Knebel</td>
+      <td>Knebels Nachlass. Hrsg. Varnhagen. Leipzig, 1835. 1, 119</td>
     </tr>
     <tr>
       <td>1153a; 492</td>
@@ -4292,7 +8891,7 @@
       <td>Text</td>
       <td>Friedrich von Matthisson</td>
       <td></td>
-      <td>Matthisson, F. Schriften. Zürich, 1825-29. 7, 36</td>
+      <td>Matthisson 1825-1829, 7, 36</td>
     </tr>
     <tr>
       <td>1159</td>
@@ -4311,6 +8910,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 5, 161</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>34</td>
+      <td>1782</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>Seckendorff. „Volks- und andere Lieder, mit Begleitung des Fortepiano“, 3. Heft, 1782</td>
     </tr>
     <tr>
       <td>1161</td>
@@ -4342,7 +8950,7 @@
     <tr>
       <td>1164</td>
       <td></td>
-      <td>02.08.1815</td>
+      <td>08.1815</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -4401,6 +9009,24 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
       <td>WA IV, 26, 272</td>
+    </tr>
+    <tr>
+      <td>850a; 110</td>
+      <td></td>
+      <td>18.10.1773</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johanna Fahlmer</td>
+      <td>WA IV, 2, 111</td>
+    </tr>
+    <tr>
+      <td>861</td>
+      <td></td>
+      <td>09.02.1782</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 5, 260</td>
     </tr>
     <tr>
       <td></td>
@@ -4493,6 +9119,15 @@
       <td>WA III, 5, 270</td>
     </tr>
     <tr>
+      <td>862</td>
+      <td></td>
+      <td>19.02.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Gräfin Christine Brühl</td>
+      <td>WA IV, 7, 180f</td>
+    </tr>
+    <tr>
       <td>1176</td>
       <td>S. 103</td>
       <td>24.09.1816</td>
@@ -4583,13 +9218,22 @@
       <td>WA IV, 27, 258</td>
     </tr>
     <tr>
+      <td>863</td>
+      <td>35</td>
+      <td>28.06.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Friedrich Justin Bertuch; Georg Joachim Göschen</td>
+      <td>WA IV, 7, 234f</td>
+    </tr>
+    <tr>
       <td>1185</td>
       <td>315</td>
       <td>16.12.1816</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 173ff</td>
+      <td>WA I, 15 (2), 173-177</td>
     </tr>
     <tr>
       <td>1186</td>
@@ -4622,7 +9266,7 @@
       <td></td>
       <td>317</td>
       <td>25.12.1816</td>
-      <td>Paralipomenon</td>
+      <td>Tagebuch</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 5, 296</td>
@@ -4673,9 +9317,18 @@
       <td>WA III, 6, 74</td>
     </tr>
     <tr>
+      <td>863a</td>
+      <td>36</td>
+      <td>06.07.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 7, 237</td>
+    </tr>
+    <tr>
       <td>1193</td>
       <td></td>
-      <td>1817</td>
+      <td>17.09.1817</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -4751,7 +9404,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 16, 238</td>
+      <td>WA I, 16, 285-287</td>
     </tr>
     <tr>
       <td>1202</td>
@@ -4764,15 +9417,24 @@
     </tr>
     <tr>
       <td></td>
+      <td></td>
+      <td>15.07.1786</td>
+      <td>Text</td>
+      <td>ohne Verfasser (Friedrich Justin Bertuch)</td>
+      <td></td>
+      <td>Journal von und für Deutschland, hg. von Siegmund Frh. von Bibra. 3, 1786 St 6, 575-78.</td>
+    </tr>
+    <tr>
+      <td></td>
       <td>933</td>
-      <td>1918</td>
+      <td></td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 70 [H59]</td>
+      <td>WA I, 15 (2), 70 [2 III H59]</td>
     </tr>
     <tr>
-      <td>1203</td>
+      <td>1203; 241</td>
       <td>2</td>
       <td>14.02.1819</td>
       <td>Text</td>
@@ -4784,7 +9446,7 @@
       <td>1204</td>
       <td></td>
       <td>03.1819</td>
-      <td>Summarische Jahresfolge Goethe'scher Schriften</td>
+      <td>Tabelle</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>Hempel (1. A.) 29, 323ff</td>
@@ -4853,8 +9515,17 @@
       <td>WA III, 7, 76</td>
     </tr>
     <tr>
+      <td>863b</td>
       <td></td>
-      <td>325(b)</td>
+      <td>02.09.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>325</td>
       <td></td>
       <td>Paralipomenon</td>
       <td>Johann Wolfgang Goethe</td>
@@ -4943,6 +9614,15 @@
       <td>Schultz' Briefwechsel mit G. Hrsg. Düntzer. Leipzig, 1856. 214</td>
     </tr>
     <tr>
+      <td>863c</td>
+      <td>37</td>
+      <td>02.09.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 8, 14</td>
+    </tr>
+    <tr>
       <td>1217</td>
       <td></td>
       <td>26.09.1820</td>
@@ -4999,11 +9679,11 @@
     <tr>
       <td>1222</td>
       <td>333</td>
-      <td>12.1820</td>
+      <td>1810</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA II, 5, 337</td>
+      <td>WA II, 5, 337f.</td>
     </tr>
     <tr>
       <td>1223</td>
@@ -5031,6 +9711,15 @@
       <td>Friedrich von Müller</td>
       <td></td>
       <td>Biedermann 4, 79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14.10.1786</td>
+      <td>Brief</td>
+      <td>Marie von Graevemeyer</td>
+      <td>Caroline von Beulwitz</td>
+      <td>GJ 10, 145-146</td>
     </tr>
     <tr>
       <td>1226</td>
@@ -5123,6 +9812,15 @@
       <td>WA III, 8, 185</td>
     </tr>
     <tr>
+      <td>864</td>
+      <td>38</td>
+      <td>12.12.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 83</td>
+    </tr>
+    <tr>
       <td>1235</td>
       <td></td>
       <td>18.04.1822</td>
@@ -5165,7 +9863,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 41 (2), 400</td>
+      <td>WA I, 41 (2), 400-402</td>
     </tr>
     <tr>
       <td>1240</td>
@@ -5181,9 +9879,18 @@
       <td>337</td>
       <td>06.05.1822</td>
       <td>Text</td>
-      <td></td>
+      <td>Friedrich Theodor Kräuter</td>
       <td></td>
       <td>WA III, 8, 372</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>337</td>
+      <td>06.05.1822</td>
+      <td>Text</td>
+      <td>Friedrich Theodor Kräuter</td>
+      <td></td>
+      <td>Pniower 1899, S. 135f.</td>
     </tr>
     <tr>
       <td>1242</td>
@@ -5202,6 +9909,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich von Reinhard</td>
       <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 215</td>
+    </tr>
+    <tr>
+      <td>864a</td>
+      <td></td>
+      <td>16.12.1786</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 8, 94</td>
     </tr>
     <tr>
       <td>1244</td>
@@ -5235,7 +9951,7 @@
       <td></td>
       <td>12.1822</td>
       <td>Text</td>
-      <td></td>
+      <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 8, 325</td>
     </tr>
@@ -5251,7 +9967,7 @@
     <tr>
       <td>1249</td>
       <td></td>
-      <td>?</td>
+      <td>22.07.1821</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -5264,7 +9980,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 68 [H35 u.A.]</td>
+      <td>WA I, 15 (2), 68f. [2 III H6, H15, H18, H23, 35.]</td>
     </tr>
     <tr>
       <td>1250</td>
@@ -5292,6 +10008,24 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 9, 324</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10.11.1773</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Heinrich Christian Boie</td>
+      <td>WA IV,2, S. 122</td>
+    </tr>
+    <tr>
+      <td>864b</td>
+      <td>39</td>
+      <td>13.01.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Philipp Seidel</td>
+      <td>WA IV, 8, 125</td>
     </tr>
     <tr>
       <td>1252</td>
@@ -5328,6 +10062,15 @@
       <td>Frédéric Soret</td>
       <td></td>
       <td></td>
+    </tr>
+    <tr>
+      <td>1255</td>
+      <td></td>
+      <td>27.05.1823</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl Theodor Küstner</td>
+      <td>Biedermann: Goethe-Leipzig. 2, 187</td>
     </tr>
     <tr>
       <td>1256</td>
@@ -5375,9 +10118,18 @@
       <td>GJ 15, 17f</td>
     </tr>
     <tr>
+      <td>864c</td>
+      <td>40</td>
+      <td>13.01.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Philipp Christoph Kayser</td>
+      <td>WA IV, 8, 129</td>
+    </tr>
+    <tr>
       <td></td>
       <td></td>
-      <td>10.1823</td>
+      <td>29.09.1823</td>
       <td>Text</td>
       <td>Johann Peter Eckermann</td>
       <td></td>
@@ -5413,7 +10165,7 @@
     <tr>
       <td>1262</td>
       <td>301</td>
-      <td>?</td>
+      <td>1819</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -5463,6 +10215,15 @@
       <td>Friedrich von Matthisson</td>
       <td></td>
       <td>Matthisson, F. Schriften. Zürich, 1825-29. Bd. 7, 294</td>
+    </tr>
+    <tr>
+      <td>865</td>
+      <td>41</td>
+      <td>17.01.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 8, 143</td>
     </tr>
     <tr>
       <td>1267</td>
@@ -5541,9 +10302,9 @@
       <td>934</td>
       <td>01.10.1824</td>
       <td>Text</td>
+      <td>Johann Karl Wesselhöft</td>
       <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 68 [H19]</td>
+      <td>WA I, 15 (2), 68 [2 III H19]</td>
     </tr>
     <tr>
       <td>1271</td>
@@ -5553,6 +10314,15 @@
       <td>Heinrich Heine</td>
       <td></td>
       <td>Biedermann 10, 131</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>01.1787</td>
+      <td>Tabelle</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 32, 483</td>
     </tr>
     <tr>
       <td></td>
@@ -5578,8 +10348,8 @@
       <td>05.12.1824</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 69 [H39]</td>
+      <td>Adressat unbekannt</td>
+      <td>WA I, 15 (2), 69 [2 III H39]</td>
     </tr>
     <tr>
       <td>1273</td>
@@ -5593,7 +10363,7 @@
     <tr>
       <td>1274</td>
       <td>89</td>
-      <td>?</td>
+      <td>1819</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -5645,6 +10415,15 @@
       <td>WA III, 10, 22</td>
     </tr>
     <tr>
+      <td>865a</td>
+      <td></td>
+      <td>02.02.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 8, 159</td>
+    </tr>
+    <tr>
       <td>1278</td>
       <td>354</td>
       <td>25.02.1825</td>
@@ -5677,8 +10456,8 @@
       <td>28.02.1825</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 69C</td>
+      <td>Johann Stephan Schütze</td>
+      <td>WA I, 15 (2), 69 [2 III H38]</td>
     </tr>
     <tr>
       <td>1281</td>
@@ -5695,8 +10474,8 @@
       <td>02.1825</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 147 [H9]</td>
+      <td>Christian Gottfried Daniel Nees von Esenbeck</td>
+      <td>WA I, 15 (2), 147 [2 V H9]</td>
     </tr>
     <tr>
       <td></td>
@@ -5705,7 +10484,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 69 [H42]</td>
+      <td>WA I, 15 (2), 69 [2 III H42]</td>
     </tr>
     <tr>
       <td>1282</td>
@@ -5733,6 +10512,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 25</td>
+    </tr>
+    <tr>
+      <td>865b</td>
+      <td>42</td>
+      <td>06.02.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Philipp Chritoph Kayser</td>
+      <td>WA IV, 8, 175</td>
     </tr>
     <tr>
       <td>1285</td>
@@ -5777,7 +10565,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 69 [H31]</td>
+      <td>WA I, 15 (2), 69 [2 III H31]</td>
     </tr>
     <tr>
       <td>1289</td>
@@ -5804,7 +10592,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 148 [H15]</td>
+      <td>WA I, 15 (2), 148 [2 V H15]</td>
     </tr>
     <tr>
       <td>1291</td>
@@ -5823,6 +10611,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 29</td>
+    </tr>
+    <tr>
+      <td>865c</td>
+      <td>43</td>
+      <td>02.1787</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 40, 191</td>
     </tr>
     <tr>
       <td>1293</td>
@@ -5915,6 +10712,15 @@
       <td>WA III, 10, 34</td>
     </tr>
     <tr>
+      <td>865d</td>
+      <td></td>
+      <td>20.02.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 8, 198</td>
+    </tr>
+    <tr>
       <td>1303</td>
       <td>379</td>
       <td>26.03.1825</td>
@@ -6003,6 +10809,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 37</td>
+    </tr>
+    <tr>
+      <td>865e</td>
+      <td>44</td>
+      <td>27.05.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 225</td>
     </tr>
     <tr>
       <td>1311</td>
@@ -6095,6 +10910,15 @@
       <td>Biedermann 5, 179</td>
     </tr>
     <tr>
+      <td>865f</td>
+      <td>45</td>
+      <td>08.06.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 8, 231</td>
+    </tr>
+    <tr>
       <td>1321</td>
       <td></td>
       <td>04.05.1825</td>
@@ -6142,7 +10966,7 @@
     <tr>
       <td>1325</td>
       <td>977</td>
-      <td>05.1825</td>
+      <td>1825</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
@@ -6183,6 +11007,24 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 62</td>
+    </tr>
+    <tr>
+      <td>850b; 112</td>
+      <td></td>
+      <td>25.12.1773</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Christian Kestner</td>
+      <td>WA IV, 2, 113</td>
+    </tr>
+    <tr>
+      <td>866</td>
+      <td>46</td>
+      <td>04.08.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA IV, 8, 239</td>
     </tr>
     <tr>
       <td>1328</td>
@@ -6275,6 +11117,15 @@
       <td>Kuhn II, 144f</td>
     </tr>
     <tr>
+      <td>867</td>
+      <td>47</td>
+      <td>11.08.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 241</td>
+    </tr>
+    <tr>
       <td></td>
       <td></td>
       <td>21.12.1825</td>
@@ -6350,9 +11201,9 @@
       <td>1337</td>
       <td></td>
       <td>12.03.1826</td>
-      <td>Text</td>
-      <td></td>
-      <td></td>
+      <td>Gespräch</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Peter Eckermann</td>
       <td>Faust am Hofe des Kaisers. Hrsg. Tewes. Berlin, 1901. S. X</td>
     </tr>
     <tr>
@@ -6363,6 +11214,15 @@
       <td>Johann Peter Eckermann</td>
       <td></td>
       <td>Faust am Hofe des Kaisers. Hrsg. Tewes. Berlin, 1901. S. XIII</td>
+    </tr>
+    <tr>
+      <td>868</td>
+      <td>48</td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA I, 32, 57</td>
     </tr>
     <tr>
       <td>1339</td>
@@ -6425,7 +11285,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 70</td>
+      <td>WA I, 15 (2), 70 [2 III H46]</td>
     </tr>
     <tr>
       <td></td>
@@ -6453,6 +11313,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10 180</td>
+    </tr>
+    <tr>
+      <td>869</td>
+      <td>49</td>
+      <td>15.08.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 8, 246</td>
     </tr>
     <tr>
       <td>1345</td>
@@ -6545,6 +11414,15 @@
       <td>WA III, 10, 183</td>
     </tr>
     <tr>
+      <td>869a</td>
+      <td></td>
+      <td>01.10.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Christian Friedrich Schnauß</td>
+      <td>WA IV, 8, 264</td>
+    </tr>
+    <tr>
       <td>1355</td>
       <td>420</td>
       <td>16.04.1826</td>
@@ -6635,6 +11513,15 @@
       <td>WA III, 10, 185</td>
     </tr>
     <tr>
+      <td>869b</td>
+      <td></td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Gottfried Herder</td>
+      <td>WA I, 32, 105</td>
+    </tr>
+    <tr>
       <td>1362</td>
       <td>426</td>
       <td>25.04.1826</td>
@@ -6695,7 +11582,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>GJ 20, 29</td>
+      <td>Brandl 1899, S. 29</td>
     </tr>
     <tr>
       <td>1368</td>
@@ -6723,6 +11610,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 190</td>
+    </tr>
+    <tr>
+      <td>869c</td>
+      <td></td>
+      <td>24.10.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Christian Kestner</td>
+      <td>WA IV, 8, 276</td>
     </tr>
     <tr>
       <td>1370a</td>
@@ -6815,6 +11711,15 @@
       <td>WA III, 10, 196</td>
     </tr>
     <tr>
+      <td>869d</td>
+      <td></td>
+      <td>27.10.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 8, 278</td>
+    </tr>
+    <tr>
       <td>1379</td>
       <td>442</td>
       <td>28.05.1826</td>
@@ -6905,6 +11810,15 @@
       <td>WA III, 10, 202</td>
     </tr>
     <tr>
+      <td>870</td>
+      <td>50</td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Gottfried Herder</td>
+      <td>WA I, 32, 136</td>
+    </tr>
+    <tr>
       <td>1386</td>
       <td>448</td>
       <td>09.06.1826</td>
@@ -6920,7 +11834,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 213</td>
+      <td>WA I, 15 (2), 213f.</td>
     </tr>
     <tr>
       <td>1388</td>
@@ -6995,6 +11909,15 @@
       <td>WA III, 10, 208</td>
     </tr>
     <tr>
+      <td>870a</td>
+      <td></td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Charlotte von Stein</td>
+      <td>WA I, 32, 137</td>
+    </tr>
+    <tr>
       <td>1394</td>
       <td>456</td>
       <td>30.06.1826</td>
@@ -7064,7 +11987,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>Kunst und Alterthum 5 (3), 171</td>
+      <td>Kunst und Alterthum 5 (3), 171-176</td>
     </tr>
     <tr>
       <td>1399b</td>
@@ -7083,6 +12006,24 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 219</td>
+    </tr>
+    <tr>
+      <td>851</td>
+      <td></td>
+      <td>01.06.1774</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Gottlob Friedrich Ernst Schönborn</td>
+      <td>WA IV, 2, 172</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>29.11.1787</td>
+      <td>Brief</td>
+      <td>Johann Gottfried Herder</td>
+      <td>Joseph Friedrich Racknitz</td>
+      <td>M. Lengenfeld'sche Buchhandlung, Antiquariats-Katalog 42, 1932 Nr. 204</td>
     </tr>
     <tr>
       <td></td>
@@ -7175,6 +12116,15 @@
       <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 435</td>
     </tr>
     <tr>
+      <td>871</td>
+      <td>51</td>
+      <td>08.12.1787</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 305</td>
+    </tr>
+    <tr>
       <td>1408</td>
       <td></td>
       <td>02.09.1826</td>
@@ -7263,6 +12213,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 252</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>64</td>
+      <td>1788</td>
+      <td>Gespräch</td>
+      <td>Karl Friedrich Klischnig</td>
+      <td></td>
+      <td>Klischnig. Lebensgeschichte des Hofrath Moritz. Berlin, 1794. 210f</td>
     </tr>
     <tr>
       <td>1418</td>
@@ -7355,6 +12314,15 @@
       <td>WA III, 10, 267</td>
     </tr>
     <tr>
+      <td>872</td>
+      <td>53</td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Gottfried Herder</td>
+      <td>WA I, 32, 210</td>
+    </tr>
+    <tr>
       <td></td>
       <td></td>
       <td>18.11.1826</td>
@@ -7402,11 +12370,11 @@
     <tr>
       <td>1431</td>
       <td>496</td>
-      <td>11.1826</td>
+      <td>15.02.1826</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 41 (2), 232</td>
+      <td>WA I, 41 (2), 232-234</td>
     </tr>
     <tr>
       <td>1432</td>
@@ -7442,7 +12410,16 @@
       <td>Brief</td>
       <td></td>
       <td>Friedrich Wilhelm Riemer</td>
-      <td>Pniower, 170</td>
+      <td>Pniower 1899, S. 170</td>
+    </tr>
+    <tr>
+      <td>872a</td>
+      <td></td>
+      <td>25.01.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 329</td>
     </tr>
     <tr>
       <td>1436</td>
@@ -7487,7 +12464,7 @@
       <td>Tagebuch</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>Pniower, 175</td>
+      <td>Pniower 1899, S. 175</td>
     </tr>
     <tr>
       <td>1440</td>
@@ -7533,6 +12510,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 10, 285</td>
+    </tr>
+    <tr>
+      <td>873</td>
+      <td>54</td>
+      <td>09.02.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 8, 341</td>
     </tr>
     <tr>
       <td></td>
@@ -7603,8 +12589,8 @@
       <td>1826</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 68 [H7]</td>
+      <td>Carl Victor Meyer</td>
+      <td>WA I, 15 (2), 68 [2 III H7]</td>
     </tr>
     <tr>
       <td>1449</td>
@@ -7623,6 +12609,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 2</td>
+    </tr>
+    <tr>
+      <td>874</td>
+      <td>55</td>
+      <td>16.02.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 347</td>
     </tr>
     <tr>
       <td>1451</td>
@@ -7703,7 +12698,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Johann Friedrich von Cotta</td>
-      <td>Cottas Briefwechsel mit Schiller. Hrsg. Vollmer. Stuttgart, 1876. 580f</td>
+      <td>Vollmer 1876, S. 580f</td>
     </tr>
     <tr>
       <td>1459</td>
@@ -7713,6 +12708,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 12</td>
+    </tr>
+    <tr>
+      <td>875</td>
+      <td>56</td>
+      <td></td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Johann Gottfried Herder</td>
+      <td>WA I, 32, 288</td>
     </tr>
     <tr>
       <td></td>
@@ -7735,11 +12739,11 @@
     <tr>
       <td></td>
       <td>946</td>
-      <td>02.1827</td>
+      <td>29.01.1827</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 71 [H73]</td>
+      <td>WA I, 15 (2), 71 [2 III H73]</td>
     </tr>
     <tr>
       <td>1461</td>
@@ -7748,7 +12752,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 41 (2), 292</td>
+      <td>WA I, 41 (2), 290-292</td>
     </tr>
     <tr>
       <td>1462</td>
@@ -7807,6 +12811,15 @@
     <tr>
       <td></td>
       <td></td>
+      <td>07.03.1788</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 32, 480</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>03.03.1827</td>
       <td>Brief</td>
       <td>Johann Friedrich von Cotta</td>
@@ -7852,11 +12865,11 @@
     <tr>
       <td>1467</td>
       <td>513</td>
-      <td>03.1827</td>
+      <td>15.03.1827</td>
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 214</td>
+      <td>WA I, 15 (2), 214f.</td>
     </tr>
     <tr>
       <td>1468</td>
@@ -7893,6 +12906,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Karl Friedrich Zelter</td>
       <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 290</td>
+    </tr>
+    <tr>
+      <td>876</td>
+      <td></td>
+      <td>17.03.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 357</td>
     </tr>
     <tr>
       <td></td>
@@ -7985,6 +13007,24 @@
       <td>WA III, 11, 46</td>
     </tr>
     <tr>
+      <td>851a; 114</td>
+      <td>11</td>
+      <td>28.06.1774</td>
+      <td>Gespräch</td>
+      <td>Johann Kaspar Lavater</td>
+      <td></td>
+      <td>Funck 1901, S. 292</td>
+    </tr>
+    <tr>
+      <td>876a</td>
+      <td></td>
+      <td>21.03.1789</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 8, 363</td>
+    </tr>
+    <tr>
       <td>1478</td>
       <td></td>
       <td>22.04.1827</td>
@@ -8059,7 +13099,7 @@
     <tr>
       <td></td>
       <td></td>
-      <td>05.1827</td>
+      <td></td>
       <td>Text</td>
       <td>Karl von Holtei</td>
       <td></td>
@@ -8073,6 +13113,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>65</td>
+      <td>21.03.1788</td>
+      <td>Brief</td>
+      <td>Johann Heinrich Lips</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>SdGG (1890) 5, 155-158</td>
     </tr>
     <tr>
       <td>1484</td>
@@ -8126,7 +13175,7 @@
       <td>Brief</td>
       <td>Johann Wolfgang Goethe</td>
       <td>Christian Gottfried Daniel Nees von Esenbeck</td>
-      <td>Pniower, Nr. 527</td>
+      <td>Pniower 1899, S. 188</td>
     </tr>
     <tr>
       <td>1490</td>
@@ -8163,6 +13212,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 72</td>
+    </tr>
+    <tr>
+      <td>877</td>
+      <td>57</td>
+      <td>28.03.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Karl August Sachsen-Weimar und Eisenach</td>
+      <td>WA IV, 8, 367</td>
     </tr>
     <tr>
       <td>1494</td>
@@ -8255,6 +13313,15 @@
       <td>WA III, 11, 86</td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td>03.1788</td>
+      <td>Schema</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 32, 465</td>
+    </tr>
+    <tr>
       <td>1502</td>
       <td>536</td>
       <td>18.07.1827</td>
@@ -8315,7 +13382,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 10</td>
+      <td>WA I, 15 (2), 10 [2 I H7]</td>
     </tr>
     <tr>
       <td>1507</td>
@@ -8343,6 +13410,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>03.1788</td>
+      <td>Schema</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 32, 467</td>
     </tr>
     <tr>
       <td>1510</td>
@@ -8419,7 +13495,7 @@
     <tr>
       <td></td>
       <td></td>
-      <td>28.-29.08.1827</td>
+      <td>28.08.1827</td>
       <td>Text</td>
       <td>Friedrich von Müller</td>
       <td></td>
@@ -8433,6 +13509,15 @@
       <td>Friedrich von Müller</td>
       <td></td>
       <td>Biedermann 6, 193</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>03.1788</td>
+      <td>Tabelle</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 32, 487</td>
     </tr>
     <tr>
       <td>1519</td>
@@ -8468,7 +13553,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 37 [H1]</td>
+      <td>WA I, 15 (2), 37 [2 II H1]</td>
     </tr>
     <tr>
       <td>1523</td>
@@ -8523,6 +13608,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Wilhelm Reichel</td>
       <td>Goethe-Jahrbuch 2, 304</td>
+    </tr>
+    <tr>
+      <td>878</td>
+      <td>59</td>
+      <td>05.04.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Friedrich Justin Bertuch</td>
+      <td>WA IV, 8, 369</td>
     </tr>
     <tr>
       <td>1528</td>
@@ -8615,6 +13709,15 @@
       <td>WA III, 11, 118</td>
     </tr>
     <tr>
+      <td>878a</td>
+      <td></td>
+      <td>05.04.1788</td>
+      <td>Brief</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>Georg Joachim Göschen</td>
+      <td>WA IV, 18, 27</td>
+    </tr>
+    <tr>
       <td>1538</td>
       <td>569</td>
       <td>05.10.1827</td>
@@ -8684,7 +13787,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 10 [H8]</td>
+      <td>WA I, 15 (2), 10 [2 I H8]</td>
     </tr>
     <tr>
       <td>1544</td>
@@ -8703,6 +13806,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 126</td>
+    </tr>
+    <tr>
+      <td>879</td>
+      <td>60</td>
+      <td>08.06.1788</td>
+      <td>Text</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td></td>
+      <td>WA I, 14, 292</td>
     </tr>
     <tr>
       <td>1546</td>
@@ -8774,7 +13886,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 37 [H3]</td>
+      <td>WA I, 15 (2), 37 [2 II H3]</td>
     </tr>
     <tr>
       <td></td>
@@ -8783,7 +13895,7 @@
       <td>Text</td>
       <td>Johann Wolfgang Goethe</td>
       <td></td>
-      <td>WA I, 15 (2), 11 [H26]</td>
+      <td>WA I, 15 (2), 11 [2 I H26]</td>
     </tr>
     <tr>
       <td>1552</td>
@@ -8793,6 +13905,15 @@
       <td>Johann Wolfgang Goethe</td>
       <td>Sulpiz Boisserée</td>
       <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 492</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>62</td>
+      <td>07.1788</td>
+      <td>Brief</td>
+      <td>Johann Friedrich Reiffenstein</td>
+      <td>Johann Wolfgang Goethe</td>
+      <td>SdGG (1890) 5, 44-45</td>
     </tr>
     <tr>
       <td>1553</td>
@@ -8883,5019 +14004,6 @@
       <td>Johann Wolfgang Goethe</td>
       <td></td>
       <td>WA III, 11, 143</td>
-    </tr>
-    <tr>
-      <td>1563</td>
-      <td></td>
-      <td>12.1827</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 37f</td>
-    </tr>
-    <tr>
-      <td>1564</td>
-      <td></td>
-      <td>04.12.1827</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 4, 443</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>953</td>
-      <td>08.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 11 [H34]</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>954</td>
-      <td>08.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 10 [H9]</td>
-    </tr>
-    <tr>
-      <td>1565</td>
-      <td>592</td>
-      <td>11.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 147</td>
-    </tr>
-    <tr>
-      <td>1566</td>
-      <td>593</td>
-      <td>12.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 147</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>594</td>
-      <td>16.12.1827</td>
-      <td>Paralipomenon</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 12</td>
-    </tr>
-    <tr>
-      <td>1567</td>
-      <td></td>
-      <td>18.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 150</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>955</td>
-      <td>20.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 10</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>20.12.1827</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>QuZ II, 521</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>596</td>
-      <td>22.12.1827</td>
-      <td>Paralipomenon</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 12</td>
-    </tr>
-    <tr>
-      <td>1568</td>
-      <td>595</td>
-      <td>22.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 152</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>956</td>
-      <td>22.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 10 [H11]</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>957</td>
-      <td>22.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 12 [H43]</td>
-    </tr>
-    <tr>
-      <td>1569</td>
-      <td>597</td>
-      <td>23.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 152</td>
-    </tr>
-    <tr>
-      <td>1570</td>
-      <td></td>
-      <td>24.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 152</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>943</td>
-      <td>24.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 13 [Hc,Hd]</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>599</td>
-      <td>24.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 13 [Hb,He,Hf]</td>
-    </tr>
-    <tr>
-      <td>1571</td>
-      <td>600</td>
-      <td>25.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 153</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>959</td>
-      <td>27.12.1827</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 12 [H45]</td>
-    </tr>
-    <tr>
-      <td>1572</td>
-      <td>601</td>
-      <td>28.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 154</td>
-    </tr>
-    <tr>
-      <td>1573</td>
-      <td>603</td>
-      <td>29.12.1827</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>Briefe von und an G. Hrsg. Riemer. Leipzig, 1846. 228</td>
-    </tr>
-    <tr>
-      <td>1574</td>
-      <td>604</td>
-      <td>29.12.1827</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Reichel</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>29.12.1827</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Reichel</td>
-      <td>QuZ II, 524-525</td>
-    </tr>
-    <tr>
-      <td>1575</td>
-      <td>602</td>
-      <td>29.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 155</td>
-    </tr>
-    <tr>
-      <td>1576</td>
-      <td>605</td>
-      <td>30.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 155</td>
-    </tr>
-    <tr>
-      <td>1577</td>
-      <td>606</td>
-      <td>31.12.1827</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 156</td>
-    </tr>
-    <tr>
-      <td>1578</td>
-      <td>607</td>
-      <td>01.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 157</td>
-    </tr>
-    <tr>
-      <td>1579</td>
-      <td>608</td>
-      <td>02.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 157</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.01.1828</td>
-      <td>Text</td>
-      <td>Augustus Bozzi Granville</td>
-      <td></td>
-      <td>A.B. Granville, St. Petersbugh, vol. II, Londoon 1828, 674ff</td>
-    </tr>
-    <tr>
-      <td>1580</td>
-      <td>609</td>
-      <td>03.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 158</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>610</td>
-      <td>04.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 158</td>
-    </tr>
-    <tr>
-      <td>1581</td>
-      <td>611</td>
-      <td>05.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 159</td>
-    </tr>
-    <tr>
-      <td>1582</td>
-      <td>612</td>
-      <td>06.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 160</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>613</td>
-      <td>07.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 160</td>
-    </tr>
-    <tr>
-      <td>1583</td>
-      <td>614</td>
-      <td>10.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 162</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>11.01.1828</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ II, 527f</td>
-    </tr>
-    <tr>
-      <td>1584</td>
-      <td>615</td>
-      <td>12.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 163</td>
-    </tr>
-    <tr>
-      <td>1585</td>
-      <td>616</td>
-      <td>13.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 164</td>
-    </tr>
-    <tr>
-      <td>1586</td>
-      <td>617</td>
-      <td>14.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 164</td>
-    </tr>
-    <tr>
-      <td>1587</td>
-      <td>618</td>
-      <td>15.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 165</td>
-    </tr>
-    <tr>
-      <td>1588</td>
-      <td>619</td>
-      <td>16.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 165</td>
-    </tr>
-    <tr>
-      <td>1589</td>
-      <td>620</td>
-      <td>18.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 166</td>
-    </tr>
-    <tr>
-      <td>1590</td>
-      <td>621</td>
-      <td>22.01.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Reichel</td>
-      <td>G-Schiller-Archiv</td>
-    </tr>
-    <tr>
-      <td>1591</td>
-      <td>622</td>
-      <td>23.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 169</td>
-    </tr>
-    <tr>
-      <td>1592</td>
-      <td>623</td>
-      <td>24.01.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 4</td>
-    </tr>
-    <tr>
-      <td>1593</td>
-      <td></td>
-      <td>24.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 169</td>
-    </tr>
-    <tr>
-      <td>1594</td>
-      <td>624</td>
-      <td>25.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 169</td>
-    </tr>
-    <tr>
-      <td>1595</td>
-      <td>625</td>
-      <td>28.01.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 295</td>
-    </tr>
-    <tr>
-      <td>1596</td>
-      <td>626</td>
-      <td>30.01.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 173</td>
-    </tr>
-    <tr>
-      <td>1597</td>
-      <td></td>
-      <td>01.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 174</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>07.02.1828</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>QuZ II, 533</td>
-    </tr>
-    <tr>
-      <td>1598</td>
-      <td>627</td>
-      <td>08.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 176</td>
-    </tr>
-    <tr>
-      <td>1599</td>
-      <td>634</td>
-      <td>09.02.1828</td>
-      <td>Gespräch</td>
-      <td>Karl von Holtei</td>
-      <td></td>
-      <td>Biedermann 6, 266</td>
-    </tr>
-    <tr>
-      <td>1600</td>
-      <td></td>
-      <td>09.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 176</td>
-    </tr>
-    <tr>
-      <td>1601</td>
-      <td></td>
-      <td>10.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 177</td>
-    </tr>
-    <tr>
-      <td>1602</td>
-      <td>591</td>
-      <td>12.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 178</td>
-    </tr>
-    <tr>
-      <td>1603</td>
-      <td>628</td>
-      <td>15.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 179</td>
-    </tr>
-    <tr>
-      <td>1604</td>
-      <td>629</td>
-      <td>16.02.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Reichel</td>
-      <td>G-Schiller-Archiv</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>28.02.1828</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>QuZ II, 538f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>28.02.1828</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ II, 539f</td>
-    </tr>
-    <tr>
-      <td>1605</td>
-      <td></td>
-      <td>28.02.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 21f</td>
-    </tr>
-    <tr>
-      <td>1606</td>
-      <td>634</td>
-      <td>29.02.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 185</td>
-    </tr>
-    <tr>
-      <td>1607</td>
-      <td></td>
-      <td>02.03.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Graf Kaspar Maria von Sternberg</td>
-      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 156</td>
-    </tr>
-    <tr>
-      <td>1608</td>
-      <td></td>
-      <td>02.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 186</td>
-    </tr>
-    <tr>
-      <td>1609</td>
-      <td>630</td>
-      <td>04.03.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Reichel</td>
-      <td>G-Schiller-Archiv</td>
-    </tr>
-    <tr>
-      <td>1610</td>
-      <td>631</td>
-      <td>11.03.1828</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 6, 281</td>
-    </tr>
-    <tr>
-      <td>1611</td>
-      <td>637</td>
-      <td>12.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 191</td>
-    </tr>
-    <tr>
-      <td>1612</td>
-      <td>637</td>
-      <td>14.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 192</td>
-    </tr>
-    <tr>
-      <td>1613</td>
-      <td>637</td>
-      <td>15.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 193</td>
-    </tr>
-    <tr>
-      <td>1614</td>
-      <td>632</td>
-      <td>22.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 196</td>
-    </tr>
-    <tr>
-      <td>1615</td>
-      <td>633</td>
-      <td>23.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 196</td>
-    </tr>
-    <tr>
-      <td>1615a</td>
-      <td></td>
-      <td>24.03.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 196</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>24.03.1828</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Karl Friedrich von Reinhard</td>
-      <td>Grumach, 345</td>
-    </tr>
-    <tr>
-      <td>1616</td>
-      <td>630</td>
-      <td>28.03.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Reichel</td>
-      <td>G-Schiller-Archiv</td>
-    </tr>
-    <tr>
-      <td>1617</td>
-      <td>974</td>
-      <td>03.1828</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 216f</td>
-    </tr>
-    <tr>
-      <td>?</td>
-      <td></td>
-      <td>03.1828</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Kunst und Leben. Aus Friedrich Förster's Nachlass. Hrsg. von Hermann Kletke. Berlin, 1873. 211-215</td>
-    </tr>
-    <tr>
-      <td>1618</td>
-      <td></td>
-      <td>03.1828</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Biedermann 7, 154f</td>
-    </tr>
-    <tr>
-      <td>1619</td>
-      <td>976</td>
-      <td>03.1828</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Biedermann 7, 155-61</td>
-    </tr>
-    <tr>
-      <td>1620</td>
-      <td></td>
-      <td>03.1828</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>Ueber Kunst und Alterthum 6 (2), 426f</td>
-    </tr>
-    <tr>
-      <td>1621</td>
-      <td></td>
-      <td>07.04.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Sulpiz Boisserée</td>
-      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 507</td>
-    </tr>
-    <tr>
-      <td>1622</td>
-      <td>591</td>
-      <td>08.04.1828</td>
-      <td>Brief</td>
-      <td></td>
-      <td></td>
-      <td>WA III, 11, 202</td>
-    </tr>
-    <tr>
-      <td>1623</td>
-      <td>635</td>
-      <td>22.04.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 29f</td>
-    </tr>
-    <tr>
-      <td>1624</td>
-      <td></td>
-      <td>01.05.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Nikolai Borchardt</td>
-      <td>G.s Briefe. Hrsg. Strehlke. Berlin, 1882-84. 1, 78</td>
-    </tr>
-    <tr>
-      <td>1625</td>
-      <td></td>
-      <td>04.05.1828</td>
-      <td>Gespräch</td>
-      <td>Jenny von Pappenheim</td>
-      <td></td>
-      <td>Biedermann 10, 197</td>
-    </tr>
-    <tr>
-      <td>1626</td>
-      <td>636</td>
-      <td>09.05.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 216</td>
-    </tr>
-    <tr>
-      <td>1627</td>
-      <td>636</td>
-      <td>12.05.1828</td>
-      <td>Text</td>
-      <td></td>
-      <td></td>
-      <td>Ueber Kunst und Alterthum 6 (2), 387-391</td>
-    </tr>
-    <tr>
-      <td>1628</td>
-      <td>637</td>
-      <td>02.05.1828</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>Ueber Kunst und Alterthum 6 (2), 429f</td>
-    </tr>
-    <tr>
-      <td>1629</td>
-      <td>637</td>
-      <td>21.05.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 43f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>Text</td>
-      <td>Karl von Holtei</td>
-      <td></td>
-      <td>Holtei, K. Vierzig Jahre. Breslau, 2. Aufl. 1859. 4, 93f</td>
-    </tr>
-    <tr>
-      <td>1630</td>
-      <td>640</td>
-      <td>05.1828</td>
-      <td>Gespräch</td>
-      <td>August von Goethe</td>
-      <td></td>
-      <td>Holtei, K. Vierzig Jahre. Breslau, 1859. 4, 94</td>
-    </tr>
-    <tr>
-      <td>1631</td>
-      <td>639</td>
-      <td>25.05.1828</td>
-      <td>Gespräch</td>
-      <td>Joseph Karl Stieler</td>
-      <td></td>
-      <td>Biedermann 8, 380</td>
-    </tr>
-    <tr>
-      <td>1632</td>
-      <td></td>
-      <td>10.06.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Graf Kaspar Maria von Sternberg</td>
-      <td>Sternbergs Briefwechsel mit G. Hrsg. Bratranek. Wien, 1866. 162</td>
-    </tr>
-    <tr>
-      <td>1633</td>
-      <td>637</td>
-      <td>16.06.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Thomas Carlyle</td>
-      <td>Carlyles Briefwechsel mit G. Berlin, 1887. 47f</td>
-    </tr>
-    <tr>
-      <td>1634</td>
-      <td>640</td>
-      <td>06.1828</td>
-      <td>Gespräch</td>
-      <td>August von Goethe</td>
-      <td></td>
-      <td>Holtei, K. Vierzig Jahre. Breslau, 1859. 4, 99</td>
-    </tr>
-    <tr>
-      <td>1635</td>
-      <td></td>
-      <td>28.06.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 237</td>
-    </tr>
-    <tr>
-      <td>1635a</td>
-      <td></td>
-      <td>28.06.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 237</td>
-    </tr>
-    <tr>
-      <td>1636</td>
-      <td>638</td>
-      <td>29.06.1828</td>
-      <td>Text</td>
-      <td></td>
-      <td></td>
-      <td>Ueber Kunst und Alterthum 6 (2), 428f</td>
-    </tr>
-    <tr>
-      <td>1637</td>
-      <td></td>
-      <td>01.07.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 238</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>09.07.1828</td>
-      <td>Tagebuch</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>Jahrbuch der Sammlung Kippenberg 4, 50</td>
-    </tr>
-    <tr>
-      <td>1638</td>
-      <td>641</td>
-      <td>26.07.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 77</td>
-    </tr>
-    <tr>
-      <td>1639</td>
-      <td>642</td>
-      <td>01.09.1828</td>
-      <td>Gespräch</td>
-      <td>Karl Konstantin Kraukling</td>
-      <td></td>
-      <td>Biedermann 6, 320f</td>
-    </tr>
-    <tr>
-      <td>1640</td>
-      <td>643</td>
-      <td>18.09.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 280</td>
-    </tr>
-    <tr>
-      <td>1641</td>
-      <td>644</td>
-      <td>19.09.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 280</td>
-    </tr>
-    <tr>
-      <td>1642</td>
-      <td>645</td>
-      <td>26.09.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 282</td>
-    </tr>
-    <tr>
-      <td>1643</td>
-      <td>646</td>
-      <td>28.09.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 283</td>
-    </tr>
-    <tr>
-      <td>1644</td>
-      <td>647</td>
-      <td>29.09.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 284</td>
-    </tr>
-    <tr>
-      <td>1645</td>
-      <td>648</td>
-      <td>30.09.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 284</td>
-    </tr>
-    <tr>
-      <td>1646</td>
-      <td>649</td>
-      <td>02.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 285</td>
-    </tr>
-    <tr>
-      <td>1647</td>
-      <td>650</td>
-      <td>09.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 288</td>
-    </tr>
-    <tr>
-      <td>1648</td>
-      <td>651</td>
-      <td>13.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 290</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>14.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>Jahrbuch der Sammlung Kippenberg 4, 54</td>
-    </tr>
-    <tr>
-      <td>1649</td>
-      <td>652</td>
-      <td>16.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 291</td>
-    </tr>
-    <tr>
-      <td>1650</td>
-      <td>653</td>
-      <td>17.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 291</td>
-    </tr>
-    <tr>
-      <td>1651</td>
-      <td>654</td>
-      <td>17.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 292</td>
-    </tr>
-    <tr>
-      <td>1651a</td>
-      <td></td>
-      <td>20.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 293</td>
-    </tr>
-    <tr>
-      <td>1652</td>
-      <td>655</td>
-      <td>21.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 293</td>
-    </tr>
-    <tr>
-      <td>1653</td>
-      <td>656</td>
-      <td>22.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 294</td>
-    </tr>
-    <tr>
-      <td>1654</td>
-      <td>657</td>
-      <td>27.10.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 296</td>
-    </tr>
-    <tr>
-      <td>1655</td>
-      <td></td>
-      <td>01.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 297</td>
-    </tr>
-    <tr>
-      <td>1655a</td>
-      <td>658</td>
-      <td>08.11.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 62</td>
-    </tr>
-    <tr>
-      <td>1656</td>
-      <td>659</td>
-      <td>10.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 301</td>
-    </tr>
-    <tr>
-      <td>1657</td>
-      <td>660</td>
-      <td>11.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 301</td>
-    </tr>
-    <tr>
-      <td>1658</td>
-      <td>661</td>
-      <td>12.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 301</td>
-    </tr>
-    <tr>
-      <td>1659</td>
-      <td>662</td>
-      <td>13.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 301</td>
-    </tr>
-    <tr>
-      <td>1660</td>
-      <td></td>
-      <td>11.1828</td>
-      <td>Gespräch</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>Faust. Hrsg. Schröer. Leipzig, 1896-8. 1, CXf</td>
-    </tr>
-    <tr>
-      <td>1661</td>
-      <td>663</td>
-      <td>19.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 304</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>19.11.1828</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Karl Friedrich von Reinhard</td>
-      <td>Grumach, 353</td>
-    </tr>
-    <tr>
-      <td>1662</td>
-      <td>664</td>
-      <td>21.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 305</td>
-    </tr>
-    <tr>
-      <td>1663</td>
-      <td>698</td>
-      <td>23.11.1828</td>
-      <td>Gespräch</td>
-      <td>Ottilie von Goethe</td>
-      <td></td>
-      <td>Faust. Hrsg. Schröer. Leipzig, 1896-8. 1, CXI</td>
-    </tr>
-    <tr>
-      <td>1664</td>
-      <td></td>
-      <td>23.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 306</td>
-    </tr>
-    <tr>
-      <td>1665</td>
-      <td>665</td>
-      <td>26.11.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 307</td>
-    </tr>
-    <tr>
-      <td>1666</td>
-      <td>666</td>
-      <td>02.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 309</td>
-    </tr>
-    <tr>
-      <td>1667</td>
-      <td>667</td>
-      <td>12.12.1828</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm Zahn</td>
-      <td>Krieg, Literatur und Theater. Hrsg. Dorow. Leipzig, 1845. 189</td>
-    </tr>
-    <tr>
-      <td>1668</td>
-      <td>668</td>
-      <td>16.12.1828</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 6, 361</td>
-    </tr>
-    <tr>
-      <td>1669</td>
-      <td></td>
-      <td>21.12.1828</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 3, 189</td>
-    </tr>
-    <tr>
-      <td>1670</td>
-      <td>669</td>
-      <td>21.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 318</td>
-    </tr>
-    <tr>
-      <td>1671</td>
-      <td>670</td>
-      <td>23.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 318</td>
-    </tr>
-    <tr>
-      <td>1672</td>
-      <td>671</td>
-      <td>24.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 319</td>
-    </tr>
-    <tr>
-      <td>1673</td>
-      <td>672</td>
-      <td>25.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 320</td>
-    </tr>
-    <tr>
-      <td>1674</td>
-      <td>673</td>
-      <td>26.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 320</td>
-    </tr>
-    <tr>
-      <td>1675</td>
-      <td>674</td>
-      <td>30.12.1828</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 11, 322</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>12.1828</td>
-      <td>Gespräch</td>
-      <td>Johann Karl August von La Roche</td>
-      <td></td>
-      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., Heilbronn 1886, XCVf</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>1829</td>
-      <td>Gespräch</td>
-      <td>Joseph Karl August von La Roche</td>
-      <td></td>
-      <td>K.J. Schröer, hg., Faust, 1. Theil, 2. Aufl., Heilbronn 1886, XCVIIff</td>
-    </tr>
-    <tr>
-      <td>1676</td>
-      <td>675</td>
-      <td>01.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 1</td>
-    </tr>
-    <tr>
-      <td>1677</td>
-      <td></td>
-      <td>06.01.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 146</td>
-    </tr>
-    <tr>
-      <td>1678</td>
-      <td>676</td>
-      <td>06.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 3</td>
-    </tr>
-    <tr>
-      <td>1679</td>
-      <td>677</td>
-      <td>09.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 4</td>
-    </tr>
-    <tr>
-      <td>1680</td>
-      <td>678</td>
-      <td>11.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 6</td>
-    </tr>
-    <tr>
-      <td>1681</td>
-      <td>679</td>
-      <td>12.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 6</td>
-    </tr>
-    <tr>
-      <td>1682</td>
-      <td>680</td>
-      <td>13.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 6</td>
-    </tr>
-    <tr>
-      <td>1683</td>
-      <td>681</td>
-      <td>14.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 7</td>
-    </tr>
-    <tr>
-      <td>1684</td>
-      <td>682</td>
-      <td>15.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 7</td>
-    </tr>
-    <tr>
-      <td>1685</td>
-      <td>683</td>
-      <td>16.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 8</td>
-    </tr>
-    <tr>
-      <td>1686</td>
-      <td>685</td>
-      <td>18.01.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 159</td>
-    </tr>
-    <tr>
-      <td>1687</td>
-      <td>684</td>
-      <td>18.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 8</td>
-    </tr>
-    <tr>
-      <td>1688</td>
-      <td></td>
-      <td>01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 12</td>
-    </tr>
-    <tr>
-      <td>1689</td>
-      <td></td>
-      <td>27.01.1829 (Briefdatum: 19.02.1829)</td>
-      <td>Gespräch (in einem Brief)</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Adele Schopenhauer</td>
-      <td>Schopenhauer, J. Briefe an Holtei. Leipzig, 1870.46</td>
-    </tr>
-    <tr>
-      <td>1690</td>
-      <td>686</td>
-      <td>28.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 13</td>
-    </tr>
-    <tr>
-      <td>1691</td>
-      <td></td>
-      <td>28.01.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 1</td>
-    </tr>
-    <tr>
-      <td>1692</td>
-      <td>687</td>
-      <td>29.01.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 14</td>
-    </tr>
-    <tr>
-      <td>1693</td>
-      <td>688</td>
-      <td>01.02.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 16</td>
-    </tr>
-    <tr>
-      <td>1694</td>
-      <td>689</td>
-      <td>02.02.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 17</td>
-    </tr>
-    <tr>
-      <td>1695</td>
-      <td>690</td>
-      <td>07.02.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 19</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>691</td>
-      <td>09.02.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 21</td>
-    </tr>
-    <tr>
-      <td>1695a</td>
-      <td></td>
-      <td>09.02.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Wilhelm Göttling</td>
-      <td>Göttlings Briefwechsel mit G. Hrsg. Fischer. München, 1880. 73</td>
-    </tr>
-    <tr>
-      <td>1696</td>
-      <td>692; 6</td>
-      <td>10.02.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 9</td>
-    </tr>
-    <tr>
-      <td>1697</td>
-      <td>693</td>
-      <td>12.02.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 12</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>694</td>
-      <td>14.02.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 23</td>
-    </tr>
-    <tr>
-      <td>1698</td>
-      <td>695</td>
-      <td>17.02.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 18f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>19.02.1829</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Cottasche Buchhandlung</td>
-      <td>QuZ IV, 542</td>
-    </tr>
-    <tr>
-      <td>1699</td>
-      <td></td>
-      <td>04.03.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 184</td>
-    </tr>
-    <tr>
-      <td>1700</td>
-      <td>696</td>
-      <td>23.03.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 36f</td>
-    </tr>
-    <tr>
-      <td>1701</td>
-      <td>697</td>
-      <td>24.03.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 43</td>
-    </tr>
-    <tr>
-      <td>1702</td>
-      <td>698</td>
-      <td>27.03.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 45</td>
-    </tr>
-    <tr>
-      <td>1703</td>
-      <td>699</td>
-      <td>28.03.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 184</td>
-    </tr>
-    <tr>
-      <td>1704</td>
-      <td>700; 58</td>
-      <td>10.04.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 82</td>
-    </tr>
-    <tr>
-      <td>1705</td>
-      <td>702</td>
-      <td>14.04.1829</td>
-      <td>Gespräch</td>
-      <td>Max von Gagern</td>
-      <td></td>
-      <td>Biedermann 7, 95</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>26.04.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 428f</td>
-    </tr>
-    <tr>
-      <td>1706</td>
-      <td>701</td>
-      <td>28.04.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 215</td>
-    </tr>
-    <tr>
-      <td>1707</td>
-      <td></td>
-      <td>11.06.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 244</td>
-    </tr>
-    <tr>
-      <td>1708</td>
-      <td>703</td>
-      <td>19.07.1829</td>
-      <td>Brief</td>
-      <td></td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 261</td>
-    </tr>
-    <tr>
-      <td>1709</td>
-      <td>705</td>
-      <td>19.07.1829</td>
-      <td>Gespräch</td>
-      <td>Karl Eberwein</td>
-      <td></td>
-      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 340</td>
-    </tr>
-    <tr>
-      <td>1710</td>
-      <td>704</td>
-      <td>19.07.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 99</td>
-    </tr>
-    <tr>
-      <td>1711</td>
-      <td>712</td>
-      <td>02.08.1829</td>
-      <td>Gespräch</td>
-      <td>Henry Crabb Robinson</td>
-      <td></td>
-      <td>Biedermann 7, 107</td>
-    </tr>
-    <tr>
-      <td>1712</td>
-      <td>705</td>
-      <td>03.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 105</td>
-    </tr>
-    <tr>
-      <td>1713</td>
-      <td>706</td>
-      <td>04.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 106</td>
-    </tr>
-    <tr>
-      <td>1714</td>
-      <td>707</td>
-      <td>05.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 106</td>
-    </tr>
-    <tr>
-      <td>1715</td>
-      <td>708</td>
-      <td>07.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 108</td>
-    </tr>
-    <tr>
-      <td>1716</td>
-      <td>709</td>
-      <td>08.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 108</td>
-    </tr>
-    <tr>
-      <td>1717</td>
-      <td>710</td>
-      <td>12.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 110</td>
-    </tr>
-    <tr>
-      <td>1718</td>
-      <td>712</td>
-      <td>13.08.1829</td>
-      <td>Gespräch</td>
-      <td>Henry Crabb Robinson</td>
-      <td></td>
-      <td>Biedermann 7, 108</td>
-    </tr>
-    <tr>
-      <td>1719</td>
-      <td></td>
-      <td>13.08.1829</td>
-      <td>Gespräch</td>
-      <td>Henry Crabb Robinson</td>
-      <td></td>
-      <td>Biedermann 7, 110</td>
-    </tr>
-    <tr>
-      <td>1720</td>
-      <td>711</td>
-      <td>14.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 112</td>
-    </tr>
-    <tr>
-      <td>1721</td>
-      <td></td>
-      <td>16.08.1829</td>
-      <td>Gespräch</td>
-      <td>Henry Crabb Robinson</td>
-      <td></td>
-      <td>Biedermann 7, 111</td>
-    </tr>
-    <tr>
-      <td>1722</td>
-      <td></td>
-      <td>18.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 113</td>
-    </tr>
-    <tr>
-      <td>1722a</td>
-      <td></td>
-      <td>08.1829</td>
-      <td>Gespräch</td>
-      <td>Victor Pavie</td>
-      <td></td>
-      <td>Mémoires de la sociéte nationale d'agriculture. Tome XVII (1874). 114</td>
-    </tr>
-    <tr>
-      <td>1723</td>
-      <td></td>
-      <td>08.1829</td>
-      <td>Gespräch</td>
-      <td>Karl Eberwein</td>
-      <td></td>
-      <td>"Europa. Chronik der Gebildeten Welt." 1853 (Nr. 43), 340</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>713</td>
-      <td>20.08.1829</td>
-      <td>Gespräch</td>
-      <td>Alexandre Dumas (Senior)</td>
-      <td></td>
-      <td>Biedermann 10, 172</td>
-    </tr>
-    <tr>
-      <td>1724</td>
-      <td></td>
-      <td>29.08.1829</td>
-      <td>Gespräch</td>
-      <td>Antoni Edward Odyniec</td>
-      <td></td>
-      <td>Biedermann 7, 138</td>
-    </tr>
-    <tr>
-      <td>1725</td>
-      <td>714</td>
-      <td>29.08.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 119</td>
-    </tr>
-    <tr>
-      <td>1726</td>
-      <td></td>
-      <td>30.08.1829</td>
-      <td>Gespräch</td>
-      <td>Karl von Holtei</td>
-      <td></td>
-      <td>Biedermann 7, 141</td>
-    </tr>
-    <tr>
-      <td>1727</td>
-      <td>715</td>
-      <td>01.09.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 120</td>
-    </tr>
-    <tr>
-      <td>1728</td>
-      <td>716</td>
-      <td>02.09.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Friedrich Rochlitz</td>
-      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann. Leipzig, 1887. 332f</td>
-    </tr>
-    <tr>
-      <td>1729</td>
-      <td></td>
-      <td>06.09.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 122</td>
-    </tr>
-    <tr>
-      <td>1730</td>
-      <td>717</td>
-      <td>08.09.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 123</td>
-    </tr>
-    <tr>
-      <td>1731</td>
-      <td>718</td>
-      <td>09.09.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Ludwig Tieck</td>
-      <td>SdGG 13, 311</td>
-    </tr>
-    <tr>
-      <td>1732</td>
-      <td></td>
-      <td>18.09.1829</td>
-      <td>Gespräch in Schlusswort</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>Kunst und Alterthum 6 (3), 626</td>
-    </tr>
-    <tr>
-      <td>1733</td>
-      <td>719</td>
-      <td>29.09.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Friedrich Rochlitz</td>
-      <td>Rochlitz' Briefwechsel mit G. Hrsg. Biedermann. Leipzig, 1887. 338</td>
-    </tr>
-    <tr>
-      <td>1734</td>
-      <td>720</td>
-      <td>03.10.1829</td>
-      <td>Gespräch</td>
-      <td>Karl Friedrich Ludwig Freiherr Löw von und zu Steinfurt</td>
-      <td></td>
-      <td>Biedermann 10, 182</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 188ff</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>24.10.1829</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Cottasche Buchhandlung</td>
-      <td>QuZ II, 631</td>
-    </tr>
-    <tr>
-      <td>1735</td>
-      <td></td>
-      <td>01.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 147</td>
-    </tr>
-    <tr>
-      <td>1736</td>
-      <td>721</td>
-      <td>06.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 149</td>
-    </tr>
-    <tr>
-      <td>1737</td>
-      <td>722</td>
-      <td>07.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 150</td>
-    </tr>
-    <tr>
-      <td>1737a</td>
-      <td></td>
-      <td>08.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 150</td>
-    </tr>
-    <tr>
-      <td>1738</td>
-      <td></td>
-      <td>19.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 155</td>
-    </tr>
-    <tr>
-      <td>1739</td>
-      <td>723</td>
-      <td>20.11.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 329f</td>
-    </tr>
-    <tr>
-      <td>1740</td>
-      <td></td>
-      <td>21.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 156</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>21.11.1829</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Cottasche Buchhandlung</td>
-      <td>QuZ II, 637</td>
-    </tr>
-    <tr>
-      <td>1741</td>
-      <td></td>
-      <td>25.11.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 158</td>
-    </tr>
-    <tr>
-      <td>1742</td>
-      <td>724</td>
-      <td>01.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 160</td>
-    </tr>
-    <tr>
-      <td>1743</td>
-      <td>725</td>
-      <td>02.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 160</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.12.1829</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Karl Friedrich Martius</td>
-      <td>Grumach, 357</td>
-    </tr>
-    <tr>
-      <td>1744</td>
-      <td>727</td>
-      <td>06.12.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 161f</td>
-    </tr>
-    <tr>
-      <td>1745</td>
-      <td>726</td>
-      <td>06.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 163</td>
-    </tr>
-    <tr>
-      <td>1746</td>
-      <td>728</td>
-      <td>07.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 163</td>
-    </tr>
-    <tr>
-      <td>1747</td>
-      <td>729</td>
-      <td>08.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 163</td>
-    </tr>
-    <tr>
-      <td>1748</td>
-      <td>730</td>
-      <td>09.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 164</td>
-    </tr>
-    <tr>
-      <td>1749</td>
-      <td>731</td>
-      <td>10.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 164</td>
-    </tr>
-    <tr>
-      <td>1750</td>
-      <td>732</td>
-      <td>12.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 165</td>
-    </tr>
-    <tr>
-      <td>1751</td>
-      <td>733</td>
-      <td>13.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 165</td>
-    </tr>
-    <tr>
-      <td>1752</td>
-      <td>734</td>
-      <td>14.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 166</td>
-    </tr>
-    <tr>
-      <td>1753</td>
-      <td>735</td>
-      <td>15.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 166</td>
-    </tr>
-    <tr>
-      <td>1754</td>
-      <td>737</td>
-      <td>16.12.1829</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 340</td>
-    </tr>
-    <tr>
-      <td>1755</td>
-      <td>738</td>
-      <td>16.12.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 165ff</td>
-    </tr>
-    <tr>
-      <td>1756</td>
-      <td>736</td>
-      <td>16.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 167</td>
-    </tr>
-    <tr>
-      <td>1757</td>
-      <td>739</td>
-      <td>20.12.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 171ff</td>
-    </tr>
-    <tr>
-      <td>1758</td>
-      <td>740</td>
-      <td>26.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 172</td>
-    </tr>
-    <tr>
-      <td>1759</td>
-      <td>742</td>
-      <td>27.12.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 173ff</td>
-    </tr>
-    <tr>
-      <td>1760</td>
-      <td>741</td>
-      <td>27.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 173</td>
-    </tr>
-    <tr>
-      <td>1761</td>
-      <td>743</td>
-      <td>28.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 173</td>
-    </tr>
-    <tr>
-      <td>1762</td>
-      <td></td>
-      <td>29.12.1829</td>
-      <td>Gespräch</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>Riemer 2, 1, 396</td>
-    </tr>
-    <tr>
-      <td>1763</td>
-      <td>744</td>
-      <td>29.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 173</td>
-    </tr>
-    <tr>
-      <td>1764</td>
-      <td>745</td>
-      <td>30.12.1829</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 175</td>
-    </tr>
-    <tr>
-      <td>1765</td>
-      <td>746</td>
-      <td>30.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 173</td>
-    </tr>
-    <tr>
-      <td>1766</td>
-      <td>747</td>
-      <td>31.12.1829</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 174</td>
-    </tr>
-    <tr>
-      <td>1767</td>
-      <td>748</td>
-      <td>01.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 175</td>
-    </tr>
-    <tr>
-      <td>1768</td>
-      <td>750</td>
-      <td>03.01.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 177f</td>
-    </tr>
-    <tr>
-      <td>1769</td>
-      <td>749</td>
-      <td>03.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 176</td>
-    </tr>
-    <tr>
-      <td>1770</td>
-      <td>751</td>
-      <td>04.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 176</td>
-    </tr>
-    <tr>
-      <td>1771</td>
-      <td>752</td>
-      <td>05.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 177</td>
-    </tr>
-    <tr>
-      <td>1772</td>
-      <td>753</td>
-      <td>06.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 177</td>
-    </tr>
-    <tr>
-      <td>1773</td>
-      <td>754</td>
-      <td>07.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 178</td>
-    </tr>
-    <tr>
-      <td>1774</td>
-      <td>755</td>
-      <td>08.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 178</td>
-    </tr>
-    <tr>
-      <td>1775</td>
-      <td>756</td>
-      <td>09.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 178</td>
-    </tr>
-    <tr>
-      <td>1776</td>
-      <td>758</td>
-      <td>10.01.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 178f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>10.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 449</td>
-    </tr>
-    <tr>
-      <td>1777</td>
-      <td>757</td>
-      <td>10.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 179</td>
-    </tr>
-    <tr>
-      <td>1778</td>
-      <td>759</td>
-      <td>11.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 179</td>
-    </tr>
-    <tr>
-      <td>1779</td>
-      <td>760</td>
-      <td>13.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 181</td>
-    </tr>
-    <tr>
-      <td>1780</td>
-      <td>761</td>
-      <td>16.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 182</td>
-    </tr>
-    <tr>
-      <td>1781</td>
-      <td>762</td>
-      <td>17.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 183</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>17.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 450</td>
-    </tr>
-    <tr>
-      <td>1782</td>
-      <td>763</td>
-      <td>18.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 183</td>
-    </tr>
-    <tr>
-      <td>1783</td>
-      <td>764</td>
-      <td>19.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 183</td>
-    </tr>
-    <tr>
-      <td>1784</td>
-      <td></td>
-      <td>20.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 184</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>765</td>
-      <td>20.01.1830</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 9</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>20.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 451</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>24.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 453</td>
-    </tr>
-    <tr>
-      <td>1785</td>
-      <td>766</td>
-      <td>24.01.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 188</td>
-    </tr>
-    <tr>
-      <td>1786</td>
-      <td></td>
-      <td>24.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 186</td>
-    </tr>
-    <tr>
-      <td>1787</td>
-      <td>767</td>
-      <td>28.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 188</td>
-    </tr>
-    <tr>
-      <td>1788</td>
-      <td>768</td>
-      <td>29.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 188</td>
-    </tr>
-    <tr>
-      <td>1789</td>
-      <td></td>
-      <td>31.01.1830</td>
-      <td>Gespräch</td>
-      <td>Frédéric Soret; Karl Alexander von Sachsen-Weimar-Eisenach</td>
-      <td></td>
-      <td>Biedermann 7, 195f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>31.01.1831</td>
-      <td></td>
-      <td>Frédéric Soret</td>
-      <td></td>
-      <td>Houben, Soret, 359ff</td>
-    </tr>
-    <tr>
-      <td>1790</td>
-      <td>769</td>
-      <td>31.01.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 190</td>
-    </tr>
-    <tr>
-      <td>1791</td>
-      <td>770</td>
-      <td>01.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 190</td>
-    </tr>
-    <tr>
-      <td>1792</td>
-      <td>771</td>
-      <td>02.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 191</td>
-    </tr>
-    <tr>
-      <td>1793</td>
-      <td>772</td>
-      <td>03.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 192</td>
-    </tr>
-    <tr>
-      <td>1794</td>
-      <td>773</td>
-      <td>04.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 192</td>
-    </tr>
-    <tr>
-      <td>1795</td>
-      <td>774</td>
-      <td>05.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 193</td>
-    </tr>
-    <tr>
-      <td>1796</td>
-      <td>775</td>
-      <td>06.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 193</td>
-    </tr>
-    <tr>
-      <td>1797</td>
-      <td>776</td>
-      <td>07.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 193</td>
-    </tr>
-    <tr>
-      <td>1798</td>
-      <td>777</td>
-      <td>09.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 194</td>
-    </tr>
-    <tr>
-      <td>1799</td>
-      <td>779</td>
-      <td>10.02.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 203</td>
-    </tr>
-    <tr>
-      <td>1800</td>
-      <td>778</td>
-      <td>10.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 195</td>
-    </tr>
-    <tr>
-      <td>1801</td>
-      <td>780</td>
-      <td>12.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 196</td>
-    </tr>
-    <tr>
-      <td>1802</td>
-      <td>781</td>
-      <td>13.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 196</td>
-    </tr>
-    <tr>
-      <td>1803</td>
-      <td>783</td>
-      <td>14.02.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 208</td>
-    </tr>
-    <tr>
-      <td>1804</td>
-      <td>782</td>
-      <td>14.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 197</td>
-    </tr>
-    <tr>
-      <td>1805</td>
-      <td>784</td>
-      <td>15.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 197</td>
-    </tr>
-    <tr>
-      <td>1806</td>
-      <td>785</td>
-      <td>16.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 198</td>
-    </tr>
-    <tr>
-      <td>1807</td>
-      <td>786</td>
-      <td>17.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 198</td>
-    </tr>
-    <tr>
-      <td>1808</td>
-      <td>788</td>
-      <td>21.02.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 220</td>
-    </tr>
-    <tr>
-      <td>1809</td>
-      <td>787</td>
-      <td>21.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 200</td>
-    </tr>
-    <tr>
-      <td>1810</td>
-      <td>789</td>
-      <td>22.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 200</td>
-    </tr>
-    <tr>
-      <td>1811</td>
-      <td>790</td>
-      <td>23.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 201</td>
-    </tr>
-    <tr>
-      <td>1812</td>
-      <td>792</td>
-      <td>24.02.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 223</td>
-    </tr>
-    <tr>
-      <td>1813</td>
-      <td>791</td>
-      <td>24.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 201</td>
-    </tr>
-    <tr>
-      <td>1814</td>
-      <td>793</td>
-      <td>25.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 202</td>
-    </tr>
-    <tr>
-      <td>1815</td>
-      <td>794</td>
-      <td>26.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 203</td>
-    </tr>
-    <tr>
-      <td>1816</td>
-      <td>795</td>
-      <td>27.02.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 203</td>
-    </tr>
-    <tr>
-      <td>1817</td>
-      <td>797</td>
-      <td>01.03.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 231</td>
-    </tr>
-    <tr>
-      <td>1818</td>
-      <td>796</td>
-      <td>01.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 204</td>
-    </tr>
-    <tr>
-      <td>1819</td>
-      <td></td>
-      <td>02.03.1830</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 5, 411</td>
-    </tr>
-    <tr>
-      <td>1820</td>
-      <td>798</td>
-      <td>02.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 205</td>
-    </tr>
-    <tr>
-      <td>1821</td>
-      <td>799</td>
-      <td>03.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 205</td>
-    </tr>
-    <tr>
-      <td>1822</td>
-      <td>800</td>
-      <td>04.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 206</td>
-    </tr>
-    <tr>
-      <td>1823</td>
-      <td>801</td>
-      <td>05.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 206</td>
-    </tr>
-    <tr>
-      <td>1824</td>
-      <td>803</td>
-      <td>05.03.1830</td>
-      <td>Gespräch</td>
-      <td>Frédéric Soret</td>
-      <td></td>
-      <td>Biedermann 7, 237f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>05.03.1830</td>
-      <td></td>
-      <td>Frédéric Soret</td>
-      <td></td>
-      <td>Houben, Soret, 390ff</td>
-    </tr>
-    <tr>
-      <td>1825</td>
-      <td>802</td>
-      <td>06.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 207</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>07.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben I, 471</td>
-    </tr>
-    <tr>
-      <td>1826</td>
-      <td>804</td>
-      <td>07.03.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 239ff</td>
-    </tr>
-    <tr>
-      <td>1827</td>
-      <td>805</td>
-      <td>10.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 210</td>
-    </tr>
-    <tr>
-      <td>1828</td>
-      <td></td>
-      <td>12.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 211</td>
-    </tr>
-    <tr>
-      <td>1829</td>
-      <td>806</td>
-      <td>13.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 212</td>
-    </tr>
-    <tr>
-      <td>1830</td>
-      <td>807</td>
-      <td>14.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 212</td>
-    </tr>
-    <tr>
-      <td>1831</td>
-      <td>808</td>
-      <td>15.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 212</td>
-    </tr>
-    <tr>
-      <td>1832</td>
-      <td>809</td>
-      <td>17.03.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 264</td>
-    </tr>
-    <tr>
-      <td>1833</td>
-      <td>810</td>
-      <td>18.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 214</td>
-    </tr>
-    <tr>
-      <td>1834</td>
-      <td>812</td>
-      <td>21.03.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 276</td>
-    </tr>
-    <tr>
-      <td>1835</td>
-      <td>811</td>
-      <td>21.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 215</td>
-    </tr>
-    <tr>
-      <td>1836</td>
-      <td>813</td>
-      <td>22.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 216</td>
-    </tr>
-    <tr>
-      <td>1837</td>
-      <td>814</td>
-      <td>23.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 216</td>
-    </tr>
-    <tr>
-      <td>1838</td>
-      <td></td>
-      <td>24.03.1830</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 7, 280</td>
-    </tr>
-    <tr>
-      <td>1839</td>
-      <td>815</td>
-      <td>26.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 218</td>
-    </tr>
-    <tr>
-      <td>1840</td>
-      <td>816</td>
-      <td>27.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 219</td>
-    </tr>
-    <tr>
-      <td>1841</td>
-      <td>817</td>
-      <td>28.03.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 219</td>
-    </tr>
-    <tr>
-      <td>1842</td>
-      <td>818</td>
-      <td>14.04.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 226</td>
-    </tr>
-    <tr>
-      <td>1843</td>
-      <td>819</td>
-      <td>18.04.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 227</td>
-    </tr>
-    <tr>
-      <td>1844</td>
-      <td>820</td>
-      <td>24.04.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 231</td>
-    </tr>
-    <tr>
-      <td>1845</td>
-      <td>821</td>
-      <td>27.04.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 232</td>
-    </tr>
-    <tr>
-      <td>1846</td>
-      <td></td>
-      <td>08.05.1830</td>
-      <td>Gespräch</td>
-      <td>Graf Andrzej Edward Kozmian</td>
-      <td></td>
-      <td>Biedermann 7, 230</td>
-    </tr>
-    <tr>
-      <td>1847</td>
-      <td></td>
-      <td>15.05.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 242</td>
-    </tr>
-    <tr>
-      <td>1848</td>
-      <td></td>
-      <td>02.06.1830</td>
-      <td>Gespräch</td>
-      <td>Felix Bartholdy Mendelssohn</td>
-      <td></td>
-      <td>Biedermann 7, 310</td>
-    </tr>
-    <tr>
-      <td>1849</td>
-      <td></td>
-      <td>02.06.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 251</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>06.06.1830</td>
-      <td>Brief</td>
-      <td>Felix Bartholdy Mendelssohn</td>
-      <td>Abraham Mendelssohn Bartholdy; Lea Mendelssohn Bartholdy</td>
-      <td>Felix Mendelssohn-Barholdy, Reisebriefe. Hg. v. P. Mendelssohn-Barholdy, Leipzig 1861, 12f</td>
-    </tr>
-    <tr>
-      <td>1850</td>
-      <td>822</td>
-      <td>08.06.1830</td>
-      <td>Gespräch</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>Biedermann 7, 314</td>
-    </tr>
-    <tr>
-      <td>1851</td>
-      <td>823</td>
-      <td>12.06.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 255</td>
-    </tr>
-    <tr>
-      <td>1852</td>
-      <td>824</td>
-      <td>14.06.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 256</td>
-    </tr>
-    <tr>
-      <td>1853</td>
-      <td>825</td>
-      <td>15.06.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 257</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>826</td>
-      <td>18.06.1830</td>
-      <td>Paralipomenon</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 225</td>
-    </tr>
-    <tr>
-      <td>1854</td>
-      <td>827</td>
-      <td>25.06.1830</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>August von Goethe</td>
-      <td>GJ 11, 99</td>
-    </tr>
-    <tr>
-      <td>1855</td>
-      <td></td>
-      <td>28.06.1830</td>
-      <td>Gespräch</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>Biedermann 7, 317</td>
-    </tr>
-    <tr>
-      <td>1856</td>
-      <td>828</td>
-      <td>09.07.1830</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>WA I, 15 (2), 4</td>
-    </tr>
-    <tr>
-      <td>1857</td>
-      <td>829</td>
-      <td>13.07.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 273</td>
-    </tr>
-    <tr>
-      <td>1858</td>
-      <td>830</td>
-      <td>31.07.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 282</td>
-    </tr>
-    <tr>
-      <td>1859</td>
-      <td>831</td>
-      <td>09.08.1830</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Peter Eckermann</td>
-      <td>WA I, 15 (2), 9</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>832</td>
-      <td>14.09.1830</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 2, 155</td>
-    </tr>
-    <tr>
-      <td>1860</td>
-      <td>833</td>
-      <td>08.10.1830</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Ernst Schubarth</td>
-      <td>G-Schiller-Archiv</td>
-    </tr>
-    <tr>
-      <td>1861</td>
-      <td>17</td>
-      <td>15.11.1830</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 29, 97</td>
-    </tr>
-    <tr>
-      <td>1862</td>
-      <td>834</td>
-      <td>30.11.1830</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Gespräche mit G. Hrsg. Eckermann. Leipzig, 1885. 2, 168</td>
-    </tr>
-    <tr>
-      <td>1863</td>
-      <td>835</td>
-      <td>02.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 337</td>
-    </tr>
-    <tr>
-      <td>1864</td>
-      <td>836; 837</td>
-      <td>04.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 338</td>
-    </tr>
-    <tr>
-      <td>1865</td>
-      <td></td>
-      <td>06.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 339</td>
-    </tr>
-    <tr>
-      <td>1866</td>
-      <td></td>
-      <td>07.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 339</td>
-    </tr>
-    <tr>
-      <td>1867</td>
-      <td>838</td>
-      <td>11.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 341</td>
-    </tr>
-    <tr>
-      <td>1868</td>
-      <td>839</td>
-      <td>12.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 342</td>
-    </tr>
-    <tr>
-      <td>1869</td>
-      <td></td>
-      <td>13.12.1830</td>
-      <td>Gespräch</td>
-      <td>Verfasser des Artikels</td>
-      <td></td>
-      <td>GJ 24, 37</td>
-    </tr>
-    <tr>
-      <td>1870</td>
-      <td>840</td>
-      <td>13.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 343</td>
-    </tr>
-    <tr>
-      <td>1871</td>
-      <td>841</td>
-      <td>14.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 343</td>
-    </tr>
-    <tr>
-      <td>1872</td>
-      <td>842</td>
-      <td>15.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 343</td>
-    </tr>
-    <tr>
-      <td>1873</td>
-      <td>843</td>
-      <td>16.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 344</td>
-    </tr>
-    <tr>
-      <td>1874</td>
-      <td>844</td>
-      <td>17.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 345</td>
-    </tr>
-    <tr>
-      <td>1875</td>
-      <td>845</td>
-      <td>21.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 347</td>
-    </tr>
-    <tr>
-      <td>1876</td>
-      <td></td>
-      <td>30.12.1830</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 12, 352</td>
-    </tr>
-    <tr>
-      <td>1877</td>
-      <td>846</td>
-      <td>04.01.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 104</td>
-    </tr>
-    <tr>
-      <td>1878</td>
-      <td>847</td>
-      <td>05.01.1831</td>
-      <td>Gespräch</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>Biedermann 8, 3</td>
-    </tr>
-    <tr>
-      <td>1879</td>
-      <td>848</td>
-      <td>08.01.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 110</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>22.01.1831</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>QuZ II, 693-695 (Tewes, 273)</td>
-    </tr>
-    <tr>
-      <td>1880</td>
-      <td></td>
-      <td>10.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 27</td>
-    </tr>
-    <tr>
-      <td>1881</td>
-      <td>849</td>
-      <td>11.02.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 7</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>11.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 525ff</td>
-    </tr>
-    <tr>
-      <td>1882</td>
-      <td>850</td>
-      <td>12.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 28</td>
-    </tr>
-    <tr>
-      <td>1883</td>
-      <td>851</td>
-      <td>13.02.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 9f</td>
-    </tr>
-    <tr>
-      <td>1884</td>
-      <td></td>
-      <td>13.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 28</td>
-    </tr>
-    <tr>
-      <td>1885</td>
-      <td>853</td>
-      <td>17.02.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 20ff</td>
-    </tr>
-    <tr>
-      <td>1886</td>
-      <td>852</td>
-      <td>17.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 31</td>
-    </tr>
-    <tr>
-      <td>1887</td>
-      <td>854</td>
-      <td>20.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 33</td>
-    </tr>
-    <tr>
-      <td>1888</td>
-      <td>855</td>
-      <td>21.02.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 31ff</td>
-    </tr>
-    <tr>
-      <td>1889</td>
-      <td></td>
-      <td>25.02.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 37</td>
-    </tr>
-    <tr>
-      <td>1890</td>
-      <td>856</td>
-      <td>02.03.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 36</td>
-    </tr>
-    <tr>
-      <td>1891</td>
-      <td></td>
-      <td>09.03.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 160</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>16.03.1831</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Friedrich Rochlitz</td>
-      <td>Rochlitz' Briefwechsel mit G., 476f</td>
-    </tr>
-    <tr>
-      <td>1892</td>
-      <td>857</td>
-      <td>27.03.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 65</td>
-    </tr>
-    <tr>
-      <td>1893</td>
-      <td></td>
-      <td>05.04.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 57</td>
-    </tr>
-    <tr>
-      <td>1894</td>
-      <td></td>
-      <td>06.04.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 58</td>
-    </tr>
-    <tr>
-      <td>1895</td>
-      <td>858</td>
-      <td>09.04.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 59</td>
-    </tr>
-    <tr>
-      <td>1896</td>
-      <td></td>
-      <td>17.04.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Jakob Schmied</td>
-      <td></td>
-      <td>Biedermann 8, 80</td>
-    </tr>
-    <tr>
-      <td>1897</td>
-      <td></td>
-      <td>24.04.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Lyser</td>
-      <td></td>
-      <td>Euphorion (1902) 9, 340</td>
-    </tr>
-    <tr>
-      <td>1898</td>
-      <td>859</td>
-      <td>30.04.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 70</td>
-    </tr>
-    <tr>
-      <td>1899</td>
-      <td>860</td>
-      <td>01.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 70</td>
-    </tr>
-    <tr>
-      <td>1900</td>
-      <td>862</td>
-      <td>02.05.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 82</td>
-    </tr>
-    <tr>
-      <td>1901</td>
-      <td>861</td>
-      <td>02.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 71</td>
-    </tr>
-    <tr>
-      <td>1902</td>
-      <td>863</td>
-      <td>03.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 72</td>
-    </tr>
-    <tr>
-      <td>1903</td>
-      <td>864</td>
-      <td>04.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 72</td>
-    </tr>
-    <tr>
-      <td>1904</td>
-      <td>865</td>
-      <td>05.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 72</td>
-    </tr>
-    <tr>
-      <td>1905</td>
-      <td>866</td>
-      <td>06.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 73</td>
-    </tr>
-    <tr>
-      <td>1906</td>
-      <td>867</td>
-      <td>07.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 74</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.05.1831</td>
-      <td>Gespräch</td>
-      <td>Frédéric Soret</td>
-      <td></td>
-      <td>Biedermann (2) IV, 369</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>Houben, Soret, 535f</td>
-    </tr>
-    <tr>
-      <td>1907</td>
-      <td>868</td>
-      <td>11.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 76</td>
-    </tr>
-    <tr>
-      <td>1908</td>
-      <td>869</td>
-      <td>12.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 76</td>
-    </tr>
-    <tr>
-      <td>1909</td>
-      <td>870</td>
-      <td>14.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 77</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>871</td>
-      <td>16.05.1831</td>
-      <td>Paralipomenon</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 15 (2), 133</td>
-    </tr>
-    <tr>
-      <td>1910</td>
-      <td>874</td>
-      <td>05.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 193</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>15.05.1831</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ II, 705-707 (Tewes, 269-271)</td>
-    </tr>
-    <tr>
-      <td>1911</td>
-      <td>872</td>
-      <td>17.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 79</td>
-    </tr>
-    <tr>
-      <td>1912</td>
-      <td>873</td>
-      <td>21.05.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 81</td>
-    </tr>
-    <tr>
-      <td>1913</td>
-      <td>911</td>
-      <td>01.06.1831</td>
-      <td>Gespräch</td>
-      <td>Friedrich Rochlitz</td>
-      <td></td>
-      <td>GJ 18, 156</td>
-    </tr>
-    <tr>
-      <td>1914</td>
-      <td>876</td>
-      <td>06.06.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 93f</td>
-    </tr>
-    <tr>
-      <td>1915</td>
-      <td>875</td>
-      <td>06.06.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 86</td>
-    </tr>
-    <tr>
-      <td>1915a</td>
-      <td></td>
-      <td>07.06.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Marianne Willmer</td>
-      <td>Willemers Briefwechsel mit G. Hrsg. Creizenach. Stuttgart, 1878. 306</td>
-    </tr>
-    <tr>
-      <td>1916</td>
-      <td>877</td>
-      <td>07.06.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 86</td>
-    </tr>
-    <tr>
-      <td>1917</td>
-      <td></td>
-      <td>09.06.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 196f</td>
-    </tr>
-    <tr>
-      <td>1918</td>
-      <td></td>
-      <td>18.06.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 212</td>
-    </tr>
-    <tr>
-      <td>1919</td>
-      <td>878</td>
-      <td>26.06.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 100</td>
-    </tr>
-    <tr>
-      <td>1920</td>
-      <td>879</td>
-      <td>28.06.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 101</td>
-    </tr>
-    <tr>
-      <td>1921</td>
-      <td>880</td>
-      <td>29.06.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 102</td>
-    </tr>
-    <tr>
-      <td>1922</td>
-      <td>881</td>
-      <td>30.06.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 102</td>
-    </tr>
-    <tr>
-      <td>1923</td>
-      <td>882</td>
-      <td>01.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 103</td>
-    </tr>
-    <tr>
-      <td>1924</td>
-      <td>883</td>
-      <td>02.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 103</td>
-    </tr>
-    <tr>
-      <td>1925</td>
-      <td>884</td>
-      <td>03.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 104</td>
-    </tr>
-    <tr>
-      <td>1926</td>
-      <td>885</td>
-      <td>04.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 104</td>
-    </tr>
-    <tr>
-      <td>1927</td>
-      <td>886</td>
-      <td>05.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 104</td>
-    </tr>
-    <tr>
-      <td>1928</td>
-      <td>887</td>
-      <td>06.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 105</td>
-    </tr>
-    <tr>
-      <td>1929</td>
-      <td>888</td>
-      <td>07.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 105</td>
-    </tr>
-    <tr>
-      <td>1930</td>
-      <td></td>
-      <td>08.07.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 233</td>
-    </tr>
-    <tr>
-      <td>1931</td>
-      <td>889</td>
-      <td>08.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 105</td>
-    </tr>
-    <tr>
-      <td>1932</td>
-      <td>890</td>
-      <td>09.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 106</td>
-    </tr>
-    <tr>
-      <td>1933</td>
-      <td>891</td>
-      <td>10.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 106</td>
-    </tr>
-    <tr>
-      <td>1934</td>
-      <td>892</td>
-      <td>11.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 107</td>
-    </tr>
-    <tr>
-      <td>1935</td>
-      <td>893</td>
-      <td>12.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 107</td>
-    </tr>
-    <tr>
-      <td>1936</td>
-      <td>894</td>
-      <td>13.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 108</td>
-    </tr>
-    <tr>
-      <td>1937</td>
-      <td>895</td>
-      <td>14.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 108</td>
-    </tr>
-    <tr>
-      <td>1938</td>
-      <td>896</td>
-      <td>15.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 109</td>
-    </tr>
-    <tr>
-      <td>1939</td>
-      <td>897</td>
-      <td>18.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 110</td>
-    </tr>
-    <tr>
-      <td>1940</td>
-      <td>898</td>
-      <td>19.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 110</td>
-    </tr>
-    <tr>
-      <td>1941</td>
-      <td>900</td>
-      <td>20.07.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Johann Heinrich Meyer</td>
-      <td>Kunst und Alterthum 6 (3), 618f</td>
-    </tr>
-    <tr>
-      <td>1942</td>
-      <td>899</td>
-      <td>20.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 111</td>
-    </tr>
-    <tr>
-      <td>1943</td>
-      <td>901</td>
-      <td>21.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 112</td>
-    </tr>
-    <tr>
-      <td>1944</td>
-      <td>903</td>
-      <td>22.07.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Sulpiz Boisserée</td>
-      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 571</td>
-    </tr>
-    <tr>
-      <td>1945</td>
-      <td>902</td>
-      <td>22.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 112</td>
-    </tr>
-    <tr>
-      <td>1946</td>
-      <td>904</td>
-      <td>25.07.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 114</td>
-    </tr>
-    <tr>
-      <td>1947</td>
-      <td>876</td>
-      <td>08.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Biedermann 8, 100</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.1831</td>
-      <td>Gespräch</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Houben 1, 588f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>04.08.1831</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 224ff</td>
-    </tr>
-    <tr>
-      <td>1948</td>
-      <td></td>
-      <td>25.08.1831</td>
-      <td>Gespräch</td>
-      <td>Friedrich Förster</td>
-      <td></td>
-      <td>Kunst und Leben. Försters Nachlass. Hrsg. Kletke. Berlin, 1873. 216ff</td>
-    </tr>
-    <tr>
-      <td>1949</td>
-      <td>905</td>
-      <td>04.09.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich Zelter</td>
-      <td>Zelters Briefwechsel mit G. Hrsg. Riemer. Berlin, 1834. 6, 282</td>
-    </tr>
-    <tr>
-      <td>1950</td>
-      <td>906</td>
-      <td>07.09.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Friedrich von Reinhard</td>
-      <td>Reinhards Briefwechsel mit G. Stuttgart &amp; Tübingen, 1850. 322</td>
-    </tr>
-    <tr>
-      <td>1951</td>
-      <td>907</td>
-      <td>08.09.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Sulpiz Boisserée</td>
-      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 574</td>
-    </tr>
-    <tr>
-      <td>1952</td>
-      <td>909</td>
-      <td>10.09.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 136</td>
-    </tr>
-    <tr>
-      <td>1953</td>
-      <td></td>
-      <td>19.09.1831</td>
-      <td>Brief</td>
-      <td></td>
-      <td>Karl Nehrlich</td>
-      <td>Kürschners hist. krit. Ausgabe 30, 611 Anm.</td>
-    </tr>
-    <tr>
-      <td>1954</td>
-      <td>908</td>
-      <td>27.09.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Sulpiz Boisserée</td>
-      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 577</td>
-    </tr>
-    <tr>
-      <td>1955</td>
-      <td></td>
-      <td>16.10.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 156</td>
-    </tr>
-    <tr>
-      <td>1956</td>
-      <td></td>
-      <td>02.11.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 164</td>
-    </tr>
-    <tr>
-      <td>1957</td>
-      <td></td>
-      <td>10.11.1831</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 49 (1), 346f</td>
-    </tr>
-    <tr>
-      <td>1958</td>
-      <td></td>
-      <td>10.11.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Nehrlich</td>
-      <td>G-Schiller-Archiv</td>
-    </tr>
-    <tr>
-      <td>1959</td>
-      <td>910</td>
-      <td>24.11.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Sulpiz Boisserée</td>
-      <td>Sulpiz Boisserée. Stuttgart, 1862. 2, 581f</td>
-    </tr>
-    <tr>
-      <td>1960</td>
-      <td></td>
-      <td>26.11.1831</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 178</td>
-    </tr>
-    <tr>
-      <td>1961</td>
-      <td>912</td>
-      <td>01.12.1831</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm von Humboldt</td>
-      <td>Gebrüder Humboldt Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 295f</td>
-    </tr>
-    <tr>
-      <td>1962</td>
-      <td>853</td>
-      <td>1831</td>
-      <td>Gespräch</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>Biedermann 8, 123f</td>
-    </tr>
-    <tr>
-      <td>1963</td>
-      <td>975</td>
-      <td>1831</td>
-      <td>Gespräch</td>
-      <td>Graf S.</td>
-      <td></td>
-      <td>Biedermann 8, 218f</td>
-    </tr>
-    <tr>
-      <td>1964</td>
-      <td>913</td>
-      <td>02.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 199</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>914</td>
-      <td>06.01.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm von Humboldt</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 298f</td>
-    </tr>
-    <tr>
-      <td>1965</td>
-      <td>915</td>
-      <td>08.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 203</td>
-    </tr>
-    <tr>
-      <td>1966</td>
-      <td>916</td>
-      <td>09.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 204</td>
-    </tr>
-    <tr>
-      <td>1967</td>
-      <td>917</td>
-      <td>12.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 205</td>
-    </tr>
-    <tr>
-      <td>1968</td>
-      <td>918</td>
-      <td>13.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 206</td>
-    </tr>
-    <tr>
-      <td>1969</td>
-      <td>919</td>
-      <td>14.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 206</td>
-    </tr>
-    <tr>
-      <td>1970</td>
-      <td>920</td>
-      <td>15.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 206</td>
-    </tr>
-    <tr>
-      <td>1971</td>
-      <td>921</td>
-      <td>16.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 207</td>
-    </tr>
-    <tr>
-      <td>1972</td>
-      <td>922</td>
-      <td>17.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 207</td>
-    </tr>
-    <tr>
-      <td>1973</td>
-      <td>924</td>
-      <td>18.01.1832</td>
-      <td>Text</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA I, 5 (1), 109</td>
-    </tr>
-    <tr>
-      <td>1974</td>
-      <td>923</td>
-      <td>18.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 207</td>
-    </tr>
-    <tr>
-      <td>1975</td>
-      <td></td>
-      <td>19.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 207</td>
-    </tr>
-    <tr>
-      <td>1976</td>
-      <td>925</td>
-      <td>20.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 208</td>
-    </tr>
-    <tr>
-      <td>1977</td>
-      <td>926</td>
-      <td>24.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 210</td>
-    </tr>
-    <tr>
-      <td>1978</td>
-      <td>927</td>
-      <td>27.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 211</td>
-    </tr>
-    <tr>
-      <td>1979</td>
-      <td>928</td>
-      <td>29.01.1832</td>
-      <td>Tagebuch</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td></td>
-      <td>WA III, 13, 212</td>
-    </tr>
-    <tr>
-      <td>1980</td>
-      <td>929</td>
-      <td>14.02.1832</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Ernst Schubarth</td>
-      <td>Schubarths Briefwechsel mit G. In: Deutsche Rundschau 1875 (2), 1. 30</td>
-    </tr>
-    <tr>
-      <td>1981</td>
-      <td>930</td>
-      <td>17.03.1832</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Wilhelm von Humboldt</td>
-      <td>Gebrüder Humboldts Briefwechsel mit G. Hrsg. Bratranek. Leipzig, 1876. 302</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.04.1832</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 19</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>03-04-1832</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Friedrich Rochlitz</td>
-      <td>QuZ III, 20, A. 2</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>25.04.1832</td>
-      <td>Brief</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>Georg Andreas Reimer</td>
-      <td>QuZ III, 19f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>27.04.1832</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 20</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.05.1832</td>
-      <td>Gespräch</td>
-      <td>Frédéric Soret</td>
-      <td></td>
-      <td>Houben, Soret, 535f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>22.05.1832</td>
-      <td>Brief (Konzept)</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 20-23</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>23.05.1832</td>
-      <td>Brief (Entwurf)</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 23-25</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>21.07.1832</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 36f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.08.1832</td>
-      <td>Brief</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 40</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>17.09.1832</td>
-      <td>Tagebucheintrag</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>QuZ III, 42, Anm. 7</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>20.09.1832</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 59</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>20.09.1832</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 59, A. 4</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>20.09.1832</td>
-      <td>Tagebuch</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>Pollmer (b), 34</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>21.09.1832</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>Houben II, 27f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>21.09.1832</td>
-      <td>Tagebuch</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>Pollmer (b), 34</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>21.09.1832</td>
-      <td>Brief</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 63</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.10.1832</td>
-      <td>Tagebuch</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>QuZ III, 63</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>03.10.1832</td>
-      <td>Brief</td>
-      <td>Cottasche Buchhandlung</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 64</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>14.10.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 65f.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>21.10.1832</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 71-73</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>24.10.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 75f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>26.10.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 78</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>28.10.1832</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 78f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>28.10.1832</td>
-      <td>Brief (Konzept)</td>
-      <td>Friedrich von Müller</td>
-      <td>Wilhelm Reichel</td>
-      <td>QuZ III, 79</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>30.10.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 81</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.11.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 82</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>03.11.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 82</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>06.11.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 85</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>10.11.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 86</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>13.11.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 87</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>17.11.1832</td>
-      <td>Brief</td>
-      <td>Johann Georg von Cotta</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 90</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>19.11.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 91f.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.12.1832</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 92</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.12.1832</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 93</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>Nach 01.12.1832</td>
-      <td>Brief</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 94</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>09.12.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 96</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>12.12.1832</td>
-      <td>Brief (Konzept)</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>QuZ III, 101</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>23.12.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 110</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>30.12.1832</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 113f.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.01.1833</td>
-      <td>Brief (Konzept)</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Georg Cotta</td>
-      <td>QuZ III, 114</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.01.1833</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 115</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>06.01.1833</td>
-      <td>Brief</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 116</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>(21. bis 23. 01.1833)</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 129</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>(vor 12.02.1833)</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 139</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>12.02.1833</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Wilhelm Reichel</td>
-      <td>QuZ III, 139f.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>12.02.1833</td>
-      <td>Text</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>QuZ III, 140f.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>(24.01.1833)</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 146</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>25.01.1833</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 146</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>25.02.1833</td>
-      <td>Brief (Konzept)</td>
-      <td>Friedrich von Müller</td>
-      <td>Wilhelm Reichel</td>
-      <td>QuZ III, 147</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>25.02.1833</td>
-      <td>Text</td>
-      <td>Friedrich von Müller</td>
-      <td></td>
-      <td>QuZ III, 148-150</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.03.1833</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 151</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>04.03.1833</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 152</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.03.1833</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 159f.</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>11.03.1833</td>
-      <td>Brief</td>
-      <td>Wilhelm Reichel</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 163</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>(13.03.1833)</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 164</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.04.1833</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Georg Cotta</td>
-      <td>QuZ III, 193-195</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.04.1833</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Peter Eckermann</td>
-      <td>QuZ III, 204</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.04.1833</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 204-206</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>15.04.1833</td>
-      <td>Brief</td>
-      <td>Johann Friedrich von Cotta</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 207-208</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>08.07.1834</td>
-      <td>Brief (Konzept)</td>
-      <td>Friedrich von Müller</td>
-      <td>Johann Georg Cotta</td>
-      <td>QuZ III, 286-287</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>09.11.1834</td>
-      <td>Text</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>QuZ III, 292-293</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>29.12.1834</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 316f</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>30.01.1835</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td>QuZ III, 330</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>(Ende Jan./Anf. Febr. 1835)</td>
-      <td>Text</td>
-      <td>Friedrich Wilhelm Riemer</td>
-      <td></td>
-      <td>QuZ III, 331-332</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>05.01.1836</td>
-      <td>Brief</td>
-      <td>Christian Theodor Musculus</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 358</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>Beilage</td>
-      <td>Christian Theodor Musculus</td>
-      <td></td>
-      <td>QuZ III, 358-359</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>01.06.1836</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 388</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>02.06.1836</td>
-      <td>Brief</td>
-      <td>Johann Peter Eckermann</td>
-      <td>Friedrich von Müller</td>
-      <td>QuZ III, 388-389</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>13.06.1836</td>
-      <td>Brief</td>
-      <td>Friedrich von Müller</td>
-      <td>Cottasche Buchhandlung</td>
-      <td>QuZ III, 390-391</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>1825</td>
-      <td>Text</td>
-      <td>Caroline von Wolzogen</td>
-      <td></td>
-      <td>JbGG 16 (1930), 211</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>?</td>
-      <td>Text</td>
-      <td>Johann Peter Eckermann</td>
-      <td></td>
-      <td>Tewes, Faust, Xff</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>1845</td>
-      <td>Gespräch</td>
-      <td>Theodor Siebs</td>
-      <td></td>
-      <td>Th. Siebs, Hermann Allmers, Berlin 1915, 79.</td>
-    </tr>
-    <tr>
-      <td>1255</td>
-      <td></td>
-      <td>27.05.1823</td>
-      <td>Brief</td>
-      <td>Johann Wolfgang Goethe</td>
-      <td>Karl Theodor Küstner</td>
-      <td>Biedermann: Goethe-Leipzig. 2, 187</td>
     </tr>
   </tbody>
 </table>
