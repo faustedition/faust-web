@@ -127,7 +127,7 @@ var Faust = (function(){
 
 
     var NUMBERPLUS = /^(-?[\d,.]+)\s?(\w*)$/;
-    var DATE_DE    = /^(?:(?:(\d\d))\.(\d\d))\.?(\d+)$/;
+    var DATE_DE    = /(?:(?:(\d\d)\.)?(\d\d)\.)?(\d\d\d\d)/;
     var BIB        = /^(\D+)(\d+)(\D+)(\d+)(\D+)/;
     var matchSpace = function matchSpace(a) { return a.match(/^\s*$/); }
     if (typeof(Sortable) !== "undefined") {
@@ -153,11 +153,14 @@ var Faust = (function(){
           comparator: function(a) {
             var split = DATE_DE.exec(a);
             var result;
-            if (split) 
-              result = split[3] + "-" + split[2] + "-" + split[1];
+            if (split)
+              result = split[3] + "-" + (split[2]? split[2] : "00") + "-" + (split[1]? split[1] : "00");
             else
               result = "9999-99-99";
             return result;
+          },
+          compare: function(a, b) {
+            return a.localeCompare(b);
           },
           bottom: matchSpace
         },
