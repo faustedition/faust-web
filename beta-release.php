@@ -49,7 +49,7 @@
             <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
             Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
-        <h2>Release am 11. Oktober 2016 (Beta-Version 2)</h2>
+        <h2>Release am 17. Oktober 2016 (Beta-Version 2)</h2>
         <p>Die Beta-Version 2 bringt zahlreiche Änderungen der Benutzeroberfläche mit sich, von denen hier nur die wichtigsten genannt werden können:</p>
         <h3>Archiv</h3>
         <ul>
