@@ -4,7 +4,7 @@
         <p>Die zurzeit sichtbare Version der Ausgabe ist noch nicht endgültig, sondern
             eine Beta-Version. Mit den drei Säulen „Archiv“, „Genese“ und „Text“ sind hier jedoch 
             bereits alle grundlegenden Funktionalitäten realisiert.</p>
-        <p>Die Erscheinung der Version 1.0 ist für das Frühjahr 2017 vorgesehen. Sie soll einige
+        <p>Die Version 1.0 wird einige
             Leistungen und Bestandteile enthalten, die in der Beta-Version noch fehlen:</p>
         <p>Die Ausgabe stellt bereits in der Beta-Version das komplette <strong>Archiv</strong> der Faust-Handschriften und der
             Drucke zu Lebzeiten als Faksimile und in dokumentarischer wie textueller Umschrift samt
