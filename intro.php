@@ -178,7 +178,7 @@
             ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2.</p>
             
         <h3>Weitere Siglen</h3>
-        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, der Präfix R bezeichnet eine Restkategorie.</p>
+        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, das Präfix R bezeichnet eine Restkategorie.</p>
         
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
