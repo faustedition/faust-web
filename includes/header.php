@@ -19,7 +19,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Faust-Edition [beta 2]</title>
+    <title>Faust-Edition [alpha]</title>
 
     <script type="text/javascript" src="js/sortable.min.js"></script>
 
@@ -53,7 +53,7 @@
     <header>
         <div class="logo">
           <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
-          <sup class="pure-fade-50"><mark>beta 2</mark></sup>
+          <sup class="pure-fade-50"><mark>alpha</mark></sup>
         </div>
         <div class="breadcrumbs pure-right pure-nowrap pure-fade-50">
           <small id="breadcrumbs"></small>
