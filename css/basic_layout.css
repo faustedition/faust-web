@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Symbola;
-  src: url(../fonts/Symbola.ttf) format("truetype");
-}
-
 html, body {
   min-height: 100%;
 }
