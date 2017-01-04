@@ -380,7 +380,7 @@ var Faust = (function(){
             }
 
             // determine if documentary transcript has images attached
-            if(currentDocTranscript.img) {
+            if(currentDocTranscript.img && currentDocTranscript.img.length > 0) {
               resultDocTranscript.hasImages = true;
               resultDocTranscript.imageCount = currentDocTranscript.img.length;
               resultDocTranscript.images = currentDocTranscript.img.map(function(currentImage) {
