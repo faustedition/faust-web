@@ -128,7 +128,7 @@ var Faust = (function(){
 
     var NUMBERPLUS = /^(-?[\d,.]+)\s?(\w*)$/;
     var DATE_DE    = /(?:(?:(\d\d)\.)?(\d\d)\.)?(\d\d\d\d)/;
-    var BIB        = /^(\D+)(\d+)(\D+)(\d+)(\D+)/;
+    var BIB        = /^(\D*)(\d*)(\D*)(\d*)(\D*)(\d*)(\D*)(\d*)(\D*)(\d*)(\D*)/;
     var matchSpace = function matchSpace(a) { return a.match(/^\s*$/); }
     if (typeof(Sortable) !== "undefined") {
       Sortable.setupTypes([
@@ -187,7 +187,13 @@ var Faust = (function(){
                    _a[2] - _b[2] || 
                    _a[3].localeCompare(_b[3]) || 
                    _a[4] - _b[4] ||
-                   _a[5].localeCompare(_b[5]);
+                   _a[5].localeCompare(_b[5]) || 
+                   _a[6] - _b[6] ||
+                   _a[7].localeCompare(_b[7]) || 
+                   _a[8] - _b[8] ||
+                   _a[9].localeCompare(_b[9]) || 
+                   _a[10] - _b[10] ||
+                   _a[11].localeCompare(_b[11]); 
           },
           bottom: matchSpace
         },
