@@ -409,3 +409,17 @@ div:hover > a.sigil {
 	font-variant: small-caps;
 	font-style: normal;
 }
+
+.testimony a.testimony {
+  margin: 0;
+  margin-right: -7.5em;
+}
+a.testimony {
+  float: right;
+  margin: 6px;
+  margin-right: 0;
+  position: relative;
+}
+.testimony .pageno {
+  margin-right: 0;
+}
