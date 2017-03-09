@@ -422,4 +422,5 @@ a.testimony {
 }
 .testimony .pageno {
   margin-right: 0;
+  margin-left: .25em;
 }
