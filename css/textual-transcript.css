@@ -424,3 +424,31 @@ a.testimony {
   margin-right: 0;
   margin-left: .25em;
 }
+
+.testimony .rend-italic, .testimony .rend-letter-spaced, .testimony .rend-antiqua {
+  font-style: italic;
+}
+.testimony .rend-sup, .testimony .rend-small {
+  font-size: .83em; 
+}
+.testimony .rend-sup {
+  vertical-align: super;
+}
+.testimony .rend-indentchar-m8n12, .testimony .rend-indentchar-m8n8, .testimony .rend-indented, .testimony .rend-indentchar-m4n8 {
+  text-indent: 3em;
+}
+.testimony .rend-right {
+  text-align: right;
+}
+.testimony .rend-centered {
+  text-align: center; 
+}
+.testimony .rend-underline {
+  text-decoration: underline;
+}
+.testimony .rend-bold {
+  font-weight: bold;
+}
+.testimony .rend-strikethrough {
+  text-decoration: line-through;
+}
