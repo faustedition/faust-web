@@ -410,6 +410,10 @@ div:hover > a.sigil {
 	font-style: normal;
 }
 
+.testimony .text {
+  text-indent: 0;
+}
+
 .testimony a.testimony {
   margin: 0;
   margin-right: -7.5em;
