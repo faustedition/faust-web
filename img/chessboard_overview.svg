@@ -109,11 +109,11 @@
     <g id="rightGroup" transform="translate(520, 0)">
 
       <g transform="translate(10,-10)">
-        <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">Akt I</text>
-        <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">Akt II</text>
-        <text x="0" y="0" transform="translate(50,0) rotate(-45)" class="columnText">Akt III</text>
-        <text x="0" y="0" transform="translate(75,0) rotate(-45)" class="columnText">Akt IV</text>
-        <text x="0" y="0" transform="translate(100,0) rotate(-45)" class="columnText">Akt V</text>
+        <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">I. Akt</text>
+        <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">II. Akt</text>
+        <text x="0" y="0" transform="translate(50,0) rotate(-45)" class="columnText">III. Akt</text>
+        <text x="0" y="0" transform="translate(75,0) rotate(-45)" class="columnText">IV. Akt</text>
+        <text x="0" y="0" transform="translate(100,0) rotate(-45)" class="columnText">V. Akt</text>
       </g>
 
       <g transform="translate(0,0)">

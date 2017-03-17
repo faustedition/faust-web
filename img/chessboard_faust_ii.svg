@@ -16,7 +16,6 @@
         font-family: Ubuntu;
         font-weight: 400;
         font-size: 16pt;
-        font-weight: bold;
         font-style: normal;
         text-anchor: middle;
         fill: black;
@@ -63,11 +62,11 @@
 
   <g transform="translate(100,75)">
     <g transform="translate(11.25,-30)">
-      <text x="0" y="0" transform="translate(75,0)" class="columnText">I</text>
-      <text x="0" y="0" transform="translate(275,0)" class="columnText">II</text>
-      <text x="0" y="0" transform="translate(425,0)" class="columnText">III</text>
-      <text x="0" y="0" transform="translate(525,0)" class="columnText">IV</text>
-      <text x="0" y="0" transform="translate(675,0)" class="columnText">V</text>
+      <text x="0" y="0" transform="translate(75,0)" class="columnText">I. Akt</text>
+      <text x="0" y="0" transform="translate(275,0)" class="columnText">II. Akt</text>
+      <text x="0" y="0" transform="translate(425,0)" class="columnText">III. Akt</text>
+      <text x="0" y="0" transform="translate(525,0)" class="columnText">IV. Akt</text>
+      <text x="0" y="0" transform="translate(675,0)" class="columnText">V. Akt</text>
     </g>
 
     <g transform="translate(0,0)">
