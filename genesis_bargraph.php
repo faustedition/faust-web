@@ -115,7 +115,8 @@
     return result;
   }
 
-  function genesisBreadcrumbData(sceneData) {
+  function genesisBreadcrumbData(firstLine, lastLine, detailed) {
+    sceneData = findScene(firstLine, lastLine);
     var breadcrumbs = [{caption: "Genese", link: "genesis"}];
     if (sceneData.length > 0) {
       if (sceneData[0].id[0] === "1") {
@@ -127,10 +128,21 @@
         breadcrumbs.push({caption: scene.title, link: "genesis_bargraph?rangeStart=" + scene.rangeStart + "&rangeEnd=" + scene.rangeEnd});
       });
     }
+
+    if (detailed) {
+      breadcrumbs.push({caption: firstLine + " – " + lastLine});
+      if (sceneData.length > 0) {
+        var scene = sceneData[sceneData.length - 1];
+        if (scene.rangeStart === firstLine && scene.rangeEnd === lastLine) {
+          breadcrumbs.pop();
+        }
+      }
+    }
+
     return breadcrumbs;
   }
 
-  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs(genesisBreadcrumbData(findScene(firstLine, lastLine))));
+  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs(genesisBreadcrumbData(firstLine, lastLine, true)));
 
   var horizontalDistance = 30;
   var verticalDistance = 20;
