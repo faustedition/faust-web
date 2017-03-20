@@ -104,22 +104,33 @@
   var lastLine = visibleRange.rangeEnd;
   var numberOfLines = lastLine - firstLine + 1;
 
-  // determine current scene title and scene-line-mapping id
-  var sceneTitle;
-  var sceneLineMappingId;
-  sceneLineMapping.forEach(function(mappingData) {
-    if(firstLine >= mappingData.rangeStart && lastLine <= mappingData.rangeEnd) {
-      sceneLineMappingId = mappingData.id;
-      sceneTitle = mappingData.title;
-    }
-  });
-
-  // set breadcrumbs
-  if(sceneLineMappingId && sceneLineMappingId.split(".")[0] === "1") {
-    document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneTitle}]));
-  } else {
-    document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneTitle}]));
+  function findScene(firstLine, lastLine) {
+    var result = [];
+    sceneLineMapping.forEach(function(mappingData) {
+      if(firstLine >= mappingData.rangeStart && lastLine <= mappingData.rangeEnd) {
+          result.push(mappingData);
+      }
+    });
+    result.reverse();
+    return result;
   }
+
+  function genesisBreadcrumbData(sceneData) {
+    var breadcrumbs = [{caption: "Genese", link: "genesis"}];
+    if (sceneData.length > 0) {
+      if (sceneData[0].id[0] === "1") {
+        breadcrumbs.push({caption: "Faust I", link: "genesis_faust_i"});
+      } else {
+        breadcrumbs.push({caption: "Faust II", link: "genesis_faust_ii"});
+      } 
+      sceneData.forEach(function(scene) {
+        breadcrumbs.push({caption: scene.title, link: "genesis_bargraph?rangeStart=" + scene.rangeStart + "&rangeEnd=" + scene.rangeEnd});
+      });
+    }
+    return breadcrumbs;
+  }
+
+  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs(genesisBreadcrumbData(findScene(firstLine, lastLine))));
 
   var horizontalDistance = 30;
   var verticalDistance = 20;
