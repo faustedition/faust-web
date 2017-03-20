@@ -972,6 +972,44 @@ var Faust = (function(){
     }
   };
 
+  Faust.findScene = function findScene(firstLine, lastLine) {
+    var result = [];
+    sceneLineMapping.forEach(function(mappingData) {
+      if(firstLine >= mappingData.rangeStart && lastLine <= mappingData.rangeEnd) {
+          result.push(mappingData);
+      }
+    });
+    result.reverse();
+    return result;
+  };
+
+  Faust.genesisBreadcrumbData = function genesisBreadcrumbData(firstLine, lastLine, detailed) {
+    var sceneData = Faust.findScene(firstLine, lastLine);
+    var breadcrumbs = [{caption: "Genese", link: "genesis"}];
+    if (sceneData.length > 0) {
+      if (sceneData[0].id[0] === "1") {
+        breadcrumbs.push({caption: "Faust I", link: "genesis_faust_i"});
+      } else {
+        breadcrumbs.push({caption: "Faust II", link: "genesis_faust_ii"});
+      } 
+      sceneData.forEach(function(scene) {
+        breadcrumbs.push({caption: scene.title, link: "genesis_bargraph?rangeStart=" + scene.rangeStart + "&rangeEnd=" + scene.rangeEnd});
+      });
+    }
+
+    if (detailed) {
+      breadcrumbs.push({caption: firstLine + " – " + lastLine});
+      if (sceneData.length > 0) {
+        var scene = sceneData[sceneData.length - 1];
+        if (scene.rangeStart === firstLine && scene.rangeEnd === lastLine) {
+          breadcrumbs.pop();
+        }
+      }
+    }
+
+    return breadcrumbs;
+  };
+
   Faust.error = function error(title, msg, parent) {
     if (parent === undefined) {
       parent = document.getElementById("main-content");
