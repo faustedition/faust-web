@@ -523,9 +523,7 @@ var createDocumentViewer = (function(){
        * to determine the result.
        *
        * args: faustUri and page
-       * returns: undefined if no scene information was found, otherwise
-       *          the corresponding object from sceneLineMapping js/json data file
-       *          (scene title, range start and end, scene<>line mapping id)
+       * returns: verse number or undefined
        */
       var getSceneData = function(faustUri, pageNum) {
         var result = undefined;
@@ -563,12 +561,7 @@ var createDocumentViewer = (function(){
 
           // try to get scene name and range if an interval was found
           if(minInterval !== -1) {
-            sceneLineMapping.forEach(function(mapping) {
-              // return mapping if it contains a mapping whithin that the minInterval lays
-              if(minInterval >= mapping.rangeStart && minInterval <= mapping.rangeEnd) {
-                result = mapping;
-              }
-            });
+            result = minInterval
           }
         }
         
@@ -613,7 +606,7 @@ var createDocumentViewer = (function(){
       var loadPage = (function(){
         return function(pageNum) {
           var currentMetadata;
-          var sceneData;
+          var verseNo;
 
           // replace window location with current parameters
           updateLocation();
@@ -645,17 +638,14 @@ var createDocumentViewer = (function(){
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page
-          sceneData = getSceneData(doc.faustUri, pageNum);
+          verseNo = getSceneData(doc.faustUri, pageNum);
 
           // set second breadcrumb to barGraph if a matching scene was found
-          if(sceneData !== undefined) {
+          if(verseNo !== undefined) {
             breadcrumbs.appendChild(document.createElement("br"));
-
-            if(sceneData.id.split(".")[0] === "1") {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
-            } else {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
-            }
+            var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
+            breadcrumbData.push({caption: doc.sigil});
+            breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
           }
 
 
