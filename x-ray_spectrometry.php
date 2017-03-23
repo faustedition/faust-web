@@ -58,7 +58,7 @@
             Auswertung der Messergebnisse dauert zurzeit noch an.</p>
         <h2>Weiterführende Hinweise</h2>
         <ul>        
-            <li<a href="bibliography#bruening_et_al2013"
+            <li><a href="bibliography#bruening_et_al2013"
                 data-bib-uri="faust://bibliography/bruening_et_al2013"
                 >Brüning u.a. 2013</a> (mit einem Beispiel für
             mögliche Datierungen, die mit den Messergebnissen begründet werden können) </li>
