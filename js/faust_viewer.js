@@ -834,7 +834,7 @@ var createDocumentViewer = (function(){
               if(text !== undefined) {  // textual transcript has been found
                 var appText = text.app; // .cloneNode(true);
                 currentPage.document_text.textContainer.appendChild(appText);
-                addPrintInteraction("", appText);
+                addPrintInteraction("", appText, doc.faustUri);
                 revealState(domContainer.document_text, pageNum);
               } else {
                 currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
@@ -874,7 +874,7 @@ var createDocumentViewer = (function(){
               if(text !== undefined) {
                 var appText = text.app; //.cloneNode(true);
                 currentPage.textTranscript.appendChild(appText);
-                addPrintInteraction("", appText);
+                addPrintInteraction("", appText, doc.faustUri);
                 revealState(domContainer.textTranscript, pageNum);
 //                if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
 //                  domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
@@ -910,7 +910,7 @@ var createDocumentViewer = (function(){
               if(text !== undefined) {
                 var printText = text.print; // .cloneNode(true);
                 currentPage.print.appendChild(printText);
-                addPrintInteraction("", printText);
+                addPrintInteraction("", printText, doc.faustUri);
                 revealState(domContainer.print, pageNum);
 //                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
 //                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();

@@ -1,7 +1,7 @@
 // create functions for on demand loading of variants and add tooltips 
 // for showing number of variants per line
 
-var addPrintInteraction = function(rootDir, node) {
+var addPrintInteraction = function(rootDir, node, faustUri) {
   "use strict";
 
   var verseLine;
@@ -14,6 +14,10 @@ var addPrintInteraction = function(rootDir, node) {
   var mouseclickCallback;
 
   var i;
+
+  if (faustUri) {
+    faustUri = faustUri.replace('faust://xml/', '');
+  }
 
 
   // create function that dynamically loads the variants of a verse line when clicking on it
@@ -37,6 +41,18 @@ var addPrintInteraction = function(rootDir, node) {
 
                 // loaded html contains variants for several lines. find right one
                 variantsDiv = resultContainer.querySelector("#v" + verseLine.replace(' ', '_'));
+
+                // now sort the current witnesses entry first
+                if (faustUri) {
+                  var currentWitVariants = variantsDiv.querySelectorAll('div[data-source~="'+faustUri+'"]'),
+                      first = variantsDiv.firstChild;
+                  if (currentWitVariants[0] !== first) {
+                    for (i = 0; i < currentWitVariants.length; i++) {
+                      variantsDiv.insertBefore(currentWitVariants[i], first);
+                      currentWitVariants[i].classList.add('currentWitness');
+                    }
+                  }
+                }
 
                 // append resulting div to node for later re-appending and append to dom
                 currentLine.variantsDiv = variantsDiv;
