@@ -14,15 +14,15 @@
   <div id="navigation-bar-content" class="navigation-bar-content">
     <div id="facsimile-settings" class="facsimile"></div>
     <div id="page-navigation" class="page">
-      <div id="first-page-button" class="pure-button" onclick="viewer.setPage(1);" title="Erste Seite"><i class="fa fa-angle-double-left"></i></div>
-      <div id="previous-page-button" class="pure-button" onclick="viewer.previousPage();" title="Vorherige Seite"><i class="fa fa-angle-left"></i></div>
+      <div id="first-page-button" class="pure-button" title="Erste Seite"><i class="fa fa-angle-double-left"></i></div>
+      <div id="previous-page-button" class="pure-button" title="Vorherige Seite"><i class="fa fa-angle-left"></i></div>
       <div id="pageCount" class="pure-form">
         <input id="start-range-input" type="text" pattern="\d+" input-type="numeric" size="1" class="pure-center" value="">
         bis
         <input id="end-range-input" type="text" pattern="\d+" input-type="numeric" size="1" class="pure-center" value="">
       </div>
-      <div id="next-page-button" class="pure-button" onclick="viewer.nextPage();" title="Nächste Seite"><i class="fa fa-angle-right"></i></div>
-      <div id="last-page-button" class="pure-button" onclick="viewer.setPage(viewer.getPageCount());" title="Letzte Seite"><i class="fa fa-angle-double-right"></i></div>
+      <div id="next-page-button" class="pure-button" title="Nächste Seite"><i class="fa fa-angle-right"></i></div>
+      <div id="last-page-button" class="pure-button" title="Letzte Seite"><i class="fa fa-angle-double-right"></i></div>
     </div>
     <div id="view-select" class="view"></div>
   </div>
@@ -32,6 +32,37 @@
 <script type="text/javascript" src="data/genetic_bar_graph.js"></script>
 
 <script>
+
+  // Array.findIndex polyfill from https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+  if (!Array.prototype.findIndex) {
+    Object.defineProperty(Array.prototype, 'findIndex', {
+      value: function(predicate) {
+        'use strict';
+        if (this == null) {
+          throw new TypeError('Array.prototype.findIndex called on null or undefined');
+        }
+        if (typeof predicate !== 'function') {
+          throw new TypeError('predicate must be a function');
+        }
+        var list = Object(this);
+        var length = list.length >>> 0;
+        var thisArg = arguments[1];
+        var value;
+
+        for (var i = 0; i < length; i++) {
+          value = list[i];
+          if (predicate.call(thisArg, value, i, list)) {
+            return i;
+          }
+        }
+        return -1;
+      },
+      enumerable: false,
+      configurable: false,
+      writable: false
+    });
+  };
+
   // remove test
   geneticBarGraphData = geneticBarGraphData.filter(function(graphData) {
     if(graphData.source.indexOf("test.xml") === -1) {
@@ -45,6 +76,8 @@
     
 
   var bargraph = {
+
+    scenes : sceneLineMapping.filter(function(scene) { return scene.rangeStart && scene.rangeEnd && !scene.title.endsWith("Akt"); }), // FIXME refactor
 
     init : function init(container, navbar) {
       this.container = container || document.getElementById('genetic-bar-diagram-container')
@@ -60,6 +93,21 @@
       this.elEnd   = document.getElementById('end-range-input');
       // TODO handlers
 
+      var that = this,
+        lastSceneIndex = that.scenes.length-1;
+      this.elFirst.title   = this.scenes[0].title;
+      this.elLast.title    = this.scenes[lastSceneIndex].title;
+      this.elFirst.onclick = function() { that.gotoScene(0); }
+      this.elPrev.onclick  = function() { that.gotoScene(that.firstVisibleScene() - 1); }
+      this.elNext.onclick  = function() { that.gotoScene(that.firstVisibleScene() + 1); }
+      this.elLast.onclick  = function() { that.gotoScene(lastSceneIndex); }
+
+      var lineNoChanged = function() {
+        that.setRange(that.elStart.value, that.elEnd.value);
+      }
+      this.elStart.onchange = lineNoChanged;
+      this.elEnd.onchange = lineNoChanged;
+
       var parameters = Faust.url.getParameters()
       this.setRange(parameters['rangeStart'], parameters['rangeEnd'])
     },
@@ -67,7 +115,9 @@
     updateNavigation : function updateNavigation() {
       this.elStart.value = this.start;
       this.elEnd.value = this.end;
-      // TODO tooltips for next scene etc.?
+
+      this.elPrev.title = this.getScene(this.firstVisibleScene()-1).title
+      this.elNext.title = this.getScene(this.firstVisibleScene()+1).title
     },
 
     setRange : function setRange(start, end) {
@@ -89,17 +139,35 @@
     // Set get parameter according to determined parameter Values
     updateLocation : function updateLocation() {
       var searchString = "?rangeStart=" + this.start + "&rangeEnd=" + this.end;
-      if(searchString !== window.location.search) {
-        window.location.search= "?rangeStart=" + rangeStart + "&rangeEnd=" + rangeEnd;
+      if (searchString !== window.location.search) {
+        window.location.search = searchString;
       }
     },
 
     // updates the breadcrumbs to match current range
     updateBreadcrumb : function updateBreadcrumb() {
-      document
-        .getElementById("breadcrumbs")
-        .appendChild(Faust.createBreadcrumbs(Faust.genesisBreadcrumbData(this.start, this.end, true)));
+      var breadcrumbs = document.getElementById("breadcrumbs")
+      Faust.dom.removeAllChildren(breadcrumbs)
+      breadcrumbs.appendChild(Faust.createBreadcrumbs(Faust.genesisBreadcrumbData(this.start, this.end, true)));
         // TODO refactor scene data extraction
+    },
+
+    // index of the first scene in range
+    firstVisibleScene: function firstVisibleScene() {
+      return this.scenes.findIndex(function(scene) { return scene.rangeStart >= this.start }, this);
+    },
+
+    getScene: function getScene(index) {
+      if (index < 0)
+        index = 0;
+      if (index >= this.scenes.length)
+        index = this.scenes.length - 1;
+      return this.scenes[index];
+    },
+
+    gotoScene: function gotoScene(index) {
+      var scene = this.getScene(index);
+      return this.setRange(scene.rangeStart, scene.rangeEnd);
     },
 
     getCurrentWitnesses : function getCurrentWitnesses() {
