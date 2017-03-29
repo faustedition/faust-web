@@ -28,9 +28,7 @@
   </div>
 </div>
 
-<script type="text/javascript" src="data/scene_line_mapping.js"></script>
-<script type="text/javascript" src="data/genetic_bar_graph.js"></script>
-<script type="text/javascript" src="js/faust_bargraph.js"></script>
+<script type="text/javascript" data-main="js/faust_bargraph.js" src="js/require.js"></script>
 
 
 <?php include "includes/footer.php"; ?>

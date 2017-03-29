@@ -1,3 +1,25 @@
+requirejs.config({
+  baseUrl: 'js',
+  paths: {
+    data: '../data'
+  },
+  shim: {
+    'data/scene_line_mapping' : {
+      exports: 'sceneLineMapping'
+    },
+    'data/genetic_bar_graph': {
+       exports: 'geneticBarGraphData'
+    },
+    'faust_common': {
+      exports: 'Faust'
+    }
+  }
+});
+
+    
+define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
+  function(Faust,        sceneLineMapping,          geneticBarGraphData) {
+
   // Array.findIndex polyfill from https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
   if (!Array.prototype.findIndex) {
     Object.defineProperty(Array.prototype, 'findIndex', {
@@ -28,12 +50,6 @@
     });
   };
 
-  // remove test
-  geneticBarGraphData = geneticBarGraphData.filter(function(graphData) {
-    if(graphData.source.indexOf("test.xml") === -1) {
-      return true;
-    }
-  });
   // import from faust_common
   var createSvgElement = Faust.dom.createSvgElement;
 
@@ -438,4 +454,7 @@
 
   };
 
-  bargraph.init(); 
+    bargraph.init(); 
+
+    return bargraph;
+});
