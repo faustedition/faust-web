@@ -1,4 +1,26 @@
-var Faust = (function(){
+requirejs.config({
+  baseUrl: 'js',
+  paths: {
+    data: '../data',
+    sortable: 'sortable.min'
+  },
+  shim: {
+    'data/scene_line_mapping' : {
+      exports: 'sceneLineMapping'
+    },
+    'data/genetic_bar_graph': {
+       exports: 'geneticBarGraphData'
+    },
+    'data/document_metadata': {
+      exports: 'documentMetadata'
+    },
+    'data/archives': {
+      exports: 'archives'
+    }
+  }
+});
+
+define(["sortable"], function(Sortable) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
@@ -1030,4 +1052,4 @@ var Faust = (function(){
 //###########################################################################
 //###########################################################################
   return Faust;
-})();
+});

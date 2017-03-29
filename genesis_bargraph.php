@@ -28,7 +28,9 @@
   </div>
 </div>
 
-<script type="text/javascript" data-main="js/faust_bargraph.js" src="js/require.js"></script>
+<script>
+  require(['js/faust_bargraph']);
+</script>
 
 
 <?php include "includes/footer.php"; ?>

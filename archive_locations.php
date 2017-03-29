@@ -19,16 +19,15 @@
 
 </section>
 
-<script type="text/javascript" src="data/document_metadata.js"></script>
-<script type="text/javascript" src="data/archives.js"></script>
-<script type="text/javascript" src="js/sortable.min.js"></script>
-
 <script type="text/javascript">
-  // set breadcrumbs
+  requirejs(['./js/faust_common'], function(Faust) {
+    requirejs(['sortable', 'data/document_metadata', 'data/archives'], function(Sortable, documentMetadata, archives) {
+
+  // FIXME move to separate file
   document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Aufbewahrungsorte"}]));
-</script>
 
-<script type="text/javascript">
+
+
   var archiveArray;
   var repository;
   var i;
@@ -112,6 +111,8 @@
   } 
   Sortable.init();
   document.getElementById("locations").getElementsByTagName("th")[0].click();
+    });
+  });
 </script>
 
 <?php include "includes/footer.php"; ?>
