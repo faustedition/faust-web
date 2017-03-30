@@ -2,7 +2,9 @@ requirejs.config({
   baseUrl: 'js',
   paths: {
     data: '../data',
-    sortable: 'sortable.min'
+    sortable: 'sortable.min',
+    jquery: 'jquery.min',
+    'jquery.slick': 'jquery.slick.min'
   },
   shim: {
     'data/scene_line_mapping' : { exports: 'sceneLineMapping' },

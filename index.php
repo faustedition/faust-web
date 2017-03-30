@@ -60,30 +60,33 @@
     </div>
   </div>
 </section>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.slick.min.js"></script>
 <script type="text/javascript">
-  jQuery(document).ready(function($){
-    var slideshow = $('.slider').slick({
-      adaptiveHeight: true,
-      dots:true,
-      autoplaySpeed: 8000,
-      pauseOnHover: true,
-      responsive: [
-        {
-          breakpoint: 1125,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
-    });
-    slideshow.slick('slickPlay'); // autoplay
-    $('.slider *').click(function () {      
-        slideshow.slick('slickPause'); // stop on click
+  requirejs(['./js/faust_common.js'], function(Faust) {
+    requirejs(['jquery', 'jquery.slick'], function(jQuery, slick) {
+      jQuery(document).ready(function($){
+        var slideshow = $('.slider').slick({
+          adaptiveHeight: true,
+          dots:true,
+          autoplaySpeed: 8000,
+          pauseOnHover: true,
+          responsive: [
+            {
+              breakpoint: 1125,
+              settings: {
+                arrows: false
+              }
+            }
+          ]
+        });
+        slideshow.slick('slickPlay'); // autoplay
+        $('.slider *').click(function () {      
+            slideshow.slick('slickPause'); // stop on click
+        });
+      });
     });
   });
 </script>
+
 
 <section class="center pure-g-r">
   <div class="pure-u-1-5"></div>
