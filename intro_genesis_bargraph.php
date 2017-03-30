@@ -23,7 +23,9 @@
 
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Werkgenese retrospektiv"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+          [{caption: "Ausgabe", link: "intro"}, {caption: "Werkgenese retrospektiv"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

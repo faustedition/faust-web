@@ -69,7 +69,9 @@
     </article>
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-    [{caption: "Ausgabe", link: "intro"}, {caption: "Röntgenfluoreszenzanalyse"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+        [{caption: "Ausgabe", link: "intro"}, {caption: "Röntgenfluoreszenzanalyse"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

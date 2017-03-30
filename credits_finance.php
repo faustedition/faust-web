@@ -9,8 +9,10 @@
 </section>
 
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Projekt", link: "project"}, {caption: "Danksagung", link: "credits"}, {caption: "Finanzielle Förderung"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+            [{caption: "Projekt", link: "project"}, {caption: "Danksagung", link: "credits"}, {caption: "Finanzielle Förderung"}]));
+    });
 </script>
 
 <?php include "includes/footer.php"; ?>

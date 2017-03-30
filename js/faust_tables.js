@@ -4,8 +4,8 @@
  * (2) Each archive detail page contains only the documents from that archive
  */
 
-define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_columns'],
-  function(Faust, Sortable, documentMetadata, concordanceColumns) {
+define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_columns', 'data/archives'],
+  function(Faust, Sortable, documentMetadata, concordanceColumns, archives) {
 
     return function createConcordanceTable(container, repository) {
 
@@ -243,4 +243,4 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
       return concordanceTable;
       //};
   }
-}
+});

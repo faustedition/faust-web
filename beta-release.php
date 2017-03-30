@@ -102,8 +102,11 @@
 </section>
 
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Beta-Version"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+            [{caption: "Ausgabe", link: "intro"}, {caption: "Beta-Version"}]));
+    });
 </script>
+
 
 <?php include "includes/footer.php"; ?>
