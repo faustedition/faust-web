@@ -24,6 +24,11 @@ header {
   display:table;
 }
 
+.active-link {
+  border-bottom: 3px solid rgb(250,190,0) !important;
+  color: black !important;
+}
+
 header > * {
   display:table-cell;
   vertical-align:middle;
