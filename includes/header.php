@@ -61,9 +61,9 @@
         <div id="current" class="pure-nowrap"></div>
         <nav id="nav_all" class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li><a id="nav_archive" href="archive">Archiv</a></li>
-          <li><a id="nav_genesis" href="genesis">Genese</a></li>
-          <li><a id="nav_text"    href="text">Text</a></li>
+          <li id="nav_archive"><a href="archive">Archiv</a></li>
+          <li id="nav_genesis"><a href="genesis">Genese</a></li>
+          <li id="nav_text"><a href="text">Text</a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
           <li><a href="imprint"><small class="pure-fade-50">Impressum</small></a></li>
           <li><a href="help"><i class="fa fa-help-circled fa-lg"></i></a></li>

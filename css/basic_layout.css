@@ -25,7 +25,10 @@ header {
 }
 
 .active-link {
-  border-bottom: 3px solid rgb(250,190,0) !important;
+  /* border-bottom: 3px solid rgb(250,190,0) !important; */
+  background-color: rgb(250,190,0);
+}
+.active-link * {
   color: black !important;
 }
 
