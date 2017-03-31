@@ -65,7 +65,12 @@
           <li id="nav_genesis"><a href="genesis">Genese</a></li>
           <li id="nav_text"><a href="text">Text</a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
-          <li><a href="imprint"><small class="pure-fade-50">Impressum</small></a></li>
+          <li id="imprint_sitemap">
+            <small class="pure-fade-50">
+              <a href="imprint">Impressum</a>
+              <a href="intro#sitemap">Sitemap</a>
+            </small>
+          </li>
           <li><a href="help"><i class="fa fa-help-circled fa-lg"></i></a></li>
           </ul>
         </nav>

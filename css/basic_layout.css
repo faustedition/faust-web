@@ -100,6 +100,21 @@ header #current {
   text-overflow: ellipsis;
 }
 
+header #imprint_sitemap {
+  text-align: center;
+}
+header #imprint_sitemap:hover a {
+  color: inherit;
+}
+header #imprint_sitemap a:hover {
+  color: #fab400;
+}
+
+header #imprint_sitemap a {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 /* style for main area */
 main {
   position: absolute;
