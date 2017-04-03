@@ -1,7 +1,7 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <p>Die digitale Faust-Edition besteht aus einem <a href="archive">Archiv</a> der
+        <p>Die digitale Faustedition besteht aus einem <a href="archive">Archiv</a> der
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
                 href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a

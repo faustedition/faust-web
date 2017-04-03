@@ -19,7 +19,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Faust-Edition [alpha]</title>
+    <title>Faustedition [alpha]</title>
 
     <script type="text/javascript" src="js/sortable.min.js"></script>
 

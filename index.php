@@ -5,7 +5,7 @@
       <div data-active-link="nav_all" class="center">
         <img src="img/slider/mephisto.png" height="256">
         <div class="text">
-              <p>Die digitale Faust-Edition besteht aus einem <a href="/archive"
+              <p>Die digitale Faustedition besteht aus einem <a href="/archive"
                       >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
                   textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
                       href="/print/faust1.html">Faust I</a> und des <a
