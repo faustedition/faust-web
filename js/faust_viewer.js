@@ -1,4 +1,7 @@
-var createDocumentViewer = (function(){
+define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemove_scroll', 'faust_print_interaction', 'faust_app',
+        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives'],
+  function(Faust, documentStructure, imageOverlay, addMouseMoveScroll, addPrintInteraction, app,
+         sceneLineMappping, geneticBarGraphData, copyright_notes, archives) {
   "use strict";
 
   // Global variables to all viewer instances
@@ -1346,4 +1349,4 @@ var createDocumentViewer = (function(){
       return viewer;
     })();
   };
-})();
+});

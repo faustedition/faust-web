@@ -12,7 +12,8 @@ requirejs.config({
     'data/document_metadata': { exports: 'documentMetadata' },
     'data/concordance_columns': { exports: 'concordanceColumns' },
     'data/paralipomena': { exports: 'paralipomena' },
-    'data/archives': { exports: 'archives' }
+    'data/archives': { exports: 'archives' },
+    'data/copyright_notes': { exports: 'copyright_notes' }
 
   }
 });

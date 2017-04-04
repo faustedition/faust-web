@@ -1,5 +1,5 @@
 // we would like to highlight the innermost appnote element ...
-(function(){
+define([], function() {
   "use strict";
 
   var initFunction = function() {
@@ -59,4 +59,5 @@
     
   // the event listeners can only be added when the content is loaded. so postpone until dom is loaded
   window.addEventListener("DOMContentLoaded", initFunction);
-})();
+  initFunction();
+});
