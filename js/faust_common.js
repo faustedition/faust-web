@@ -1,7 +1,7 @@
 requirejs.config({
-  baseUrl: 'js',
+  baseUrl: '/js',
   paths: {
-    data: '../data',
+    data: '/data',
     sortable: 'sortable.min',
     jquery: 'jquery.min',
     'jquery.slick': 'jquery.slick.min'
