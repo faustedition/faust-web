@@ -7,6 +7,12 @@ var concordanceColumns = [
     ]
   },
   {
+    "column": "Klassifikation",
+    "sigils": [
+      "classification"
+    ]
+  },
+  {
     "column": "Kurzbeschreibung",
     "sigils": [
       "headNote"
