@@ -16,9 +16,9 @@
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400; /* regular */
-  src: url(../webfonts/Ubuntu-R.woff2) format('woff2'),
-       url(../webfonts/Ubuntu-R.woff) format('woff'),
-       url(../webfonts/Ubuntu-R.ttf) format('truetype');
+  src: url(../webfonts/UbuntuFaust.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust.woff) format('woff'),
+       url(../webfonts/UbuntuFaust.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
