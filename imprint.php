@@ -4,7 +4,7 @@
       <p>Anbieter i.S.d. § 5 TMG</p>
 
       <p>
-        <strong style="font-weight: bold; font-style: normal;">Faust-Edition</strong><br>
+        <strong style="font-weight: bold; font-style: normal;">Faustedition</strong><br>
         Frankfurter Goethe-Haus<br>
         Freies Deutsches Hochstift<br>
         Großer Hirschgraben 23-25<br>
@@ -24,7 +24,7 @@
 
       <h3>Urheberrecht und Lizenz</h3>
       <p><img src="img/info/imprint-cc.png" alt="Creative Commons-Lizenz „Namensnennung, nicht kommerziell, Weitergabe unter gleichen Bedingungen“"></p>
-      <p>Die Inhalte der digitalen Faust-Edition sind in ihrem ganzen Umfang frei zugänglich und dürfen zu den Bedingungen der Creative Commons-Lizenz „Namensnennung, nicht kommerziell, Weitergabe unter gleichen Bedingungen“ (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a>) weitergegeben werden.</p>
+      <p>Die Inhalte der digitalen Faustedition sind in ihrem ganzen Umfang frei zugänglich und dürfen zu den Bedingungen der Creative Commons-Lizenz „Namensnennung, nicht kommerziell, Weitergabe unter gleichen Bedingungen“ (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA</a>) weitergegeben werden.</p>
 
       <p>Dies trifft auch für das Titelbild "Mephisto in den Lüften" (Eugène Delacroix) zu, dessen Bildrechte beim Frankfurter Goethe-Haus / Freien Deutschen Hochstift liegen.</p>
       <p>Die Bildrechte der Logos hingegen liegen bei folgenden Institutionen: Deutsche Forschungsgemeinschaft (Logo der DFG), Freies Deutsches Hochstift (Logo des Frankfurter Goethe-Hauses/Freien Deutschen Hochstifts), Julius-Maximilians-Universität Würzburg (Logo der Würzburger Universität) und Klassik Stiftung Weimar (Logo der Klassik Stiftung Weimar).</p>

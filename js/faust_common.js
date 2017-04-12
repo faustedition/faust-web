@@ -90,9 +90,9 @@ var Faust = (function(){
             console.warn("Failed to split sigil:", sigil);
             return [sigil, sigil, 99999, ""];
           }
-          if (split[1] == "H P") // Paraliponemon
+          if (split[1] === "H P") // Paraliponemon
             split[1] = "3 H P";
-          if (split[2] == "")    // 2 H
+          if (split[2] === "")    // 2 H
             split[2] = -1;
           else
             split[2] = parseInt(split[2], 10);
@@ -125,6 +125,103 @@ var Faust = (function(){
         return -sigil(val1, val2);
       }
 
+
+    var NUMBERPLUS = /^(-?[\d,.]+)\s?(\w*)$/;
+    var DATE_DE    = /(?:(?:(\d\d)\.)?(\d\d)\.)?(\d\d\d\d)/;
+    var BIB        = /^(\D*)(\d*)(\D*)(\d*)(\D*)(\d*)(\D*)(\d*)(\D*)(\d*)(\D*)/;
+    var matchSpace = function matchSpace(a) { return a.match(/^\s*$/); }
+    if (typeof(Sortable) !== "undefined") {
+      Sortable.setupTypes([
+        { name: 'numericplus',  // number + optional suffix, e.g., 123a
+          defaultSortDirection: 'ascending',
+          match: function(a) { return NUMBERPLUS.test(a); },
+          compare: function(a, b) {
+            var empty = emptyValuesToEnd(a, b);
+            if (empty) return empty;
+            var _a = NUMBERPLUS.exec(a) || ['', 0, ''],
+                _b = NUMBERPLUS.exec(b) || ['', 0, ''],
+                na = parseFloat(_a[1], 10) || 0,
+                nb = parseFloat(_b[1], 10) || 0;
+            return na - nb || _a[2].localeCompare(_b[2]);
+          },
+          bottom: matchSpace
+        },
+        {
+          name: 'date-de',    // e.g., 12.03.1810 or 1793
+          defaultSortDirection: 'ascending',
+          match: function(a) { return DATE_DE.test(a); },
+          comparator: function(a) {
+            var split = DATE_DE.exec(a);
+            var result;
+            if (split)
+              result = split[3] + "-" + (split[2]? split[2] : "00") + "-" + (split[1]? split[1] : "00");
+            else
+              result = "9999-99-99";
+            return result;
+          },
+          compare: function(a, b) {
+            return a.localeCompare(b);
+          },
+          bottom: matchSpace
+        },
+        {
+          name: 'bibliography',   
+          defaultSortDirection: 'ascending',
+          match: function() { return false; },
+          compare: function(a, b) {
+            var empty = emptyValuesToEnd(a, b);
+            if (empty) return empty;
+            var _a = BIB.exec(a),
+                _b = BIB.exec(b);
+            if (_a == null) {
+              if (_b == null) {
+                return 0;
+              } else {
+                return 1;
+              }
+            }
+            if (_b == null)
+              return -1;
+
+            return _a[1].localeCompare(_b[1]) || 
+                   _a[2] - _b[2] || 
+                   _a[3].localeCompare(_b[3]) || 
+                   _a[4] - _b[4] ||
+                   _a[5].localeCompare(_b[5]) || 
+                   _a[6] - _b[6] ||
+                   _a[7].localeCompare(_b[7]) || 
+                   _a[8] - _b[8] ||
+                   _a[9].localeCompare(_b[9]) || 
+                   _a[10] - _b[10] ||
+                   _a[11].localeCompare(_b[11]); 
+          },
+          bottom: matchSpace
+        },
+        {
+          name: 'sigil',   // Faustedition sigil
+          defaultSortDirection: 'ascending',
+          match: function(a) { return false; },
+          compare: sigil,
+          bottom: matchSpace
+        },
+        {
+          name: 'alpha',
+          defaultSortDirection: 'ascending',
+          match: function() { return false; },
+          compare: function(a, b) {
+            if (!a)
+              return +1;
+            else if (!b)
+              return -1;
+            else
+              return a.localeCompare(b);
+          },
+          bottom: matchSpace
+        }
+
+      ]);
+
+    }
       // Map defined algorithms to sortAlgorithms object
       sortAlgorithms.asc = asc;
       sortAlgorithms.desc = desc;
@@ -134,6 +231,8 @@ var Faust = (function(){
       sortAlgorithms.descCiEnd = descCiEnd;
       sortAlgorithms.sigil = sigil;
       sortAlgorithms.descSigil = descSigil;
+
+
 
       return sortAlgorithms;
     })();
@@ -162,6 +261,7 @@ var Faust = (function(){
 
     return sort;
   })();
+
 
 //###########################################################################
 // Faust.url
@@ -286,7 +386,7 @@ var Faust = (function(){
             }
 
             // determine if documentary transcript has images attached
-            if(currentDocTranscript.img) {
+            if(currentDocTranscript.img && currentDocTranscript.img.length > 0) {
               resultDocTranscript.hasImages = true;
               resultDocTranscript.imageCount = currentDocTranscript.img.length;
               resultDocTranscript.images = currentDocTranscript.img.map(function(currentImage) {
@@ -872,6 +972,44 @@ var Faust = (function(){
     }
   };
 
+  Faust.findScene = function findScene(firstLine, lastLine) {
+    var result = [];
+    sceneLineMapping.forEach(function(mappingData) {
+      if(firstLine >= mappingData.rangeStart && lastLine <= mappingData.rangeEnd) {
+          result.push(mappingData);
+      }
+    });
+    result.reverse();
+    return result;
+  };
+
+  Faust.genesisBreadcrumbData = function genesisBreadcrumbData(firstLine, lastLine, detailed) {
+    var sceneData = Faust.findScene(firstLine, lastLine);
+    var breadcrumbs = [{caption: "Genese", link: "genesis"}];
+    if (sceneData.length > 0) {
+      if (sceneData[0].id[0] === "1") {
+        breadcrumbs.push({caption: "Faust I", link: "genesis_faust_i"});
+      } else {
+        breadcrumbs.push({caption: "Faust II", link: "genesis_faust_ii"});
+      } 
+      sceneData.forEach(function(scene) {
+        breadcrumbs.push({caption: scene.title, link: "genesis_bargraph?rangeStart=" + scene.rangeStart + "&rangeEnd=" + scene.rangeEnd});
+      });
+    }
+
+    if (detailed) {
+      breadcrumbs.push({caption: firstLine + " – " + lastLine});
+      if (sceneData.length > 0) {
+        var scene = sceneData[sceneData.length - 1];
+        if (scene.rangeStart === firstLine && scene.rangeEnd === lastLine) {
+          breadcrumbs.pop();
+        }
+      }
+    }
+
+    return breadcrumbs;
+  };
+
   Faust.error = function error(title, msg, parent) {
     if (parent === undefined) {
       parent = document.getElementById("main-content");
@@ -886,6 +1024,8 @@ var Faust = (function(){
     parent.insertBefore(container, parent.firstChild);
     console.error(title, msg);
   };
+
+
 
 //###########################################################################
 //###########################################################################

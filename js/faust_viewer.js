@@ -55,7 +55,8 @@ var createDocumentViewer = (function(){
 
       // updates the adress in the browser bar to a value calculated from state and doc
       var updateLocation = function updateLocation() {
-        var url = window.location.pathname + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
+        var fixedPath = window.location.pathname.replace(/^\/+/, '/');
+        var url = fixedPath + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
         if (state.section) {
           url += '&section=' + state.section;
         }
@@ -522,9 +523,7 @@ var createDocumentViewer = (function(){
        * to determine the result.
        *
        * args: faustUri and page
-       * returns: undefined if no scene information was found, otherwise
-       *          the corresponding object from sceneLineMapping js/json data file
-       *          (scene title, range start and end, scene<>line mapping id)
+       * returns: verse number or undefined
        */
       var getSceneData = function(faustUri, pageNum) {
         var result = undefined;
@@ -562,12 +561,7 @@ var createDocumentViewer = (function(){
 
           // try to get scene name and range if an interval was found
           if(minInterval !== -1) {
-            sceneLineMapping.forEach(function(mapping) {
-              // return mapping if it contains a mapping whithin that the minInterval lays
-              if(minInterval >= mapping.rangeStart && minInterval <= mapping.rangeEnd) {
-                result = mapping;
-              }
-            });
+            result = minInterval
           }
         }
         
@@ -581,8 +575,8 @@ var createDocumentViewer = (function(){
         if(doc.querySelector("#dt" + pageNum) !== null) {
           doc.querySelector("#dt" + pageNum).scrollIntoView();
         }
-        if (state.fragment !== '') {
-          var currentTarget = doc.querySelector("#" + state.fragment);
+        if (state.fragment) {
+          var currentTarget = doc.querySelector("#" + state.fragment.replace('.', '\\.'));
           if (currentTarget) {
             currentTarget.scrollIntoView();
             currentTarget.classList.add("target");
@@ -612,7 +606,7 @@ var createDocumentViewer = (function(){
       var loadPage = (function(){
         return function(pageNum) {
           var currentMetadata;
-          var sceneData;
+          var verseNo;
 
           // replace window location with current parameters
           updateLocation();
@@ -644,17 +638,14 @@ var createDocumentViewer = (function(){
             {caption: doc.sigil}]));
 
           // get information about scene that contains current page
-          sceneData = getSceneData(doc.faustUri, pageNum);
+          verseNo = getSceneData(doc.faustUri, pageNum);
 
           // set second breadcrumb to barGraph if a matching scene was found
-          if(sceneData !== undefined) {
+          if(verseNo !== undefined) {
             breadcrumbs.appendChild(document.createElement("br"));
-
-            if(sceneData.id.split(".")[0] === "1") {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust I", link: "genesis_faust_i"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
-            } else {
-              breadcrumbs.appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II", link: "genesis_faust_ii"}, {caption: sceneData.title, link: "genesis_bargraph?rangeStart=" + sceneData.rangeStart + "&rangeEnd=" + sceneData.rangeEnd}, {caption: doc.sigil}]));
-            }
+            var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
+            breadcrumbData.push({caption: doc.sigil});
+            breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
           }
 
 
@@ -843,7 +834,7 @@ var createDocumentViewer = (function(){
               if(text !== undefined) {  // textual transcript has been found
                 var appText = text.app; // .cloneNode(true);
                 currentPage.document_text.textContainer.appendChild(appText);
-                addPrintInteraction("", appText);
+                addPrintInteraction("", appText, doc.faustUri);
                 revealState(domContainer.document_text, pageNum);
               } else {
                 currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
@@ -883,7 +874,7 @@ var createDocumentViewer = (function(){
               if(text !== undefined) {
                 var appText = text.app; //.cloneNode(true);
                 currentPage.textTranscript.appendChild(appText);
-                addPrintInteraction("", appText);
+                addPrintInteraction("", appText, doc.faustUri);
                 revealState(domContainer.textTranscript, pageNum);
 //                if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
 //                  domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
@@ -919,7 +910,7 @@ var createDocumentViewer = (function(){
               if(text !== undefined) {
                 var printText = text.print; // .cloneNode(true);
                 currentPage.print.appendChild(printText);
-                addPrintInteraction("", printText);
+                addPrintInteraction("", printText, doc.faustUri);
                 revealState(domContainer.print, pageNum);
 //                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
 //                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
@@ -1164,19 +1155,27 @@ var createDocumentViewer = (function(){
         };
       })();
 
+
+      var browsePage = function browsePage(by) {
+        for (var page = state.page + by; 0 < page && page < doc.pageCount; page += by) {
+          var pageMd = doc.metadata.pages[page-1]
+          if (pageMd !== undefined 
+              && pageMd.docTranscriptCount > 0
+              && pageMd.docTranscripts[0].hasImages)
+            return setPage(page);
+        }
+        return setPage(page);
+      };
+
       // switch to next page
-      var nextPage = (function(){
-        return function() {
-          return setPage(state.page + 1);
-        };
-      })();
+      var nextPage = function nextPage() {
+          return browsePage(+1);
+      };
 
       // switch to previous page
-      var previousPage = (function(){
-        return function() {
-          return setPage(state.page - 1);
-        };
-      })();
+      var previousPage = function previousPage() {
+          return browsePage(-1);
+      };
 
       // return the number of the page currently in view
       var getCurrentPage = (function(){

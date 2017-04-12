@@ -8,6 +8,7 @@
              <a href="archive_locations" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
              <a href="archive_manuscripts" class="pure-button pure-button-tile">Hand&shy;schriften</a>
              <a href="archive_prints" class="pure-button pure-button-tile">Drucke</a>
+             <a href="archive_testimonies" class="pure-button pure-button-tile">Dokumente zur Entstehungs&shy;geschichte</a>
             </p>
         
         </article>

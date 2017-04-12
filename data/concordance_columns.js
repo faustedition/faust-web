@@ -1,8 +1,15 @@
 var concordanceColumns = [
   {
     "column": "Sigle",
+    "type": "sigil",
     "sigils": [
       "idno_faustedition"
+    ]
+  },
+  {
+    "column": "Klassifikation",
+    "sigils": [
+      "classification"
     ]
   },
   {
@@ -12,12 +19,14 @@ var concordanceColumns = [
     ]
   }, {
     "column": "Sigle WA",
+    "type": "sigil",
     "sigils": [
       "idno_wa_faust"
     ]
   }, {
     "column": "Weitere Siglen",
     "tooltip": "Bohnenkamp, Fischer-Lamberg, Landeck, Frankfurter und Münchner Ausgabe",
+    "type": "sigil",
     "sigils": [
       "idno_bohnenkamp",
       "idno_fischer_lamberg",

@@ -3,13 +3,13 @@
 <section>
 
   <article>
-      <table id="locations" class="pure-table">
+      <table id="locations" class="pure-table" data-sortable>
         <thead>
           <tr>
-            <th>Archiv</th>
-            <th>Ort</th>
-            <th class="pure-center">Zeugen</th>
-            <th class="pure-center">Seiten</th>
+            <th data-sortable-type="alpha">Archiv</th>
+            <th data-sortable-type="alpha">Ort</th>
+            <th data-sortable-type="numericplus" class="pure-center">Zeugen</th>
+            <th data-sortable-type="numericplus" class="pure-center">Seiten</th>
           </tr>
         </thead>
         <tbody>
@@ -21,6 +21,7 @@
 
 <script type="text/javascript" src="data/document_metadata.js"></script>
 <script type="text/javascript" src="data/archives.js"></script>
+<script type="text/javascript" src="js/sortable.min.js"></script>
 
 <script type="text/javascript">
   // set breadcrumbs
@@ -61,12 +62,9 @@
     archiveArray[archiveArray.length - 1]["id"] = archiveId;
   }
 
-  // sort archives asc
-  var sortedArchives = Faust.sort(archiveArray, "asc", "name");
-
   // create output and append to page
-  for(var i = 0; i < sortedArchives.length; i++) {
-      var currentChild = sortedArchives[i];
+  for(var i = 0; i < archiveArray.length; i++) {
+      var currentChild = archiveArray[i];
       var archiveTr = document.createElement("tr");
 
       var archiveDetailLink = document.createElement("a");
@@ -112,6 +110,8 @@
       var table = document.getElementById("locations");
       table.getElementsByTagName("tbody")[0].appendChild(archiveTr);
   } 
+  Sortable.init();
+  document.getElementById("locations").getElementsByTagName("th")[0].click();
 </script>
 
 <?php include "includes/footer.php"; ?>

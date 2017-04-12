@@ -1,7 +1,7 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
     <article class="pure-u-1">
-        <p>Die digitale Faust-Edition besteht aus einem <a href="archive">Archiv</a> der
+        <p>Die digitale Faustedition besteht aus einem <a href="archive">Archiv</a> der
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
             ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
                 href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a
@@ -16,6 +16,7 @@
             <p><a class="pure-button" href="/archive_locations" style="display:block;">Aufbewahrungsorte</a></p>
             <p><a class="pure-button" href="/archive_manuscripts" style="display:block;">Handschriften</a></p>
             <p><a class="pure-button" href="/archive_prints" style="display:block;">Drucke</a></p>
+            <p><a class="pure-button" href="/archive_testimonies" style="display:block;"><small class="pure-fade-50">Dokumente zur</small><br>Entstehungsgeschichte</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/genesis"><big>Genese</big></a></p>
@@ -28,8 +29,9 @@
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/print/faust1.html" style="display:block;">Faust I</a></p>
-            <p><a class="pure-button" href="/print/faust2.html" style="display:block;">Faust II</a></p>
+            <p><a class="pure-button" href="/print/faust1" style="display:block;">Faust I</a></p>
+            <p><a class="pure-button" href="/print/faust2" style="display:block;">Faust II</a></p>
+            <p><a class="pure-button" href="paralipomena" style="display:block;">Paralipomena</a></p>
         </div>
         <div class="pure-u-1-8"></div>
         <h2>Beta-Version</h2>
@@ -41,13 +43,18 @@
             reichen.</p>
         <p>Die erhaltenen Handschriften bestehen aus Notizen, Entwürfen zu einzelnen Szenen und
             Versgruppen, Arbeitshandschriften, vorläufigen und überarbeiteten Reinschriften sowie
-            Druckvorlagen. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus
+            Druckvorlagen. Aber auch Abschriften von fremder Hand, Tagebucheinträge und Briefe gehören dazu, sofern sie 
+            Fassungen oder Varianten enthalten. Der größte Teil der Überlieferung gehört zum ‚Faust II‘ und stammt aus
             der Zeit seit der Wiederaufnahme der Arbeit am ‚Faust‘ im Jahr 1825. Der weitaus
             umfangreichste Teil der Textzeugen liegt im Goethe- und Schiller-Archiv in Weimar (GSA).
-            Der Bestand des GSA umfasst 429 Archivalieneinheiten mit insgesamt 1639 beschriebenen
-            Seiten zum ‚Faust‘. 64 Handschriften mit ca. 295 beschriebenen Seiten befinden sich im
-            Besitz von 20 weiteren Institutionen in Deutschland, der Schweiz, Großbritannien, Polen,
-            Frankreich, Italien und in den Vereinigten Staaten.</p>
+            Der Bestand des GSA umfasst 455 Handschriften<!-- //f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] 22.9.16 --> 
+            mit insgesamt 1800 beschriebenen Seiten zum ‚Faust‘.<!-- 1803 //f:page[ancestor::f:archivalDocument[//f:repository/text()[contains(.,"gsa")]] and child::f:metadata/f:docTranscript/@uri[contains(.,".xml")]] 22.9.16 -->
+            89 Handschriften<!-- -1 (Tesths.) +1 (1 H.1) //f:archivalDocument[//f:repository/text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown"))]] --> 
+            mit 600 beschriebenen Seiten<!-- 604 -32 (Tesths.) + 234 (1 H.1) //f:page[ancestor::f:archivalDocument[//f:repository/text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown"))]] and child::f:metadata/f:docTranscript/@uri[contains(.,".xml")]] 22.9.16 --> 
+            befinden sich im Besitz von 23 weiteren Institutionen<!-- //f:repository[text()[not(contains(.,"gsa")) and not(contains(.,"location_unknown")) and not(contains(.,"privatbesitz"))]] --> 
+            in Deutschland, der Schweiz, Großbritannien, Polen,
+            Frankreich, Italien und in den Vereinigten Staaten sowie in Privatbesitz.</p>
+            <!-- For human-generated statistical information see Bohnenkamp et al. in JbFDH 2011 and https://docs.google.com/spreadsheets/d/1wCYH1zKNK38QAdT2x01S2pDnkKxpSOU-QocRpRQNcxU/edit#gid=0 -->
         <p>Das <a href="archive">digitale Archiv</a> macht die gesamte relevante Überlieferung
             des ‚Faust‘ in Abbildungen zugänglich. Der handschriftliche Zusammenhang der Blätter,
             Bogen und Lagen wird in der Konvolutdarstellung wiedergegeben. Jede Handschrift ist mit
@@ -117,15 +124,13 @@
         <p>Die Auswahl einer Spalte in den Übersichten zum ‚Faust&nbsp;I‘ und ‚Faust&nbsp;II‘ führt
             zu einem Balkendiagramm, in dem alle relevanten Handschriften und Drucke zu der
             betreffenden Szene angezeigt werden. Im Diagramm sind neben handschriftlichen und
-            gedruckten Fassungen auch Paralipomena und Schemata berücksichtigt. Damit werden auch
+            gedruckten Fassungen auch Paralipomena berücksichtigt. Damit werden auch
             skizzenartige und stichworthafte Niederschriften ohne direkte Entsprechung im Werktext
             erfasst.</p>
         <p>Die Balken zeigen an, welchem Abschnitt des Werktextes ein Zeuge entspricht.
-            Handschriftliche Fassungen sind blau, Drucke schwarz, Paralipomena grün und Schemata
-            violett dargestellt. Lücken in einem Balken bedeuten, dass der Zeuge an dieser Stelle
-            keine Entsprechung zum Werktext aufweist. Helle Farbabstufungen drücken bei den
-            Paralipomena und Schemata Unsicherheit in der Zuordnung, bei den handschriftlichen
-            Fassungen hohen Abweichungsgrad aus.</p>
+            Handschriftliche Fassungen sind in der Grundfarbe der Edition (gelb), Drucke schwarz, Paralipomena braun 
+            dargestellt. Lücken in einem Balken bedeuten, dass der Zeuge an dieser Stelle
+            keine Entsprechung zum Werktext aufweist.</p>
         <p>Die Verszahlen des Werktextes sind von links nach rechts angetragen, die Siglen der
             Zeugen in chronologischer Folge von unten nach oben. Explizit macht das Diagramm nur
             Angaben zur chronologischen Ordnung von Fassungen, die gemeinsamen Text aufweisen.</p>
@@ -154,6 +159,26 @@
             Zählung durch Hinzufügung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
             ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
             H.0a usw.).</p>
+        
+        <h3>Siglen der Paralipomena-Handschriften</h3>
+        <p>Eine große Zahl von Vorarbeiten und fragmentarische Fassungen zum Faust lässt sich nicht nach dem Prinzip 
+            von Textübereinstimmung und -abweichung auf eine konkrete Passage des endgültigen Textes beziehen. Diese 
+            Vorarbeiten und Bruchstücke werden in der Forschung als Paralipomena bezeichnet. Handschriften mit solchen 
+            Paralipomena können daher nicht in das beschriebene System der Siglierung integriert werden. Anstatt diese 
+            Handschriften zu siglieren, führte Erich Schmidt eine bis heute gebräuchliche Zählung der Paralipomena ein. 
+            Im Anschluss an diese Zählung werden die Paralipomena-Handschriften bei <a 
+            ref="bibliography#bohnenkamp1994">Bohnenkamp 1994</a> nach dem auf ihnen befindlichen Paralipomenon 
+            bezeichnet, angefangen mit <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390720.xml">H&nbsp;P1</a> 
+            für die Handschrift mit dem Paralipomenon 1. Handschriften, die mehr als ein Paralipomenon tragen, werden „nach 
+            dem auf ihnen befindlichen ‚Paralipomenon‘ mit der niedrigsten Ziffer“ sigliert (<a 
+            ref="bibliography#bohnenkamp1994">Bohnenkamp 1994</a>, S.&nbsp;79), z.B. 
+            <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390782.xml">H&nbsp;P6</a>. Die durch Bohnenkamp 
+            eingeführten gelten auch für die Faustedition, mit Ausnahme der Handschriften, die auch nach dem oben beschriebenen 
+            Prinzip sigliert werden können, z.B. <a 
+            ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2.</p>
+            
+        <h3>Weitere Siglen</h3>
+        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, der Präfix R bezeichnet eine Restkategorie.</p>
         
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
@@ -190,7 +215,7 @@
                 </tr>
             </tbody>
         </table>
-        <p>Dabei können <code>*</code> und <code>?</code> am Ende des Suchbegriffs oder in seiner Mitte stehen. <code>~</code> steht am Ende, dahinter kann mit einer Zahl zwischen 0 und 1 der Grad an Ähnlichkeit vorgegeben werden.</p>
+        <p>Dabei können <code>*</code> und <code>?</code> am Ende des Suchbegriffs oder in seiner Mitte stehen. <code>~</code> steht am Ende, dahinter kann mit einer Zahl zwischen 0 und 1 der Grad an Ähnlichkeit vorgegeben werden – für <var>Suchbegriff</var><code>~</code><var>x</var> muss die Levenshtein-Distanz zwischen Suchbegriff und gefundenem Term muss kleiner sein als die Länge des gefundenen Terms · (1 – <var>x</var>).</p>
         <p>Mehrere Suchbegriffe können miteinander kombiniert werden:</p>
         <table class="pure-table">
             <thead>
@@ -219,7 +244,10 @@
             </tbody>
         </table>
         <p>In komplexeren Suchen können Teilausdrücke mit Klammern <code>()</code> zusammengefasst werden.</p>
-
+        <p>Auch nach Zeugensiglen und Archivsignaturen kann gesucht werden. Die Eingabe einer vollständigen Sigle der Faustedition, z.B. „2&nbsp;V&nbsp;H.2“ führt direkt 
+        zum <a ref="documentViewer?faustUri=faust://xml/document/faust/2.5/gsa_390883.xml&page=1&view=structure">betreffenden Zeugen</a> (Leerzeichen 
+        und Punkt können hier auch weggelassen werden, die Suche „2vh2“ führt zu derselben Stelle). Verkürzte Suchanfragen wie „<a ref="search?q=V+H.2">V&nbsp;H.2</a>“ führen zur 
+        Ausgabe einer Liste von Siglen, in denen diese Zeichenfolge vorkommt. Dabei wird auch in alternativen Siglensystemen, Archivsignaturen und der Kurzbeschreibung gesucht. Diese Siglensuche ist eine einfache Teilstringsuche, die für den Volltext zur Verfügung stehenden Wildcards gibt es hier nicht.</p>
                 
         <h2>Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>

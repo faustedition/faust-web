@@ -4,4 +4,9 @@ transcript
 xml
 meta
 *~
+.*.swp
 tags
+debug*.html
+js-gen/
+json/
+archive_prints.html

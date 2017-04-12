@@ -2,10 +2,10 @@
 <section class="pure-noprint">
   <div class="slider">
     <div>
-      <div class="center">
+      <div data-active-link="nav_all" class="center">
         <img src="img/slider/mephisto.png" height="256">
         <div class="text">
-              <p>Die digitale Faust-Edition besteht aus einem <a href="/archive"
+              <p>Die digitale Faustedition besteht aus einem <a href="/archive"
                       >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
                   textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
                       href="/print/faust1.html">Faust I</a> und des <a
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div style="background:#b7b18f url(img/slider/2-II-H.1-bg.png) center center;">
+    <div data-active-link="nav_archive" style="background:#b7b18f url(img/slider/2-II-H.1-bg.png) center center;">
       <div class="center">
         <img src="img/slider/2-II-H.1.png" height="256">
         <div class="text">
@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div style="background:#d8d5ca url(img/slider/H-P123.5-hg.png) center center;">
+    <div data-active-link="nav_genesis" style="background:#d8d5ca url(img/slider/H-P123.5-hg.png) center center;">
       <div class="center">
         <img src="img/slider/H-P123.5.png" height="256">
         <div class="text">
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div style="background:#cdc6ac url(img/slider/2-H-hg.png) center center;">
+    <div data-active-link="nav_text" style="background:#cdc6ac url(img/slider/2-H-hg.png) center center;">
       <div class="center">
         <div class="text">
           <h2>Text</h2>
@@ -82,6 +82,24 @@
     $('.slider *').click(function () {      
         slideshow.slick('slickPause'); // stop on click
     });
+    $('.slider').on('afterChange', function(event, slick, currentSlide) {
+      var currId = slick.$slides.get(currentSlide).dataset.activeLink;
+      if (currId) {
+          currId.split(' ').forEach(function(id) {
+            var link = document.getElementById(id);
+            if (link) { link.classList.add('active-link'); }
+          });
+      }
+    });
+    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+      var currId = slick.$slides.get(currentSlide).dataset.activeLink;
+      if (currId) {
+          currId.split(' ').forEach(function(id) {
+            var link = document.getElementById(id);
+            if (link) { link.classList.remove('active-link'); }
+          });
+      }
+    });
   });
 </script>
 
@@ -94,16 +112,16 @@
     <h3>Historisch-kritische Edition</h3>
     <p>
       Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
-      unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida,  Thorsten Vitt und Moritz Wissenbach<br>
+      unter Mitarbeit von Gerrit&nbsp;Brüning, Katrin&nbsp;Henzel, Christoph&nbsp;Leijser, Gregor&nbsp;Middell, Dietmar&nbsp;Pravida,  Thorsten&nbsp;Vitt und Moritz&nbsp;Wissenbach<br>
       Frankfurt am Main, Weimar, Würzburg 2016
     </p>
     <p>
-      <a class="pure-button pure-button-tile" href="project">Über das Projekt</a>
-      <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe (Beta-Version)</a> 
+      <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe (2. Beta-Version)</a> 
+      <a class="pure-button pure-button-tile" href="project">Mitwirkende</a>
     </p>
 
 
-    <p><a href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-8px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
+    <p><a class="undecorated" href="http://www.dfg.de" target="_blank"><img style="vertical-align:middle; height:45px; margin-top:-8px;" alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.png"></a></p>
   </article>
 
   <div class="pure-u-1-5"></div>

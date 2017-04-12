@@ -3,7 +3,7 @@
 /* global */
 
 svg.diplomatic {
-    font-family: faust-serif, serif;
+    font-family: 'Gentium Plus';
     stroke: black;
     font-size: 11pt;
 }
@@ -44,7 +44,7 @@ svg.diplomatic g.Zone:hover {
 
 svg.diplomatic .text {
     font-size: 11pt;
-    font-family: "Ubuntu", sans-serif, Symbola;
+    font-family: "Ubuntu";
     fill: black;
     stroke: none;
     stroke-opacity: 0;
@@ -64,11 +64,11 @@ svg.diplomatic .element-rdg, svg.diplomatic .element-rdg * {
 /* writing hand / scribes */
 
 svg.diplomatic .text.hand-g {
-	font-family: faust-serif, serif, Symbola;
+	font-family: "Gentium Plus";
 }
 
 svg.diplomatic .text.hand-xx {
-	font-family: "Ubuntu Monospace", monospace, Symbola;
+	font-family: "Ubuntu Monospace";
 }
 
 /* writing material  */
@@ -131,14 +131,14 @@ svg.diplomatic .text.rewrite {
 
 svg.diplomatic .text.under {
 	/* opacity: 0.5; */
-    font-size: 75%;
-    baseline-shift: sub;
+    font-size: 9pt;
+    /* baseline-shift: sub; */
 }
 
 svg.diplomatic .text.over {
-	/* font-weight: bold; */
-    font-size: 135%;
-    baseline-shift: super;
+	font-weight: bold;
+    /* font-size: 135%; */
+    /* baseline-shift: super; */
 }
 
 svg.diplomatic .text.interline {

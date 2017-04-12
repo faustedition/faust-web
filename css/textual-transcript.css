@@ -79,7 +79,7 @@ div:hover > a.lineno, a.lineno:hover {
 	clear: right;
 }
 
-a.pageno {
+a.pageno, a.paralipomenon {
     float: right;
     margin-right: 2em;
     font-size: smaller;
@@ -89,7 +89,6 @@ a.pageno {
     z-index: 1;
     border:none;
 }
-
 
 .speaker {    
 	padding-top: 1.5ex;
@@ -186,6 +185,9 @@ table.table {
 	border-spacing: 1.5ex 0;
 	border-collapse:  separate;
 }
+
+
+.note { float: right; }
 
 /* print.html */
 dt {
@@ -406,4 +408,48 @@ div:hover > a.sigil {
 .stage .hi, .stage .emph {
 	font-variant: small-caps;
 	font-style: normal;
+}
+
+.testimony .text {
+  text-indent: 0;
+}
+
+.testimony a.testimony {
+  margin: 0;
+  margin-right: -7.5em;
+}
+a.testimony {
+  float: right;
+  margin: 6px;
+  margin-right: 0;
+  position: relative;
+}
+.testimony .pageno {
+  margin-right: 0;
+  margin-left: .25em;
+}
+
+.testimony .rend-italic, .testimony .rend-letter-spaced, .testimony .rend-antiqua {
+  font-style: italic;
+}
+.testimony .rend-small {
+  font-size: .83em; 
+}
+.testimony .rend-indentchar-m8n12, .testimony .rend-indentchar-m8n8, .testimony .rend-indented, .testimony .rend-indentchar-m4n8 {
+  text-indent: 3em;
+}
+.testimony .rend-right {
+  text-align: right;
+}
+.testimony .rend-centered {
+  text-align: center; 
+}
+.testimony .rend-underline {
+  text-decoration: underline;
+}
+.testimony .rend-bold {
+  font-weight: bold;
+}
+.testimony .rend-strikethrough {
+  text-decoration: line-through;
 }
