@@ -1,11 +1,11 @@
+*~
+.*.swp
+tags
 app
 print
 transcript
 xml
 meta
-*~
-.*.swp
-tags
 debug*.html
 js-gen/
 json/
@@ -13,3 +13,4 @@ archive_prints.html
 archive_testimonies.html
 testimony/
 watermark-table.html
+data/scene_line_mapping.js
