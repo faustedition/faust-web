@@ -336,41 +336,42 @@ p.para-start { margin-top: 1em; } /* unused? */
 /* ********************** */
 /* Print
 /* ********************** */
-
 @media print {
-  html {
+  html, body {
     padding:0;
+    min-height:auto;
   }
 
   header {
     position:relative;
-    border-bottom:1px solid;
+    border-bottom:1px solid grey;
     box-shadow: none;
     height:auto;
   }
 
-  .main-content-container {
+  header #current {
+    text-align:right;
+    border:none;
+  }
+
+  main {
     position: relative;
-    border: none;
     left:auto;
     right:auto;
     top:auto;
     bottom:auto;
-    overflow: visible;
+    overflow:initial;
   }
 
-  .main-content {
-    border:none;
-    overflow: auto;
-  }
-
-  main [class*="pure-u"] {
-    display:inline; /* FIXME: hotfix - default is 'inline-block'. This leads to cutt-offs on long texts in FF */
+  [class*="pure-g"], [class*="pure-u"] {
+    display:initial; /* FIXME: hotfix - leads to cutt-offs on long texts in FF */
+    max-width: none;
   }
 
   footer {
     position: relative;
     left:auto;
     bottom:auto;
+    border-top:1px solid grey;
   }
 }

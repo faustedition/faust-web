@@ -55,7 +55,7 @@
           <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
           <sup class="pure-fade-50"><mark>alpha</mark></sup>
         </div>
-        <div class="breadcrumbs pure-right pure-nowrap pure-fade-50">
+        <div class="breadcrumbs pure-right pure-nowrap pure-noprint pure-fade-50">
           <small id="breadcrumbs"></small>
         </div>
         <div id="current" class="pure-nowrap"></div>
