@@ -794,7 +794,7 @@ var Faust = (function(){
     // in the mousepointers proximity
     var createMouseenterListener = function(element) {
       return function(event) {
-        document.body.appendChild(element.tooltipDiv);
+        document.body.insertBefore(element.tooltipDiv, document.body.firstChild);
         element.tooltipDiv.style.left = (event.clientX + 15) + "px";
         element.tooltipDiv.style.top = (event.clientY + 8) + "px";
       };
@@ -880,7 +880,6 @@ var Faust = (function(){
       // get all tooltip elements
       tooltipElements = document.getElementsByClassName("show-tooltip");
 
-      
       // iterate through found tooltip elements
       for(i = 0; i < tooltipElements.length; i++) {
         tooltipElement = tooltipElements.item(i);
@@ -890,6 +889,24 @@ var Faust = (function(){
 
         // append tooltip to element
         tooltip.add(tooltipElement, tooltipTextNode);
+      }
+
+     
+      // get all elements with title attribute
+      tooltipElements = document.querySelectorAll("[title]");
+
+      // iterate through found tooltip elements
+      for(i = 0; i < tooltipElements.length; i++) {
+        tooltipElement = tooltipElements.item(i);
+
+        // create content for actual tooltip
+        tooltipTextNode = document.createTextNode(tooltipElement.getAttribute("title"));
+
+        // append tooltip to element
+        tooltip.add(tooltipElement, tooltipTextNode);
+
+        // empty default title attribute
+        tooltipElement.setAttribute("title", "");
       }
     };
 

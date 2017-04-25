@@ -180,6 +180,11 @@ footer img[align="middle"] {
   padding: 0em 0.25em;
 }
 
+/* show only one tooltip if nested */
+.tooltip + .tooltip {
+  display:none;
+}
+
 .transcript-tooltip-span {
   padding-right: 0.5em;
 }
