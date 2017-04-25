@@ -23,7 +23,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1298466264
-ModificationTime: 1492772783
+ModificationTime: 1492787458
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3637,12 +3637,12 @@ NameList: Adobe Glyph List
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8970 26 11
+WinInfo: 7826 26 11
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 242221 121109 80740 545260 1048576 80740 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "top" "'mark' Mark Positioning combchars"
-BeginChars: 65609 1269
+BeginChars: 65609 1270
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -16844,6 +16844,7 @@ CALL
 SVTCA[x-axis]
 CALL
 EndTTInstrs
+AnchorPoint: "top" 264 562 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -112527,6 +112528,16 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 1266 9002 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uni1EBD
+Encoding: 7869 7869 1269
+Width: 559
+VWidth: 0
+LayerCount: 2
+Fore
+Refer: 117 732 N 1 0 0 1 100.5 -22 2
+Refer: 72 101 N 1 0 0 1 0 0 3
 EndChar
 EndChars
 EndSplineFont
