@@ -6,11 +6,8 @@ WOFF2=$(TTF:.ttf=.woff2)
 
 webfonts : $(TTF) $(WOFF) $(WOFF2)
 
-%.otf : %.sfd
+%.ttf : %.sfd
 	fontforge -lang=ff -c 'Open($$1); Generate($$2)' "$<" "$@"
-
-%.ttf : %.otf
-	cp -p "$<" "$@"
 
 %.woff : %.ttf
 	sfnt2woff "$<"
