@@ -117,6 +117,8 @@ var createDocumentViewer = (function(){
             parentNode.appendChild(domContainer.textTranscript);
             parentNode.appendChild(domContainer.print);
             parentNode.appendChild(domContainer.structure);
+
+
           };
         })();
 
@@ -190,6 +192,9 @@ var createDocumentViewer = (function(){
             // otherwise use default value
             setView(state.view);
           }
+
+          // init tooltips
+          Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
 
         };
       })();

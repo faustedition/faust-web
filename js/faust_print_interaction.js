@@ -65,6 +65,9 @@ var addPrintInteraction = function(rootDir, node, faustUri) {
 
                 // set css class
                 currentLine.classList.add('show');
+                
+                // inti tooltips
+                Faust.tooltip.addToTooltipElementsBySelector(".print [title]", "title");
               }
             });
           }
@@ -127,4 +130,6 @@ var addPrintInteraction = function(rootDir, node, faustUri) {
       Faust.tooltip.add(currentLine, document.createTextNode(varstr + " in " + witnessCount + " Textzeugen"));
     }
   }
+
+  Faust.tooltip.addToTooltipElementsBySelector(".view-content [title], .print [title]", "title");
 };

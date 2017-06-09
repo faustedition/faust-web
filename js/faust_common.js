@@ -795,8 +795,8 @@ var Faust = (function(){
     var createMouseenterListener = function(element) {
       return function(event) {
         document.body.insertBefore(element.tooltipDiv, document.body.firstChild);
-        element.tooltipDiv.style.left = (event.clientX + 15) + "px";
-        element.tooltipDiv.style.top = (event.clientY + 8) + "px";
+        element.tooltipDiv.style.left = event.clientX + "px";
+        element.tooltipDiv.style.top = (event.clientY + 10) + "px";
       };
     };
 
@@ -804,8 +804,8 @@ var Faust = (function(){
     // the tooltip will be moved according to the new mouse pointer position
     var createMousemoveListener = function(element) {
       return function(event) {
-        element.tooltipDiv.style.left = (event.clientX + 15) + "px";
-        element.tooltipDiv.style.top = (event.clientY + 8) + "px";
+        element.tooltipDiv.style.left = event.clientX + "px";
+        element.tooltipDiv.style.top = (event.clientY + 10) + "px";
       };
     };
 
@@ -847,7 +847,7 @@ var Faust = (function(){
       // create the div containing the tooltip
       var tooltipDiv = document.createElement("div");
       tooltipDiv.id = "tooltip";
-      tooltipDiv.className = "tooltip";
+      tooltipDiv.className = "tooltip pure-tooltip";
       
       // append the given content to the tooltip container
       tooltipDiv.appendChild(content);
@@ -869,46 +869,34 @@ var Faust = (function(){
       element.removeTooltip = createListenerRemoveFunction(element, mouseenterListener, mousemoveListener, mouseleaveListener);
     };
 
-    // get all elements in dom that have a tooltip class. these elements must have a class with the name "show-tooltip"
-    // and an attribute called "tooltiptext". a textNode is created from the text of that attribute and then a
-    // tooltip is attached to the element with that specific text
+    // hook to add tooltip to multiple elements
     tooltip.addToTooltipElements = function() {
+      tooltip.addToTooltipElementsBySelector(".show-tooltip", "tooltiptext"); // all elements with a class '.show-tooltip', get text from attribute 'tooltiptext'
+      tooltip.addToTooltipElementsBySelector("main [title]", "title"); // all elements with a title attribute, get text from attribute 'title'
+    };
+
+
+    tooltip.addToTooltipElementsBySelector = function(selector, attributeName) {
       var i;
-      var tooltipElement, tooltipElements;
-      var tooltipTextNode;
+      var tooltipElement, tooltipElements, tooltipText;
 
       // get all tooltip elements
-      tooltipElements = document.getElementsByClassName("show-tooltip");
+      tooltipElements = document.querySelectorAll(selector);
 
       // iterate through found tooltip elements
       for(i = 0; i < tooltipElements.length; i++) {
         tooltipElement = tooltipElements.item(i);
+        tooltipText =  tooltipElement.getAttribute(attributeName);
 
-        // create content for actual tooltip
-        tooltipTextNode = document.createTextNode(tooltipElement.getAttribute("tooltiptext"));
+        if ( tooltipText != '' ) {
+          // append tooltip to element
+          tooltip.add(tooltipElement, document.createTextNode(tooltipText));
 
-        // append tooltip to element
-        tooltip.add(tooltipElement, tooltipTextNode);
+          // empty default title attribute
+          tooltipElement.setAttribute(attributeName, "");
+        }
       }
-
-     
-      // get all elements with title attribute
-      tooltipElements = document.querySelectorAll("[title]");
-
-      // iterate through found tooltip elements
-      for(i = 0; i < tooltipElements.length; i++) {
-        tooltipElement = tooltipElements.item(i);
-
-        // create content for actual tooltip
-        tooltipTextNode = document.createTextNode(tooltipElement.getAttribute("title"));
-
-        // append tooltip to element
-        tooltip.add(tooltipElement, tooltipTextNode);
-
-        // empty default title attribute
-        tooltipElement.setAttribute("title", "");
-      }
-    };
+    }
 
     return tooltip;
   })();
@@ -932,7 +920,7 @@ var Faust = (function(){
     data.forEach(function(crumb, index) {
       // insert text for last breadcump into seperate element
       if (index == num-1) {
-        var current = '<span title="'+crumb.caption+'">'+crumb.caption+'</span>';
+        var current = '<span>'+crumb.caption+'</span>';
         document.getElementById("current").innerHTML = current;
 
         return;

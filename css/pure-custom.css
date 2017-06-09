@@ -211,14 +211,16 @@ a[href].pure-button {border:none;}
 .pure-variations {margin-bottom:20px; padding:15px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 .pure-variations > p,.pure-variations > ul{margin:0;}
 
-.pure-tooltip{display:inline;position:relative;cursor:help;}
-.pure-tooltip:hover{text-decoration:none}
-.pure-tooltip:hover:after{background:rgba(0,0,0,.8); border-radius:5px; bottom:1.5em; color:rgb(255,255,255); content:attr(data-content); display:block; left:50%; margin-left:-150px; padding:0.5em 1em; position:absolute; z-index:98; width:300px;}
-.pure-tooltip:hover:before{border:solid; border-color:rgba(0,0,0,.8) transparent; border-width:6px 6px 0 6px; bottom:1.125em; content:""; display:block; left:50%; margin-left:-3px; position:absolute; z-index:99;}
-.pure-tooltip.pure-tooltip-left:hover:after{left:0; margin-left:0;}
-.pure-tooltip.pure-tooltip-left:hover:before{left:12px; margin-left:0;}
-.pure-tooltip.pure-tooltip-right:hover:after{left:auto; right:0; margin-left:0;}
-.pure-tooltip.pure-tooltip-right:hover:before{left:auto; right:12px; margin-left:0;}
+.pure-tooltip {position:fixed; z-index:100; pointer-events:none; margin-top:-25px; transform:translate(-50%,-100%); background:rgb(51,51,51); color:rgb(230,230,230); border-radius:4px; padding:0.25em 0.5em;}
+.pure-tooltip::after {position:absolute; content:""; display:block; width:0; left:50%; bottom:-7px; transform:translateX(-50%); border-width:8px 8px 0; border-color:rgb(51,51,51) transparent; border-style:solid;}
+.pure-tooltip + .pure-tooltip {display:none;} /* show only one tooltip if nested */
+.pure-tooltip .transcript-tooltip-span ~ .transcript-tooltip-span {padding-left:0.5em;}
+.pure-tooltip .transcript-tooltip-hand {font-weight:bold;}
+.pure-tooltip .transcript-tooltip-material {font-style:italic;}
+.pure-tooltip .transcript-tooltip-text-decoration {}
+.pure-tooltip .transcript-tooltip-property {}
+.pure-tooltip .transcript-tooltip-script {}
+.pure-tooltip .transcript-tooltip-inline-decoration {}
 
 .pure-modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:hidden; width:500px; background-color:rgb(255,255,255); border:1px solid rgb(155,155,155); border-radius:4px; box-shadow:0 0 20px rgba(0,0,0,0.5);}
 .pure-modal-heading{background-color:rgba(155,155,155,0.2); padding:10px 15px;}
