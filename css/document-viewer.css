@@ -142,6 +142,7 @@ div g.element-line-hidden:hover > * {
   height: 360px;
   width: 240px;
   background-color:rgba(155,155,155,0.2);
+  cursor: pointer;
 }
 .metadata-div {
   padding-top:0 !important;

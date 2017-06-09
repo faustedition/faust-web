@@ -188,6 +188,7 @@ table.table {
 
 
 .note { float: right; }
+.subhit .note { float: none; display: block; }
 
 /* print.html */
 dt {
