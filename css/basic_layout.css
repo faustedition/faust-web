@@ -217,31 +217,6 @@ footer img[align="middle"] {
   right: 0.5em;
 }
 
-/* ********************** */
-/* Tables                 */
-/* ********************** */
-
-/* Adjustment for the sort icons: */
-table[data-sortable] th {cursor: pointer; padding-right: 24px;}
-table[data-sortable] th:after {line-height: 1.5em; margin-right: -17px; margin-left: 0;}
-
-th[data-sorted]:after {
-  font-family: FontAwesome;
-  float: right;
-}
-th[data-sorted='false']:after {
-  content: "\e94f"; /* .fa-sort */
-  opacity: 0.2;
-}
-th[data-sorted='true']:after {
-  color: black;
-}
-th[data-sorted-direction='ascending']:after {
-  content: "\e951"; /* .fa-sort-up */
-}
-th[data-sorted-direction='descending']:after {
-  content: "\e950"; /* .fa-sort-down */
-}
 
 /* *********************** */
 /* External Links          */
