@@ -169,38 +169,6 @@ footer img[align="middle"] {
 /* Elements
 /* ********************** */
 
-/* tooltips */
-.tooltip {
-  position: fixed;
-  z-index:100;
-  pointer-events: none;
-  background-color: white;
-  border-radius: 4px;
-  border: 1px solid black;
-  padding: 0em 0.25em;
-}
-
-.transcript-tooltip-span {
-  padding-right: 0.5em;
-}
-
-.transcript-tooltip-span:last-child {
-  padding-right: 0em;
-}
-
-.transcript-tooltip-hand {
-  font-weight: bold;
-}
-
-.transcript-tooltip-material {
-  font-style: italic;
-}
-
-.transcript-tooltip-text-decoration {}
-.transcript-tooltip-property {}
-.transcript-tooltip-script {}
-.transcript-tooltip-inline-decoration {}
-
 
 /* navigation bar (document viewer & bargraph) */
 .navigation-bar-container {
@@ -249,31 +217,6 @@ footer img[align="middle"] {
   right: 0.5em;
 }
 
-/* ********************** */
-/* Tables                 */
-/* ********************** */
-
-/* Adjustment for the sort icons: */
-table[data-sortable] th {cursor: pointer; padding-right: 24px;}
-table[data-sortable] th:after {line-height: 1.5em; margin-right: -17px; margin-left: 0;}
-
-th[data-sorted]:after {
-  font-family: FontAwesome;
-  float: right;
-}
-th[data-sorted='false']:after {
-  content: "\e94f"; /* .fa-sort */
-  opacity: 0.2;
-}
-th[data-sorted='true']:after {
-  color: black;
-}
-th[data-sorted-direction='ascending']:after {
-  content: "\e951"; /* .fa-sort-up */
-}
-th[data-sorted-direction='descending']:after {
-  content: "\e950"; /* .fa-sort-down */
-}
 
 /* *********************** */
 /* External Links          */
@@ -336,41 +279,42 @@ p.para-start { margin-top: 1em; } /* unused? */
 /* ********************** */
 /* Print
 /* ********************** */
-
 @media print {
-  html {
+  html, body {
     padding:0;
+    min-height:auto;
   }
 
   header {
     position:relative;
-    border-bottom:1px solid;
+    border-bottom:1px solid grey;
     box-shadow: none;
     height:auto;
   }
 
-  .main-content-container {
+  header #current {
+    text-align:right;
+    border:none;
+  }
+
+  main {
     position: relative;
-    border: none;
     left:auto;
     right:auto;
     top:auto;
     bottom:auto;
-    overflow: visible;
+    overflow:initial;
   }
 
-  .main-content {
-    border:none;
-    overflow: auto;
-  }
-
-  main [class*="pure-u"] {
-    display:inline; /* FIXME: hotfix - default is 'inline-block'. This leads to cutt-offs on long texts in FF */
+  [class*="pure-g"], [class*="pure-u"] {
+    display:initial; /* FIXME: hotfix - leads to cutt-offs on long texts in FF */
+    max-width: none;
   }
 
   footer {
     position: relative;
     left:auto;
     bottom:auto;
+    border-top:1px solid grey;
   }
 }

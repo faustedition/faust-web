@@ -114,4 +114,8 @@
   document.getElementById("locations").getElementsByTagName("th")[0].click();
 </script>
 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.table.js"></script>
+<script type="text/javascript">$("table[data-sortable]").fixedtableheader();</script>
+
 <?php include "includes/footer.php"; ?>
