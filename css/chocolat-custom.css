@@ -1,0 +1,87 @@
+main figure a {
+    cursor: zoom-in;
+}
+
+.faustedition .chocolat-wrapper,
+.faustedition .chocolat-overlay {
+    top: 3.4em;
+}
+
+.faustedition .chocolat-overlay {
+    background-color: rgba(221,221,221,0.9);
+}
+
+.faustedition .chocolat-content {
+    padding:2em;
+}
+
+/* Elements: fullscreen, description, pagination, set-title */
+.faustedition .chocolat-wrapper .chocolat-bottom {
+    display:none !important;
+}
+
+
+/* Use Font Awesome */
+.faustedition .chocolat-loader,
+.faustedition .chocolat-wrapper .chocolat-fullscreen,
+.faustedition .chocolat-wrapper .chocolat-close,
+.faustedition .chocolat-wrapper .chocolat-left,
+.faustedition .chocolat-wrapper .chocolat-right {
+    background:none;
+    width:auto;
+    height:auto;
+    padding:1em;
+    font:1.33333333em/.75em 'FontAwesome';
+    color: rgb(125,125,125);
+    vertical-align: -15%;
+}
+
+.faustedition .chocolat-loader {
+   margin-left:-.5em;
+   margin-top:-.5em;
+   -webkit-animation: fa-spin 2s infinite linear;
+   animation: fa-spin 2s infinite linear;
+}
+.faustedition .chocolat-loader::before {
+   content:'\e95b';
+}
+.faustedition .chocolat-wrapper .chocolat-close {
+    right:.25em;
+}
+.faustedition .chocolat-wrapper .chocolat-close::before {
+    content:'\e821';
+}
+.faustedition .chocolat-wrapper .chocolat-left {
+    margin-top: -1.5em;
+    left:.25em;
+}
+.faustedition .chocolat-wrapper .chocolat-left::before {
+    content:'\e8c4';
+}
+.faustedition .chocolat-wrapper .chocolat-right {
+    margin-top: -1.5em;
+    right:.25em;
+}
+.faustedition .chocolat-wrapper .chocolat-right::before {
+    content:'\e8c5';
+}
+.faustedition .chocolat-wrapper .chocolat-fullscreen::before {
+    content: '\e899';
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+/* Bugfix */
+.chocolat-zoomed .chocolat-img {
+    cursor: zoom-out;
+}

@@ -21,7 +21,6 @@
   createConcordanceTable(document.getElementById("concordance-table-container"));
 </script>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.table.js"></script>
 <script type="text/javascript">$("table[data-sortable]").fixedtableheader();</script>
 

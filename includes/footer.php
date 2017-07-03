@@ -16,6 +16,9 @@
     </footer>
     <?php endif; ?>
 
+<script type="text/javascript" src="js/jquery.chocolat.js"></script>
+<script>$('main').Chocolat({imageSelector:'figure a', className:'faustedition', loop:true});</script>
+
   <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];

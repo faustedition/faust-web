@@ -60,7 +60,7 @@
     </div>
   </div>
 </section>
-<script type="text/javascript" src="js/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/jquery.slick.min.js"></script>
 <script type="text/javascript">
   jQuery(document).ready(function($){
