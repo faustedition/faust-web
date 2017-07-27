@@ -23,7 +23,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1298466264
-ModificationTime: 1501145005
+ModificationTime: 1501146053
 PfmFamily: 17
 TTFWeight: 300
 TTFWidth: 5
@@ -85,6 +85,7 @@ Lookup: 1 0 0 "'ss01' Style Set 1 lookup 23" { "'ss01' Style Set 1 lookup 23 sub
 Lookup: 1 0 0 "'ss01' Style Set 1 lookup 24" { "'ss01' Style Set 1 lookup 24 subtable"  } ['salt' ('grek' <'dflt' > 'latn' <'dflt' > ) 'ss01' ('grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'ss01' Style Set 1 lookup 25" { "'ss01' Style Set 1 lookup 25 subtable"  } ['salt' ('grek' <'dflt' > 'latn' <'dflt' > ) 'ss01' ('grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "Single Substitution lookup 26" { "Single Substitution lookup 26 subtable"  } []
+Lookup: 260 0 0 "Mark Positions" { "Mark Positions-1"  } []
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 0" { "'kern' Horizontal Kerning lookup 0 subtable"  } ['kern' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 1" { "'kern' Horizontal Kerning lookup 1 subtable"  } ['kern' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 2" { "'kern' Horizontal Kerning lookup 2 subtable"  } ['kern' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
@@ -3244,11 +3245,22 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 50 25 18
+WinInfo: 75 25 18
 BeginPrivate: 0
 EndPrivate
+Grid
+283.75 1300 m 0
+ 283.75 -700 l 1024
+188 1300 m 0
+ 188 -700 l 1024
+-1000 579.5 m 0
+ 2000 579.5 l 1024
+435 1300 m 0
+ 435 -700 l 1024
+EndSplineSet
 TeXData: 1 0 0 239075 119537 79691 542114 1048576 79691 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65609 1264
+AnchorClass2: "top" "Mark Positions-1"
+BeginChars: 65609 1265
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -3306,7 +3318,7 @@ EndChar
 
 StartChar: .null
 Encoding: 8 8 1
-AltUni2: 000000.ffffffff.0 00001d.ffffffff.0
+AltUni2: 00001d.ffffffff.0 000000.ffffffff.0
 Width: 0
 Flags: W
 LayerCount: 2
@@ -19022,7 +19034,7 @@ EndChar
 StartChar: e
 Encoding: 101 101 72
 Width: 548
-Flags: W
+Flags: WO
 TtInstrs:
 PUSHW_2
  33
@@ -19402,6 +19414,7 @@ CALL
 CALL
 CALL
 EndTTInstrs
+AnchorPoint: "top" 286 578 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21010,6 +21023,7 @@ CALL
 CALL
 CALL
 EndTTInstrs
+AnchorPoint: "top" 435 582 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21182,6 +21196,7 @@ CALL
 CALL
 CALL
 EndTTInstrs
+AnchorPoint: "top" 284 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -180779,6 +180794,22 @@ SplineSet
  269 701 269 701 269 688 c 0,107,108
  269 676 269 676 278.5 667 c 128,-1,109
  288 658 288 658 299 658 c 0,98,99
+EndSplineSet
+EndChar
+
+StartChar: uni0304
+Encoding: 772 772 1264
+Width: 0
+Flags: W
+AnchorPoint: "top" -278 599 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-410 649 m 1,0,-1
+ -410 704 l 1,1,-1
+ -145 704 l 1,2,-1
+ -145 649 l 1,3,-1
+ -410 649 l 1,0,-1
 EndSplineSet
 EndChar
 EndChars
