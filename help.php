@@ -21,6 +21,7 @@ elseif (inreferer('genesis')) 		$target = 'intro#genesis';
 elseif (inreferer('search')) 		$target = 'intro#volltextsuche';
 elseif (inreferer('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
+elseif (inreferer('view=print')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
 elseif (inreferer('view=facsimile_document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
 

@@ -260,7 +260,7 @@ a.pageno + .hasvars:hover::before {
 /* Einblendungsapparat. TODO auslagern */
 
 /* Everything that is not in the original text should be grey: */
-.generated-text {
+.generated-text, a[href].generated-text {
 	color: #aaa;
 }
 
