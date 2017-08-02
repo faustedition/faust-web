@@ -2,7 +2,7 @@
 /* CUSTOMIZATION OF PURE FRAMEWORK */
 /* http://purecss.io/ */
 
-*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*, *:before, *:after {box-sizing:border-box;}
 
 html, button, input, select, textarea {font:16px/1.5em "Ubuntu", Arial, Helvetica, sans-serif; color:rgb(0,0,0);}
 h1, h2, h3, h4, h5, h6 {line-height:1.125em;}
@@ -24,6 +24,7 @@ pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
 table {margin:1em 0;}
+table th, table td {box-sizing:initial !important;}
 figure {margin:0.2em 0 2em 0; text-align:center;}
 figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em; color:rgb(125,125,125);}
