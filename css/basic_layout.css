@@ -125,10 +125,6 @@ main {
   overflow: auto;
 }
 
-main table.fixed {
-  top:3.4em;
-}
-
 main.nofooter {
   bottom:0;
 }
