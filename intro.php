@@ -27,7 +27,7 @@
             <p><a class="pure-button" href="/genesis_faust_ii" style="display:block;">Genese Faust II<br><small class="pure-fade-50">Akte</small></a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
-            <p><a class="pure-button pure-button-primary" href="/print/text.html"><big>Text</big></a></p>
+            <p><a class="pure-button pure-button-primary" href="/text"><big>Text</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/print/faust1" style="display:block;">Faust I</a></p>
             <p><a class="pure-button" href="/print/faust2" style="display:block;">Faust II</a></p>
