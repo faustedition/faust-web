@@ -7,19 +7,20 @@
         <div class="text">
           <h2>Johann Wolfgang Goethe: Faust</h2>
           <h3>Historisch-kritische Edition</h3>
-              <p>Die digitale Faustedition besteht aus einem <a href="/archive"
-                      >Archiv</a> der Handschriften und der zu Lebzeiten erschienenen
-                  textkritisch relevanten Drucke zum Faust, einem Lesetext des <a
-                      href="/print/faust1.html">Faust I</a> und des <a
-                      href="/print/faust2.html">Faust II</a> sowie Visualisierungen zur <a
-                      href="/genesis">Genese</a> des Werks.</p>
-              <p>
+                <p>
+                  Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
+                  unter Mitarbeit von Gerrit Brüning, Katrin Henzel, 
+                  Christoph Leijser, Gregor Middell, Dietmar Pravida,
+                  Thorsten Vitt und Moritz Wissenbach<br>
+                  Frankfurt am Main, Weimar, Würzburg 2016
+                </p>
                 <a class="pure-button pure-button-primary" href="/archive">Archiv</a>
                 <a class="pure-button pure-button-primary" href="/genesis">Genese</a>
                 <a class="pure-button pure-button-primary" href="/text">Text</a>
               </p>
               <p>
                 <a class="pure-button" href="/intro">Über die Ausgabe</a>
+                <a class="pure-button" href="/project">Mitwirkende</a>
               </p>
 
               <p><a class="undecorated" href="http://www.dfg.de" target="_blank"><img alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.svg" width="175"></a></p>
@@ -110,26 +111,4 @@
     });
   });
 </script>
-
-<section class="center pure-g-r">
-  <div class="pure-u-1-5"></div>
-  
-  <article class="pure-u-3-5 pure-gap pure-center">
-
-    <h3>Herausgegeben von &hellip;</h3>
-    <p>
-      Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
-      unter Mitarbeit von Gerrit&nbsp;Brüning, Katrin&nbsp;Henzel, Christoph&nbsp;Leijser, Gregor&nbsp;Middell, Dietmar&nbsp;Pravida,  Thorsten&nbsp;Vitt und Moritz&nbsp;Wissenbach<br>
-      Frankfurt am Main, Weimar, Würzburg 2016
-    </p>
-    <p>
-      <a class="pure-button pure-button-tile" href="intro">Über die Ausgabe (2. Beta-Version)</a> 
-      <a class="pure-button pure-button-tile" href="project">Mitwirkende</a>
-    </p>
-
-    <p><a class="undecorated" href="http://www.dfg.de" target="_blank"><img alt="DFG - Deutsche Forschungsgesellschaft" src="img/DFG-Logo.svg" width="250"></a></p>
-  </article>
-
-  <div class="pure-u-1-5"></div>
-</section>
 <?php include "includes/footer.php"; ?>

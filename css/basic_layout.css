@@ -224,7 +224,7 @@ a[href^="//"]:after, a[href^="https://"]:after, a[href^="http://"]:after {
   margin-left: 3px;
 }
 a[href^="http://beta.faustedition.net/"]:after, a.undecorated:after {
-  content: "";
+  display:none;
 }
 a.undecorated {
   border:none;
