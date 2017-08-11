@@ -2,7 +2,7 @@
 /* CUSTOMIZATION OF PURE FRAMEWORK */
 /* http://purecss.io/ */
 
-*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+*, *:before, *:after {box-sizing:border-box;}
 
 html, button, input, select, textarea {font:16px/1.5em "Ubuntu", Arial, Helvetica, sans-serif; color:rgb(0,0,0);}
 h1, h2, h3, h4, h5, h6 {line-height:1.125em;}
@@ -24,11 +24,13 @@ pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
 table {margin:1em 0;}
-figure {margin:0.2em 0 1em 0; text-align:center;}
-figure img {max-width:90% !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
-figure figcaption {margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em;}
-figure[class*='pure-pull'] img {max-width:300px !important;}
-figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
+table th, table td {box-sizing:initial !important;}
+table.fixed {position:fixed; width:auto; display:none; border:none; margin:0;}
+table.fixed thead {background-color:rgb(255, 255, 255);}
+figure {margin:0.2em 0 2em 0; text-align:center;}
+figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
+figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em; color:rgb(125,125,125);}
+figure ~ h1, figure ~ h2, figure ~ h3, figure ~ h4, figure ~ h5, figure ~ h6 {clear:both;}
 
 *:target, .target {background-color:rgba(155, 155, 155, 0.2);}
 
@@ -39,6 +41,7 @@ figure[class*='pure-pull'] img + figcaption {max-width:400px !important;}
 .pure-table tr ~ tr {border-top:1px solid rgb(221,221,221);}
 .pure-table tr:hover {background-color:rgba(155, 155, 155, 0.1);}
 .pure-table thead {background-color:rgba(155, 155, 155, 0.2);}
+.pure-table.fixed thead {background-color:rgb(235, 235, 235);}
 
 table[data-sortable] th {cursor: pointer; padding-right: 24px; white-space:nowrap;}
 table[data-sortable] th:after {line-height: 1.5em; margin-right: -17px; margin-left: 0;}
@@ -49,8 +52,6 @@ table[data-sortable] th[data-sorted-direction='descending']:after { content:"\e9
 table[data-sortable] th[data-sorted='true']:after { color: black;}
 table[data-sortable].fixed th {cursor: initial;}
 table[data-sortable].fixed th[data-sorted]:after {display:none;}
-table[data-sortable].fixed {top:3.4em; position:fixed; width:auto; display:none; border:none; margin:0;}
-table[data-sortable].fixed thead {background-color:rgb(235, 235, 235);}
 
 .pure-form  input, .pure-form select, .pure-form textarea {background-color:rgba(255,255,255,0.5);}
 .pure-form input[type="text"], .pure-form input[type="password"], .pure-form input[type="email"], .pure-form input[type="url"], .pure-form input[type="date"], .pure-form input[type="month"], .pure-form input[type="time"], .pure-form input[type="datetime"], .pure-form input[type="datetime-local"], .pure-form input[type="week"], .pure-form input[type="number"], .pure-form input[type="search"], .pure-form input[type="tel"], .pure-form input[type="color"], .pure-form select, .pure-form textarea {font-size:0.95em;}

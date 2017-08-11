@@ -24,14 +24,6 @@ header {
   display:table;
 }
 
-.active-link {
-  /* border-bottom: 3px solid rgb(250,190,0) !important; */
-  background-color: rgb(250,190,0);
-}
-.active-link * {
-  color: black !important;
-}
-
 header > * {
   display:table-cell;
   vertical-align:middle;
@@ -123,6 +115,10 @@ main {
   left: 0;
   right: 0;
   overflow: auto;
+}
+
+main table.fixed {
+  top:3.4em;
 }
 
 main.nofooter {
@@ -228,7 +224,10 @@ a[href^="//"]:after, a[href^="https://"]:after, a[href^="http://"]:after {
   margin-left: 3px;
 }
 a[href^="http://beta.faustedition.net/"]:after, a.undecorated:after {
-  content: "";
+  display:none;
+}
+a.undecorated {
+  border:none;
 }
 
 

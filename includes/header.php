@@ -21,14 +21,16 @@
     <meta charset='utf-8'>
     <title>Faustedition [alpha]</title>
 
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/sortable.min.js"></script>
-
     <script type="text/javascript" src="js/faust_common.js"></script>
 
     <link rel="stylesheet" href="css/webfonts.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
+    <link rel="stylesheet" href="css/chocolat.css">
+    <link rel="stylesheet" href="css/chocolat-custom.css">
     <?php if (inurl('documentViewer')) : ?>
     <link rel="stylesheet" href="css/document-viewer.css">
     <link rel="stylesheet" href="css/document-text.css">

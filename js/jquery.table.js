@@ -6,11 +6,10 @@
          function init() {
             $t_fixed = $this.clone();
             $t_fixed.find("tbody").remove().end().addClass("fixed").insertBefore($this);
-            resizeFixed();
          }
          function resizeFixed() {
             $t_fixed.find("th").each(function(index) {
-               $(this).css("width",$this.find("th").eq(index).outerWidth()+"px");
+               $(this).css("width",$this.find("th").eq(index).css('width'));
             });
          }
          function scrollFixed() {
@@ -22,6 +21,7 @@
             else if(offset >= tableOffsetTop && offset <= tableOffsetBottom && $t_fixed.is(":hidden"))
                $t_fixed.show();
          }
+         $(window).load(resizeFixed); /* initial resize */
          $(window).resize(resizeFixed);
          $('main').scroll(scrollFixed);
          init();
