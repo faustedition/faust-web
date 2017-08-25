@@ -1170,7 +1170,7 @@ var createDocumentViewer = (function(){
               && pageMd.docTranscripts[0].hasImages)
             return setPage(page);
         }
-        return setPage(page);
+        return setPage(state.page);
       };
 
       // switch to next page
