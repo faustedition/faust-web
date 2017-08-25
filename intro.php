@@ -9,7 +9,6 @@
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
         
-        <div class="pure-u-1-8"></div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/archive"><big>Archiv</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
@@ -33,7 +32,15 @@
             <p><a class="pure-button" href="/print/faust2" style="display:block;">Faust II</a></p>
             <p><a class="pure-button" href="paralipomena" style="display:block;">Paralipomena</a></p>
         </div>
-        <div class="pure-u-1-8"></div>
+        <div class="pure-u-1-4 pure-gap pure-center">
+            <p><a class="pure-button pure-button-primary" href="/intro"><big>Info</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
+            <p><a class="pure-button" href="/intro#volltextsuche" style="display:block;">Suche</a></p>
+            <p><a class="pure-button" href="/intro#siglen" style="display:block;">Siglen</a></p>
+            <p><a class="pure-button" href="/intro#handschriftenanalyse" style="display:block;">Handschriftenanalyse</a></p>
+            <p><a class="pure-button" href="/bibliography" style="display:block;">Bibliographie</a></p>
+            <p><a class="pure-button" href="/intro#cite" style="display:block;">Zitierweise</a></p>
+        </div>
         <h2>Beta-Version</h2>
         <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern 
         eine <a href="beta-release">Beta-Version</a>. <a href="beta-release">Ausführlichere Informationen hier</a>.</p>
@@ -266,7 +273,7 @@
         und Punkt können hier auch weggelassen werden, die Suche „2vh2“ führt zu derselben Stelle). Verkürzte Suchanfragen wie „<a ref="search?q=V+H.2">V&nbsp;H.2</a>“ führen zur 
         Ausgabe einer Liste von Siglen, in denen diese Zeichenfolge vorkommt. Dabei wird auch in alternativen Siglensystemen, Archivsignaturen und der Kurzbeschreibung gesucht. Diese Siglensuche ist eine einfache Teilstringsuche, die für den Volltext zur Verfügung stehenden Wildcards gibt es hier nicht.</p>
                 
-        <h2>Technische Untersuchungsverfahren</h2>
+        <h2 id="handschriftenanalyse">Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
         <ul>
             <li><a href="x-ray_spectrometry">Röntgenfluoreszenzspektrometrie
