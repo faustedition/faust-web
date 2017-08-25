@@ -969,6 +969,7 @@ var createDocumentViewer = (function(){
           doc.pages[pageNum - 1].docTranscript = docTranscriptDiv;
           Faust.dom.removeAllChildren(domContainer.docTranscript);
           domContainer.docTranscript.appendChild(docTranscriptDiv);
+          addPatchHandlers(domContainer.docTranscript);
           transcriptTooltips(domContainer.docTranscript);
 
 
