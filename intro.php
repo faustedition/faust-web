@@ -81,6 +81,23 @@
             Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
             Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
+
+        <h2 id="testimony">Dokumente zur Entstehungsgeschichte</h2>
+
+        <p>Die <a href="archive_testimonies">Dokumente zur Entstehung des
+            ‚Faust‘</a> versammeln alle bislang bekanntgewordenen Äußerungen Goethes und
+            anderer Zeitgenossen, die sich auf den ‚Faust‘ beziehen lassen, in Briefen,
+            Tagebuch- und Gesprächsaufzeichnungen und weiteren schriftlich überlieferten
+            Dokumenten. Der Bestand der mehr als 1500 Zeugnisse integriert die früheren
+            Sammlungen von <a data-bib-uri="faust://bibliography/pniower1899"
+            href="bibliography#pniower1899">Otto Pniower (1899)</a> und <a
+            href="bibliography#graef1904"
+            data-bib-uri="faust://bibliography/graef1904">Hans-Gerhard Gräf (1904)</a> und
+            ergänzt sie um erst seither publizierte Dokumente.  Die Dokumente sind nach
+            Möglichkeit als vollständige Texte verfügbar, die jeweils ‚Faust‘ betreffende
+            Passage wird auszugsweise in der Tabelle der Zeugnisse angezeigt, die zugleich
+            die wichtigsten Angaben wie Datum, Verfasser, Adressat, Verweis-Nummern
+            enthält.</p>
         
         <h2 id="lesetext">Lesetext</h2>
         <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
