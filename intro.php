@@ -37,7 +37,7 @@
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
             <p><a class="pure-button" href="/intro#volltextsuche" style="display:block;">Suche</a></p>
             <p><a class="pure-button" href="/intro#siglen" style="display:block;">Siglen</a></p>
-            <p><a class="pure-button" href="/intro#handschriftenanalyse" style="display:block;">Handschriftenanalyse</a></p>
+            <p><a class="pure-button" href="/transcription_guidelines" style="display:block;">Transkription</a></p>
             <p><a class="pure-button" href="/bibliography" style="display:block;">Bibliographie</a></p>
             <p><a class="pure-button" href="/intro#cite" style="display:block;">Zitierweise</a></p>
         </div>
