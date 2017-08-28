@@ -616,6 +616,7 @@ var createDocumentViewer = (function(){
           // replace window location with current parameters
           updateLocation();
 
+          /*
           // update the PDF button (DEBUG)
           try {
             var pdfButton = document.getElementById('diplomatic-pdf-button'),
@@ -628,6 +629,7 @@ var createDocumentViewer = (function(){
             // no PDF button -> NOP
             console.log(e);
           }
+          */
 
           // set breadcrumbs
 
