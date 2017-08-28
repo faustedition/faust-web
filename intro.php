@@ -179,7 +179,7 @@
         
         <h3>Siglen der Handschriften zum Faust&nbsp;II</h3>
         <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
-            gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
+            gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Handschriften werden in die numerische 
             Zählung durch Hinzufügung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
             ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
             H.0a usw.).</p>
@@ -199,10 +199,10 @@
             <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390782.xml">H&nbsp;P6</a>. Die durch Bohnenkamp 
             eingeführten gelten auch für die Faustedition, mit Ausnahme der Handschriften, die auch nach dem oben beschriebenen 
             Prinzip sigliert werden können, z.B. <a 
-            ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2.</p>
+            ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2).</p>
             
         <h3>Weitere Siglen</h3>
-        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, der Präfix R bezeichnet eine Restkategorie.</p>
+        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, das Präfix R bezeichnet eine Restkategorie.</p>
         
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
