@@ -98,8 +98,8 @@
             Dokumenten. Der Bestand der mehr als 1500 Zeugnisse integriert die früheren
             Sammlungen von <a data-bib-uri="faust://bibliography/pniower1899"
             href="bibliography#pniower1899">Otto Pniower (1899)</a> und <a
-            href="bibliography#graef1904"
-            data-bib-uri="faust://bibliography/graef1904">Hans-Gerhard Gräf (1904)</a> und
+            href="bibliography#graef1901-1914_II_2"
+            data-bib-uri="faust://bibliography/graef1901-1914_II_2">Hans-Gerhard Gräf (1904)</a> und
             ergänzt sie um erst seither publizierte Dokumente.  Die Dokumente sind nach
             Möglichkeit als vollständige Texte verfügbar, die jeweils ‚Faust‘ betreffende
             Passage wird auszugsweise in der Tabelle der Zeugnisse angezeigt, die zugleich
