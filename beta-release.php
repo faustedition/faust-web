@@ -57,6 +57,8 @@
 
             <h2 id="beta.3">Release am 28. August 2017 (Beta-Version 3)</h2>
 
+            <p><small>(aktualisiert am 1. September 2017)</small></p>
+
             <p>Die wichtigste Neuerung der Beta-Version 3 sind die <a
                     href="http://dev.faustedition.net/archive_testimonies">Dokumente
                     zur Entstehungsgeschichte</a>: Erfasst sind mehr als 1500
