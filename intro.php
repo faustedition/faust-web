@@ -42,7 +42,7 @@
             <p><a class="pure-button" href="/intro#cite" style="display:block;">Zitierweise</a></p>
         </div>
         <h2>Beta-Version</h2>
-        <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern 
+        <p>Diese im Februar 2016 veröffentlichte und zuletzt am 1. September 2017 aktualisierte Version der Ausgabe ist noch nicht endgültig, sondern 
         eine <a href="beta-release">Beta-Version</a>. <a href="beta-release">Ausführlichere Informationen hier</a>.</p>
         <h2 id="handschriften">Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
