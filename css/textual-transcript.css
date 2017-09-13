@@ -70,7 +70,7 @@ div:hover > a.lineno, a.lineno:hover {
 
 :target > a.lineno, .target > a.lineno {
   opacity:1;
-  color: #FABE00;  /* someone a better idea? */
+  color: rgb(220,160,0,1);  /* someone a better idea? */
 }
 
 
@@ -188,6 +188,7 @@ table.table {
 
 
 .note { float: right; }
+.subhit .note { float: none; display: block; }
 
 /* print.html */
 dt {
@@ -259,7 +260,7 @@ a.pageno + .hasvars:hover::before {
 /* Einblendungsapparat. TODO auslagern */
 
 /* Everything that is not in the original text should be grey: */
-.generated-text {
+.generated-text, a[href].generated-text {
 	color: #aaa;
 }
 

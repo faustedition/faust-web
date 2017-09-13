@@ -16,17 +16,17 @@
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400; /* regular */
-  src: url(../webfonts/Ubuntu-R.woff2) format('woff2'),
-       url(../webfonts/Ubuntu-R.woff) format('woff'),
-       url(../webfonts/Ubuntu-R.ttf) format('truetype');
+  src: url(../webfonts/UbuntuFaust.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust.woff) format('woff'),
+       url(../webfonts/UbuntuFaust.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: italic;
   font-weight: 400; /* regular */
-  src: url(../webfonts/Ubuntu-RI.woff2) format('woff2'),
-       url(../webfonts/Ubuntu-RI.woff) format('woff'),
-       url(../webfonts/Ubuntu-RI.ttf) format('truetype');
+  src: url(../webfonts/UbuntuFaust-Italic.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust-Italic.woff) format('woff'),
+       url(../webfonts/UbuntuFaust-Italic.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
@@ -44,6 +44,59 @@
        url(../webfonts/Ubuntu-BI.woff) format('woff'),
        url(../webfonts/Ubuntu-BI.ttf) format('truetype');
 }
+
+
+/* UBUNTU */
+@font-face {
+  font-family: 'Ubuntu derivative Faust';
+  font-style: normal;
+  font-weight: 400; /* regular */
+  src: url(../webfonts/UbuntuFaust.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust.woff) format('woff'),
+       url(../webfonts/UbuntuFaust.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu derivative Faust';
+  font-style: italic;
+  font-weight: 400; /* regular */
+  src: url(../webfonts/UbuntuFaust-Italic.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust-Italic.woff) format('woff'),
+       url(../webfonts/UbuntuFaust-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu derivative Faust';
+  font-style: normal;
+  font-weight: 100; /* light */
+  src: url(../webfonts/UbuntuFaust-Light.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust-Light.woff) format('woff'),
+       url(../webfonts/UbuntuFaust-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu derivative Faust';
+  font-style: italic;
+  font-weight: 100; /* light */
+  src: url(../webfonts/UbuntuFaust-LightItalic.woff2) format('woff2'),
+       url(../webfonts/UbuntuFaust-LightItalic.woff) format('woff'),
+       url(../webfonts/UbuntuFaust-LightItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu derivative Faust';
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: url(../webfonts/Ubuntu-B.woff2) format('woff2'),
+       url(../webfonts/Ubuntu-B.woff) format('woff'),
+       url(../webfonts/Ubuntu-B.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu derivative Faust';
+  font-style: italic;
+  font-weight: 700; /* bold */
+  src: url(../webfonts/Ubuntu-BI.woff2) format('woff2'),
+       url(../webfonts/Ubuntu-BI.woff) format('woff'),
+       url(../webfonts/Ubuntu-BI.ttf) format('truetype');
+}
+
+
 @font-face {
   font-family: 'Ubuntu Monospace';
   font-style: normal;

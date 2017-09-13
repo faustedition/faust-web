@@ -1,7 +1,7 @@
 // create functions for on demand loading of variants and add tooltips 
 // for showing number of variants per line
 
-define(['faust_common'], 
+define(['faust_common'],
   function(Faust) {
   return function addPrintInteraction(rootDir, node, faustUri) {
   "use strict";
@@ -67,6 +67,9 @@ define(['faust_common'],
 
                 // set css class
                 currentLine.classList.add('show');
+
+                // inti tooltips
+                Faust.tooltip.addToTooltipElementsBySelector(".print [title]", "title");
               }
             });
           }
@@ -129,4 +132,6 @@ define(['faust_common'],
       Faust.tooltip.add(currentLine, document.createTextNode(varstr + " in " + witnessCount + " Textzeugen"));
     }
   }
+
+  Faust.tooltip.addToTooltipElementsBySelector(".view-content [title], .print [title]", "title");
 }});

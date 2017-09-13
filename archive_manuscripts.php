@@ -10,9 +10,12 @@
 
 <script type="text/javascript">
   requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['faust_tables'], function(createConcordanceTable) {
+    requirejs(['jquery', 'faust_tables', 'jquery.table'],
+        function($, createConcordanceTable, $tables) {
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Handschriften"}]));
       createConcordanceTable(document.getElementById("concordance-table-container"));
+      $("table[data-sortable]").fixedtableheader();
+      window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
     });
   });
 </script>

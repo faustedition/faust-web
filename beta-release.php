@@ -49,55 +49,58 @@
             <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
             Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem
             besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
-        <h2>Release am 17. Oktober 2016 (Beta-Version 2)</h2>
-        <p>Die Beta-Version 2 bringt zahlreiche Änderungen der Benutzeroberfläche mit sich, von denen hier nur die wichtigsten genannt werden können:</p>
-        <h3>Archiv</h3>
-        <ul>
-            <li>Alle Tabellen sind nun nach allen Spalten sortierbar.</li>
-            <li>Die <a ref="archive_prints">Liste der Drucke</a> ist chronologisch sortiert.</li>
-            <li>Unter „Archiv“ ist eine Liste der <a ref="archive_testimonies">Dokumente zur Entstehungsgeschichte</a> abrufbar, an der zurzeit noch gearbeitet wird.</li>
-            <li>Beim Blättern in der Handschriftenansicht werden leere Seiten übersprungen.</li>
-            <li>Die angezeigte Information über die Wasserzeichen ist vereinheitlicht worden. Dies geschah unter nochmaliger Rücksprache mit <a ref="credits_coop">Andrea Lothe</a>.</li>
-            <li>Die Navigation innerhalb der textuellen Transkription wurde verbessert (Aufteilung umfangreicher Texte, Inhaltsverzeichnis, Seitenzahlen).</li>
-            <li>Das Design der Ansicht der letzten abhebbaren Stufe entspricht dem neu gestalteten Design des Lesetextes (s.u. zu „Text“).</li>
-        </ul>
-        <h3>Genese</h3>
-        <ul>
-            <li>Das Farbschema der grafischen Übersichten zu einzelnen Szenen (Balkendiagramm) ist auf das grundlegende Design der Ausgabe abgestimmt.</li>
-            <li>Tooltips liefern Detailinformationen zu den einzelnen Balkenabschnitten.</li>
-            <li>Die von dort aus auf die einzelnen Druck verweisenden Links führen zum betreffenden Textabschnitt.</li>
-            <!--li>Durch Anpassen der Zahlen im letzten Teils der URL (z.B. <code>rangeStart=1&amp;rangeEnd=32</code>) kann das Balkendiagramm auf ein beliebiges Intervall von Versen 
-            ausgedehnt oder eingeschränkt werden. Benutzerfreundliche Eingabefelder dazu folgen in der nächsten Version.</li-->
-        </ul>
-        <h3>Text</h3>
-        <ul>
-            <li>Im Bereich „Text“ ist eine Liste der sogenannten <a ref="paralipomena">Paralipomena</a> nach der Zählung in der Weimarer Ausgabe 
-            (<a ref="bibliography#wa_I_14">WA I 14</a> und <a ref="bibliography#wa_I_15_2">WA I 15.2</a>) abrufbar. In den textuellen Transkriptionen 
-            sind die Paralipomena am Rand markiert.</li>
-            <li>Das Design und die Benutzbarkeit des Lesetextes und der zeilensynoptischen Darstellung wurden grundlegend verbessert (farbliche und 
-            typographische Gestaltung). Pop-ups (Tooltips) über den Zeilen machen auf die Anzahl der vorkommenden Fassungen und Varianten einer Passage 
-            aufmerksam. Bewegt man den Zeiger über eine der Siglen in der Zeilensynopse, erscheint eine Kurzbeschreibung.</li>
-            <li>In Lesetext und Zeilensynopse werden nun auch Stellen mit abweichender Verseinteilung in verschiedenen Fassungen korrekt dargestellt 
-            (z.B. <a ref="http://dev.faustedition.net/print/faust1.17#l3356%203357">Faust I, Vers 3356f.</a>).</li>
-            <li>In den Varianten zur Szene ‚<a ref="###">Trüber Tag. Feld</a>‘ erscheint nun auch der ‚Urfaust‘ 
-            (<a ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&page=85&view=facsimile_document">1 H.5</a>).</li>
-        </ul>
-        <h3>Suche</h3>
-        <ul>
-            <li>Die Suche wurde neuimplementiert, so dass größere Ergebnismengen nun schneller ausgeliefert werden. Zur Erhöhung der Übersichtlichkeit geschieht dies nun auf einer Seite.</li>
-            <li>Die Ergebnisse können nach den Kriterien Relevanz, Sigle und Textstelle sortiert werden.</li>
-            <li>Auch nach Zeugensiglen und Archivsignaturen kann nun gesucht werden, siehe <a ref="intro#volltextsuche">Volltextsuche</a>.</li>
-        </ul>
-        <h3>Sonstiges</h3>
-        <p>Über die genannten hinaus wurden u.a. folgende Verbesserungen vorgenommen:</p>
-        <ul>
-            <li>korrekte Sortierung der <a ref="bibliography">Bibliographie</a></li>
-            <li>Kennzeichnung externer Links</li>
-            <li>Vereinheitlichung der Seitentitel (‚Breadcrumbs‘).</li>
-            <li>diverse Detailverbesserungen und Bugfixes</li>
-        </ul>
+
+
+            <strong>Jost Schillemeits</strong> und stellte ihre Transkription dieser
+            Aufzeichnungen bereitwillig zur Verfügung. In der Version 1.0 sollen diese Aufzeichnungen in einem
+            besonderen Teil der digitalen Ausgabe verfügbar gemacht werden.</p>
+
+            <h2 id="beta.3">Release am 28. August 2017 (Beta-Version 3)</h2>
+
+            <p><small>(aktualisiert am 1. September 2017)</small></p>
+
+            <p>Die wichtigste Neuerung der Beta-Version 3 sind die <a
+                    href="http://dev.faustedition.net/archive_testimonies">Dokumente
+                    zur Entstehungsgeschichte</a>: Erfasst sind mehr als 1500
+                Entstehungszeugnisse. Für mehr als 1400 von ihnen wurde der
+                gesamte Text des Dokuments eingebunden und jeweils mit
+                dokumentbezogenen Angaben und einer Markierung der für die
+                Entstehung des ‚Faust‘ relevanten Textstellen versehen. Für die
+                übrigen Zeugnisse wird derzeit zumindest eine Beschreibung mit
+                den vorliegenden relevanten Metadaten angegeben. Im Vergleich
+                zur vorhergehenden Beta-Version 2 Version wurde auch das
+                tabellarische Verzeichnis inhaltlich und formal überarbeitet,
+                es enthält jetzt u.a. einen Textausschnitt für jedes Dokument.
+                Die Daten sind soweit erfasst und aufbereitet, dass in einer
+                der künftigen Versionen auch eine Suche über die
+                Entstehungszeugnisse und weitere Übersichten angeboten werden
+                können.</p> <p>Die Detailseiten des Genesediagramms <a
+                    href="http://dev.faustedition.net/genesis_bargraph?rangeStart=8488&amp;rangeEnd=10038">(Beispiel)</a>
+                enthalten nun eine Navigationsmöglichkeit: Pfeilbuttons
+                erlauben die Bewegung zur jeweils nächsten oder zur ersten und
+                letzten Szene des Faust. Zudem ist es nun möglich, das Diagramm
+                für frei wählbare Versintervalle anzeigen zu lassen – <a
+                    href="http://dev.faustedition.net/genesis_bargraph?rangeStart=1&amp;rangeEnd=12111">z.B.
+                    für den gesamten Faust</a>, für mehrere Szenen oder auch
+                für beliebig kleine Teile von Szenen.</p> <p>Für die Zeugen zum
+                Faust II wird dementsprechend nun auch die Aktzuordnung mit
+                entsprechendem Link ins Balkendiagramm im Genese-Breadcrumb
+                angezeigt.</p> <p>Die Darstellung der dokumentarischen
+                Umschriften wurde in verschiedenen Bereichen verbessert.</p>
+            <p>Das Design wurde ebenfalls in verschiedenen Bereichen
+                verbessert: So bleiben die Kopfzeilen der Tabellen nun auch
+                dann immer sichtbar, wenn durch die unteren Teile der Tabellen
+                navigiert wird. Die Tooltips wurden vereinheitlicht und die
+                Startseite überarbeitet.</p> <p>Daneben wurden zahlreiche
+                Fehler behoben und kleinere Verbesserungen vorgenommen – die <a
+                    href="https://github.com/search?q=org:faustedition+milestone:beta.3&amp;type=issues">Details
+                    gibt es wie immer bei Github</a>.</p>
+
         <h2>Frühere Versionen</h2>
-        <p>Informationen über die Release der Beta-Version 1 <a href="beta-release1">hier</a>.</p>
+        <ul>
+            <li><a href="beta-release2">Informationen über das Release der Beta-Version 2</a></li>
+            <li><a href="beta-release1">Informationen über das Release der Beta-Version 1</a></li>
+        </ul>
     </article>
 </section>
 

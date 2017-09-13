@@ -22,7 +22,8 @@
   <script type="text/javascript">
     // set breadcrumbs
   requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['data/paralipomena', 'sortable'], function(paralipomena, Sortable) {
+    requirejs(['data/paralipomena', 'sortable', 'jquery', 'jquery.table'],
+        function(paralipomena, Sortable, $, $table) {
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text", link: "text"}, {caption: "Paralipomena"}]));
         function createParalipomenaTable() {
           function getViewerURI(faustURI) { return 'documentViewer?faustUri=' + faustURI }
@@ -38,9 +39,9 @@
           function createParaRow(paralipomenon) {
             var row  = Faust.dom.createElement({name: "tr", attributes: [["id", paralipomenon.id]]}),
                 n    = Faust.dom.createElement({name: "td", parent: row, children: [createParaLink(paralipomenon)]}),
-                sigil= Faust.dom.createElement({name: "td", parent: row, 
+                sigil= Faust.dom.createElement({name: "td", parent: row,
                             children: [createSigilLink(paralipomenon.sigil, paralipomenon.uri)]}),
-                text = Faust.dom.createElement({name: "td", parent: row, 
+                text = Faust.dom.createElement({name: "td", parent: row,
                             children: [document.createTextNode(paralipomenon.text + " …")]});
 
             row.addEventListener("click", function(event) {
@@ -60,6 +61,7 @@
         };
         createParalipomenaTable();
         Sortable.init();
+        $("table[data-sortable]").fixedtableheader();
       });
   });
   </script>

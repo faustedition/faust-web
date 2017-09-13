@@ -237,7 +237,9 @@
             Beschriftung durch das Übereinanderlegen von einer Auf- und Durchlichtaufnahme desselben
             Blattes zu verstehen.</p>
         <figure>
-            <img src="/img/info/watermarks-image1.jpeg"/>
+            <a href="/img/info/watermarks-image1.jpeg">
+                <img src="/img/info/watermarks-image1.jpeg"/>
+            </a>
             <figcaption>Bild 1: Subtraktionsergebnis der Handschrift 2 III H.10, Einzelblatt (Datei
                 GSA_25-W_1589_wm_all_TL30_100.jpg)</figcaption>
         </figure>
@@ -251,7 +253,9 @@
         <p>Neben Aufnahmen ganzer Seiten wurden hier auch Detailansichten (Seitenausschnitte mit dem
             Wasserzeichen) bereitgestellt (s. Bild 2).</p>
         <figure>
-            <img src="/img/info/watermarks-image2.jpeg"/>
+            <a href="/img/info/watermarks-image2.jpeg">
+                <img src="/img/info/watermarks-image2.jpeg"/>
+            </a>
             <figcaption>Bild 2: Detail aus Handschrift 2 III H.10, Einzelblatt (Datei
                 GSA_25-W_1589_wm_detail_TL30_100.jpg)</figcaption>
         </figure>
@@ -259,7 +263,9 @@
         <p>Außerdem wurden Durchzeichnungen – manuelle Wiedergaben der Wasserzeichen –
             angefertigt.</p>
         <figure>
-            <img src="/img/info/watermarks-image3.jpeg"/>
+            <a href="/img/info/watermarks-image3.jpeg">
+                <img src="/img/info/watermarks-image3.jpeg"/>
+            </a>
             <figcaption>Bild 3: Durchzeichnung der Handschrift 2 III H.10, Einzelblatt (Datei
                 GSA_25-W_1589_wm_hand_drawn_150.jpg)</figcaption>
         </figure>

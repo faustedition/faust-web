@@ -19,7 +19,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Faust-Edition [alpha]</title>
+    <title>Faustedition [alpha]</title>
 
     <script type="text/javascript" src="js/require.js"></script>
 
@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
+    <link rel="stylesheet" href="css/chocolat.css">
+    <link rel="stylesheet" href="css/chocolat-custom.css">
     <?php if (inurl('documentViewer')) : ?>
     <link rel="stylesheet" href="css/document-viewer.css">
     <link rel="stylesheet" href="css/document-text.css">
@@ -50,20 +52,25 @@
   <body>
     <header>
         <div class="logo">
-          <a href="/" title="Faustedition"><img src="img/faustlogo.svg" alt="Faustedition"></a>
+          <a href="/"><img src="img/faustlogo.svg" alt="Faustedition"></a>
           <sup class="pure-fade-50"><mark>alpha</mark></sup>
         </div>
-        <div class="breadcrumbs pure-right pure-nowrap pure-fade-50">
+        <div class="breadcrumbs pure-right pure-nowrap pure-noprint pure-fade-50">
           <small id="breadcrumbs"></small>
         </div>
         <div id="current" class="pure-nowrap"></div>
-        <nav class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
+        <nav id="nav_all" class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li><a href="archive">Archiv</a></li>
-          <li><a href="genesis">Genese</a></li>
-          <li><a href="text">Text</a></li>
+          <li id="nav_archive"><a href="archive">Archiv</a></li>
+          <li id="nav_genesis"><a href="genesis">Genese</a></li>
+          <li id="nav_text"><a href="text">Text</a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
-          <li><a href="imprint"><small class="pure-fade-50">Impressum</small></a></li>
+          <li id="imprint_sitemap">
+            <small class="pure-fade-50">
+              <a href="imprint">Impressum</a>
+              <a href="intro#sitemap">Sitemap</a>
+            </small>
+          </li>
           <li><a href="help"><i class="fa fa-help-circled fa-lg"></i></a></li>
           </ul>
         </nav>

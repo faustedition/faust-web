@@ -120,6 +120,8 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
             parentNode.appendChild(domContainer.textTranscript);
             parentNode.appendChild(domContainer.print);
             parentNode.appendChild(domContainer.structure);
+
+
           };
         })();
 
@@ -193,6 +195,9 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
             // otherwise use default value
             setView(state.view);
           }
+
+          // init tooltips
+          Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
 
         };
       })();
@@ -579,7 +584,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
           doc.querySelector("#dt" + pageNum).scrollIntoView();
         }
         if (state.fragment) {
-          var currentTarget = doc.querySelector("#" + state.fragment.replace('.', '\\.'));
+          var currentTarget = doc.querySelector("#" + state.fragment.replace(/\./g, '\\.'));
           if (currentTarget) {
             currentTarget.scrollIntoView();
             currentTarget.classList.add("target");
@@ -967,6 +972,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
           doc.pages[pageNum - 1].docTranscript = docTranscriptDiv;
           Faust.dom.removeAllChildren(domContainer.docTranscript);
           domContainer.docTranscript.appendChild(docTranscriptDiv);
+          addPatchHandlers(domContainer.docTranscript);
           transcriptTooltips(domContainer.docTranscript);
 
 
@@ -1167,7 +1173,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
               && pageMd.docTranscripts[0].hasImages)
             return setPage(page);
         }
-        return setPage(page);
+        return setPage(state.page);
       };
 
       // switch to next page

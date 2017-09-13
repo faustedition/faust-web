@@ -19,7 +19,7 @@
         <strong>Dr. Silke Henke</strong><br>
         Klassik Stiftung Weimar<br>
         Goethe- und Schiller-Archiv<br>
-        Hans-Wahl-Str. 4<br>
+        Jenaer Str. 1<br>
         99425 Weimar<br>
         Tel.: +49 (0)3643 / 545 255<br>
         <a href="mailto:silke.henke@klassik-stiftung.de">silke.henke@klassik-stiftung.de</a>
@@ -77,6 +77,7 @@
         Eva Arnold, Chris Bethe,
         Melanie Blaschko, Michael Huber,
         Charlotte Köhler, Julia Kockel,
+        Sandra Krause,
         Susanne Mohr, Katharina Ritter,
         Anna Sievert, Marie Vorländer
       </p>
