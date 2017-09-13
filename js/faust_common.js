@@ -8,6 +8,7 @@ requirejs.config({
   },
   shim: {
     'jquery.table': { deps: ['jquery'] },
+    'jquery.chocolat': { deps: ['jquery'] },
     'data/scene_line_mapping' : { exports: 'sceneLineMapping' },
     'data/genetic_bar_graph': { exports: 'geneticBarGraphData' },
     'data/document_metadata': { exports: 'documentMetadata' },

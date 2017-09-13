@@ -16,8 +16,15 @@
     </footer>
     <?php endif; ?>
 
-<script type="text/javascript" src="js/jquery.chocolat.js"></script>
-<script>$('main').Chocolat({imageSelector:'figure a', className:'faustedition', loop:true});</script>
+
+
+<script>
+    requirejs(['./js/faust_common.js'], function(Faust) {
+        requirejs(['jquery', 'jquery.chocolat'], function ($, $chocolat) {
+            $('main').Chocolat({imageSelector:'figure a', className:'faustedition', loop:true});
+        });
+    });
+</script>
 
   <!-- Piwik -->
 <script type="text/javascript">
