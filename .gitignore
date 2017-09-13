@@ -10,3 +10,6 @@ debug*.html
 js-gen/
 json/
 archive_prints.html
+archive_testimonies.html
+testimony/
+watermark-table.html
