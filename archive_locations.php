@@ -21,7 +21,8 @@
 
 <script type="text/javascript">
   requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['sortable', 'data/document_metadata', 'data/archives'], function(Sortable, documentMetadata, archives) {
+    requirejs(['sortable', 'data/document_metadata', 'data/archives', 'jquery', 'jquery.table'],
+        function(Sortable, documentMetadata, archives, $, $tables) {
 
   // FIXME move to separate file
   document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Aufbewahrungsorte"}]));
@@ -111,11 +112,10 @@
   } 
   Sortable.init();
   document.getElementById("locations").getElementsByTagName("th")[0].click();
+  $("table[data-sortable]").fixedtableheader();
     });
   });
 </script>
 
-<script type="text/javascript" src="js/jquery.table.js"></script>
-<script type="text/javascript">$("table[data-sortable]").fixedtableheader();</script>
 
 <?php include "includes/footer.php"; ?>
