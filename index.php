@@ -81,30 +81,34 @@
 </section>
 <script type="text/javascript">
   requirejs(['./js/faust_common.js'], function(Faust) {
-    requirejs(['jquery', 'jquery.slick'], function(jQuery, slick) {jQuery(document).ready(function($){
-    $(window).resize(function(event) {
-      $('.slider .center').css('height', $('main').css('height')); // adjust slider height
-    });
+      requirejs(['jquery', 'jquery.slick'], function ($, slick) {
+          $(function () {
+              $(window).resize(function (event) {
+                  $('.slider .center').css('height', $('main').css('height')); // adjust slider height
+              });
 
-    $(document).trigger('resize'); /* onload */var slideshow = $('.slider').slick({
-      adaptiveHeight: true,
-      dots:true,
-      autoplaySpeed: 8000,
-      pauseOnHover: true,
-      responsive: [
-        {
-          breakpoint: 1125,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
-    });
-    slideshow.slick('slickPlay'); // autoplay
-    $('.slider *').click(function () {
-        slideshow.slick('slickPause'); // stop on click});
+              $(document).trigger('resize');
+              /* onload */
+              var slideshow = $('.slider').slick({
+                  adaptiveHeight: true,
+                  dots: true,
+                  autoplaySpeed: 8000,
+                  pauseOnHover: true,
+                  responsive: [
+                      {
+                          breakpoint: 1125,
+                          settings: {
+                              arrows: false
+                          }
+                      }
+                  ]
+              });
+              slideshow.slick('slickPlay'); // autoplay
+              $('.slider *').click(function () {
+                  slideshow.slick('slickPause'); // stop on click
+              });
+          });
       });
-    });
   });
 </script>
 <?php include "includes/footer.php"; ?>
