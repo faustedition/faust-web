@@ -3,10 +3,6 @@
 
   <article class="pure-u-1">
 
-    <script>
-      window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
-    </script>
-
     <h3>Synopse der Zeugen</h3>
 
     <p><img alt="Beispiel eines Balkendiagramms" title="Beispiel eines Balkendiagramms" src="img/bar_graph.png"></p>

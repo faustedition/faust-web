@@ -20,7 +20,7 @@ requirejs.config({
   }
 });
 
-define(["sortable"], function(Sortable) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
@@ -920,6 +920,8 @@ define(["sortable"], function(Sortable) {  // TODO factor sorting stuff into a t
       }
     }
 
+    domReady(tooltip.addToTooltipElements);
+
     return tooltip;
   })();
 
@@ -1051,7 +1053,6 @@ define(["sortable"], function(Sortable) {  // TODO factor sorting stuff into a t
     parent.insertBefore(container, parent.firstChild);
     console.error(title, msg);
   };
-
 
 
 //###########################################################################

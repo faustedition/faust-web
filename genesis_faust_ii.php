@@ -12,7 +12,6 @@
 
 <script type="text/javascript">
     requirejs(['./js/faust_common'], function(Faust) {
-      window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II"}]));
     });
 </script>

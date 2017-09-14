@@ -15,7 +15,6 @@
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Handschriften"}]));
       createConcordanceTable(document.getElementById("concordance-table-container"));
       $("table[data-sortable]").fixedtableheader();
-      window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
     });
   });
 </script>
