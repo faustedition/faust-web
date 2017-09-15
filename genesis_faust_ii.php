@@ -11,7 +11,8 @@
 </section>
 
 <script type="text/javascript">
-  window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
-    document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese", link: "genesis"}, {caption: "Faust II"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

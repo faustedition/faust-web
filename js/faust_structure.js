@@ -1,4 +1,5 @@
-var documentStructure = (function() {
+define(['faust_common'],
+  function(Faust) {
   "use strict";
 
   // import from faust_common
@@ -199,4 +200,4 @@ var documentStructure = (function() {
 
   return documentStructure;
   
-})();
+});

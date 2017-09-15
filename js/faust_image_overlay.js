@@ -1,4 +1,5 @@
-var imageOverlay = (function(){
+define(["faust_common"], 
+  function(Faust) {
   "use strict";
 
   var htmlStrings = {
@@ -729,4 +730,4 @@ var imageOverlay = (function(){
 
   imageOverlay.createImageOverlay = createImageOverlay;
   return imageOverlay;
-})();
+});

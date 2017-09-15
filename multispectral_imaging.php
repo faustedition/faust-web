@@ -84,7 +84,9 @@
     </article>
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Multispektrale Bildverarbeitung"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+            [{caption: "Ausgabe", link: "intro"}, {caption: "Multispektrale Bildverarbeitung"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

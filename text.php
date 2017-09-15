@@ -18,6 +18,8 @@
       <?php include "includes/footer.php"; ?>
 
       <script type="text/javascript">
-        // set breadcrumbs
+      // set breadcrumbs
+      requirejs(['./js/faust_common'], function(Faust) {
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text"}]));
+      });
       </script>

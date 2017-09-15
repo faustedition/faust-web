@@ -14,74 +14,74 @@
 
 </section>
 
-<script type="text/javascript" src="data/document_metadata.js"></script>
-<script type="text/javascript" src="data/concordance_columns.js"></script>
-<script type="text/javascript" src="data/archives.js"></script>
-
-<script type="text/javascript" src="js/faust_tables.js"></script>
 <script>
-  var i;
 
-  var repositoryName = "gsa";
-  var repositorySigil;
-  var idnoSigil;
-  var waSigil;
+  requirejs(['js/faust_common'], function(Faust) {
+    requirejs(['faust_tables', 'data/archives'], function(createConcordanceTable, archives) {
 
-  var displayData;
+      var i;
 
-  // get actual parameters
-  var parameters = Faust.url.getParameters();
+      var repositoryName = "gsa";
+      var repositorySigil;
+      var idnoSigil;
+      var waSigil;
 
-  // if 'id' is set (mandatory), set repositoryName to that value
-  if(parameters["id"]) {
-    repositoryName = parameters["id"];
-  }
+      var displayData;
 
-  // set breadcrumbs
-   document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Aufbewahrungsorte", link: "archive_locations"}, {caption: archives[repositoryName].name}]));
+      // get actual parameters
+      var parameters = Faust.url.getParameters();
 
-  // write archive information
+      // if 'id' is set (mandatory), set repositoryName to that value
+      if(parameters["id"]) {
+        repositoryName = parameters["id"];
+      }
 
-  // archive institution
-  var institutionContainer = document.getElementById("institution");
-  if(archives[repositoryName].institution) {
-    institutionContainer.insertBefore(document.createTextNode(archives[repositoryName].institution), institutionContainer.childNodes[0]);
-  } else {
-  	institutionContainer.style.display = "none";
-  }
+      // set breadcrumbs
+       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Aufbewahrungsorte", link: "archive_locations"}, {caption: archives[repositoryName].name}]));
 
-  // archive location
-  var locationContainer = document.getElementById("location");
-  if(archives[repositoryName].country || archives[repositoryName].city) {
-    var locationString = [];
-    if(archives[repositoryName].city) {
-      locationString.push(archives[repositoryName].city);
-    }
-    if(archives[repositoryName].country) {
-      locationString.push(archives[repositoryName].country);
-    }
-    locationString = (locationString.length > 1) ? locationString.join(", ") : locationString;
-    locationContainer.insertBefore(document.createTextNode(locationString), locationContainer.childNodes[0]);
-  } else {
-  	locationContainer.style.display = "none";
-  }
+      // write archive information
 
-  // archive link
-  var urlContainer = document.getElementById("url");
-  if(archives[repositoryName].url) {
-    var link = document.createElement("a"); // need object to return hostname
-    link.href = archives[repositoryName].url;
-    urlContainer.appendChild(document.createTextNode(link.hostname));
-    urlContainer.href = archives[repositoryName].url;
-    urlContainer.title = archives[repositoryName].displayName;
-  } else {
-  	urlContainer.style.display = "none";
-  }
+      // archive institution
+      var institutionContainer = document.getElementById("institution");
+      if(archives[repositoryName].institution) {
+        institutionContainer.insertBefore(document.createTextNode(archives[repositoryName].institution), institutionContainer.childNodes[0]);
+      } else {
+            institutionContainer.style.display = "none";
+      }
 
-  // write table
+      // archive location
+      var locationContainer = document.getElementById("location");
+      if(archives[repositoryName].country || archives[repositoryName].city) {
+        var locationString = [];
+        if(archives[repositoryName].city) {
+          locationString.push(archives[repositoryName].city);
+        }
+        if(archives[repositoryName].country) {
+          locationString.push(archives[repositoryName].country);
+        }
+        locationString = (locationString.length > 1) ? locationString.join(", ") : locationString;
+        locationContainer.insertBefore(document.createTextNode(locationString), locationContainer.childNodes[0]);
+      } else {
+            locationContainer.style.display = "none";
+      }
 
-  createConcordanceTable(document.getElementById("archive-table-container"), repositoryName);
+      // archive link
+      var urlContainer = document.getElementById("url");
+      if(archives[repositoryName].url) {
+        var link = document.createElement("a"); // need object to return hostname
+        link.href = archives[repositoryName].url;
+        urlContainer.appendChild(document.createTextNode(link.hostname));
+        urlContainer.href = archives[repositoryName].url;
+        urlContainer.title = archives[repositoryName].displayName;
+      } else {
+            urlContainer.style.display = "none";
+      }
 
+      // write table
+
+      createConcordanceTable(document.getElementById("archive-table-container"), repositoryName);
+    });
+  });
 </script>
 
 <?php include "includes/footer.php"; ?>

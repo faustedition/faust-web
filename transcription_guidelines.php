@@ -239,7 +239,9 @@
     
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Transkriptionsprinzipien"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+            [{caption: "Ausgabe", link: "intro"}, {caption: "Transkriptionsprinzipien"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

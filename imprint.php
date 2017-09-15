@@ -51,7 +51,9 @@
 </section>
 
 <script type="text/javascript">
-  // set breadcrumbs
-  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Impressum"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      // set breadcrumbs
+      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Impressum"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>
