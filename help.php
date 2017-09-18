@@ -47,6 +47,9 @@ if ($target) {
 
     <p>Einige Benutzungshinweise finden Sie <a href="intro">in der Einführung in die Ausgabe</a>.</p>
 
+
+
+
   </article>
 
   <div class="pure-u-1-5">

@@ -1,7 +1,7 @@
 define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemove_scroll', 'faust_print_interaction', 'faust_app',
-        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives'],
+        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata'],
   function(Faust, documentStructure, imageOverlay, addMouseMoveScroll, addPrintInteraction, app,
-         sceneLineMappping, geneticBarGraphData, copyright_notes, archives) {
+         sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata) {
   "use strict";
 
   // Global variables to all viewer instances
@@ -17,7 +17,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
     missingTextAppTranscript: "<div>Kein Textuelles Transkript vorhanden</div>"
   };
 
-  return function createDocumentViewer(faustDocumentsMetadata, parentDomNode){
+  return function createDocumentViewer(parentDomNode){
       // viewer instance variables
       var state = {
         page: 1,
@@ -32,6 +32,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
       // allow other objects to listen to events
       var events = Faust.event.createEventQueue();
 
+      // structure representing the current document
       var doc = {
         faustUri: null,
         metadata: null,
@@ -70,13 +71,26 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
       };
 
       // initialisation of viewer component.
+      // 1. create a div for each view with matching id and class names, record it in domContainer, and insert it into
+      //    the page (parentDomNode element)
+      // 2. parse the URL and find out the current document (by URI). Initialize doc with data from documentMetadat
+      //    and bar graph (sigil is only there?). FIXME why not prepare JSON in the right form in the first place?
+      // 3. trigger loading XML → structure view
+      // 4. parse rest of URL to view, page, section, fragment → state variable
+      // 5. setPage, setView → might trigger loading stuff
+      // 6. initialize toolbar tooltips. Toolbar itself is hard-coded in documentViewer.php
       var init = (function(){
 
         // creates divs for each view available. references are stored in domContainer
         // object and the elements are then appended to the parent element that was
-        // given as a parameter when calling createDocumentViewer(faustDocumentsMetadata, parentDomNode)
+        // given as a parameter when calling createDocumentViewer(parentDomNode)
         var createDomNodes = (function() {
           return function(parentNode) {
+
+              // XXX this does essentially the same for everything, but with slightly handcrafted names:
+              // facsimile_document vs. docTranscript etc. So refactor names and unify this, or better
+              // redesign
+
             // Create element for facsimile representation.
             domContainer.facsimile = document.createElement("div");
             domContainer.facsimile.id = "facsimile-content";
@@ -196,7 +210,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
             setView(state.view);
           }
 
-          // init tooltips
+          // init tooltips for the navigation bar
           Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
 
         };
@@ -204,12 +218,17 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       /* loading of xml metadata. after metadata is loaded the structure view will be created from it */
+      // triggered by init()
       var loadDocumentXmlMetadata = (function(){
         return function() {
           Faust.xhr.getResponseXml("xml/document/" + doc.metadata.documentUri, documentXmlMetadataLoaded );
         };
       })();
 
+      // callback for loadDocumentXmlMetadata
+      // 1. builds basic viewer structure for structure viewer
+      // 2. calls documentStructure.createFromXml() -> build structure diagram
+      // 3. loads metadata HTML
       var documentXmlMetadataLoaded = function(documentXmlMetadata) {
           var lockedPages;
 
@@ -280,7 +299,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
             // is created.
             // else it is tried to load a previously generated img element for that uri. if that doesn't exist
             // create a new one and add to list of created img's
-            return function(uri) {
+            return function getPreviewElement(uri) {
               var result;
               var img;
 
@@ -290,7 +309,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
               } else if (uri === "noFacsimile") {
                 result = createMissingPreviewDiv(true);
               } else {
-                // try to load buffered image
+                // try to re-use buffered image element
                 if(loadedPages.hasOwnProperty(uri) === true) {
                   result = loadedPages[uri];
                 } else {
@@ -388,7 +407,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
             }
           });
 
-          // if a user clicks on a facsimile page, these pages 
+          // if a user clicks on a facsimile page, go to the relevant pages in the facsimile view
           leftPagePreview.addEventListener("click", function( ){if(leftPagePreview.pageNum !== undefined) {setPage(leftPagePreview.pageNum);setView("facsimile");}});
           rightPagePreview.addEventListener("click", function( ){if(rightPagePreview.pageNum !== undefined) {setPage(rightPagePreview.pageNum);setView("facsimile");}});
 
@@ -415,113 +434,116 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      /* loading of textual transcript. if it exists it will be appended to the appropriate view when loaded */
-      var loadTextTranscript = (function(){
-        return function(pageNum, callback) {
-          var printLinks;
+      /**
+       * Load print and app view for the current document and the given page number.
+       * pageNum – current page number
+       * callback – function({print: divWithPrintHTML, app: divWithAppHTML})
+       */
+      var loadTextTranscript = function loadTextTranscript(pageNum, callback) {
           var loadedDocs = {};
-          var prevPage = pageNum;
 
           try {
 
-          // load actual transcript html files
-          var loadDocs = function(filename) {
-            // if no html files are associated, return undefined
-            if(filename === undefined) {
-              callback(undefined);
-            } else {
-              // return files if already loaded
-              if(loadedDocs[filename] !== undefined) {
-                callback(loadedDocs[filename]);
+              // finds the section filename for the given pageNum. Requires doc.printLinks
+              // TODO write this info directly into the document metadata.
+              var findSection = function findSection(pageNum) {
+                  var printLinks = doc.printLinks,
+                      filename = printLinks[pageNum],
+                      prevPage = pageNum;
+
+                  // no reference for pageNum? Look for smaller page numbers ...
+                  while (!filename && prevPage >= 0) {
+                      prevPage = prevPage - 1;
+                      filename = printLinks[prevPage];
+                  }
+                  if (!filename) { // FIXME obsolete when default === 0
+                      filename = printLinks['default'];
+                  }
+
+                  // now, a section parameter may override our choice.
+                  if (state.section) {
+                      if (state.section === filename) {
+                          state.section = undefined; // it's the default
+                      } else {
+                          filename = state.section;
+                      }
+                  }
+                  return filename;
+              };
+
+              // load actual transcript html files and trigger callback
+              var loadDocs = function(filename) {
+                  // if no html files are associated, return undefined
+                  if(filename === undefined) {
+                      callback(undefined);
+                  } else {
+                      // return files if already loaded
+                      if(loadedDocs[filename] !== undefined) {
+                          callback(loadedDocs[filename]);
+                      } else {
+                          // otherwise load files
+                          Faust.xhr.getResponseText("print/" + filename, function(printFile) {
+                              loadedDocs[filename] = {};
+                              loadedDocs[filename].print = createPrintDiv(printFile);
+                              Faust.xhr.getResponseText("app/" + filename, function(appFile) {
+                                  loadedDocs[filename].app = createPrintDiv(appFile);
+                                  callback(loadedDocs[filename]);
+                              });
+                          });
+                      }
+                  }
+              };
+
+              // load pages.json and call loadDocs if required
+              if(doc.printLinks !== undefined) {
+                  // try to load documents if pageNum / filename mappings were already loaded
+                  loadDocs(findSection(pageNum));
               } else {
-                // otherwise load files
-                Faust.xhr.getResponseText("print/" + filename, function(printFile) {
-                  loadedDocs[filename] = {};
-                  loadedDocs[filename].print = createPrintDiv(printFile);
-                  Faust.xhr.getResponseText("app/" + filename, function(appFile) {
-                    loadedDocs[filename].app = createPrintDiv(appFile);
-                    callback(loadedDocs[filename]);
+                  // otherwise get json file with page / filename mappings
+                  Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
+                      var pages, filename;
+                      // parse json file ...
+                      try {
+                          pages = JSON.parse(pagesJson);
+                          // ... and extract information for current witness
+                          doc.printLinks = pages[doc.faustUri];
+                          //
+                          // try to load document for current page
+                          loadDocs(findSection(pageNum));
+                      } catch (e) {
+                          Faust.error("Fehler beim Laden des Dokuments", e);
+                      }
                   });
-                });
-              }
-            }
-          };
-
-          // finds the section filename for the given pageNum. Requires doc.printLinks
-          var findSection = function findSection(pageNum) {
-              var printLinks = doc.printLinks,
-                  filename = printLinks[pageNum],
-                  prevPage = pageNum;
-
-              // no reference for pageNum? Look for smaller page numbers ...
-              while (!filename && prevPage >= 0) {
-                prevPage = prevPage - 1;
-                filename = printLinks[prevPage];
-              }
-              if (!filename) { // FIXME obsolete when default === 0
-                filename = printLinks['default'];
               }
 
-              // now, a section parameter may override our choice.
-              if (state.section) {
-                if (state.section === filename) {
-                  state.section = undefined; // it's the default
-                } else {
-                  filename = state.section;
-                }
-              }
-              return filename;
-          }
+              // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
+              // returns a <div> containing the given print doc to be inserted into the document.
+              // printString = unparsed HTML of app / print view
+              var createPrintDiv = function(printString) {
+                  // create container element for the text and add print class to it
+                  var printParentNode = document.createElement("div");
+                  printParentNode.className = "print";
+                  printParentNode.style.textAlign = "initial";
+                  printParentNode.style.paddingTop = "1em";
 
+                  // create temporary div to parse received html
+                  var tempDiv = document.createElement("div");
+                  tempDiv.innerHTML = printString;
 
-          if(doc.printLinks !== undefined) {
-            // try to load documents if pageNum / filename mappings were already loaded
-            loadDocs(findSection(pageNum)); 
-          } else {
-            // otherwise get json file with page / filename mappings
-            Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
-              var pages, filename;
-              // parse json file ...
-              try {
-                pages = JSON.parse(pagesJson);
-                // ... and extract information for current witness
-                doc.printLinks = pages[doc.faustUri];
-                //
-                // try to load document for current page
-                loadDocs(findSection(pageNum));
-              } catch (e) {
-                Faust.error("Fehler beim Laden des Dokuments", e);
-              }
-            });
-          }
-          
-          // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
-          var createPrintDiv = function(printString) {
-            // create container element for the text and add print class to it
-            var printParentNode = document.createElement("div");
-            printParentNode.className = "print";
-            printParentNode.style.textAlign = "initial";
-            printParentNode.style.paddingTop = "1em";
+                  // add contents of parsed html to container element and hide rightmost column
+                  Array.prototype.slice.call(tempDiv.getElementsByClassName("print")[0].childNodes).forEach(function(child) {
+                      /*if(child.className === "print-side-column") {
+                        child.style.visibility = "hidden";
+                      }*/
+                      printParentNode.appendChild(child);
+                  });
 
-            // create temporary div to parse received html
-            var tempDiv = document.createElement("div");
-            tempDiv.innerHTML = printString;
-            
-            // add contents of parsed html to container element and hide rightmost column
-            Array.prototype.slice.call(tempDiv.getElementsByClassName("print")[0].childNodes).forEach(function(child) {
-              /*if(child.className === "print-side-column") {
-                child.style.visibility = "hidden";
-              }*/
-              printParentNode.appendChild(child);
-            });
-
-            return printParentNode;
-          };
+                  return printParentNode;
+              };
           } catch (e) {
-            Faust.error("Fehler beim Laden des Textuellen Transkripts.", e);
+              Faust.error("Fehler beim Laden des Textuellen Transkripts.", e);
           }
-        };
-      })();
+      };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       /* function to get the scene title and the range of verse lines that the
@@ -532,6 +554,8 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
        *
        * args: faustUri and page
        * returns: verse number or undefined
+       *
+       * XXX don't we have this in faust.common? do we need this here?
        */
       var getSceneData = function(faustUri, pageNum) {
         var result = undefined;
@@ -579,6 +603,16 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+      /**
+       * Marks the current position in the given textual fragment.
+       *
+       * Current position comes from the given page and possibly from
+       * the current state's .fragment part, and the target is revealed
+       * and highlighted.
+       *
+       * @param doc HTML fragment (from textual transcript)
+       * @param pageNum current page number
+       */
      var revealState = function revealState(doc, pageNum) {
         if(doc.querySelector("#dt" + pageNum) !== null) {
           doc.querySelector("#dt" + pageNum).scrollIntoView();
@@ -592,6 +626,9 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
         }
      }
 
+      /**
+       * Make patches transparent on mouse hover.
+       */
      var addPatchHandlers = function addPatchHandlers(targetElement) {
           var patches = targetElement.getElementsByClassName("element-patch");
           for (var i = 0; i < patches.length; i++) {
@@ -611,8 +648,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
       /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
          data to prevent multiple loading of same resources
        */
-      var loadPage = (function(){
-        return function(pageNum) {
+      var loadPage = function loadPage(pageNum) {
           var currentMetadata;
           var verseNo;
 
@@ -621,15 +657,15 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
           // update the PDF button (DEBUG)
           try {
-            var pdfButton = document.getElementById('diplomatic-pdf-button'),
-                debugButton = document.getElementById('diplomatic-debug-button');
-            pdfButton.removeAttribute('disabled');
-            pdfButton.href = doc.faustUri.replace(/^faust:\/\/xml\/document/, 'transcript/diplomatic') + '/page_' + state.page + '.pdf';
-            debugButton.removeAttribute('disabled');
-            debugButton.href = "debug.html" + window.location.search;
+              var pdfButton = document.getElementById('diplomatic-pdf-button'),
+                  debugButton = document.getElementById('diplomatic-debug-button');
+              pdfButton.removeAttribute('disabled');
+              pdfButton.href = doc.faustUri.replace(/^faust:\/\/xml\/document/, 'transcript/diplomatic') + '/page_' + state.page + '.pdf';
+              debugButton.removeAttribute('disabled');
+              debugButton.href = "debug.html" + window.location.search;
           } catch (e) {
-            // no PDF button -> NOP
-            console.log(e);
+              // no PDF button -> NOP
+              console.log(e);
           }
 
           // set breadcrumbs
@@ -641,32 +677,32 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
           Faust.dom.removeAllChildren(breadcrumbs);
           var repository = doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
-            {caption: "Archiv", link: "archive"}, 
-            {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
-            {caption: doc.sigil}]));
+              {caption: "Archiv", link: "archive"},
+              {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
+              {caption: doc.sigil}]));
 
           // get information about scene that contains current page
           verseNo = getSceneData(doc.faustUri, pageNum);
 
           // set second breadcrumb to barGraph if a matching scene was found
           if(verseNo !== undefined) {
-            breadcrumbs.appendChild(document.createElement("br"));
-            var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
-            breadcrumbData.push({caption: doc.sigil});
-            breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
+              breadcrumbs.appendChild(document.createElement("br"));
+              var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
+              breadcrumbData.push({caption: doc.sigil});
+              breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
           }
 
 
           // create object for page if not already done yet
           if(!doc.pages[pageNum - 1]) {
-            doc.pages[pageNum - 1] = {
-              facsimile: null,
-              facsimile_document: null,
-              docTranscript: null,
-              document_text: null,
-              textTranscript: null,
-              print: null
-            };
+              doc.pages[pageNum - 1] = {
+                  facsimile: null,
+                  facsimile_document: null,
+                  docTranscript: null,
+                  document_text: null,
+                  textTranscript: null,
+                  print: null
+              };
           }
 
           // create variable for easier access to the current page
@@ -674,228 +710,231 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
           // find out if documentary transcript was loaded before
           if(currentPage.docTranscript === null) {
-            // try to load docTranscript if it wasn't loaded before
-            loadDocTranscript(pageNum);
+              // try to load docTranscript if it wasn't loaded before
+              loadDocTranscript(pageNum);
           } else {
-            // if the documentary transcript already exists append it to its view
-            Faust.dom.removeAllChildren(domContainer.docTranscript);
-            domContainer.docTranscript.appendChild(currentPage.docTranscript);
+              // if the documentary transcript already exists append it to its view
+              Faust.dom.removeAllChildren(domContainer.docTranscript);
+              domContainer.docTranscript.appendChild(currentPage.docTranscript);
           }
 
           // ############## Facsimile View
           if(currentPage.facsimile === null) {
-            currentMetadata = doc.metadata.pages[pageNum - 1];
+              currentMetadata = doc.metadata.pages[pageNum - 1];
 
-            var facsimile = null;
-            // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
-            // docTranscript exists and if it has images attached
-            if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
-              facsimile = imageOverlay.createImageOverlay(
-              {
-                "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
-                "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
-                "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
-                "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
-                "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
-                "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
-                "copyright": doc.getFacsCopyright()
-              });
-            } else {
-              facsimile = imageOverlay.createImageOverlay({"hasFacsimile": false});
-            }
-            currentPage.facsimile = facsimile;
-            Faust.dom.removeAllChildren(domContainer.facsimile);
-            domContainer.facsimile.appendChild(facsimile);
-            facsimile.addFacsimileEventListener("scaleChanged", function(newScale){state.scale = newScale;});
+              var facsimile = null;
+              // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
+              // docTranscript exists and if it has images attached
+              if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
+                  facsimile = imageOverlay.createImageOverlay(
+                      {
+                          "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
+                          "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
+                          "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
+                          "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
+                          "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
+                          "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
+                          "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                          "copyright": doc.getFacsCopyright()
+                      });
+              } else {
+                  facsimile = imageOverlay.createImageOverlay({"hasFacsimile": false});
+              }
+              currentPage.facsimile = facsimile;
+              Faust.dom.removeAllChildren(domContainer.facsimile);
+              domContainer.facsimile.appendChild(facsimile);
+              facsimile.addFacsimileEventListener("scaleChanged", function(newScale){state.scale = newScale;});
 
-            if(state.scale === undefined) {
-              facsimile.addFacsimileEventListener("metadataLoaded", function(){state.scale = currentPage.facsimile.fitScale();});
-              facsimile.addFacsimileEventListener("overlayLoaded", function(){currentPage.facsimile.showOverlay(state.showOverlay); transcriptTooltips(currentPage.facsimile);});
-            } else {
-              facsimile.addFacsimileEventListener("metadataLoaded", function(){currentPage.facsimile.setScale(state.scale);});
-              facsimile.addFacsimileEventListener("overlayLoaded", function(){currentPage.facsimile.showOverlay(state.showOverlay); transcriptTooltips(currentPage.facsimile);});
-            }
+              if(state.scale === undefined) {
+                  facsimile.addFacsimileEventListener("metadataLoaded", function(){state.scale = currentPage.facsimile.fitScale();});
+                  facsimile.addFacsimileEventListener("overlayLoaded", function(){currentPage.facsimile.showOverlay(state.showOverlay); transcriptTooltips(currentPage.facsimile);});
+              } else {
+                  facsimile.addFacsimileEventListener("metadataLoaded", function(){currentPage.facsimile.setScale(state.scale);});
+                  facsimile.addFacsimileEventListener("overlayLoaded", function(){currentPage.facsimile.showOverlay(state.showOverlay); transcriptTooltips(currentPage.facsimile);});
+              }
           } else {
-            Faust.dom.removeAllChildren(domContainer.facsimile);
-            currentPage.facsimile.showOverlay(state.showOverlay);
-            domContainer.facsimile.appendChild(currentPage.facsimile);
-            currentPage.facsimile.setScale(state.scale);
+              Faust.dom.removeAllChildren(domContainer.facsimile);
+              currentPage.facsimile.showOverlay(state.showOverlay);
+              domContainer.facsimile.appendChild(currentPage.facsimile);
+              currentPage.facsimile.setScale(state.scale);
           }
 
           // ######### Facsimile | Documentary Transcript parallel view
           if(currentPage.facsimile_document === null) {
-            var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div"});
-            var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
-            var docTranscriptContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
+              // combined viewer framework:
+              var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div"});
+              var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
+              var docTranscriptContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
 
-            Faust.dom.removeAllChildren(domContainer.facsimile_document);
-            domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
+              Faust.dom.removeAllChildren(domContainer.facsimile_document);
+              domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
 
-            facsimileDocTranscriptContainer.style.height = "100%";
-            facsimileDocTranscriptContainer.style.padding = "0px";
-            facsimileDocTranscriptContainer.style.overflow = "hidden";
+              facsimileDocTranscriptContainer.style.height = "100%";
+              facsimileDocTranscriptContainer.style.padding = "0px";
+              facsimileDocTranscriptContainer.style.overflow = "hidden";
 
-            facsimileContainer.style.display = "inline-block";
-            facsimileContainer.style.width = "50%";
-            facsimileContainer.style.height = "100%";
-            facsimileContainer.style.background = "#EBEBEB";
-            facsimileContainer.style.overflow = "auto";
+              facsimileContainer.style.display = "inline-block";
+              facsimileContainer.style.width = "50%";
+              facsimileContainer.style.height = "100%";
+              facsimileContainer.style.background = "#EBEBEB";
+              facsimileContainer.style.overflow = "auto";
 
-            docTranscriptContainer.style.display = "inline-block";
-            docTranscriptContainer.style.width = "50%";
-            docTranscriptContainer.style.height = "100%";
-            docTranscriptContainer.style.overflow = "auto";
-            docTranscriptContainer.style.textAlign = "center";
-            docTranscriptContainer.style.paddingLeft = "1em";
-            docTranscriptContainer.style.paddingRight = "1em";
+              docTranscriptContainer.style.display = "inline-block";
+              docTranscriptContainer.style.width = "50%";
+              docTranscriptContainer.style.height = "100%";
+              docTranscriptContainer.style.overflow = "auto";
+              docTranscriptContainer.style.textAlign = "center";
+              docTranscriptContainer.style.paddingLeft = "1em";
+              docTranscriptContainer.style.paddingRight = "1em";
 
-            currentPage.facsimile_document = facsimileDocTranscriptContainer;
-            currentMetadata = doc.metadata.pages[pageNum - 1];
+              currentPage.facsimile_document = facsimileDocTranscriptContainer;
+              currentMetadata = doc.metadata.pages[pageNum - 1];
 
-            var facsimileParallel = null;
-            // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
-            // docTranscript exists and if it has images attached
-            if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
-              facsimileParallel = imageOverlay.createImageOverlay(
-              {
-                "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
-                "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
-                "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
-                "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
-                "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
-                "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
-                "copyright": doc.getFacsCopyright()
+              // copypaste from facsimile view above:
+              var facsimileParallel = null;
+              // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
+              // docTranscript exists and if it has images attached
+              if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
+                  facsimileParallel = imageOverlay.createImageOverlay(
+                      {
+                          "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
+                          "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
+                          "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
+                          "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
+                          "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
+                          "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
+                          "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                          "copyright": doc.getFacsCopyright()
+                      });
+              } else {
+                  facsimileParallel = imageOverlay.createImageOverlay({"hasFacsimile": false});
+              }
+
+              currentPage.facsimile_document.facsimileParallel = facsimileParallel;
+              facsimileContainer.appendChild(facsimileParallel);
+
+              facsimileParallel.addFacsimileEventListener("metadataLoaded", function(){
+                  currentPage.facsimile_document.metadataLoaded = true;
+                  if(domContainer.facsimile_document.style.display === "block") {
+                      currentPage.facsimile_document.facsimileParallel.fitScale();
+                      currentPage.facsimile_document.pageFitted = true;
+                  }
               });
-            } else {
-              facsimileParallel = imageOverlay.createImageOverlay({"hasFacsimile": false});
-            }
+              facsimileParallel.addFacsimileEventListener("overlayLoaded", function(){facsimileParallel.showOverlay(state.showOverlay); transcriptTooltips(facsimileParallel);});
 
-            currentPage.facsimile_document.facsimileParallel = facsimileParallel;
-            facsimileContainer.appendChild(facsimileParallel);
+              // for doctranscript, clone the ex. view when it's loaded
+              events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
+                  docTranscriptContainer.appendChild(currentPage.docTranscript.cloneNode(true));
+                  addPatchHandlers(docTranscriptContainer);
+                  transcriptTooltips(docTranscriptContainer);
+              });
 
-            facsimileParallel.addFacsimileEventListener("metadataLoaded", function(){
-                currentPage.facsimile_document.metadataLoaded = true;
-                if(domContainer.facsimile_document.style.display === "block") {
-                  currentPage.facsimile_document.facsimileParallel.fitScale();
-                  currentPage.facsimile_document.pageFitted = true;
-                }
-            });
-            facsimileParallel.addFacsimileEventListener("overlayLoaded", function(){facsimileParallel.showOverlay(state.showOverlay); transcriptTooltips(facsimileParallel);});
-
-            events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
-              docTranscriptContainer.appendChild(currentPage.docTranscript.cloneNode(true));
-              addPatchHandlers(docTranscriptContainer);
-              transcriptTooltips(docTranscriptContainer);
-            });
-            
-          } else {
-            Faust.dom.removeAllChildren(domContainer.facsimile_document);
-            domContainer.facsimile_document.appendChild(currentPage.facsimile_document);
+          } else {  // cached view already exists
+              Faust.dom.removeAllChildren(domContainer.facsimile_document);
+              domContainer.facsimile_document.appendChild(currentPage.facsimile_document);
           }
 
           // ############ Document Transcript | Textual Transcript (Apparatus) parallel view
           if(currentPage.document_text === null) {
 
 
-            var documentTextContainer = Faust.dom.createElement({name: "div", class: "dbg-documentTextContainer"});
-            var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-documentContainer'});
-            var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-textContainer'});
+              var documentTextContainer = Faust.dom.createElement({name: "div", class: "dbg-documentTextContainer"});
+              var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-documentContainer'});
+              var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-textContainer'});
 
-            documentTextContainer.style.height = "100%";
-            documentTextContainer.style.padding = "0px";
-            documentTextContainer.style.overflow = "hidden";
+              documentTextContainer.style.height = "100%";
+              documentTextContainer.style.padding = "0px";
+              documentTextContainer.style.overflow = "hidden";
 
-            documentTextContainer.textContainer = textContainer;
+              documentTextContainer.textContainer = textContainer;
 
-            documentContainer.style.display = "inline-block";
-            documentContainer.style.paddingLeft = "1em";
-            documentContainer.style.paddingRight = "1em";
-            documentContainer.style.width = "50%";
-            documentContainer.style.height = "100%";
-            documentContainer.style.border = "0px solid #CCC";
-            documentContainer.style.borderRightWidth = "1px";
-            documentContainer.style.overflow = "auto";
-            documentContainer.style.textAlign = "center";
+              documentContainer.style.display = "inline-block";
+              documentContainer.style.paddingLeft = "1em";
+              documentContainer.style.paddingRight = "1em";
+              documentContainer.style.width = "50%";
+              documentContainer.style.height = "100%";
+              documentContainer.style.border = "0px solid #CCC";
+              documentContainer.style.borderRightWidth = "1px";
+              documentContainer.style.overflow = "auto";
+              documentContainer.style.textAlign = "center";
 
-            textContainer.style.display = "inline-block";
-            textContainer.style.width = "50%";
-            textContainer.style.height = "100%";
-            textContainer.style.overflow = "auto";
-            textContainer.style.textAlign = "center";
+              textContainer.style.display = "inline-block";
+              textContainer.style.width = "50%";
+              textContainer.style.height = "100%";
+              textContainer.style.overflow = "auto";
+              textContainer.style.textAlign = "center";
 
-            currentPage.document_text = documentTextContainer;
-            currentMetadata = doc.metadata.pages[pageNum - 1];
+              currentPage.document_text = documentTextContainer;
+              currentMetadata = doc.metadata.pages[pageNum - 1];
 
-            Faust.dom.removeAllChildren(domContainer.document_text);
-            domContainer.document_text.appendChild(documentTextContainer);
+              Faust.dom.removeAllChildren(domContainer.document_text);
+              domContainer.document_text.appendChild(documentTextContainer);
 
-            events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
-              documentContainer.appendChild(currentPage.docTranscript.cloneNode(true));
-              addPatchHandlers(documentContainer);
-              transcriptTooltips(documentContainer);
-            });
+              events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
+                  documentContainer.appendChild(currentPage.docTranscript.cloneNode(true));
+                  addPatchHandlers(documentContainer);
+                  transcriptTooltips(documentContainer);
+              });
 
-            // load app into textual view of the doc|text parallel view
-            loadTextTranscript(pageNum, function(text) {
-              if(text !== undefined) {  // textual transcript has been found
-                var appText = text.app; // .cloneNode(true);
-                currentPage.document_text.textContainer.appendChild(appText);
-                addPrintInteraction("", appText, doc.faustUri);
-                revealState(domContainer.document_text, pageNum);
-              } else {
-                currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
-              }
-            });
+              // load app into textual view of the doc|text parallel view
+              loadTextTranscript(pageNum, function(text) {
+                  if(text !== undefined) {  // textual transcript has been found
+                      var appText = text.app; // .cloneNode(true);
+                      currentPage.document_text.textContainer.appendChild(appText);
+                      addPrintInteraction("", appText, doc.faustUri);
+                      revealState(domContainer.document_text, pageNum);
+                  } else {
+                      currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
+                  }
+              });
 
           } else {  // currentPage.documentText !== null, i.e. parallel view already initialized
-            Faust.dom.removeAllChildren(domContainer.document_text);
-            domContainer.document_text.appendChild(currentPage.document_text);
+              Faust.dom.removeAllChildren(domContainer.document_text);
+              domContainer.document_text.appendChild(currentPage.document_text);
 
-            revealState(domContainer.document_text, pageNum);
+              revealState(domContainer.document_text, pageNum);
 
-            // FIXME this doesn't handle when we switch pages across document boundaries, does it?
-            // if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
-            //  domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
-            // }
+              // FIXME this doesn't handle when we switch pages across document boundaries, does it?
+              // if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
+              //  domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
+              // }
           }
 
 
           // ############## Textual Transcript (app) single view
           if(currentPage.textTranscript === null) {
-            // should we rather reuse the whole container document for the
-            // page? Ideally, we wouldn't redraw the page on a switch to a new
-            // page that is already displayed.
-            var textTranscriptContainer = Faust.dom.createElement({name: "div"});
+              // should we rather reuse the whole container document for the
+              // page? Ideally, we wouldn't redraw the page on a switch to a new
+              // page that is already displayed.
+              var textTranscriptContainer = Faust.dom.createElement({name: "div"});
 
-            textTranscriptContainer.style.width = "100%";
-            textTranscriptContainer.style.height = "100%";
-            textTranscriptContainer.style.overflow = "auto";
-            textTranscriptContainer.style.textAlign = "center";
+              textTranscriptContainer.style.width = "100%";
+              textTranscriptContainer.style.height = "100%";
+              textTranscriptContainer.style.overflow = "auto";
+              textTranscriptContainer.style.textAlign = "center";
 
-            currentPage.textTranscript = textTranscriptContainer;
-            Faust.dom.removeAllChildren(domContainer.textTranscript);
-            domContainer.textTranscript.appendChild(textTranscriptContainer);
+              currentPage.textTranscript = textTranscriptContainer;
+              Faust.dom.removeAllChildren(domContainer.textTranscript);
+              domContainer.textTranscript.appendChild(textTranscriptContainer);
 
-            loadTextTranscript(pageNum, function(text) {
-              if(text !== undefined) {
-                var appText = text.app; //.cloneNode(true);
-                currentPage.textTranscript.appendChild(appText);
-                addPrintInteraction("", appText, doc.faustUri);
-                revealState(domContainer.textTranscript, pageNum);
+              loadTextTranscript(pageNum, function(text) {
+                  if(text !== undefined) {
+                      var appText = text.app; //.cloneNode(true);
+                      currentPage.textTranscript.appendChild(appText);
+                      addPrintInteraction("", appText, doc.faustUri);
+                      revealState(domContainer.textTranscript, pageNum);
 //                if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
 //                  domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
 //                }
-              } else {
-                currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
-              }
-            });
+                  } else {
+                      currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
+                  }
+              });
           } else { // currentPage.textTranscript !== null
-            // TODO check whether we're already on the right section
-            Faust.dom.removeAllChildren(domContainer.textTranscript);
-            domContainer.textTranscript.appendChild(currentPage.textTranscript);
-            revealState(domContainer.textTranscript, pageNum);
+              // TODO check whether we're already on the right section
+              Faust.dom.removeAllChildren(domContainer.textTranscript);
+              domContainer.textTranscript.appendChild(currentPage.textTranscript);
+              revealState(domContainer.textTranscript, pageNum);
 //            if(domContainer.textTranscript.querySelector("#dt" + pageNum) !== null) {
 //              domContainer.textTranscript.querySelector("#dt" + pageNum).scrollIntoView();
 //            }
@@ -903,34 +942,34 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
           // ############# Print (variant apparatus) single view
           if(currentPage.print === null) {
-            var printContainer = Faust.dom.createElement({name: "div"});
+              var printContainer = Faust.dom.createElement({name: "div"});
 
-            printContainer.style.width = "100%";
-            printContainer.style.height = "100%";
-            printContainer.style.overflow = "auto";
-            printContainer.style.textAlign = "center";
+              printContainer.style.width = "100%";
+              printContainer.style.height = "100%";
+              printContainer.style.overflow = "auto";
+              printContainer.style.textAlign = "center";
 
-            currentPage.print = printContainer;
-            Faust.dom.removeAllChildren(domContainer.print);
-            domContainer.print.appendChild(printContainer);
+              currentPage.print = printContainer;
+              Faust.dom.removeAllChildren(domContainer.print);
+              domContainer.print.appendChild(printContainer);
 
-            loadTextTranscript(pageNum, function(text) {
-              if(text !== undefined) {
-                var printText = text.print; // .cloneNode(true);
-                currentPage.print.appendChild(printText);
-                addPrintInteraction("", printText, doc.faustUri);
-                revealState(domContainer.print, pageNum);
+              loadTextTranscript(pageNum, function(text) {
+                  if(text !== undefined) {
+                      var printText = text.print; // .cloneNode(true);
+                      currentPage.print.appendChild(printText);
+                      addPrintInteraction("", printText, doc.faustUri);
+                      revealState(domContainer.print, pageNum);
 //                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
 //                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
 //                }
-              } else { // no textual transcript found
-                currentPage.print.innerHTML = contentHtml.missingTextTranscript;
-              }
-            });
+                  } else { // no textual transcript found
+                      currentPage.print.innerHTML = contentHtml.missingTextTranscript;
+                  }
+              });
           } else { // currentPage.print !== null
-            Faust.dom.removeAllChildren(domContainer.print);
-            domContainer.print.appendChild(currentPage.print);
-            revealState(domContainer.print, pageNum);
+              Faust.dom.removeAllChildren(domContainer.print);
+              domContainer.print.appendChild(currentPage.print);
+              revealState(domContainer.print, pageNum);
 //            if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
 //              domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
 //           }
@@ -938,12 +977,11 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemo
 
           // finally set correct page on structure view
           if(doc.structure !== undefined) {
-            doc.structure.setLockedGroup(pageNum);
+              doc.structure.setLockedGroup(pageNum);
           }
-          
+
           events.triggerEvent("pageLoaded", pageNum);
-        };
-      })();
+      };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

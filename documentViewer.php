@@ -34,12 +34,12 @@
 
 <script>
   requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['faust_viewer', 'data/document_metadata'], function(createDocumentViewer, documentMetadata) {
+    requirejs(['faust_viewer'], function(createDocumentViewer) {
       //
       // create viewer and assign parent element
       var viewer = (function(){
         "use strict";
-        var viewer = createDocumentViewer(documentMetadata, document.getElementById("main-content"));
+        var viewer = createDocumentViewer(document.getElementById("main-content"));
         if(viewer.getCurrentView() === "facsimile" || viewer.getCurrentView() === "facsimile_document") {
           document.getElementById("facsimile-settings").style.display="block";
         }
