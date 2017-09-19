@@ -50,7 +50,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               return copyright_notes[repository];
             else
               return null;
-          };
+          }
         }
       };
 
@@ -501,7 +501,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               } else {
                   // otherwise get json file with page / filename mappings
                   Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
-                      var pages, filename;
+                      var pages;
                       // parse json file ...
                       try {
                           pages = JSON.parse(pagesJson);
@@ -574,11 +574,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
         if(barData.length === 1) {
           // ..extract the intervals that correspond to the given page number
           pageIntervals = barData[0].intervals.filter(function(interval) {
-            if(interval.page === pageNum) {
-              return true;
-            } else {
-              return false;
-            }
+            return interval.page === pageNum;
           });
 
           // find the lowest intervals range start
@@ -621,7 +617,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
             currentTarget.classList.add("target");
           }
         }
-     }
+     };
 
       /**
        * Make patches transparent on mouse hover.
@@ -640,7 +636,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               }
             });
           }
-     }
+     };
 
       /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
          data to prevent multiple loading of same resources
@@ -1190,7 +1186,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
       var browsePage = function browsePage(by) {
         for (var page = state.page + by; 0 < page && page <= doc.pageCount; page += by) {
           var pageMd = doc.metadata.pages[page-1]
-          if (pageMd !== undefined 
+          if (pageMd !== undefined
               && pageMd.docTranscriptCount > 0
               && pageMd.docTranscripts[0].hasImages)
             return setPage(page);
