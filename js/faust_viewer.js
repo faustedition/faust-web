@@ -190,12 +190,11 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
          * - go to initial view
          */
         return function init() {
-          var relativeFaustUri;
 
-          state.fromLocation();
+            state.fromLocation();
 
           // get relative faust uri that can be matched with entries within faust documents metadata
-          relativeFaustUri = state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "");
+            var relativeFaustUri = state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "");
 
           // now find metadata for the document to view and convert it in a useable form
           faustDocumentsMetadata.metadata.forEach(function(currentMetadata){
@@ -206,15 +205,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               state.doc.sigil = currentMetadata.sigils.idno_faustedition;
             }
           });
-          
-          // try to find sigil for current document and set document title to sigil
-          geneticBarGraphData.forEach(function(currentDocument){
-            if(currentDocument.source === ("faust://xml/document/" + relativeFaustUri)) {
-              state.doc.sigil = currentDocument.sigil;
-              document.title = document.title + " – " + currentDocument.sigil;
-            }
-          });
-
+          document.title = document.title + " – " + state.doc.sigil;
 
           // create elements that will contain the available views
           createDomNodes(parentDomNode);
