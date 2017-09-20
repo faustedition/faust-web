@@ -4,6 +4,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata) {
   "use strict";
 
+
   // Global variables to all viewer instances
   var viewModes = ["facsimile", "facsimile_document", "document", "document_text", "text", "print", "structure"];
   var contentHtml = {
@@ -26,7 +27,23 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
         imageBackgroundZoomLevel: 3,
         showOverlay: true,
         section: undefined,         // opt. file name for textual / apparatus view
-        fragment: undefined
+        fragment: undefined,
+
+          // updates the adress in the browser bar to a value calculated from state and doc
+        toLocation: function toLocation(replaceHistory) {
+              var fixedPath = window.location.pathname.replace(/^\/+/, '/');
+              var url = fixedPath + '?faustUri=' + doc.faustUri + '&page=' + this.page + '&view=' + this.view;
+              if (this.section) {
+                  url += '&section=' + this.section;
+              }
+              if (this.fragment) {
+                  url += '#' + this.fragment;
+              }
+              if (replaceHistory)
+                  history.replaceState(history.state, null, url);
+              else
+                  history.pushState(history.state, null, url);
+          }
       };
 
       // allow other objects to listen to events
@@ -57,18 +74,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
       // container holding references to each available view / div
       var domContainer = {};
 
-      // updates the adress in the browser bar to a value calculated from state and doc
-      var updateLocation = function updateLocation() {
-        var fixedPath = window.location.pathname.replace(/^\/+/, '/');
-        var url = fixedPath + '?faustUri=' + doc.faustUri + '&page=' + state.page + '&view=' + state.view;
-        if (state.section) {
-          url += '&section=' + state.section;
-        }
-        if (state.fragment) {
-          url += '#' + state.fragment;
-        }
-        history.replaceState(history.state, null, url);
-      };
 
       // initialisation of viewer component.
       // 1. create a div for each view with matching id and class names, record it in domContainer, and insert it into
@@ -656,7 +661,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           var verseNo;
 
           // replace window location with current parameters
-          updateLocation();
+          state.toLocation();
 
           // update the PDF button (DEBUG)
           try {
@@ -1238,7 +1243,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
             }
           });
 
-          updateLocation();
+          state.toLocation();
 
           events.triggerEvent("viewChanged", state.view);
 
