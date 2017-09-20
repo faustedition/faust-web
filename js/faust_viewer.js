@@ -29,7 +29,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
         section: undefined,         // opt. file name for textual / apparatus view
         fragment: undefined,
 
-          // updates the adress in the browser bar to a value calculated from state and state.doc
+          // updates the address in the browser bar to a value calculated from state and state.doc
         toLocation: function toLocation(replaceHistory) {
               var fixedPath = window.location.pathname.replace(/^\/+/, '/');
               var url = fixedPath + '?faustUri=' + state.doc.faustUri + '&page=' + this.page + '&view=' + this.view;
@@ -43,6 +43,40 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
                   history.replaceState(history.state, null, url);
               else
                   history.pushState(history.state, null, url);
+
+              return this;
+          },
+
+          // initializes the state from the location bar.
+          fromLocation: function fromLocation() {
+              var getParameters = Faust.url.getParameters();
+              this.doc.faustUri = getParameters.faustUri;
+
+              // if a valid page was given as parameter use ist. otherwise this.page is preset to the
+              // first (1) page of the witness
+              if (getParameters.page && !isNaN(parseInt(getParameters.page))) {
+                  this.page = parseInt(getParameters.page);
+              }
+
+              if (getParameters.section) {
+                  this.section = getParameters.section;
+              }
+
+              // if a view was given in the get parameters and the view is available then set active view to that
+              if (getParameters.view && viewModes.reduce(function (result, view) {
+                      if (view === getParameters.view) {
+                          result = true;
+                      }
+                      return result;
+                  }, false)) {
+                  this.view = getParameters.view;
+              }
+
+              if (getParameters['#']) {
+                  this.fragment = getParameters['#'];
+              }
+
+              return this;
           },
 
           // structure representing the current document
@@ -156,10 +190,9 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
          * - go to initial view
          */
         return function init() {
-          var relativeFaustUri; 
+          var relativeFaustUri;
 
-          var getParameters = Faust.url.getParameters();
-          state.doc.faustUri = getParameters.faustUri;
+          state.fromLocation();
 
           // get relative faust uri that can be matched with entries within faust documents metadata
           relativeFaustUri = state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "");
@@ -190,28 +223,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           // the 'structure'-view will be created from this file
           loadDocumentXmlMetadata();
 
-          // load the textual representation of the whole witness (pre-generated dom structure als text file)
-//          loadTextTranscript();
-
-          // if a valid page was given as parameter use ist. otherwise state.page is preset to the
-          // first (1) page of the witness
-          if(getParameters.page && !isNaN( parseInt(getParameters.page) ) ) {
-            state.page = parseInt(getParameters.page);
-          }
-
-          if (getParameters.section) {
-            state.section = getParameters.section;
-          }
-
-          // if a view was given in the get parameters and the view is available then set active view to that 
-          if(getParameters.view && viewModes.reduce(function(result, view) {if(view === getParameters.view) {result = true;} return result;}, false)) {
-            state.view = getParameters.view;
-          }
-
-          if (getParameters['#']) {
-            state.fragment = getParameters['#'];
-          }
-
 
           // facsimile and documentary transcript can exist for every page of a witness. set view to
           // current page and try to load related files (if not already done)
@@ -219,12 +230,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
 
           // if a view parameter was set in get request, use it. otherwise use the preset
           // default-value from state.view (currently 'facsimile'-view)
-          if(getParameters.view) {
-            setView(getParameters.view);
-          } else {
-            // otherwise use default value
-            setView(state.view);
-          }
+          setView(state.view);
 
           // init tooltips for the navigation bar
           Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
@@ -619,7 +625,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
        * the current state's .fragment part, and the target is revealed
        * and highlighted.
        *
-       * @param state.doc HTML fragment (from textual transcript)
+       * @param doc HTML fragment (from textual transcript)
        * @param pageNum current page number
        */
      var revealState = function revealState(doc, pageNum) {
