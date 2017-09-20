@@ -81,6 +81,34 @@ body.documentViewer main {
   height: 100%;
 }
 
+/* ### "inner" viewer containers */
+
+.viewer {
+  height: 100%;
+  padding: 0px;
+  text-align: center;
+}
+.viewer-container {
+  overflow: hidden;
+  width: 100%;
+}
+.full-viewer {
+  width: 100%;
+  overflow: auto;
+}
+.half-viewer {
+  display: inline-block;
+  width: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 0px solid #cccccc;
+  border-right-width: 1px;
+  overflow: auto;
+}
+.half-viewer + .half-viewer {
+  border-right-width: 0px;
+}
+
 /* Copyright note that is overlaid to the facsimile */
 .facs-copyright {
   font: 12px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
@@ -277,9 +305,7 @@ div g.element-line-hidden:hover > * {
 /* :) */
 .wip {
   color: #111;
-  background: url(../img/wip-bg.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
+  background: url(/img/wip-bg.svg) no-repeat top right;
   background-size: contain;
 }
 cite {

@@ -139,6 +139,16 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           };
         })();
 
+        /**
+         * Some initialisation tasks.
+         *
+         * - find metadata for current doc
+         * - initialize HTML -> createDomNodes
+         * - load XML metadata -> structure view
+         * - update state.page
+         * - go to initial page
+         * - go to initial view
+         */
         return function init() {
           var relativeFaustUri; 
 
@@ -755,30 +765,12 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           // ######### Facsimile | Documentary Transcript parallel view
           if(currentPage.facsimile_document === null) {
               // combined viewer framework:
-              var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div"});
-              var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
-              var docTranscriptContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer});
+              var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div", class: "viewer viewer-container"});
+              var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer, class: "viewer half-viewer"});
+              var docTranscriptContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer, class: "viewer half-viewer"});
 
               Faust.dom.removeAllChildren(domContainer.facsimile_document);
               domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
-
-              facsimileDocTranscriptContainer.style.height = "100%";
-              facsimileDocTranscriptContainer.style.padding = "0px";
-              facsimileDocTranscriptContainer.style.overflow = "hidden";
-
-              facsimileContainer.style.display = "inline-block";
-              facsimileContainer.style.width = "50%";
-              facsimileContainer.style.height = "100%";
-              facsimileContainer.style.background = "#EBEBEB";
-              facsimileContainer.style.overflow = "auto";
-
-              docTranscriptContainer.style.display = "inline-block";
-              docTranscriptContainer.style.width = "50%";
-              docTranscriptContainer.style.height = "100%";
-              docTranscriptContainer.style.overflow = "auto";
-              docTranscriptContainer.style.textAlign = "center";
-              docTranscriptContainer.style.paddingLeft = "1em";
-              docTranscriptContainer.style.paddingRight = "1em";
 
               currentPage.facsimile_document = facsimileDocTranscriptContainer;
               currentMetadata = doc.metadata.pages[pageNum - 1];
@@ -832,31 +824,11 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           if(currentPage.document_text === null) {
 
 
-              var documentTextContainer = Faust.dom.createElement({name: "div", class: "dbg-documentTextContainer"});
-              var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-documentContainer'});
-              var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'dbg-textContainer'});
-
-              documentTextContainer.style.height = "100%";
-              documentTextContainer.style.padding = "0px";
-              documentTextContainer.style.overflow = "hidden";
+              var documentTextContainer = Faust.dom.createElement({name: "div", class: "viewer viewer-container dbg-documentTextContainer"});
+              var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-documentContainer'});
+              var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-textContainer'});
 
               documentTextContainer.textContainer = textContainer;
-
-              documentContainer.style.display = "inline-block";
-              documentContainer.style.paddingLeft = "1em";
-              documentContainer.style.paddingRight = "1em";
-              documentContainer.style.width = "50%";
-              documentContainer.style.height = "100%";
-              documentContainer.style.border = "0px solid #CCC";
-              documentContainer.style.borderRightWidth = "1px";
-              documentContainer.style.overflow = "auto";
-              documentContainer.style.textAlign = "center";
-
-              textContainer.style.display = "inline-block";
-              textContainer.style.width = "50%";
-              textContainer.style.height = "100%";
-              textContainer.style.overflow = "auto";
-              textContainer.style.textAlign = "center";
 
               currentPage.document_text = documentTextContainer;
               currentMetadata = doc.metadata.pages[pageNum - 1];
@@ -900,12 +872,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               // should we rather reuse the whole container document for the
               // page? Ideally, we wouldn't redraw the page on a switch to a new
               // page that is already displayed.
-              var textTranscriptContainer = Faust.dom.createElement({name: "div"});
-
-              textTranscriptContainer.style.width = "100%";
-              textTranscriptContainer.style.height = "100%";
-              textTranscriptContainer.style.overflow = "auto";
-              textTranscriptContainer.style.textAlign = "center";
+              var textTranscriptContainer = Faust.dom.createElement({name: "div", class: "viewer full-viewer"});
 
               currentPage.textTranscript = textTranscriptContainer;
               Faust.dom.removeAllChildren(domContainer.textTranscript);
@@ -930,12 +897,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
 
           // ############# Print (variant apparatus) single view
           if(currentPage.print === null) {
-              var printContainer = Faust.dom.createElement({name: "div"});
-
-              printContainer.style.width = "100%";
-              printContainer.style.height = "100%";
-              printContainer.style.overflow = "auto";
-              printContainer.style.textAlign = "center";
+              var printContainer = Faust.dom.createElement({name: "div", class: "viewer full-viewer"});
 
               currentPage.print = printContainer;
               Faust.dom.removeAllChildren(domContainer.print);
@@ -947,9 +909,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
                       currentPage.print.appendChild(printText);
                       addPrintInteraction("", printText, doc.faustUri);
                       revealState(domContainer.print, pageNum);
-//                if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
-//                  domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
-//                }
                   } else { // no textual transcript found
                       currentPage.print.innerHTML = contentHtml.missingTextTranscript;
                   }
@@ -958,9 +917,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               Faust.dom.removeAllChildren(domContainer.print);
               domContainer.print.appendChild(currentPage.print);
               revealState(domContainer.print, pageNum);
-//            if(domContainer.print.querySelector("#dt" + pageNum) !== null) {
-//              domContainer.print.querySelector("#dt" + pageNum).scrollIntoView();
-//           }
           }
 
           // finally set correct page on structure view
