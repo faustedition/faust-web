@@ -486,6 +486,37 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       };
     })();
 
+      /**
+       * Returns a promise for the response of a xhr object.
+       * @param url
+       * @param responseType resolve to "text" -> responseText, "xml" -> responseXML, leave out -> whole response
+       * @returns {Promise}
+       *
+       */
+    xhr.get = function get(url, responseType) {
+      return new Promise(function(resolve, reject) {
+        var request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 300) {
+            if (responseType === 'text') {
+              resolve(request.responseText);
+            } else if (responseType === 'xml') {
+              resolve(request.responseXML)
+            } else {
+                resolve(request.response);
+            }
+          } else {
+            reject(Error('Failed to load ' + url + ', error: ' + request.statusText));
+          }
+        }
+        request.onerror = function() {
+          reject(Error('Network error accessing ' + url));
+        }
+        request.send();
+      });
+    }
+
     return xhr;
   })();
 

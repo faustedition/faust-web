@@ -79,6 +79,24 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               return this;
           },
 
+          /**
+           * initialize doc from the global metadata table by finding the current document
+           */
+          initMetadata: function initMetadata() {
+              // get relative faust uri that can be matched with entries within faust documents metadata
+              var relativeFaustUri = state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "");
+
+              // now find metadata for the document to view and convert it in a useable form
+              faustDocumentsMetadata.metadata.forEach(function(currentMetadata){
+                  if(currentMetadata.document === relativeFaustUri) {
+                      state.doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
+                      state.doc.faustMetadata = currentMetadata;
+                      state.doc.pageCount = state.doc.metadata.pageCount;
+                      state.doc.sigil = currentMetadata.sigils.idno_faustedition;
+                  }
+              });
+          },
+
           // structure representing the current document
           doc: {
               faustUri: null,
@@ -192,19 +210,8 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
         return function init() {
 
             state.fromLocation();
+            state.initMetadata(); // FIXME refactor
 
-          // get relative faust uri that can be matched with entries within faust documents metadata
-            var relativeFaustUri = state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "");
-
-          // now find metadata for the document to view and convert it in a useable form
-          faustDocumentsMetadata.metadata.forEach(function(currentMetadata){
-            if(currentMetadata.document === relativeFaustUri) {
-              state.doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
-              state.doc.faustMetadata = currentMetadata;
-              state.doc.pageCount = state.doc.metadata.pageCount;
-              state.doc.sigil = currentMetadata.sigils.idno_faustedition;
-            }
-          });
           document.title = document.title + " – " + state.doc.sigil;
 
           // create elements that will contain the available views
@@ -230,13 +237,52 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
       })();
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      /* loading of xml metadata. after metadata is loaded the structure view will be created from it */
-      // triggered by init()
-      var loadDocumentXmlMetadata = (function(){
-        return function() {
-          Faust.xhr.getResponseXml("xml/document/" + state.doc.metadata.documentUri, documentXmlMetadataLoaded );
-        };
-      })();
+
+      var structureView = {
+          attach: function attach(container) {
+              this.container = container;
+              return this;
+          },
+
+          _initHtmlFrame: function _initHtmlFrame() {
+              // create elements for previews
+              var previewDiv = document.createElement("div");
+              previewDiv.id = "previewDiv";
+              previewDiv.className = "preview-div";
+
+              var leftPagePreview = document.createElement("div");
+              leftPagePreview.id = "leftPreviewDiv";
+              leftPagePreview.className = "left-page-preview facsimile-preview";
+              previewDiv.appendChild(leftPagePreview);
+              this.leftPreview = leftPagePreview;
+
+              var rightPagePreview = document.createElement("div");
+              rightPagePreview.id = "rightPreviewDiv";
+              rightPagePreview.className = "right-page-preview facsimile-preview";
+              previewDiv.appendChild(rightPagePreview);
+              this.rightPreview = rightPagePreview;
+
+              // create dom elements for structure display
+              var structureDiv = document.createElement("div");
+              structureDiv.id = "structureDiv";
+              structureDiv.className = "structure-div";
+
+              // create svg image of document structure
+              var structureSvgDiv = document.createElement("div");
+              structureSvgDiv.id = "structureSvgDiv";
+              structureSvgDiv.className = "structure-svg-div";
+              this.structureSvgDiv = structureSvgDiv;
+          },
+
+          init: function init() {
+              var that = this;
+              this._initHtmlFrame();
+              Faust.xhr.get("xml/document/" + state.doc.metadata.documentUri, "xml")
+                  .then(documentXmlMetadataLoaded)
+                  .catch(function(err) { Faust.error("Error loading metadata", err, that.container)});
+              }
+      }
+
 
       // callback for loadDocumentXmlMetadata
       // 1. builds basic viewer structure for structure viewer
@@ -245,35 +291,8 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
       var documentXmlMetadataLoaded = function(documentXmlMetadata) {
           var lockedPages;
 
-          // create elements for previews
-          var previewDiv = document.createElement("div");
-          previewDiv.id = "previewDiv";
-          previewDiv.className = "preview-div";
-
-          var leftPagePreview = document.createElement("div");
-          leftPagePreview.id = "leftPreviewDiv";
-          leftPagePreview.className = "left-page-preview facsimile-preview";
-          previewDiv.appendChild(leftPagePreview);
-
-
-          var rightPagePreview = document.createElement("div");
-          rightPagePreview.id = "rightPreviewDiv";
-          rightPagePreview.className = "right-page-preview facsimile-preview";
-          previewDiv.appendChild(rightPagePreview);
-
-
-          // create dom elements for structure display
-          var structureDiv = document.createElement("div");
-          structureDiv.id = "structureDiv";
-          structureDiv.className = "structure-div";
-
-          // create svg image of document structure
-          var structureSvgDiv = document.createElement("div");
-          structureSvgDiv.id = "structureSvgDiv";
-          structureSvgDiv.className = "structure-svg-div";
-
           var structureSvg = documentStructure.createFromXml(documentXmlMetadata);
-          state.doc.structure = structureSvg;
+          state.doc.structure = structureSvg; // FIXME refactor cache?
 
           structureSvgDiv.appendChild(structureSvg);
 
