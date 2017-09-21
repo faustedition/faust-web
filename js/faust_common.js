@@ -1062,6 +1062,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
   };
 
   Faust.error = function error(title, msg, parent) {
+    console.error(title, msg);
     if (parent === undefined) {
       parent = document.getElementById("main-content");
     }
@@ -1073,7 +1074,6 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     titleElem.textContent = title;
     msgElem.textContent = msg;
     parent.insertBefore(container, parent.firstChild);
-    console.error(title, msg);
   };
 
 

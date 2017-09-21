@@ -186,3 +186,8 @@ Primary views perform the neccessary loading of other stuff. Cleanest solution w
 wait for the primary views to be finished and clone them afterwards.
 
 
+## Viewer Properties
+
+- container element
+- (state)
+- init(parent) builds container, returns a promise
