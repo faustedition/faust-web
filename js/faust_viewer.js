@@ -1,7 +1,11 @@
+// noinspection JSAnnotator
 define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_interaction', 'faust_app',
-        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata'],
+        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata',
+        'json!/print/pages.json'
+    ],
   function(Faust, documentStructure, imageOverlay, addPrintInteraction, app,
-         sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata) {
+         sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata,
+           pagesMapping) {
   "use strict";
 
 
@@ -95,6 +99,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
                       state.doc.sigil = currentMetadata.sigils.idno_faustedition;
                   }
               });
+              state.doc.printLinks = pagesMapping[state.doc.faustUri];
           },
 
           // structure representing the current document
@@ -106,17 +111,42 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               textTranscript: null,
               structure: undefined,
               sections: {},
-              getFacsCopyright: function getFacsCopyright() {
-                  if (this.faustUri in copyright_notes)
-                      return copyright_notes[this.faustUri];
-                  else {
-                      var repository = this.faustMetadata.sigils.repository;
-                      if (repository in copyright_notes)
-                          return copyright_notes[repository];
-                      else
-                          return null;
+              findSection: function findSection(pageNum) {
+                  var printLinks = this.printLinks,
+                      filename = printLinks[pageNum],
+                      prevPage = pageNum;
+
+                  // no reference for pageNum? Look for smaller page numbers ...
+                  while (!filename && prevPage >= 0) {
+                      prevPage = prevPage - 1;
+                      filename = printLinks[prevPage];
                   }
-              }
+                  if (!filename) { // FIXME obsolete when default === 0
+                      filename = printLinks['default'];
+                  }
+
+                  // now, a section parameter may override our choice.
+                  if (state.section) {
+                      if (state.section === filename) {
+                          state.section = undefined; // it's the default
+                      } else {
+                          filename = state.section;
+                      }
+                  }
+                  return filename;
+              },
+      getFacsCopyright: function getFacsCopyright() {
+          if (this.faustUri in copyright_notes)
+              return copyright_notes[this.faustUri];
+          else {
+              var repository = this.faustMetadata.sigils.repository;
+              if (repository in copyright_notes)
+                  return copyright_notes[repository];
+              else
+                  return null;
+          }
+      },
+
           }
       };
 
@@ -506,12 +536,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
       /**
        * Load print and app view for the current document and the given page number.
        * pageNum – current page number
@@ -521,33 +545,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           var loadedDocs = {};
 
           try {
-
-              // finds the section filename for the given pageNum. Requires state.doc.printLinks
-              // TODO write this info directly into the document metadata.
-              var findSection = function findSection(pageNum) {
-                  var printLinks = state.doc.printLinks,
-                      filename = printLinks[pageNum],
-                      prevPage = pageNum;
-
-                  // no reference for pageNum? Look for smaller page numbers ...
-                  while (!filename && prevPage >= 0) {
-                      prevPage = prevPage - 1;
-                      filename = printLinks[prevPage];
-                  }
-                  if (!filename) { // FIXME obsolete when default === 0
-                      filename = printLinks['default'];
-                  }
-
-                  // now, a section parameter may override our choice.
-                  if (state.section) {
-                      if (state.section === filename) {
-                          state.section = undefined; // it's the default
-                      } else {
-                          filename = state.section;
-                      }
-                  }
-                  return filename;
-              };
 
               // load actual transcript html files and trigger callback
               var loadDocs = function(filename) {
@@ -572,27 +569,8 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
                   }
               };
 
-              // load pages.json and call loadDocs if required
-              if(state.doc.printLinks !== undefined) {
-                  // try to load documents if pageNum / filename mappings were already loaded
-                  loadDocs(findSection(pageNum));
-              } else {
-                  // otherwise get json file with page / filename mappings
-                  Faust.xhr.getResponseText("print/pages.json", function(pagesJson) {
-                      var pages;
-                      // parse json file ...
-                      try {
-                          pages = JSON.parse(pagesJson);
-                          // ... and extract information for current witness
-                          state.doc.printLinks = pages[state.doc.faustUri];
-                          //
-                          // try to load document for current page
-                          loadDocs(findSection(pageNum));
-                      } catch (e) {
-                          Faust.error("Fehler beim Laden des Dokuments", e);
-                      }
-                  });
-              }
+              loadDocs(state.doc.findSection(pageNum));
+
 
               // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
               // returns a <div> containing the given print state.doc to be inserted into the document.
