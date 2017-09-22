@@ -449,19 +449,15 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
                   });
 
                   // if a user clicks on a facsimile page, go to the relevant pages in the facsimile view
-                  this.leftPreview.addEventListener("click", function () {
-                      if (that.leftPreview.pageNum !== undefined) {
-                          setPage(that.leftPreview.pageNum);
-                          setView("facsimile");
-                      }
-                  });
-                  this.rightPreview.addEventListener("click", function () {
-                      if (that.rightPreview.pageNum !== undefined) {
-                          setPage(that.rightPreview.pageNum);
-                          setView("facsimile");
-                      }
-                  });
+                  var previewClickHandler = function () {
+                    if (this.pageNum !== undefined) {
+                        setPage(this.pageNum);
+                        setView("facsimile");
+                    }
+                  }
 
+                  this.leftPreview.addEventListener("click", previewClickHandler);
+                  this.rightPreview.addEventListener("click", previewClickHandler);
 
                   return this;
               }
