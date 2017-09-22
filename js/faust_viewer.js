@@ -757,15 +757,55 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
           // create variable for easier access to the current page
           var currentPage = state.doc.pages[pageNum - 1];
 
-          // find out if documentary transcript was loaded before
-          if(currentPage.docTranscript === null) {
-              // try to load docTranscript if it wasn't loaded before
-              loadDocTranscript(pageNum);
-          } else {
-              // if the documentary transcript already exists append it to its view
-              Faust.dom.removeAllChildren(domContainer.docTranscript);
-              domContainer.docTranscript.appendChild(currentPage.docTranscript);
+          var docTranscriptViewer = {
+              controller: state,
+              doc: state.doc,
+              container: domContainer.docTranscript,
+              cache: {},  // map page -> rendered stuff
+
+              setPage: function (pageNo) {
+                  if (this.cache.hasOwnProperty(pageNo))
+                      return Promise.resolve(this.cache[pageNo]);
+
+                  var that = this,
+                      page = this.doc.metadata.pages[pageNo - 1],
+                      url = page.docTranscripts[0].docTranscriptUrl,
+                      loadDocTranscript = page.hasDocTranscripts ?
+                          Faust.xhr.get(url, "text")
+                          : Promise.resolve(contentHtml.missingDocTranscript);
+                  return loadDocTranscript.then(
+                      function (docTranscriptHtml) {
+                          var docTranscriptDiv = document.createElement("div");
+                          docTranscriptDiv.style.margin = "auto";
+                          docTranscriptDiv.style.paddingTop = "1em";
+                          if (docTranscriptHtml) {
+                              docTranscriptDiv.innerHTML = docTranscriptHtml;
+                          } else {
+                              docTranscriptDiv.innerHTML = contentHtml.missingDocTranscript;
+                          }
+
+                          that.cache[pageNum] = docTranscriptDiv;
+                          Faust.dom.removeAllChildren(that.container);
+                          that.container.appendChild(docTranscriptDiv);
+                          addPatchHandlers(that.container);
+                          transcriptTooltips(that.container);
+
+                          // FIXME remove after global viewer refactoring
+                          that.doc.pages[pageNum-1].docTranscript = docTranscriptDiv;
+                          events.triggerEvent("docTranscriptPage" + pageNum + "Loaded");
+
+                          return docTranscriptDiv;
+                      })
+                      .catch(function (err) {
+                          Faust.error("Failed to load transcript from " + url, err, that.container);
+                      });
+              },
+
+              init: function () {
+                  return this.setPage(state.page);
+              }
           }
+          docTranscriptViewer.init();
 
           // ############## Facsimile View
           if(currentPage.facsimile === null) {
@@ -974,35 +1014,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
       };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-      /* load textual transcript for a specific page. */
-      var loadDocTranscript = function loadDocTranscript(pageNum) {
-          if(!state.doc.metadata.pages[pageNum - 1].hasDocTranscripts) {
-            docTranscriptLoadedHandler(contentHtml.missingDocTranscript, pageNum);
-          } else {
-            Faust.xhr.getResponseText(state.doc.metadata.pages[pageNum - 1].docTranscripts[0].docTranscriptUrl, function(responseText) { docTranscriptLoadedHandler(responseText, pageNum); } );
-          }
-      };
-
-      var docTranscriptLoadedHandler = function(docTranscriptHtml, pageNum) {
-          var docTranscriptDiv = document.createElement("div");
-          docTranscriptDiv.style.margin = "auto";
-          docTranscriptDiv.style.paddingTop = "1em";
-          if(docTranscriptHtml) {
-            docTranscriptDiv.innerHTML = docTranscriptHtml;
-          } else {
-            docTranscriptDiv.innerHTML = contentHtml.missingDocTranscript;
-          }
-
-          state.doc.pages[pageNum - 1].docTranscript = docTranscriptDiv;
-          Faust.dom.removeAllChildren(domContainer.docTranscript);
-          domContainer.docTranscript.appendChild(docTranscriptDiv);
-          addPatchHandlers(domContainer.docTranscript);
-          transcriptTooltips(domContainer.docTranscript);
-
-
-          events.triggerEvent("docTranscriptPage" + pageNum + "Loaded");
-      };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -191,3 +191,6 @@ wait for the primary views to be finished and clone them afterwards.
 - container element
 - (state)
 - init(parent) builds container, returns a promise
+- setPage(pageno) switches the viewer to the given page. This should probably return a promise, since we want to update
+  composite viewers from single ones.
+- maybe we build loadPage and let default implementations of init and setPage call that?
