@@ -55,7 +55,7 @@
 <script>
     requirejs(['./js/faust_common.js'], function(Faust) {
         requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays'], function ($, $chocolat, $overlays) {
-            $('main').Chocolat({imageSelector:'figure a', className:'faustedition', loop:true});
+            $('main').Chocolat({className:'faustedition', loop:true});
             $('header nav').menuOverlays({highlightClass:'pure-menu-selected'});
         });
     });
