@@ -71,7 +71,7 @@ a[href].pure-button {border:none;}
 
 .pure-menu li a {padding:0; margin:5px 10px; color:rgb(125,125,125);}
 .pure-menu li a small {margin-left:-5px; margin-right:-5px}
-.pure-menu li:hover a, .pure-menu li.pure-menu-selected a {color:#fab400;}
+.pure-menu li:hover a, .pure-menu li.pure-menu-selected a, .pure-menu li a.pure-menu-selected {color:#fab400;}
 .pure-menu li a:focus, .pure-menu li a:hover {background:none;}
 .pure-menu .pure-form {position:relative; margin: 0 0.7em;}
 .pure-menu .pure-form input {width:3em; position:relative; z-index:2; background:transparent; transition:width .5s;}

@@ -1,0 +1,65 @@
+/* ********************** */
+/* Overlay
+/* ********************** */
+.faustedition.overlay {
+  position: fixed;
+  z-index:45;
+  left: 0;
+  right:0;
+  top:3.4em;
+  bottom:0;
+  overflow:hidden;
+  display:none;
+}
+.faustedition.overlay .overlay-top {
+  position: absolute;
+  z-index: 50;
+  top: 0px;
+  right: 0;
+  left: 0;
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.faustedition.overlay .overlay-top .close {
+  position: absolute;
+  top:0;
+  right: .25em;
+  padding:1em;
+  color: rgb(125,125,125);
+  cursor: pointer;
+}
+.faustedition.overlay .overlay-content {
+  position: fixed;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:47;
+  padding:50px 2em 2em;
+  width:100%;
+  max-height:100%;
+  overflow:auto;
+}
+.faustedition.overlay .overlay-background {
+  position: fixed;
+  z-index:46;
+  top:3.4em;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(221,221,221);
+  opacity: 0.95;
+}
+
+/* menu */
+.faustedition.overlay .navigation a {
+  display:block;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  border:none;
+  text-decoration: none;
+}
+.faustedition.overlay .navigation a:first-child {
+  border-bottom:1px solid
+}

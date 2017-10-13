@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
+    <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/chocolat.css">
     <link rel="stylesheet" href="css/chocolat-custom.css">
     <?php if (inurl('documentViewer')) : ?>
@@ -60,11 +61,9 @@
         <div id="current" class="pure-nowrap"></div>
         <nav id="nav_all" class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li id="nav_archive"><a href="archive">Archiv</a></li>
-          <li id="nav_genesis"><a href="genesis">Genese</a></li>
-          <li id="nav_text"><a href="text">Text</a></li>
+          <li><a href="/help"><i class="fa fa-help-circled fa-lg"></i></a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li>
-          <li><a href="help"><i class="fa fa-help-circled fa-lg"></i></a></li>
+          <li><a href="#navigation"><i class="fa fa-menu fa-lg"></i> Menü</a></li>
           </ul>
         </nav>
     </header>
