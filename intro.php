@@ -9,7 +9,6 @@
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
         
-        <div class="pure-u-1-8"></div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/archive"><big>Archiv</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
@@ -33,9 +32,17 @@
             <p><a class="pure-button" href="/print/faust2" style="display:block;">Faust II</a></p>
             <p><a class="pure-button" href="paralipomena" style="display:block;">Paralipomena</a></p>
         </div>
-        <div class="pure-u-1-8"></div>
+        <div class="pure-u-1-4 pure-gap pure-center">
+            <p><a class="pure-button pure-button-primary" href="/intro"><big>Info</big></a></p>
+            <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
+            <p><a class="pure-button" href="/intro#volltextsuche" style="display:block;">Suche</a></p>
+            <p><a class="pure-button" href="/intro#siglen" style="display:block;">Siglen</a></p>
+            <p><a class="pure-button" href="/transcription_guidelines" style="display:block;">Transkription</a></p>
+            <p><a class="pure-button" href="/bibliography" style="display:block;">Bibliographie</a></p>
+            <p><a class="pure-button" href="/intro#cite" style="display:block;">Zitierweise</a></p>
+        </div>
         <h2>Beta-Version</h2>
-        <p>Die im Februar 2016 veröffentlichte Version der Ausgabe ist noch nicht endgültig, sondern 
+        <p>Diese im Februar 2016 veröffentlichte und zuletzt am 1. September 2017 aktualisierte Version der Ausgabe ist noch nicht endgültig, sondern 
         eine <a href="beta-release">Beta-Version</a>. <a href="beta-release">Ausführlichere Informationen hier</a>.</p>
         <h2 id="handschriften">Handschriften</h2>
         <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt ‚Faust‘ gearbeitet.
@@ -81,6 +88,23 @@
             Journaldrucken auch handschriftlich bearbeitete Korrekturexemplare und
             Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
+
+        <h2 id="testimony">Dokumente zur Entstehungsgeschichte</h2>
+
+        <p>Die <a href="archive_testimonies">Dokumente zur Entstehung des
+            ‚Faust‘</a> versammeln alle bislang bekanntgewordenen Äußerungen Goethes und
+            anderer Zeitgenossen, die sich auf den ‚Faust‘ beziehen lassen, in Briefen,
+            Tagebuch- und Gesprächsaufzeichnungen und weiteren schriftlich überlieferten
+            Dokumenten. Der Bestand der mehr als 1500 Zeugnisse integriert die früheren
+            Sammlungen von <a data-bib-uri="faust://bibliography/pniower1899"
+            href="bibliography#pniower1899">Otto Pniower (1899)</a> und <a
+            href="bibliography#graef1901-1914_II_2"
+            data-bib-uri="faust://bibliography/graef1901-1914_II_2">Hans-Gerhard Gräf (1904)</a> und
+            ergänzt sie um erst seither publizierte Dokumente.  Die Dokumente sind nach
+            Möglichkeit als vollständige Texte verfügbar, die jeweils ‚Faust‘ betreffende
+            Passage wird auszugsweise in der Tabelle der Zeugnisse angezeigt, die zugleich
+            die wichtigsten Angaben wie Datum, Verfasser, Adressat, Verweis-Nummern
+            enthält.</p>
         
         <h2 id="lesetext">Lesetext</h2>
         <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
@@ -155,7 +179,7 @@
         
         <h3>Siglen der Handschriften zum Faust&nbsp;II</h3>
         <p>Die in der WA eingeführten numerischen Siglen bleiben immer erhalten. Die dort ohne Ziffer alphanumerisch 
-            gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Siglen werden in die numerische 
+            gezählten (z.B. H.a) und die erst in späterer Zeit bekannt gewordenen Handschriften werden in die numerische 
             Zählung durch Hinzufügung alphanumerischer Indizes integriert (z.B. H.1a). Liegt der erste Vers  vor dem 
             ersten Vers einer Handschrift mit dem numerischen Index 1, so erhält die Handschrift den Index 0 (z.B. H.0, 
             H.0a usw.).</p>
@@ -175,10 +199,10 @@
             <a ref="documentViewer?faustUri=faust://xml/document/paralipomena/gsa_390782.xml">H&nbsp;P6</a>. Die durch Bohnenkamp 
             eingeführten gelten auch für die Faustedition, mit Ausnahme der Handschriften, die auch nach dem oben beschriebenen 
             Prinzip sigliert werden können, z.B. <a 
-            ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2.</p>
+            ref="documentViewer?faustUri=faust://xml/document/faust/0/gsa_391373.xml">1&nbsp;H.4</a> (Bohnenkamp: H&nbsp;P2).</p>
             
         <h3>Weitere Siglen</h3>
-        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, der Präfix R bezeichnet eine Restkategorie.</p>
+        <p>Mit T beginnende Siglen enthalten Texte für die Bühne, das Präfix R bezeichnet eine Restkategorie.</p>
         
         <h3>Siglen der Drucke</h3>
         <p>Drucke erhalten die durch Waltraud Hagen (<a href="bibliography#hagen1983"
@@ -249,7 +273,7 @@
         und Punkt können hier auch weggelassen werden, die Suche „2vh2“ führt zu derselben Stelle). Verkürzte Suchanfragen wie „<a ref="search?q=V+H.2">V&nbsp;H.2</a>“ führen zur 
         Ausgabe einer Liste von Siglen, in denen diese Zeichenfolge vorkommt. Dabei wird auch in alternativen Siglensystemen, Archivsignaturen und der Kurzbeschreibung gesucht. Diese Siglensuche ist eine einfache Teilstringsuche, die für den Volltext zur Verfügung stehenden Wildcards gibt es hier nicht.</p>
                 
-        <h2>Technische Untersuchungsverfahren</h2>
+        <h2 id="handschriftenanalyse">Technische Untersuchungsverfahren</h2>
         <p>Im Rahmen der editorischen Arbeit wurde eine Reihe von technischen Verfahren angewendet:</p>
         <ul>
             <li><a href="x-ray_spectrometry">Röntgenfluoreszenzspektrometrie
@@ -269,7 +293,7 @@
         
         <h2 id="cite">Zitierempfehlung</h2>
         <?php // NOTE: see links in imprint ?>
-        <p>Historisch-kritische Faustedition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida,  Thorsten Vitt und Moritz Wissenbach. <span class="pure-fade-50">Version</span>. Frankfurt am Main / Weimar / Würzburg 2016, <span class="pure-fade-50">Sigle</span>, <span class="pure-fade-50">Seite</span> (<span class="pure-fade-50">Ansicht</span>), <span class="pure-fade-50">URL</span>, <span class="pure-fade-50">Abrufdatum</span>.</p>
+        <p>Historisch-kritische Faustedition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida,  Thorsten Vitt und Moritz Wissenbach. <span class="pure-fade-50">Version</span>. Frankfurt am Main / Weimar / Würzburg 2017, <span class="pure-fade-50">Sigle</span>, <span class="pure-fade-50">Seite</span> (<span class="pure-fade-50">Ansicht</span>), <span class="pure-fade-50">URL</span>, <span class="pure-fade-50">Abrufdatum</span>.</p>
         <p>Beispiel:</p>
         <p>Historisch-kritische Faustedition. Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis. Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida,  Thorsten Vitt und Moritz Wissenbach. Beta-Version 1. Frankfurt am Main, Weimar, Würzburg 2016, 1 H.5, S.&nbsp;1 (Faksimile / dokumentarische Transkription), URL: <a href="http://beta.faustedition.net/documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&amp;page=1&amp;view=facsimile_document">http://beta.faustedition.net/documentViewer?faustUri=faust://xml/document/faust/0/gsa_390028.xml&amp;page=1&amp;view=facsimile_document</a>, abgerufen am 11. Februar 2016.</p>
         <p>Hinweis für Zitationen in gedruckten Publikationen: Die Siglen enthalten einen Punkt, verstehen sich aber wie die aus gedruckten Editionen bekannten Siglen, z.B.: „1 H<sup>5</sup>“.</p>
@@ -284,7 +308,9 @@
     </article>
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+            [{caption: "Ausgabe", link: "intro"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

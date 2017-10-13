@@ -9,10 +9,10 @@
           <h3>Historisch-kritische Edition</h3>
                 <p>
                   Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis<br>
-                  unter Mitarbeit von Gerrit Brüning, Katrin Henzel, 
+                  unter Mitarbeit von Gerrit Brüning, Katrin Henzel,
                   Christoph Leijser, Gregor Middell, Dietmar Pravida,
                   Thorsten Vitt und Moritz Wissenbach<br>
-                  Frankfurt am Main, Weimar, Würzburg 2016
+                  Frankfurt am Main, Weimar, Würzburg 2017
                 </p>
                 <a class="pure-button pure-button-primary" href="/archive">Archiv</a>
                 <a class="pure-button pure-button-primary" href="/genesis">Genese</a>
@@ -79,36 +79,36 @@
     </div>
   </div>
 </section>
-
-<script type="text/javascript" src="js/jquery.slick.min.js"></script>
 <script type="text/javascript">
-  jQuery(document).ready(function($){
-    $(window).resize(function(event) {
-      $('.slider .center').css('height', $('main').css('height')); // adjust slider height
-    });
-    
-    $(document).trigger('resize'); /* onload */
+  requirejs(['./js/faust_common.js'], function(Faust) {
+      requirejs(['jquery', 'jquery.slick'], function ($, slick) {
+          $(function () {
+              $(window).resize(function (event) {
+                  $('.slider .center').css('height', $('main').css('height')); // adjust slider height
+              });
 
-    var slideshow = $('.slider').slick({
-      adaptiveHeight: true,
-      dots:true,
-      autoplaySpeed: 8000,
-      pauseOnHover: true,
-      responsive: [
-        {
-          breakpoint: 1125,
-          settings: {
-            arrows: false
-          }
-        }
-      ]
-    });
-
-    slideshow.slick('slickPlay'); // autoplay
-
-    $('.slider *').click(function () {      
-        slideshow.slick('slickPause'); // stop on click
-    });
+              $(document).trigger('resize');
+              /* onload */
+              var slideshow = $('.slider').slick({
+                  adaptiveHeight: true,
+                  dots: true,
+                  autoplaySpeed: 8000,
+                  pauseOnHover: true,
+                  responsive: [
+                      {
+                          breakpoint: 1125,
+                          settings: {
+                              arrows: false
+                          }
+                      }
+                  ]
+              });
+              slideshow.slick('slickPlay'); // autoplay
+              $('.slider *').click(function () {
+                  slideshow.slick('slickPause'); // stop on click
+              });
+          });
+      });
   });
 </script>
 <?php include "includes/footer.php"; ?>

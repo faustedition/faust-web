@@ -1,5 +1,18 @@
-// we would like to highlight the innermost appnote element ...
-(function(){
+/**
+ * Apparatus highlighting
+ * ======================
+ *
+ * This script installs a highlighting helper for the inline apparatus and
+ * similar encodings.
+ *
+ * 1. when any element $e is hovered, the closest / innermost .appnote element $a containing $e is identified.
+ *    $a receives the additional 'current' class.
+ * 2. When $a has an attribute data-also-highlight, that attribute is interpreted as a whitespace-separated list of
+ *    ids. All elements identified by one of those ids also receives the 'current' class.
+ *
+ * When something else is hovered, this is undone.
+ */
+define([], function() {
   "use strict";
 
   var initFunction = function() {
@@ -59,4 +72,5 @@
     
   // the event listeners can only be added when the content is loaded. so postpone until dom is loaded
   window.addEventListener("DOMContentLoaded", initFunction);
-})();
+  initFunction();
+});

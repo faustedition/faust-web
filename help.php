@@ -19,6 +19,7 @@ elseif (inreferer('genesis_faust')) 	$target = 'intro#genesis_part';
 elseif (inreferer('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
 elseif (inreferer('genesis')) 		$target = 'intro#genesis';
 elseif (inreferer('search')) 		$target = 'intro#volltextsuche';
+elseif (inreferer('testimon')) 		$target = 'intro#testimony';
 elseif (inreferer('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=print')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
@@ -46,6 +47,9 @@ if ($target) {
 
     <p>Einige Benutzungshinweise finden Sie <a href="intro">in der Einführung in die Ausgabe</a>.</p>
 
+
+
+
   </article>
 
   <div class="pure-u-1-5">
@@ -66,7 +70,9 @@ c[b] = a.substr(9,8) + "V" + a.substr(17,5) + a.substr(6,1) + a.substr(8,1) + a.
 </script>
 
 <script type="text/javascript">
-  // set breadcrumbs
-  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Hilfe"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      // set breadcrumbs
+      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Hilfe"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

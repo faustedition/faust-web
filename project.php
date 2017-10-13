@@ -97,8 +97,10 @@
 </section>
 
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Projekt", link: "project"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+          [{caption: "Projekt", link: "project"}]));
+    });
 </script>
 
 <?php include "includes/footer.php"; ?>

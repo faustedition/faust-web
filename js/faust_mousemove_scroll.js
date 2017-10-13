@@ -2,7 +2,8 @@
 // when the left mouse button is down scrolling can be done
 // by simply moving the mouse.
 // Apply by calling addMouseMoveScroll(Element)
-var addMouseMoveScroll = (function(){
+// FIXME is this actually used anywhere? 
+define([], function() {
   "use strict";
 
   var lastClientPos = {x: undefined, y: undefined};
@@ -68,4 +69,4 @@ var addMouseMoveScroll = (function(){
     // the mouse can be released when not above given element anymore, thus bind to window
     window.addEventListener("mouseup", mouseUpHandler);
   };
-})();
+});

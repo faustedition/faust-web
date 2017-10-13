@@ -21,9 +21,7 @@
     <meta charset='utf-8'>
     <title>Faustedition [alpha]</title>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/sortable.min.js"></script>
-    <script type="text/javascript" src="js/faust_common.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
 
     <link rel="stylesheet" href="css/webfonts.css">
     <link rel="stylesheet" href="css/pure-min.css">

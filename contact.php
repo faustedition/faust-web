@@ -33,6 +33,8 @@
 
 <script type="text/javascript">
   // set breadcrumbs
-  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Kontakt"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Kontakt"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

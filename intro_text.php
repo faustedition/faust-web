@@ -2,7 +2,7 @@
 <section class="center pure-g-r">
   
   <article class="pure-u-1">
-    <p>Die in der digitalen Faust-Edition enthaltenen Lesetexte des Faust&nbsp;I und des Faust&nbsp;II stellen die getreue Wiedergabe des jeweils zugrundeliegenden Zeugen dar. Für den Faust&nbsp;I ist dies der Druck im <span class="new">achten Band der ersten bei Cotta erschienenen Gesamtausgabe</span> (der sogenannten Ausgabe A). Dem Text des Faust&nbsp;II liegt die 187 Blätter umfassende <a href="https://faustedition.uni-wuerzburg.de/new/document/faust/2/gsa_391098.xml" class="new" title="Große Reinschrift (Seite nicht vorhanden)">große Reinschrift</a> zugrunde (WA-Sigle: H). Für die Wiedergabe gelten dabei dieselben Prinzipien wie für die <a href="A_Transkriptionsprinzipien/#text_Transkr_Hss" class="new" title="Textuellen Transkriptionen (Seite nicht vorhanden)">textuellen Transkriptionen</a> des digitalen Archivs. Im Unterschied zu den übrigen Textwiedergaben fehlt im Lesetext jedoch die Markierung von Seitengrenzen.</p>
+    <p>Die in der digitalen Faustedition enthaltenen Lesetexte des Faust&nbsp;I und des Faust&nbsp;II stellen die getreue Wiedergabe des jeweils zugrundeliegenden Zeugen dar. Für den Faust&nbsp;I ist dies der Druck im <span class="new">achten Band der ersten bei Cotta erschienenen Gesamtausgabe</span> (der sogenannten Ausgabe A). Dem Text des Faust&nbsp;II liegt die 187 Blätter umfassende <a href="https://faustedition.uni-wuerzburg.de/new/document/faust/2/gsa_391098.xml" class="new" title="Große Reinschrift (Seite nicht vorhanden)">große Reinschrift</a> zugrunde (WA-Sigle: H). Für die Wiedergabe gelten dabei dieselben Prinzipien wie für die <a href="A_Transkriptionsprinzipien/#text_Transkr_Hss" class="new" title="Textuellen Transkriptionen (Seite nicht vorhanden)">textuellen Transkriptionen</a> des digitalen Archivs. Im Unterschied zu den übrigen Textwiedergaben fehlt im Lesetext jedoch die Markierung von Seitengrenzen.</p>
     <p>Die Herstellung eines Lesetextes geschieht üblicherweise in der Absicht, einen ‚letztgültigen‘, d.h. dem letzten Willen des Autors entsprechenden, oder einen anderen möglichst ‚authentischen‘ Text herzustellen. Bei diesem Versuch tritt auch im Fall des Faust eine Reihe von textkritischen Problemen in Gestalt von Stellen auf, an denen der Text offensichtlich oder möglicherweise fehlerhaft ist oder aus anderen Gründen der mutmaßlichen Absicht des Autors widerspricht. Oft wird dann vom Wortlaut des zugrundeliegenden Zeugen zugunsten der Lesart eines anderen Zeugen, gelegentlich auch von der gesamten Überlieferung abgewichen.<sup><a href="#footnote1">1</a></sup></p>
     <p>Die getreue Wiedergabe der genannten Zeugen stellt weder eine Lösung der textkritischen Probleme noch einen Ersatz für eine solche Lösung dar. Gegenüber editorisch verantworteten Entscheidungen, die in den gedruckten Textbänden gefällt werden und später auch in den digitalen Teil der Edition Eingang finden sollen, hat die Zeugenwiedergabe einen vorläufigen Status. Mit der Wahl der Ausgabe A für den Lesetext des Faust&nbsp;I ist auch nicht bezweckt, die in den Ausgaben <span class="new">B</span> und <span class="new">C</span> vorgenommenen Änderungen in ihrer Autorität generell herabzustufen. Die Lesetexte dienen vielmehr hauptsächlich als philologisch gesicherter Bezugstext für die genetische Darstellung und als Ausgangspunkt des Wegs zum digitalen Archiv, das selbst wiederum als Grundlage der Textkritik dient.</p>
 
@@ -56,7 +56,9 @@
   </div>
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Lesetext"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+          [{caption: "Ausgabe", link: "intro"}, {caption: "Lesetext"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

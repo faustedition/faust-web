@@ -320,7 +320,9 @@
     </article>
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Wasserzeichenaufnahmen"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+            [{caption: "Ausgabe", link: "intro"}, {caption: "Wasserzeichenaufnahmen"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

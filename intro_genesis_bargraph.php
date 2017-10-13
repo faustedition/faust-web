@@ -3,10 +3,6 @@
 
   <article class="pure-u-1">
 
-    <script>
-      window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
-    </script>
-
     <h3>Synopse der Zeugen</h3>
 
     <p><img alt="Beispiel eines Balkendiagramms" title="Beispiel eines Balkendiagramms" src="img/bar_graph.png"></p>
@@ -23,7 +19,9 @@
 
 </section>
 <script type="text/javascript">
-    document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
-        [{caption: "Ausgabe", link: "intro"}, {caption: "Werkgenese retrospektiv"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+      document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+          [{caption: "Ausgabe", link: "intro"}, {caption: "Werkgenese retrospektiv"}]));
+    });
 </script>
 <?php include "includes/footer.php"; ?>

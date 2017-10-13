@@ -1,7 +1,9 @@
 // create functions for on demand loading of variants and add tooltips 
 // for showing number of variants per line
 
-var addPrintInteraction = function(rootDir, node, faustUri) {
+define(['faust_common'],
+  function(Faust) {
+  return function addPrintInteraction(rootDir, node, faustUri) {
   "use strict";
 
   var verseLine;
@@ -65,7 +67,7 @@ var addPrintInteraction = function(rootDir, node, faustUri) {
 
                 // set css class
                 currentLine.classList.add('show');
-                
+
                 // inti tooltips
                 Faust.tooltip.addToTooltipElementsBySelector(".print [title]", "title");
               }
@@ -132,4 +134,4 @@ var addPrintInteraction = function(rootDir, node, faustUri) {
   }
 
   Faust.tooltip.addToTooltipElementsBySelector(".view-content [title], .print [title]", "title");
-};
+}});

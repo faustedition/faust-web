@@ -16,10 +16,10 @@
 </section>
 
 <script type="text/javascript">
-  window.addEventListener("DOMContentLoaded", Faust.tooltip.addToTooltipElements);
-
-  // set breadcrumbs
-  document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese"}]));
+    requirejs(['./js/faust_common'], function(Faust) {
+        // set breadcrumbs
+        document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese"}]));
+    });
 </script>
 
 <?php include "includes/footer.php"; ?>

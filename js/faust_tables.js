@@ -4,7 +4,10 @@
  * (2) Each archive detail page contains only the documents from that archive
  */
 
-var createConcordanceTable = function createConcordanceTable(container, repository) {
+define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_columns', 'data/archives'],
+  function(Faust, Sortable, documentMetadata, concordanceColumns, archives) {
+
+    return function createConcordanceTable(container, repository) {
 
   // run sigil-labels-json.xsl on sigil-labels.xml (faust-gen-html) to get this list:
   var sigilLabels = {
@@ -237,6 +240,7 @@ var createConcordanceTable = function createConcordanceTable(container, reposito
       container.appendChild(concordanceTable);
       Sortable.initTable(concordanceTable);
 
-      //return concordanceTable;
+      return concordanceTable;
       //};
-}
+  }
+});

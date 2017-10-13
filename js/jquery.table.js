@@ -21,10 +21,10 @@
             else if(offset >= tableOffsetTop && offset <= tableOffsetBottom && $t_fixed.is(":hidden"))
                $t_fixed.show();
          }
-         $(window).load(resizeFixed); /* initial resize */
+         init();
+         $(resizeFixed); /* initial resize */
          $(window).resize(resizeFixed);
          $('main').scroll(scrollFixed);
-         init();
       });
    };
 })(jQuery);
