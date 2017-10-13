@@ -10,7 +10,6 @@
 
   $classes = array();
   if (inurl('documentViewer')) array_push($classes, 'document');
-  /* if (inurl('bargraph')) array_push($classes, 'bargraph'); */
 
   $base = explode('/', parse_url($_SERVER['REQUEST_URI'])['path'])[1];
   array_push($classes, $base);
@@ -69,4 +68,4 @@
           </ul>
         </nav>
     </header>
-    <main class="<?php echo implode(' ', $classes); ?>">
+    <main>
