@@ -1,5 +1,5 @@
-<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
+
 <div id="main-content" class="main-content"></div>
 
 <div id="navigation-bar-container" class="navigation-bar-container">
@@ -98,4 +98,5 @@
     });
   });
 </script>
+
 <?php include "includes/footer.php"; ?>

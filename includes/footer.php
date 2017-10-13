@@ -1,21 +1,23 @@
     </main>
-    <?php if ( $showFooter !== false ) : ?>
+
     <footer>
-      <div class="pure-g-r">
+      <div class="center pure-g-r">
         <div class="pure-u-1-2 pure-fade-50">
-          <b>Faustedition<sup><mark>alpha</mark></sup></b>
           <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="middle"></a>
         </div>
         <div class="pure-u-1-2 pure-right pure-fade-50 pure-noprint">
-          <a href="help">Hilfe</a>
-          <a href="contact">Kontakt</a>
           <a href="project">Projekt</a>
+          &middot;
           <a href="intro">Ausgabe</a>
+          &middot;
+          <a href="contact">Kontakt</a>
+          &middot;
+          <a href="imprint">Impressum</a>
+          &middot;
+          <a href="intro#sitemap">Sitemap</a>
         </div>
       </div>
     </footer>
-    <?php endif; ?>
-
 
 
 <script>
@@ -26,7 +28,7 @@
     });
 </script>
 
-  <!-- Piwik -->
+<!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
   _paq.push(['trackPageView']);

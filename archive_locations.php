@@ -1,5 +1,5 @@
-<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
+
 <section>
 
   <article>
@@ -116,6 +116,5 @@
     });
   });
 </script>
-
 
 <?php include "includes/footer.php"; ?>

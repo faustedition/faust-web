@@ -1,5 +1,5 @@
-<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
+
 <section class="center">
 
   <article class="pure-center">

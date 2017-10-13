@@ -1,9 +1,9 @@
 html, body {
-  min-height: 100%;
+  height: 100%;
 }
 
 html {
-  padding:4em 0 2em;
+  padding-top:3.4em;
 }
 
 
@@ -92,37 +92,12 @@ header #current {
   text-overflow: ellipsis;
 }
 
-header #imprint_sitemap {
-  text-align: center;
-}
-header #imprint_sitemap:hover a {
-  color: inherit;
-}
-header #imprint_sitemap a:hover {
-  color: #fab400;
-}
-
-header #imprint_sitemap a {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 /* style for main area */
 main {
-  position: absolute;
-  top: 3.4em;
-  bottom: 1.9em;
-  left: 0;
-  right: 0;
-  overflow: auto;
 }
 
-main table.fixed {
-  top:3.4em;
-}
-
-main.nofooter {
-  bottom:0;
+body[class^="genesis_bargraph"] main {
+  margin-bottom:2.75em;
 }
 
 section {
@@ -141,14 +116,8 @@ section > *:first-child {
 
 /* style for footer area */
 footer {
-  position: fixed;
-  left: 0em;
-  bottom: 0em;
-  padding: 0.25em 1.33em;
-  width: 100%;
+  padding:1em 0;
   font-size:0.75em;
-  border-top: 1px solid #aaa;
-  background-color: #F5F5F5;
 }
 
 footer a[href] {
@@ -159,6 +128,13 @@ footer a[href] {
 
 footer img[align="middle"] {
   margin-top:-0.75em;
+}
+
+body[class^="archive"] footer,
+body[class^="text"] footer,
+body[class^="document"] footer,
+body[class^="genesis"] footer {
+  display:none;
 }
 
 /* ********************** */
@@ -174,6 +150,7 @@ footer img[align="middle"] {
   width: 100%;
   height: 2.75em;
   overflow: hidden;
+  background:white;
 }
 .navigation-bar-content {
   display: inline-block;
@@ -252,24 +229,8 @@ a.undecorated {
     border:none;
   }
 
-  main {
-    position: relative;
-    left:auto;
-    right:auto;
-    top:auto;
-    bottom:auto;
-    overflow:initial;
-  }
-
   [class*="pure-g"], [class*="pure-u"] {
     display:initial; /* FIXME: hotfix - leads to cutt-offs on long texts in FF */
     max-width: none;
-  }
-
-  footer {
-    position: relative;
-    left:auto;
-    bottom:auto;
-    border-top:1px solid grey;
   }
 }

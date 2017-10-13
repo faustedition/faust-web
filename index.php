@@ -1,5 +1,5 @@
-<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
+
 <section class="pure-noprint">
   <div class="slider">
     <div class="slide-left" style="background-image:url(img/slider/mephisto.png);">
@@ -84,10 +84,10 @@
       requirejs(['jquery', 'jquery.slick'], function ($, slick) {
           $(function () {
               $(window).resize(function (event) {
-                  $('.slider .center').css('height', $('main').css('height')); // adjust slider height
+                  $('.slider .center').css('height', $('body').height() - $('footer').outerHeight()); // adjust slider height
               });
 
-              $(document).trigger('resize');
+              $(window).trigger('resize');
               /* onload */
               var slideshow = $('.slider').slick({
                   adaptiveHeight: true,
@@ -111,4 +111,5 @@
       });
   });
 </script>
+
 <?php include "includes/footer.php"; ?>

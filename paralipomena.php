@@ -1,4 +1,5 @@
 <?php include "includes/header.php"; ?>
+
 <section>
 
   <article>
@@ -16,7 +17,7 @@
   </article>
 
 </section>
-<?php $showFooter = false; ?>
+
 <?php include "includes/footer.php"; ?>
 
   <script type="text/javascript">
