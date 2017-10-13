@@ -30,6 +30,7 @@ table.fixed thead {background-color:rgb(255, 255, 255);}
 figure {margin:0.2em 0 2em 0; text-align:center;}
 figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em; color:rgb(125,125,125);}
+figure figcaption a[href] {color:rgb(125,125,125);}
 figure ~ h1, figure ~ h2, figure ~ h3, figure ~ h4, figure ~ h5, figure ~ h6 {clear:both;}
 
 *:target, .target {background: linear-gradient(to right, rgba(252,252,252,0) 0%,rgba(220,160,0,0.2) 100%);}
