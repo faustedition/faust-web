@@ -34,9 +34,12 @@
       return this.each(function() {
          var $this = $(this);
          
+         
          $this.on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
             $(this).blur();
+
+            $this.find('a[href^="#"]').removeClass(settings.highlightClass);
             
             var template = $(this).attr('href');
             var content = $(template).html();
@@ -46,11 +49,10 @@
                that.addClass(settings.highlightClass);
                
                $('body').find('.overlay .close').click(function(event) {
-                  $(this).closest('.overlay').hide().find('.overlay-content').empty()
-                  that.removeClass(settings.highlightClass);
+                  $(this).closest('.overlay').hide();
                });
 
-               $('body').find('.overlay .overlay-content').append(content);
+               $('body').find('.overlay .overlay-content').empty().append(content);
                $('body').find('.overlay').fadeIn('fast');
             }
          });
