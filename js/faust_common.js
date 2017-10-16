@@ -935,6 +935,8 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
   // there will only be a text node with the caption instead of a link in the returned
   // span element
   Faust.createBreadcrumbs = function(data) {
+    var quotation = [];
+
     // create return element
     var breadcrumbs = document.createElement("span");
 
@@ -943,12 +945,14 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
 
     // iterate through all breadcrumbs
     data.forEach(function(crumb, index) {
-      // insert text for last breadcump into seperate element
+      // add quotation title
+      quotation.push(crumb.caption);
+
+      // insert last breadcrumb item into seperate breadcrumb element
       if (index == num-1) {
         var current = '<span>'+crumb.caption+'</span>';
         document.getElementById("current").innerHTML = current;
-
-        return;
+        return; // do not proceed adding caption to standard breadcrumb line
       }
 
       // add a spacer if there is more than one breadcrub
@@ -965,6 +969,15 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       }
       crumbA.appendChild(document.createTextNode(crumb.caption));
     });
+
+
+    // replace breadcrumb and url inside quotation template
+    if (document.getElementById("quotation") != null) {
+      var clone = document.querySelector('#quotation').cloneNode(true);
+      clone.innerHTML = clone.innerHTML.replace(/<span>Startseite<\/span>/g, quotation.join(", "));
+      clone.innerHTML = clone.innerHTML.replace(/<span>URL: .*<\/span>/g, 'URL: '+window.location.href);
+      document.getElementById("quotation").innerHTML = clone.innerHTML;
+    }
 
     // wait a while that (hopefully) dom is loaded and adjust breadcrumb width for long titles
     setTimeout(Faust.adjustBreadcrumbWidth, 100);

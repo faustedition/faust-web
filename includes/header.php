@@ -62,6 +62,7 @@
         <nav id="nav_all" class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
           <li><a href="/help"><i class="fa fa-help-circled fa-lg"></i></a></li>
+          <li><a href="#quotation" title="Zitieremfehlung"><i class="fa fa-bookmark fa-lg"></i></a></li>
           <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li>
           <li><a href="#navigation"><i class="fa fa-menu fa-lg"></i> Menü</a></li>
           </ul>

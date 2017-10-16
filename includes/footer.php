@@ -52,6 +52,24 @@
         </div>
     </script>
 
+
+    <script type="text/template" id="quotation">
+        <div class="center pure-g-r quotation">
+          <div class="pure-u-1">
+            <h3>Zitierempfehlung</h3>
+            <p>
+              Historisch-kritische Faustedition.
+              Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis.
+              Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.
+              Version 1. Frankfurt am Main / Weimar / Würzburg 2016,
+              <span>Startseite</span>,
+              <span>URL: <?php echo $_SERVER['HTTP_HOST']; ?></span>,
+              abgerufen am <?php echo date('d.m.Y'); ?>.
+            </p>
+          </div>
+        </div>
+    </script>
+
 <script>
     requirejs(['./js/faust_common.js'], function(Faust) {
         requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays'], function ($, $chocolat, $overlays) {

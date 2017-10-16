@@ -41,6 +41,10 @@ header a[href] {
   border:none;
 }
 
+header nav a[href="#quotation"] {
+  color:rgb(221,221,221);
+}
+
 header .logo a {
   display:block;
   margin-top:0.5em;
