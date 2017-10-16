@@ -49,6 +49,7 @@
                that.addClass(settings.highlightClass);
                
                $('body').find('.overlay .close').click(function(event) {
+                  that.removeClass(settings.highlightClass);
                   $(this).closest('.overlay').hide();
                });
 
