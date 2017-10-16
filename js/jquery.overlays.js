@@ -1,8 +1,9 @@
 ;(function($) {
    $.fn.menuOverlays = function(options) {
       var settings = $.extend({
-         // These are the defaults.
-         highlightClass: "active"
+         highlightClass: "active",
+         onAfterShow: function () {},
+         onAfterClose: function () {}
       }, options );
 
       /* creat markup */
@@ -34,7 +35,6 @@
       return this.each(function() {
          var $this = $(this);
          
-         
          $this.on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
             $(this).blur();
@@ -51,10 +51,13 @@
                $('body').find('.overlay .close').click(function(event) {
                   that.removeClass(settings.highlightClass);
                   $(this).closest('.overlay').hide();
+                  settings.onAfterClose();
                });
 
                $('body').find('.overlay .overlay-content').empty().append(content);
                $('body').find('.overlay').fadeIn('fast');
+
+               settings.onAfterShow();
             }
          });
       });

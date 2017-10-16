@@ -57,7 +57,7 @@
         <div class="center pure-g-r quotation">
           <div class="pure-u-1">
             <h3>Zitierempfehlung</h3>
-            <p>
+            <p class="quotation-content">
               Historisch-kritische Faustedition.
               Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis.
               Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.
@@ -66,15 +66,18 @@
               <span>URL: <?php echo $_SERVER['HTTP_HOST']; ?></span>,
               abgerufen am <?php echo date('d.m.Y'); ?>.
             </p>
+            <p><i class="fa fa-paste pure-fade-50"></i> <a href="#" data-target=".quotation-content">kopieren</a></p>
           </div>
         </div>
     </script>
 
 <script>
     requirejs(['./js/faust_common.js'], function(Faust) {
-        requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays'], function ($, $chocolat, $overlays) {
+        requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard'], function ($, $chocolat, $overlays, $clipboard) {
             $('main').Chocolat({className:'faustedition', loop:true});
-            $('header nav').menuOverlays({highlightClass:'pure-menu-selected'});
+            $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
+                $('[data-target]').copyToClipboard();
+            }});
         });
     });
 </script>
