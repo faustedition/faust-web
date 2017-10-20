@@ -192,6 +192,7 @@
             <li><em>wdhst</em> – „wiederherstellt“</li>
             <li><em>mon</em> – „moniert“</li>
             <li><em>vorschl</em> (statt <em>propon</em>) – „vorschlägt“</li>
+            <li><em>verw</em> – „verwirft“</li>
         </ul>
         <p>An folgenden Stellen weicht die Darstellung von derjenigen in der AA ab:</p>
         <ol>
