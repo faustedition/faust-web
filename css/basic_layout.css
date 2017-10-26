@@ -194,6 +194,38 @@ body[class^="genesis"] footer {
   right: 0.5em;
 }
 
+/* search */
+.searchform .sort > * {
+  margin:0 0.5em;
+}
+.searchlist {
+  padding:0;
+  margin-bottom:4em;
+}
+.searchlist ol {
+  padding:0;
+  list-style:none;
+  font-size:14px;
+}
+.searchlist ol li {
+  margin:1.5em 0;
+}
+.searchlist ol li h3 {
+  margin-bottom:0.5em;
+}
+.searchlist ol li .meta {
+  color:grey;
+  display:block;
+}
+.searchlist ol li .print {
+  display:block;
+  width:auto;
+  margin:0.125em 0;
+  word-spacing:normal;
+  letter-spacing:normal;
+}
+
+
 /* *********************** */
 /* External Links          */
 /* *********************** */
