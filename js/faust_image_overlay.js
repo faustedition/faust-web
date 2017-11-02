@@ -1,5 +1,5 @@
-define(["faust_common"], 
-  function(Faust) {
+define(["faust_common", "faust_mousemove_scroll"], 
+  function(Faust, addMouseMoveScroll) {
   "use strict";
 
   var htmlStrings = {

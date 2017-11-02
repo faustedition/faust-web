@@ -1,6 +1,6 @@
-define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_mousemove_scroll', 'faust_print_interaction', 'faust_app',
+define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_interaction', 'faust_app',
         'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata'],
-  function(Faust, documentStructure, imageOverlay, addMouseMoveScroll, addPrintInteraction, app,
+  function(Faust, documentStructure, imageOverlay, addPrintInteraction, app,
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata) {
   "use strict";
 
