@@ -1,5 +1,5 @@
-<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
+
 <section>
 
   <article>

@@ -1,10 +1,6 @@
 /* ********************** */
 /* Genetic Bar
 /* ********************** */
-main.bargraph {
-  bottom: 2.75em;
-}
-
 #genetic-bar-diagram-grid line {
   stroke: #eeeeee;
   stroke-width: 1;

@@ -1,5 +1,6 @@
 /* style for slider */
 .slider {
+  height:100%;
   display:none;
   margin:0 -1em 0 !important;
   background: rgb(235,228,221); /* Old browsers */

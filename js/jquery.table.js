@@ -24,7 +24,7 @@
          init();
          $(resizeFixed); /* initial resize */
          $(window).resize(resizeFixed);
-         $('main').scroll(scrollFixed);
+         $(window).scroll(scrollFixed);
       });
    };
 })(jQuery);

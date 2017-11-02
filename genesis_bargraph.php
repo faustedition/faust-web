@@ -1,5 +1,5 @@
-<?php $showFooter = false; ?>
 <?php include "includes/header.php"; ?>
+
 <section>
 
   <article>
@@ -31,6 +31,5 @@
 <script>
   require(['js/faust_bargraph']);
 </script>
-
 
 <?php include "includes/footer.php"; ?>

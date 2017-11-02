@@ -4,16 +4,15 @@
   function inurl($substring) { 
     $request = $_SERVER['REQUEST_URI'];
 
-    if ($_SERVER['REQUEST_URI'] == '/' && $substring == 'index') return true;
+    if ($request == '/' && $substring == 'index') return true;
     else return strpos($request, $substring) !== false; 
   }
 
-  if (!isset($showFooter)) $showFooter = true;
-
   $classes = array();
-  if (!$showFooter) array_push($classes, 'nofooter');
   if (inurl('documentViewer')) array_push($classes, 'document');
-  /* if (inurl('bargraph')) array_push($classes, 'bargraph'); */
+
+  $base = explode('/', parse_url($_SERVER['REQUEST_URI'])['path'])[1];
+  array_push($classes, $base);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -27,6 +26,7 @@
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/pure-custom.css">
     <link rel="stylesheet" href="css/basic_layout.css">
+    <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/chocolat.css">
     <link rel="stylesheet" href="css/chocolat-custom.css">
     <?php if (inurl('documentViewer')) : ?>
@@ -49,7 +49,7 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   </head>
-  <body>
+  <body class="<?php echo implode(' ', $classes); ?>">
     <header>
         <div class="logo">
           <a href="/"><img src="img/faustlogo.svg" alt="Faustedition"></a>
@@ -61,18 +61,11 @@
         <div id="current" class="pure-nowrap"></div>
         <nav id="nav_all" class="pure-menu pure-menu-open pure-menu-horizontal pure-right pure-nowrap pure-noprint">
           <ul>
-          <li id="nav_archive"><a href="archive">Archiv</a></li>
-          <li id="nav_genesis"><a href="genesis">Genese</a></li>
-          <li id="nav_text"><a href="text">Text</a></li>
-          <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li> 
-          <li id="imprint_sitemap">
-            <small class="pure-fade-50">
-              <a href="imprint">Impressum</a>
-              <a href="intro#sitemap">Sitemap</a>
-            </small>
-          </li>
-          <li><a href="help"><i class="fa fa-help-circled fa-lg"></i></a></li>
+          <li><a href="/help" title="Hilfe"><i class="fa fa-help-circled fa-lg"></i></a></li>
+          <li><a href="#quotation" title="Zitieremfehlung"><i class="fa fa-bookmark fa-lg"></i></a></li>
+          <li><form class="pure-form" action="/search" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li>
+          <li><a href="#navigation" title="Seitennavgation"><i class="fa fa-menu fa-lg"></i> Menü</a></li>
           </ul>
         </nav>
     </header>
-    <main class="<?php echo implode(' ', $classes); ?>">
+    <main>
