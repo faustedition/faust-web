@@ -454,3 +454,6 @@ a.testimony {
 .testimony .rend-strikethrough {
   text-decoration: line-through;
 }
+.div:first-child > .head {
+  margin-top: 0;
+}
