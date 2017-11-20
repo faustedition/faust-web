@@ -51,7 +51,7 @@
 </section>
 
 <script type="text/javascript">
-    requirejs(['./js/faust_common'], function(Faust) {
+    requirejs(['faust_common'], function(Faust) {
       // set breadcrumbs
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Impressum"}]));
     });

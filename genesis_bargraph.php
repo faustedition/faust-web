@@ -29,7 +29,7 @@
 </div>
 
 <script>
-  require(['js/faust_bargraph']);
+  require(['faust_bargraph']);
 </script>
 
 <?php include "includes/footer.php"; ?>

@@ -1,4 +1,4 @@
-<?php include "includes/header.php"; ?>
+<?php include "/includes/header.php"; ?>
 <section class="center pure-g-r">
   
   <div class="pure-u-1-5"></div>
@@ -55,4 +55,4 @@
   <div class="pure-u-1-5"></div>
 
 </section>
-<?php include "includes/footer.php"; ?>
+<?php include "/includes/footer.php"; ?>

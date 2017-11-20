@@ -16,8 +16,7 @@
 
 <script>
 
-  requirejs(['js/faust_common'], function(Faust) {
-    requirejs(['faust_tables', 'data/archives'], function(createConcordanceTable, archives) {
+requirejs(['faust_common', 'faust_tables', 'data/archives'], function(Faust, createConcordanceTable, archives) {
 
       var i;
 
@@ -81,7 +80,6 @@
 
       createConcordanceTable(document.getElementById("archive-table-container"), repositoryName);
     });
-  });
 </script>
 
 <?php include "includes/footer.php"; ?>

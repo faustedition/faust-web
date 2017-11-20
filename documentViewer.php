@@ -33,9 +33,8 @@
 </div>
 
 <script>
-  requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['faust_viewer'], function(createDocumentViewer) {
-      //
+    requirejs(['faust_common', 'faust_viewer'], function(Faust, createDocumentViewer) {
+
       // create viewer and assign parent element
       var viewer = (function(){
         "use strict";
@@ -96,7 +95,6 @@
         }
       });
     });
-  });
 </script>
 
 <?php include "includes/footer.php"; ?>

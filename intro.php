@@ -308,7 +308,7 @@
     </article>
 </section>
 <script type="text/javascript">
-    requirejs(['./js/faust_common'], function(Faust) {
+    requirejs(['faust_common'], function(Faust) {
         document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
             [{caption: "Ausgabe", link: "intro"}]));
     });

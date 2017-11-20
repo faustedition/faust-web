@@ -21,6 +21,7 @@
     <title>Faustedition [alpha]</title>
 
     <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript" src="js/faust_config.js"></script>
 
     <link rel="stylesheet" href="css/webfonts.css">
     <link rel="stylesheet" href="css/pure-min.css">

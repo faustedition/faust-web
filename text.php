@@ -19,7 +19,7 @@
 
       <script type="text/javascript">
       // set breadcrumbs
-      requirejs(['./js/faust_common'], function(Faust) {
+      requirejs(['faust_common'], function(Faust) {
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text"}]));
       });
       </script>

@@ -80,8 +80,7 @@
   </div>
 </section>
 <script type="text/javascript">
-  requirejs(['./js/faust_common.js'], function(Faust) {
-      requirejs(['jquery', 'jquery.slick'], function ($, slick) {
+      requirejs(['faust_common', 'jquery', 'jquery.slick'], function (Faust, $, slick) {
           $(function () {
               $(window).resize(function (event) {
                   $('.slider .center').css('height', $('body').height() - $('footer').outerHeight()); // adjust slider height
@@ -109,7 +108,6 @@
               });
           });
       });
-  });
 </script>
 
 <?php include "includes/footer.php"; ?>
