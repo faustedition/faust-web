@@ -72,14 +72,12 @@
     </script>
 
 <script>
-    requirejs(['./js/faust_common.js'], function(Faust) {
-        requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard'], function ($, $chocolat, $overlays, $clipboard) {
-            $('main').Chocolat({className:'faustedition', loop:true});
-            $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
-                $('[data-target]').copyToClipboard();
-            }});
-        });
-    });
+requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard'], function ($, $chocolat, $overlays, $clipboard) {
+    $('main').Chocolat({className:'faustedition', loop:true});
+    $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
+        $('[data-target]').copyToClipboard();
+    }});
+});
 </script>
 
 <!-- Piwik -->
