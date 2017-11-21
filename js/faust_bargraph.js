@@ -397,7 +397,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
               },
                 typeLabel = typeLabels[type];
               if (type === 'print') { typeLabel = typeLabels.print; }
-              var result = typeLabel + " v. " + start + " – " + stop + " in " + sigil;
+              var result = typeLabel + " Vers " + start + " – " + stop + " in " + sigil;
               if (type !== 'print') { result += ", S. " + page; }
               return result;
             }
