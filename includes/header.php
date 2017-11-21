@@ -11,7 +11,7 @@
   $classes = array();
   if (inurl('documentViewer')) array_push($classes, 'document');
 
-  $base = explode('/', parse_url($_SERVER['REQUEST_URI'])['path'])[1];
+  $base = pathinfo(parse_url($_SERVER['REQUEST_URI'])['path'], PATHINFO_FILENAME);
   array_push($classes, $base);
 ?>
 <!DOCTYPE HTML>
