@@ -83,6 +83,10 @@ header .breadcrumbs a {
   margin:0 5px;
 }
 
+header .breadcrumbs a:hover {
+  color: #de7e00; /* darker than the main accent color, but that would have been too light */
+}
+
 header .breadcrumbs a:first-child {
   font-weight:bold;
 }
