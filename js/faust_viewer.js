@@ -1191,7 +1191,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
 
       /** try to switch to page current+by */
       var browsePage = function browsePage(by) {
-        for (var page = state.page + by; 0 < page && page < doc.pageCount; page += by) {
+        for (var page = state.page + by; 0 < page && page <= doc.pageCount; page += by) {
           var pageMd = doc.metadata.pages[page-1]
           if (pageMd !== undefined 
               && pageMd.docTranscriptCount > 0
