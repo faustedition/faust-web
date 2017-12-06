@@ -186,7 +186,7 @@ table.table {
 }
 
 
-.note { float: right; }
+.note { float: right; z-index: 1;}
 .subhit .note { float: none; display: block; }
 
 /* print.html */
