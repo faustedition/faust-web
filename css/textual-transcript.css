@@ -398,8 +398,14 @@ div:hover > a.sigil {
     text-indent: 1.5em;
 }
 
+.l.rend-indented {
+    text-indent: 3em;
+}
 .lg.rend-indented {
     text-indent: 3em;
+}
+.lg.rend-indented > l.rend-indented {
+    text-indent: 6em;
 }
 
 .lg, .p, .head {
