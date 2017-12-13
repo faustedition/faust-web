@@ -90,6 +90,11 @@ a.pageno, a.paralipomenon {
     border:none;
 }
 
+.appnote .pb {
+    float: none;
+    margin-right: 0.25em;
+}
+
 .speaker {    
 	padding-top: 1.5ex;
 	/* 
