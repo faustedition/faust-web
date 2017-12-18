@@ -404,7 +404,7 @@ div:hover > a.sigil {
 .lg.rend-indented {
     text-indent: 3em;
 }
-.lg.rend-indented > l.rend-indented {
+.lg.rend-indented > .l.rend-indented {
     text-indent: 6em;
 }
 
