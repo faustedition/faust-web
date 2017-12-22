@@ -185,7 +185,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       // create svg container
 
       // start off by finding out how wide the diagram should be.
-      var availabelDiagramWidth = this.container.clientWidth - 15;
+      var availableDiagramWidth = this.container.clientWidth - 15;
 
       var selectedWitnesses = this.getCurrentWitnesses()
 
@@ -193,8 +193,17 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         id: "genetic-bar-diagram-svg",
         attributes:  [["class", "genetic-bar-diagram-svg"],
                       ["height", (selectedWitnesses.length + 2) * verticalDistance],
-                      ["width", availabelDiagramWidth]]
+                      ["width", availableDiagramWidth]]
       });
+
+      // The removebackground filter gives the scene labels a white opaque background so they don't run into another
+      var svgDefs = createSvgElement({name: 'defs', parent: svg});
+      var backgroundFilter = createSvgElement({name: 'filter', id: 'removebackground',
+          attributes: [['x', 0], ['y', 0], ['width', 1], ['height', 1]],
+          parent: svgDefs});
+      createSvgElement({name: 'feFlood', attributes: [['flood-color', 'white']], parent: backgroundFilter});
+      createSvgElement({name: 'feComposite', attributes: [['in', 'SourceGraphic']],  parent: backgroundFilter});
+
       var outerGroup = createSvgElement({name: "g", attributes: [["transform", "translate(150," + (verticalDistance + 5) + ") scale(1,1)"]], parent: svg});
       var geneticBarDiagramSigils = createSvgElement({name: "g", id: "genetic-bar-diagram-sigils", parent: outerGroup});
       var geneticBarDiagramGrid = createSvgElement({name: "g", id: "genetic-bar-diagram-grid", parent: outerGroup});
@@ -207,11 +216,11 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       // support for css transforms. (element is somehow transformed / scaled. the visible area will be scaled
       // properly, but the element will still need as much space as it did before the transformation. since we
       // generate a huge group in svg and scale that one, there would almost always be a huge vertical scroll bar)
-      geneticBarDiagramContainer.style.width = availabelDiagramWidth + "px";
+      geneticBarDiagramContainer.style.width = availableDiagramWidth + "px";
       geneticBarDiagramContainer.style.height = ( (selectedWitnesses.length + 2) * verticalDistance) + "px";
       geneticBarDiagramContainer.style.overflow = "hidden";
 
-      var geneticBarDiagramGridScale = (availabelDiagramWidth - 160) / (visibleVerses*30);
+      var geneticBarDiagramGridScale = (availableDiagramWidth - 160) / (visibleVerses*30);
       geneticBarDiagramGrid.setAttribute("transform", "translate(10,0) scale(" + geneticBarDiagramGridScale + ", 1)");
       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -312,6 +321,45 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
 
       });
 
+      var that = this;
+
+      this.scenes.forEach(function(scene) {
+          var sceneStart = scene.rangeStart;
+          if (sceneStart > firstVisibleVerse && sceneStart < lastVisibleVerse) {
+              var tooltip = scene.title + " (Verse " + sceneStart + " – " + scene.rangeEnd + ")";
+              createSvgElement({
+                  name: "line",
+                  attributes: [["x1", (sceneStart - firstVisibleVerse) * verseInPx],
+                      ["x2", (sceneStart - firstVisibleVerse) * verseInPx],
+                      ["style", "stroke-width: " + 1 / geneticBarDiagramGridScale],
+                      ["y1", "-" + (verticalDistance / 2)],
+                      ["y2", selectedWitnesses.length * verticalDistance],
+                      ["class", "scene-bar show-tooltip"],
+                      ["tooltiptext", tooltip],
+                      ["shape-rendering", "crispEdges"]],
+                  parent: geneticBarDiagramGrid
+              });
+              // var sceneLink = createSvgElement({name: "a", attributes: [['href', '#']], parent: geneticBarDiagramGrid});
+              // sceneLink.addEventListener('onclick', function () { that.setRange(scene.rangeStart, scene.rangeEnd); });
+              var sceneLabel = createSvgElement({
+                  name: "text",
+                  attributes: [["x", (sceneStart - firstVisibleVerse) * verseInPx * geneticBarDiagramGridScale],
+                      ["y", "-" + (verticalDistance / 2)],
+                      ["text-anchor", "left"],
+                      ["transform", "scale(" + 1 / geneticBarDiagramGridScale + ",1)"],
+                      ["class", "scene-label"],
+                      ["filter", "url(#removebackground)"],
+                      ["style", "font-size: " + (verticalDistance / 2) + "px"],
+                  ],
+                  children: [document.createTextNode(scene.title)],
+                  parent: geneticBarDiagramGrid
+              });
+              sceneLabel.addEventListener('click', function () {
+                  that.setRange(scene.rangeStart, scene.rangeEnd);
+              });
+          }
+      });
+
       // add horizontal orientation line
       selectedWitnesses.forEach(function(witness, witnessIndex) {
         var horizontalLine = createSvgElement({name: "line",
@@ -328,7 +376,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       // determine scale factor for genetic bar diagram
       // determine width of svg
       // 160 from (geneticBarDiagramVerseBars) 10 + 160 from outmost svg group (translate(150,0)
-      var geneticBarDiagramVerseBarsScale = (availabelDiagramWidth - 160) / (visibleVerses*30);
+      var geneticBarDiagramVerseBarsScale = (availableDiagramWidth - 160) / (visibleVerses*30);
       geneticBarDiagramVerseBars.setAttribute("transform", "translate(10,0) scale(" + geneticBarDiagramVerseBarsScale + ", 1)");
       //
 
