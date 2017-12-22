@@ -176,10 +176,10 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
     },
 
     updateBargraph : function updateBargraph() {
-      var horizontalDistance = 30;
+      var verseInPx = 30;
       var verticalDistance = 20;
-      var rowHeight = 10;
-      var numberOfLines = this.end - this.start;
+      var barHeightInPx = 10;
+      var visibleVerses = this.end - this.start;
 
 
       // create svg container
@@ -211,7 +211,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       geneticBarDiagramContainer.style.height = ( (selectedWitnesses.length + 2) * verticalDistance) + "px";
       geneticBarDiagramContainer.style.overflow = "hidden";
 
-      var geneticBarDiagramGridScale = (availabelDiagramWidth - 160) / (numberOfLines*30);
+      var geneticBarDiagramGridScale = (availabelDiagramWidth - 160) / (visibleVerses*30);
       geneticBarDiagramGrid.setAttribute("transform", "translate(10,0) scale(" + geneticBarDiagramGridScale + ", 1)");
       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -273,16 +273,16 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         return bins;
       };
 
-      var firstLine = this.start,
-          lastLine  = this.end,
-          bins = loose_labels(firstLine, lastLine, Math.min(numberOfLines, 10))
-                 .filter(function(bin) { return bin >= firstLine && bin <= lastLine });
+      var firstVisibleVerse = this.start,
+          lastVisibleVerse  = this.end,
+          bins = loose_labels(firstVisibleVerse, lastVisibleVerse, Math.min(visibleVerses, 10))
+                 .filter(function(bin) { return bin >= firstVisibleVerse && bin <= lastVisibleVerse });
 
 
       bins.forEach(function(bin) {
         var verticalLine = createSvgElement({name: "line",
-          attributes: [["x1", (bin - firstLine) * horizontalDistance],
-            ["x2", (bin - firstLine) * horizontalDistance],
+          attributes: [["x1", (bin - firstVisibleVerse) * verseInPx],
+            ["x2", (bin - firstVisibleVerse) * verseInPx],
             ["style", "stroke-width: " + 1/geneticBarDiagramGridScale],
             ["y1", "-" + (verticalDistance/2)],
             ["y2", selectedWitnesses.length * verticalDistance],
@@ -291,7 +291,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         });
 
         createSvgElement({name: "text",
-          attributes: [["x", (bin - firstLine) * horizontalDistance * geneticBarDiagramGridScale],
+          attributes: [["x", (bin - firstVisibleVerse) * verseInPx * geneticBarDiagramGridScale],
             ["y", "-" + (verticalDistance / 2)],
             ["text-anchor", "middle"],
             ["transform", "scale(" + 1/geneticBarDiagramGridScale + ",1)"],
@@ -301,7 +301,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
           parent: geneticBarDiagramGrid});
 
         createSvgElement({name: "text",
-          attributes: [["x", (bin - firstLine) * horizontalDistance * geneticBarDiagramGridScale],
+          attributes: [["x", (bin - firstVisibleVerse) * verseInPx * geneticBarDiagramGridScale],
             ["y", (selectedWitnesses.length + 0.5) * verticalDistance],
             ["text-anchor", "middle"],
             ["transform", "scale(" + 1/geneticBarDiagramGridScale + ",1)"],
@@ -316,9 +316,9 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       selectedWitnesses.forEach(function(witness, witnessIndex) {
         var horizontalLine = createSvgElement({name: "line",
           attributes: [["x1", "0"],
-            ["x2", numberOfLines * horizontalDistance],
-            ["y1", (witnessIndex * verticalDistance) + (rowHeight / 2)],
-            ["y2", (witnessIndex * verticalDistance) + (rowHeight / 2)],
+            ["x2", visibleVerses * verseInPx],
+            ["y1", (witnessIndex * verticalDistance) + (barHeightInPx / 2)],
+            ["y2", (witnessIndex * verticalDistance) + (barHeightInPx / 2)],
             ["shape-rendering", "crispEdges"]],
           parent: geneticBarDiagramGrid
         });
@@ -328,7 +328,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       // determine scale factor for genetic bar diagram
       // determine width of svg
       // 160 from (geneticBarDiagramVerseBars) 10 + 160 from outmost svg group (translate(150,0)
-      var geneticBarDiagramVerseBarsScale = (availabelDiagramWidth - 160) / (numberOfLines*30);
+      var geneticBarDiagramVerseBarsScale = (availabelDiagramWidth - 160) / (visibleVerses*30);
       geneticBarDiagramVerseBars.setAttribute("transform", "translate(10,0) scale(" + geneticBarDiagramVerseBarsScale + ", 1)");
       //
 
@@ -363,29 +363,28 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         var barBackground = createSvgElement({name: "rect",
           attributes: [["x", "0"],
             ["y", "0"],
-            ["width", numberOfLines * horizontalDistance],
-            ["height", rowHeight],
+            ["width", visibleVerses * verseInPx],
+            ["height", barHeightInPx],
             ["opacity", "0"]],
           parent: witnessLink
         });
 
         // process intervals
         witness.intervals.forEach(function(interval) {
-          var start = interval.start;
-          var end = interval.end;
-          var barStart = start;
-          var barEnd = end;
+          var barStart, barEnd; // start/end of the bar in verse widths, starting with 0 at the left of the diagram
 
           // test if interval is visible / in selection
-          if( (start >= firstLine && start <= lastLine) || (end >= firstLine && end <= lastLine) || (start <= firstLine && end >= lastLine) ) {
+          if( (interval.start >= firstVisibleVerse && interval.start <= lastVisibleVerse)
+              || (interval.end >= firstVisibleVerse && interval.end <= lastVisibleVerse)
+              || (interval.start <= firstVisibleVerse && interval.end >= lastVisibleVerse) ) {
             // calculate start and end of interval relative to visible range
-            if(start - firstLine >= 0) {
-              barStart = start - firstLine;
+            if(interval.start > firstVisibleVerse) {
+              barStart = interval.start - firstVisibleVerse;
+              barEnd = interval.end < lastVisibleVerse? interval.end - firstVisibleVerse : visibleVerses;
             } else {
               barStart = 0;
+              barEnd = interval.end < lastVisibleVerse? interval.end - firstVisibleVerse + 1 : visibleVerses;
             };
-
-            barEnd = Math.min(end - start + 1, numberOfLines - barStart);
 
             function toolTipLabel(type, start, stop, sigil, page) {
               var typeLabels = {
@@ -406,11 +405,11 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
 
             // create rectangle for interval
             var relatedLines = createSvgElement({name: "rect",
-              attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, start, end, witness.sigil, interval.page)],
-                ["x", barStart * horizontalDistance],
+              attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, interval.start, interval.end, witness.sigil, interval.page)],
+                ["x", barStart * verseInPx],
                 ["y", "0"],
-                ["width", barEnd * horizontalDistance],
-                ["height", rowHeight]]
+                ["width", barEnd * verseInPx],
+                ["height", barHeightInPx]]
             });
 
             var relatedLinesLink = createSvgElement({name: "a", parent: witnessGroup, children: [relatedLines]});
