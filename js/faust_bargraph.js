@@ -419,7 +419,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
 
         // process intervals
         witness.intervals.forEach(function(interval) {
-          var barStart, barEnd; // start/end of the bar in verse widths, starting with 0 at the left of the diagram
+          var barStart, barLength; // start/length of the bar in verse widths, starting with 0 at the left of the diagram
 
           // test if interval is visible / in selection
           if( (interval.start >= firstVisibleVerse && interval.start <= lastVisibleVerse)
@@ -428,10 +428,10 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
             // calculate start and end of interval relative to visible range
             if(interval.start > firstVisibleVerse) {
               barStart = interval.start - firstVisibleVerse;
-              barEnd = interval.end < lastVisibleVerse? interval.end - firstVisibleVerse : visibleVerses;
+              barLength = interval.end < lastVisibleVerse? interval.end - interval.start + 1 : interval.end - firstVisibleVerse;
             } else {
               barStart = 0;
-              barEnd = interval.end < lastVisibleVerse? interval.end - firstVisibleVerse + 1 : visibleVerses;
+              barLength = interval.end < lastVisibleVerse? interval.end - firstVisibleVerse + 1 : visibleVerses;
             };
 
             function toolTipLabel(type, start, stop, sigil, page) {
@@ -456,7 +456,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
               attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, interval.start, interval.end, witness.sigil, interval.page)],
                 ["x", barStart * verseInPx],
                 ["y", "0"],
-                ["width", barEnd * verseInPx],
+                ["width", barLength * verseInPx],
                 ["height", barHeightInPx]]
             });
 
