@@ -1,11 +1,11 @@
 *~
 .*.swp
 tags
-app
-print
-transcript
-xml
-meta
+app/
+print/
+./transcript/
+xml/
+meta/
 debug*.html
 js-gen/
 json/
