@@ -16,7 +16,7 @@ h5.head, .type-subscene > .head {
 	padding-bottom: 0.5ex;
 	padding-top: 1ex;
 	font-size: inherit;
-	font-weight: medium;
+	font-weight: normal;
 }
 
 
@@ -70,7 +70,7 @@ div:hover > a.lineno, a.lineno:hover {
 
 :target > a.lineno, .target > a.lineno {
   opacity:1;
-  color: rgb(220,160,0,1);  /* someone a better idea? */
+  color: rgb(220,160,0);  /* someone a better idea? */
 }
 
 
