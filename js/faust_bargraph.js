@@ -1,22 +1,3 @@
-requirejs.config({
-  baseUrl: 'js',
-  paths: {
-    data: '../data'
-  },
-  shim: {
-    'data/scene_line_mapping' : {
-      exports: 'sceneLineMapping'
-    },
-    'data/genetic_bar_graph': {
-       exports: 'geneticBarGraphData'
-    },
-    'faust_common': {
-      exports: 'Faust'
-    }
-  }
-});
-
-    
 define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
   function(Faust,        sceneLineMapping,          geneticBarGraphData) {
 
