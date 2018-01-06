@@ -5,8 +5,7 @@
         
         <article class="pure-u-3-5 pure-center">
             <p>
-             <a href="print/faust1" class="pure-button pure-button-tile">Faust I</a>
-             <a href="print/faust2" class="pure-button pure-button-tile">Faust II</a>
+             <a href="print/faust" class="pure-button pure-button-tile">Faust</a>
              <a href="paralipomena" class="pure-button pure-button-tile">Paralipomena</a>
             </p>
         
