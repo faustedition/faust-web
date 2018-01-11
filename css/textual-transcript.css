@@ -60,6 +60,10 @@ h3.head, .body > .div > .head {
   border: none;
 }
 
+.print a.lineno.technical-lineno {
+  margin-left: -10em !important;
+}
+
 a.lineno.invisible {
   opacity:0;
 }
