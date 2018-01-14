@@ -349,6 +349,10 @@ abbr.app {
 
 nav.print-navigation {
   position: fixed;
+  background: rgba(255,255,255,0.8); /* might cover sidenotes */
+}
+nav.print-navigation.placeholder {
+    position: relative;
 }
 
 .print .icons-ul {
@@ -473,4 +477,15 @@ a.testimony {
 }
 .div:first-child > .head {
   margin-top: 0;
+}
+
+.type-textcrit {
+    float: right;
+    clear: right;
+    margin-right: -53%;   /* FIXME */
+    width: 50%;           /* FIXME */
+}
+
+.placeholder {
+    visibility: hidden;
 }
