@@ -484,6 +484,10 @@ a.testimony {
     clear: right;
     margin-right: -53%;   /* FIXME */
     width: 50%;           /* FIXME */
+    display: block;
+    text-indent: 0;
+    font-style: normal;
+    font-variant: normal;
 }
 
 .placeholder {
