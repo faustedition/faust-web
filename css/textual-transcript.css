@@ -55,9 +55,13 @@ h3.head, .body > .div > .head {
   position: relative;
   text-align: right;
   text-indent: 0pt;
+  border: none;
   color: #aaa;
   font-size: 80%;
-  border: none;
+}
+.lineno {
+    color: #aaa;
+    font-size: 80%;
 }
 
 .print a.lineno.technical-lineno {
@@ -493,3 +497,13 @@ a.testimony {
 .placeholder {
     visibility: hidden;
 }
+
+.type-textcrit a, .type-textcrit .note, .type-textcrit .reading-type {
+  font-style: italic;
+}
+
+.type-textcrit .note {
+    display: inline;
+    float: none;
+}
+
