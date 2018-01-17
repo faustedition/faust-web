@@ -492,6 +492,7 @@ a.testimony {
     text-indent: 0;
     font-style: normal;
     font-variant: normal;
+    text-transform: none;
 }
 
 .placeholder {
@@ -507,3 +508,6 @@ a.testimony {
     float: none;
 }
 
+.seg.type-lem {
+    border-bottom: 1px dotted grey;
+}
