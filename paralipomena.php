@@ -63,5 +63,4 @@
         Sortable.init();
         $("table[data-sortable]").fixedtableheader();
       });
-  });
   </script>
