@@ -513,6 +513,12 @@ div.variants {
     float: none;
 }
 
+.type-textcrit .rdg:before { white-space: pre; content: "\A"; }
+.type-textcrit .rdg {
+    padding-left: 2.5em;
+    text-indent: -2.5em;
+}
+
 .seg.type-lem {
     border-bottom: 1px dotted grey;
 }
