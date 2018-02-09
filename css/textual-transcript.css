@@ -483,6 +483,10 @@ a.testimony {
   margin-top: 0;
 }
 
+div.variants {
+    column-count: 1; /* creates a new float context */
+}
+
 .type-textcrit {
     float: right;
     clear: right;
