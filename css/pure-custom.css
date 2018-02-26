@@ -17,6 +17,8 @@ blockquote * {margin:0; display:inline-block; color:rgb(0,0,0); font-size:1em;}
 blockquote small {display:block; margin: 0 0 0 40px ;font-size:0.8em;}
 ol ol li {list-style-type:lower-alpha;}
 dl {margin:1em 0;}
+dt {font-weight:bold;}
+hr {margin:1em 0; border:none; border-top:1px solid rgb(0,0,0,); clear:both;}
 code, kbd, pre, samp {font-family:"Ubuntu Monospace";}
 pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
