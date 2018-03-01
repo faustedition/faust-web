@@ -457,6 +457,7 @@ a.testimony {
 
 .testimony .rend-italic, .testimony .rend-letter-spaced, .testimony .rend-antiqua {
   font-style: italic;
+  margin-right: 0.1em;
 }
 .testimony .rend-small {
   font-size: .83em; 

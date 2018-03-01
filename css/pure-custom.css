@@ -11,6 +11,7 @@ p,pre  {text-align:justify; hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; -
 a[href] {color:rgb(0,0,0); text-decoration:none; border-bottom:1px solid rgb(175,175,175);}
 mark {padding:0px 0.25em; background-color:rgb(250,190,0);}
 abbr[title], acronym[title] {border-bottom: 1px dotted; cursor:help;}
+i { margin-right: 0.1em;}
 blockquote {font-style:italic;}
 blockquote:before {font-family:"FontAwesome"; content:"\f10e"; text-decoration:inherit; display: inline-block; speak: none; color:rgba(0,0,0,0.1); padding-right:.25em; font-size:2em;}
 blockquote * {margin:0; display:inline-block; color:rgb(0,0,0); font-size:1em;}
