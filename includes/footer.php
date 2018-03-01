@@ -36,8 +36,8 @@
           </div>
           <div class="pure-u-1-4 pure-gap">
             <a href="/text"><big>Text</big></a>
-            <a href="/print/faust1">Faust I</a>
-            <a href="/print/faust2">Faust II</a>
+            <a href="/print/faust#part_1.1">Faust I</a>
+            <a href="/print/faust#part_2">Faust II</a>
             <a href="/paralipomena">Paralipomena</a>
           </div>
           <div class="pure-u-1-4 pure-gap pure-fade-50">
