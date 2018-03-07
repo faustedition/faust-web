@@ -522,7 +522,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               var createPrintDiv = function(printString) {
                   // create container element for the text and add print class to it
                   var printParentNode = document.createElement("div");
-                  printParentNode.className = "print";
+                  printParentNode.className = "print pure-g-r center";
                   printParentNode.style.textAlign = "initial";
                   printParentNode.style.paddingTop = "1em";
 
@@ -532,9 +532,6 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
 
                   // add contents of parsed html to container element and hide rightmost column
                   Array.prototype.slice.call(tempDiv.getElementsByClassName("print")[0].childNodes).forEach(function(child) {
-                      /*if(child.className === "print-side-column") {
-                        child.style.visibility = "hidden";
-                      }*/
                       printParentNode.appendChild(child);
                   });
 
