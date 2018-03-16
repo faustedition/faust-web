@@ -420,7 +420,7 @@ div:hover > a.sigil {
     text-indent: 3em;
 }
 .lg.rend-indented > .l.rend-indented {
-    text-indent: 6em;
+    text-indent: 4.5em;
 }
 
 .lg, .p, .head {
