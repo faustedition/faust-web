@@ -285,6 +285,7 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
               },
 
               _insertFinishedHtml: function () {
+                  var that = this;
 
                   // TODO check timing: do we need the view containers before all views have been loaded?
                   this.container.appendChild(this.previewDiv);
@@ -302,8 +303,8 @@ define(['faust_common', 'faust_structure', 'faust_image_overlay', 'faust_print_i
                   this.metadataDiv.firstElementChild.style.height = this.parentNode.offsetHeight + "px";
                   this.structureDiv.firstElementChild.style.height = this.parentNode.offsetHeight + "px";
                   window.addEventListener("resize", function() {
-                      this.metadataDiv.firstElementChild.style.height = this.parentNode.offsetHeight + "px";
-                      this.structureDiv.firstElementChild.style.height = this.parentNode.offsetHeight + "px";
+                      that.metadataDiv.firstElementChild.style.height = that.parentNode.offsetHeight + "px";
+                      that.structureDiv.firstElementChild.style.height = that.parentNode.offsetHeight + "px";
                   });
 
 
