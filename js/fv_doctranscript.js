@@ -232,6 +232,10 @@ define(['faust_common'], function (Faust) {
 
     };
 
-    return docTranscriptViewer;
+    return function createDocTranscriptViewer(parent, state, controller) {
+        var result = Object.create(docTranscriptViewer);
+        result.init(parent, state, controller);
+        return result;
+    };
 
 });

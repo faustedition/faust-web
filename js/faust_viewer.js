@@ -3,7 +3,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
         'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata',
         'json!/print/pages.json'
     ],
-  function(Faust, structureView, docTranscriptViewer, imageOverlay, addPrintInteraction, app,
+  function(Faust, structureView, createDocTranscriptView, imageOverlay, addPrintInteraction, app,
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata,
            pagesMapping) {
   "use strict";
@@ -501,7 +501,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
           // create variable for easier access to the current page
           var currentPage = state.doc.pages[pageNum - 1];
 
-          docTranscriptViewer.init(domContainer.docTranscript, state, controller);
+          var docTranscriptViewer = createDocTranscriptView(domContainer.docTranscript, state, controller);
 
           // ############## Facsimile View
           if(currentPage.facsimile === null) {
@@ -590,12 +590,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
               });
               facsimileParallel.addFacsimileEventListener("overlayLoaded", function(){facsimileParallel.showOverlay(state.showOverlay); transcriptTooltips(facsimileParallel);});
 
-              // for doctranscript, clone the ex. view when it's loaded
-              events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
-                  docTranscriptContainer.appendChild(currentPage.docTranscript.cloneNode(true));
-                  addPatchHandlers(docTranscriptContainer);
-                  transcriptTooltips(docTranscriptContainer);
-              });
+              createDocTranscriptView(docTranscriptContainer, state, controller);
 
           } else {  // cached view already exists
               Faust.dom.removeAllChildren(domContainer.facsimile_document);
@@ -618,11 +613,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
               Faust.dom.removeAllChildren(domContainer.document_text);
               domContainer.document_text.appendChild(documentTextContainer);
 
-              events.addEventListener("docTranscriptPage" + pageNum + "Loaded", function() {
-                  documentContainer.appendChild(currentPage.docTranscript.cloneNode(true));
-                  addPatchHandlers(documentContainer);
-                  transcriptTooltips(documentContainer);
-              });
+              createDocTranscriptView(documentContainer, state, controller);
 
               // load app into textual view of the state.doc|text parallel view
               loadTextTranscript(pageNum, function(text) {
