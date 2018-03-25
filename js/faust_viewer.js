@@ -1,9 +1,9 @@
 // noinspection JSAnnotator
-define(['faust_common', 'fv_structure', 'faust_image_overlay', 'faust_print_interaction', 'faust_app',
+define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay', 'faust_print_interaction', 'faust_app',
         'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata',
         'json!/print/pages.json'
     ],
-  function(Faust, structureView, imageOverlay, addPrintInteraction, app,
+  function(Faust, structureView, docTranscriptViewer, imageOverlay, addPrintInteraction, app,
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata,
            pagesMapping) {
   "use strict";
@@ -150,14 +150,16 @@ define(['faust_common', 'fv_structure', 'faust_image_overlay', 'faust_print_inte
           }
       };
 
+      // allow other objects to listen to events
+      var events = Faust.event.createEventQueue();
+
+
       // FIXME temporary wrapper for controller refactoring
       var controller = {
               setPage : function (pageNum) { setPage(pageNum); },
-              setView : function (view) { setView(view); }
+              setView : function (view) { setView(view); },
+              events  : events
       };
-
-      // allow other objects to listen to events
-      var events = Faust.event.createEventQueue();
 
 
       // container holding references to each available view / div
@@ -417,8 +419,10 @@ define(['faust_common', 'fv_structure', 'faust_image_overlay', 'faust_print_inte
 
       /**
        * Make patches transparent on mouse hover.
+       * TODO this is already in fv_doctranscript, move delete it here
        */
      var addPatchHandlers = function addPatchHandlers(targetElement) {
+         console.warn('Deprecated addPatchHandlers in faust_viewer.js called');
           var patches = targetElement.getElementsByClassName("element-patch");
           for (var i = 0; i < patches.length; i++) {
             patches[i].addEventListener("mouseenter", function() {
@@ -497,55 +501,7 @@ define(['faust_common', 'fv_structure', 'faust_image_overlay', 'faust_print_inte
           // create variable for easier access to the current page
           var currentPage = state.doc.pages[pageNum - 1];
 
-          var docTranscriptViewer = {
-              controller: state,
-              doc: state.doc,
-              container: domContainer.docTranscript,
-              cache: {},  // map page -> rendered stuff
-
-              setPage: function (pageNo) {
-                  if (this.cache.hasOwnProperty(pageNo))
-                      return Promise.resolve(this.cache[pageNo]);
-
-                  var that = this,
-                      page = this.doc.metadata.pages[pageNo - 1],
-                      url = page.docTranscripts[0].docTranscriptUrl,
-                      loadDocTranscript = page.hasDocTranscripts ?
-                          Faust.xhr.get(url, "text")
-                          : Promise.resolve(contentHtml.missingDocTranscript);
-                  return loadDocTranscript.then(
-                      function (docTranscriptHtml) {
-                          var docTranscriptDiv = document.createElement("div");
-                          docTranscriptDiv.style.margin = "auto";
-                          docTranscriptDiv.style.paddingTop = "1em";
-                          if (docTranscriptHtml) {
-                              docTranscriptDiv.innerHTML = docTranscriptHtml;
-                          } else {
-                              docTranscriptDiv.innerHTML = contentHtml.missingDocTranscript;
-                          }
-
-                          that.cache[pageNum] = docTranscriptDiv;
-                          Faust.dom.removeAllChildren(that.container);
-                          that.container.appendChild(docTranscriptDiv);
-                          addPatchHandlers(that.container);
-                          transcriptTooltips(that.container);
-
-                          // FIXME remove after global viewer refactoring
-                          that.doc.pages[pageNum-1].docTranscript = docTranscriptDiv;
-                          events.triggerEvent("docTranscriptPage" + pageNum + "Loaded");
-
-                          return docTranscriptDiv;
-                      })
-                      .catch(function (err) {
-                          Faust.error("Failed to load transcript from " + url, err, that.container);
-                      });
-              },
-
-              init: function () {
-                  return this.setPage(state.page);
-              }
-          }
-          docTranscriptViewer.init();
+          docTranscriptViewer.init(domContainer.docTranscript, state, controller);
 
           // ############## Facsimile View
           if(currentPage.facsimile === null) {
