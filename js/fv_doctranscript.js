@@ -232,10 +232,15 @@ define(['faust_common'], function (Faust) {
 
     };
 
-    return function createDocTranscriptViewer(parent, state, controller) {
+    var createDocTranscriptViewer = function createDocTranscriptViewer(parent, state, controller) {
         var result = Object.create(docTranscriptViewer);
         result.init(parent, state, controller);
         return result;
     };
+
+    createDocTranscriptViewer.addPatchHandlers = addPatchHandlers;
+    createDocTranscriptViewer.transcriptTooltips = transcriptTooltips;
+
+    return createDocTranscriptViewer;
 
 });
