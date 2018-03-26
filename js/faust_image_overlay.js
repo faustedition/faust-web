@@ -1,5 +1,6 @@
-define(["faust_common", "faust_mousemove_scroll"], 
-  function(Faust, addMouseMoveScroll) {
+// noinspection JSAnnotator
+define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
+  function(Faust, docTranscriptViewer, addMouseMoveScroll) {
   "use strict";
 
   var htmlStrings = {
@@ -138,10 +139,20 @@ define(["faust_common", "faust_mousemove_scroll"],
     };
   })();
 
-  var createNodes = (function(){
-    return function() {
+  /**
+   * Creates the element structure and returns it. The root node has a property .echo that contains
+   * the lazyTileLoader. div#text-layer -> overlay svg
+   */
+  var createNodes = function(container) {
+
       // creating dom nodes
-      var imageContainer = document.createElement("div");
+      var imageContainer;
+      if (container) {
+        Faust.dom.removeAllChildren(container);
+        imageContainer = container;
+      } else {
+          imageContainer = document.createElement("div");
+      }
         var rotateContainer = document.createElement("div");
           var scaleContainer = document.createElement("div");
             var overlayContainer = document.createElement("div");
@@ -200,7 +211,6 @@ define(["faust_common", "faust_mousemove_scroll"],
 
       return imageContainer;
     };
-  })();
 
   /* calculates the next zoom level / zoom. The zoom level is calculated so that
    it reaches powers of 2 (1/4, 1/2, 1, 2, 4, ...).
@@ -288,8 +298,10 @@ define(["faust_common", "faust_mousemove_scroll"],
     };
   })();
 
-  var createImageOverlay = (function(){
-    return function(callArgs) {
+  /**
+   * The actual constructor. Creates the #image-container.image-container div that contains everything else
+   */
+  var createImageOverlay = function(callArgs) {
     var args = null;
     var metadata = null;
     var domNodes = null;
@@ -724,10 +736,60 @@ define(["faust_common", "faust_mousemove_scroll"],
       domNodes.showOverlay = showOverlay;
       domNodes.addFacsimileEventListener = events.addEventListener;
       return domNodes;
-    };
+  };
 
-  })();
 
   imageOverlay.createImageOverlay = createImageOverlay;
-  return imageOverlay;
+  imageOverlay.init = function init(container, state, controller) {
+      this.state = state;
+      this.controller = controller;
+      this.container = container;
+
+      var currentPage = this.state.doc.pages[state.page - 1];
+      /* if(currentPage.facsimile === null) { // cache for the facsimile view */
+          var currentMetadata = state.doc.metadata.pages[state.page - 1];
+
+          var facsimile = null;
+          // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
+          // docTranscript exists and if it has images attached
+          if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
+              facsimile = this.createImageOverlay(
+                  {
+                      "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
+                      "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
+                      "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
+                      "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
+                      "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
+                      "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
+                      "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
+                      "copyright": state.doc.getFacsCopyright()
+                  });
+          } else {
+              facsimile = this.createImageOverlay({"hasFacsimile": false});
+          }
+          currentPage.facsimile = facsimile;
+          // FIXME
+          Faust.dom.removeAllChildren(container);
+          container.appendChild(facsimile);
+          facsimile.addFacsimileEventListener("scaleChanged", function(newScale){state.scale = newScale;});
+
+          if(state.scale === undefined) {
+              facsimile.addFacsimileEventListener("metadataLoaded", function(){state.scale = facsimile.fitScale();});
+              facsimile.addFacsimileEventListener("overlayLoaded", function(){facsimile.showOverlay(state.showOverlay); docTranscriptViewer.transcriptTooltips(facsimile);});
+          } else {
+              facsimile.addFacsimileEventListener("metadataLoaded", function(){facsimile.setScale(state.scale);});
+              facsimile.addFacsimileEventListener("overlayLoaded", function(){facsimile.showOverlay(state.showOverlay); docTranscriptViewer.transcriptTooltips(facsimile);});
+          }
+      /* } else {
+          Faust.dom.removeAllChildren(container);
+          currentPage.facsimile.showOverlay(state.showOverlay);
+          container.appendChild(currentPage.facsimile);
+          currentPage.facsimile.setScale(state.scale);
+      }*/
+  }
+  return function (container, state, controller) {
+    var result = Object.create(imageOverlay);
+    result.init(container, state, controller);
+    return result;
+  }
 });

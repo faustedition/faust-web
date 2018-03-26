@@ -488,45 +488,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
           var docTranscriptViewer = createDocTranscriptView(domContainer.docTranscript, state, controller);
 
           // ############## Facsimile View
-          if(currentPage.facsimile === null) {
-              currentMetadata = state.doc.metadata.pages[pageNum - 1];
-
-              var facsimile = null;
-              // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
-              // docTranscript exists and if it has images attached
-              if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
-                  facsimile = imageOverlay.createImageOverlay(
-                      {
-                          "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
-                          "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
-                          "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
-                          "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
-                          "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
-                          "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                          "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
-                          "copyright": state.doc.getFacsCopyright()
-                      });
-              } else {
-                  facsimile = imageOverlay.createImageOverlay({"hasFacsimile": false});
-              }
-              currentPage.facsimile = facsimile;
-              Faust.dom.removeAllChildren(domContainer.facsimile);
-              domContainer.facsimile.appendChild(facsimile);
-              facsimile.addFacsimileEventListener("scaleChanged", function(newScale){state.scale = newScale;});
-
-              if(state.scale === undefined) {
-                  facsimile.addFacsimileEventListener("metadataLoaded", function(){state.scale = currentPage.facsimile.fitScale();});
-                  facsimile.addFacsimileEventListener("overlayLoaded", function(){currentPage.facsimile.showOverlay(state.showOverlay); transcriptTooltips(currentPage.facsimile);});
-              } else {
-                  facsimile.addFacsimileEventListener("metadataLoaded", function(){currentPage.facsimile.setScale(state.scale);});
-                  facsimile.addFacsimileEventListener("overlayLoaded", function(){currentPage.facsimile.showOverlay(state.showOverlay); transcriptTooltips(currentPage.facsimile);});
-              }
-          } else {
-              Faust.dom.removeAllChildren(domContainer.facsimile);
-              currentPage.facsimile.showOverlay(state.showOverlay);
-              domContainer.facsimile.appendChild(currentPage.facsimile);
-              currentPage.facsimile.setScale(state.scale);
-          }
+          imageOverlay(domContainer.facsimile, state, controller);
 
           // ######### Facsimile | Documentary Transcript parallel view
           if(currentPage.facsimile_document === null) {
@@ -537,43 +499,9 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
 
               Faust.dom.removeAllChildren(domContainer.facsimile_document);
               domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
-
               currentPage.facsimile_document = facsimileDocTranscriptContainer;
-              currentMetadata = state.doc.metadata.pages[pageNum - 1];
 
-              // copypaste from facsimile view above:
-              var facsimileParallel = null;
-              // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
-              // docTranscript exists and if it has images attached
-              if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
-                  facsimileParallel = imageOverlay.createImageOverlay(
-                      {
-                          "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
-                          "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
-                          "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
-                          "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
-                          "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
-                          "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                          "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
-                          "copyright": state.doc.getFacsCopyright()
-                      });
-              } else {
-                  facsimileParallel = imageOverlay.createImageOverlay({"hasFacsimile": false});
-              }
-
-              currentPage.facsimile_document.facsimileParallel = facsimileParallel;
-              facsimileContainer.appendChild(facsimileParallel);
-
-              // scale the facsimile so that it fits the available space. Would be maximum scale otherwise.
-              facsimileParallel.addFacsimileEventListener("metadataLoaded", function(){
-                  currentPage.facsimile_document.metadataLoaded = true;
-                  if(domContainer.facsimile_document.style.display === "block") {
-                      currentPage.facsimile_document.facsimileParallel.fitScale();
-                      currentPage.facsimile_document.pageFitted = true;
-                  }
-              });
-              facsimileParallel.addFacsimileEventListener("overlayLoaded", function(){facsimileParallel.showOverlay(state.showOverlay); transcriptTooltips(facsimileParallel);});
-
+              imageOverlay(facsimileContainer, state, controller);
               createDocTranscriptView(docTranscriptContainer, state, controller);
 
           } else {  // cached view already exists
