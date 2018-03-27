@@ -524,3 +524,7 @@ div.variants {
 .seg.type-lem {
     border-bottom: 1px dotted grey;
 }
+
+.quote {
+  font-style: normal;
+}
