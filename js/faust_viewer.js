@@ -1,9 +1,9 @@
 // noinspection JSAnnotator
-define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay', 'faust_print_interaction', 'faust_app',
+define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay', 'fv_text', 'faust_print_interaction', 'faust_app',
         'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata',
         'json!/print/pages.json'
     ],
-  function(Faust, structureView, createDocTranscriptView, imageOverlay, addPrintInteraction, app,
+  function(Faust, structureView, createDocTranscriptView, imageOverlay, createTextualView, addPrintInteraction, app,
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata,
            pagesMapping) {
   "use strict";
@@ -283,67 +283,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      /**
-       * Load print and app view for the current document and the given page number.
-       * pageNum – current page number
-       * callback – function({print: divWithPrintHTML, app: divWithAppHTML})
-       */
-      var loadTextTranscript = function loadTextTranscript(pageNum, callback) {
-          var loadedDocs = {};
-
-          try {
-
-              // load actual transcript html files and trigger callback
-              var loadDocs = function(filename) {
-                  // if no html files are associated, return undefined
-                  if(filename === undefined) {
-                      callback(undefined);
-                  } else {
-                      // return files if already loaded
-                      if(loadedDocs[filename] !== undefined) {
-                          callback(loadedDocs[filename]);
-                      } else {
-                          // otherwise load files
-                          Faust.xhr.getResponseText("print/" + filename, function(printFile) {
-                              loadedDocs[filename] = {};
-                              loadedDocs[filename].print = createPrintDiv(printFile);
-                              Faust.xhr.getResponseText("app/" + filename, function(appFile) {
-                                  loadedDocs[filename].app = createPrintDiv(appFile);
-                                  callback(loadedDocs[filename]);
-                              });
-                          });
-                      }
-                  }
-              };
-
-              loadDocs(state.doc.findSection(pageNum));
-
-
-              // FIXME we can probably just remove this if we generate the embedded view right away in the XSLTs
-              // returns a <div> containing the given print state.doc to be inserted into the document.
-              // printString = unparsed HTML of app / print view
-              var createPrintDiv = function(printString) {
-                  // create container element for the text and add print class to it
-                  var printParentNode = document.createElement("div");
-                  printParentNode.className = "print pure-g-r center";
-                  printParentNode.style.textAlign = "initial";
-                  printParentNode.style.paddingTop = "1em";
-
-                  // create temporary div to parse received html
-                  var tempDiv = document.createElement("div");
-                  tempDiv.innerHTML = printString;
-
-                  // add contents of parsed html to container element and hide rightmost column
-                  Array.prototype.slice.call(tempDiv.getElementsByClassName("print")[0].childNodes).forEach(function(child) {
-                      printParentNode.appendChild(child);
-                  });
-
-                  return printParentNode;
-              };
-          } catch (e) {
-              Faust.error("Fehler beim Laden des Textuellen Transkripts.", e);
-          }
-      };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       /* function to get the scene title and the range of verse lines that the
@@ -398,29 +337,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
       };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-      /**
-       * Marks the current position in the given textual fragment.
-       *
-       * Current position comes from the given page and possibly from
-       * the current state's .fragment part, and the target is revealed
-       * and highlighted.
-       *
-       * @param doc HTML fragment (from textual transcript)
-       * @param pageNum current page number
-       */
-     var revealState = function revealState(doc, pageNum) {
-        if(doc.querySelector("#dt" + pageNum) !== null) {
-          doc.querySelector("#dt" + pageNum).scrollIntoView();
-        }
-        if (state.fragment) {
-          var currentTarget = doc.querySelector("#" + state.fragment.replace(/\./g, '\\.'));
-          if (currentTarget) {
-            currentTarget.scrollIntoView();
-            currentTarget.classList.add("target");
-          }
-        }
-     };
 
       /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
          data to prevent multiple loading of same resources
@@ -515,9 +431,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
 
               var documentTextContainer = Faust.dom.createElement({name: "div", class: "viewer viewer-container dbg-documentTextContainer"});
               var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-documentContainer'});
-              var textContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-textContainer'});
+              var textContainer; // = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-textContainer'});
 
-              documentTextContainer.textContainer = textContainer;
 
               currentPage.document_text = documentTextContainer;
               currentMetadata = state.doc.metadata.pages[pageNum - 1];
@@ -528,22 +443,15 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
               createDocTranscriptView(documentContainer, state, controller);
 
               // load app into textual view of the state.doc|text parallel view
-              loadTextTranscript(pageNum, function(text) {
-                  if(text !== undefined) {  // textual transcript has been found
-                      var appText = text.app; // .cloneNode(true);
-                      currentPage.document_text.textContainer.appendChild(appText);
-                      addPrintInteraction("", appText, state.doc.faustUri);
-                      revealState(domContainer.document_text, pageNum);
-                  } else {
-                      currentPage.document_text.textContainer.innerHTML = contentHtml.missingTextTranscript;
-                  }
-              });
+              textContainer = createTextualView(documentTextContainer, state, controller, 'app', true).root;
+              documentTextContainer.textContainer = textContainer;
 
           } else {  // currentPage.documentText !== null, i.e. parallel view already initialized
+              // FIXME -> individual viewers
               Faust.dom.removeAllChildren(domContainer.document_text);
               domContainer.document_text.appendChild(currentPage.document_text);
 
-              revealState(domContainer.document_text, pageNum);
+              // revealState(domContainer.document_text, pageNum);
 
               // FIXME this doesn't handle when we switch pages across document boundaries, does it?
               // if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
@@ -557,51 +465,24 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
               // should we rather reuse the whole container document for the
               // page? Ideally, we wouldn't redraw the page on a switch to a new
               // page that is already displayed.
-              var textTranscriptContainer = Faust.dom.createElement({name: "div", class: "viewer full-viewer"});
 
-              currentPage.textTranscript = textTranscriptContainer;
-              Faust.dom.removeAllChildren(domContainer.textTranscript);
-              domContainer.textTranscript.appendChild(textTranscriptContainer);
-
-              loadTextTranscript(pageNum, function(text) {
-                  if(text !== undefined) {
-                      var appText = text.app; //.cloneNode(true);
-                      currentPage.textTranscript.appendChild(appText);
-                      addPrintInteraction("", appText, state.doc.faustUri);
-                      revealState(domContainer.textTranscript, pageNum);
-                  } else {
-                      currentPage.textTranscript.innerHTML = contentHtml.missingTextAppTranscript;
-                  }
-              });
+              var appView = createTextualView(domContainer.textTranscript, state, controller, 'app', false);
+              currentPage.textTranscript = appView.root;
           } else { // currentPage.textTranscript !== null
               // TODO check whether we're already on the right section
               Faust.dom.removeAllChildren(domContainer.textTranscript);
               domContainer.textTranscript.appendChild(currentPage.textTranscript);
-              revealState(domContainer.textTranscript, pageNum);
+              // revealState(domContainer.textTranscript, pageNum);
           }
 
           // ############# Print (variant apparatus) single view
           if(currentPage.print === null) {
-              var printContainer = Faust.dom.createElement({name: "div", class: "viewer full-viewer"});
-
-              currentPage.print = printContainer;
-              Faust.dom.removeAllChildren(domContainer.print);
-              domContainer.print.appendChild(printContainer);
-
-              loadTextTranscript(pageNum, function(text) {
-                  if(text !== undefined) {
-                      var printText = text.print; // .cloneNode(true);
-                      currentPage.print.appendChild(printText);
-                      addPrintInteraction("", printText, state.doc.faustUri);
-                      revealState(domContainer.print, pageNum);
-                  } else { // no textual transcript found
-                      currentPage.print.innerHTML = contentHtml.missingTextTranscript;
-                  }
-              });
+              var printView = createTextualView(domContainer.print, state, controller, 'print', false);
+              currentPage.print = printView.root;
           } else { // currentPage.print !== null
               Faust.dom.removeAllChildren(domContainer.print);
               domContainer.print.appendChild(currentPage.print);
-              revealState(domContainer.print, pageNum);
+              // revealState(domContainer.print, pageNum);
           }
 
           // finally set correct page on structure view
@@ -706,19 +587,19 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
             domContainer.docTranscript.style.display = "block";
           } else if (state.view === "document_text") {
             domContainer.document_text.style.display = "block";
-            revealState(domContainer.document_text, state.page);
+            // revealState(domContainer.document_text, state.page);
             //if(domContainer.document_text.querySelector("#dt" + state.page) !== null) {
               //domContainer.document_text.querySelector("#dt" + state.page).scrollIntoView();
             //}
           } else if (state.view === "text") {
             domContainer.textTranscript.style.display = "block";
-            revealState(domContainer.textTranscript, state.page);
+            // revealState(domContainer.textTranscript, state.page);
             //if(domContainer.textTranscript.querySelector("#dt" + state.page) !== null) {
               //domContainer.textTranscript.querySelector("#dt" + state.page).scrollIntoView();
             //}
           } else if (state.view === "print") {
             domContainer.print.style.display = "block";
-            revealState(domContainer.print, state.page);
+            // revealState(domContainer.print, state.page);
             //if(domContainer.print.querySelector("#dt" + state.page) !== null) {
               //domContainer.print.querySelector("#dt" + state.page).scrollIntoView();
             //}
