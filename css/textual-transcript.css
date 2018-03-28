@@ -516,6 +516,7 @@ div.variants {
 }
 
 .type-textcrit .rdg:before { white-space: pre; content: "\A"; }
+.type-textcrit .ref ~ .rdg:before { content: ""; white-space: normal; }
 .type-textcrit {
     padding-left: 2.5em;
     text-indent: -2.5em;
