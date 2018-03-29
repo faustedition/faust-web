@@ -19,8 +19,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
   /* based on echo.js from Todd Motto (http://toddmotto.com/labs/echo/ | https://travis-ci.org/toddmotto/echo)
      adjusted to be called with an element as parameter that will be watched for scroll events rather than
      listening to window.onscroll events */
-  var lazyTileLoader = (function() {
-    return function (root) {
+  var lazyTileLoader = function (root) {
 
       'use strict';
 
@@ -135,8 +134,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
 
       return echo;
 
-    };
-  })();
+  };
 
   /**
    * Creates the element structure and returns it. The root node has a property .echo that contains
@@ -217,8 +215,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
    elements (eg. 0.5, 0.625, 0.75, 0.825, 1, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 3.5, 4.0, ...)
    The function takes the current zoom as well as the direction as a parameter and returns
    the next zoom. */
-  var getNextScale = (function() {
-    return function(currentScale, direction) {
+  var getNextScale = function(currentScale, direction) {
       /* first step: calculate the next two larger powers of two (compared to zoom) as well
        as the next two lower powers of 2 */
       var zoomBase = [ Math.floor(Math.log(currentScale) / Math.log(2)) - 1,
@@ -238,6 +235,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       /* Fields [2]...[4] contain the values between the powers of two (eg currentScale is
        1.1, than [1] = 1.0, [2] = 1.25, [3] = 1.5, [4] = 1.75, [5] = 2.0
        */
+      // noinspection PointlessArithmeticExpressionJS
       zoomSteps[2] = zoomSteps[1] + 1 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
       zoomSteps[3] = zoomSteps[1] + 2 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
       zoomSteps[4] = zoomSteps[1] + 3 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
@@ -280,13 +278,11 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       }
 
       return currentScale;
-    };
-  })();
+  };
 
   /* determines in which direction the mouse wheel was spun. Normalises
    the result value (-1 or 1) */
-  var getScrollDirection = (function() {
-    return function(scrollEvent) {
+  var getScrollDirection = function(scrollEvent) {
       var direction = scrollEvent.wheelDelta ? scrollEvent.wheelDelta : -scrollEvent.detail;
       direction = parseInt(direction, 10);
 
@@ -294,8 +290,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         direction = direction / Math.abs(direction);
       }
       return direction;
-    };
-  })();
+  };
 
   /**
    * The actual constructor. Creates the #image-container.image-container div that contains everything else
@@ -307,18 +302,15 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
 
     var metadataLoadedCallback = null;
 
-    var showElement = (function () {
-      return function (element, show) {
+    var showElement = function (element, show) {
         if (show === true) {
           element.style.display = "block";
         } else if (show === false) {
           element.style.display = "none";
         }
-      };
-    })();
+     };
 
-    var setBackgroundImage = (function(){
-      return function(zoomLevel) {
+    var setBackgroundImage = function(zoomLevel) {
         var currentImage = domNodes.image.images[zoomLevel];
         // determine if src is set
         if(currentImage.getAttribute("src") === null) {
@@ -328,15 +320,13 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         // replace content (if set) with new image
         Faust.dom.removeAllChildren(domNodes.image);
         domNodes.image.appendChild(currentImage);
-      };
-    })();
+    };
 
     // select specific tile div to be put in dom and be rendered. a zoom level of 0
     // represents the original unscaled source image as tiles, zoom level 1 represents
     // the tiles of the original image, scaled to 50% in height and width, level 2
     // scaled to 25%, ...
-    var setTileDiv = (function(){
-      return function(zoomLevel) {
+    var setTileDiv = function(zoomLevel) {
         var adjustedZoomLevel = zoomLevel;
         // zoom levels are in the range of 0...metadata.zoomLevels
         if(zoomLevel < 0) {
@@ -354,12 +344,10 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         var currentTile = domNodes.tile.tiles[adjustedZoomLevel];
         Faust.dom.removeAllChildren(domNodes.tile);
         domNodes.tile.appendChild(currentTile);
-      };
-    })();
+    };
 
     // set the scale of the scaleContainer. that is resizing the facsimile. returns the newly set scale value
-    var setScale = (function() {
-      return function(newScale) {
+    var setScale = function(newScale) {
         // scaling can only be done if any images exists to scale. If no facsimile exists scaling isn't possible, so skip
         if(domNodes.image.images !== undefined) {
 
@@ -418,32 +406,27 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           // there is no content to scale, so scaling can't be done and the current scale is not available.
           return undefined;
         }
-      };
-    })();
+    };
 
     // function to zoom in or out. zooming in by applying "in" or 1 as parameter,
     // zooming out with "out" or -1 as parameter
-    var zoom = (function() {
-      return function(direction) {
+    var zoom = function(direction) {
         if(direction === "in" || direction === 1) {
           setScale(getNextScale(domNodes.currentScale, 1));
         } else if(direction === "out" || direction === -1) {
           setScale(getNextScale(domNodes.currentScale, -1));
         }
-      };
-    })();
+    };
 
     // calculates the scale to apply to (original sized) image so that it will
     // fully fit inside the facsimile container (outermost node / domNodes)
     // returns the determined scale value
-    var fitScale = (function() {
-      return function() {
-        return setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth, domNodes.getBoundingClientRect().height / metadata.imageHeight));
-      };
-    })();
+    var fitScale = function() {
+        return setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth,
+                                 domNodes.getBoundingClientRect().height / metadata.imageHeight));
+    };
 
-    var rotate = (function(){
-      return function(direction) {
+    var rotate = function(direction) {
         if(direction === "right") {
           domNodes.currentRotation = (domNodes.currentRotation + 1) % 4;
         } else if(direction === "left") {
@@ -465,12 +448,10 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
                   break;
         }
         domNodes.echo.render();
-      };
-    })();
+    };
 
     // 
-    var showOverlay = (function(){
-      return function(showOverlay) {
+    var showOverlay = function(showOverlay) {
         var i;
         var facsimileElementLines;
         if(showOverlay === true) {
@@ -484,8 +465,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             Faust.dom.addClassToElement(facsimileElementLines.item(i), "element-line-hidden");
           }
         }
-      };
-    })();
+    };
 
     /* the eventhandler first determines whether the mozilla
      'detail' attribute or the world's wheelDelta shall
@@ -500,24 +480,21 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
      1 if there was a scroll event scrolling  UP  and
      -1 if there was a scroll event scrolling DOWN
      Further: the event propagation is beeing stopped */
-    var mouseWheelEventHandler = (function() {
-      return function(event) {
+    var mouseWheelEventHandler = function(event) {
 
         var direction = getScrollDirection(event);
         zoom(direction);
         event.preventDefault();
 
         return false;
-      };
-    })();
+    };
 
     // function to create a div containing all tiles of a specific zoom level. All generated divs will have
     // the same dimensions as the original image. To realize this, all scaled down tiles (tiles not the same
     // resolution as the unscaled original image) will be resized / magnified.
     // The resulting div will contain divs that will make up a row of tiles. Each of this rows / "row divs"
     // than contains one div for each tile to be shown on that specific row.
-    var createTileDiv = (function() {
-      return function(imageMetadata, tileBaseUrl, zoomLevel) {
+    var createTileDiv = function(imageMetadata, tileBaseUrl, zoomLevel) {
         var i, j;
 
         var zoomedWidth = imageMetadata.imageWidth;
@@ -593,21 +570,17 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         }
 
         return tileImageDiv;
-      };
-    })();
+    };
 
-    var createZoomImage = (function() {
-      return function(imageMetadata, jpgBaseUrl, zoomLevel) {
+    var createZoomImage = function(imageMetadata, jpgBaseUrl, zoomLevel) {
         var image = document.createElement("img");
         image.style.width = imageMetadata.imageWidth;
         image.height = imageMetadata.imageHeight;
         image.imgSrc = jpgBaseUrl + "_" + zoomLevel  + ".jpg";
         return image;
-      };
-    })();
+    };
 
-    var overlayLoadHandler = (function(){
-      return function(overlayXhr) {
+    var overlayLoadHandler = function(overlayXhr) {
         if(overlayXhr.status !== 200) {
           // if no overlay was found write a message to imageInfo.
           // domNodes.imageInfo.innerHTML = htmlStrings.overlayLoadError;
@@ -619,11 +592,9 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           Faust.dom.removeAllChildren(domNodes.imageInfo);
         }
         showElement(domNodes.rotateContainer, true);
-      };
-    })();
+    };
 
-    var metadataLoadHandler = (function(){
-      return function(metadataXhr) {
+    var metadataLoadHandler = function(metadataXhr) {
 
         var i;
 
@@ -689,8 +660,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
 
           events.triggerEvent("metadataLoaded");
         }
-      };
-    })();
+    };
 
 
       var events = Faust.event.createEventQueue();
@@ -803,7 +773,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
               currentPage.facsimile.setScale(state.scale);
           }*/
       }
-  }
+  };
   return function (container, state, controller) {
     var result = Object.create(imageOverlay);
     result.init(container, state, controller);
