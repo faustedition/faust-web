@@ -15,7 +15,6 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
   var minZoom = 0.005;
   var maxZoom = 4;
 
-  var imageOverlay = {};
 
   /* based on echo.js from Todd Motto (http://toddmotto.com/labs/echo/ | https://travis-ci.org/toddmotto/echo)
      adjusted to be called with an element as parameter that will be watched for scroll events rather than
@@ -738,21 +737,26 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       return domNodes;
   };
 
+  var imageOverlay = {
 
-  imageOverlay.createImageOverlay = createImageOverlay;
-  imageOverlay.init = function init(container, state, controller) {
-      this.state = state;
-      this.controller = controller;
-      this.container = container;
+      createImageOverlay: createImageOverlay,
+      init: function init(container, state, controller) {
+          this.state = state;
+          this.controller = controller;
+          this.container = container; // FIXME inline stuff from faust_viewer
 
-      var currentPage = this.state.doc.pages[state.page - 1];
-      /* if(currentPage.facsimile === null) { // cache for the facsimile view */
-          var currentMetadata = state.doc.metadata.pages[state.page - 1];
+          this.loadPage(state.page);
+      },
+      loadPage : function(pageNo) {
 
+          var currentPage = this.state.doc.pages[pageNo - 1];
+          /* if(currentPage.facsimile === null) { // cache for the facsimile view */
+          var currentMetadata = this.state.doc.metadata.pages[pageNo - 1];
+          var that = this;
           var facsimile = null;
           // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
           // docTranscript exists and if it has images attached
-          if(currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
+          if (currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
               facsimile = this.createImageOverlay(
                   {
                       "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
@@ -761,31 +765,44 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
                       "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
                       "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
                       "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
-                      "backgroundZoomLevel":  state.imageBackgroundZoomLevel,
-                      "copyright": state.doc.getFacsCopyright()
+                      "backgroundZoomLevel": this.state.imageBackgroundZoomLevel,
+                      "copyright": this.state.doc.getFacsCopyright()
                   });
           } else {
               facsimile = this.createImageOverlay({"hasFacsimile": false});
           }
           currentPage.facsimile = facsimile;
           // FIXME
-          Faust.dom.removeAllChildren(container);
-          container.appendChild(facsimile);
-          facsimile.addFacsimileEventListener("scaleChanged", function(newScale){state.scale = newScale;});
+          Faust.dom.removeAllChildren(this.container);
+          this.container.appendChild(facsimile);
+          facsimile.addFacsimileEventListener("scaleChanged", function (newScale) {
+              that.state.scale = newScale;
+          });
 
-          if(state.scale === undefined) {
-              facsimile.addFacsimileEventListener("metadataLoaded", function(){state.scale = facsimile.fitScale();});
-              facsimile.addFacsimileEventListener("overlayLoaded", function(){facsimile.showOverlay(state.showOverlay); docTranscriptViewer.transcriptTooltips(facsimile);});
+          if (this.state.scale === undefined) {
+              facsimile.addFacsimileEventListener("metadataLoaded", function () {
+                  that.state.scale = facsimile.fitScale();
+              });
+              facsimile.addFacsimileEventListener("overlayLoaded", function () {
+                  facsimile.showOverlay(that.state.showOverlay);
+                  docTranscriptViewer.transcriptTooltips(facsimile);
+              });
           } else {
-              facsimile.addFacsimileEventListener("metadataLoaded", function(){facsimile.setScale(state.scale);});
-              facsimile.addFacsimileEventListener("overlayLoaded", function(){facsimile.showOverlay(state.showOverlay); docTranscriptViewer.transcriptTooltips(facsimile);});
+              facsimile.addFacsimileEventListener("metadataLoaded", function () {
+                  facsimile.setScale(that.state.scale);
+              });
+              facsimile.addFacsimileEventListener("overlayLoaded", function () {
+                  facsimile.showOverlay(that.state.showOverlay);
+                  docTranscriptViewer.transcriptTooltips(facsimile);
+              });
           }
-      /* } else {
-          Faust.dom.removeAllChildren(container);
-          currentPage.facsimile.showOverlay(state.showOverlay);
-          container.appendChild(currentPage.facsimile);
-          currentPage.facsimile.setScale(state.scale);
-      }*/
+          /* } else {
+              Faust.dom.removeAllChildren(container);
+              currentPage.facsimile.showOverlay(state.showOverlay);
+              container.appendChild(currentPage.facsimile);
+              currentPage.facsimile.setScale(state.scale);
+          }*/
+      }
   }
   return function (container, state, controller) {
     var result = Object.create(imageOverlay);
