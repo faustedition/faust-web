@@ -185,16 +185,34 @@ define(['faust_common'], function (Faust) {
 
 
         init: function (parent, state, controller) {
-            this.container = parent;
+            this.container = document.createElement('div');
+            this.container.className = 'viewer-content doc-transcript-content';
+
+            var documentContainer = this.container;
+            documentContainer.style.display = "inline-block";
+            documentContainer.style.paddingLeft = "1em";
+            documentContainer.style.paddingRight = "1em";
+            documentContainer.style.width = "50%";
+            documentContainer.style.height = "100%";
+            documentContainer.style.border = "0px solid #CCC";
+            documentContainer.style.borderRightWidth = "1px";
+            documentContainer.style.overflow = "auto";
+            documentContainer.style.textAlign = "center";
+
+
+
             this.state = state;
             this.controller = controller;
             this.doc = state.doc;
             this.setPage(state.page);
+            parent.appendChild(this.container);
+
+
         },
 
         setPage: function (pageNo) {
-            if (this.cache.hasOwnProperty(pageNo))
-                return Promise.resolve(this.cache[pageNo]);
+            // if (this.cache.hasOwnProperty(pageNo))
+            //    return Promise.resolve(this.cache[pageNo]);
 
             var that = this,
                 page = this.doc.metadata.pages[pageNo - 1],
@@ -213,14 +231,14 @@ define(['faust_common'], function (Faust) {
                         docTranscriptDiv.innerHTML = contentHtml.missingDocTranscript;
                     }
 
-                    that.cache[pageNo] = docTranscriptDiv;
+                    // that.cache[pageNo] = docTranscriptDiv;
                     Faust.dom.removeAllChildren(that.container);
                     that.container.appendChild(docTranscriptDiv);
                     addPatchHandlers(that.container);
                     transcriptTooltips(that.container);
 
                     // FIXME remove after global viewer refactoring
-                    that.doc.pages[pageNo-1].docTranscript = docTranscriptDiv;
+                    // that.doc.pages[pageNo-1].docTranscript = docTranscriptDiv;
                     that.controller.events.triggerEvent("docTranscriptPage" + pageNo + "Loaded");
 
                     return docTranscriptDiv;
@@ -230,6 +248,8 @@ define(['faust_common'], function (Faust) {
                 });
         },
 
+        show : function () { this.container.style.display = 'block'; },
+        hide : function () { this.container.style.display = 'none'; },
     };
 
     var createDocTranscriptViewer = function createDocTranscriptViewer(parent, state, controller) {

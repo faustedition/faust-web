@@ -2,15 +2,14 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
     function(Faust, addPrintInteraction, app) {
 
         var textualView = {
-            init: function(container, state, controller, kind, halfWidth) {
-                this.container = container;
+            init: function(parent, state, controller, kind, halfWidth) {
                 this.state = state;
                 this.controller = controller;
                 this.kind = kind;
                 this.cache = {}; // FIXME we could generalize this, but then we would have to care for duplicate insertion
                 this.currentFile = null;
-                this.root = Faust.dom.createElement({name: "div", class: halfWidth? "viewer half-viewer" : "viewer full-viewer"});
-                container.appendChild(this.root);
+                this.container = Faust.dom.createElement({name: "div", class: halfWidth? "viewer half-viewer" : "viewer full-viewer"});
+                parent.appendChild(this.container);
 
                 // should we do this?
                 return this.setPage(state.page, state.fragment);
@@ -41,15 +40,15 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
                     return this
                         .fetchFile(filename)
                         .then(function (printDiv) {
-                            Faust.dom.removeAllChildren(that.root);
-                            that.root.appendChild(printDiv);
+                            Faust.dom.removeAllChildren(that.container);
+                            that.container.appendChild(printDiv);
                             that.currentFile = filename;
                             if (that.kind == 'print')
-                                addPrintInteraction("", that.root, that.state.faustUri);
-                            return that.root;
+                                addPrintInteraction("", that.container, that.state.faustUri);
+                            return that.container;
                         });
                 } else {
-                    return Promise.resolve(this.root);
+                    return Promise.resolve(this.container);
                 }
             },
 
@@ -63,7 +62,9 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
                     .catch(function (reason) {
                         console.error('Fehler beim Laden von S. ' + pageNum + ' des textuellen Transkripts', reason);
                     });
-            }
+            },
+            show : function () { this.container.style.display = 'block'; },
+            hide : function () { this.container.style.display = 'none'; },
         };
 
 

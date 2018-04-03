@@ -96,7 +96,7 @@ body.documentViewer main {
   width: 100%;
   overflow: auto;
 }
-.half-viewer {
+.half-viewer, .full-viewer > .full-viewer {
   display: inline-block;
   width: 50%;
   padding-left: 1em;

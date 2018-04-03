@@ -47,31 +47,31 @@
 
       // FIXME generating the button bar and attaching the listeners should be factored into the viewer
       // in order to be able to generate variants with different buttons etc.
-      var on = function on(id, func, event) {
+      var bindEvent = function on(id, func, event) {
         var el = document.getElementById(id);
         if (!(event)) event = "click";
         if (el) {
           el.addEventListener(event, func);
         }
       };
-      on('zoom-in-button', viewer.zoomIn);
-      on('zoom-out-button', viewer.zoomOut);
-      on('rotate-left', viewer.rotateLeft);
-      on('rotate-right', viewer.rotateRight);
-      on('toggle-overlay-button', viewer.toggleOverlay);
+      bindEvent('zoom-in-button', viewer.zoomIn);
+      bindEvent('zoom-out-button', viewer.zoomOut);
+      bindEvent('rotate-left', viewer.rotateLeft);
+      bindEvent('rotate-right', viewer.rotateRight);
+      bindEvent('toggle-overlay-button', viewer.toggleOverlay);
 
-      on('first-page-button', function() { viewer.setPage(1); });
-      on('previous-page-button', viewer.previousPage);
-      on('next-page-button', viewer.nextPage);
-      on('last-page-button', function() { viewer.setPage(viewer.getPageCount()); });
+      bindEvent('first-page-button', function() { viewer.setPage(1); });
+      bindEvent('previous-page-button', viewer.previousPage);
+      bindEvent('next-page-button', viewer.nextPage);
+      bindEvent('last-page-button', function() { viewer.setPage(viewer.getPageCount()); });
 
-      on('show-structure-button', function() { viewer.setView('structure'); });
-      on('show-facsimile-button', function() { viewer.setView('facsimile'); });
-      on('show-facsimile_document-button', function() { viewer.setView('facsimile_document'); });
-      on('show-document-button', function() { viewer.setView('document'); });
-      on('show-document_text-button', function() { viewer.setView('document_text'); });
-      on('show-text-button', function() { viewer.setView('text'); });
-      on('show-print-button', function() { viewer.setView('print'); });
+      bindEvent('show-structure-button', function() { viewer.setView('structure'); });
+      bindEvent('show-facsimile-button', function() { viewer.setView('facsimile'); });
+      bindEvent('show-facsimile_document-button', function() { viewer.setView('facsimile_document'); });
+      bindEvent('show-document-button', function() { viewer.setView('document'); });
+      bindEvent('show-document_text-button', function() { viewer.setView('document_text'); });
+      bindEvent('show-text-button', function() { viewer.setView('text'); });
+      bindEvent('show-print-button', function() { viewer.setView('print'); });
 
 
 

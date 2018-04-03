@@ -1,9 +1,9 @@
 // noinspection JSAnnotator
-define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay', 'fv_text', 'faust_print_interaction', 'faust_app',
+define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_text', 'faust_print_interaction', 'faust_app',
         'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata',
         'json!/print/pages.json'
     ],
-  function(Faust, structureView, createDocTranscriptView, imageOverlay, createTextualView, addPrintInteraction, app,
+  function(Faust, createStructureView, createDocTranscriptView, createFacsimileView, createTextualView, addPrintInteraction, app,
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata,
            pagesMapping) {
   "use strict";
@@ -25,6 +25,41 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
     loadErrorDocTranscript: "<div>Dokumentarisches Transkript konnte nicht geladen werden</div>",
     missingTextTranscript: "<div>Kein Textuelles Transkript vorhanden</div>",
     missingTextAppTranscript: "<div>Kein Textuelles Transkript vorhanden</div>"
+  };
+
+  var createSplitView = function createSplitView(parent, state, controller, leftConstructor, rightConstructor) {
+
+      var container = document.createElement('div');
+      container.className = "view-content split-view-content";
+      parent.append(container);
+
+      var left = leftConstructor(container, state, controller, true);
+      var right = rightConstructor(container, state, controller, true);
+      left.container.classList.add('half-viewer', 'left-viewer');
+      right.container.classList.add('half-viewer', 'right-viewer');
+
+      if (!left)
+          console.error(leftConstructor, ' left left undefined');
+      if (!right)
+          console.error(rightConstructor, ' left right undefined');
+
+      return {
+          dispatch : function(fname, arg) {
+              if (fname in this.left)
+                  this.left[fname].apply(this.left, [arg]);
+              if (fname in this.right)
+                  this.right[fname].apply(this.right, [arg]);
+          },
+          container: container,
+          state: state,
+          controller: controller,
+          left: left,
+          right: right,
+          fix: function() { this.left.container.style.display = 'inline-block'; this.right.container.style.display = 'inline-block'; },
+          setPage: function(pageNo) { this.dispatch('setPage', pageNo); },
+          show: function() { this.container.style.display = 'block'; this.dispatch('show'); this.fix(); },
+          hide: function() { this.container.style.display = 'none'; this.dispatch('hide'); this.fix(); }
+      };
   };
 
   return function createDocumentViewer(parentDomNode){
@@ -166,6 +201,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
               events  : events
       };
 
+      var views = {};
 
       // container holding references to each available view / div
       var domContainer = {};
@@ -182,67 +218,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
       // 6. initialize toolbar tooltips. Toolbar itself is hard-coded in documentViewer.php
       var init = (function(){
 
-        // creates divs for each view available. references are stored in domContainer
-        // object and the elements are then appended to the parent element that was
-        // given as a parameter when calling createDocumentViewer(parentDomNode)
-        var createDomNodes = (function() {
-          return function(parentNode) {
-
-              // XXX this does essentially the same for everything, but with slightly handcrafted names:
-              // facsimile_document vs. docTranscript etc. So refactor names and unify this, or better
-              // redesign
-
-            // Create element for facsimile representation.
-            domContainer.facsimile = document.createElement("div");
-            domContainer.facsimile.id = "facsimile-content";
-            domContainer.facsimile.className = "facsimile-content view-content";
-
-            // Create element for facsimile/docTranscript representation.
-            domContainer.facsimile_document = document.createElement("div");
-            domContainer.facsimile_document.id = "facsimile-document-content";
-            domContainer.facsimile_document.className = "facsimile-document-content view-content";
-
-            // create docTranscript element
-            domContainer.docTranscript = document.createElement("div");
-            domContainer.docTranscript.id = "doc-transcript-content";
-            domContainer.docTranscript.className = "doc-transcript-content view-content";
-
-            // create docTranscript/text element
-            domContainer.document_text = document.createElement("div");
-            domContainer.document_text.id = "doc-transcript-text-content";
-            domContainer.document_text.className = "doc-transcript-text-content view-content";
-
-            // create textTranscript element
-            domContainer.textTranscript = document.createElement("div");
-            domContainer.textTranscript.id = "text-transcript-content";
-            domContainer.textTranscript.className = "text-transcript-content view-content";
-
-            // create print view element
-            domContainer.print = document.createElement("div");
-            domContainer.print.id = "print-content";
-            domContainer.print.className = "print-content view-content";
-
-            // create structure element // FIXME adjust to new viewer
-            // domContainer.structure = document.createElement("div");
-            // domContainer.structure.id = "structureContainer";
-            // domContainer.structure.className = "structure-container view-content";
-
-            // append all views to dom on given parent node
-            parentNode.appendChild(domContainer.facsimile);
-            parentNode.appendChild(domContainer.facsimile_document);
-            parentNode.appendChild(domContainer.docTranscript);
-            parentNode.appendChild(domContainer.document_text);
-            parentNode.appendChild(domContainer.textTranscript);
-            parentNode.appendChild(domContainer.print);
-            // parentNode.appendChild(domContainer.structure);
-
-
-          };
-        })();
-
-
-
-
         /**
          * Some initialisation tasks.
          *
@@ -255,17 +230,24 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
          */
         return function init() {
 
-            state.fromLocation();
-            state.initMetadata(); // FIXME refactor
+          state.fromLocation();
+          state.initMetadata(); // FIXME refactor
 
           document.title = document.title + " – " + state.doc.sigil;
 
           // create elements that will contain the available views
-          createDomNodes(parentDomNode);
+          // createDomNodes(parentDomNode);
 
-          // FIXME temporary way of initializing this:
-          structureView.init(parentDomNode, state, controller);
-          domContainer.structure = structureView.container;
+          // now create the views
+          views.facsimile = createFacsimileView(parentDomNode, state, controller);
+          views.facsimile_document = createSplitView(parentDomNode, state, controller,
+              createFacsimileView, createDocTranscriptView);
+          views.document = createDocTranscriptView(parentDomNode, state, controller);
+          views.document_text = createSplitView(parentDomNode, state, controller,
+              createDocTranscriptView, function(p,s,c) { return createTextualView(p,s,c,'app');});
+          views.text = createTextualView(parentDomNode, state, controller, 'app');
+          views.print = createTextualView(parentDomNode, state, controller, 'print');
+          views.structure = createStructureView(parentDomNode, state, controller);
 
           // facsimile and documentary transcript can exist for every page of a witness. set view to
           // current page and try to load related files (if not already done)
@@ -378,7 +360,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
           verseNo = getSceneData(state.doc.faustUri, pageNum);
 
           // set second breadcrumb to barGraph if a matching scene was found
-          if(verseNo !== undefined) {
+          if (verseNo !== undefined) {
               breadcrumbs.appendChild(document.createElement("br"));
               var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
               breadcrumbData.push({caption: state.doc.sigil});
@@ -387,7 +369,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
 
 
           // create object for page if not already done yet
-          if(!state.doc.pages[pageNum - 1]) {
+          if (!state.doc.pages[pageNum - 1]) {
               state.doc.pages[pageNum - 1] = {
                   facsimile: null,
                   facsimile_document: null,
@@ -397,101 +379,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
                   print: null
               };
           }
-
-          // create variable for easier access to the current page
-          var currentPage = state.doc.pages[pageNum - 1];
-
-          var docTranscriptViewer = createDocTranscriptView(domContainer.docTranscript, state, controller);
-
-          // ############## Facsimile View
-          imageOverlay(domContainer.facsimile, state, controller);
-
-          // ######### Facsimile | Documentary Transcript parallel view
-          if(currentPage.facsimile_document === null) {
-              // combined viewer framework:
-              var facsimileDocTranscriptContainer = Faust.dom.createElement({name: "div", class: "viewer viewer-container"});
-              var facsimileContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer, class: "viewer half-viewer"});
-              var docTranscriptContainer = Faust.dom.createElement({name: "div", parent: facsimileDocTranscriptContainer, class: "viewer half-viewer"});
-
-              Faust.dom.removeAllChildren(domContainer.facsimile_document);
-              domContainer.facsimile_document.appendChild(facsimileDocTranscriptContainer);
-              currentPage.facsimile_document = facsimileDocTranscriptContainer;
-
-              imageOverlay(facsimileContainer, state, controller);
-              createDocTranscriptView(docTranscriptContainer, state, controller);
-
-          } else {  // cached view already exists
-              Faust.dom.removeAllChildren(domContainer.facsimile_document);
-              domContainer.facsimile_document.appendChild(currentPage.facsimile_document);
-          }
-
-          // ############ Document Transcript | Textual Transcript (Apparatus) parallel view
-          if(currentPage.document_text === null) {
-
-
-              var documentTextContainer = Faust.dom.createElement({name: "div", class: "viewer viewer-container dbg-documentTextContainer"});
-              var documentContainer = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-documentContainer'});
-              var textContainer; // = Faust.dom.createElement({name: "div", parent: documentTextContainer, class: 'viewer half-viewer dbg-textContainer'});
-
-
-              currentPage.document_text = documentTextContainer;
-              currentMetadata = state.doc.metadata.pages[pageNum - 1];
-
-              Faust.dom.removeAllChildren(domContainer.document_text);
-              domContainer.document_text.appendChild(documentTextContainer);
-
-              createDocTranscriptView(documentContainer, state, controller);
-
-              // load app into textual view of the state.doc|text parallel view
-              textContainer = createTextualView(documentTextContainer, state, controller, 'app', true).root;
-              documentTextContainer.textContainer = textContainer;
-
-          } else {  // currentPage.documentText !== null, i.e. parallel view already initialized
-              // FIXME -> individual viewers
-              Faust.dom.removeAllChildren(domContainer.document_text);
-              domContainer.document_text.appendChild(currentPage.document_text);
-
-              // revealState(domContainer.document_text, pageNum);
-
-              // FIXME this doesn't handle when we switch pages across document boundaries, does it?
-              // if(domContainer.document_text.querySelector("#dt" + pageNum) !== null) {
-              //  domContainer.document_text.querySelector("#dt" + pageNum).scrollIntoView();
-              // }
-          }
-
-
-          // ############## Textual Transcript (app) single view
-          if(currentPage.textTranscript === null) {
-              // should we rather reuse the whole container document for the
-              // page? Ideally, we wouldn't redraw the page on a switch to a new
-              // page that is already displayed.
-
-              var appView = createTextualView(domContainer.textTranscript, state, controller, 'app', false);
-              currentPage.textTranscript = appView.root;
-          } else { // currentPage.textTranscript !== null
-              // TODO check whether we're already on the right section
-              Faust.dom.removeAllChildren(domContainer.textTranscript);
-              domContainer.textTranscript.appendChild(currentPage.textTranscript);
-              // revealState(domContainer.textTranscript, pageNum);
-          }
-
-          // ############# Print (variant apparatus) single view
-          if(currentPage.print === null) {
-              var printView = createTextualView(domContainer.print, state, controller, 'print', false);
-              currentPage.print = printView.root;
-          } else { // currentPage.print !== null
-              Faust.dom.removeAllChildren(domContainer.print);
-              domContainer.print.appendChild(currentPage.print);
-              // revealState(domContainer.print, pageNum);
-          }
-
-          // finally set correct page on structure view
-          if(state.doc.structure !== undefined) {
-              state.doc.structure.setLockedGroup(pageNum);
-          }
-
-          events.triggerEvent("pageLoaded", pageNum);
-      };
+      }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -508,7 +396,15 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
             newPage = state.doc.pageCount;
           }
           state.page = newPage;
-          loadPage(newPage);
+
+          for (var viewName in views) {
+              if ('setPage' in views[viewName]) {
+                  views[viewName].setPage(newPage);
+              } else {
+                  console.warn(viewName, 'view has no setPage method');
+              }
+          }
+          state.toLocation();
 
           return state.page;
       };
@@ -540,131 +436,47 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
       };
 
       // return the number of the page currently in view
-      var getCurrentPage = (function(){
-        return function() {
+      var getCurrentPage = function() {
           return state.page;
-        };
-      })();
+      };
 
       // return the view that is currently shown
       var getCurrentView = function getCurrentView() {
           return state.view;
       };
 
+      var _checkVisibleViews = function(expected) {
+          var visible = [];
+          if (typeof expected === "undefined")
+              expected = 1;
+          for (var viewName in views) {
+              if (views[viewName].container.style.display == 'block')
+                  visible.push(viewName);
+          }
+          if (visible.length != expected)
+              console.error(visible.length, 'views are visible insted of', expected, ':', visible)
+      }
+
 // view manipulation
       // set the view of the current selected page. if the new page value is not a valid mode
       // or the view is the same as the one currently shown, nothing happens
       var setView = function setView(newView){
           var oldView = state.view;
-
-          // Test if the given view mode is available. if not then don't change view
-          viewModes.forEach(function(viewMode) {
-            if(newView === viewMode && newView !== state.view) {
-              state.view = newView;
-            }
-          });
-
-          // set all views to display none FIXME that array is somewhere above
-          ["facsimile", "facsimile_document", "docTranscript", "document_text", "textTranscript", "print", "structure"].forEach(function(view) {
-            domContainer[view].style.display = "none";
-          });
-
-          // set selected view to block
-          if(state.view === "facsimile") {
-            domContainer.facsimile.style.display = "block";
-            // if the page was first opened in a view that is not facsimile view, then no
-            // scale has been set and the image would load in full size without tiles.
-            // so on first switch to facsimile view set the facsimile to fit the page
-            if(state.scale === undefined && oldView !== "facsimile") {
-              state.doc.pages[state.page - 1].facsimile.fitScale();
-            }
-          } else if (state.view === "facsimile_document") {
-            domContainer.facsimile_document.style.display = "block";
-            if(state.doc.pages[state.page -1].facsimile_document.metadataLoaded === true && state.doc.pages[state.page -1].facsimile_document.pageFitted !== true) {
-              state.doc.pages[state.page - 1].facsimile_document.facsimileParallel.fitScale();
-            }
-          } else if (state.view === "document") {
-            domContainer.docTranscript.style.display = "block";
-          } else if (state.view === "document_text") {
-            domContainer.document_text.style.display = "block";
-            // revealState(domContainer.document_text, state.page);
-            //if(domContainer.document_text.querySelector("#dt" + state.page) !== null) {
-              //domContainer.document_text.querySelector("#dt" + state.page).scrollIntoView();
-            //}
-          } else if (state.view === "text") {
-            domContainer.textTranscript.style.display = "block";
-            // revealState(domContainer.textTranscript, state.page);
-            //if(domContainer.textTranscript.querySelector("#dt" + state.page) !== null) {
-              //domContainer.textTranscript.querySelector("#dt" + state.page).scrollIntoView();
-            //}
-          } else if (state.view === "print") {
-            domContainer.print.style.display = "block";
-            // revealState(domContainer.print, state.page);
-            //if(domContainer.print.querySelector("#dt" + state.page) !== null) {
-              //domContainer.print.querySelector("#dt" + state.page).scrollIntoView();
-            //}
-          } else if (state.view === "structure") {
-            domContainer.structure.style.display = "table";
+          console.log('Switching from', oldView, 'view to', newView, 'view')
+          state.view = newView;
+          for (var viewName in views) {
+              views[viewName].hide();
           }
+          _checkVisibleViews(0);
 
-          // set active button
-          Array.prototype.slice.call(document.querySelectorAll(".navigation-bar-content .pure-button")).forEach(function(button) {
-            if(button.id !== "toggle-overlay-button") {
-              Faust.dom.removeClassFromElement(button, "pure-button-primary");
-              if(button.id === "show-" + state.view + "-button") {
-                Faust.dom.addClassToElement(button, "pure-button-primary");
-              }
-            }
-          });
+          // views[oldView].hide();
+          views[newView].show();
+
+          _checkVisibleViews(1);
 
           state.toLocation();
-
           events.triggerEvent("viewChanged", state.view);
-
           return state.view;
-      };
-
-      // facsimile zooming functions
-      var zoomIn = function zoomIn() {
-          if(state.view === "facsimile") {
-            state.doc.pages[state.page - 1].facsimile.zoom("in");
-          } else if (state.view === "facsimile_document") {
-            state.doc.pages[state.page - 1].facsimile_document.facsimileParallel.zoom("in");
-          }
-      };
-
-      var zoomOut = function zoomOut() {
-          if(state.view === "facsimile") {
-            state.doc.pages[state.page - 1].facsimile.zoom("out");
-          } else if (state.view === "facsimile_document") {
-            state.doc.pages[state.page - 1].facsimile_document.facsimileParallel.zoom("out");
-          }
-      };
-
-      // facsimile rotation functions
-      var rotateLeft = function rotateLeft() {
-          state.doc.pages[state.page - 1].facsimile.rotate("left");
-          state.doc.pages[state.page - 1].facsimile_document.facsimileParallel.rotate("left");
-      };
-
-      var rotateRight = function rotateRight() {
-          state.doc.pages[state.page - 1].facsimile.rotate("right");
-          state.doc.pages[state.page - 1].facsimile_document.facsimileParallel.rotate("right");
-      };
-
-// toggle view of overlay
-      var toggleOverlay = function toggleOverlay() {
-          if(state.showOverlay === true) {
-            state.showOverlay = false;
-            Faust.dom.removeClassFromElement(document.getElementById("toggle-overlay-button"), "pure-button-primary");
-          } else {
-            state.showOverlay = true;
-            Faust.dom.addClassToElement(document.getElementById("toggle-overlay-button"), "pure-button-primary");
-          }
-          if(state.doc.pages[state.page - 1]) {
-            state.doc.pages[state.page - 1].facsimile.showOverlay(state.showOverlay);
-            state.doc.pages[state.page - 1].facsimile_document.facsimileParallel.showOverlay(state.showOverlay);
-          }
       };
 
 
@@ -683,11 +495,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'faust_image_overlay
           getCurrentView: getCurrentView,
 
           setView: setView,
-          toggleOverlay: toggleOverlay,
-          zoomIn: zoomIn,
-          zoomOut: zoomOut,
-          rotateLeft: rotateLeft,
-          rotateRight: rotateRight,
           addViewerEventListener: events.addEventListener
         };
 

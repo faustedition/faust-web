@@ -740,10 +740,15 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
   var imageOverlay = {
 
       createImageOverlay: createImageOverlay,
-      init: function init(container, state, controller) {
+      init: function init(parent, state, controller) {
           this.state = state;
           this.controller = controller;
-          this.container = container; // FIXME inline stuff from faust_viewer
+
+          var container = document.createElement("div");
+          container.id = "facsimile-content";         // FIXME do we need an ID?
+          container.className = "facsimile-content view-content";
+          this.container = container;
+          parent.appendChild(container);
 
           this.loadPage(state.page);
       },
@@ -771,7 +776,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           } else {
               facsimile = this.createImageOverlay({"hasFacsimile": false});
           }
-          currentPage.facsimile = facsimile;
+          // currentPage.facsimile = facsimile;
           // FIXME
           Faust.dom.removeAllChildren(this.container);
           this.container.appendChild(facsimile);
@@ -802,6 +807,11 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
               container.appendChild(currentPage.facsimile);
               currentPage.facsimile.setScale(state.scale);
           }*/
+      },
+      show : function () { this.container.style.display = 'block'; },
+      hide : function () { this.container.style.display = 'none'; },
+      setPage: function (pageNo) {
+          return this.loadPage(pageNo);
       }
   }
   return function (container, state, controller) {

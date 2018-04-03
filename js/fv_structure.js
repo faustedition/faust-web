@@ -261,16 +261,26 @@ define(['faust_common', 'faust_structure'],
                         that.controller.setPage(this.pageNum);
                         that.controller.setView("facsimile");
                     }
-                }
+                };
 
                 this.leftPreview.addEventListener("click", previewClickHandler);
                 this.rightPreview.addEventListener("click", previewClickHandler);
 
                 return this;
+            },
+
+            show : function () { this.container.style.display = 'block'; },
+            hide : function () { this.container.style.display = 'none'; },
+            setPage : function (pageNo) {
+                if (this.structureSvg)
+                    this.structureSvg.setLockedGroup(pageNo);
+                // otherwise it's not yet initialized
             }
-
-
         };
 
-        return structureView;
+        return function(parent, state, controller) {
+            var viewer = Object.create(structureView);
+            viewer.init(parent, state, controller);
+            return viewer;
+        }
 });
