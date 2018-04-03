@@ -203,10 +203,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
       var views = {};
 
-      // container holding references to each available view / div
-      var domContainer = {};
-
-
       // initialisation of viewer component.
       // 1. create a div for each view with matching id and class names, record it in domContainer, and insert it into
       //    the page (parentDomNode element)
@@ -323,12 +319,14 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
       /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
          data to prevent multiple loading of same resources
        */
-      var loadPage = function loadPage(pageNum) {
+      var updateControlsToPage = function updateControlsToPage(pageNum) {
           var currentMetadata;
           var verseNo;
 
-          // replace window location with current parameters
-          state.toLocation();
+
+          // the viewer was created, but no listener was added before. update page information
+          document.getElementById("pageCount").innerHTML = getCurrentPage() + " / " + getPageCount();
+
 
           // update the PDF button (DEBUG)
           try {
@@ -343,7 +341,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               console.log(e);
           }
 
-          // set breadcrumbs
+          // set breadcrumbs FIXME refactor to faust_common
 
           // get breadcrumbs element
           var breadcrumbs = document.getElementById("breadcrumbs");
@@ -365,19 +363,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
               breadcrumbData.push({caption: state.doc.sigil});
               breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
-          }
-
-
-          // create object for page if not already done yet
-          if (!state.doc.pages[pageNum - 1]) {
-              state.doc.pages[pageNum - 1] = {
-                  facsimile: null,
-                  facsimile_document: null,
-                  docTranscript: null,
-                  document_text: null,
-                  textTranscript: null,
-                  print: null
-              };
           }
       }
 
@@ -404,6 +389,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   console.warn(viewName, 'view has no setPage method');
               }
           }
+           updateControlsToPage(newPage);
+
           state.toLocation();
 
           return state.page;

@@ -75,9 +75,6 @@
 
 
 
-      // the viewer was created, but no listener was added before. update page information
-      document.getElementById("pageCount").innerHTML = viewer.getCurrentPage() + " / " + viewer.getPageCount();
-
       // add a handler to the viewer to update the current page info in the navigation bar when changing a page
       var viewerPageLoadedEventHandler = (function() {
         var pageCountContainer = document.getElementById("pageCount");
