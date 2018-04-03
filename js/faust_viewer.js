@@ -451,15 +451,17 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           var oldView = state.view;
           console.log('Switching from', oldView, 'view to', newView, 'view')
           state.view = newView;
-          for (var viewName in views) {
+          for (var viewName in views)
               views[viewName].hide();
-          }
+          document.getElementById('show-' + oldView + '-button').classList.remove('pure-button-primary');
+
           _checkVisibleViews(0);
 
           // views[oldView].hide();
           views[newView].show();
 
           _checkVisibleViews(1);
+          document.getElementById('show-' + newView + '-button').classList.add('pure-button-primary');
 
           state.toLocation();
           events.triggerEvent("viewChanged", state.view);

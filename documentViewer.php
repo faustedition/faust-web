@@ -35,15 +35,7 @@
 <script>
     requirejs(['faust_common', 'faust_viewer'], function(Faust, createDocumentViewer) {
 
-      // create viewer and assign parent element
-      var viewer = (function(){
-        "use strict";
-        var viewer = createDocumentViewer(document.getElementById("main-content"));
-        if(viewer.getCurrentView() === "facsimile" || viewer.getCurrentView() === "facsimile_document") {
-          document.getElementById("facsimile-settings").style.display="block";
-        }
-        return viewer;
-      })();
+      var viewer = createDocumentViewer(document.getElementById("main-content"));
 
       // FIXME generating the button bar and attaching the listeners should be factored into the viewer
       // in order to be able to generate variants with different buttons etc.
