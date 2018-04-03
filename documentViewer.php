@@ -39,33 +39,18 @@
 
       // FIXME generating the button bar and attaching the listeners should be factored into the viewer
       // in order to be able to generate variants with different buttons etc.
-      var bindEvent = function on(id, func, event) {
-        var el = document.getElementById(id);
+      var bindEvent = function on(selector, func, event) {
         if (!(event)) event = "click";
-        if (el) {
-          el.addEventListener(event, func);
-        }
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function(el) {
+            el.addEventListener(event, func);
+        });
       };
-      bindEvent('zoom-in-button', viewer.zoomIn);
-      bindEvent('zoom-out-button', viewer.zoomOut);
-      bindEvent('rotate-left', viewer.rotateLeft);
-      bindEvent('rotate-right', viewer.rotateRight);
-      bindEvent('toggle-overlay-button', viewer.toggleOverlay);
-
-      bindEvent('first-page-button', function() { viewer.setPage(1); });
-      bindEvent('previous-page-button', viewer.previousPage);
-      bindEvent('next-page-button', viewer.nextPage);
-      bindEvent('last-page-button', function() { viewer.setPage(viewer.getPageCount()); });
-
-      bindEvent('show-structure-button', function() { viewer.setView('structure'); });
-      bindEvent('show-facsimile-button', function() { viewer.setView('facsimile'); });
-      bindEvent('show-facsimile_document-button', function() { viewer.setView('facsimile_document'); });
-      bindEvent('show-document-button', function() { viewer.setView('document'); });
-      bindEvent('show-document_text-button', function() { viewer.setView('document_text'); });
-      bindEvent('show-text-button', function() { viewer.setView('text'); });
-      bindEvent('show-print-button', function() { viewer.setView('print'); });
-
-
+      bindEvent('#zoom-in-button', viewer.zoomIn);
+      bindEvent('#zoom-out-button', viewer.zoomOut);
+      bindEvent('#rotate-left', viewer.rotateLeft);
+      bindEvent('#rotate-right', viewer.rotateRight);
+      bindEvent('#toggle-overlay-button', viewer.toggleOverlay);
 
       // add a handler to the viewer to update the current page info in the navigation bar when changing a page
       var viewerPageLoadedEventHandler = (function() {

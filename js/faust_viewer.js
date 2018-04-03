@@ -245,6 +245,18 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           views.print = createTextualView(parentDomNode, state, controller, 'print');
           views.structure = createStructureView(parentDomNode, state, controller);
 
+          Object.keys(views).forEach(function (viewName) {
+              Faust.bindBySelector('#show-'+viewName+'-button', function(){
+                  setView(viewName);});
+          });
+
+            Faust.bindBySelector('#first-page-button', function() { setPage(1); });
+            Faust.bindBySelector('#previous-page-button', previousPage);
+            Faust.bindBySelector('#next-page-button', nextPage);
+            Faust.bindBySelector('#last-page-button', function() { setPage(getPageCount()); });
+
+
+
           // facsimile and documentary transcript can exist for every page of a witness. set view to
           // current page and try to load related files (if not already done)
           setPage(state.page);

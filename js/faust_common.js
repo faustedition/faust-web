@@ -1068,6 +1068,14 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     parent.insertBefore(container, parent.firstChild);
   };
 
+  Faust.bindBySelector = function bindBySelector(selector, func, event) {
+        if (!(event)) event = "click";
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function(el) {
+            el.addEventListener(event, func);
+        });
+    };
+
     Faust.PageCache = function PageCache() {
         this.cache = {};
         this.hasPage = function(pageNo) { return this.cache.hasOwnProperty(pageNo); };
