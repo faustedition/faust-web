@@ -35,48 +35,22 @@
 <script>
     requirejs(['faust_common', 'faust_viewer'], function(Faust, createDocumentViewer) {
 
-      // create viewer and assign parent element
-      var viewer = (function(){
-        "use strict";
-        var viewer = createDocumentViewer(document.getElementById("main-content"));
-        if(viewer.getCurrentView() === "facsimile" || viewer.getCurrentView() === "facsimile_document") {
-          document.getElementById("facsimile-settings").style.display="block";
-        }
-        return viewer;
-      })();
+      var viewer = createDocumentViewer(document.getElementById("main-content"));
 
       // FIXME generating the button bar and attaching the listeners should be factored into the viewer
       // in order to be able to generate variants with different buttons etc.
-      var on = function on(id, func, event) {
-        var el = document.getElementById(id);
+      var bindEvent = function on(selector, func, event) {
         if (!(event)) event = "click";
-        if (el) {
-          el.addEventListener(event, func);
-        }
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function(el) {
+            el.addEventListener(event, func);
+        });
       };
-      on('zoom-in-button', viewer.zoomIn);
-      on('zoom-out-button', viewer.zoomOut);
-      on('rotate-left', viewer.rotateLeft);
-      on('rotate-right', viewer.rotateRight);
-      on('toggle-overlay-button', viewer.toggleOverlay);
-
-      on('first-page-button', function() { viewer.setPage(1); });
-      on('previous-page-button', viewer.previousPage);
-      on('next-page-button', viewer.nextPage);
-      on('last-page-button', function() { viewer.setPage(viewer.getPageCount()); });
-
-      on('show-structure-button', function() { viewer.setView('structure'); });
-      on('show-facsimile-button', function() { viewer.setView('facsimile'); });
-      on('show-facsimile_document-button', function() { viewer.setView('facsimile_document'); });
-      on('show-document-button', function() { viewer.setView('document'); });
-      on('show-document_text-button', function() { viewer.setView('document_text'); });
-      on('show-text-button', function() { viewer.setView('text'); });
-      on('show-print-button', function() { viewer.setView('print'); });
-
-
-
-      // the viewer was created, but no listener was added before. update page information
-      document.getElementById("pageCount").innerHTML = viewer.getCurrentPage() + " / " + viewer.getPageCount();
+      bindEvent('#zoom-in-button', viewer.zoomIn);
+      bindEvent('#zoom-out-button', viewer.zoomOut);
+      bindEvent('#rotate-left', viewer.rotateLeft);
+      bindEvent('#rotate-right', viewer.rotateRight);
+      bindEvent('#toggle-overlay-button', viewer.toggleOverlay);
 
       // add a handler to the viewer to update the current page info in the navigation bar when changing a page
       var viewerPageLoadedEventHandler = (function() {

@@ -121,3 +121,76 @@ doc.pages[pageNum - 1] = {
 };
 ```
 
+### HTML Structure
+
+#### structure view
+
+```html
+<div id="previewDiv" class="preview-div">
+    <div id="leftPreviewDiv" class="left-page-preview facsimile-preview"></div>
+    <div id="rightPagePreview" class="right-page-preview facsimile-preview"></div>
+</div>
+<div id="structureDiv" class="structure-div">
+    <div id="structureSvgDiv" class="structure-svg-div"><!-- here stuff from createFromXml() --></div>
+</div>
+<div id="metadataDiv" class="metadata-div"><!-- loaded HTML segment here --></div>
+
+```
+
+### facsimile | document
+
+```html
+<div style="height:100%; padding:0px; overflow:hidden">
+    <div id="facsimileContainer" style="display: inline-block; width: 50%; height: 100%; background: #ebebeb; overflow:auto"></div>
+    <div id="docTranscriptContainer" style="display:inline-block; width:50%; height:100%; overflow:auto; textAlign:center; paddingLeft: 1em; paddingRight: 1em"></div>
+</div>
+```
+
+### document | text
+
+```html
+<div class="dbg-documentTextContainer" style="height:100%;padding:0px;overflow:hidden;">
+<div id="dbg-documentContainer" style="display:inline-block; padding-left:1em; padding-right:1em; width: 50%; height: 100%; border: 0px solid #ccc; border-right-width: 1px; overflow: auto; text-align:center"></div>
+<div id="textContainer" style="display: inline-block; width: 50%; height: 100%; overflow: auto; text-align: center;"></div>
+</div>
+```
+
+### text (app)
+
+```html
+<div id="textContainer" style="width: 100%; height: 100%; overflow: auto; text-align: center"></div>
+```
+
+
+
+### Code Structure
+
+* really global variables viewModes & contentHtml
+* createDocumentViewer() as a global & exported function, everything else on this level
+* events: event queue
+* doc for metadata, see above
+* state for status, see above
+* domContainer as an object keeping substructure 
+
+
+## Target Structure
+
+* We have a __state__ that synchronizes with the URL and maintains the current position
+* Probably the state will maintain a __doc__ object caching metadata & page information
+* there's a __view__ for each, well, view. We have two kinds of view:
+
+    * __primary views__ are facsimile, doctranscript, app, print, and structure
+    * __composite views__ are composed of two primary views
+    
+Primary views perform the neccessary loading of other stuff. Cleanest solution would be promise based. Composite views
+wait for the primary views to be finished and clone them afterwards.
+
+
+## Viewer Properties
+
+- container element
+- (state)
+- init(parent) builds container, returns a promise
+- setPage(pageno) switches the viewer to the given page. This should probably return a promise, since we want to update
+  composite viewers from single ones.
+- maybe we build loadPage and let default implementations of init and setPage call that?

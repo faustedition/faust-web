@@ -486,6 +486,37 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       };
     })();
 
+      /**
+       * Returns a promise for the response of a xhr object.
+       * @param url
+       * @param responseType resolve to "text" -> responseText, "xml" -> responseXML, leave out -> whole response
+       * @returns {Promise}
+       *
+       */
+    xhr.get = function get(url, responseType) {
+      return new Promise(function(resolve, reject) {
+        var request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 300) {
+            if (responseType === 'text') {
+              resolve(request.responseText);
+            } else if (responseType === 'xml') {
+              resolve(request.responseXML)
+            } else {
+                resolve(request.response);
+            }
+          } else {
+            reject(Error('Failed to load ' + url + ', error: ' + request.statusText));
+          }
+        }
+        request.onerror = function() {
+          reject(Error('Network error accessing ' + url));
+        }
+        request.send();
+      });
+    }
+
     return xhr;
   })();
 
@@ -723,61 +754,53 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
 // Faust.event
 //###########################################################################
 
-  Faust.event = (function(){
-    var event = {};
+  Faust.event = {
+      // event handling object. events can be triggered by calling events.triggerEvent(eventName, [returnObj]).
+      // event handlers are added by calling events.addEventListener(eventName, callback).
+      createEventQueue: function () {
+          // create object with functions to add event handlers and to trigger events
+          var eventQueue = {};
 
-    // event handling object. events can be triggered by calling events.triggerEvent(eventName, [returnObj]).
-    // event handlers are added by calling events.addEventListener(eventName, callback).
-    event.createEventQueue = function(){
-      // create object with functions to add event handlers and to trigger events
-      var events = {};
-      var i;
+          // create object that will hold all appended listeners
+          eventQueue.listeners = {};
 
-      // create object that will hold all appended listeners
-      events.listeners = {};
+          // function to call if an event occurred. all listeners attached
+          // listening to the same name that was triggered will be called.
+          eventQueue.triggerEvent = function (eventName, obj) {
+                  var i;
+                  if (eventQueue.listeners[eventName] !== undefined) {
+                      // iterate through every listener
+                      for (i = 0; i < eventQueue.listeners[eventName].length; i++) {
+                          // if a result exists
+                          if (obj) {
+                              // ...pass it through to callback
+                              eventQueue.listeners[eventName][i](obj);
+                          } else {
+                              // ...else call callback without parameters
+                              eventQueue.listeners[eventName][i]();
+                          }
+                      }
+                      return true;
+                  } else {
+                      return false;
+                  }
+          };
 
-      // function to call if an event occurred. all listeners attached
-      // listening to the same name that was triggered will be called.
-      events.triggerEvent = (function(){
-        return function(eventName, obj){
-          if(events.listeners[eventName] !== undefined) {
-            // iterate through every listener
-            for(i = 0; i < events.listeners[eventName].length; i++) {
-              // if a result exists
-              if(obj) {
-                // ...pass it through to callback
-                events.listeners[eventName][i](obj);
-              } else {
-                // ...else call callback without parameters
-                events.listeners[eventName][i]();
+          // function to add listeners for an event. an event name
+          // as well as a callback must be provided
+          eventQueue.addEventListener = function (eventName, callback) {
+              // select appropriate event listener queue
+              if (eventQueue.listeners[eventName] === undefined) {
+                  eventQueue.listeners[eventName] = [];
               }
-            }
-            return true;
-          } else {
-            return false;
-          }
-        };
-      })();
+              // ... and add listener to queue
+              eventQueue.listeners[eventName].push(callback);
+              return true;
+          };
 
-      // function to add listeners for an event. an event name
-      // as well as a callback must be provided
-      events.addEventListener = (function(){
-        return function(eventName, callback){
-          // select appropriate event listener queue
-          if(events.listeners[eventName] === undefined) {
-            events.listeners[eventName] = [];
-          }
-          // ... and add listener to queue
-          events.listeners[eventName].push(callback);
-          return true;
-        };
-      })();
-
-      return events;
-    };
-
-    return event;
-  })();
+          return eventQueue;
+      }
+  };
 
 //###########################################################################
 // Faust.tooltip
@@ -1031,6 +1054,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
   };
 
   Faust.error = function error(title, msg, parent) {
+    console.error(title, msg);
     if (parent === undefined) {
       parent = document.getElementById("main-content");
     }
@@ -1042,8 +1066,53 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     titleElem.textContent = title;
     msgElem.textContent = msg;
     parent.insertBefore(container, parent.firstChild);
-    console.error(title, msg);
   };
+
+  Faust.bindBySelector = function bindBySelector(selector, func, event) {
+        if (!(event)) event = "click";
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function(el) {
+            el.addEventListener(event, func);
+        });
+    };
+
+  Faust.toggleButtonState = function toggleButtonState(selector, newState) {
+      var result;
+      document.querySelectorAll(selector).forEach(function(element) {
+        if (typeof(newState) == "undefined" && element.classList.contains('pure-button-primary')
+            || (newState === false)) {
+          element.classList.remove('pure-button-primary');
+          result = false;
+        } else {
+          element.classList.add('pure-button-primary');
+          result = true;
+        }
+      });
+      return result;
+    };
+
+    Faust.PageCache = function PageCache() {
+        this.cache = {};
+        this.hasPage = function(pageNo) { return this.cache.hasOwnProperty(pageNo); };
+        this.addPage = function(pageNo, node) {
+            if (this.hasPage(pageNo))
+                console.warn('PageCache is overwriting page no ', pageNo);
+            this.cache[pageNo] = node;
+        };
+        this.getPage = function(pageNo, doNotClone) {
+            if (!thisPage.hasPage(pageNo)) {
+                console.warn('PageCache does not have page no ', pageNo);
+                return undefined;
+            } else {
+                var node = this.cache[pageNo];
+                if (document.contains(node)) {
+                    return node.cloneNode(true)
+                } else {
+                    return node;
+                }
+            }
+        };
+    };
 
 
 //###########################################################################
