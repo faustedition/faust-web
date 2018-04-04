@@ -235,6 +235,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       /* Fields [2]...[4] contain the values between the powers of two (eg currentScale is
        1.1, than [1] = 1.0, [2] = 1.25, [3] = 1.5, [4] = 1.75, [5] = 2.0
        */
+      // noinspection PointlessArithmeticExpressionJS
       zoomSteps[2] = zoomSteps[1] + 1 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
       zoomSteps[3] = zoomSteps[1] + 2 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
       zoomSteps[4] = zoomSteps[1] + 3 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
