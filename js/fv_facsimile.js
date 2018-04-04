@@ -292,7 +292,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
   };
 
   /**
-   * The actual constructor. Creates the #image-container.image-container div that contains everything else
+   * Creates the controls for a single page.
    */
   var createImageOverlay = function createImageOverlay(options) {
     var args = null;
@@ -718,13 +718,8 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           this.container = container;
           parent.appendChild(container);
           this.loadPage(state.page);
+          this.bindControls();
 
-          /* TODO
-          bindEvent('#zoom-in-button', this.zoomIn);
-          bindEvent('#zoom-out-button', this.zoomOut);
-          bindEvent('#rotate-left', this.rotateLeft);
-          bindEvent('#rotate-right', this.rotateRight);
-          bindEvent('#toggle-overlay-button', this.toggleOverlay); */
       },
       loadPage : function(pageNo) {
 
@@ -754,6 +749,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           // FIXME
           Faust.dom.removeAllChildren(this.container);
           this.container.appendChild(facsimile);
+          this.facsimile = facsimile;
           facsimile.addFacsimileEventListener("scaleChanged", function (newScale) {
               that.state.scale = newScale;
           });
@@ -782,8 +778,8 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
               currentPage.facsimile.setScale(state.scale);
           }*/
       },
-      show : function () { this.container.style.display = 'block'; this.shown(); },
-      hide : function () { this.container.style.display = 'none'; this.hidden(); },
+      show : function () { this.visible = true;  this.container.style.display = 'block'; this.shown(); },
+      hide : function () { this.visible = false; this.container.style.display = 'none';  this.hidden(); },
       shown: function () {
           document.getElementById("facsimile-settings").style.display = "block";
       },
@@ -792,8 +788,27 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       },
       setPage: function (pageNo) {
           return this.loadPage(pageNo);
+      },
+      bindControls: function() {
+          var that = this;
+          var zoomIn = function () { if (that.visible) that.facsimile.zoom("in"); };
+          var zoomOut = function () { if (that.visible) that.facsimile.zoom("out"); };
+          var rotateLeft = function () { if (that.visible) that.facsimile.rotate("left"); };
+          var rotateRight = function () { if (that.visible) that.facsimile.rotate("right"); };
+          var toggleOverlay = function () {
+              if (that.visible) {
+                  that.state.showOverlay = !that.state.showOverlay;
+                  Faust.toggleButtonState('#toggle-overlay-button', that.state.showOverlay);
+              }
+          };
+
+          Faust.bindBySelector('#zoom-in-button', zoomIn);
+          Faust.bindBySelector('#zoom-out-button', zoomOut);
+          Faust.bindBySelector('#rotate-left', rotateLeft);
+          Faust.bindBySelector('#rotate-right', rotateRight);
+          Faust.bindBySelector('#toggle-overlay-button', toggleOverlay);
       }
-  }
+  };
   return function (container, state, controller) {
     var result = Object.create(imageOverlay);
     result.init(container, state, controller);

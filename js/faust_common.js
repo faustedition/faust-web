@@ -1076,6 +1076,21 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
         });
     };
 
+  Faust.toggleButtonState = function toggleButtonState(selector, newState) {
+      var result;
+      document.querySelectorAll(selector).forEach(function(element) {
+        if (typeof(newState) == "undefined" && element.classList.contains('pure-button-primary')
+            || (newState === false)) {
+          element.classList.remove('pure-button-primary');
+          result = false;
+        } else {
+          element.classList.add('pure-button-primary');
+          result = true;
+        }
+      });
+      return result;
+    };
+
     Faust.PageCache = function PageCache() {
         this.cache = {};
         this.hasPage = function(pageNo) { return this.cache.hasOwnProperty(pageNo); };
