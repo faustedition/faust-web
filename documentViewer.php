@@ -14,7 +14,9 @@
     <div id="page-navigation" class="page">
       <div id="first-page-button" class="pure-button" title="Erste Seite"><i class="fa fa-to-start"></i></div>
       <div id="previous-page-button" class="pure-button" title="Vorherige Seite"><i class="fa fa-left-dir"></i></div>
-      <div id="pageCount"></div>
+      <div id="page-info">
+          <input id="page-input" type="number" size="3" min="1" max="1"> / <span id="page-count"></span>
+      </div>
       <div id="next-page-button" class="pure-button" title="Nächste Seite"><i class="fa fa-right-dir"></i></div>
       <div id="last-page-button" class="pure-button" title="Letzte Seite"><i class="fa fa-to-end"></i></div>
     </div>

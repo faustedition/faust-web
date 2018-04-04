@@ -309,8 +309,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      /* function to load page-specific files and generate the appropriate views. if a page was loaded before only use cached
-         data to prevent multiple loading of same resources
+      /* function to load page-specific files and generate the appropriate views.
        */
       var updateControlsToPage = function updateControlsToPage(pageNum) {
           var currentMetadata;
@@ -318,7 +317,20 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
 
           // the viewer was created, but no listener was added before. update page information
-          document.getElementById("pageCount").innerHTML = getCurrentPage() + " / " + getPageCount();
+          document.getElementById("page-count").innerHTML = getPageCount();
+          var pageInput = document.getElementById("page-input");
+          pageInput.value = getCurrentPage();
+          pageInput.max = getPageCount();
+          pageInput.onchange = function (ev) {
+            var pageNo = parseInt(this.value);
+            if (pageNo && pageNo >= 1 && pageNo <= getPageCount()) {
+              setPage(pageNo);
+              return true;
+            } else {
+              this.value = getCurrentPage();
+              return false;
+            }
+          };
 
 
           // update the PDF button (DEBUG)
@@ -436,7 +448,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               if (views[viewName].container.style.display == 'block')
                   visible.push(viewName);
           }
-          if (visible.length != expected)
+          if (visible.length !== expected)
               console.error(visible.length, 'views are visible insted of', expected, ':', visible)
       }
 

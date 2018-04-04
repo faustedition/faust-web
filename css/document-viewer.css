@@ -109,6 +109,14 @@ body.documentViewer main {
   border-right-width: 0px;
 }
 
+#page-input {
+  text-align: right;
+  width: 3em;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
 /* Copyright note that is overlaid to the facsimile */
 .facs-copyright {
   font: 12px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
