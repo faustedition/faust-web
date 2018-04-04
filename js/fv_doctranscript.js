@@ -248,7 +248,7 @@ define(['faust_common'], function (Faust) {
                     return docTranscriptDiv;
                 })
                 .catch(function (err) {
-                    Faust.error("Failed to load transcript from " + url, err, that.container);
+                    return Faust.error("Kein dokumentarisches Transkript verfügbar", err, that.container);
                 });
         },
 

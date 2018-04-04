@@ -60,7 +60,7 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
             setPage: function(pageNum, fragment) {
                 var filename = this.state.doc.findSection(pageNum);
                 if (typeof filename === "undefined") {
-                    var msg = "Kein textuelles Transkript zu Seite " + pageNum + " vorhanden.";
+                    var msg = "Kein textuelles Transkript zu dieser Seite vorhanden.";
                     if (!this.container.hasChildNodes())
                         Faust.error('', msg, this.container);
                     return Promise.reject(msg);
