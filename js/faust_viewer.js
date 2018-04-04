@@ -9,22 +9,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
   "use strict";
 
 
-  // FIXME we expose these as global functions as long as the functionality hasn't been completely migrated
-  var transcriptTooltips = createDocTranscriptView.transcriptTooltips;
-  var addPatchHandlers = createDocTranscriptView.addPatchHandlers;
-
-
-  // Global variables to all viewer instances
-  var viewModes = ["facsimile", "facsimile_document", "document", "document_text", "text", "print", "structure"];
-  var contentHtml = {
-    missingImageMetadata: "{\"hasImages\": false}",
-    loadErrorImageMetadata: "{\"hasImages\": false, \"noImageLoadable\": true}",
-    missingFacsimileOverlay: "<div>Kein dokumentarisches Transkript vorhanden - Facsimile-Overlay kann nicht existieren</div>",
-    loadErrorFacsimielOverlay: "<div>Facsimile Overlay konnte nicht geladen werden</div>",
-    missingTextTranscript: "<div>Kein Textuelles Transkript vorhanden</div>",
-    missingTextAppTranscript: "<div>Kein Textuelles Transkript vorhanden</div>"
-  };
-
   var createSplitView = function createSplitView(parent, state, controller, leftConstructor, rightConstructor) {
 
       var container = document.createElement('div');
@@ -105,12 +89,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               }
 
               // if a view was given in the get parameters and the view is available then set active view to that
-              if (getParameters.view && viewModes.reduce(function (result, view) {
-                      if (view === getParameters.view) {
-                          result = true;
-                      }
-                      return result;
-                  }, false)) {
+              if (getParameters.view && views.hasOwnProperty(getParameters.view)) {
                   this.view = getParameters.view;
               }
 

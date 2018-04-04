@@ -321,10 +321,8 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     // function to create an object with easy acces to data contained in metadata
     // informationen. Uris are converted so that they point at the location
     // where information can be accessed
-    doc.createDocumentFromMetadata = (function(){
-      // convert metadata information of a document into useable object
-      return function(metadata){
-        var documentObject = {};
+    doc.createDocumentFromMetadata = function(metadata){
+        var documentObject = Object.create(metadata);
 
         // determine if document has uri pointing to xml
         if(metadata.document) {
@@ -361,7 +359,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
 
         // append all pages to document object
         documentObject.pages = metadata.page.map(function(currentPage, currentPageIndex) {
-          var resultPage = {};
+          var resultPage = Object.create(currentPage);
 
           // find out if current page has a documentary transcript
           if(currentPage.doc.length !== 0 && currentPage.doc[0].uri !== undefined) {
@@ -418,8 +416,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
         });
 
         return documentObject;
-      };
-    })();
+    };
 
     return doc;
   })();
