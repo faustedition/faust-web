@@ -138,6 +138,11 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                       prevPage = prevPage - 1;
                       filename = printLinks[prevPage];
                   }
+                  prevPage = pageNum;
+                  while (!filename && prevPage <= this.pageCount) {
+                    prevPage++;
+                    filename = printLinks[prevPage];
+                  }
                   if (!filename) { // FIXME obsolete when default === 0
                       filename = printLinks['default'];
                   }
