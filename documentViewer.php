@@ -40,37 +40,6 @@
 
       var viewer = createDocumentViewer(document.getElementById("main-content"));
 
-      // FIXME generating the button bar and attaching the listeners should be factored into the viewer
-      // in order to be able to generate variants with different buttons etc.
-      var bindEvent = function on(selector, func, event) {
-        if (!(event)) event = "click";
-        var elements = document.querySelectorAll(selector);
-        elements.forEach(function(el) {
-            el.addEventListener(event, func);
-        });
-      };
-      bindEvent('#zoom-in-button', viewer.zoomIn);
-      bindEvent('#zoom-out-button', viewer.zoomOut);
-      bindEvent('#rotate-left', viewer.rotateLeft);
-      bindEvent('#rotate-right', viewer.rotateRight);
-      bindEvent('#toggle-overlay-button', viewer.toggleOverlay);
-
-      // add a handler to the viewer to update the current page info in the navigation bar when changing a page
-      var viewerPageLoadedEventHandler = (function() {
-        var pageCountContainer = document.getElementById("pageCount");
-        return function(pageNum) {
-          pageCountContainer.innerHTML = pageNum + " / " + viewer.getPageCount();
-        };
-      })();
-      viewer.addViewerEventListener("pageLoaded", viewerPageLoadedEventHandler);
-
-      viewer.addViewerEventListener("viewChanged", function(newView) {
-        if(newView === "facsimile" || newView === "facsimile_document") {
-          document.getElementById("facsimile-settings").style.display = "block";
-        } else {
-          document.getElementById("facsimile-settings").style.display = "none";
-        }
-      });
     });
 </script>
 
