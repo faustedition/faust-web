@@ -7,6 +7,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
     "loadingMetadata": "Lade Faksimile.",
     "metadataLoaded": "Metadaten geladen. Lade Grafiken und Überblendung (falls vorhanden).",
     "noFacsimileAvailable": "Kein Faksimile verfügbar.",
+    "emptyPage": "Leere Seite",
     "imageMetadataLoadError": "Metadaten zum Faksimile konnten nicht geladen werden.",
     "imageMetadataParseError": "Metadaten zum Faksimile konnten nicht verarbeitet werden.",
     "overlayLoadError": "Keine Überblendung gefunden."
@@ -710,10 +711,14 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             Faust.error('Fehler beim Laden des Digitalisats', reason, domNodes.imageInfo);
             showElement(domNodes.imageInfo, true);
           })
-      } else {
-        domNodes.imageInfo.innerHTML = '<div>Kein Digitalisat verfügbar</div>'
+      } else if (args.empty) {
+        domNodes.imageInfo.innerHTML = htmlStrings.emptyPage;
         showElement(domNodes.imageInfo, true);
         return Promise.resolve(domNodes);
+      } else {
+          domNodes.imageInfo.innerHTML = htmlStrings.noFacsimileAvailable;
+          showElement(domNodes.imageInfo, true);
+          return Promise.resolve(domNodes);
       }
   };
 
@@ -756,7 +761,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
                       "copyright": this.state.doc.getFacsCopyright()
                   });
           } else {
-              pagePromise = this.createImageOverlay({"hasFacsimile": false});
+              pagePromise = this.createImageOverlay({hasFacsimile: false, empty: currentMetadata.empty});
           }
           return pagePromise.then(function (facsimile) {
             Faust.dom.removeAllChildren(that.container);

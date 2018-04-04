@@ -89,8 +89,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               }
 
               // if a view was given in the get parameters and the view is available then set active view to that
-              if (getParameters.view && views.hasOwnProperty(getParameters.view)) {
-                  this.view = getParameters.view;
+              if (getParameters.view) {
+                this.view = getParameters.view;
               }
 
               if (getParameters['#']) {
@@ -445,6 +445,11 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
       // or the view is the same as the one currently shown, nothing happens
       var setView = function setView(newView){
           var oldView = state.view;
+          if (!views.hasOwnProperty(newView)) {
+            Faust.error('', 'View ' + newView + ' does not exist');
+            return oldView;
+          }
+
           state.view = newView;
           for (var viewName in views)
               views[viewName].hide();

@@ -131,10 +131,10 @@ define(['faust_common', 'faust_structure'],
             // be uselessly more complex since creating a simple div is extremly fast in browsers.
             //
             // If there is no facsimile (display of first and last page) don't add text
-            createMissingPreviewDiv : function createMissingPreviewDiv(facsimileMissing) {
+            createMissingPreviewDiv : function createMissingPreviewDiv(message) {
                 var missingPreviewDiv = document.createElement("div");
-                if(facsimileMissing === true) {
-                    missingPreviewDiv.appendChild(document.createTextNode("Kein Faksimile verfügbar"));
+                if(message) {
+                    missingPreviewDiv.appendChild(document.createTextNode(message));
                 }
                 return missingPreviewDiv;
             },
@@ -158,7 +158,9 @@ define(['faust_common', 'faust_structure'],
                 if(uri === undefined) {
                     return this.createMissingPreviewDiv(false);
                 } else if (uri === "noFacsimile") {
-                    return this.createMissingPreviewDiv(true);
+                    return this.createMissingPreviewDiv("Kein Faksimile verfügbar");
+                } else if (uri === "empty") {
+                    return this.createMissingPreviewDiv("Leere Seite");
                 } else if (this.previewCache.hasOwnProperty(uri) === true) {
                     return this.previewCache[uri];
                 } else {
@@ -187,6 +189,8 @@ define(['faust_common', 'faust_structure'],
                         // load existing preview image
                         pageUri = this.state.doc.metadata.pages[pageNum - 1].docTranscripts[0].images[0].jpgUrlBase + "_preview.jpg";
                         parent.appendChild(this.getPreviewElement(pageUri));
+                    } else if (this.state.doc.metadata.pages[pageNum - 1].empty) {
+                        parent.appendChild(this.getPreviewElement("empty"))
                     } else {
                         // no facsimile exists - display info
                         parent.appendChild(this.getPreviewElement("noFacsimile"));
