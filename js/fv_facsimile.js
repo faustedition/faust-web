@@ -420,9 +420,14 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
     // fully fit inside the facsimile container (outermost node / domNodes)
     // returns the determined scale value
     var fitScale = function fitScale() {
+      try {
         var scale = setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth,
-                                 domNodes.getBoundingClientRect().height / metadata.imageHeight));
+          domNodes.getBoundingClientRect().height / metadata.imageHeight));
         return scale;
+      } catch (e) {
+        console.log(e);
+        return undefined;
+      }
     };
 
     var rotate = function(direction) {
@@ -582,7 +587,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       var insertOverlay = function(overlayText) {
           domNodes.text.innerHTML = overlayText;
           events.triggerEvent("overlayLoaded");
-          Faust.dom.removeAllChildren(domNodes.imageInfo);
+          // Faust.dom.removeAllChildren(domNodes.imageInfo);
           showElement(domNodes.rotateContainer, true);
           return domNodes.text;
       };
@@ -631,6 +636,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             setBackgroundImage(args.backgroundZoomLevel);
 
             addMouseMoveScroll(domNodes);
+            showElement(domNodes.rotateContainer, true);
     };
 
 
@@ -659,7 +665,11 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
 
       if(args.hasImageTextLink === true) {
         overlayPromise = Faust.xhr.get(args.overlayUrl, 'text')
-          .then(insertOverlay);
+          .then(insertOverlay)
+          .catch(function(reason) {
+            console.error('Fehler beim Laden der Transkriptionsüberblendung', reason);
+            return Promise.resolve(true);
+          })
       } else {
         Faust.dom.removeAllChildren(domNodes.imageInfo);
         showElement(domNodes.rotateContainer, true);
@@ -689,16 +699,22 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       domNodes.showOverlay = showOverlay;
       domNodes.addFacsimileEventListener = events.addEventListener;
 
-      return Promise
-        .all([facsimilePromise, overlayPromise])
-        .then(function () {
-          showElement(domNodes.imageInfo, false);
-          return domNodes;
-        })
-        .catch(function (reason) {
-          Faust.error('Fehler beim Laden des Digitalisats', reason, domNodes.imageInfo);
-          showElement(domNodes.imageInfo, true);
-        })
+      if (args.hasFacsimile) {
+        return Promise
+          .all([facsimilePromise, overlayPromise])
+          .then(function () {
+            showElement(domNodes.imageInfo, false);
+            return domNodes;
+          })
+          .catch(function (reason) {
+            Faust.error('Fehler beim Laden des Digitalisats', reason, domNodes.imageInfo);
+            showElement(domNodes.imageInfo, true);
+          })
+      } else {
+        domNodes.imageInfo.innerHTML = '<div>Kein Digitalisat verfügbar</div>'
+        showElement(domNodes.imageInfo, true);
+        return Promise.resolve(domNodes);
+      }
   };
 
   var imageOverlay = {
