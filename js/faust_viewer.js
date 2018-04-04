@@ -190,7 +190,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           }
       };
       window.addEventListener('hashchange', function (ev) {
-          console.log('Hash change!');
           state.fromLocation();
           setPage(state.page);
       });
@@ -469,7 +468,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
       // or the view is the same as the one currently shown, nothing happens
       var setView = function setView(newView){
           var oldView = state.view;
-          console.log('Switching from', oldView, 'view to', newView, 'view')
           state.view = newView;
           for (var viewName in views)
               views[viewName].hide();

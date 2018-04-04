@@ -300,8 +300,6 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
     var metadata = null;
     var domNodes = null;
 
-    var metadataLoadedCallback = null;
-
     var showElement = function (element, show) {
         if (show === true) {
           element.style.display = "block";
@@ -422,7 +420,9 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
     // fully fit inside the facsimile container (outermost node / domNodes)
     // returns the determined scale value
     var fitScale = function fitScale() {
-        return setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth, domNodes.getBoundingClientRect().height / metadata.imageHeight));
+        var scale = setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth,
+                                 domNodes.getBoundingClientRect().height / metadata.imageHeight));
+        return scale;
     };
 
     var rotate = function(direction) {
@@ -579,43 +579,22 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         return image;
     };
 
-    var overlayLoadHandler = function(overlayXhr) {
-        if(overlayXhr.status !== 200) {
-          // if no overlay was found write a message to imageInfo.
-          // domNodes.imageInfo.innerHTML = htmlStrings.overlayLoadError;
-          // previous command commented out until needed or wished. until then mute if no overlay was found
-          showElement(domNodes.imageInfo, false);
-        } else {
-          domNodes.text.innerHTML = overlayXhr.responseText;
+      var insertOverlay = function(overlayText) {
+          domNodes.text.innerHTML = overlayText;
           events.triggerEvent("overlayLoaded");
           Faust.dom.removeAllChildren(domNodes.imageInfo);
-        }
-        showElement(domNodes.rotateContainer, true);
-    };
+          showElement(domNodes.rotateContainer, true);
+          return domNodes.text;
+      };
 
-    var metadataLoadHandler = function(metadataXhr) {
+    var insertFacsimileTiles = function(metadataText) {
 
         var i;
 
-        // Test if metadata was loaded successfully
-        if(metadataXhr.status !== 200) {
-          // metadata wasn't loaded properly. Echo error message
-          domNodes.imageInfo.innerHTML = htmlStrings.imageMetadataLoadError;
-        } else {
           // metadata was found. Try to parse
-          try {
-            metadata = JSON.parse(metadataXhr.responseText);
+            metadata = JSON.parse(metadataText);
             // Metadata is available.
             domNodes.imageInfo.innerHTML = htmlStrings.metadataLoaded;
-
-            // if an overlay exists try to load it
-            // Since xhr is async try to get overlay
-            if(args.hasImageTextLink === true) {
-              Faust.xhr.getXhr(args.overlayUrl, overlayLoadHandler);
-            } else {
-              Faust.dom.removeAllChildren(domNodes.imageInfo);
-              showElement(domNodes.rotateContainer, true);
-            }
 
             // Set width and height of all elements beneath rotate container to width
             // and height of original image
@@ -652,13 +631,6 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             setBackgroundImage(args.backgroundZoomLevel);
 
             addMouseMoveScroll(domNodes);
-
-          } catch (exception) {
-            domNodes.imageInfo.innerHTML = htmlStrings.imageMetadataParseError;
-          }
-
-          events.triggerEvent("metadataLoaded");
-        }
     };
 
 
@@ -672,13 +644,26 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       showElement(domNodes.imageInfo, true);
       domNodes.imageInfo.innerHTML = htmlStrings.loadingMetadata;
 
+      var facsimilePromise, overlayPromise;
       // test if facsimile is available
       if(args.hasFacsimile === false) {
         // if no facsimile exists, set text to imageInfo div. images are still hidden, so text is modal
         domNodes.imageInfo.innerHTML = htmlStrings.noFacsimileAvailable;
+        facsimilePromise = Promise.resolve(domNodes.imageInfo);
       } else {
         // else try to get metadata
-        Faust.xhr.getXhr(args.imageMetadataUrl, metadataLoadHandler);
+        // Faust.xhr.getXhr(args.imageMetadataUrl, metadataLoadHandler);
+        facsimilePromise = Faust.xhr.get(args.imageMetadataUrl, 'text')
+          .then(insertFacsimileTiles);
+      }
+
+      if(args.hasImageTextLink === true) {
+        overlayPromise = Faust.xhr.get(args.overlayUrl, 'text')
+          .then(insertOverlay);
+      } else {
+        Faust.dom.removeAllChildren(domNodes.imageInfo);
+        showElement(domNodes.rotateContainer, true);
+        overlayPromise = Promise.resolve(domNodes.imageInfo);
       }
 
       if (args.copyright) {
@@ -703,36 +688,47 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       domNodes.fitScale = fitScale;
       domNodes.showOverlay = showOverlay;
       domNodes.addFacsimileEventListener = events.addEventListener;
-      return domNodes;
+
+      return Promise
+        .all([facsimilePromise, overlayPromise])
+        .then(function () {
+          showElement(domNodes.imageInfo, false);
+          return domNodes;
+        })
+        .catch(function (reason) {
+          Faust.error('Fehler beim Laden des Digitalisats', reason, domNodes.imageInfo);
+          showElement(domNodes.imageInfo, true);
+        })
   };
 
   var imageOverlay = {
 
       createImageOverlay: createImageOverlay,
+
       init: function init(parent, state, controller) {
+          var that = this;
           this.state = state;
           this.controller = controller;
+
 
           var container = document.createElement("div");
           container.id = "facsimile-content";         // FIXME do we need an ID?
           container.className = "facsimile-content view-content";
           this.container = container;
           parent.appendChild(container);
-          this.loadPage(state.page);
-          this.bindControls();
-
+          this.loadPage(state.page)
+            .then(function (value) { that.bindControls() });
       },
-      loadPage : function(pageNo) {
 
+      loadPage : function(pageNo) {
           var currentPage = this.state.doc.pages[pageNo - 1];
-          /* if(currentPage.facsimile === null) { // cache for the facsimile view */
           var currentMetadata = this.state.doc.metadata.pages[pageNo - 1];
           var that = this;
-          var facsimile = null;
+          var pagePromise;
           // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
           // docTranscript exists and if it has images attached
           if (currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
-              facsimile = this.createImageOverlay(
+              pagePromise = this.createImageOverlay(
                   {
                       "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
                       "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
@@ -744,40 +740,23 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
                       "copyright": this.state.doc.getFacsCopyright()
                   });
           } else {
-              facsimile = this.createImageOverlay({"hasFacsimile": false});
+              pagePromise = this.createImageOverlay({"hasFacsimile": false});
           }
-          // currentPage.facsimile = facsimile;
-          // FIXME
-          Faust.dom.removeAllChildren(this.container);
-          this.container.appendChild(facsimile);
-          this.facsimile = facsimile;
-          facsimile.addFacsimileEventListener("scaleChanged", function (newScale) {
+          return pagePromise.then(function (facsimile) {
+            Faust.dom.removeAllChildren(that.container);
+            that.container.appendChild(facsimile);
+            that.facsimile = facsimile;
+            facsimile.addFacsimileEventListener("scaleChanged", function (newScale) {
               that.state.scale = newScale;
-          });
-
-          if (this.state.scale === undefined) {
-              facsimile.addFacsimileEventListener("metadataLoaded", function () {
-                  that.state.scale = facsimile.fitScale();
-              });
-              facsimile.addFacsimileEventListener("overlayLoaded", function () {
-                  facsimile.showOverlay(that.state.showOverlay);
-                  docTranscriptViewer.transcriptTooltips(facsimile);
-              });
-          } else {
-              facsimile.addFacsimileEventListener("metadataLoaded", function () {
-                  facsimile.setScale(that.state.scale);
-              });
-              facsimile.addFacsimileEventListener("overlayLoaded", function () {
-                  facsimile.showOverlay(that.state.showOverlay);
-                  docTranscriptViewer.transcriptTooltips(facsimile);
-              });
-          }
-          /* } else {
-              Faust.dom.removeAllChildren(container);
-              currentPage.facsimile.showOverlay(state.showOverlay);
-              container.appendChild(currentPage.facsimile);
-              currentPage.facsimile.setScale(state.scale);
-          }*/
+            });
+            if (that.state.scale === undefined) {
+                that.state.scale = facsimile.fitScale();
+            } else {
+              facsimile.setScale(that.state.scale);
+            }
+            facsimile.showOverlay(that.state.showOverlay);
+            docTranscriptViewer.transcriptTooltips(facsimile);
+          }); // TODO catch
       },
       show : function () { this.visible = true;  this.container.style.display = 'block'; this.shown(); },
       hide : function () { this.visible = false; this.container.style.display = 'none';  this.hidden(); },
@@ -797,9 +776,10 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           var rotateLeft = function () { if (that.visible) that.facsimile.rotate("left"); };
           var rotateRight = function () { if (that.visible) that.facsimile.rotate("right"); };
           var toggleOverlay = function () {
-              if (that.visible) {
+              if (that.visible && that.facsimile) {
                   that.state.showOverlay = !that.state.showOverlay;
                   Faust.toggleButtonState('#toggle-overlay-button', that.state.showOverlay);
+                  that.facsimile.showOverlay(that.state.showOverlay);
               }
           };
 
