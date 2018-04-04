@@ -189,6 +189,11 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
           }
       };
+      window.addEventListener('hashchange', function (ev) {
+          console.log('Hash change!');
+          state.fromLocation();
+          setPage(state.page);
+      });
 
       // allow other objects to listen to events
       var events = Faust.event.createEventQueue();

@@ -52,6 +52,11 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
                 }
             },
 
+            updateHash: function(hash) {
+                var fragment = hash || this.state.fragment;
+                revealState(this.container, this.state.page, fragment);
+            },
+
             setPage: function(pageNum, fragment) {
                 var filename = this.state.doc.findSection(pageNum);
                 fragment = fragment || this.state.fragment;
@@ -64,7 +69,7 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
                         console.error('Fehler beim Laden von S. ' + pageNum + ' des textuellen Transkripts', reason);
                     });
             },
-            show : function () { this.container.style.display = 'block'; },
+            show : function () { this.container.style.display = 'block'; revealState(this.container, this.state.page, this.state.fragment); },
             hide : function () { this.container.style.display = 'none'; },
         };
 
@@ -81,10 +86,14 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
          */
         var revealState = function revealState(doc, pageNum, fragment) {
             var result = false;
+            // remove old fragment highlight class
+            doc.querySelectorAll('.target').forEach(function(el) {el.classList.remove('target');});
+
             if(doc.querySelector("#dt" + pageNum) !== null) {
                 doc.querySelector("#dt" + pageNum).scrollIntoView();
                 result = true;
             }
+
             if (fragment) {
                 result = false;
                 var currentTarget = doc.querySelector("#" + fragment.replace(/\./g, '\\.'));
