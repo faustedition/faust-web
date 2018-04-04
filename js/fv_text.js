@@ -54,6 +54,7 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
 
             setPage: function(pageNum, fragment) {
                 var filename = this.state.doc.findSection(pageNum);
+                fragment = fragment || this.state.fragment;
                 return this
                     .loadFile(filename)
                     .then(function (root) {

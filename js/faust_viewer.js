@@ -392,6 +392,9 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           } else if(newPage > state.doc.pageCount) {
             newPage = state.doc.pageCount;
           }
+          if (state.page !== newPage) {
+              state.fragment = '';
+          }
           state.page = newPage;
 
           for (var viewName in views) {
