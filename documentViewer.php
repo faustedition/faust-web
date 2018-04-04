@@ -10,6 +10,13 @@
       <div id="rotate-left" class="pure-button" title="Nach links drehen"><i class="fa fa-ccw"></i></div>
       <div id="rotate-right" class="pure-button" title="Nach rechts drehen"><i class="fa fa-cw"></i></div>
       <div id="toggle-overlay-button" class="pure-button pure-button-primary" title="Überblendung ein-/ausschalten"><i class="fa fa-text-overlay"></i></div>
+      <!-- FIXME improve styling etc.: -->
+      <div id="facsimile-layer-button" class="pure-button" title="nächstes Digitalisat dieser Seite" style="display: none;">
+          <span class="fa-stack" style="display: inline-block; width: 1em; height: 1em; line-height: 1em;">
+              <i class="fa fa-doc"></i>
+              <span id="facsimile-layer-badge" class="fa-stack-1x">1</span>
+          </span>
+      </div>
     </div>
     <div id="page-navigation" class="page">
       <div id="first-page-button" class="pure-button" title="Erste Seite"><i class="fa fa-to-start"></i></div>

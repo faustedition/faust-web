@@ -48,6 +48,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
       // viewer instance variables
       var state = {
         page: 1,
+        layer: 0,
         view: "structure",
         scale: undefined,
         imageBackgroundZoomLevel: 3,
@@ -61,6 +62,9 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               var url = fixedPath + '?faustUri=' + state.doc.faustUri + '&page=' + this.page + '&view=' + this.view;
               if (this.section) {
                   url += '&section=' + this.section;
+              }
+              if (this.layer > 0) {
+                url += '&layer=' + this.layer;
               }
               if (this.fragment) {
                   url += '#' + this.fragment;
@@ -82,6 +86,10 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               // first (1) page of the witness
               if (getParameters.page && !isNaN(parseInt(getParameters.page))) {
                   this.page = parseInt(getParameters.page);
+              }
+
+              if (getParameters.layer && isNaN(parseInt(getParameters.layer))) {
+                  this.layer = parseInt(getParameters.layer);
               }
 
               if (getParameters.section) {

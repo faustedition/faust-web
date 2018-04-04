@@ -748,14 +748,16 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           var pagePromise;
           // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
           // docTranscript exists and if it has images attached
+          this.setLayer(this.state.layer);
+          var layer = this.state.layer;
           if (currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
               pagePromise = this.createImageOverlay(
                   {
                       "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
                       "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
-                      "imageMetadataUrl": currentMetadata.docTranscripts[0].images[0].metadataUrl,
-                      "jpgBaseUrl": currentMetadata.docTranscripts[0].images[0].jpgUrlBase,
-                      "tileBaseUrl": currentMetadata.docTranscripts[0].images[0].tileUrlBase,
+                      "imageMetadataUrl": currentMetadata.docTranscripts[0].images[layer].metadataUrl,
+                      "jpgBaseUrl": currentMetadata.docTranscripts[0].images[layer].jpgUrlBase,
+                      "tileBaseUrl": currentMetadata.docTranscripts[0].images[layer].tileUrlBase,
                       "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
                       "backgroundZoomLevel": this.state.imageBackgroundZoomLevel,
                       "copyright": this.state.doc.getFacsCopyright()
@@ -783,12 +785,37 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       hide : function () { this.visible = false; this.container.style.display = 'none';  this.hidden(); },
       shown: function () {
           document.getElementById("facsimile-settings").style.display = "block";
+          document.getElementById("facsimile-layer-button").style.display =
+            this.getLayerCount() > 1? "inline-block" : "none";
       },
       hidden: function() {
           document.getElementById("facsimile-settings").style.display = "none";
       },
       setPage: function (pageNo) {
           return this.loadPage(pageNo);
+      },
+      getLayerCount: function() {
+        var pageMetadata = this.state.doc.metadata.pages[this.state.page - 1];
+        return pageMetadata.docTranscripts[0].images.length;
+      },
+      nextLayer: function() {
+        if (this.visible) {
+          var layers = this.getLayerCount();
+          if (layers > 1) {
+            this.setLayer((this.state.layer + 1) % layers);
+            this.state.toLocation();
+          } else {
+            this.setLayer(0);
+          }
+        }
+        this.setPage(this.state.page);
+      },
+      setLayer: function(layer) {
+        console.log(layer, this.getLayerCount())
+        this.state.layer = layer % this.getLayerCount();
+        document.getElementById("facsimile-layer-button").style.display =
+          this.getLayerCount() > 1? "inline-block" : "none";
+        document.getElementById("facsimile-layer-badge").innerHTML = this.state.layer;
       },
       bindControls: function() {
           var that = this;
@@ -803,12 +830,16 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
                   that.facsimile.showOverlay(that.state.showOverlay);
               }
           };
+          var nextLayer = function () {
+            that.nextLayer();
+          }
 
           Faust.bindBySelector('#zoom-in-button', zoomIn);
           Faust.bindBySelector('#zoom-out-button', zoomOut);
           Faust.bindBySelector('#rotate-left', rotateLeft);
           Faust.bindBySelector('#rotate-right', rotateRight);
           Faust.bindBySelector('#toggle-overlay-button', toggleOverlay);
+          Faust.bindBySelector('#facsimile-layer-button', nextLayer);
       }
   };
   return function (container, state, controller) {
