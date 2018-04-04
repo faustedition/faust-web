@@ -28,6 +28,7 @@
       <div id="show-facsimile_document-button" class="pure-button" title="Faksimile | Dokumentarische Transkription"><i class="fa fa-picture"></i> | <i class="fa fa-doc-transscript"></i></div>
       <div id="show-document-button" class="pure-button" title="Dokumentarische Transkription"><i class="fa fa-doc-transscript"></i></div>
       <div id="show-document_text-button" class="pure-button" title="Dokumentarische Transkription | Textuelle Transkription"><i class="fa fa-doc-transscript"></i> | <i class="fa fa-text-transscript"></i></div>
+      <div id="show-facsimile_text-button" class="pure-button" title="Facsimile | Textuelle Transkription"><i class="fa fa-picture"></i> | <i class="fa fa-text-transscript"></i></div>
       <div id="show-text-button" class="pure-button" title="Textuelle Transkription"><i class="fa fa-text-transscript"></i></div>
       <div id="show-print-button" class="pure-button" title="Variantenapparat"><i class="fa fa-variants"></i></div>
     </div>

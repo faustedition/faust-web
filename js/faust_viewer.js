@@ -222,6 +222,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           views.document = createDocTranscriptView(parentDomNode, state, controller);
           views.document_text = createSplitView(parentDomNode, state, controller,
               createDocTranscriptView, function(p,s,c) { return createTextualView(p,s,c,'app');});
+          views.facsimile_text = createSplitView(parentDomNode, state, controller,
+              createFacsimileView, function (p,s,c) { return createTextualView(p,s,c,'app'); });
           views.text = createTextualView(parentDomNode, state, controller, 'app');
           views.print = createTextualView(parentDomNode, state, controller, 'print');
           views.structure = createStructureView(parentDomNode, state, controller);
