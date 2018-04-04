@@ -1,5 +1,9 @@
 define(['faust_common'], function (Faust) {
 
+    var errorMessages = {
+      missingDocTranscript: "<div>Kein dokumentarisches Transkript vorhanden</div>",
+      loadErrorDocTranscript: "<div>Dokumentarisches Transkript konnte nicht geladen werden</div>",
+    };
 
     /**
      * Make patches transparent on mouse hover.
@@ -219,7 +223,7 @@ define(['faust_common'], function (Faust) {
                 url = page.docTranscripts[0].docTranscriptUrl,
                 loadDocTranscript = page.hasDocTranscripts ?
                     Faust.xhr.get(url, "text")
-                    : Promise.resolve(contentHtml.missingDocTranscript);
+                    : Promise.resolve(errorMessages.missingDocTranscript);
             return loadDocTranscript.then(
                 function (docTranscriptHtml) {
                     var docTranscriptDiv = document.createElement("div");
@@ -228,7 +232,7 @@ define(['faust_common'], function (Faust) {
                     if (docTranscriptHtml) {
                         docTranscriptDiv.innerHTML = docTranscriptHtml;
                     } else {
-                        docTranscriptDiv.innerHTML = contentHtml.missingDocTranscript;
+                        docTranscriptDiv.innerHTML = errorMessages.missingDocTranscript;
                     }
 
                     // that.cache[pageNo] = docTranscriptDiv;

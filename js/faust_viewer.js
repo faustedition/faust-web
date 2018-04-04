@@ -21,8 +21,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
     loadErrorImageMetadata: "{\"hasImages\": false, \"noImageLoadable\": true}",
     missingFacsimileOverlay: "<div>Kein dokumentarisches Transkript vorhanden - Facsimile-Overlay kann nicht existieren</div>",
     loadErrorFacsimielOverlay: "<div>Facsimile Overlay konnte nicht geladen werden</div>",
-    missingDocTranscript: "<div>Kein dokumentarisches Transkript vorhanden</div>",
-    loadErrorDocTranscript: "<div>Dokumentarisches Transkript konnte nicht geladen werden</div>",
     missingTextTranscript: "<div>Kein Textuelles Transkript vorhanden</div>",
     missingTextAppTranscript: "<div>Kein Textuelles Transkript vorhanden</div>"
   };
