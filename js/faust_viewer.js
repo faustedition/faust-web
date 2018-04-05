@@ -127,6 +127,10 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                 state.doc.pageCount = state.doc.metadata.pageCount;
                 state.doc.sigil = currentMetadata.sigil;
                 state.doc.printLinks = pagesMapping[state.doc.faustUri];
+                if (currentMetadata['type'] === 'print') {
+                  var newUrl = window.location.protocol + '//' + window.location.host + '/print/' + currentMetadata.text.replace(/\.xml$/, '');
+                  window.location.href = newUrl;
+                }
               } else {
                 var id = sigil || state.doc.faustUri;
                 Faust.error("Dokument " + id + " existiert nicht.",
