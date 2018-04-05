@@ -779,6 +779,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             }
             facsimile.showOverlay(that.state.showOverlay);
             docTranscriptViewer.transcriptTooltips(facsimile);
+            return facsimile;
           }); // TODO catch
       },
       show : function () { this.visible = true;  this.container.style.display = 'block'; this.shown(); },
@@ -787,12 +788,23 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           document.getElementById("facsimile-settings").style.display = "block";
           document.getElementById("facsimile-layer-button").style.display =
             this.getLayerCount() > 1? "inline-block" : "none";
+          if (this.facsimile) {
+            if (this.state.scale)
+              this.facsimile.setScale(this.state.scale);
+            else
+              this.facsimile.fitScale();
+          }
       },
       hidden: function() {
           document.getElementById("facsimile-settings").style.display = "none";
       },
       setPage: function (pageNo) {
-          return this.loadPage(pageNo);
+          var that = this;
+          return this.loadPage(pageNo)
+            .then(function (facsimile) {
+              that.facsimile = facsimile;
+              facsimile.fitScale();
+              return facsimile; });
       },
       getLayerCount: function() {
         var pageMetadata = this.state.doc.metadata.pages[this.state.page - 1];
