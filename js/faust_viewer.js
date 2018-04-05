@@ -88,7 +88,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   this.page = parseInt(getParameters.page);
               }
 
-              if (getParameters.layer && isNaN(parseInt(getParameters.layer))) {
+              if (getParameters.layer && !isNaN(parseInt(getParameters.layer))) {
                   this.layer = parseInt(getParameters.layer);
               }
 

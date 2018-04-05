@@ -812,7 +812,11 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       },
       setLayer: function(layer) {
         console.log(layer, this.getLayerCount())
-        this.state.layer = layer % this.getLayerCount();
+        var newLayer = layer % this.getLayerCount();
+        if (this.state.layer !== newLayer) {
+          this.state.layer = newLayer;
+          this.state.toLocation(true);
+        }
         document.getElementById("facsimile-layer-button").style.display =
           this.getLayerCount() > 1? "inline-block" : "none";
         document.getElementById("facsimile-layer-badge").innerHTML = this.state.layer;
