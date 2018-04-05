@@ -267,11 +267,11 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
           // facsimile and documentary transcript can exist for every page of a witness. set view to
           // current page and try to load related files (if not already done)
-          setPage(state.page);
+          setPage(state.page, true);
 
           // if a view parameter was set in get request, use it. otherwise use the preset
           // default-value from state.view (currently 'facsimile'-view)
-          setView(state.view);
+          setView(state.view, true);
 
           // init tooltips for the navigation bar
           Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
@@ -406,7 +406,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 // Page manipulation
       // set new page to view. if new page number is out ouf range (<1 or >pages in document), the closest
       // number to a allowed page is used
-      var setPage = function setPage(newPage) {
+      var setPage = function setPage(newPage, initializing) {
           if(newPage < 1) {
             newPage = 1;
           } else if(newPage > state.doc.pageCount) {
@@ -426,7 +426,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           }
            updateControlsToPage(newPage);
 
-          state.toLocation();
+          state.toLocation(!!initializing);
 
           return state.page;
       };
@@ -482,7 +482,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 // view manipulation
       // set the view of the current selected page. if the new page value is not a valid mode
       // or the view is the same as the one currently shown, nothing happens
-      var setView = function setView(newView){
+      var setView = function setView(newView, initializing){
           var oldView = state.view;
           if (!views.hasOwnProperty(newView)) {
             Faust.error('', 'View ' + newView + ' does not exist');
@@ -502,7 +502,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           _checkVisibleViews(1);
           document.getElementById('show-' + newView + '-button').classList.add('pure-button-primary');
 
-          state.toLocation();
+          state.toLocation(!!initializing);
           events.triggerEvent("viewChanged", state.view);
           return state.view;
       };
