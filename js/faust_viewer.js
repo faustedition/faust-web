@@ -231,7 +231,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           state.fromLocation();
           state.initMetadata(); // FIXME refactor
 
-          document.title = document.title + " – " + state.doc.sigil;
+          document.title = document.title + " – " + state.doc.metadata.sigils.idno_faustedition;
 
           // create elements that will contain the available views
           // createDomNodes(parentDomNode);
@@ -380,7 +380,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
               {caption: "Archiv", link: "archive"},
               {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
-              {caption: state.doc.sigil}]));
+              {caption: state.doc.metadata.sigils.idno_faustedition}]));
 
           // get information about scene that contains current page
           verseNo = getSceneData(state.doc.faustUri, pageNum);
@@ -389,7 +389,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           if (verseNo !== undefined) {
               breadcrumbs.appendChild(document.createElement("br"));
               var breadcrumbData = Faust.genesisBreadcrumbData(verseNo, verseNo, false);
-              breadcrumbData.push({caption: state.doc.sigil});
+              breadcrumbData.push({caption: state.doc.metadata.sigils.idno_faustedition});
               breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
           }
       }
