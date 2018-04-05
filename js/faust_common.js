@@ -1060,8 +1060,8 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     var wrapper = container.firstChild.firstChild,
         titleElem = wrapper.children[0],
         msgElem = wrapper.children[2];
-    titleElem.textContent = title;
-    msgElem.textContent = msg;
+    titleElem.innerHTML = title;
+    msgElem.innerHTML = msg;
     parent.insertBefore(container, parent.firstChild);
   };
 

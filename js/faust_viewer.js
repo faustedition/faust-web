@@ -59,7 +59,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           // updates the address in the browser bar to a value calculated from state and state.doc
         toLocation: function toLocation(replaceHistory) {
               var fixedPath = window.location.pathname.replace(/^\/+/, '/');
-              var url = fixedPath + '?faustUri=' + state.doc.faustUri + '&page=' + this.page + '&view=' + this.view;
+              var url = fixedPath + '?sigil=' + state.doc.sigil + '&page=' + this.page + '&view=' + this.view;
               if (this.section) {
                   url += '&section=' + this.section;
               }
@@ -81,6 +81,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           fromLocation: function fromLocation() {
               var getParameters = Faust.url.getParameters();
               this.doc.faustUri = getParameters.faustUri;
+              this.doc.sigil = getParameters.sigil;
+
 
               // if a valid page was given as parameter use ist. otherwise this.page is preset to the
               // first (1) page of the witness
@@ -113,18 +115,24 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
            */
           initMetadata: function initMetadata() {
               // get relative faust uri that can be matched with entries within faust documents metadata
-              var relativeFaustUri = state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "");
+              var relativeFaustUri = state.doc.faustUri? state.doc.faustUri.replace(faustDocumentsMetadata.basePrefix + "document/", "") : undefined;
+              var sigil = state.doc.sigil;
 
-              // now find metadata for the document to view and convert it in a useable form
-              faustDocumentsMetadata.metadata.forEach(function(currentMetadata){
-                  if(currentMetadata.document === relativeFaustUri) {
-                      state.doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
-                      state.doc.faustMetadata = currentMetadata;
-                      state.doc.pageCount = state.doc.metadata.pageCount;
-                      state.doc.sigil = currentMetadata.sigils.idno_faustedition;
-                  }
-              });
-              state.doc.printLinks = pagesMapping[state.doc.faustUri];
+              var currentMetadata = faustDocumentsMetadata.metadata.find(function(el) {
+                return sigil && (el.sigil === sigil) || relativeFaustUri && (el.document === relativeFaustUri) });
+              if (currentMetadata) {
+                state.doc.metadata = Faust.doc.createDocumentFromMetadata(currentMetadata);
+                state.doc.faustUri = faustDocumentsMetadata.basePrefix + "document/" + currentMetadata.document;
+                state.doc.faustMetadata = currentMetadata;
+                state.doc.pageCount = state.doc.metadata.pageCount;
+                state.doc.sigil = currentMetadata.sigil;
+                state.doc.printLinks = pagesMapping[state.doc.faustUri];
+              } else {
+                var id = sigil || state.doc.faustUri;
+                Faust.error("Dokument " + id + " existiert nicht.",
+                  "Sie können <a href='/search?q=" + id + "'>über die Suchfunktion</a> oder " +
+                  "<a href='/archive'>manuell im Archiv</a> nach dem Dokument suchen.");
+              }
           },
 
           // structure representing the current document
