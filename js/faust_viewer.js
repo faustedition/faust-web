@@ -365,7 +365,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               var pdfButton = document.getElementById('diplomatic-pdf-button'),
                   debugButton = document.getElementById('diplomatic-debug-button');
               pdfButton.removeAttribute('disabled');
-              pdfButton.href = state.doc.faustUri.replace(/^faust:\/\/xml\/document/, 'transcript/diplomatic') + '/page_' + state.page + '.pdf';
+              pdfButton.href = 'transcript/diplomatic/' + state.doc.sigil + '/page_' + state.page + '.pdf';
               debugButton.removeAttribute('disabled');
               debugButton.href = "debug.html" + window.location.search;
           } catch (e) {

@@ -107,7 +107,7 @@ define(['faust_common', 'faust_structure'],
                         }),
 
                     // metadata html
-                    Faust.xhr.get("meta/" + baseName + '.html', 'text')
+                    Faust.xhr.get("meta/" + state.doc.sigil + '.html', 'text')
                         .then(function (documentHtml) {
                             that.metadataDiv.innerHTML = documentHtml;
                             // that.metadataDiv.firstElementChild.style.height = parentDomNode.offsetHeight + "px"; FIXME when we know that offset?

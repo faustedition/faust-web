@@ -377,8 +377,8 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
             // create url pointing to generated textual transcript and facsimile overlay
             if(currentDocTranscript.uri) {
               resultDocTranscript.hasUri = true;
-              resultDocTranscript.docTranscriptUrl = "transcript/diplomatic/" + documentObject.documentUri + "/page_" + (currentPageIndex + 1) + ".svg";
-              resultDocTranscript.facsimileOverlayUrl = "transcript/overlay/" + documentObject.documentUri + "/page_" + (currentPageIndex + 1) + ".svg";
+              resultDocTranscript.docTranscriptUrl = "transcript/diplomatic/" + documentObject.sigil + "/page_" + (currentPageIndex + 1) + ".svg";
+              resultDocTranscript.facsimileOverlayUrl = "transcript/overlay/" + documentObject.sigil + "/page_" + (currentPageIndex + 1) + ".svg";
             } else {
               resultDocTranscript.hasUri = true;
             }
