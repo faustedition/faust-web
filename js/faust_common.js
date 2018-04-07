@@ -1056,13 +1056,17 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       parent = document.getElementById("main-content");
     }
     var container = Faust.dom.createElement({name: "div", class: "error-container center pure-g-r", parent: parent});
-    container.innerHTML = '<div class="pure-u-1"><p class="pure-alert pure-alert-danger"><strong class="error-title"></strong><span>&nbsp;</span><span class="error-msg"></span></p></div>';
+    container.innerHTML = '<div class="pure-u-1"><p class="pure-alert pure-alert-danger"><i class="fa fa-cancel pure-pull-right closebtn"></i><strong class="error-title"></strong><span>&nbsp;</span><span class="error-msg"></span></p></div>';
     var wrapper = container.firstChild.firstChild,
-        titleElem = wrapper.children[0],
-        msgElem = wrapper.children[2];
+        titleElem = wrapper.children[1],
+        msgElem = wrapper.children[3],
+        closebtn = wrapper.children[0];
     titleElem.innerHTML = title;
     msgElem.innerHTML = msg;
     parent.insertBefore(container, parent.firstChild);
+    closebtn.onclick = function () {
+      parent.removeChild(container);
+    }
   };
 
   Faust.bindBySelector = function bindBySelector(selector, func, event) {
