@@ -1,7 +1,7 @@
 /* ********************** */
 /* Dokumenten Viewer
 /* ********************** */
-body.documentViewer main {
+body.documentViewer main, body.document main {
   position: absolute;
   left: 0;
   right: 0;
