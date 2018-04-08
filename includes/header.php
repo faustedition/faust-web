@@ -9,7 +9,7 @@
   }
 
   $classes = array();
-  if (inurl('documentViewer')) array_push($classes, 'document');
+  if (inurl('document')) array_push($classes, 'document');
 
   $base = pathinfo(parse_url($_SERVER['REQUEST_URI'])['path'], PATHINFO_FILENAME);
   array_push($classes, $base);
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/chocolat.css">
     <link rel="stylesheet" href="css/chocolat-custom.css">
-    <?php if (inurl('documentViewer')) : ?>
+    <?php if (inurl('document')) : ?>
     <link rel="stylesheet" href="css/document-viewer.css">
     <link rel="stylesheet" href="css/document-text.css">
     <link rel="stylesheet" href="css/document-transcript.css">
