@@ -9,137 +9,137 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
 
     return function createConcordanceTable(container, repository) {
 
-  // run sigil-labels-json.xsl on sigil-labels.xml (faust-gen-html) to get this list:
-  var sigilLabels = {
-	"idno_faustedition": "Faustedition",
-	"idno_wa_faust": "WA, Faust",
-	"idno_bohnenkamp": "Bohnenkamp",
-	"idno_fischer_lamberg": "Fischer-Lamberg",
-	"idno_landeck": "Landeck",
-	"idno_fa": "FA",
-	"idno_ma": "MA",
-	"idno_wa_gedichte": "WA, Gedichte",
-	"idno_wa_div": "WA, Divan",
-	"idno_hagen": "Hagen",
-	"idno_wa_I_53": "WA I 53",
-	"idno_hagen_nr": "Hagen-Nr.",
-	"idno_aa_ls_helenaank": "AA Ls, Helena-Ankündigung",
-	"idno_wa_helenaank": "WA, Helena-Ankündigung",
-	"idno_aa_wilhelmmeister": "AA, Wilhelm Meister",
-	"idno_wa_mur": "WA, Maximen und Reflexionen",
-	"idno_gsa_1": "GSA",
-	"idno_gsa_2": "GSA",
-	"idno_fdh_frankfurt": "FRA",
-	"idno_dla_marbach": "MAR",
-	"idno_sb_berlin": "BER",
-	"idno_ub_leipzig": "LEI",
-	"idno_ub_bonn": "BON",
-	"idno_veste_coburg": "COB",
-	"idno_gm_duesseldorf": "DUE",
-	"idno_sa_hannover": "HAN",
-	"idno_thlma_weimar": "WEI",
-	"idno_bb_cologny": "COL",
-	"idno_ub_basel": "BAS",
-	"idno_bj_krakow": "KRA",
-	"idno_agad_warszawa": "WAR",
-	"idno_bb_vicenza": "VIC",
-	"idno_bl_oxford": "OXF",
-	"idno_bl_london": "LON",
-	"idno_ul_edinburgh": "EDI",
-	"idno_ul_yale": "YAL",
-	"idno_tml_new_york": "NY",
-	"idno_ul_pennstate": "PEN"
-};
-
-
-
-  // remove test and the texts from the other repositories
-  documentMetadata.metadata = documentMetadata.metadata.filter(function(metadata) {
-    return metadata.text !== "test.xml" && 
-      (!repository || metadata.sigils.repository === repository)
-  });
-
-  // if we're in single repository mode, we can remove the location and (except
-  // for gsa) the second archive signature column
-  if (repository) {
-    concordanceColumns = concordanceColumns.filter(function(column) {
-      return !(column.sigils[0] === 'repository' 
-	      || repository !== 'gsa' && column.sigils[0] === 'idno_gsa_1');
-    });
-  }
-
-
-  // Map document metadata into format for table
-  // This creates a two-dimensonal (docs × columns) array of cellData objects. Each cellData object features
-  // * .text – the (plain) text to use for sort & in most cases display
-  // * .key=value – the 
-  // * .sigils = { idno, value }
-  var concordanceTableData = documentMetadata.metadata.map(function(metadata) {
-      var i, j;
-      var tableElementData = [];
-      // for each element in document metadata iterate through all concordance columns and write data
-      // from metadata if it is part of one of the concordance colimns
-      for(i = 0; i < concordanceColumns.length; i++) {
-	var tableElementColumnData = {
-	  text: "",
-	  sigils: []
-	};
-
-	// marker to find out if the current concordance column field contains more than one sigil.
-	// iterate through each sigil that will make up the data for the current concordance column
-	for(j = 0; j < concordanceColumns[i].sigils.length; j++) {
-	  var sigil_key = concordanceColumns[i].sigils[j],
-	      sigil = metadata.sigils[sigil_key];
-	  // current sigil found in document's metadata
-	  if(sigil) {
-	    // Now write the actual sigil value from document metadata to concordance table. If the current column is
-	    // "repository", than replace the sigil with it's textual representation (archive displayName)
-	    if(sigil_key === "repository" && archives[metadata.sigils[concordanceColumns[i].sigils[j]]]) {
-	      tableElementColumnData.text = tableElementColumnData.text + archives[sigil].displayName;
-	      tableElementColumnData["displayName"] = archives[sigil].displayName;
-	    } else {
-	      // if the sigil isn't "repository" write it to the result string for the current column.
-	      // if the value of the current sigil equals "none" or "n.s." than mute the output. otherwise write sigil.
-	      if( ( sigil !== "none" ) && ( sigil !== "n.s." ) ) {
-		// next condition: sigil idno_gsa_1 may only be written, if the attached repository is gsa. otherwise mute output of idno_gsa_1 sigil
-		if( !( (sigil_key === "idno_gsa_1") && !(metadata.sigils["repository"] === "gsa") ) ) {
-		  if (concordanceColumns[i].sigils.length > 1) {
-		    tableElementColumnData.sigils.push({key: sigil_key, value: sigil});
-		  }
-		  // only retain the first valid sigil in the `text` attribute to be used for sorting
-		  if (tableElementColumnData.text === "")
-		    tableElementColumnData.text = sigil;
-		}
-	      }
-	    }
-	    tableElementColumnData[concordanceColumns[i].sigils[j]] = metadata.sigils[concordanceColumns[i].sigils[j]];
-	  }
-	} 
-	tableElementData.push(tableElementColumnData);
+      // run sigil-labels-json.xsl on sigil-labels.xml (faust-gen-html) to get this list:
+      var sigilLabels = {
+        "idno_faustedition": "Faustedition",
+        "idno_wa_faust": "WA, Faust",
+        "idno_bohnenkamp": "Bohnenkamp",
+        "idno_fischer_lamberg": "Fischer-Lamberg",
+        "idno_landeck": "Landeck",
+        "idno_fa": "FA",
+        "idno_ma": "MA",
+        "idno_wa_gedichte": "WA, Gedichte",
+        "idno_wa_div": "WA, Divan",
+        "idno_hagen": "Hagen",
+        "idno_wa_I_53": "WA I 53",
+        "idno_hagen_nr": "Hagen-Nr.",
+        "idno_aa_ls_helenaank": "AA Ls, Helena-Ankündigung",
+        "idno_wa_helenaank": "WA, Helena-Ankündigung",
+        "idno_aa_wilhelmmeister": "AA, Wilhelm Meister",
+        "idno_wa_mur": "WA, Maximen und Reflexionen",
+        "idno_gsa_1": "GSA",
+        "idno_gsa_2": "GSA",
+        "idno_fdh_frankfurt": "FRA",
+        "idno_dla_marbach": "MAR",
+        "idno_sb_berlin": "BER",
+        "idno_ub_leipzig": "LEI",
+        "idno_ub_bonn": "BON",
+        "idno_veste_coburg": "COB",
+        "idno_gm_duesseldorf": "DUE",
+        "idno_sa_hannover": "HAN",
+        "idno_thlma_weimar": "WEI",
+        "idno_bb_cologny": "COL",
+        "idno_ub_basel": "BAS",
+        "idno_bj_krakow": "KRA",
+        "idno_agad_warszawa": "WAR",
+        "idno_bb_vicenza": "VIC",
+        "idno_bl_oxford": "OXF",
+        "idno_bl_london": "LON",
+        "idno_ul_edinburgh": "EDI",
+        "idno_ul_yale": "YAL",
+        "idno_tml_new_york": "NY",
+        "idno_ul_pennstate": "PEN"
       };
 
-      // store faustUri for adding link to table row later on:
-      tableElementData.faustUri = "faust://xml/document/" + metadata.document;
 
-      tableElementData.isPrint = metadata.type === "print";
 
-      // handle print witnesses
-      if(tableElementData.isPrint) {
-	var textTranscriptName = metadata.text.substr(0, metadata.text.lastIndexOf("."));
-	// XXX this shouldn't be hard-coded
-	tableElementData.printResourceName = {"A8_IIIB18": "A8_IIIB18.html", "B9_IIIB20-2": "B9_IIIB20-2.html", "Ba9_A101286": "Ba9_A101286.html", "C(1)12_IIIB23-1": "C(1)12_IIIB23-1.html", "C(1)4_IIIB24": "C(1)4_IIIB24.html", "C(2a)4_IIIB28": "C(2a)4_IIIB28.html", "C(3)12_IIIB27": "C(3)12_IIIB27.html", "C(3)4_IIIB27_chartUngleich": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)_IV3-1": "D(1)_IV3-1.html", "D(2)_IV3-6": "D(2)_IV3-6.html", "GSA_30-447-1_S_214-217": "GSA_30-447-1_S_214-217.html", "GSA_32_1420": "GSA_32_1420.html", "J_XIIA149-1808": "J_XIIA149-1808.html", "KuA_IIIE43-5-1": "KuA_IIIE43-5-1.html", "S(o)_IIIB11-2": "S(o)_IIIB11-2.html"}[textTranscriptName];
+      // remove test and the texts from the other repositories
+      documentMetadata.metadata = documentMetadata.metadata.filter(function(metadata) {
+        return metadata.text !== "test.xml" &&
+          (!repository || metadata.sigils.repository === repository)
+      });
+
+      // if we're in single repository mode, we can remove the location and (except
+      // for gsa) the second archive signature column
+      if (repository) {
+        concordanceColumns = concordanceColumns.filter(function(column) {
+          return !(column.sigils[0] === 'repository'
+            || repository !== 'gsa' && column.sigils[0] === 'idno_gsa_1');
+        });
       }
-      return tableElementData;
-    });
 
-  var HERMAPHRODITE = "faust://xml/document/archival/dla_marbach/Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.xml"; // print + manuscript
-  concordanceData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.faustUri == HERMAPHRODITE});
-  // concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
 
-  var concordanceTableContainer = container;
+      // Map document metadata into format for table
+      // This creates a two-dimensonal (docs × columns) array of cellData objects. Each cellData object features
+      // * .text – the (plain) text to use for sort & in most cases display
+      // * .key=value – the
+      // * .sigils = { idno, value }
+      var concordanceTableData = documentMetadata.metadata.map(function(metadata) {
+        var i, j;
+        var tableElementData = [];
+        // for each element in document metadata iterate through all concordance columns and write data
+        // from metadata if it is part of one of the concordance colimns
+        for(i = 0; i < concordanceColumns.length; i++) {
+          var tableElementColumnData = {
+            text: "",
+            sigils: []
+          };
 
-  // create function for table generation
-  // return function createConcordanceTable(concordanceColumns, concordanceData) {
+          // marker to find out if the current concordance column field contains more than one sigil.
+          // iterate through each sigil that will make up the data for the current concordance column
+          for(j = 0; j < concordanceColumns[i].sigils.length; j++) {
+            var sigil_key = concordanceColumns[i].sigils[j],
+              sigil = metadata.sigils[sigil_key];
+            // current sigil found in document's metadata
+            if(sigil) {
+              // Now write the actual sigil value from document metadata to concordance table. If the current column is
+              // "repository", than replace the sigil with it's textual representation (archive displayName)
+              if(sigil_key === "repository" && archives[metadata.sigils[concordanceColumns[i].sigils[j]]]) {
+                tableElementColumnData.text = tableElementColumnData.text + archives[sigil].displayName;
+                tableElementColumnData["displayName"] = archives[sigil].displayName;
+              } else {
+                // if the sigil isn't "repository" write it to the result string for the current column.
+                // if the value of the current sigil equals "none" or "n.s." than mute the output. otherwise write sigil.
+                if( ( sigil !== "none" ) && ( sigil !== "n.s." ) ) {
+                  // next condition: sigil idno_gsa_1 may only be written, if the attached repository is gsa. otherwise mute output of idno_gsa_1 sigil
+                  if( !( (sigil_key === "idno_gsa_1") && !(metadata.sigils["repository"] === "gsa") ) ) {
+                    if (concordanceColumns[i].sigils.length > 1) {
+                      tableElementColumnData.sigils.push({key: sigil_key, value: sigil});
+                    }
+                    // only retain the first valid sigil in the `text` attribute to be used for sorting
+                    if (tableElementColumnData.text === "")
+                      tableElementColumnData.text = sigil;
+                  }
+                }
+              }
+              tableElementColumnData[concordanceColumns[i].sigils[j]] = metadata.sigils[concordanceColumns[i].sigils[j]];
+            }
+          }
+          tableElementData.push(tableElementColumnData);
+        };
+
+        // store faustUri for adding link to table row later on:
+        tableElementData.faustUri = "faust://xml/document/" + metadata.document;
+
+        tableElementData.isPrint = metadata.type === "print";
+
+        // handle print witnesses
+        if(tableElementData.isPrint) {
+          var textTranscriptName = metadata.text.substr(0, metadata.text.lastIndexOf("."));
+          // XXX this shouldn't be hard-coded
+          tableElementData.printResourceName = {"A8_IIIB18": "A8_IIIB18.html", "B9_IIIB20-2": "B9_IIIB20-2.html", "Ba9_A101286": "Ba9_A101286.html", "C(1)12_IIIB23-1": "C(1)12_IIIB23-1.html", "C(1)4_IIIB24": "C(1)4_IIIB24.html", "C(2a)4_IIIB28": "C(2a)4_IIIB28.html", "C(3)12_IIIB27": "C(3)12_IIIB27.html", "C(3)4_IIIB27_chartUngleich": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)_IV3-1": "D(1)_IV3-1.html", "D(2)_IV3-6": "D(2)_IV3-6.html", "GSA_30-447-1_S_214-217": "GSA_30-447-1_S_214-217.html", "GSA_32_1420": "GSA_32_1420.html", "J_XIIA149-1808": "J_XIIA149-1808.html", "KuA_IIIE43-5-1": "KuA_IIIE43-5-1.html", "S(o)_IIIB11-2": "S(o)_IIIB11-2.html"}[textTranscriptName];
+        }
+        return tableElementData;
+      });
+
+      var HERMAPHRODITE = "faust://xml/document/archival/dla_marbach/Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.xml"; // print + manuscript
+      concordanceData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.faustUri == HERMAPHRODITE});
+      // concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
+
+      var concordanceTableContainer = container;
+
+      // create function for table generation
+      // return function createConcordanceTable(concordanceColumns, concordanceData) {
       var span;
       var i, j;
 
@@ -155,21 +155,21 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
 
       // create table header row
       for(i = 0; i < concordanceColumns.length; i++) {
-	var th = document.createElement("th");
+        var th = document.createElement("th");
 
-	th.appendChild(document.createTextNode(concordanceColumns[i].column));
-	if (i === 0) {
-	  th.dataset.sorted = true;
-	  th.dataset.sortedDirection = "ascending";
-	} else {
-	  th.dataset.sorted = false;
-	}
-	if (concordanceColumns[i].tooltip)
-	    th.setAttribute('title', concordanceColumns[i].tooltip);
-	if (concordanceColumns[i].type)
-	    th.dataset.sortableType = concordanceColumns[i].type;
+        th.appendChild(document.createTextNode(concordanceColumns[i].column));
+        if (i === 0) {
+          th.dataset.sorted = true;
+          th.dataset.sortedDirection = "ascending";
+        } else {
+          th.dataset.sorted = false;
+        }
+        if (concordanceColumns[i].tooltip)
+          th.setAttribute('title', concordanceColumns[i].tooltip);
+        if (concordanceColumns[i].type)
+          th.dataset.sortableType = concordanceColumns[i].type;
 
-	tableRow.appendChild(th);
+        tableRow.appendChild(th);
       }
       tableHead.appendChild(tableRow);
       concordanceTable.appendChild(tableHead);
@@ -178,62 +178,62 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
 
       // create rows for each column
       concordanceData.forEach(function(currentDocument, documentIndex) {
-	tableRow = document.createElement("tr");
-	if(currentDocument.isPrint) {
-	  var documentLink = "print/" + currentDocument.printResourceName;
-	} else {
-	  var documentLink = "documentViewer?faustUri=" + currentDocument.faustUri;
-	}
-	tableRow.addEventListener("click", function(event) {
-	  if (event.target.nodeName.toUpperCase() === "A"
-	      && event.target.href)
-	    window.location = event.target.href;
-	  else
-	    window.location = documentLink;
-	});
+        tableRow = document.createElement("tr");
+        if(currentDocument.isPrint) {
+          var documentLink = "print/" + currentDocument.sigil;
+        } else {
+          var documentLink = "document?sigil=" + currentDocument.sigil;
+        }
+        tableRow.addEventListener("click", function(event) {
+          if (event.target.nodeName.toUpperCase() === "A"
+            && event.target.href)
+            window.location = event.target.href;
+          else
+            window.location = documentLink;
+        });
 
-	concordanceColumns.forEach(function(currentColumn, columnIndex) {
-	  tableData = document.createElement("td");
-	  var cellData = concordanceData[documentIndex][columnIndex];
-	  // First column: faustedition sigil, explicit link
-	  if (columnIndex == 0) {
-	    var tableDataLink = document.createElement("a");
-	    tableDataLink.href = documentLink;
-	    tableDataLink.classList.add('pure-nowrap');
-	    tableDataLink.appendChild(document.createTextNode(cellData.text));
-	    tableData.appendChild(tableDataLink);
-	  // repo column: Explicit link to repo page
-	  } else if ('repository' in cellData) {
-	    var repoLink = document.createElement("a");
-	    repoLink.href = 'archive_locations_detail?id=' + cellData['repository'];
-	    repoLink.appendChild(document.createTextNode(cellData.text));
-	    tableData.appendChild(repoLink);
-	  // sigils in cells that can come from more than one sigil always get tooltips etc.
-	  } else if (cellData.sigils.length > 0) {
-	    tableData.setAttribute('data-sort', cellData.text);
-	    cellData.sigils.forEach(function(sigilData, sigilIndex, sigils) {
-	      var elem = document.createElement('span');
-	      elem.classList.add('sigil');
-	      elem.classList.add('pure-nowrap');
-	      var tooltip;
-	      if (sigilLabels[sigilData.key]) 
-		tooltip = sigilLabels[sigilData.key];
-	      else
-		tooltip = sigilData.key;
-	      elem.setAttribute('title', tooltip);
-	      elem.textContent = sigilData.value;
-	      tableData.appendChild(elem);
-	      if (sigilIndex + 1 < sigils.length) {
-		tableData.appendChild(document.createTextNode('; '));
-	      }
-	    });
-	  // everything else: Just put the text in
-	  } else {
-	    tableData.appendChild(document.createTextNode(cellData.text));
-	  }
-	  tableRow.appendChild(tableData);
-	});
-	tableBody.appendChild(tableRow);
+        concordanceColumns.forEach(function(currentColumn, columnIndex) {
+          tableData = document.createElement("td");
+          var cellData = concordanceData[documentIndex][columnIndex];
+          // First column: faustedition sigil, explicit link
+          if (columnIndex == 0) {
+            var tableDataLink = document.createElement("a");
+            tableDataLink.href = documentLink;
+            tableDataLink.classList.add('pure-nowrap');
+            tableDataLink.appendChild(document.createTextNode(cellData.text));
+            tableData.appendChild(tableDataLink);
+            // repo column: Explicit link to repo page
+          } else if ('repository' in cellData) {
+            var repoLink = document.createElement("a");
+            repoLink.href = 'archive_locations_detail?id=' + cellData['repository'];
+            repoLink.appendChild(document.createTextNode(cellData.text));
+            tableData.appendChild(repoLink);
+            // sigils in cells that can come from more than one sigil always get tooltips etc.
+          } else if (cellData.sigils.length > 0) {
+            tableData.setAttribute('data-sort', cellData.text);
+            cellData.sigils.forEach(function(sigilData, sigilIndex, sigils) {
+              var elem = document.createElement('span');
+              elem.classList.add('sigil');
+              elem.classList.add('pure-nowrap');
+              var tooltip;
+              if (sigilLabels[sigilData.key])
+                tooltip = sigilLabels[sigilData.key];
+              else
+                tooltip = sigilData.key;
+              elem.setAttribute('title', tooltip);
+              elem.textContent = sigilData.value;
+              tableData.appendChild(elem);
+              if (sigilIndex + 1 < sigils.length) {
+                tableData.appendChild(document.createTextNode('; '));
+              }
+            });
+            // everything else: Just put the text in
+          } else {
+            tableData.appendChild(document.createTextNode(cellData.text));
+          }
+          tableRow.appendChild(tableData);
+        });
+        tableBody.appendChild(tableRow);
       });
       concordanceTable.appendChild(tableBody);
 
@@ -242,5 +242,5 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
 
       return concordanceTable;
       //};
-  }
-});
+    }
+  });
