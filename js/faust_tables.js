@@ -75,11 +75,11 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
       // * .key=value – the
       // * .sigils = { idno, value }
       var concordanceTableData = documentMetadata.metadata.map(function(metadata) {
-        var i, j;
+        var columnNo, sigilNo;
         var tableElementData = [];
         // for each element in document metadata iterate through all concordance columns and write data
         // from metadata if it is part of one of the concordance colimns
-        for(i = 0; i < concordanceColumns.length; i++) {
+        for(columnNo = 0; columnNo < concordanceColumns.length; columnNo++) {
           var tableElementColumnData = {
             text: "",
             sigils: []
@@ -87,14 +87,14 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
 
           // marker to find out if the current concordance column field contains more than one sigil.
           // iterate through each sigil that will make up the data for the current concordance column
-          for(j = 0; j < concordanceColumns[i].sigils.length; j++) {
-            var sigil_key = concordanceColumns[i].sigils[j],
+          for(sigilNo = 0; sigilNo < concordanceColumns[columnNo].sigils.length; sigilNo++) {
+            var sigil_key = concordanceColumns[columnNo].sigils[sigilNo],
               sigil = metadata.sigils[sigil_key];
             // current sigil found in document's metadata
             if(sigil) {
               // Now write the actual sigil value from document metadata to concordance table. If the current column is
               // "repository", than replace the sigil with it's textual representation (archive displayName)
-              if(sigil_key === "repository" && archives[metadata.sigils[concordanceColumns[i].sigils[j]]]) {
+              if(sigil_key === "repository" && archives[metadata.sigils[concordanceColumns[columnNo].sigils[sigilNo]]]) {
                 tableElementColumnData.text = tableElementColumnData.text + archives[sigil].displayName;
                 tableElementColumnData["displayName"] = archives[sigil].displayName;
               } else {
@@ -103,7 +103,7 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
                 if( ( sigil !== "none" ) && ( sigil !== "n.s." ) ) {
                   // next condition: sigil idno_gsa_1 may only be written, if the attached repository is gsa. otherwise mute output of idno_gsa_1 sigil
                   if( !( (sigil_key === "idno_gsa_1") && !(metadata.sigils["repository"] === "gsa") ) ) {
-                    if (concordanceColumns[i].sigils.length > 1) {
+                    if (concordanceColumns[columnNo].sigils.length > 1) {
                       tableElementColumnData.sigils.push({key: sigil_key, value: sigil});
                     }
                     // only retain the first valid sigil in the `text` attribute to be used for sorting
@@ -112,23 +112,16 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
                   }
                 }
               }
-              tableElementColumnData[concordanceColumns[i].sigils[j]] = metadata.sigils[concordanceColumns[i].sigils[j]];
+              tableElementColumnData[concordanceColumns[columnNo].sigils[sigilNo]] = metadata.sigils[concordanceColumns[columnNo].sigils[sigilNo]];
             }
           }
           tableElementData.push(tableElementColumnData);
         };
 
         // store faustUri for adding link to table row later on:
-        tableElementData.faustUri = "faust://xml/document/" + metadata.document;
-
+        tableElementData.sigil = metadata.sigil;
         tableElementData.isPrint = metadata.type === "print";
 
-        // handle print witnesses
-        if(tableElementData.isPrint) {
-          var textTranscriptName = metadata.text.substr(0, metadata.text.lastIndexOf("."));
-          // XXX this shouldn't be hard-coded
-          tableElementData.printResourceName = {"A8_IIIB18": "A8_IIIB18.html", "B9_IIIB20-2": "B9_IIIB20-2.html", "Ba9_A101286": "Ba9_A101286.html", "C(1)12_IIIB23-1": "C(1)12_IIIB23-1.html", "C(1)4_IIIB24": "C(1)4_IIIB24.html", "C(2a)4_IIIB28": "C(2a)4_IIIB28.html", "C(3)12_IIIB27": "C(3)12_IIIB27.html", "C(3)4_IIIB27_chartUngleich": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)_IV3-1": "D(1)_IV3-1.html", "D(2)_IV3-6": "D(2)_IV3-6.html", "GSA_30-447-1_S_214-217": "GSA_30-447-1_S_214-217.html", "GSA_32_1420": "GSA_32_1420.html", "J_XIIA149-1808": "J_XIIA149-1808.html", "KuA_IIIE43-5-1": "KuA_IIIE43-5-1.html", "S(o)_IIIB11-2": "S(o)_IIIB11-2.html"}[textTranscriptName];
-        }
         return tableElementData;
       });
 
@@ -142,8 +135,6 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
       // return function createConcordanceTable(concordanceColumns, concordanceData) {
       var span;
       var i, j;
-
-      var currentDocument;
 
       var concordanceTable = document.createElement("table");
       concordanceTable.id = "concordanceTable";
