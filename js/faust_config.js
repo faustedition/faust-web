@@ -1,4 +1,5 @@
 requirejs.config({
+    waitSeconds: 0,
     baseUrl: '/js',
     paths: {
         data: '/data',
