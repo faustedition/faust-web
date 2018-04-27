@@ -20,31 +20,31 @@
     <meta charset='utf-8'>
     <title>Faustedition [alpha]</title>
 
-    <script type="text/javascript" src="js/require.js"></script>
-    <script type="text/javascript" src="js/faust_config.js"></script>
+    <script type="text/javascript" src="/js/require.js"></script>
+    <script type="text/javascript" src="/js/faust_config.js"></script>
 
-    <link rel="stylesheet" href="css/webfonts.css">
-    <link rel="stylesheet" href="css/pure-min.css">
-    <link rel="stylesheet" href="css/pure-custom.css">
-    <link rel="stylesheet" href="css/basic_layout.css">
-    <link rel="stylesheet" href="css/overlay.css">
-    <link rel="stylesheet" href="css/chocolat.css">
-    <link rel="stylesheet" href="css/chocolat-custom.css">
+    <link rel="stylesheet" href="/css/webfonts.css">
+    <link rel="stylesheet" href="/css/pure-min.css">
+    <link rel="stylesheet" href="/css/pure-custom.css">
+    <link rel="stylesheet" href="/css/basic_layout.css">
+    <link rel="stylesheet" href="/css/overlay.css">
+    <link rel="stylesheet" href="/css/chocolat.css">
+    <link rel="stylesheet" href="/css/chocolat-custom.css">
     <?php if (inurl('document')) : ?>
-    <link rel="stylesheet" href="css/document-viewer.css">
-    <link rel="stylesheet" href="css/document-text.css">
-    <link rel="stylesheet" href="css/document-transcript.css">
-    <link rel="stylesheet" href="css/document-transcript-highlight-hands.css">
-    <link rel="stylesheet" href="css/document-transcript-interaction.css">
-    <link rel="stylesheet" href="css/textual-transcript.css">
-    <link rel="stylesheet" href="css/prints-viewer.css">
+    <link rel="stylesheet" href="/css/document-viewer.css">
+    <link rel="stylesheet" href="/css/document-text.css">
+    <link rel="stylesheet" href="/css/document-transcript.css">
+    <link rel="stylesheet" href="/css/document-transcript-highlight-hands.css">
+    <link rel="stylesheet" href="/css/document-transcript-interaction.css">
+    <link rel="stylesheet" href="/css/textual-transcript.css">
+    <link rel="stylesheet" href="/css/prints-viewer.css">
     <?php endif; ?>
     <?php if (inurl('genesis')) : ?>
-    <link rel="stylesheet" href="css/genesis-bargraph.css">
+    <link rel="stylesheet" href="/css/genesis-bargraph.css">
     <?php endif; ?>
     <?php if (inurl('index')) : ?>
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-custom.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-custom.css">
     <?php endif; ?>
     
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -53,7 +53,7 @@
   <body class="<?php echo implode(' ', $classes); ?>">
     <header>
         <div class="logo">
-          <a href="/"><img src="img/faustlogo.svg" alt="Faustedition"></a>
+          <a href="/"><img src="/img/faustlogo.svg" alt="Faustedition"></a>
           <sup class="pure-fade-50"><mark>alpha</mark></sup>
         </div>
         <div class="breadcrumbs pure-right pure-nowrap pure-noprint pure-fade-50">
