@@ -598,6 +598,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         var i;
 
           // metadata was found. Try to parse
+        try {
             metadata = JSON.parse(metadataText);
             // Metadata is available.
             domNodes.imageInfo.innerHTML = htmlStrings.metadataLoaded;
@@ -622,14 +623,14 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
 
             // create an image for each available zoom level
             domNodes.image.images = [];
-            for(i = 0; i < metadata.zoomLevels; i++) {
-              domNodes.image.images[i] = createZoomImage(metadata, args.jpgBaseUrl, i);
+            for (i = 0; i < metadata.zoomLevels; i++) {
+                domNodes.image.images[i] = createZoomImage(metadata, args.jpgBaseUrl, i);
             }
 
             // create a div with tiles for each available zoom level
             domNodes.tile.tiles = [];
-            for(i = 0; i < metadata.zoomLevels; i++) {
-              domNodes.tile.tiles[i] = createTileDiv(metadata, args.tileBaseUrl, i);
+            for (i = 0; i < metadata.zoomLevels; i++) {
+                domNodes.tile.tiles[i] = createTileDiv(metadata, args.tileBaseUrl, i);
             }
 
             // now set the background image (full image small quality - as preview) to
@@ -637,6 +638,11 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             setBackgroundImage(args.backgroundZoomLevel);
 
             addMouseMoveScroll(domNodes);
+
+        } catch (e) {
+            Faust.error("Error reading page metadata", e + '<pre>' + metadataText + '</pre>', domNodes.rotateContainer);
+        }
+
             showElement(domNodes.rotateContainer, true);
     };
 
@@ -750,7 +756,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           // docTranscript exists and if it has images attached
           this.setLayer(this.state.layer);
           var layer = this.state.layer;
-          if (currentMetadata.hasDocTranscripts === true && currentMetadata.docTranscripts[0].hasImages) {
+          if (currentMetadata.docTranscriptCount > 0 && currentMetadata.docTranscripts[0].hasImages) {
               pagePromise = this.createImageOverlay(
                   {
                       "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
