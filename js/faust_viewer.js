@@ -125,10 +125,10 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                 state.doc.faustMetadata = currentMetadata;
                 state.doc.pageCount = state.doc.metadata.pageCount;
                 state.doc.sigil = currentMetadata.sigil;
-                if (currentMetadata['type'] === 'print') {
+                /* if (currentMetadata['type'] === 'print') {
                   var newUrl = window.location.protocol + '//' + window.location.host + '/print/' + currentMetadata.text.replace(/\.xml$/, '');
                   window.location.href = newUrl;
-                }
+                } */
               } else {
                 var id = sigil || state.doc.faustUri;
                 Faust.error("Dokument " + id + " existiert nicht.",
@@ -213,18 +213,36 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           // create elements that will contain the available views
           // createDomNodes(parentDomNode);
 
-          // now create the views
-          views.facsimile = createFacsimileView(parentDomNode, state, controller);
-          views.facsimile_document = createSplitView(parentDomNode, state, controller,
-              createFacsimileView, createDocTranscriptView);
-          views.document = createDocTranscriptView(parentDomNode, state, controller);
-          views.document_text = createSplitView(parentDomNode, state, controller,
-              createDocTranscriptView, function(p,s,c) { return createTextualView(p,s,c,'app');});
-          views.facsimile_text = createSplitView(parentDomNode, state, controller,
-              createFacsimileView, function (p,s,c) { return createTextualView(p,s,c,'app'); });
-          views.text = createTextualView(parentDomNode, state, controller, 'app');
-          views.print = createTextualView(parentDomNode, state, controller, 'print');
-          views.structure = createStructureView(parentDomNode, state, controller);
+            // now create the views
+          if (state.doc.metadata.type == 'print')  {
+              views.facsimile = createFacsimileView(parentDomNode, state, controller);
+              views.facsimile_text = createSplitView(parentDomNode, state, controller,
+                  createFacsimileView, function (p,s,c) { return createTextualView(p,s,c,'app'); });
+              views.text = createTextualView(parentDomNode, state, controller, 'app');
+              views.print = createTextualView(parentDomNode, state, controller, 'print');
+
+              ["structure", "facsimile_document", "document", "document_text"].forEach(function(viewName) {
+                  var btn = document.getElementById("show-"+viewName+"-button");
+                  if (btn)
+                      btn.classList.add("pure-button-disabled");
+                  else
+                      console.warn("Button for " + viewName + " not found");
+              });
+
+          } else {
+              views.facsimile = createFacsimileView(parentDomNode, state, controller);
+              views.facsimile_document = createSplitView(parentDomNode, state, controller,
+                  createFacsimileView, createDocTranscriptView);
+              views.document = createDocTranscriptView(parentDomNode, state, controller);
+              views.document_text = createSplitView(parentDomNode, state, controller,
+                  createDocTranscriptView, function(p,s,c) { return createTextualView(p,s,c,'app');});
+              views.facsimile_text = createSplitView(parentDomNode, state, controller,
+                  createFacsimileView, function (p,s,c) { return createTextualView(p,s,c,'app'); });
+              views.text = createTextualView(parentDomNode, state, controller, 'app');
+              views.print = createTextualView(parentDomNode, state, controller, 'print');
+              views.structure = createStructureView(parentDomNode, state, controller);
+          }
+
 
           Object.keys(views).forEach(function (viewName) {
               Faust.bindBySelector('#show-'+viewName+'-button', function(){
@@ -356,7 +374,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           var repository = state.doc.faustMetadata.sigils.repository;
           breadcrumbs.appendChild(Faust.createBreadcrumbs([
               {caption: "Archiv", link: "archive"},
-              {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
+              state.doc.metadata.type == "print"? {caption: "Drucke", link: "archive_prints"}  : {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
               {caption: state.doc.metadata.sigils.idno_faustedition}]));
 
           // get information about scene that contains current page
