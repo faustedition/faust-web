@@ -1,11 +1,9 @@
 // noinspection JSAnnotator
 define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_text', 'faust_print_interaction', 'faust_app',
-        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata',
-        'json!/print/pages.json'
+        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata'
     ],
   function(Faust, createStructureView, createDocTranscriptView, createFacsimileView, createTextualView, addPrintInteraction, app,
-         sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata,
-           pagesMapping) {
+         sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata) {
   "use strict";
 
 
@@ -127,7 +125,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                 state.doc.faustMetadata = currentMetadata;
                 state.doc.pageCount = state.doc.metadata.pageCount;
                 state.doc.sigil = currentMetadata.sigil;
-                state.doc.printLinks = pagesMapping[state.doc.faustUri];
                 if (currentMetadata['type'] === 'print') {
                   var newUrl = window.location.protocol + '//' + window.location.host + '/print/' + currentMetadata.text.replace(/\.xml$/, '');
                   window.location.href = newUrl;
@@ -150,33 +147,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               structure: undefined,
               sections: {},
               findSection: function findSection(pageNum) {
-                  var printLinks = this.printLinks,
-                      filename = printLinks[pageNum],
-                      prevPage = pageNum;
-
-                  // no reference for pageNum? Look for smaller page numbers ...
-                  while (!filename && prevPage >= 0) {
-                      prevPage = prevPage - 1;
-                      filename = printLinks[prevPage];
-                  }
-                  prevPage = pageNum;
-                  while (!filename && prevPage <= this.pageCount) {
-                    prevPage++;
-                    filename = printLinks[prevPage];
-                  }
-                  if (!filename) { // FIXME obsolete when default === 0
-                      filename = printLinks['default'];
-                  }
-
-                  // now, a section parameter may override our choice.
-                  if (state.section) {
-                      if (state.section === filename) {
-                          state.section = undefined; // it's the default
-                      } else {
-                          filename = state.section;
-                      }
-                  }
-                  return filename;
+                  var section = this.metadata.pages[pageNum].section;
+                  return this.metadata.sigil + (section? "." + section : "");
               },
       getFacsCopyright: function getFacsCopyright() {
           if (this.faustUri in copyright_notes)
