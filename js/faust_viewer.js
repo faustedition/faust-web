@@ -147,7 +147,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               structure: undefined,
               sections: {},
               findSection: function findSection(pageNum) {
-                  var section = this.metadata.pages[pageNum].section;
+                  var section = this.metadata.pages[pageNum-1].section;
                   return this.metadata.sigil + (section? "." + section : "");
               },
       getFacsCopyright: function getFacsCopyright() {
@@ -337,8 +337,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           // the viewer was created, but no listener was added before. update page information
           document.getElementById("page-count").innerHTML = getPageCount();
           var pageInput = document.getElementById("page-input");
-          pageInput.value = getCurrentPage();
           pageInput.max = getPageCount();
+          pageInput.value = pageNum; //getCurrentPage();
           pageInput.onchange = function (ev) {
             var pageNo = parseInt(this.value);
             if (pageNo && pageNo >= 1 && pageNo <= getPageCount()) {
@@ -355,10 +355,12 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           try {
               var pdfButton = document.getElementById('diplomatic-pdf-button'),
                   debugButton = document.getElementById('diplomatic-debug-button');
-              pdfButton.removeAttribute('disabled');
-              pdfButton.href = 'transcript/diplomatic/' + state.doc.sigil + '/page_' + state.page + '.pdf';
-              debugButton.removeAttribute('disabled');
-              debugButton.href = "debug.html" + window.location.search;
+              if (state.doc.metadata.type != 'print') {
+                pdfButton.removeAttribute('disabled');
+                pdfButton.href = 'transcript/diplomatic/' + state.doc.sigil + '/page_' + state.page + '.pdf';
+                debugButton.removeAttribute('disabled');
+                debugButton.href = "debug.html" + window.location.search;
+              }
           } catch (e) {
               // no PDF button -> NOP
               console.log(e);
@@ -408,17 +410,18 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           }
           state.page = newPage;
 
-          for (var viewName in views) {
+          try {
+            for (var viewName in views) {
               if ('setPage' in views[viewName]) {
-                  views[viewName].setPage(newPage);
+                views[viewName].setPage(newPage);
               } else {
-                  console.warn(viewName, 'view has no setPage method');
+                console.warn(viewName, 'view has no setPage method');
               }
+            }
+          } finally {
+            updateControlsToPage(newPage);
+            state.toLocation(!!initializing);
           }
-           updateControlsToPage(newPage);
-
-          state.toLocation(!!initializing);
-
           return state.page;
       };
 
