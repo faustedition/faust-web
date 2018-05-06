@@ -66,8 +66,8 @@
       <div class="center">
         <div class="text">
           <h2>Text</h2>
-              <p>Der Text des <a href="/print/faust1.html">Faust I</a> beruht auf dem
-                  Erstdruck von 1808, der des <a href="/print/faust2.html">Faust II</a> auf
+              <p>Der Text des <a href="/print/faust#part1">Faust I</a> beruht auf dem
+                  Erstdruck von 1808, der des <a href="/print/faust#part2">Faust II</a> auf
                   der großen Reinschrift, die heute im Goethe- und Schiller-Archiv liegt. Vom
                   Text aus sind alle übrigen handschriftlichen und gedruckten Fassungen
                   erreichbar.</p>

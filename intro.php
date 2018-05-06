@@ -3,8 +3,8 @@
     <article class="pure-u-1">
         <p>Die digitale Faustedition besteht aus einem <a href="archive">Archiv</a> der
             Handschriften und der zu Lebzeiten erschienenen textkritisch relevanten Drucke zum
-            ‚Faust‘, einem Lesetext des <a href="print/faust1.html">‚Faust I‘</a> und des <a
-                href="print/faust2.html">‚Faust II‘</a> sowie Visualisierungen zur <a
+            ‚Faust‘, einem Lesetext des <a href="print/faust#part1">‚Faust I‘</a> und des <a
+                href="print/faust#part2">‚Faust II‘</a> sowie Visualisierungen zur <a
                     href="genesis">Genese</a> des Werks.</p>
         <p>Sie ist Teil einer Hybridausgabe. Eine Buchpublikation, die unter anderem einen
             konstituierten Text des ‚Faust‘ enthalten soll, ist vorgesehen.</p>
@@ -28,8 +28,8 @@
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/text"><big>Text</big></a></p>
             <p><i class="fa fa-angle-circled-down fa-lg pure-fade-20"></i></p>
-            <p><a class="pure-button" href="/print/faust1" style="display:block;">Faust I</a></p>
-            <p><a class="pure-button" href="/print/faust2" style="display:block;">Faust II</a></p>
+            <p><a class="pure-button" href="/print/faust#part1" style="display:block;">Faust I</a></p>
+            <p><a class="pure-button" href="/print/faust#part2" style="display:block;">Faust II</a></p>
             <p><a class="pure-button" href="paralipomena" style="display:block;">Paralipomena</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
