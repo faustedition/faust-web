@@ -58,7 +58,7 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
             },
 
             setPage: function(pageNum, fragment) {
-                var filename = this.state.doc.findSection(pageNum);
+                var filename = this.state.getSectionFileName(pageNum);
                 if (typeof filename === "undefined") {
                     var msg = "Kein textuelles Transkript zu dieser Seite vorhanden.";
                     if (!this.container.hasChildNodes())

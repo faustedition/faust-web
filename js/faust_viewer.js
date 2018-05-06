@@ -58,7 +58,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
         toLocation: function toLocation(replaceHistory) {
               var fixedPath = window.location.pathname.replace(/^\/+/, '/');
               var url = fixedPath + '?sigil=' + state.doc.sigil + '&page=' + this.page + '&view=' + this.view;
-              if (this.section) {
+              if (typeof(this.section) !== 'undefined' && this.section !== this.doc.metadata.pages[this.page-1].section) {
                   url += '&section=' + this.section;
               }
               if (this.layer > 0) {
@@ -93,8 +93,11 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   this.layer = parseInt(getParameters.layer);
               }
 
-              if (getParameters.section) {
-                  this.section = getParameters.section;
+              if (getParameters.hasOwnProperty("section")) {
+                  var section = getParameters.section || '';
+                  if (section.indexOf('.') > -1)
+                    section = section.substr(section.lastIndexOf('.')+1);
+                  this.section = section;
               }
 
               // if a view was given in the get parameters and the view is available then set active view to that
@@ -106,7 +109,29 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   this.fragment = getParameters['#'];
               }
 
+              if (this.section && !this.page)
+                this.page = this.doc.findPageForSection(this.section);
+
+              if (!this.page)
+                this.page = 1;
+
               return this;
+          },
+
+          getSectionFileName: function getSectionFileName(pageNum) {
+            var section, page;
+
+            if (pageNum == this.page && typeof(this.section) !== "undefined")
+              section = this.section;
+            else {
+              page = pageNum || this.page;
+              section = this.doc.metadata.pages[page-1].section;
+            }
+
+            if (section)
+              return this.doc.sigil + '.' + section;
+            else
+              return this.doc.sigil;
           },
 
           /**
@@ -150,18 +175,28 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   var section = this.metadata.pages[pageNum-1].section;
                   return this.metadata.sigil + (section? "." + section : "");
               },
-      getFacsCopyright: function getFacsCopyright() {
-          if (this.faustUri in copyright_notes)
-              return copyright_notes[this.faustUri];
-          else {
-              var repository = this.faustMetadata.sigils.repository;
-              if (repository in copyright_notes)
-                  return copyright_notes[repository];
-              else
-                  return null;
-          }
-      },
-
+              findPageForSection: function findPageForSection(secnum) {
+                var page = -1;
+                this.metadata.pages.find(function(pageRec, pageIdx) {
+                  if (pageRec.section == secnum) {
+                    page = pageIdx;
+                    return true;
+                  }
+                  return false;
+                });
+                return page+1;
+              },
+              getFacsCopyright: function getFacsCopyright() {
+                  if (this.faustUri in copyright_notes)
+                      return copyright_notes[this.faustUri];
+                  else {
+                      var repository = this.faustMetadata.sigils.repository;
+                      if (repository in copyright_notes)
+                          return copyright_notes[repository];
+                      else
+                          return null;
+                  }
+              },
           }
       };
       window.addEventListener('hashchange', function (ev) {
