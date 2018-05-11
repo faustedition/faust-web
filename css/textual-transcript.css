@@ -499,6 +499,8 @@ div.variants {
     text-align: left;
     font-style: normal;
     font-variant: normal;
+    font-size: 14px;
+    font-weight: normal;
     text-transform: none;
 }
 
