@@ -814,7 +814,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       },
       getLayerCount: function() {
         var pageMetadata = this.state.doc.metadata.pages[this.state.page - 1];
-        if (pageMetadata.docTranscripts[0].hasImages)
+        if (pageMetadata.hasDocTranscripts && pageMetadata.docTranscripts[0].hasImages)
           return pageMetadata.docTranscripts[0].images.length;
         else return 1;
       },

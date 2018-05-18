@@ -220,9 +220,8 @@ define(['faust_common'], function (Faust) {
 
             var that = this,
                 page = this.doc.metadata.pages[pageNo - 1],
-                url = page.docTranscripts[0].docTranscriptUrl,
                 loadDocTranscript = page.hasDocTranscripts ?
-                    Faust.xhr.get(url, "text")
+                    Faust.xhr.get(page.docTranscripts[0].docTranscriptUrl, "text")
                     : Promise.resolve(errorMessages.missingDocTranscript);
             return loadDocTranscript.then(
                 function (docTranscriptHtml) {
