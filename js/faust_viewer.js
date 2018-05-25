@@ -240,67 +240,85 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
          */
         return function init() {
 
-          state.fromLocation();
-          state.initMetadata(); // FIXME refactor
+          try {
 
-          document.title = document.title + " – " + state.doc.metadata.sigils.idno_faustedition;
+            state.fromLocation();
+            state.initMetadata(); // FIXME refactor
 
-          // create elements that will contain the available views
-          // createDomNodes(parentDomNode);
+            document.title = document.title + " – " + state.doc.metadata.sigils.idno_faustedition;
+
+            // create elements that will contain the available views
+            // createDomNodes(parentDomNode);
 
             // now create the views
-          if (state.doc.metadata.type == 'print')  {
+            if (state.doc.metadata.type == 'print') {
               views.facsimile = createFacsimileView(parentDomNode, state, controller);
               views.facsimile_text = createSplitView(parentDomNode, state, controller,
-                  createFacsimileView, function (p,s,c) { return createTextualView(p,s,c,'app'); });
+                createFacsimileView, function (p, s, c) {
+                  return createTextualView(p, s, c, 'app');
+                });
               views.text = createTextualView(parentDomNode, state, controller, 'app');
               views.print = createTextualView(parentDomNode, state, controller, 'print');
 
-              ["structure", "facsimile_document", "document", "document_text"].forEach(function(viewName) {
-                  var btn = document.getElementById("show-"+viewName+"-button");
-                  if (btn)
-                      btn.classList.add("pure-button-disabled");
-                  else
-                      console.warn("Button for " + viewName + " not found");
+              ["structure", "facsimile_document", "document", "document_text"].forEach(function (viewName) {
+                var btn = document.getElementById("show-" + viewName + "-button");
+                if (btn)
+                  btn.classList.add("pure-button-disabled");
+                else
+                  console.warn("Button for " + viewName + " not found");
               });
 
-          } else {
+            } else {
               views.facsimile = createFacsimileView(parentDomNode, state, controller);
               views.facsimile_document = createSplitView(parentDomNode, state, controller,
-                  createFacsimileView, createDocTranscriptView);
+                createFacsimileView, createDocTranscriptView);
               views.document = createDocTranscriptView(parentDomNode, state, controller);
               views.document_text = createSplitView(parentDomNode, state, controller,
-                  createDocTranscriptView, function(p,s,c) { return createTextualView(p,s,c,'app');});
+                createDocTranscriptView, function (p, s, c) {
+                  return createTextualView(p, s, c, 'app');
+                });
               views.facsimile_text = createSplitView(parentDomNode, state, controller,
-                  createFacsimileView, function (p,s,c) { return createTextualView(p,s,c,'app'); });
+                createFacsimileView, function (p, s, c) {
+                  return createTextualView(p, s, c, 'app');
+                });
               views.text = createTextualView(parentDomNode, state, controller, 'app');
               views.print = createTextualView(parentDomNode, state, controller, 'print');
               views.structure = createStructureView(parentDomNode, state, controller);
+            }
+
+
+            Object.keys(views).forEach(function (viewName) {
+              Faust.bindBySelector('#show-' + viewName + '-button', function () {
+                setView(viewName);
+              });
+            });
+
+            Faust.bindBySelector('#first-page-button', function () {
+              setPage(1);
+            });
+            Faust.bindBySelector('#previous-page-button', previousPage);
+            Faust.bindBySelector('#next-page-button', nextPage);
+            Faust.bindBySelector('#last-page-button', function () {
+              setPage(getPageCount());
+            });
+
+
+            // facsimile and documentary transcript can exist for every page of a witness. set view to
+            // current page and try to load related files (if not already done)
+            setPage(state.page, true);
+
+            // if a view parameter was set in get request, use it. otherwise use the preset
+            // default-value from state.view (currently 'facsimile'-view)
+            setView(state.view, true);
+
+            // init tooltips for the navigation bar
+            Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
+
+          } catch (e) {
+            Faust.error("Dokumentansicht konnte nicht geladen werden", e);
           }
 
 
-          Object.keys(views).forEach(function (viewName) {
-              Faust.bindBySelector('#show-'+viewName+'-button', function(){
-                  setView(viewName);});
-          });
-
-            Faust.bindBySelector('#first-page-button', function() { setPage(1); });
-            Faust.bindBySelector('#previous-page-button', previousPage);
-            Faust.bindBySelector('#next-page-button', nextPage);
-            Faust.bindBySelector('#last-page-button', function() { setPage(getPageCount()); });
-
-
-
-          // facsimile and documentary transcript can exist for every page of a witness. set view to
-          // current page and try to load related files (if not already done)
-          setPage(state.page, true);
-
-          // if a view parameter was set in get request, use it. otherwise use the preset
-          // default-value from state.view (currently 'facsimile'-view)
-          setView(state.view, true);
-
-          // init tooltips for the navigation bar
-          Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
 
         };
       })();
