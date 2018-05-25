@@ -1,6 +1,14 @@
 <?php include "includes/header.php"; ?>
 
-<div id="main-content" class="main-content"></div>
+<div id="main-content" class="main-content">
+</div>
+
+<div id="loading-spinner" class="background-container">
+    <div class="pure-center pure-fade-50">
+        <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+        Ansicht wird geladen …
+    </div>
+</div>
 
 <div id="navigation-bar-container" class="navigation-bar-container">
   <div id="navigation-bar-content" class="navigation-bar-content">

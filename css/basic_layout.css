@@ -273,3 +273,12 @@ a.undecorated {
     max-width: none;
   }
 }
+
+/* Something centered and not taking space in the background – e.g., the loading spinner */
+.background-container {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  text-align: center;
+}
