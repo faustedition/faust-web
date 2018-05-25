@@ -1050,8 +1050,26 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     return breadcrumbs;
   };
 
+  var formatExceptionDetail = function formatExceptionDetail(e) {
+    var result = e;
+    try {
+      result = "<p>Bitte beachten Sie, dass die Seite nur die aktuellen Versionen der Browser " +
+        "<a href='https://www.mozilla.org/de/firefox/new/'>Firefox</a> und " +
+        "<a href='https://www.google.de/chrome/index.html'>Chrome</a> unterstützt.</p>" +
+        "<dl><dt>Fehlertyp</dt><dd>" + e.name + "</dd>" +
+        "<dt>Meldung</dt><dd>" + e.message + "</dd>" +
+        "<dt>Stack Trace</dt><dd><pre>" + (typeof e.stack !== 'undefined' ? e.stack : '') + "</pre></dd>" +
+        "<dt>Browser</dt><dd>" + window.navigator.userAgent + "</dd></dl>";
+    } catch (formattingError) {
+      console.warn(formattingError);
+    }
+    return result;
+  }
+
   Faust.error = function error(title, msg, parent) {
     console.error(title, msg);
+    if (msg instanceof Error)
+      msg = formatExceptionDetail(msg);
     if (parent === undefined) {
       parent = document.getElementById("main-content");
     }

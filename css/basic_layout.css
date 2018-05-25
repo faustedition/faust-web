@@ -282,3 +282,10 @@ a.undecorated {
   left: 45%;
   text-align: center;
 }
+
+.error-container dl {
+  font-size: smaller;
+}
+.error-container pre {
+  font-size: smaller;
+}
