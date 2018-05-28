@@ -789,6 +789,9 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             }
             facsimile.showOverlay(that.state.showOverlay);
             docTranscriptViewer.transcriptTooltips(facsimile);
+            facsimile.overlayContainer.addEventListener("click", function (event) {
+              that.toggleOverlay();
+            });
             return facsimile;
           }); // TODO catch
       },
@@ -845,19 +848,20 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           this.getLayerCount() > 1? "inline-block" : "none";
         document.getElementById("facsimile-layer-badge").innerHTML = this.state.layer;
       },
+      toggleOverlay: function () {
+        if (this.visible && this.facsimile) {
+          this.state.showOverlay = !this.state.showOverlay;
+          Faust.toggleButtonState('#toggle-overlay-button', this.state.showOverlay);
+          this.facsimile.showOverlay(this.state.showOverlay);
+        }
+      },
       bindControls: function() {
           var that = this;
           var zoomIn = function () { if (that.visible) that.facsimile.zoom("in"); };
           var zoomOut = function () { if (that.visible) that.facsimile.zoom("out"); };
           var rotateLeft = function () { if (that.visible) that.facsimile.rotate("left"); };
           var rotateRight = function () { if (that.visible) that.facsimile.rotate("right"); };
-          var toggleOverlay = function () {
-              if (that.visible && that.facsimile) {
-                  that.state.showOverlay = !that.state.showOverlay;
-                  Faust.toggleButtonState('#toggle-overlay-button', that.state.showOverlay);
-                  that.facsimile.showOverlay(that.state.showOverlay);
-              }
-          };
+          var toggleOverlay = function () { that.toggleOverlay(); };
           var nextLayer = function () {
             that.nextLayer();
           }
