@@ -80,7 +80,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               var getParameters = Faust.url.getParameters();
               this.doc.faustUri = getParameters.faustUri;
               if (getParameters.sigil)
-                  this.doc.sigil = getParameters.sigil.replace(/α/g, 'alpha').replace(/[^A-Za-z0-9.]/g, '_');
+                  this.doc.sigil = getParameters.sigil.replace(/α/g, 'alpha').replace(/[^A-Za-z0-9.-]/g, '_');
 
 
               // if a valid page was given as parameter use ist. otherwise this.page is preset to the
