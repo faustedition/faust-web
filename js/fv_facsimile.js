@@ -667,7 +667,11 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         // else try to get metadata
         // Faust.xhr.getXhr(args.imageMetadataUrl, metadataLoadHandler);
         facsimilePromise = Faust.xhr.get(args.imageMetadataUrl, 'text')
-          .then(insertFacsimileTiles);
+          .then(insertFacsimileTiles)
+          .catch(function(e) {
+            Faust.error('Fehler beim Laden der Facsimile-Metadaten', e.toString(), domNodes);
+          })
+
       }
 
       if(args.hasImageTextLink === true) {
