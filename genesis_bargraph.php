@@ -6,6 +6,13 @@
 
       <div id="genetic-bar-diagram-container"></div>
 
+      <div id="loading-spinner" class="background-container">
+          <div class="pure-center pure-fade-50">
+              <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+              Ansicht wird geladen …
+          </div>
+      </div>
+
   </article>
 
 </section>
@@ -29,7 +36,9 @@
 </div>
 
 <script>
-  require(['faust_bargraph']);
+  require(['faust_common', 'faust_bargraph'], function (Faust, bargraph) {
+    Faust.finishedLoading();
+  });
 </script>
 
 <?php include "includes/footer.php"; ?>

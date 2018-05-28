@@ -318,10 +318,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
             Faust.error("Dokumentansicht konnte nicht geladen werden", e);
           }
 
-            var loadingSpinner = document.getElementById('loading-spinner');
-            if (loadingSpinner)
-              loadingSpinner.remove();
-
+          Faust.finishedLoading();
 
         };
       })();

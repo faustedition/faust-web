@@ -1133,6 +1133,12 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
         };
     };
 
+    Faust.finishedLoading = function finishedLoading() {
+      var loadingSpinner = document.getElementById('loading-spinner');
+      if (loadingSpinner)
+        loadingSpinner.remove();
+    }
+
 
 //###########################################################################
 //###########################################################################
