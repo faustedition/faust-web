@@ -793,7 +793,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
               that.toggleOverlay();
             });
             return facsimile;
-          }); // TODO catch
+          }).catch(function(e) { Faust.error('Fehler beim Laden der Ansicht', e, that.facsimile)});
       },
       show : function () { this.visible = true;  this.container.style.display = 'block'; this.shown(); },
       hide : function () { this.visible = false; this.container.style.display = 'none';  this.hidden(); },
