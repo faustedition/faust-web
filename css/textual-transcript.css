@@ -415,6 +415,8 @@ div:hover > a.sigil {
     text-indent: 1.5em;
 }
 
+.sp .hasvars:first-child { padding-top: 1.5ex; }
+
 .l.rend-indented {
     text-indent: 3em;
 }
