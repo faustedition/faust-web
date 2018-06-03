@@ -1,5 +1,14 @@
     </main>
 
+    <noscript>
+        <div class="pure-alert pure-alert-warning">
+            <h3>JavaScript erforderlich</h3>
+            <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+            <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+        </div>
+    </noscript>
+
+
     <footer>
       <div class="center pure-g-r">
         <div class="pure-u-1-2 pure-fade-50">
