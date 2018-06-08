@@ -35,6 +35,11 @@ h3.head, .body > .div > .head {
 	font-size: 16px;
 }
 
+.trailer {
+    margin-top: 4ex;
+    padding-bottom: 2ex;
+    padding-top: 2ex;
+}
 
 .titlePart {
 	display: block;
