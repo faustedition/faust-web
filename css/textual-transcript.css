@@ -36,9 +36,9 @@ h3.head, .body > .div > .head {
 }
 
 .trailer {
-    margin-top: 4ex;
-    padding-bottom: 2ex;
-    padding-top: 2ex;
+  padding-top: 2ex;
+  padding-bottom: 4ex;
+  text-align: center;
 }
 
 .titlePart {
