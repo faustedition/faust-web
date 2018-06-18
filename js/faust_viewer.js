@@ -103,6 +103,14 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
             this.initDefault('showOverlay', true);
             this.section = undefined;
             this.initDefault('fragment', undefined);
+
+            var that = this;
+            window.addEventListener("popstate", function (ev) {
+                console.log("location popped", ev);
+                that.fromLocation();
+                setView(that.view);
+                setPage(that.page);
+            });
         },
 
           // updates the address in the browser bar to a value calculated from state and state.doc
