@@ -101,7 +101,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
             this.initDefault('scale', undefined);
             this.initDefault('imageBackgroundZoomLevel', 3);
             this.initDefault('showOverlay', true);
-            this.initDefault('section', undefined);
+            this.section = undefined;
             this.initDefault('fragment', undefined);
         },
 
@@ -148,7 +148,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   var section = getParameters.section || '';
                   if (section.indexOf('.') > -1)
                     section = section.substr(section.lastIndexOf('.')+1);
-                  this.setItem('section', section);
+                  this.section = section;
               }
 
               // if a view was given in the get parameters and the view is available then set active view to that
