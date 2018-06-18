@@ -43,16 +43,67 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
   };
 
   return function createDocumentViewer(parentDomNode){
+
+      function storageAvailable(type) {
+          try {
+              var storage = window[type],
+                  x = '__storage_test__';
+              storage.setItem(x, x);
+              storage.removeItem(x);
+              return true;
+          }
+          catch(e) {
+              return e instanceof DOMException && (
+                      // everything except Firefox
+                  e.code === 22 ||
+                  // Firefox
+                  e.code === 1014 ||
+                  // test name field too, because code might not be present
+                  // everything except Firefox
+                  e.name === 'QuotaExceededError' ||
+                  // Firefox
+                  e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+                  // acknowledge QuotaExceededError only if there's something already stored
+                  storage.length !== 0;
+          }
+      };
+
       // viewer instance variables
       var state = {
-        page: 1,
-        layer: 0,
-        view: "structure",
-        scale: undefined,
-        imageBackgroundZoomLevel: 3,
-        showOverlay: true,
-        section: undefined,         // opt. file name for textual / apparatus view
-        fragment: undefined,
+        canPersist: storageAvailable('sessionStorage'),
+        getDefaultValue: function getDefaultValue(item, globalDefault) {
+            var storedValue;
+            if (this.hasOwnProperty(item) && typeof(this[item]) !== "undefined")
+                return this[item];
+            else if (this.canPersist) {
+                 storedValue = window.sessionStorage.getItem(item);
+                 if (storedValue !== null) {
+                     return storedValue;
+                 }
+            }
+            return globalDefault;
+        },
+        setItem: function setItem(key, data)  {
+          this[key] = data;
+          if (this.canPersist)
+              window.sessionStorage.setItem(key, data);
+              console.log("Storing state key", key, data);
+        },
+
+        initDefault: function(key, defaultValue) {
+            this[key] = this.getDefaultValue(key, defaultValue);
+        },
+
+        initDefaults: function initDefaults() {
+            this.initDefault('page', 1);
+            this.initDefault('layer', 0);
+            this.initDefault('view', 'structure');
+            this.initDefault('scale', undefined);
+            this.initDefault('imageBackgroundZoomLevel', 3);
+            this.initDefault('showOverlay', true);
+            this.initDefault('section', undefined);
+            this.initDefault('fragment', undefined);
+        },
 
           // updates the address in the browser bar to a value calculated from state and state.doc
         toLocation: function toLocation(replaceHistory) {
@@ -86,23 +137,23 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               // if a valid page was given as parameter use ist. otherwise this.page is preset to the
               // first (1) page of the witness
               if (getParameters.page && !isNaN(parseInt(getParameters.page))) {
-                  this.page = parseInt(getParameters.page);
+                  this.setItem('page', parseInt(getParameters.page));
               }
 
               if (getParameters.layer && !isNaN(parseInt(getParameters.layer))) {
-                  this.layer = parseInt(getParameters.layer);
+                  this.setItem('layer', parseInt(getParameters.layer));
               }
 
               if (getParameters.hasOwnProperty("section")) {
                   var section = getParameters.section || '';
                   if (section.indexOf('.') > -1)
                     section = section.substr(section.lastIndexOf('.')+1);
-                  this.section = section;
+                  this.setItem('section', section);
               }
 
               // if a view was given in the get parameters and the view is available then set active view to that
               if (getParameters.view) {
-                this.view = getParameters.view;
+                this.setItem('view', getParameters.view);
               }
 
               if (getParameters['#']) {
@@ -199,6 +250,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               },
           }
       };
+      state.initDefaults();
       window.addEventListener('hashchange', function (ev) {
           state.fromLocation();
           setPage(state.page);
@@ -524,7 +576,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           }
           if (visible.length !== expected)
               console.error(visible.length, 'views are visible insted of', expected, ':', visible)
-      }
+      };
 
 // view manipulation
       // set the view of the current selected page. if the new page value is not a valid mode
@@ -536,7 +588,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
             return oldView;
           }
 
-          state.view = newView;
+          state.setItem('view', newView);
           for (var viewName in views)
               views[viewName].hide();
           document.getElementById('show-' + oldView + '-button').classList.remove('pure-button-primary');
