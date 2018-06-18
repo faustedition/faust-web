@@ -24,7 +24,8 @@ define(['faust_common'],
     return group;
   };
 
-  documentStructure.createFromXml = function(xmlDocument) {
+  // either must be defined
+  var _create = function _create(xmlDocument, numPages) {
     
     var currentY = 0;
     var currentPage = 1;
@@ -179,8 +180,13 @@ define(['faust_common'],
       }
     };
 
+    if (typeof(xmlDocument) !== "undefined")
+        processXmlNode(xmlDocument.firstChild, 0);
+    else
+        for (var page = 1; page <= numPages / 2; page++)
+          addPage(0);
 
-    processXmlNode(xmlDocument.firstChild, 0);
+
     // since there is only one page in the last rectGroup / pagesGroup the second page is empty. we have assigned it a page
     // number before, so remove it
     rectGroup.lastChild.pages.right = undefined;
@@ -197,6 +203,13 @@ define(['faust_common'],
 
     return svg;
   };
+
+  documentStructure.createFromXml = function(xmlDocument) {
+    return _create(xmlDocument, undefined);
+  };
+  documentStructure.createFromPageCount = function(numPages) {
+    return _create(undefined, numPages)
+  }
 
   return documentStructure;
   

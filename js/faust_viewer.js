@@ -95,7 +95,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
         },
 
         initDefaults: function initDefaults() {
-            this.initDefault('page', 1);
+            this.page = 1;
             this.initDefault('layer', 0);
             this.initDefault('view', 'structure');
             this.initDefault('scale', undefined);
@@ -304,6 +304,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
             // now create the views
             if (state.doc.metadata.type == 'print') {
+              views.structure = createStructureView(parentDomNode, state, controller);
               views.facsimile = createFacsimileView(parentDomNode, state, controller);
               views.facsimile_text = createSplitView(parentDomNode, state, controller,
                 createFacsimileView, function (p, s, c) {
@@ -312,7 +313,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               views.text = createTextualView(parentDomNode, state, controller, 'app');
               views.print = createTextualView(parentDomNode, state, controller, 'print');
 
-              ["structure", "facsimile_document", "document", "document_text"].forEach(function (viewName) {
+              ["facsimile_document", "document", "document_text"].forEach(function (viewName) {
                 var btn = document.getElementById("show-" + viewName + "-button");
                 if (btn)
                   btn.classList.add("pure-button-disabled");

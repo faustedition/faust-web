@@ -93,11 +93,17 @@ define(['faust_common', 'faust_structure'],
 
                 this._initHtmlFrame(parent);
 
-                return Promise.all([
-                    // structure
+                var loadStructure = state.doc.metadata.type == "print"?
+                    Promise.resolve(documentStructure.createFromPageCount(state.doc.pageCount)) :
                     Faust.xhr.get("xml/document/" + state.doc.metadata.documentUri, "xml")
                         .then(function (documentXmlMetadata) {
-                            var structureSvg = documentStructure.createFromXml(documentXmlMetadata);
+                            return structureSvg = documentStructure.createFromXml(documentXmlMetadata);
+                        });
+
+
+                return Promise.all([
+                    // structure
+                        loadStructure.then(function(structureSvg) {
                             state.doc.structure = structureSvg; // FIXME refactor cache?
                             that.structureSvgDiv.appendChild(structureSvg);
                             that.structureSvg = structureSvg;
@@ -185,7 +191,7 @@ define(['faust_common', 'faust_structure'],
                 // try to get a uri from document's metadata and load the preview image. else create a message
                 // to inform about a missing preview
                 if( pageNum !== undefined ) {
-                    if( (this.state.doc.metadata.pages[pageNum - 1].hasDocTranscripts) && (this.state.doc.metadata.pages[pageNum - 1].docTranscripts[0].hasImages) ) {
+                    if((this.state.doc.metadata.pages[pageNum - 1].docTranscripts[0].hasImages) ) {
                         // load existing preview image
                         pageUri = this.state.doc.metadata.pages[pageNum - 1].docTranscripts[0].images[0].jpgUrlBase + "_preview.jpg";
                         parent.appendChild(this.getPreviewElement(pageUri));
@@ -254,7 +260,7 @@ define(['faust_common', 'faust_structure'],
                         that.structureSvg.setLockedGroup(pages.left);
                         that.controller.setPage(pages.left);
                     } else if (pages.right !== undefined) {
-                        that.setLockedGroup(pages.right);
+                        that.structureSvg.setLockedGroup(pages.right);
                         that.controller.setPage(pages.right);
                     }
                 });
