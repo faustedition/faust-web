@@ -4,7 +4,7 @@
     
 
       .rowText {
-        font-family: Ubuntu;
+        font-family: 'Ubuntu derivative Faust';
         font-weight: 400;
         font-size: 16pt;
         font-style: normal;
@@ -13,7 +13,7 @@
       }
 
       .columnText {
-        font-family: Ubuntu;
+        font-family: 'Ubuntu derivative Faust';
         font-weight: 400;
         font-size: 12pt;
         font-style: normal;

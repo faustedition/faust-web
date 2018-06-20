@@ -123,7 +123,7 @@ body.documentViewer main, body.document main {
 
 /* Copyright note that is overlaid to the facsimile */
 .facs-copyright {
-  font: 12px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
+  font: 12px/1.5em "Ubuntu derivative Faust", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
   color: white;
   text-shadow: black 0px 0px 1px;
   position: fixed;
