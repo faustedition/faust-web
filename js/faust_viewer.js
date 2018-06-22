@@ -136,39 +136,39 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
           // initializes the state from the location bar.
           fromLocation: function fromLocation() {
-              var getParameters = Faust.url.getParameters();
-              this.doc.faustUri = getParameters.faustUri;
-              if (getParameters.sigil)
-                  this.doc.sigil = getParameters.sigil.replace(/α/g, 'alpha').replace(/[^A-Za-z0-9.-]/g, '_');
+              var parameters = Faust.url.getParameters();
+              this.doc.faustUri = parameters.faustUri;
+              if (parameters.sigil)
+                  this.doc.sigil = parameters.sigil.replace(/α/g, 'alpha').replace(/[^A-Za-z0-9.-]/g, '_');
 
 
               // if a valid page was given as parameter use ist. otherwise this.page is preset to the
               // first (1) page of the witness
-              if (getParameters.page && !isNaN(parseInt(getParameters.page))) {
-                  this.setItem('page', parseInt(getParameters.page));
+              if (parameters.page && !isNaN(parseInt(parameters.page))) {
+                this.setItem('page', parseInt(parameters.page));
               }
 
-              if (getParameters.layer && !isNaN(parseInt(getParameters.layer))) {
-                  this.setItem('layer', parseInt(getParameters.layer));
+              if (parameters.layer && !isNaN(parseInt(parameters.layer))) {
+                  this.setItem('layer', parseInt(parameters.layer));
               }
 
-              if (getParameters.hasOwnProperty("section")) {
-                  var section = getParameters.section || '';
+              if (parameters.hasOwnProperty("section")) {
+                  var section = parameters.section || '';
                   if (section.indexOf('.') > -1)
                     section = section.substr(section.lastIndexOf('.')+1);
                   this.section = section;
               }
 
               // if a view was given in the get parameters and the view is available then set active view to that
-              if (getParameters.view) {
-                this.setItem('view', getParameters.view);
+              if (parameters.view) {
+                this.setItem('view', parameters.view);
               }
 
-              if (getParameters['#']) {
-                  this.fragment = getParameters['#'];
+              if (parameters['#']) {
+                  this.fragment = parameters['#'];
               }
 
-              if (this.section && !this.page)
+              if (parameters.section && !parameters.page)
                 this.page = this.doc.findPageForSection(this.section);
 
               if (!this.page)
@@ -231,10 +231,12 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               structure: undefined,
               sections: {},
               findSection: function findSection(pageNum) {
+                  if (!this.metadata) state.initMetadata();
                   var section = this.metadata.pages[pageNum-1].section;
-                  return this.metadata.sigil + (section? "." + section : "");
+                  return section;
               },
               findPageForSection: function findPageForSection(secnum) {
+                if (!this.metadata) state.initMetadata();
                 var page = -1;
                 this.metadata.pages.find(function(pageRec, pageIdx) {
                   if (pageRec.section == secnum) {
@@ -514,6 +516,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
       // set new page to view. if new page number is out ouf range (<1 or >pages in document), the closest
       // number to a allowed page is used
       var setPage = function setPage(newPage, initializing) {
+          var oldPage = state.page;
           if(newPage < 1) {
             newPage = 1;
           } else if(newPage > state.doc.pageCount) {
@@ -523,6 +526,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               state.fragment = '';
           }
           state.page = newPage;
+          state.section = state.doc.findSection(state.page);
+
 
           try {
             for (var viewName in views) {
