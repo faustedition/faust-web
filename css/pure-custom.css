@@ -226,7 +226,7 @@ a[href].pure-button {border:none;}
 .pure-variations {margin-bottom:20px; padding:15px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 .pure-variations > p,.pure-variations > ul{margin:0;}
 
-.pure-tooltip {position:fixed; z-index:100; pointer-events:none; margin-top:-25px; transform:translate(-50%,-100%); background:rgb(51,51,51); color:rgb(230,230,230); border-radius:4px; padding:0.25em 0.5em;}
+.pure-tooltip {position:fixed; z-index:200; pointer-events:none; margin-top:-25px; transform:translate(-50%,-100%); background:rgb(51,51,51); color:rgb(230,230,230); border-radius:4px; padding:0.25em 0.5em;}
 .pure-tooltip::after {position:absolute; content:""; display:block; width:0; left:50%; bottom:-7px; transform:translateX(-50%); border-width:8px 8px 0; border-color:rgb(51,51,51) transparent; border-style:solid;}
 .pure-tooltip + .pure-tooltip {display:none;} /* show only one tooltip if nested */
 .pure-tooltip .transcript-tooltip-span ~ .transcript-tooltip-span {padding-left:0.5em;}
