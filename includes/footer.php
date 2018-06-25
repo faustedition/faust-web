@@ -81,11 +81,13 @@
     </script>
 
 <script>
-requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard'], function ($, $chocolat, $overlays, $clipboard) {
+requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common'],
+  function ($, $chocolat, $overlays, $clipboard, Faust) {
     $('main').Chocolat({className:'faustedition', loop:true});
     $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
         $('[data-target]').copyToClipboard();
     }});
+    Faust.addToTopButton();
 });
 </script>
 

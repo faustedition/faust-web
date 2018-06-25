@@ -289,3 +289,17 @@ a.undecorated {
 .error-container pre {
   font-size: smaller;
 }
+
+
+#link-to-top {
+  display: none;
+  border-bottom: none;
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+  position: fixed;
+  bottom: 2.5ex;
+  right: 2.5ex;
+  z-order: 50;
+  color: rgba(250,190,0,0.75);
+  text-shadow: 4px 4px 4px #ddd;
+}

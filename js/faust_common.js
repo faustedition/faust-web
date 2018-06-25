@@ -1137,7 +1137,34 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       var loadingSpinner = document.getElementById('loading-spinner');
       if (loadingSpinner)
         loadingSpinner.remove();
-    }
+    };
+
+    Faust.addToTopButton = function addToTopButton(parent) {
+      var aTop = document.createElement('a'),
+          aLink = document.createElement('a'),
+          visible = false;
+
+      if (!parent)
+        parent = document.getElementsByTagName('body').item(0);
+
+      aTop.nameProp = 'top';
+      parent.insertBefore(aTop, parent.firstChild);
+
+      aLink.id = 'link-to-top';
+      aLink.innerHTML = '<i class="fa fa-3x fa-up-circled"></i>'
+      aLink.href = '#top';
+      parent.appendChild(aLink);
+
+      document.addEventListener('scroll', function (scrollEvent) {
+        if (visible && (window.pageYOffset === 0)) {
+          aLink.style.display = 'none';
+          visible = false;
+        } else if (!visible && (window.pageYOffset > 0)) {
+          aLink.style.display = 'inline';
+          visible = true;
+        }
+      });
+    };
 
 
 //###########################################################################
