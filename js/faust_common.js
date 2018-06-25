@@ -1166,29 +1166,12 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       });
     };
 
-    Faust.getScrollParent = function getScrollParent(element, includeHidden) {
-        var style = getComputedStyle(element);
-        var excludeStaticParent = style.position === "absolute";
-        var overflowRegex = includeHidden ? /(auto|scroll|hidden)/ : /(auto|scroll)/;
-
-        if (style.position === "fixed") return document.body;
-        for (var parent = element; (parent = parent.parentElement);) {
-            style = getComputedStyle(parent);
-            if (excludeStaticParent && style.position === "static") {
-                continue;
-            }
-            if (overflowRegex.test(style.overflow + style.overflowY + style.overflowX)) return parent;
-        }
-        return document.body;
-    }
-
-
     Faust.fixTargetOffset = function fixDomOffset(parent) {
       if (!parent) parent = document;
       parent.querySelectorAll(":target").forEach(function(target) {
-          var container = Faust.getScrollParent(target),
-              y = target.getBoundingClientRect().top + container.scrollTop;
-          container.scrollTo(0, y - 100);
+          var container = window,
+              y = target.getBoundingClientRect().top;
+          window.scrollTo(0, y - 100);
       });
     };
 
