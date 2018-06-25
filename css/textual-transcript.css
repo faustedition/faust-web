@@ -6,6 +6,7 @@
 .text {
   margin-bottom: 1.5em;
   text-indent: 0.25em;
+  text-align: left;
 }
 
 /*
