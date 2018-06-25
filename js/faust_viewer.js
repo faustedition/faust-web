@@ -11,7 +11,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
       var container = document.createElement('div');
       container.className = "view-content split-view-content";
-      parent.append(container);
+      parent.appendChild(container);
 
       var left = leftConstructor(container, state, controller, true);
       var right = rightConstructor(container, state, controller, true);

@@ -1136,7 +1136,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     Faust.finishedLoading = function finishedLoading() {
       var loadingSpinner = document.getElementById('loading-spinner');
       if (loadingSpinner)
-        loadingSpinner.remove();
+        loadingSpinner.parentNode.removeChild(loadingSpinner);
     };
 
     Faust.addToTopButton = function addToTopButton(parent) {
@@ -1147,7 +1147,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
       if (!parent)
         parent = document.getElementsByTagName('body').item(0);
 
-      aTop.nameProp = 'top';
+      aTop.name = 'top';
       parent.insertBefore(aTop, parent.firstChild);
 
       aLink.id = 'link-to-top';
