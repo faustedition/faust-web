@@ -1,7 +1,9 @@
-define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady, es6_promise) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
+
+  es6_promise.polyfill();
 
 
 
