@@ -61,10 +61,10 @@
        url(../webfonts/UbuntuFaust-BolcItalic.ttf) format('truetype');
 }
 
-/* UBUNTU MONOSPACE */
+/* UBUNTU MONO */
 
 @font-face {
-  font-family: 'Ubuntu Monospace';
+  font-family: 'Ubuntu Mono';
   font-style: normal;
   font-weight: 400; /* regular */
   src: url(../webfonts/ubuntumono-regular-webfont.woff2) format('woff2'),
@@ -72,7 +72,7 @@
        url(../webfonts/ubuntumono-regular-webfont.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Ubuntu Monospace';
+  font-family: 'Ubuntu Mono';
   font-style: italic;
   font-weight: 400; /* regular */
   src: url(../webfonts/ubuntumono-italic-webfont.woff2) format('woff2'),
@@ -80,7 +80,7 @@
        url(../webfonts/ubuntumono-italic-webfont.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Ubuntu Monospace';
+  font-family: 'Ubuntu Mono';
   font-style: normal;
   font-weight: 700; /* bold */
   src: url(../webfonts/ubuntumono-bold-webfont.woff2) format('woff2'),
@@ -88,7 +88,7 @@
        url(../webfonts/ubuntumono-bold-webfont.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Ubuntu Monospace';
+  font-family: 'Ubuntu Mono';
   font-style: italic;
   font-weight: 700; /* bold */
   src: url(../webfonts/ubuntumono-bolditalic-webfont.woff2) format('woff2'),
