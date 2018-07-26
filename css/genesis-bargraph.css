@@ -38,6 +38,7 @@
   fill: rgb(130, 98, 0);
 }
 
+#current-sigil-label { font-weight: bold; }
 
 /*
 #genetic-bar-diagram-verse-bars rect.paralipomena.uncertain {

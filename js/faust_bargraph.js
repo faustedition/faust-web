@@ -362,6 +362,8 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       //
 
       // process all witnesses inside selection
+      var highlightSigil = Faust.url.getParameters()['#'];
+      var highlightSigilElement = null;
       selectedWitnesses.forEach(function(witness, witnessIndex) {
 
         // add sigil name to vertical axis
@@ -370,6 +372,10 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         witnessSigil.setAttribute("y", witnessIndex * verticalDistance);
         witnessSigil.setAttribute("dy", 8);
         witnessSigil.setAttribute("text-anchor", "end");
+        if (witness.sigil_t == highlightSigil) {
+          witnessSigil.setAttribute("id", "current-sigil-label");
+          highlightSigilElement = witnessSigil;
+        }
         // set sigil text
         witnessSigil.appendChild(document.createTextNode(witness.sigil));
         // append sigil to vertical axis
