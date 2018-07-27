@@ -220,19 +220,19 @@ div g.element-line-hidden:hover > * {
 }
 
 .structure-vertical-line {
-  stroke-width: 1.5;
+  stroke-width: 1.5pt;
   shape-rendering: crispEdges;
   stroke: black;
 }
 
 .structure-line {
   pointer-events: none;
-  stroke-width: 3;
+  stroke-width: 1.5pt;
   stroke: black;
 }
 
 .structure-sheet-connector {
-  stroke-width: 3;
+  stroke-width: 1.5pt;
   stroke: black;
   stroke-linecap: round;
 }

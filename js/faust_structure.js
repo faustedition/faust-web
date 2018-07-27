@@ -9,7 +9,7 @@ define(['faust_common'],
 
   var horizontalIndentation = 15;
   var verticalDistance = 15;
-  var horizontalLineLength = 200;
+  var horizontalLineLength = 175;
 
   var appendPagesGroup = function(parent, className, events, leftPageNum, rightPageNum) {
     var group = createSvgElement({name: "g", parent: parent, class: "pages-group", properties: [["pages", {"left": leftPageNum, "right": rightPageNum}]]});
@@ -97,7 +97,7 @@ define(['faust_common'],
                                             ["text-anchor", "start"]
                                           ]
       });
-      pageNumText.appendChild(document.createTextNode(currentPage - 1));
+      pageNumText.appendChild(document.createTextNode((currentPage - 1).toString() + ' / ' + currentPage.toString()));
 
       // draw rects for user interaction. the problem is, that the last page of the current leaf must be put in a group with the first page
       // of the next group (like when opening a book one sees the bottom side of one page and the upper side of the next page).
@@ -194,7 +194,7 @@ define(['faust_common'],
     // adjust width and height of svg
     // left has a padding of "horizontalIndentation" and there is a gap of the same size between vertical line and horizontal lines.
     // space is added on right side for page numbers and right side padding
-    svg.setAttribute("width", horizontalLineLength + (2 * horizontalIndentation) + 30);
+    svg.setAttribute("width", horizontalLineLength + (2 * horizontalIndentation) + 60);
     svg.setAttribute("height", currentY + verticalDistance);
 
     // add  addEventListener function
