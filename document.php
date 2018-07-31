@@ -36,8 +36,9 @@
       <div id="last-page-button" class="pure-button" title="Letzte Seite"><i class="fa fa-to-end"></i></div>
     </div>
     <div id="view-select" class="view">
-      <a id="diplomatic-debug-button" class="pure-button" title="Dokumentarische Transkription debuggen" disabled="disabled"><i class="fa fa-bug"></i></a>
-      <a id="diplomatic-pdf-button" class="pure-button" title="Dokumentarische Transkription / PDF" disabled="disabled"><i class="fa fa-file-pdf"></i></a>
+      <!--<a id="diplomatic-debug-button" class="pure-button" title="Dokumentarische Transkription debuggen" disabled="disabled"><i class="fa fa-bug"></i></a>-->
+      <!--<a id="diplomatic-pdf-button" class="pure-button" title="Dokumentarische Transkription / PDF" disabled="disabled"><i class="fa fa-file-pdf"></i></a>-->
+      <a id="macrogenesis-button" class="pure-button" title="Makrogenese (experimentell!)" disabled="disabled"><i class="fa fa-calendar"></i></a>
       <div id="show-structure-button" class="pure-button" title="Metadaten/Lagenstruktur"><i class="fa fa-structure"></i></div>
       <div id="show-facsimile-button" class="pure-button" title="Faksimile"><i class="fa fa-picture"></i></div>
       <div id="show-facsimile_document-button" class="pure-button" title="Faksimile | Dokumentarische Transkription"><i class="fa fa-picture"></i> | <i class="fa fa-doc-transscript"></i></div>

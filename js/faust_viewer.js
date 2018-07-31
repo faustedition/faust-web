@@ -482,6 +482,14 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               console.log(e);
           }
 
+        try {
+          var macrogenesisButton = document.getElementById('macrogenesis-button');
+          macrogenesisButton.removeAttribute('disabled');
+          macrogenesisButton.href = 'macrogenesis/' + state.doc.sigil;
+        } catch (e) {
+          console.log(e);
+        }
+
           // set breadcrumbs FIXME refactor to faust_common
 
           // get breadcrumbs element
