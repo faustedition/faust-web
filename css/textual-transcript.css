@@ -546,3 +546,11 @@ div.variants {
 .type-stueck {
   margin: 2.5em 0
 }
+
+p .pb:before {
+  content: '';
+  border-left: 1px solid;
+  padding-left: 0.25em;
+    margin-left: 0.25em;
+    
+}
