@@ -538,6 +538,16 @@ div.variants {
     border-bottom: 1px dotted grey;
 }
 
+.type-textcrit .applinks {
+  text-indent: 0;
+  padding-left: 1em;
+}
+.type-textcrit .applinks a[href] {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0 0.1em;
+}
+
 .quote {
   font-style: normal;
   color: initial;
