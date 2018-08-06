@@ -821,7 +821,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       },
       getLayerCount: function() {
         var pageMetadata = this.state.doc.metadata.pages[this.state.page - 1];
-        if (pageMetadata.hasDocTranscripts && pageMetadata.docTranscripts[0].hasImages)
+        if (pageMetadata.docTranscripts.length > 0 && pageMetadata.docTranscripts[0].hasImages)
           return pageMetadata.docTranscripts[0].images.length;
         else return 1;
       },
@@ -838,7 +838,6 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         this.setPage(this.state.page);
       },
       setLayer: function(layer) {
-        console.log(layer, this.getLayerCount())
         var newLayer = layer % this.getLayerCount();
         if (this.state.layer !== newLayer) {
           this.state.layer = newLayer;
