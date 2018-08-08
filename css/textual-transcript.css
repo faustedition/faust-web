@@ -564,3 +564,8 @@ p .pb:before {
     margin-left: 0.25em;
     
 }
+
+.variant-lines {
+  font-size: 90%;
+  padding-left: 1em;  
+}
