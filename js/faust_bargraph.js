@@ -150,8 +150,6 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         }
       });
 
-      // sort witnesses
-      selectedWitnesses = Faust.sort(selectedWitnesses, "sigil", "sigil");
       return selectedWitnesses;
 
     },
