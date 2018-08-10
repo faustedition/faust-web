@@ -5,6 +5,7 @@ requirejs.config({
         data: '/data',
         sortable: 'sortable.min',
         jquery: 'jquery.min',
+        'svg-pan-zoom': 'svg-pan-zoom.min',
         'jquery.slick': 'jquery.slick.min'
     },
     shim: {
