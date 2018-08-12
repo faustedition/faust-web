@@ -6,6 +6,7 @@
         <article class="pure-u-3-5 pure-center">
             <p>
              <a href="print/faust" class="pure-button pure-button-tile">Faust</a>
+             <a href="print/app" class="pure-button pure-button-tile">Apparat</a>
              <a href="paralipomena" class="pure-button pure-button-tile">Paralipomena</a>
             </p>
         
