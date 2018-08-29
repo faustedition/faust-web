@@ -379,7 +379,7 @@ nav.print-navigation.placeholder {
   text-align: center;
 }
 
-.letter-spaced {
+.letter-spaced, .rend-letter-spaced {
   letter-spacing: 1pt;
 }
 
