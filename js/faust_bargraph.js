@@ -1,4 +1,4 @@
-define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
+define(['faust_common', 'data/scene_line_mapping', 'json!data/genetic_bar_graph'],
   function(Faust,        sceneLineMapping,          geneticBarGraphData) {
 
   // Array.findIndex polyfill from https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex

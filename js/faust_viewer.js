@@ -1,6 +1,6 @@
 // noinspection JSAnnotator
 define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_text', 'faust_print_interaction', 'faust_app',
-        'data/scene_line_mapping', 'data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata'
+        'data/scene_line_mapping', 'json!data/genetic_bar_graph', 'data/copyright_notes', 'data/archives', 'data/document_metadata'
     ],
   function(Faust, createStructureView, createDocTranscriptView, createFacsimileView, createTextualView, addPrintInteraction, app,
          sceneLineMapping, geneticBarGraphData, copyright_notes, archives, faustDocumentsMetadata) {

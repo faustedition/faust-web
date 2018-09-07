@@ -14,7 +14,7 @@ requirejs.config({
         'jquery.overlays': { deps: ['jquery'] },
         'jquery.clipboard': { deps: ['jquery'] },
         'data/scene_line_mapping' : { exports: 'sceneLineMapping' },
-        'data/genetic_bar_graph': { exports: 'geneticBarGraphData' },
+        /*'data/genetic_bar_graph': { exports: 'geneticBarGraphData' },*/
         'data/document_metadata': { exports: 'documentMetadata' },
         'data/concordance_columns': { exports: 'concordanceColumns' },
         'data/paralipomena': { exports: 'paralipomena' },
