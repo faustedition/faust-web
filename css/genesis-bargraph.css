@@ -40,6 +40,8 @@
 
 #current-sigil-label { font-weight: bold; }
 
+text.yearlabel { font-size: 12px; fill: gray; }
+
 /*
 #genetic-bar-diagram-verse-bars rect.paralipomena.uncertain {
   fill:rgb(220, 220, 200);

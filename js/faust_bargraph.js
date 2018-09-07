@@ -379,6 +379,15 @@ define(['faust_common', 'data/scene_line_mapping', 'json!data/genetic_bar_graph'
         // append sigil to vertical axis
         geneticBarDiagramSigils.appendChild(witnessSigil);
 
+        var yearLabel = createSvgElement({name: "text", class: "yearlabel"});
+        yearLabel.setAttribute("x", "-75");
+        yearLabel.setAttribute("y", witnessIndex * verticalDistance);
+        yearLabel.setAttribute("dy", 8);
+        yearLabel.setAttribute("text-anchor", "end");
+        yearLabel.appendChild(document.createTextNode(witness.yearlabel));
+        geneticBarDiagramSigils.appendChild(yearLabel);
+
+
         // group bars / rectangles and link per witness
         var witnessGroup = createSvgElement({name: "g"});
         witnessGroup.setAttribute("transform", "translate(0, " + witnessIndex * verticalDistance + ")");
