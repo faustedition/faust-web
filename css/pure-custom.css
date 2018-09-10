@@ -64,6 +64,7 @@ a[href].pure-button {border:none;}
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {background-color:rgba(0,0,0,0.8); color:rgb(230, 230, 230);}
 
 .pure-button-tile, a[href].pure-button-tile {display:block; margin:1em 0; padding:1em 1.5em 1em 2.5em; text-align:left; font-size:1.2em; background-image:url(../img/pure-button-tile-fallback.png); background-image:url(../img/pure-button-tile.svg), none; background-position:1.5em center; background-repeat:no-repeat;}
+table .pure-button-tile { margin: 0 0 0 0 !important; }
 
 .pure-g-r [class*="pure-u"] {font-family:"Ubuntu derivative Faust", Arial, Helvetica, sans-serif;}
 .pure-g-r [class*="pure-u"] [class*="pure-u"] + [class*="pure-u"] {margin-left:-.31em;} /* avoid whitespace between nested grid elements */
