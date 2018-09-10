@@ -303,3 +303,7 @@ a.undecorated {
   color: rgba(250,190,0,0.75);
   text-shadow: 4px 4px 4px #ddd;
 }
+
+
+.delete td { background-color: #fee; }
+.ignore td { color: #ddd; }
