@@ -534,7 +534,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               state.fragment = '';
           }
           state.page = newPage;
-          state.section = state.doc.findSection(state.page);
+          if (!initializing)
+            state.section = state.doc.findSection(state.page);
 
 
           try {
