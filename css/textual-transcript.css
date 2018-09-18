@@ -565,7 +565,12 @@ p .pb:before {
     
 }
 
+.emended-lines + .variant-lines {
+  margin-top: 0.5em; /* compensate for reduced line height */
+}
+
 .variant-lines {
-  font-size: 90%;
-  padding-left: 1em;  
+  font-size: 85%;
+  /* padding-left: 1em; */
+  line-height: 1em;
 }
