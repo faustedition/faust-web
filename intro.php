@@ -107,7 +107,7 @@
             enthält.</p>
         
         <h2 id="lesetext">Lesetext</h2>
-        <p>Die Lesetexte des ‚Faust I‘ und ‚Faust II‘ sind eine getreue, unemendierte Wiedergabe des
+        <p>Die <a href="intro_text">Lesetexte des ‚Faust I‘ und ‚Faust II‘</a> sind eine getreue, unemendierte Wiedergabe des
             jeweils zugrundeliegenden Zeugen. Für ‚Faust I‘ ist dies der Druck im achten Band der
             ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des
             ‚Faust II‘ liegt die 187 Blätter umfassende große Reinschrift zugrunde
