@@ -191,11 +191,12 @@ define(['faust_common', 'faust_structure'],
                 // try to get a uri from document's metadata and load the preview image. else create a message
                 // to inform about a missing preview
                 if( pageNum !== undefined ) {
-                    if((this.state.doc.metadata.pages[pageNum - 1].docTranscripts[0].hasImages) ) {
+                    var page = this.state.doc.metadata.pages[pageNum - 1];
+                    if((page.hasDocTranscripts && page.docTranscripts[0].hasImages) ) {
                         // load existing preview image
-                        pageUri = this.state.doc.metadata.pages[pageNum - 1].docTranscripts[0].images[0].jpgUrlBase + "_preview.jpg";
+                        pageUri = page.docTranscripts[0].images[0].jpgUrlBase + "_preview.jpg";
                         parent.appendChild(this.getPreviewElement(pageUri));
-                    } else if (this.state.doc.metadata.pages[pageNum - 1].empty) {
+                    } else if (page.empty) {
                         parent.appendChild(this.getPreviewElement("empty"))
                     } else {
                         // no facsimile exists - display info
