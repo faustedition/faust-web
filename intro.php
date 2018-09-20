@@ -121,6 +121,20 @@
             zeilensynoptischer Anordnung aufgerufen werden. Die Sigle am rechten Rand fÃ¼hrt zur
             Einzeldarstellung des Zeugen im digitalen Archiv.</p>
         
+        <h2 id="zeilensynopse">Zeilensynopse</h2>
+        <p>Die Zeilen des konstituierten Textes sind grau unterlegt, wenn abweichende Fassungen
+            existieren. Je dunkler eine Zeile unterlegt ist, desto mehr abweichende Fassungen liegen
+            vor (Grad und Art der Abweichung wirken sich nicht auf die Intensität der Unterlegung
+            aus). Die Intensität der Einfärbung des gelben Balkens am rechten Rand lässt auf die
+            Anzahl der überlieferten Fassungen schließen. Per Klick auf die Zeile lässt sich eine
+            chronologisch geordnete Liste der Fassungen einer Stelle aufrufen. Am Ende jeder Zeile
+            stehen die <a ref="#siglen">Siglen</a> der Zeugen, durch die eine bestimmte Fassung
+            überliefert ist. Ein Klick auf eine der Siglen führt zur textuellen Transkription des
+            Zeugen in Form der <a ref="transcription_guidelines.php#txt_transcr_last">letzten
+                abhebbaren Stufe</a>. Von dort ausgehend können wiederum zu jeder Zeile die anderen
+            überlieferten Fassungen sowie die Fassung des konstituierten Texts aufgerufen
+            werden.</p>
+
         <h2 id="genesis">Genese</h2>
         <p>Verschiedene Grafiken stellen die Entstehung von Goethes â€šFaustâ€˜ retrospektiv, d.h. vom
             abgeschlossenen Werk ausgehend, dar.</p>
