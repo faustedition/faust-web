@@ -126,6 +126,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               if (this.fragment) {
                   url += '#' + this.fragment;
               }
+              console.log('toLocation(replaceHistory=', replaceHistory, '),  → ', url);
               if (replaceHistory)
                   history.replaceState(history.state, null, url);
               else
@@ -137,6 +138,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           // initializes the state from the location bar.
           fromLocation: function fromLocation() {
               var parameters = Faust.url.getParameters();
+              console.log('fromLocation called ', parameters);
               this.doc.faustUri = parameters.faustUri;
               if (parameters.sigil)
                   this.doc.sigil = parameters.sigil.replace(/α/g, 'alpha').replace(/[^A-Za-z0-9.-]/g, '_');
@@ -174,6 +176,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               if (!this.page)
                 this.page = 1;
 
+              console.log('fromLocation finished ', parameters)
               return this;
           },
 

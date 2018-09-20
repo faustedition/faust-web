@@ -534,6 +534,9 @@ div.variants {
     text-indent: -2.5em;
 }
 
+.rdg .speaker::before { content: '\A'; white-space: pre; }
+.rdg .speaker:first-child::before { content: ''; white-space:  normal }
+
 .seg.type-lem {
     border-bottom: 1px dotted grey;
 }
