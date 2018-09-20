@@ -130,15 +130,15 @@
         <h2 id="zeilensynopse">Zeilensynopse</h2>
         <p>Die Zeilen des konstituierten Textes sind grau unterlegt, wenn abweichende Fassungen
             existieren. Je dunkler eine Zeile unterlegt ist, desto mehr abweichende Fassungen liegen
-            vor (Grad und Art der Abweichung wirken sich nicht auf die Intensität der Unterlegung
-            aus). Die Intensität der Einfärbung des gelben Balkens am rechten Rand lässt auf die
-            Anzahl der überlieferten Fassungen schließen. Per Klick auf die Zeile lässt sich eine
+            vor (Grad und Art der Abweichung wirken sich nicht auf die IntensitÃ¤t der Unterlegung
+            aus). Die IntensitÃ¤t der EinfÃ¤rbung des gelben Balkens am rechten Rand lÃ¤sst auf die
+            Anzahl der Ã¼berlieferten Fassungen schlieÃŸen. Per Klick auf die Zeile lÃ¤sst sich eine
             chronologisch geordnete Liste der Fassungen einer Stelle aufrufen. Am Ende jeder Zeile
             stehen die <a ref="#siglen">Siglen</a> der Zeugen, durch die eine bestimmte Fassung
-            überliefert ist. Ein Klick auf eine der Siglen führt zur textuellen Transkription des
+            Ã¼berliefert ist. Ein Klick auf eine der Siglen fÃ¼hrt zur textuellen Transkription des
             Zeugen in Form der <a ref="transcription_guidelines.php#txt_transcr_last">letzten
-                abhebbaren Stufe</a>. Von dort ausgehend können wiederum zu jeder Zeile die anderen
-            überlieferten Fassungen sowie die Fassung des konstituierten Texts aufgerufen
+                abhebbaren Stufe</a>. Von dort ausgehend kÃ¶nnen wiederum zu jeder Zeile die anderen
+            Ã¼berlieferten Fassungen sowie die Fassung des konstituierten Texts aufgerufen
             werden.</p>
 
         <h2 id="genesis">Genese</h2>
