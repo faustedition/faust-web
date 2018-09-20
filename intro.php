@@ -106,26 +106,20 @@
             die wichtigsten Angaben wie Datum, Verfasser, Adressat, Verweis-Nummern
             enthÃ¤lt.</p>
         
-        <h2 id="lesetext">Text</h2>
-        <p>Die Ausgabe bietet einen neu konstituierten Text des Dramas, erstellt auf der Grundlage
-            des gesamten Materials. Das Werk erscheint unter dem gemeinsamen Titel „Faust. Eine
-            Tragödie“. „Zueignung“, „Vorspiel auf dem Theater“ und „Prolog im Himmel“ sind den
-            beiden Teilen „Der Tragödie erster Teil“ und „Der Tragödie zweiter Teil in fünf Akten“
-            vorangestellt. Die Textbehandlung der vorliegenden Ausgabe folgt bei beiden Teilen des
-            Faust denselben Grundsätzen. Ziel der Textkonstitution ist es, den letzten autornahen
-            Textzustand, der sich erreichen lässt, in emendierter Form wiederzugeben. Im Fall sowohl
-            von Faust I wie auch von Faust II ist der jeweils letzte autornahe Textzustand nicht
-            direkt überliefert; er lässt sich jedoch in beiden Fällen durch textkritische Analyse
-            der Überlieferung rekonstruieren. Der konstituierte Text ist das Ergebnis der
-            Rekonstruktion des letzten autornahen Textzustandes und dessen Emendation von
-            Überlieferungsstörungen. Konjekturen werden nicht in den konstituierten Text
-            aufgenommen. Zu den Grundsätzen der Textbehandlung vgl. den <a ref="intro_text"
-                >Editorischen Bericht zum konstituierten Text</a>.</p>
-
-        <p>Bei der Darstellung des konstituierten Textes gelten dieselben Prinzipien
-            wie bei den textuellen Transkriptionen in Form der <a ref="transcription_guidelines.php#txt_transcr_last">letzten
-                abhebbaren Stufe</a>. Im Unterschied zu den Ã¼brigen Textwiedergaben sind die
+        <h2 id="lesetext">Lesetext</h2>
+        <p>Die <a href="intro_text">Lesetexte des â€šFaust Iâ€˜ und â€šFaust IIâ€˜</a> sind eine getreue, unemendierte Wiedergabe des
+            jeweils zugrundeliegenden Zeugen. FÃ¼r â€šFaust Iâ€˜ ist dies der Druck im achten Band der
+            ersten bei Cotta erschienenen Gesamtausgabe (der sogenannten Ausgabe A). Dem Text des
+            â€šFaust IIâ€˜ liegt die 187 BlÃ¤tter umfassende groÃŸe Reinschrift zugrunde
+            (WA-Sigle H bzw. in unserer Ausgabe 2 H). Bei der Wiedergabe gelten dieselben Prinzipien
+            wie bei den <a href="transcription_guidelines#txt_Transkr_Hss">textuellen
+                Transkriptionen</a>. Im Unterschied zu den Ã¼brigen Textwiedergaben sind die
             Seitengrenzen der Vorlage im Lesetext nicht markiert.</p>
+        <p>Die Lesetexte dienen als Bezugstexte fÃ¼r die VerszÃ¤hlung und die genetische Darstellung.
+            Durch Auswahl der einzelnen Zeilen kÃ¶nnen alle Ã¼berlieferten Fassungen eines Verses,
+            einer Ãœberschrift, einer Sprecherbezeichnung, einer BÃ¼hnenanweisung etc. in
+            zeilensynoptischer Anordnung aufgerufen werden. Die Sigle am rechten Rand fÃ¼hrt zur
+            Einzeldarstellung des Zeugen im digitalen Archiv.</p>
         
         <h2 id="zeilensynopse">Zeilensynopse</h2>
         <p>Die Zeilen des konstituierten Textes sind grau unterlegt, wenn abweichende Fassungen
