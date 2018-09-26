@@ -64,6 +64,9 @@ requirejs(['faust_common', 'sortable', 'data/document_metadata', 'data/archives'
   // create output and append to page
   for(var i = 0; i < archiveArray.length; i++) {
       var currentChild = archiveArray[i];
+      if (!currentChild.witnesses)
+          continue;
+
       var archiveTr = document.createElement("tr");
 
       var archiveDetailLink = document.createElement("a");
