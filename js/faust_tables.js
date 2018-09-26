@@ -125,8 +125,8 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
         return tableElementData;
       });
 
-      var HERMAPHRODITE = "faust://xml/document/archival/dla_marbach/Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.xml"; // print + manuscript
-      concordanceData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.faustUri == HERMAPHRODITE});
+      var HERMAPHRODITE = "1_H.1"; // print + manuscript
+      concordanceData = concordanceTableData.filter(function(tableData) {return !tableData.isPrint || tableData.sigil == HERMAPHRODITE});
       // concordancePrintTableData = concordanceTableData.filter(function(tableData) {return tableData.isPrint;});
 
       var concordanceTableContainer = container;
@@ -170,11 +170,7 @@ define(['faust_common', 'sortable', 'data/document_metadata', 'data/concordance_
       // create rows for each column
       concordanceData.forEach(function(currentDocument, documentIndex) {
         tableRow = document.createElement("tr");
-        if(currentDocument.isPrint) {
-          var documentLink = "print/" + currentDocument.sigil;
-        } else {
-          var documentLink = "document?sigil=" + currentDocument.sigil;
-        }
+        var documentLink = "document?sigil=" + currentDocument.sigil;
         tableRow.addEventListener("click", function(event) {
           if (event.target.nodeName.toUpperCase() === "A"
             && event.target.href)
