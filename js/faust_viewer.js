@@ -70,6 +70,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
       // viewer instance variables
       var state = {
+        dontrecordhistory: false,
         canPersist: storageAvailable('sessionStorage'),
         getDefaultValue: function getDefaultValue(item, globalDefault) {
             var storedValue;
@@ -106,10 +107,12 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
             var that = this;
             window.addEventListener("popstate", function (ev) {
+                that.dontrecordhistory = true;
                 console.log("location popped", ev);
                 that.fromLocation();
-                setView(that.view);
-                setPage(that.page);
+                setView(that.view, true);
+                setPage(that.page, true);
+                that.dontrecordhistory = false;
             });
         },
 
@@ -126,11 +129,10 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               if (this.fragment) {
                   url += '#' + this.fragment;
               }
-              console.log('toLocation(replaceHistory=', replaceHistory, '),  → ', url);
-              if (replaceHistory)
+              if (replaceHistory && !this.dontrecordhistory)
                   history.replaceState(history.state, null, url);
               else
-                  history.pushState(history.state, null, url);
+                  if (!this.dontrecordhistory) history.pushState(history.state, null, url);
 
               return this;
           },
