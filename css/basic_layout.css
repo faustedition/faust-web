@@ -307,3 +307,40 @@ a.undecorated {
 
 .delete td { background-color: #fee; }
 .ignore td { color: #ddd; }
+
+/* -- search -- */
+
+.pure-button[data-badge] { position: relative; }
+.pure-button[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:-7px;
+  right:-2px;
+  font-size: 12px;
+  background: rgb(192,0,0);
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 2px;
+  border: 1.5px solid rgba(192,0,0,0.9);
+  margin: 2px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.hit .headnote { font-weight: lighter; margin-left: 1em;}
+.hit h3 { margin-bottom: 3pt; vertical-align: middle; }
+.hit h3 a { font-weight: normal; }
+.hit .sigil { padding-right: 5px; border-right: 1px solid gray; }
+.hit .breadcrumbs { color: gray; vertical-align: middle; }
+.hit .breadcrumbs span { margin: 0 5px; }
+.score {margin-left: 5px; padding-left: 5px; color: #ddd; visibility: hidden; }
+h3:hover .score { visibility: visible; }
+.subhit { width: 100%; display: flex;  }
+.subhit-content { width: 75%; }
+.subhit ul.breadcrumbs { width: 25%; padding: 0; margin: 0;  font-size: 80%; }
+.subhit ul.breadcrumbs li { display: inline; list-style-type: none; color: gray; }
+.subhit ul.breadcrumbs li ~ li:before { padding-right: 0.5ex; content: "›" }
+.hit ul.breadcrumbs { display: none; }
+.print-center-column { width: 80%; }
+ul.sort { list-style-type: none; }
+.idno mark { padding: 0; }

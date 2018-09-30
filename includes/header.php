@@ -39,6 +39,10 @@
     <link rel="stylesheet" href="/css/textual-transcript.css">
     <link rel="stylesheet" href="/css/prints-viewer.css">
     <?php endif; ?>
+    <?php if (inurl('search')) : ?>
+      <link rel="stylesheet" href="/css/textual-transcript.css">
+      <link rel="stylesheet" href="/css/prints-viewer.css">
+    <?php endif; ?>
     <?php if (inurl('genesis')) : ?>
     <link rel="stylesheet" href="/css/genesis-bargraph.css">
     <?php endif; ?>
