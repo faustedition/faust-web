@@ -11,8 +11,35 @@
     </nav>
 
     <div id="tabcontainer">
-        <article class="tab" id="tab-transcripts">
-            Transkriptergebnisse
+        <article class="tab pure-grid-r" id="tab-transcripts">
+            <div class="pure-u-1-5">
+                <form class="pure-form">
+                    <fieldset>
+                        <legend>Suche nach</legend>
+                        <input id="index-de" type="radio" name="index" value="text-de" checked="checked"/>
+                        <label for="index-de">Wörtern</label><br/>
+                        <input id="index-text" type="radio" name="index" value="text"/>
+                        <label for="index-text">allen Wortformen</label><br/>
+                        <input id="index-ws" type="radio" name="index" value="text-ws"/>
+                        <label for="index-ws">Exakten Tokens</label><br/>
+                        <input id="index-ngram" type="radio" name="index" value="ngram" disabled="disabled"/>
+                        <label for="index-ngram">Substrings</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sortierung</legend>
+                        <input id="sort-sigil" type="radio" name="sort" value="sigil"/>
+                        <label for="sort-sigil">Sigle</label><br/>
+                        <input id="sort-genesis" type="radio" name="sort" value="genesis"/>
+                        <label for="sort-genesis">Makrogenese</label><br/>
+                        <input id="sort-sigil" type="radio" name="sort" value="relevance" checked="checked"/>
+                        <label for="sort-sigil">Relevanz</label><br/>
+                        <input id="sort-sigil" type="radio" name="sort" value="verse"/>
+                        <label for="sort-sigil">Vers</label><br/>
+                    </fieldset>
+                </form>
+            </div><div class="pure-u-4-5" id="transcripts-content">
+                Suche läuft …
+            </div>
         </article>
 
         <article class="tab" id="tab-metadata" style="display: none">
@@ -47,18 +74,23 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
 
       // Perform the queries
-      var transcriptBody = document.getElementById('tab-transcripts'),
+      var transcriptBody = document.getElementById('transcripts-content'),
           transcriptBtn = document.getElementById('btn-transcripts'),
           metaBody = document.getElementById('tab-metadata'),
-          metaBtn = document.getElementById('btn-metadata');
+          metaBtn = document.getElementById('btn-metadata'),
+          testiBody = document.getElementById('tab-testimony'),
+          testiBtn = document.getElementById('btn-testimony');
 
       Faust.xhr.get('/search/text' + window.location.search + '&highlight=false', 'text').then(function(response) {
-          transcriptBody.innerHTML = response;
-          transcriptBtn.setAttribute("data-badge", transcriptBody.children[0].getAttribute("data-hits"));
-        }).then(function() {
-          return Faust.xhr.get('/search/text' + window.location.search + '&highlight=true', 'text')
+            transcriptBody.innerHTML = response;
+            var hits = transcriptBody.children[0].getAttribute("data-hits");
+            transcriptBtn.setAttribute("data-badge", hits);
+            return hits;
+        }).then(function(hits) {
+          if (hits <= 500)
+              return Faust.xhr.get('/search/text' + window.location.search + '&highlight=true', 'text')
         }).then(function(response) {
-          transcriptBody.innerHTML = response;
+           if (response) transcriptBody.innerHTML = response;
         }).catch(function(err) {
           Faust.error("Fehler bei der Suche", err, transcriptBody);
         });
@@ -68,6 +100,13 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
       }).catch(function(err) {
           Faust.error("Fehler bei der Metadatensuche", err, metaBody);
+      });
+
+      Faust.xhr.get('/search/testimony' + window.location.search, 'text').then(function(response) {
+        testiBody.innerHTML = response;
+        testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
+        }).catch(function(err) {
+        Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
       });
 
 });
