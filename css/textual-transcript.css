@@ -65,7 +65,7 @@ h3.head, .body > .div > .head {
   color: #aaa;
   font-size: 80%;
 }
-.lineno {
+a.lineno {
     color: #aaa;
     font-size: 80%;
 }

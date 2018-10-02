@@ -16,25 +16,30 @@
                 <form class="pure-form">
                     <fieldset>
                         <legend>Suche nach</legend>
-                        <input id="index-de" type="radio" name="index" value="text-de" checked="checked"/>
-                        <label for="index-de">Wörtern</label><br/>
+                        <input id="index-text-de" type="radio" name="index" value="text-de"/>
+                        <label for="index-text-de">Wörtern</label><br/>
                         <input id="index-text" type="radio" name="index" value="text"/>
                         <label for="index-text">allen Wortformen</label><br/>
-                        <input id="index-ws" type="radio" name="index" value="text-ws"/>
-                        <label for="index-ws">Exakten Tokens</label><br/>
+                        <input id="index-text-ws" type="radio" name="index" value="text-ws"/>
+                        <label for="index-text-ws">Exakten Tokens</label><br/>
                         <input id="index-ngram" type="radio" name="index" value="ngram" disabled="disabled"/>
                         <label for="index-ngram">Substrings</label>
                     </fieldset>
                     <fieldset>
                         <legend>Sortierung</legend>
-                        <input id="sort-sigil" type="radio" name="sort" value="sigil"/>
-                        <label for="sort-sigil">Sigle</label><br/>
-                        <input id="sort-genesis" type="radio" name="sort" value="genesis"/>
-                        <label for="sort-genesis">Makrogenese</label><br/>
-                        <input id="sort-sigil" type="radio" name="sort" value="relevance" checked="checked"/>
-                        <label for="sort-sigil">Relevanz</label><br/>
-                        <input id="sort-sigil" type="radio" name="sort" value="verse"/>
-                        <label for="sort-sigil">Vers</label><br/>
+                        <input id="order-sigil" type="radio" name="order" value="sigil"/>
+                        <label for="order-sigil">Sigle</label><br/>
+                        <input id="order-genesis" type="radio" name="order" value="genesis"/>
+                        <label for="order-genesis">Makrogenese</label><br/>
+                        <input id="order-relevance" type="radio" name="order" value="relevance"/>
+                        <label for="order-relevance">Relevanz</label><br/>
+                        <input id="order-verse" type="radio" name="order" value="verse"/>
+                        <label for="order-verse">Vers</label><br/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Optionen</legend>
+                        <input id="option-sp" type="checkbox" name="sp" title="nur im Sprechtext">
+                        <label for="option-sp">nur im Sprechtext</label>
                     </fieldset>
                 </form>
             </div><div class="pure-u-4-5" id="transcripts-content">
@@ -59,55 +64,116 @@
 
 <script type="text/javascript">
 requirejs(['faust_common', 'jquery'], function(Faust, $) {
-      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}]));
 
-      // Tab handling
-      $('.tab-bar .pure-button').on('click', function (event) {
-        var currentBtn = event.currentTarget,
-            currentVerb = currentBtn.id.replace('btn-', ''),
-            currentTab = $('#tab-' + currentVerb);
+      var state = {
+        defaults: {
+          q: null,
+          index: "text-de",
+          order: "sigil",
+          sp: false,
+          tab: "transcripts"
+        },
+        current: {},
+        fromDefaults: function () { this.current = $.extend({}, this.defaults); },
+        fromQuery: function (params) {
+          if (typeof params === "undefined")
+            params = Faust.url.getParameters();
+          this.current = $.extend(this.current, params);
+        },
+        toForm: function () {
+          $('#index-' + this.current.index).prop('checked', true);
+          $('#order-' + this.current.order).prop('checked', true);
+          $('#option-sp').prop('checked', this.current.sp)
+          setTab(this.current.tab)
+        },
+        fromForm: function() {
+          this.current.index = $('[name=index]:checked').val();
+          this.current.order = $('[name=order]:checked').val();
+          this.current.sp = $('#option-sp').is('checked');
+        },
+        toQuery: function () {
+          var params = $.extend({}, this.current);
+          delete params.tab;
+          return $.param(params);
+        }
+      };
+
+      var transcriptBody = document.getElementById('transcripts-content'),
+        transcriptBtn = document.getElementById('btn-transcripts'),
+        metaBody = document.getElementById('tab-metadata'),
+        metaBtn = document.getElementById('btn-metadata'),
+        testiBody = document.getElementById('tab-testimony'),
+        testiBtn = document.getElementById('btn-testimony');
+
+      var searchTranscripts = function searchTranscripts() {
+        return Faust.xhr.get('/search/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
+          transcriptBody.innerHTML = response;
+          var hits = transcriptBody.children[0].getAttribute("data-hits");
+          transcriptBtn.setAttribute("data-badge", hits);
+          return hits;
+        }).then(function (hits) {
+          if (hits <= 500)
+            return Faust.xhr.get('/search/text?' + state.toQuery() + '&highlight=true', 'text')
+        }).then(function (response) {
+          if (response) transcriptBody.innerHTML = response;
+        }).catch(function (err) {
+          Faust.error("Fehler bei der Suche", err, transcriptBody);
+        });
+      };
+
+      var searchMetadata = function searchMetadata() {
+        return Faust.xhr.get('/search/meta?' + state.toQuery(), 'text').then(function (response) {
+          metaBody.innerHTML = response;
+          metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
+        }).catch(function (err) {
+          Faust.error("Fehler bei der Metadatensuche", err, metaBody);
+        });
+      };
+
+      var searchTestimony = function searchTestimony() {
+        return Faust.xhr.get('/search/testimony?' + state.toQuery(), 'text').then(function (response) {
+          testiBody.innerHTML = response;
+          testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
+        }).catch(function (err) {
+          Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
+        });
+      };
+
+      var setTab = function setTab(currentVerb) {
+        var currentTab = $('#tab-' + currentVerb),
+          currentBtn = $('#btn-' + currentVerb);
         $('.tab-bar .pure-button').removeClass('pure-button-selected');
         $(currentBtn).addClass('pure-button-selected');
         $('#tabcontainer .tab').hide();
         currentTab.show();
+      };
+
+
+      // Initialize state
+      state.fromDefaults();
+      state.fromQuery();
+      state.toForm();
+
+      $('#tab-transcripts form').on("change", function () {
+        state.fromForm();
+        searchTranscripts();
       });
 
 
-      // Perform the queries
-      var transcriptBody = document.getElementById('transcripts-content'),
-          transcriptBtn = document.getElementById('btn-transcripts'),
-          metaBody = document.getElementById('tab-metadata'),
-          metaBtn = document.getElementById('btn-metadata'),
-          testiBody = document.getElementById('tab-testimony'),
-          testiBtn = document.getElementById('btn-testimony');
-
-      Faust.xhr.get('/search/text' + window.location.search + '&highlight=false', 'text').then(function(response) {
-            transcriptBody.innerHTML = response;
-            var hits = transcriptBody.children[0].getAttribute("data-hits");
-            transcriptBtn.setAttribute("data-badge", hits);
-            return hits;
-        }).then(function(hits) {
-          if (hits <= 500)
-              return Faust.xhr.get('/search/text' + window.location.search + '&highlight=true', 'text')
-        }).then(function(response) {
-           if (response) transcriptBody.innerHTML = response;
-        }).catch(function(err) {
-          Faust.error("Fehler bei der Suche", err, transcriptBody);
-        });
-
-      Faust.xhr.get('/search/meta' + window.location.search, 'text').then(function(response) {
-          metaBody.innerHTML = response;
-          metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
-      }).catch(function(err) {
-          Faust.error("Fehler bei der Metadatensuche", err, metaBody);
+      // Tab handling
+      $('.tab-bar .pure-button').on('click', function (event) {
+        var currentBtn = event.currentTarget,
+          currentVerb = currentBtn.id.replace('btn-', '');
+        setTab(currentVerb);
+        state.current.tab = currentVerb;
       });
 
-      Faust.xhr.get('/search/testimony' + window.location.search, 'text').then(function(response) {
-        testiBody.innerHTML = response;
-        testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
-        }).catch(function(err) {
-        Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
-      });
+      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
+
+      // Initially perform the queries
+      searchTranscripts();
+      searchMetadata();
+      searchTestimony();
 
 });
 </script>

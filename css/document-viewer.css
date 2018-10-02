@@ -276,58 +276,6 @@ div g.element-line-hidden:hover > * {
   padding-right:1em;
 }
 
-/*
- * Normale <dl> sieht schön aus, nimmt aber zuviel platz weg.
- * horizontale <dl> sieht doof aus.
- *
- * Das folgende ist ein Hack, kriegen wir das irgendwie besser hin?
- */
-
-.metadata-container dt {
-  display: inline;
-}
-.metadata-container dt:after {
-  content: " ";
-}
-.metadata-container dd {
-  display: inline;
-  margin-left: 0;
-}
-.metadata-container dd:after {
-  display: block;
-  content: '\A';
-  margin-bottom: 0.5ex;
-}
-.metadata-container dd > dl {
-  display: block;
-  margin-left: 2em;
-  margin-top: 0;
-}
-.md-note { line-height: normal; }
-.md-level {
-  margin-left: 2em;
-  margin-top: 0;
-}
-.md-level > h3 {
-  margin-left: -2em;
-  margin-bottom: 0;
-}
-
-
-/* :) */
-.wip {
-  color: #111;
-  background: url(/img/wip-bg.svg) no-repeat top right;
-  background-size: contain;
-}
-cite {
-  margin-right: 0.1em; /* Kursivausgleich */
-}
-.bib-list cite {
-  font-style: normal;
-  margin-right: 0;
-}
-
 /* documentary transcript view */
 .doc-transcript-content {
   text-align: center;
