@@ -65,115 +65,124 @@
 <script type="text/javascript">
 requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
-      var state = {
-        defaults: {
-          q: null,
-          index: "text-de",
-          order: "sigil",
-          sp: false,
-          tab: "transcripts"
-        },
-        current: {},
-        fromDefaults: function () { this.current = $.extend({}, this.defaults); },
-        fromQuery: function (params) {
-          if (typeof params === "undefined")
-            params = Faust.url.getParameters();
-          this.current = $.extend(this.current, params);
-        },
-        toForm: function () {
-          $('#index-' + this.current.index).prop('checked', true);
-          $('#order-' + this.current.order).prop('checked', true);
-          $('#option-sp').prop('checked', this.current.sp)
-          setTab(this.current.tab)
-        },
-        fromForm: function() {
-          this.current.index = $('[name=index]:checked').val();
-          this.current.order = $('[name=order]:checked').val();
-          this.current.sp = $('#option-sp').is('checked');
-        },
-        toQuery: function () {
-          var params = $.extend({}, this.current);
-          delete params.tab;
-          return $.param(params);
-        }
-      };
+      try {
 
-      var transcriptBody = document.getElementById('transcripts-content'),
-        transcriptBtn = document.getElementById('btn-transcripts'),
-        metaBody = document.getElementById('tab-metadata'),
-        metaBtn = document.getElementById('btn-metadata'),
-        testiBody = document.getElementById('tab-testimony'),
-        testiBtn = document.getElementById('btn-testimony');
+        var state = {
+          defaults: {
+            q: null,
+            index: "text-de",
+            order: "sigil",
+            sp: false,
+            tab: "transcripts"
+          },
+          current: {},
+          fromDefaults: function () {
+            this.current = $.extend({}, this.defaults);
+          },
+          fromQuery: function (params) {
+            if (typeof params === "undefined")
+              params = Faust.url.getParameters();
 
-      var searchTranscripts = function searchTranscripts() {
-        return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
-          transcriptBody.innerHTML = response;
-          var hits = transcriptBody.children[0].getAttribute("data-hits");
-          transcriptBtn.setAttribute("data-badge", hits);
-          return hits;
-        }).then(function (hits) {
-          if (hits <= 500)
-            return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=true', 'text')
-        }).then(function (response) {
-          if (response) transcriptBody.innerHTML = response;
-        }).catch(function (err) {
-          Faust.error("Fehler bei der Suche", err, transcriptBody);
+            this.current = $.extend(this.current, params);
+          },
+          toForm: function () {
+            $('#index-' + this.current.index).prop('checked', true);
+            $('#order-' + this.current.order).prop('checked', true);
+            $('#option-sp').prop('checked', this.current.sp)
+            setTab(this.current.tab)
+          },
+          fromForm: function () {
+            this.current.index = $('[name=index]:checked').val();
+            this.current.order = $('[name=order]:checked').val();
+            this.current.sp = $('#option-sp').is('checked');
+          },
+          toQuery: function () {
+            var params = $.extend({}, this.current);
+            delete params.tab;
+            return $.param(params);
+          }
+        };
+
+        var transcriptBody = document.getElementById('transcripts-content'),
+          transcriptBtn = document.getElementById('btn-transcripts'),
+          metaBody = document.getElementById('tab-metadata'),
+          metaBtn = document.getElementById('btn-metadata'),
+          testiBody = document.getElementById('tab-testimony'),
+          testiBtn = document.getElementById('btn-testimony');
+
+        var searchTranscripts = function searchTranscripts() {
+          return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
+            transcriptBody.innerHTML = response;
+            var hits = transcriptBody.children[0].getAttribute("data-hits");
+            transcriptBtn.setAttribute("data-badge", hits);
+            return hits;
+          }).then(function (hits) {
+            if (hits <= 500)
+              return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=true', 'text')
+          }).then(function (response) {
+            if (response) transcriptBody.innerHTML = response;
+          }).catch(function (err) {
+            Faust.error("Fehler bei der Suche", err, transcriptBody);
+          });
+        };
+
+        var searchMetadata = function searchMetadata() {
+          return Faust.xhr.get('/query/meta?' + state.toQuery(), 'text').then(function (response) {
+            metaBody.innerHTML = response;
+            metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
+          }).catch(function (err) {
+            Faust.error("Fehler bei der Metadatensuche", err, metaBody);
+          });
+        };
+
+        var searchTestimony = function searchTestimony() {
+          return Faust.xhr.get('/query/testimony?' + state.toQuery(), 'text').then(function (response) {
+            testiBody.innerHTML = response;
+            testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
+          }).catch(function (err) {
+            Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
+          });
+        };
+
+        var setTab = function setTab(currentVerb) {
+          var currentTab = $('#tab-' + currentVerb),
+            currentBtn = $('#btn-' + currentVerb);
+          $('.tab-bar .pure-button').removeClass('pure-button-selected');
+          $(currentBtn).addClass('pure-button-selected');
+          $('#tabcontainer .tab').hide();
+          currentTab.show();
+        };
+
+
+        // Initialize state
+        state.fromDefaults();
+        state.fromQuery();
+        state.toForm();
+
+        $('#tab-transcripts form').on("change", function () {
+          state.fromForm();
+          searchTranscripts();
         });
-      };
 
-      var searchMetadata = function searchMetadata() {
-        return Faust.xhr.get('/query/meta?' + state.toQuery(), 'text').then(function (response) {
-          metaBody.innerHTML = response;
-          metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
-        }).catch(function (err) {
-          Faust.error("Fehler bei der Metadatensuche", err, metaBody);
+
+        // Tab handling
+        $('.tab-bar .pure-button').on('click', function (event) {
+          var currentBtn = event.currentTarget,
+            currentVerb = currentBtn.id.replace('btn-', '');
+          setTab(currentVerb);
+          state.current.tab = currentVerb;
         });
-      };
 
-      var searchTestimony = function searchTestimony() {
-        return Faust.xhr.get('/query/testimony?' + state.toQuery(), 'text').then(function (response) {
-          testiBody.innerHTML = response;
-          testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
-        }).catch(function (err) {
-          Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
-        });
-      };
+        document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
 
-      var setTab = function setTab(currentVerb) {
-        var currentTab = $('#tab-' + currentVerb),
-          currentBtn = $('#btn-' + currentVerb);
-        $('.tab-bar .pure-button').removeClass('pure-button-selected');
-        $(currentBtn).addClass('pure-button-selected');
-        $('#tabcontainer .tab').hide();
-        currentTab.show();
-      };
-
-
-      // Initialize state
-      state.fromDefaults();
-      state.fromQuery();
-      state.toForm();
-
-      $('#tab-transcripts form').on("change", function () {
-        state.fromForm();
+        // Initially perform the queries
         searchTranscripts();
-      });
+        searchMetadata();
+        searchTestimony();
 
-
-      // Tab handling
-      $('.tab-bar .pure-button').on('click', function (event) {
-        var currentBtn = event.currentTarget,
-          currentVerb = currentBtn.id.replace('btn-', '');
-        setTab(currentVerb);
-        state.current.tab = currentVerb;
-      });
-
-      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
-
-      // Initially perform the queries
-      searchTranscripts();
-      searchMetadata();
-      searchTestimony();
+      } catch (e) {
+        Faust.error('Bug in der interaktiven Suche', e);
+      }
 
 });
 </script>

@@ -291,7 +291,7 @@ define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady,
           parameters.forEach(function(parameter) {
             name = parameter.split("=")[0];
             value = parameter.split("=")[1];
-            result[name] = value;
+            result[name] = decodeURIComponent(value.replace(/\+/g, '%20'));
           });
         }
         if (window.location.hash) {
