@@ -35,7 +35,7 @@
             <a href="/archive_locations">Aufbewahrungsorte</a>
             <a href="/archive_manuscripts">Handschriften</a>
             <a href="/archive_prints">Drucke</a>
-            <a href="/archive_testimonies">Dokumente zur Entstehungsgeschichte</a>
+            <a href="/archive_testimonies">Entstehungszeugnisse</a>
           </div>
           <div class="pure-u-1-4 pure-gap">
             <a><big>Genese</big></a>

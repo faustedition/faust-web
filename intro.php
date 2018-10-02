@@ -15,7 +15,7 @@
             <p><a class="pure-button" href="/archive_locations" style="display:block;">Aufbewahrungsorte</a></p>
             <p><a class="pure-button" href="/archive_manuscripts" style="display:block;">Handschriften</a></p>
             <p><a class="pure-button" href="/archive_prints" style="display:block;">Drucke</a></p>
-            <p><a class="pure-button" href="/archive_testimonies" style="display:block;"><small class="pure-fade-50">Dokumente zur</small><br>Entstehungsgeschichte</a></p>
+            <p><a class="pure-button" href="/archive_testimonies" style="display:block;">Entstehungszeugnisse</a></p>
         </div>
         <div class="pure-u-1-4 pure-gap pure-center">
             <p><a class="pure-button pure-button-primary" href="/genesis"><big>Genese</big></a></p>
@@ -89,9 +89,9 @@
             Revisionsbogen.</p>
         <p>Zu jedem Druck ist eine Transkription sowie eine Beschreibung verfügbar.</p>
 
-        <h2 id="testimony">Dokumente zur Entstehungsgeschichte</h2>
+        <h2 id="testimony">Entstehungszeugnisse</h2>
 
-        <p>Die <a href="archive_testimonies">Dokumente zur Entstehung des
+        <p>Die <a href="archive_testimonies">Zeugnisse zur Entstehung des
             ‚Faust‘</a> versammeln alle bislang bekanntgewordenen Äußerungen Goethes und
             anderer Zeitgenossen, die sich auf den ‚Faust‘ beziehen lassen, in Briefen,
             Tagebuch- und Gesprächsaufzeichnungen und weiteren schriftlich überlieferten
