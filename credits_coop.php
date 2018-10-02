@@ -11,10 +11,12 @@
             <li> Oliver Hahn / Bundesanstalt für Materialforschung und -prüfung, Berlin</li>
             <li> ISCH COST Action IS0704: An Interoperable Supranational Infrastructure for Digital
                 Editions (Interedition)</li>
+            <li> le-tex publishing services GmbH, Leipzig / Philipp Glatza </li>
             <li> Andrea Lothe / Deutsches Buch und Schriftmuseum, Papierhistorische Sammlung,
                 Leipzig</li>
             <li>Wilhelm Ott und Oliver Gasperlin / Pagina GmbH, Tübingen</li>
             <li>*produktivbüro Jork, Brümmer GbR, Berlin</li>
+            <li> Wallstein Verlag GmbH, Göttingen / Markus Ciupke </li>
         </ul>
     </article> 
 
