@@ -106,14 +106,14 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         testiBtn = document.getElementById('btn-testimony');
 
       var searchTranscripts = function searchTranscripts() {
-        return Faust.xhr.get('/search/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
+        return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
           transcriptBody.innerHTML = response;
           var hits = transcriptBody.children[0].getAttribute("data-hits");
           transcriptBtn.setAttribute("data-badge", hits);
           return hits;
         }).then(function (hits) {
           if (hits <= 500)
-            return Faust.xhr.get('/search/text?' + state.toQuery() + '&highlight=true', 'text')
+            return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=true', 'text')
         }).then(function (response) {
           if (response) transcriptBody.innerHTML = response;
         }).catch(function (err) {
@@ -122,7 +122,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
       };
 
       var searchMetadata = function searchMetadata() {
-        return Faust.xhr.get('/search/meta?' + state.toQuery(), 'text').then(function (response) {
+        return Faust.xhr.get('/query/meta?' + state.toQuery(), 'text').then(function (response) {
           metaBody.innerHTML = response;
           metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
         }).catch(function (err) {
@@ -131,7 +131,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
       };
 
       var searchTestimony = function searchTestimony() {
-        return Faust.xhr.get('/search/testimony?' + state.toQuery(), 'text').then(function (response) {
+        return Faust.xhr.get('/query/testimony?' + state.toQuery(), 'text').then(function (response) {
           testiBody.innerHTML = response;
           testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
         }).catch(function (err) {
