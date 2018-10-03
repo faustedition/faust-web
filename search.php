@@ -39,7 +39,7 @@
                     <fieldset>
                         <legend>Optionen</legend>
                         <input id="option-sp" type="checkbox" name="sp" title="nur im Sprechtext">
-                        <label for="option-sp">nur im Sprechtext</label>
+                        <label for="option-sp">nur im Haupttext</label>
                     </fieldset>
                 </form>
             </div><div class="pure-u-4-5" id="transcripts-content">
@@ -94,7 +94,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           fromForm: function () {
             this.current.index = $('[name=index]:checked').val();
             this.current.order = $('[name=order]:checked').val();
-            this.current.sp = $('#option-sp').is('checked');
+            this.current.sp = $('#option-sp').prop('checked');
           },
           toQuery: function () {
             var params = $.extend({}, this.current);
