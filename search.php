@@ -5,6 +5,7 @@
      <a id="btn-transcripts" href="#" class="pure-button pure-button-selected">Transkripte</a>
      <a id="btn-metadata" href="#" class="pure-button">Metadaten</a>
      <a id="btn-testimony" href="#" class="pure-button">Entstehungszeugnisse</a>
+     <a id="btn-info" href="#" class="pure-button">Über die Ausgabe</a>
      <!--<a id="btn-about" href="#" class="pure-button pure-button-disabled">Über die Edition</a>
         <span> </span>
      <a href="#" class="pure-button">Erweiterte Suche</a>-->
@@ -55,7 +56,7 @@
             Entstehungszeugnisergebnisse
         </article>
 
-        <article class="tab" id="tab-about" style="display: none">
+        <article class="tab" id="tab-info" style="display: none">
             Infotextergebnisse
         </article>
     </div>
@@ -108,7 +109,9 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           metaBody = document.getElementById('tab-metadata'),
           metaBtn = document.getElementById('btn-metadata'),
           testiBody = document.getElementById('tab-testimony'),
-          testiBtn = document.getElementById('btn-testimony');
+          testiBtn = document.getElementById('btn-testimony'),
+          infoBody = document.getElementById('tab-info'),
+          infoBtn = document.getElementById('btn-info');
 
         var searchTranscripts = function searchTranscripts() {
           return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
@@ -143,6 +146,16 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
           });
         };
+
+
+          var searchInfo = function searchInfo() {
+              return Faust.xhr.get('/query/info?' + state.toQuery(), 'text').then(function (response) {
+                  infoBody.innerHTML = response;
+                  infoBtn.setAttribute('data-badge', infoBody.children[0].getAttribute('data-hits'));
+              }).catch(function (err) {
+                  Faust.error("Fehler bei der Suche in den Texten über die Ausgabe", err, infoBody);
+              });
+          };
 
         var setTab = function setTab(currentVerb) {
           var currentTab = $('#tab-' + currentVerb),
@@ -179,6 +192,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         searchTranscripts();
         searchMetadata();
         searchTestimony();
+        searchInfo();
 
       } catch (e) {
         Faust.error('Bug in der interaktiven Suche', e);
