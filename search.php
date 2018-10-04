@@ -5,6 +5,7 @@
      <a id="btn-transcripts" href="#" class="pure-button pure-button-selected">Transkripte</a>
      <a id="btn-metadata" href="#" class="pure-button">Metadaten</a>
      <a id="btn-testimony" href="#" class="pure-button">Entstehungszeugnisse</a>
+     <a id="btn-info" href="#" class="pure-button">Über die Ausgabe</a>
      <!--<a id="btn-about" href="#" class="pure-button pure-button-disabled">Über die Edition</a>
         <span> </span>
      <a href="#" class="pure-button">Erweiterte Suche</a>-->
@@ -43,20 +44,34 @@
                     </fieldset>
                 </form>
             </div><div class="pure-u-4-5" id="transcripts-content">
-                Suche läuft …
+                <div class="background-container">
+                    <div class="pure-center pure-fade-50">
+                        <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                        Suche in den Texten …
+                    </div>
+                </div>
             </div>
         </article>
 
         <article class="tab" id="tab-metadata" style="display: none">
-            Metadatenergebnisse
+            <div class="pure-center pure-fade-50">
+                <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                Suche in den Metadaten …
+            </div>
         </article>
 
         <article class="tab" id="tab-testimony" style="display: none">
-            Entstehungszeugnisergebnisse
+            <div class="pure-center pure-fade-50">
+                <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                Suche in den Entstehungszeugnissen …
+            </div>
         </article>
 
-        <article class="tab" id="tab-about" style="display: none">
-            Infotextergebnisse
+        <article class="tab" id="tab-info" style="display: none">
+            <div class="pure-center pure-fade-50">
+                <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                Suche in den Infotexten …
+            </div>
         </article>
     </div>
 </section>
@@ -85,6 +100,15 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
             this.current = $.extend(this.current, params);
           },
+          toLocation: function () {
+            var params = {};
+            for (var currentKey in this.current) {
+              if (this.current[currentKey] !== this.defaults[currentKey]) {
+                params[currentKey] = this.current[currentKey];
+              }
+            }
+            history.replaceState(history.state, '', window.location.pathname + '?' + $.param(params));
+          },
           toForm: function () {
             $('#index-' + this.current.index).prop('checked', true);
             $('#order-' + this.current.order).prop('checked', true);
@@ -108,7 +132,9 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           metaBody = document.getElementById('tab-metadata'),
           metaBtn = document.getElementById('btn-metadata'),
           testiBody = document.getElementById('tab-testimony'),
-          testiBtn = document.getElementById('btn-testimony');
+          testiBtn = document.getElementById('btn-testimony'),
+          infoBody = document.getElementById('tab-info'),
+          infoBtn = document.getElementById('btn-info');
 
         var searchTranscripts = function searchTranscripts() {
           return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
@@ -144,6 +170,16 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           });
         };
 
+
+          var searchInfo = function searchInfo() {
+              return Faust.xhr.get('/query/info?' + state.toQuery(), 'text').then(function (response) {
+                  infoBody.innerHTML = response;
+                  infoBtn.setAttribute('data-badge', infoBody.children[0].getAttribute('data-hits'));
+              }).catch(function (err) {
+                  Faust.error("Fehler bei der Suche in den Texten über die Ausgabe", err, infoBody);
+              });
+          };
+
         var setTab = function setTab(currentVerb) {
           var currentTab = $('#tab-' + currentVerb),
             currentBtn = $('#btn-' + currentVerb);
@@ -161,6 +197,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
         $('#tab-transcripts form').on("change", function () {
           state.fromForm();
+          state.toLocation();
           searchTranscripts();
         });
 
@@ -171,6 +208,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             currentVerb = currentBtn.id.replace('btn-', '');
           setTab(currentVerb);
           state.current.tab = currentVerb;
+          state.toLocation();
         });
 
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
@@ -179,6 +217,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         searchTranscripts();
         searchMetadata();
         searchTestimony();
+        searchInfo();
 
       } catch (e) {
         Faust.error('Bug in der interaktiven Suche', e);
