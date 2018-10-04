@@ -44,20 +44,34 @@
                     </fieldset>
                 </form>
             </div><div class="pure-u-4-5" id="transcripts-content">
-                Suche läuft …
+                <div class="background-container">
+                    <div class="pure-center pure-fade-50">
+                        <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                        Suche in den Texten …
+                    </div>
+                </div>
             </div>
         </article>
 
         <article class="tab" id="tab-metadata" style="display: none">
-            Metadatenergebnisse
+            <div class="pure-center pure-fade-50">
+                <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                Suche in den Metadaten …
+            </div>
         </article>
 
         <article class="tab" id="tab-testimony" style="display: none">
-            Entstehungszeugnisergebnisse
+            <div class="pure-center pure-fade-50">
+                <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                Suche in den Entstehungszeugnissen …
+            </div>
         </article>
 
         <article class="tab" id="tab-info" style="display: none">
-            Infotextergebnisse
+            <div class="pure-center pure-fade-50">
+                <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+                Suche in den Infotexten …
+            </div>
         </article>
     </div>
 </section>
@@ -85,6 +99,15 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
               params = Faust.url.getParameters();
 
             this.current = $.extend(this.current, params);
+          },
+          toLocation: function () {
+            var params = {};
+            for (var currentKey in this.current) {
+              if (this.current[currentKey] !== this.defaults[currentKey]) {
+                params[currentKey] = this.current[currentKey];
+              }
+            }
+            history.replaceState(history.state, '', window.location.pathname + '?' + $.param(params));
           },
           toForm: function () {
             $('#index-' + this.current.index).prop('checked', true);
@@ -174,6 +197,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
         $('#tab-transcripts form').on("change", function () {
           state.fromForm();
+          state.toLocation();
           searchTranscripts();
         });
 
@@ -184,6 +208,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             currentVerb = currentBtn.id.replace('btn-', '');
           setTab(currentVerb);
           state.current.tab = currentVerb;
+          state.toLocation();
         });
 
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
