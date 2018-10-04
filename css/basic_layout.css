@@ -402,4 +402,4 @@ h3:hover .score { visibility: visible; }
 ul.sort { list-style-type: none; }
 .idno mark { padding: 0; }
 
-
+.results p { margin: 0.25em 0; }
