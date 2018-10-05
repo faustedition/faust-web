@@ -1,10 +1,10 @@
-<svg version="1.1" baseProfile="full" width="919.5" height="642.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="919.5" height="642.5">
 
-  <style type="text/css" >
-    <![CDATA[
+  <style type="text/css">
+    
 
       .rowText {
-        font-family: Ubuntu;
+        font-family: 'Ubuntu derivative Faust';
         font-weight: 400;
         font-size: 16pt;
         font-style: normal;
@@ -13,7 +13,7 @@
       }
 
       .columnText {
-        font-family: Ubuntu;
+        font-family: 'Ubuntu derivative Faust';
         font-weight: 400;
         font-size: 16pt;
         font-style: normal;
@@ -55,7 +55,7 @@
         opacity: 1;
       }
 
-    ]]>
+    
   </style>
 
   <rect width="100%" height="100%" style="fill:none;"></rect>
@@ -71,7 +71,7 @@
 
     <g transform="translate(0,0)">
       <g transform="translate(0,0)">
-        <text x="-10" y="30"  class="rowText">1831</text>
+        <text x="-10" y="30" class="rowText">1831</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -107,7 +107,7 @@
       </g>
 
       <g transform="translate(0,75)">
-        <text x="-10" y="30"  class="rowText">1830</text>
+        <text x="-10" y="30" class="rowText">1830</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -143,7 +143,7 @@
       </g>
 
       <g transform="translate(0,150)">
-        <text x="-10" y="30"  class="rowText">1829</text>
+        <text x="-10" y="30" class="rowText">1829</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -179,7 +179,7 @@
       </g>
 
       <g transform="translate(0,225)">
-        <text x="-10" y="30"  class="rowText">1828</text>
+        <text x="-10" y="30" class="rowText">1828</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -215,7 +215,7 @@
       </g>
 
       <g transform="translate(0,300)">
-        <text x="-10" y="30"  class="rowText">1827</text>
+        <text x="-10" y="30" class="rowText">1827</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -251,7 +251,7 @@
       </g>
 
       <g transform="translate(0,375)">
-        <text x="-10" y="30"  class="rowText">1826</text>
+        <text x="-10" y="30" class="rowText">1826</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="inProgress"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="inProgress"></rect>
@@ -287,7 +287,7 @@
       </g>
 
       <g transform="translate(0,450)">
-        <text x="-10" y="30"  class="rowText">1825</text>
+        <text x="-10" y="30" class="rowText">1825</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="untouched"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="inProgress"></rect>
@@ -323,7 +323,7 @@
       </g>
 
       <g transform="translate(0,525)">
-        <text x="-10" y="30"  class="rowText">vor 1825</text>
+        <text x="-10" y="30" class="rowText">vor 1825</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="untouched"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="inProgress"></rect>
@@ -360,92 +360,92 @@
 
       <g transform="translate(-2,-2)">
         <a xlink:href="genesis_bargraph?rangeStart=4613&amp;rangeEnd=4727">
-          <rect x="0" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Anmutige Gegend"></rect>
+          <rect x="0" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Anmutige Gegend (Verse 4613 – 4727)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4728&amp;rangeEnd=5064">
-          <rect x="25" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Saal des Thrones"></rect>
+          <rect x="25" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Saal des Thrones (Verse 4728 – 5064)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=5065&amp;rangeEnd=5986">
-          <rect x="50" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Weitläufiger Saal"></rect>
+          <rect x="50" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Weitläufiger Saal (Verse 5065 – 5986)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=5987&amp;rangeEnd=6172">
-          <rect x="75" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Lustgarten"></rect>
+          <rect x="75" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Lustgarten (Verse 5987 – 6172)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=6173&amp;rangeEnd=6306">
-          <rect x="100" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Finstere Galerie"></rect>
+          <rect x="100" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Finstere Galerie (Verse 6173 – 6306)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=6307&amp;rangeEnd=6376">
-          <rect x="125" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Hell erleuchtete Säle"></rect>
+          <rect x="125" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Hell erleuchtete Säle (Verse 6307 – 6376)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=6377&amp;rangeEnd=6565">
-          <rect x="150" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Rittersaal"></rect>
+          <rect x="150" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Rittersaal (Verse 6377 – 6565)"></rect>
         </a>
 
         <a xlink:href="genesis_bargraph?rangeStart=6566&amp;rangeEnd=6818">
-          <rect x="200" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Hochgewölbtes, enges gotisches Zimmer"></rect>
+          <rect x="200" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Hochgewölbtes, enges gotisches Zimmer (Verse 6566 – 6818)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=6819&amp;rangeEnd=7004">
-          <rect x="225" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Laboratorium"></rect>
+          <rect x="225" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Laboratorium (Verse 6819 – 7004)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=7005&amp;rangeEnd=7248">
-          <rect x="250" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Pharsalische Felder"></rect>
+          <rect x="250" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Pharsalische Felder (Verse 7005 – 7248)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=7249&amp;rangeEnd=7494">
-          <rect x="275" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Peneius"></rect>
+          <rect x="275" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Peneius (Verse 7249 – 7494)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=7495&amp;rangeEnd=8033">
-          <rect x="300" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Am obern Peneios "></rect>
+          <rect x="300" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Am obern Peneios  (Verse 7495 – 8033)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=8034&amp;rangeEnd=8274">
-          <rect x="325" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Felsbuchten des ägäischen Meers"></rect>
+          <rect x="325" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Felsbuchten des ägäischen Meers (Verse 8034 – 8274)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=8275&amp;rangeEnd=8487">
-          <rect x="350" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Telchinen von Rhodus"></rect>
+          <rect x="350" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Telchinen von Rhodus (Verse 8275 – 8487)"></rect>
         </a>
 
 
         <a xlink:href="genesis_bargraph?rangeStart=8488&amp;rangeEnd=9126">
-          <rect x="400" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Vor dem Palaste des Menelas zu Sparta"></rect>
+          <rect x="400" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Vor dem Palaste des Menelas zu Sparta (Verse 8488 – 9126)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=9127&amp;rangeEnd=9573">
-          <rect x="425" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Innerer Burghof"></rect>
+          <rect x="425" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Innerer Burghof (Verse 9127 – 9573)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=9574&amp;rangeEnd=10038">
-          <rect x="450" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Schattiger Hain"></rect>
+          <rect x="450" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Schattiger Hain (Verse 9574 – 10038)"></rect>
         </a>
 
 
         <a xlink:href="genesis_bargraph?rangeStart=10039&amp;rangeEnd=10344">
-          <rect x="500" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Hochgebirg"></rect>
+          <rect x="500" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Hochgebirg (Verse 10039 – 10344)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=10345&amp;rangeEnd=10782">
-          <rect x="525" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Auf dem Vorgebirg"></rect>
+          <rect x="525" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Auf dem Vorgebirg (Verse 10345 – 10782)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=10783&amp;rangeEnd=11042">
-          <rect x="550" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Des Gegenkaisers Zelt"></rect>
+          <rect x="550" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Des Gegenkaisers Zelt (Verse 10783 – 11042)"></rect>
         </a>
 
 
         <a xlink:href="genesis_bargraph?rangeStart=11043&amp;rangeEnd=11142">
-          <rect x="600" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Offene Gegend"></rect>
+          <rect x="600" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Offene Gegend (Verse 11043 – 11142)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=11143&amp;rangeEnd=11287">
-          <rect x="625" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Palast"></rect>
+          <rect x="625" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Palast (Verse 11143 – 11287)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=11288&amp;rangeEnd=11383">
-          <rect x="650" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Tiefe Nacht"></rect>
+          <rect x="650" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Tiefe Nacht (Verse 11288 – 11383)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=11384&amp;rangeEnd=11510">
-          <rect x="675" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Mitternacht"></rect>
+          <rect x="675" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Mitternacht (Verse 11384 – 11510)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=11511&amp;rangeEnd=11603">
-          <rect x="700" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Großer Vorhof des Palasts"></rect>
+          <rect x="700" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Großer Vorhof des Palasts (Verse 11511 – 11603)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=11604&amp;rangeEnd=11843">
-          <rect x="725" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Grablegung"></rect>
+          <rect x="725" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Grablegung (Verse 11604 – 11843)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=11844&amp;rangeEnd=12111">
-          <rect x="750" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Bergschluchten"></rect>
+          <rect x="750" y="0" width="26.5" height="569" class="highlight show-tooltip" tooltipText="Bergschluchten (Verse 11844 – 12111)"></rect>
         </a>
       </g>
     </g>

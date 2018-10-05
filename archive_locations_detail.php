@@ -12,12 +12,18 @@
       <div id="archive-table-container" class="pure-left"></div>
   </article>
 
+    <div id="loading-spinner" class="background-container">
+        <div class="pure-center pure-fade-50">
+            <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
+            Ansicht wird geladen …
+        </div>
+    </div>
+
 </section>
 
 <script>
 
-  requirejs(['js/faust_common'], function(Faust) {
-    requirejs(['faust_tables', 'data/archives'], function(createConcordanceTable, archives) {
+requirejs(['faust_common', 'faust_tables', 'data/archives'], function(Faust, createConcordanceTable, archives) {
 
       var i;
 
@@ -80,8 +86,8 @@
       // write table
 
       createConcordanceTable(document.getElementById("archive-table-container"), repositoryName);
+      Faust.finishedLoading();
     });
-  });
 </script>
 
 <?php include "includes/footer.php"; ?>

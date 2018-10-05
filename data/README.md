@@ -139,7 +139,7 @@ There might be multiple entries in `page.img`, which encodes multiple images of 
   "basePrefix": "faust://xml/"
 ```
 
-## genetic_bar_graph.js
+## genetic_bar_graph.json
 
 Information about each document's and each page's verse coverage
 

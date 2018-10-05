@@ -30,6 +30,18 @@
  fill:rgb(191, 160, 54);
 }
 
+#genetic-bar-diagram-grid line.scene-bar {
+  stroke: rgba(250, 190, 0, 0.5);
+}
+#genetic-bar-diagram-grid text.scene-label {
+  cursor: pointer;
+  fill: rgb(130, 98, 0);
+}
+
+#current-sigil-label { font-weight: bold; }
+
+text.yearlabel { font-size: 12px; fill: gray; }
+
 /*
 #genetic-bar-diagram-verse-bars rect.paralipomena.uncertain {
   fill:rgb(220, 220, 200);

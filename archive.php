@@ -8,7 +8,7 @@
              <a href="archive_locations" class="pure-button pure-button-tile">Aufbewahrungs&shy;orte</a>
              <a href="archive_manuscripts" class="pure-button pure-button-tile">Hand&shy;schriften</a>
              <a href="archive_prints" class="pure-button pure-button-tile">Drucke</a>
-             <a href="archive_testimonies" class="pure-button pure-button-tile">Dokumente zur Entstehungs&shy;geschichte</a>
+             <a href="archive_testimonies" class="pure-button pure-button-tile">Entstehungs&shy;zeugnisse</a>
             </p>
         
         </article>
@@ -19,7 +19,7 @@
       <?php include "includes/footer.php"; ?>
 
       <script type="text/javascript">
-        requirejs(['./js/faust_common'], function(Faust) {
+        requirejs(['faust_common'], function(Faust) {
               document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv"}]));
         });
       </script>

@@ -51,8 +51,10 @@ define([], function() {
 			var other = hovered.getAttribute("data-also-highlight");
 			if (other) {
 				var container = closest(hovered, /\bprint\b/);
+				if (!container)
+					container = this;
 				var others = other.split(/\s+/).forEach(function(id) {
-					var otherEls = container.querySelectorAll('#'+id);
+					var otherEls = container.querySelectorAll('#'+id.replace(/\./g, '\\.'));
 					for (var i = 0; i < otherEls.length; i++) {
 					  newHighlight.push(otherEls[i]);
 					}

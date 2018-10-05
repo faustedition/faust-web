@@ -20,9 +20,8 @@
 </section>
 
 <script type="text/javascript">
-  requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['sortable', 'data/document_metadata', 'data/archives', 'jquery', 'jquery.table'],
-        function(Sortable, documentMetadata, archives, $, $tables) {
+requirejs(['faust_common', 'sortable', 'data/document_metadata', 'data/archives', 'jquery', 'jquery.table'],
+    function(Faust, Sortable, documentMetadata, archives, $, $tables) {
 
   // FIXME move to separate file
   document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Aufbewahrungsorte"}]));
@@ -65,6 +64,9 @@
   // create output and append to page
   for(var i = 0; i < archiveArray.length; i++) {
       var currentChild = archiveArray[i];
+      if (!currentChild.witnesses)
+          continue;
+
       var archiveTr = document.createElement("tr");
 
       var archiveDetailLink = document.createElement("a");
@@ -113,8 +115,7 @@
   Sortable.init();
   document.getElementById("locations").getElementsByTagName("th")[0].click();
   $("table[data-sortable]").fixedtableheader();
-    });
-  });
+});
 </script>
 
 <?php include "includes/footer.php"; ?>

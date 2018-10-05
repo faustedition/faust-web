@@ -70,7 +70,7 @@ c[b] = a.substr(9,8) + "V" + a.substr(17,5) + a.substr(6,1) + a.substr(8,1) + a.
 </script>
 
 <script type="text/javascript">
-    requirejs(['./js/faust_common'], function(Faust) {
+    requirejs(['faust_common'], function(Faust) {
       // set breadcrumbs
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Hilfe"}]));
     });

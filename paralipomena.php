@@ -22,9 +22,8 @@
 
   <script type="text/javascript">
     // set breadcrumbs
-  requirejs(['./js/faust_common'], function(Faust) {
-    requirejs(['data/paralipomena', 'sortable', 'jquery', 'jquery.table'],
-        function(paralipomena, Sortable, $, $table) {
+    requirejs(['faust_common', 'data/paralipomena', 'sortable', 'jquery', 'jquery.table'],
+        function(Faust, paralipomena, Sortable, $, $table) {
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text", link: "text"}, {caption: "Paralipomena"}]));
         function createParalipomenaTable() {
           function getViewerURI(faustURI) { return 'documentViewer?faustUri=' + faustURI }
@@ -64,5 +63,4 @@
         Sortable.init();
         $("table[data-sortable]").fixedtableheader();
       });
-  });
   </script>

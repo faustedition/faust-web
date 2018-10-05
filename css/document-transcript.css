@@ -44,7 +44,7 @@ svg.diplomatic g.Zone:hover {
 
 svg.diplomatic .text {
     font-size: 11pt;
-    font-family: "Ubuntu";
+    font-family: "Ubuntu derivative Faust";
     fill: black;
     stroke: none;
     stroke-opacity: 0;
@@ -68,7 +68,7 @@ svg.diplomatic .text.hand-g {
 }
 
 svg.diplomatic .text.hand-xx {
-	font-family: "Ubuntu Monospace";
+	font-family: "Ubuntu Mono";
 }
 
 /* writing material  */

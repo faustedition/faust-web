@@ -1,7 +1,7 @@
 /* ********************** */
 /* Dokumenten Viewer
 /* ********************** */
-body.documentViewer main {
+body.documentViewer main, body.document main {
   position: absolute;
   left: 0;
   right: 0;
@@ -16,11 +16,15 @@ body.documentViewer main {
   height: 100%;
   overflow: hidden;
 }
+
+.split-view-content {
+  overflow: hidden;
+}
+
 .view-content {
   display: none;
   width: 100%;
   height: 100%;
-  overflow: auto;
 }
 .image-container {
   position: relative;
@@ -81,9 +85,45 @@ body.documentViewer main {
   height: 100%;
 }
 
+/* ### "inner" viewer containers */
+
+.viewer {
+  height: 100%;
+  padding: 0px;
+  text-align: center;
+}
+.viewer-container {
+  overflow: hidden;
+  width: 100%;
+}
+.full-viewer {
+  width: 100%;
+  overflow: auto;
+}
+.half-viewer, .full-viewer > .full-viewer {
+  display: inline-block;
+  width: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 0px solid #cccccc;
+  border-right-width: 1px;
+  overflow: auto;
+}
+.half-viewer + .half-viewer {
+  border-right-width: 0px;
+}
+
+#page-input {
+  text-align: right;
+  width: 3em;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
 /* Copyright note that is overlaid to the facsimile */
 .facs-copyright {
-  font: 12px/1.5em "Ubuntu", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
+  font: 12px/1.5em "Ubuntu derivative Faust", Arial, Helvetica, sans-serif;  /* FIXME how to style properly? */
   color: white;
   text-shadow: black 0px 0px 1px;
   position: fixed;
@@ -180,19 +220,19 @@ div g.element-line-hidden:hover > * {
 }
 
 .structure-vertical-line {
-  stroke-width: 1.5;
+  stroke-width: 1.5pt;
   shape-rendering: crispEdges;
   stroke: black;
 }
 
 .structure-line {
   pointer-events: none;
-  stroke-width: 3;
+  stroke-width: 1.5pt;
   stroke: black;
 }
 
 .structure-sheet-connector {
-  stroke-width: 3;
+  stroke-width: 1.5pt;
   stroke: black;
   stroke-linecap: round;
 }
@@ -234,60 +274,6 @@ div g.element-line-hidden:hover > * {
   overflow: auto;
   padding-left:1em;
   padding-right:1em;
-}
-
-/*
- * Normale <dl> sieht schön aus, nimmt aber zuviel platz weg.
- * horizontale <dl> sieht doof aus.
- *
- * Das folgende ist ein Hack, kriegen wir das irgendwie besser hin?
- */
-
-.metadata-container dt {
-  display: inline;
-}
-.metadata-container dt:after {
-  content: " ";
-}
-.metadata-container dd {
-  display: inline;
-  margin-left: 0;
-}
-.metadata-container dd:after {
-  display: block;
-  content: '\A';
-  margin-bottom: 0.5ex;
-}
-.metadata-container dd > dl {
-  display: block;
-  margin-left: 2em;
-  margin-top: 0;
-}
-.md-note { line-height: normal; }
-.md-level {
-  margin-left: 2em;
-  margin-top: 0;
-}
-.md-level > h3 {
-  margin-left: -2em;
-  margin-bottom: 0;
-}
-
-
-/* :) */
-.wip {
-  color: #111;
-  background: url(../img/wip-bg.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
-}
-cite {
-  margin-right: 0.1em; /* Kursivausgleich */
-}
-.bib-list cite {
-  font-style: normal;
-  margin-right: 0;
 }
 
 /* documentary transcript view */

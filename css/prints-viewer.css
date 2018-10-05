@@ -8,38 +8,19 @@ p.head { margin: 1em 0; font-weight: bold; font-size: 123.1%; }
 p.para-start { margin-top: 1em; } /* unused? */
 
 .print {
-  width: 995px;
-  margin: 0 auto;
-  color: #333;
-  word-spacing: -0.43em;
-  letter-spacing: -0.31em;
+  font-size: 14px;
+  max-width: 960px;
 }
 
 .print span.docTitle span {
-  font-size: 1.5em;
+  font-size: 18pt;
   font-weight: normal;
   line-height: 1.125em;
   margin: .83em 0;
 }
 
 .print span.docTitle span:first-of-type {
-  font-size: 2em;
+  font-size: 24pt;
   margin: .67em 0;
-}
-
-.print-center-column, .print-side-column {
-  font-size: 14px;
-  display: inline-block;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-}
-
-.print-center-column {
-  width: 60%;
-}
-
-.print-side-column {
-  width: 20%;
 }
 

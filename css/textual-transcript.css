@@ -4,8 +4,9 @@
 
 
 .text {
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
   text-indent: 0.25em;
+  text-align: left;
 }
 
 /*
@@ -16,7 +17,7 @@ h5.head, .type-subscene > .head {
 	padding-bottom: 0.5ex;
 	padding-top: 1ex;
 	font-size: inherit;
-	font-weight: medium;
+	font-weight: normal;
 }
 
 
@@ -35,6 +36,11 @@ h3.head, .body > .div > .head {
 	font-size: 16px;
 }
 
+.trailer {
+  padding-top: 2ex;
+  padding-bottom: 4ex;
+  text-align: center;
+}
 
 .titlePart {
 	display: block;
@@ -55,9 +61,17 @@ h3.head, .body > .div > .head {
   position: relative;
   text-align: right;
   text-indent: 0pt;
+  border: none;
   color: #aaa;
   font-size: 80%;
-  border: none;
+}
+a.lineno, .lineno {
+    color: #aaa;
+    font-size: 80%;
+}
+
+.print a.lineno.technical-lineno {
+  margin-left: -10em !important;
 }
 
 a.lineno.invisible {
@@ -70,7 +84,7 @@ div:hover > a.lineno, a.lineno:hover {
 
 :target > a.lineno, .target > a.lineno {
   opacity:1;
-  color: rgb(220,160,0,1);  /* someone a better idea? */
+  color: rgb(220,160,0);  /* someone a better idea? */
 }
 
 
@@ -88,6 +102,11 @@ a.pageno, a.paralipomenon {
     position: relative;
     z-index: 1;
     border:none;
+}
+
+.appnote .pb {
+    float: none;
+    margin-right: 0.25em;
 }
 
 .speaker {    
@@ -116,7 +135,6 @@ ul.toc {
 .toc a {
 	color: #444;
 	font-weight: 500;
-	border:none;
 }
 .toc a:hover {
 	color: black;
@@ -187,7 +205,7 @@ table.table {
 }
 
 
-.note { float: right; }
+.note { text-align: right; }
 .subhit .note { float: none; display: block; }
 
 /* print.html */
@@ -204,13 +222,14 @@ dt {
 
 .hasvars:hover::before {
   font:normal normal normal 14px/1 FontAwesome;
-  content:'\e824';
+  content:'\e824';   /* (+) */
   position: absolute;
   top:50%;
   right:0.5em;
   margin-top:-0.5em;
   color:#aaa;
   text-indent: 0;
+  text-shadow: 0px 0px 3px white;
 }
 
 a.pageno + .hasvars:hover::before {
@@ -218,7 +237,7 @@ a.pageno + .hasvars:hover::before {
 }
 
 .hasvars.show:hover::before {
-  content:'\e828';
+  content:'\e828';  /* (-) */
 }
 
 
@@ -253,6 +272,9 @@ a.pageno + .hasvars:hover::before {
 .variants-7 { background-color: rgb(185,185,180); }
 .variants-8 { background-color: rgb(175,175,170); }
 .variants-9 { background-color: rgb(165,165,160); }
+.variants-10 { background-color: rgb(160,160,155);}
+.variants-11 { background-color: rgb(155,155,150);}
+.variants-12 { background-color: rgb(150,150,145);}
 
 
 
@@ -260,7 +282,7 @@ a.pageno + .hasvars:hover::before {
 /* Einblendungsapparat. TODO auslagern */
 
 /* Everything that is not in the original text should be grey: */
-.generated-text, a[href].generated-text {
+.generated-text, a[href].generated-text, .type-textcrit .note {
 	color: #aaa;
 }
 
@@ -338,6 +360,10 @@ abbr.app {
 
 nav.print-navigation {
   position: fixed;
+  background: rgba(255,255,255,0.8); /* might cover sidenotes */
+}
+nav.print-navigation.placeholder {
+    position: relative;
 }
 
 .print .icons-ul {
@@ -353,13 +379,13 @@ nav.print-navigation {
   text-align: center;
 }
 
-.letter-spaced {
+.letter-spaced, .l .hi, .p .hi {
   letter-spacing: 1pt;
 }
 
 a.sigil {
-  float: right;
   color: #777;
+  whitespace: nowrap;
 }
 
 div:hover > a.sigil {
@@ -394,15 +420,23 @@ div:hover > a.sigil {
     text-indent: 1.5em;
 }
 
+.sp .hasvars:first-child { padding-top: 1.5ex; }
+
+.l.rend-indented {
+    text-indent: 3em;
+}
 .lg.rend-indented {
     text-indent: 3em;
+}
+.lg.rend-indented > .l.rend-indented {
+    text-indent: 4.5em;
 }
 
 .lg, .p, .head {
   margin-bottom: 0.75em;
 }
 
-.l .emph {
+.emph {
 	font-style: italic;
 }
 
@@ -432,6 +466,7 @@ a.testimony {
 
 .testimony .rend-italic, .testimony .rend-letter-spaced, .testimony .rend-antiqua {
   font-style: italic;
+  margin-right: 0.1em;
 }
 .testimony .rend-small {
   font-size: .83em; 
@@ -453,4 +488,91 @@ a.testimony {
 }
 .testimony .rend-strikethrough {
   text-decoration: line-through;
+}
+.div:first-child > .head {
+  margin-top: 0;
+}
+
+div.variants {
+    column-count: 1; /* creates a new float context */
+}
+
+.type-textcrit {
+    float: right;
+    clear: right;
+    margin-right: -53%;   /* FIXME */
+    width: 50%;           /* FIXME */
+    display: block;
+    text-indent: 0;
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.placeholder {
+    visibility: hidden;
+}
+
+.type-textcrit a, .type-textcrit .note, .type-textcrit .reading-type {
+  color: #aaa;
+  font-style: italic;
+}
+
+.type-textcrit .note {
+    display: inline;
+    float: none;
+}
+
+.type-textcrit .rdg:before { white-space: pre; content: "\A"; }
+.type-textcrit .ref ~ .rdg:before, .type-textcrit .ref + .rdg:before { content: ""; white-space: normal; }
+.type-textcrit {
+    padding-left: 2.5em;
+    text-indent: -2.5em;
+}
+
+.rdg .speaker::before { content: '\A'; white-space: pre; }
+.rdg .speaker:first-child::before { content: ''; white-space:  normal }
+
+.seg.type-lem {
+    border-bottom: 1px dotted grey;
+}
+
+.type-textcrit .applinks {
+  text-indent: 0;
+  padding-left: 1em;
+}
+.type-textcrit .applinks a[href] {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0 0.1em;
+}
+
+.quote {
+  font-style: normal;
+  color: initial;
+}
+
+.type-stueck {
+  margin: 2.5em 0
+}
+
+p .pb:before {
+  content: '';
+  border-left: 1px solid;
+  padding-left: 0.25em;
+    margin-left: 0.25em;
+    
+}
+
+.emended-lines + .variant-lines {
+  margin-top: 0.5em; /* compensate for reduced line height */
+}
+
+.variant-lines {
+  font-size: 85%;
+  /* padding-left: 1em; */
+  line-height: 1em;
 }

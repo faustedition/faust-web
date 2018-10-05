@@ -55,4 +55,4 @@
   <div class="pure-u-1-5"></div>
 
 </section>
-<?php include "includes/footer.php"; ?>
+<?php include "/includes/footer.php"; ?>

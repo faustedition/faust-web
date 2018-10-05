@@ -1,10 +1,10 @@
-<svg version="1.1" baseProfile="full" width="950" height="442.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="950" height="442.5">
 
-  <style type="text/css" >
-    <![CDATA[
+  <style type="text/css">
+    
 
       .rowText {
-        font-family: Ubuntu;
+        font-family: 'Ubuntu derivative Faust';
         font-weight: 400;
         font-size: 16pt;
         font-style: normal;
@@ -13,7 +13,7 @@
       }
 
       .columnText {
-        font-family: Ubuntu;
+        font-family: 'Ubuntu derivative Faust';
         font-weight: 400;
         font-size: 12pt;
         font-style: normal;
@@ -54,25 +54,25 @@
       .highlight:hover {
         opacity: 1;
       }
-    ]]>
+    
   </style>
 
   <rect width="100%" height="100%" style="fill:none;"></rect>
 
   <g transform="translate(145,175)">
     <g transform="translate(10,-5)">
-      <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Zueignung</text>
-      <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Vorspiel auf dem Theater</text>
-      <text x="0" y="0" transform="translate(50,0) rotate(-45)" class="columnText">&nbsp;&nbsp;Prolog im Himmel</text>
-      <text x="0" y="0" transform="translate(75,0) rotate(-45)" class="columnText">&nbsp;1 Nacht</text>
-      <text x="0" y="0" transform="translate(100,0) rotate(-45)" class="columnText">&nbsp;2 Vor dem Tor</text>
-      <text x="0" y="0" transform="translate(125,0) rotate(-45)" class="columnText">&nbsp;3 Studierzimmer I</text>
-      <text x="0" y="0" transform="translate(150,0) rotate(-45)" class="columnText">&nbsp;4 Studierzimmer II</text>
-      <text x="0" y="0" transform="translate(175,0) rotate(-45)" class="columnText">&nbsp;5 Auerbachs Keller</text>
-      <text x="0" y="0" transform="translate(200,0) rotate(-45)" class="columnText">&nbsp;6 Hexenküche</text>
-      <text x="0" y="0" transform="translate(225,0) rotate(-45)" class="columnText">&nbsp;7 Straße</text>
-      <text x="0" y="0" transform="translate(250,0) rotate(-45)" class="columnText">&nbsp;8 Abend</text>
-      <text x="0" y="0" transform="translate(275,0) rotate(-45)" class="columnText">&nbsp;9 Spaziergang</text>
+      <text x="0" y="0" transform="translate(0,0) rotate(-45)" class="columnText">  Zueignung</text>
+      <text x="0" y="0" transform="translate(25,0) rotate(-45)" class="columnText">  Vorspiel auf dem Theater</text>
+      <text x="0" y="0" transform="translate(50,0) rotate(-45)" class="columnText">  Prolog im Himmel</text>
+      <text x="0" y="0" transform="translate(75,0) rotate(-45)" class="columnText"> 1 Nacht</text>
+      <text x="0" y="0" transform="translate(100,0) rotate(-45)" class="columnText"> 2 Vor dem Tor</text>
+      <text x="0" y="0" transform="translate(125,0) rotate(-45)" class="columnText"> 3 Studierzimmer I</text>
+      <text x="0" y="0" transform="translate(150,0) rotate(-45)" class="columnText"> 4 Studierzimmer II</text>
+      <text x="0" y="0" transform="translate(175,0) rotate(-45)" class="columnText"> 5 Auerbachs Keller</text>
+      <text x="0" y="0" transform="translate(200,0) rotate(-45)" class="columnText"> 6 Hexenküche</text>
+      <text x="0" y="0" transform="translate(225,0) rotate(-45)" class="columnText"> 7 Straße</text>
+      <text x="0" y="0" transform="translate(250,0) rotate(-45)" class="columnText"> 8 Abend</text>
+      <text x="0" y="0" transform="translate(275,0) rotate(-45)" class="columnText"> 9 Spaziergang</text>
       <text x="0" y="0" transform="translate(300,0) rotate(-45)" class="columnText">10 Der Nachbarin Haus</text>
       <text x="0" y="0" transform="translate(325,0) rotate(-45)" class="columnText">11 Straße</text>
       <text x="0" y="0" transform="translate(350,0) rotate(-45)" class="columnText">12 Garten</text>
@@ -93,7 +93,7 @@
 
     <g transform="translate(0,0)">
       <g transform="translate(0,0)">
-        <text x="-10" y="30"  class="rowText">bis 1806</text>
+        <text x="-10" y="30" class="rowText">bis 1806</text>
 
         <rect x="0" y="0" width="22.5" height="40" class="finished"></rect>
         <rect x="25" y="0" width="22.5" height="40" class="finished"></rect>
@@ -226,88 +226,88 @@
 
       <g transform="translate(-2,-2)">
         <a xlink:href="genesis_bargraph?rangeStart=1&amp;rangeEnd=32">
-          <rect x="0" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zueignung"></rect>
+          <rect x="0" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zueignung (Verse 1 – 32)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=33&amp;rangeEnd=242">
-          <rect x="25" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vorspiel auf dem Theater"></rect>
+          <rect x="25" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vorspiel auf dem Theater (Verse 33 – 242)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=243&amp;rangeEnd=353">
-          <rect x="50" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Prolog im Himmel"></rect>
+          <rect x="50" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Prolog im Himmel (Verse 243 – 353)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=354&amp;rangeEnd=807">
-          <rect x="75" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
+          <rect x="75" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht (Verse 354 – 807)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=808&amp;rangeEnd=1177">
-          <rect x="100" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vor dem Tor"></rect>
+          <rect x="100" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Vor dem Tor (Verse 808 – 1177)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=1178&amp;rangeEnd=1529">
-          <rect x="125" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer I"></rect>
+          <rect x="125" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer I (Verse 1178 – 1529)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=1530&amp;rangeEnd=2072">
-          <rect x="150" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer II"></rect>
+          <rect x="150" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Studienzimmer II (Verse 1530 – 2072)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=2073&amp;rangeEnd=2336">
-          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller"></rect>
+          <rect x="175" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Auerbachs Keller (Verse 2073 – 2336)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=2337&amp;rangeEnd=2604">
-          <rect x="200" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Hexenküche"></rect>
+          <rect x="200" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Hexenküche (Verse 2337 – 2604)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=2605&amp;rangeEnd=2677">
-          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
+          <rect x="225" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße (Verse 2605 – 2677)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=2678&amp;rangeEnd=2804">
-          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend"></rect>
+          <rect x="250" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Abend (Verse 2678 – 2804)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=2805&amp;rangeEnd=2864">
-          <rect x="275" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Spaziergang"></rect>
+          <rect x="275" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Spaziergang (Verse 2805 – 2864)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=2865&amp;rangeEnd=3024">
-          <rect x="300" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Der Nachbarin Haus"></rect>
+          <rect x="300" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Der Nachbarin Haus (Verse 2865 – 3024)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3025&amp;rangeEnd=3072">
-          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße"></rect>
+          <rect x="325" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Straße (Verse 3025 – 3072)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3073&amp;rangeEnd=3204">
-          <rect x="350" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Garten"></rect>
+          <rect x="350" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Garten (Verse 3073 – 3204)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3205&amp;rangeEnd=3216">
-          <rect x="375" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Ein Gartenhäuschen"></rect>
+          <rect x="375" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Ein Gartenhäuschen (Verse 3205 – 3216)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3217&amp;rangeEnd=3373">
-          <rect x="400" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Wald und Höhle"></rect>
+          <rect x="400" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Wald und Höhle (Verse 3217 – 3373)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3374&amp;rangeEnd=3413">
-          <rect x="425" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Gretchens Stube"></rect>
+          <rect x="425" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Gretchens Stube (Verse 3374 – 3413)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3414&amp;rangeEnd=3543">
-          <rect x="450" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Marthens Garten"></rect>
+          <rect x="450" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Marthens Garten (Verse 3414 – 3543)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3544&amp;rangeEnd=3586">
-          <rect x="475" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Am Brunnen"></rect>
+          <rect x="475" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Am Brunnen (Verse 3544 – 3586)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3587&amp;rangeEnd=3619">
-          <rect x="500" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zwinger"></rect>
+          <rect x="500" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Zwinger (Verse 3587 – 3619)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3620&amp;rangeEnd=3775">
-          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht"></rect>
+          <rect x="525" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht (Verse 3620 – 3775)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3776&amp;rangeEnd=3834">
-          <rect x="550" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Dom"></rect>
+          <rect x="550" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Dom (Verse 3776 – 3834)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=3835&amp;rangeEnd=4222">
-          <rect x="575" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnacht"></rect>
+          <rect x="575" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnacht (Verse 3835 – 4222)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4223&amp;rangeEnd=4398">
-          <rect x="600" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnachtstraum"></rect>
+          <rect x="600" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Walpurgisnachtstraum (Verse 4223 – 4398)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4398&amp;rangeEnd=4399">
-          <rect x="625" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Trüber Tag. Feld"></rect>
+          <rect x="625" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Trüber Tag. Feld (Verse 4398 – 4399)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4399&amp;rangeEnd=4404">
-          <rect x="650" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht, offen Feld"></rect>
+          <rect x="650" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Nacht, offen Feld (Verse 4399 – 4404)"></rect>
         </a>
         <a xlink:href="genesis_bargraph?rangeStart=4405&amp;rangeEnd=4612">
-          <rect x="675" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Kerker"></rect>
+          <rect x="675" y="0" width="26.5" height="269" class="highlight show-tooltip" tooltipText="Kerker (Verse 4405 – 4612)"></rect>
         </a>
       </g>
     </g>

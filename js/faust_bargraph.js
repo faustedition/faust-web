@@ -1,23 +1,4 @@
-requirejs.config({
-  baseUrl: 'js',
-  paths: {
-    data: '../data'
-  },
-  shim: {
-    'data/scene_line_mapping' : {
-      exports: 'sceneLineMapping'
-    },
-    'data/genetic_bar_graph': {
-       exports: 'geneticBarGraphData'
-    },
-    'faust_common': {
-      exports: 'Faust'
-    }
-  }
-});
-
-    
-define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
+define(['faust_common', 'data/scene_line_mapping', 'json!data/genetic_bar_graph'],
   function(Faust,        sceneLineMapping,          geneticBarGraphData) {
 
   // Array.findIndex polyfill from https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
@@ -169,23 +150,21 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         }
       });
 
-      // sort witnesses
-      selectedWitnesses = Faust.sort(selectedWitnesses, "sigil", "sigil");
       return selectedWitnesses;
 
     },
 
     updateBargraph : function updateBargraph() {
-      var horizontalDistance = 30;
+      var verseInPx = 30;
       var verticalDistance = 20;
-      var rowHeight = 10;
-      var numberOfLines = this.end - this.start;
+      var barHeightInPx = 10;
+      var visibleVerses = this.end - this.start;
 
 
       // create svg container
 
       // start off by finding out how wide the diagram should be.
-      var availabelDiagramWidth = this.container.clientWidth - 15;
+      var availableDiagramWidth = this.container.clientWidth - 15;
 
       var selectedWitnesses = this.getCurrentWitnesses()
 
@@ -193,8 +172,17 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         id: "genetic-bar-diagram-svg",
         attributes:  [["class", "genetic-bar-diagram-svg"],
                       ["height", (selectedWitnesses.length + 2) * verticalDistance],
-                      ["width", availabelDiagramWidth]]
+                      ["width", availableDiagramWidth]]
       });
+
+      // The removebackground filter gives the scene labels a white opaque background so they don't run into another
+      var svgDefs = createSvgElement({name: 'defs', parent: svg});
+      var backgroundFilter = createSvgElement({name: 'filter', id: 'removebackground',
+          attributes: [['x', 0], ['y', 0], ['width', 1], ['height', 1]],
+          parent: svgDefs});
+      createSvgElement({name: 'feFlood', attributes: [['flood-color', 'white']], parent: backgroundFilter});
+      createSvgElement({name: 'feComposite', attributes: [['in', 'SourceGraphic']],  parent: backgroundFilter});
+
       var outerGroup = createSvgElement({name: "g", attributes: [["transform", "translate(150," + (verticalDistance + 5) + ") scale(1,1)"]], parent: svg});
       var geneticBarDiagramSigils = createSvgElement({name: "g", id: "genetic-bar-diagram-sigils", parent: outerGroup});
       var geneticBarDiagramGrid = createSvgElement({name: "g", id: "genetic-bar-diagram-grid", parent: outerGroup});
@@ -207,11 +195,11 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       // support for css transforms. (element is somehow transformed / scaled. the visible area will be scaled
       // properly, but the element will still need as much space as it did before the transformation. since we
       // generate a huge group in svg and scale that one, there would almost always be a huge vertical scroll bar)
-      geneticBarDiagramContainer.style.width = availabelDiagramWidth + "px";
+      geneticBarDiagramContainer.style.width = availableDiagramWidth + "px";
       geneticBarDiagramContainer.style.height = ( (selectedWitnesses.length + 2) * verticalDistance) + "px";
       geneticBarDiagramContainer.style.overflow = "hidden";
 
-      var geneticBarDiagramGridScale = (availabelDiagramWidth - 160) / (numberOfLines*30);
+      var geneticBarDiagramGridScale = (availableDiagramWidth - 160) / (visibleVerses*30);
       geneticBarDiagramGrid.setAttribute("transform", "translate(10,0) scale(" + geneticBarDiagramGridScale + ", 1)");
       ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -273,16 +261,16 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         return bins;
       };
 
-      var firstLine = this.start,
-          lastLine  = this.end,
-          bins = loose_labels(firstLine, lastLine, Math.min(numberOfLines, 10))
-                 .filter(function(bin) { return bin >= firstLine && bin <= lastLine });
+      var firstVisibleVerse = this.start,
+          lastVisibleVerse  = this.end,
+          bins = loose_labels(firstVisibleVerse, lastVisibleVerse, Math.min(visibleVerses, 10))
+                 .filter(function(bin) { return bin >= firstVisibleVerse && bin <= lastVisibleVerse });
 
 
       bins.forEach(function(bin) {
         var verticalLine = createSvgElement({name: "line",
-          attributes: [["x1", (bin - firstLine) * horizontalDistance],
-            ["x2", (bin - firstLine) * horizontalDistance],
+          attributes: [["x1", (bin - firstVisibleVerse) * verseInPx],
+            ["x2", (bin - firstVisibleVerse) * verseInPx],
             ["style", "stroke-width: " + 1/geneticBarDiagramGridScale],
             ["y1", "-" + (verticalDistance/2)],
             ["y2", selectedWitnesses.length * verticalDistance],
@@ -291,9 +279,9 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         });
 
         createSvgElement({name: "text",
-          attributes: [["x", (bin - firstLine) * horizontalDistance * geneticBarDiagramGridScale],
+          attributes: [["x", (bin - firstVisibleVerse) * verseInPx * geneticBarDiagramGridScale],
             ["y", "-" + (verticalDistance / 2)],
-            ["text-anchor", "middle"],
+            ["text-anchor", "left"],
             ["transform", "scale(" + 1/geneticBarDiagramGridScale + ",1)"],
             ["style", "font-size: " + (verticalDistance/2) + "px"],
           ],
@@ -301,9 +289,9 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
           parent: geneticBarDiagramGrid});
 
         createSvgElement({name: "text",
-          attributes: [["x", (bin - firstLine) * horizontalDistance * geneticBarDiagramGridScale],
+          attributes: [["x", (bin - firstVisibleVerse) * verseInPx * geneticBarDiagramGridScale],
             ["y", (selectedWitnesses.length + 0.5) * verticalDistance],
-            ["text-anchor", "middle"],
+            ["text-anchor", "left"],
             ["transform", "scale(" + 1/geneticBarDiagramGridScale + ",1)"],
             ["style", "font-size: " + (verticalDistance/2) + "px"],
           ],
@@ -312,13 +300,52 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
 
       });
 
+      var that = this;
+
+      this.scenes.forEach(function(scene) {
+          var sceneStart = scene.rangeStart;
+          if (sceneStart > firstVisibleVerse && sceneStart < lastVisibleVerse) {
+              var tooltip = scene.title + " (Verse " + sceneStart + " – " + scene.rangeEnd + ")";
+              createSvgElement({
+                  name: "line",
+                  attributes: [["x1", (sceneStart - firstVisibleVerse) * verseInPx],
+                      ["x2", (sceneStart - firstVisibleVerse) * verseInPx],
+                      ["style", "stroke-width: " + 1 / geneticBarDiagramGridScale],
+                      ["y1", "-" + (verticalDistance / 2)],
+                      ["y2", selectedWitnesses.length * verticalDistance],
+                      ["class", "scene-bar show-tooltip"],
+                      ["tooltiptext", tooltip],
+                      ["shape-rendering", "crispEdges"]],
+                  parent: geneticBarDiagramGrid
+              });
+              // var sceneLink = createSvgElement({name: "a", attributes: [['href', '#']], parent: geneticBarDiagramGrid});
+              // sceneLink.addEventListener('onclick', function () { that.setRange(scene.rangeStart, scene.rangeEnd); });
+              var sceneLabel = createSvgElement({
+                  name: "text",
+                  attributes: [["x", (sceneStart - firstVisibleVerse) * verseInPx * geneticBarDiagramGridScale],
+                      ["y", "-" + (verticalDistance / 2)],
+                      ["text-anchor", "left"],
+                      ["transform", "scale(" + 1 / geneticBarDiagramGridScale + ",1)"],
+                      ["class", "scene-label"],
+                      ["filter", "url(#removebackground)"],
+                      ["style", "font-size: " + (verticalDistance / 2) + "px"],
+                  ],
+                  children: [document.createTextNode(scene.title)],
+                  parent: geneticBarDiagramGrid
+              });
+              sceneLabel.addEventListener('click', function () {
+                  that.setRange(scene.rangeStart, scene.rangeEnd);
+              });
+          }
+      });
+
       // add horizontal orientation line
       selectedWitnesses.forEach(function(witness, witnessIndex) {
         var horizontalLine = createSvgElement({name: "line",
           attributes: [["x1", "0"],
-            ["x2", numberOfLines * horizontalDistance],
-            ["y1", (witnessIndex * verticalDistance) + (rowHeight / 2)],
-            ["y2", (witnessIndex * verticalDistance) + (rowHeight / 2)],
+            ["x2", visibleVerses * verseInPx],
+            ["y1", (witnessIndex * verticalDistance) + (barHeightInPx / 2)],
+            ["y2", (witnessIndex * verticalDistance) + (barHeightInPx / 2)],
             ["shape-rendering", "crispEdges"]],
           parent: geneticBarDiagramGrid
         });
@@ -328,11 +355,13 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
       // determine scale factor for genetic bar diagram
       // determine width of svg
       // 160 from (geneticBarDiagramVerseBars) 10 + 160 from outmost svg group (translate(150,0)
-      var geneticBarDiagramVerseBarsScale = (availabelDiagramWidth - 160) / (numberOfLines*30);
+      var geneticBarDiagramVerseBarsScale = (availableDiagramWidth - 160) / (visibleVerses*30);
       geneticBarDiagramVerseBars.setAttribute("transform", "translate(10,0) scale(" + geneticBarDiagramVerseBarsScale + ", 1)");
       //
 
       // process all witnesses inside selection
+      var highlightSigil = Faust.url.getParameters()['#'];
+      var highlightSigilElement = null;
       selectedWitnesses.forEach(function(witness, witnessIndex) {
 
         // add sigil name to vertical axis
@@ -341,10 +370,23 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
         witnessSigil.setAttribute("y", witnessIndex * verticalDistance);
         witnessSigil.setAttribute("dy", 8);
         witnessSigil.setAttribute("text-anchor", "end");
+        if (witness.sigil_t == highlightSigil) {
+          witnessSigil.setAttribute("id", "current-sigil-label");
+          highlightSigilElement = witnessSigil;
+        }
         // set sigil text
         witnessSigil.appendChild(document.createTextNode(witness.sigil));
         // append sigil to vertical axis
         geneticBarDiagramSigils.appendChild(witnessSigil);
+
+        var yearLabel = createSvgElement({name: "text", class: "yearlabel"});
+        yearLabel.setAttribute("x", "-75");
+        yearLabel.setAttribute("y", witnessIndex * verticalDistance);
+        yearLabel.setAttribute("dy", 8);
+        yearLabel.setAttribute("text-anchor", "end");
+        yearLabel.appendChild(document.createTextNode(witness.yearlabel));
+        geneticBarDiagramSigils.appendChild(yearLabel);
+
 
         // group bars / rectangles and link per witness
         var witnessGroup = createSvgElement({name: "g"});
@@ -352,40 +394,35 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
 
         // set surrounding link for witness
         var witnessLink = createSvgElement({name: "a"});
-        if(witness.print === true) {
-          witnessLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "print/" + witness.source);
-        } else {
-          witnessLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "documentViewer?faustUri=" + witness.source);
-        }
+        witnessLink.setAttribute("href", "document?sigil=" + witness.sigil_t);
         witnessGroup.appendChild(witnessLink);
 
         // insert rectangle spanning complete row to make it clickable
         var barBackground = createSvgElement({name: "rect",
           attributes: [["x", "0"],
             ["y", "0"],
-            ["width", numberOfLines * horizontalDistance],
-            ["height", rowHeight],
+            ["width", visibleVerses * verseInPx],
+            ["height", barHeightInPx],
             ["opacity", "0"]],
           parent: witnessLink
         });
 
         // process intervals
         witness.intervals.forEach(function(interval) {
-          var start = interval.start;
-          var end = interval.end;
-          var barStart = start;
-          var barEnd = end;
+          var barStart, barLength; // start/length of the bar in verse widths, starting with 0 at the left of the diagram
 
           // test if interval is visible / in selection
-          if( (start >= firstLine && start <= lastLine) || (end >= firstLine && end <= lastLine) || (start <= firstLine && end >= lastLine) ) {
+          if( (interval.start >= firstVisibleVerse && interval.start <= lastVisibleVerse)
+              || (interval.end >= firstVisibleVerse && interval.end <= lastVisibleVerse)
+              || (interval.start <= firstVisibleVerse && interval.end >= lastVisibleVerse) ) {
             // calculate start and end of interval relative to visible range
-            if(start - firstLine >= 0) {
-              barStart = start - firstLine;
+            if(interval.start > firstVisibleVerse) {
+              barStart = interval.start - firstVisibleVerse;
+              barLength = interval.end < lastVisibleVerse? interval.end - interval.start + 1 : interval.end - firstVisibleVerse;
             } else {
               barStart = 0;
+              barLength = interval.end < lastVisibleVerse? interval.end - firstVisibleVerse + 1 : visibleVerses;
             };
-
-            barEnd = Math.min(end - start + 1, numberOfLines - barStart);
 
             function toolTipLabel(type, start, stop, sigil, page) {
               var typeLabels = {
@@ -397,7 +434,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
               },
                 typeLabel = typeLabels[type];
               if (type === 'print') { typeLabel = typeLabels.print; }
-              var result = typeLabel + " v. " + start + " – " + stop + " in " + sigil;
+              var result = typeLabel + " Vers " + start + " – " + stop + " in " + sigil;
               if (type !== 'print') { result += ", S. " + page; }
               return result;
             }
@@ -406,11 +443,11 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
 
             // create rectangle for interval
             var relatedLines = createSvgElement({name: "rect",
-              attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, start, end, witness.sigil, interval.page)],
-                ["x", barStart * horizontalDistance],
+              attributes: [["tooltiptext", toolTipLabel(witness.print? "print" : interval.type, interval.start, interval.end, witness.sigil, interval.page)],
+                ["x", barStart * verseInPx],
                 ["y", "0"],
-                ["width", barEnd * horizontalDistance],
-                ["height", rowHeight]]
+                ["width", barLength * verseInPx],
+                ["height", barHeightInPx]]
             });
 
             var relatedLinesLink = createSvgElement({name: "a", parent: witnessGroup, children: [relatedLines]});
@@ -430,15 +467,7 @@ define(['faust_common', 'data/scene_line_mapping', 'data/genetic_bar_graph'],
             }
 
             // set surrounding link for witness
-            if(witness.print === true) {
-              // select filename from metadata filename
-              var metadataName = witness.source.substring(witness.source.lastIndexOf("/") + 1, witness.source.lastIndexOf("."));
-              // select print document that belongs to metadata name
-              // var printResourceName = { "A8": "A8_IIIB18.html", "B(a)9": "Ba9_A101286.html", "B9": "B9_IIIB20-2.html", "C(1)12": "C(1)12_IIIB23-1.html", "C(1)4": "C(1)4_IIIB24.html", "C(2alpha)4": "C(2a)4_IIIB28.html", "C(3)12": "C(3)12_IIIB27.html", "C(3)4": "C(3)4_IIIB27_chartUngleich.html", "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I": "Cotta_Ms_Goethe_AlH_C-1-12_Faust_I.html", "D(1)": "D(1)_IV3-1.html", "D(2)": "D(2)_IV3-6.html", "GSA_30-447-1": "GSA_30-447-1_S_214-217.html", "J_1808": "J_XIIA149-1808.html", "KuA_VI_1": "KuA_IIIE43-5-1.html", "S(o)": "S(o)_IIIB11-2.html", "seckendorff1782": "GSA_32_1420.html" }[metadataName];
-              relatedLinesLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "print/" + interval.section);
-            } else {
-              relatedLinesLink.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "documentViewer?faustUri=" + witness.source + "&page=" + interval.page + "&view=facsimile");
-            }
+            relatedLinesLink.setAttribute("href", "document?sigil=" + witness.sigil_t + "&page=" + interval.page + "&view=facsimile");
 
           }
 

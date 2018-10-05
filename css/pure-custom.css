@@ -4,22 +4,23 @@
 
 *, *:before, *:after {box-sizing:border-box;}
 
-html, button, input, select, textarea {font:16px/1.5em "Ubuntu", Arial, Helvetica, sans-serif; color:rgb(0,0,0);}
+html, button, input, select, textarea {font:16px/1.5em "Ubuntu derivative Faust", Arial, Helvetica, sans-serif; color:rgb(0,0,0);}
 h1, h2, h3, h4, h5, h6 {line-height:1.125em;}
 h1, h2, h3 {font-weight:500;}
 p,pre  {text-align:justify; hyphens:auto; -ms-hyphens:auto; -moz-hyphens:auto; -webkit-hyphens:auto;}
 a[href] {color:rgb(0,0,0); text-decoration:none; border-bottom:1px solid rgb(175,175,175);}
-mark {padding:0px 0.25em; background-color:rgb(250,190,0);}
-abbr[title], acronym[title] {border-bottom: 1px dotted; cursor:help;}
+mark,  .hit span.hi, .results a.hi {padding:0px 0.25em; background-color:rgb(250,190,0);}
+abbr[title], acronym[title] {border-bottom: 1px dotted; cursor:help; text-decoration: none;}
+i { margin-right: 0.1em;}
 blockquote {font-style:italic;}
 blockquote:before {font-family:"FontAwesome"; content:"\f10e"; text-decoration:inherit; display: inline-block; speak: none; color:rgba(0,0,0,0.1); padding-right:.25em; font-size:2em;}
 blockquote * {margin:0; display:inline-block; color:rgb(0,0,0); font-size:1em;}
 blockquote small {display:block; margin: 0 0 0 40px ;font-size:0.8em;}
 ol ol li {list-style-type:lower-alpha;}
 dl {margin:1em 0;}
-dt {font-weight:700;}
-hr {margin:1em 0; border:none; border-top:1px solid rgb(0,0,0,); clear:both;}
-code, kbd, pre, samp {font-family:"Ubuntu Monospace";}
+dt {font-weight:bold;}
+hr {margin:1em 0; border:none; border-top:1px solid rgb(0,0,0); clear:both;}
+code, kbd, pre, samp {font-family:"Ubuntu Mono";}
 pre {padding:1em; background:rgba(155, 155, 155, 0.2); border-radius:4px}
 input.placeholder {color:rgb(221,221,221);} /* IE 8-9 */
 input:-ms-input-placeholder {color:rgba(155, 155, 155, 0.2);} /* IE 10 */
@@ -63,8 +64,9 @@ a[href].pure-button {border:none;}
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {background-color:rgba(0,0,0,0.8); color:rgb(230, 230, 230);}
 
 .pure-button-tile, a[href].pure-button-tile {display:block; margin:1em 0; padding:1em 1.5em 1em 2.5em; text-align:left; font-size:1.2em; background-image:url(../img/pure-button-tile-fallback.png); background-image:url(../img/pure-button-tile.svg), none; background-position:1.5em center; background-repeat:no-repeat;}
+table .pure-button-tile { margin: 0 0 0 0 !important; }
 
-.pure-g-r [class*="pure-u"] {font-family:"Ubuntu", Arial, Helvetica, sans-serif;}
+.pure-g-r [class*="pure-u"] {font-family:"Ubuntu derivative Faust", Arial, Helvetica, sans-serif;}
 .pure-g-r [class*="pure-u"] [class*="pure-u"] + [class*="pure-u"] {margin-left:-.31em;} /* avoid whitespace between nested grid elements */
 .pure-g-r .pure-gap:first-of-type {padding-left:0;}
 .pure-g-r .pure-gap {padding:0 .5em;}
@@ -225,7 +227,7 @@ a[href].pure-button {border:none;}
 .pure-variations {margin-bottom:20px; padding:15px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
 .pure-variations > p,.pure-variations > ul{margin:0;}
 
-.pure-tooltip {position:fixed; z-index:100; pointer-events:none; margin-top:-25px; transform:translate(-50%,-100%); background:rgb(51,51,51); color:rgb(230,230,230); border-radius:4px; padding:0.25em 0.5em;}
+.pure-tooltip {position:fixed; z-index:200; pointer-events:none; margin-top:-25px; transform:translate(-50%,-100%); background:rgb(51,51,51); color:rgb(230,230,230); border-radius:4px; padding:0.25em 0.5em;}
 .pure-tooltip::after {position:absolute; content:""; display:block; width:0; left:50%; bottom:-7px; transform:translateX(-50%); border-width:8px 8px 0; border-color:rgb(51,51,51) transparent; border-style:solid;}
 .pure-tooltip + .pure-tooltip {display:none;} /* show only one tooltip if nested */
 .pure-tooltip .transcript-tooltip-span ~ .transcript-tooltip-span {padding-left:0.5em;}

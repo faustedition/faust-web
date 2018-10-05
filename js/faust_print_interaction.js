@@ -1,7 +1,7 @@
 // create functions for on demand loading of variants and add tooltips 
 // for showing number of variants per line
 
-define(['faust_common'],
+define(['/js/faust_common'],
   function(Faust) {
   return function addPrintInteraction(rootDir, node, faustUri) {
   "use strict";

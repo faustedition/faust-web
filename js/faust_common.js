@@ -1,31 +1,9 @@
-requirejs.config({
-  baseUrl: '/js',
-  paths: {
-    data: '/data',
-    sortable: 'sortable.min',
-    jquery: 'jquery.min',
-    'jquery.slick': 'jquery.slick.min'
-  },
-  shim: {
-    'jquery.table': { deps: ['jquery'] },
-    'jquery.chocolat': { deps: ['jquery'] },
-    'jquery.overlays': { deps: ['jquery'] },
-    'jquery.clipboard': { deps: ['jquery'] },
-    'data/scene_line_mapping' : { exports: 'sceneLineMapping' },
-    'data/genetic_bar_graph': { exports: 'geneticBarGraphData' },
-    'data/document_metadata': { exports: 'documentMetadata' },
-    'data/concordance_columns': { exports: 'concordanceColumns' },
-    'data/paralipomena': { exports: 'paralipomena' },
-    'data/archives': { exports: 'archives' },
-    'data/copyright_notes': { exports: 'copyright_notes' }
-
-  }
-});
-
-define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady, es6_promise) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
+
+  es6_promise.polyfill();
 
 
 
@@ -313,7 +291,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
           parameters.forEach(function(parameter) {
             name = parameter.split("=")[0];
             value = parameter.split("=")[1];
-            result[name] = value;
+            result[name] = decodeURIComponent(value.replace(/\+/g, '%20'));
           });
         }
         if (window.location.hash) {
@@ -345,10 +323,8 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     // function to create an object with easy acces to data contained in metadata
     // informationen. Uris are converted so that they point at the location
     // where information can be accessed
-    doc.createDocumentFromMetadata = (function(){
-      // convert metadata information of a document into useable object
-      return function(metadata){
-        var documentObject = {};
+    doc.createDocumentFromMetadata = function(metadata){
+        var documentObject = Object.create(metadata);
 
         // determine if document has uri pointing to xml
         if(metadata.document) {
@@ -385,7 +361,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
 
         // append all pages to document object
         documentObject.pages = metadata.page.map(function(currentPage, currentPageIndex) {
-          var resultPage = {};
+          var resultPage = Object.create(currentPage);
 
           // find out if current page has a documentary transcript
           if(currentPage.doc.length !== 0 && currentPage.doc[0].uri !== undefined) {
@@ -403,8 +379,8 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
             // create url pointing to generated textual transcript and facsimile overlay
             if(currentDocTranscript.uri) {
               resultDocTranscript.hasUri = true;
-              resultDocTranscript.docTranscriptUrl = "transcript/diplomatic/" + documentObject.documentUri + "/page_" + (currentPageIndex + 1) + ".svg";
-              resultDocTranscript.facsimileOverlayUrl = "transcript/overlay/" + documentObject.documentUri + "/page_" + (currentPageIndex + 1) + ".svg";
+              resultDocTranscript.docTranscriptUrl = "transcript/diplomatic/" + documentObject.sigil + "/page_" + (currentPageIndex + 1) + ".svg";
+              resultDocTranscript.facsimileOverlayUrl = "transcript/overlay/" + documentObject.sigil + "/page_" + (currentPageIndex + 1) + ".svg";
             } else {
               resultDocTranscript.hasUri = true;
             }
@@ -442,8 +418,7 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
         });
 
         return documentObject;
-      };
-    })();
+    };
 
     return doc;
   })();
@@ -509,6 +484,37 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
         });
       };
     })();
+
+      /**
+       * Returns a promise for the response of a xhr object.
+       * @param url
+       * @param responseType resolve to "text" -> responseText, "xml" -> responseXML, leave out -> whole response
+       * @returns {Promise}
+       *
+       */
+    xhr.get = function get(url, responseType) {
+      return new Promise(function(resolve, reject) {
+        var request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 300) {
+            if (responseType === 'text') {
+              resolve(request.responseText);
+            } else if (responseType === 'xml') {
+              resolve(request.responseXML)
+            } else {
+                resolve(request.response);
+            }
+          } else {
+            reject(Error('Failed to load ' + url + ', error: ' + request.statusText));
+          }
+        }
+        request.onerror = function() {
+          reject(Error('Network error accessing ' + url));
+        }
+        request.send();
+      });
+    }
 
     return xhr;
   })();
@@ -747,61 +753,53 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
 // Faust.event
 //###########################################################################
 
-  Faust.event = (function(){
-    var event = {};
+  Faust.event = {
+      // event handling object. events can be triggered by calling events.triggerEvent(eventName, [returnObj]).
+      // event handlers are added by calling events.addEventListener(eventName, callback).
+      createEventQueue: function () {
+          // create object with functions to add event handlers and to trigger events
+          var eventQueue = {};
 
-    // event handling object. events can be triggered by calling events.triggerEvent(eventName, [returnObj]).
-    // event handlers are added by calling events.addEventListener(eventName, callback).
-    event.createEventQueue = function(){
-      // create object with functions to add event handlers and to trigger events
-      var events = {};
-      var i;
+          // create object that will hold all appended listeners
+          eventQueue.listeners = {};
 
-      // create object that will hold all appended listeners
-      events.listeners = {};
+          // function to call if an event occurred. all listeners attached
+          // listening to the same name that was triggered will be called.
+          eventQueue.triggerEvent = function (eventName, obj) {
+                  var i;
+                  if (eventQueue.listeners[eventName] !== undefined) {
+                      // iterate through every listener
+                      for (i = 0; i < eventQueue.listeners[eventName].length; i++) {
+                          // if a result exists
+                          if (obj) {
+                              // ...pass it through to callback
+                              eventQueue.listeners[eventName][i](obj);
+                          } else {
+                              // ...else call callback without parameters
+                              eventQueue.listeners[eventName][i]();
+                          }
+                      }
+                      return true;
+                  } else {
+                      return false;
+                  }
+          };
 
-      // function to call if an event occurred. all listeners attached
-      // listening to the same name that was triggered will be called.
-      events.triggerEvent = (function(){
-        return function(eventName, obj){
-          if(events.listeners[eventName] !== undefined) {
-            // iterate through every listener
-            for(i = 0; i < events.listeners[eventName].length; i++) {
-              // if a result exists
-              if(obj) {
-                // ...pass it through to callback
-                events.listeners[eventName][i](obj);
-              } else {
-                // ...else call callback without parameters
-                events.listeners[eventName][i]();
+          // function to add listeners for an event. an event name
+          // as well as a callback must be provided
+          eventQueue.addEventListener = function (eventName, callback) {
+              // select appropriate event listener queue
+              if (eventQueue.listeners[eventName] === undefined) {
+                  eventQueue.listeners[eventName] = [];
               }
-            }
-            return true;
-          } else {
-            return false;
-          }
-        };
-      })();
+              // ... and add listener to queue
+              eventQueue.listeners[eventName].push(callback);
+              return true;
+          };
 
-      // function to add listeners for an event. an event name
-      // as well as a callback must be provided
-      events.addEventListener = (function(){
-        return function(eventName, callback){
-          // select appropriate event listener queue
-          if(events.listeners[eventName] === undefined) {
-            events.listeners[eventName] = [];
-          }
-          // ... and add listener to queue
-          events.listeners[eventName].push(callback);
-          return true;
-        };
-      })();
-
-      return events;
-    };
-
-    return event;
-  })();
+          return eventQueue;
+      }
+  };
 
 //###########################################################################
 // Faust.tooltip
@@ -1054,20 +1052,138 @@ define(["sortable", "domReady"], function(Sortable, domReady) {  // TODO factor 
     return breadcrumbs;
   };
 
+  var formatExceptionDetail = function formatExceptionDetail(e) {
+    var result = e;
+    try {
+      result = "<p>Bitte beachten Sie, dass die Seite nur die aktuellen Versionen der Browser " +
+        "<a href='https://www.mozilla.org/de/firefox/new/'>Firefox</a> und " +
+        "<a href='https://www.google.de/chrome/index.html'>Chrome</a> unterstützt.</p>" +
+        "<dl><dt>Fehlertyp</dt><dd>" + e.name + "</dd>" +
+        "<dt>Meldung</dt><dd>" + e.message + "</dd>" +
+        "<dt>Stack Trace</dt><dd><pre>" + (typeof e.stack !== 'undefined' ? e.stack : '') + "</pre></dd>" +
+        "<dt>Browser</dt><dd>" + window.navigator.userAgent + "</dd></dl>";
+    } catch (formattingError) {
+      console.warn(formattingError);
+    }
+    return result;
+  }
+
   Faust.error = function error(title, msg, parent) {
+    console.error(title, msg);
+    if (msg instanceof Error)
+      msg = formatExceptionDetail(msg);
     if (parent === undefined) {
       parent = document.getElementById("main-content");
     }
     var container = Faust.dom.createElement({name: "div", class: "error-container center pure-g-r", parent: parent});
-    container.innerHTML = '<div class="pure-u-1"><p class="pure-alert pure-alert-danger"><strong class="error-title"></strong><span>&nbsp;</span><span class="error-msg"></span></p></div>';
+    container.innerHTML = '<div class="pure-u-1"><p class="pure-alert pure-alert-danger"><i class="fa fa-cancel pure-pull-right closebtn"></i><strong class="error-title"></strong><span>&nbsp;</span><span class="error-msg"></span></p></div>';
     var wrapper = container.firstChild.firstChild,
-        titleElem = wrapper.children[0],
-        msgElem = wrapper.children[2];
-    titleElem.textContent = title;
-    msgElem.textContent = msg;
+        titleElem = wrapper.children[1],
+        msgElem = wrapper.children[3],
+        closebtn = wrapper.children[0];
+    titleElem.innerHTML = title;
+    msgElem.innerHTML = msg;
     parent.insertBefore(container, parent.firstChild);
-    console.error(title, msg);
+    closebtn.onclick = function () {
+      parent.removeChild(container);
+    }
   };
+
+  Faust.bindBySelector = function bindBySelector(selector, func, event) {
+        if (!(event)) event = "click";
+        var elements = document.querySelectorAll(selector);
+        elements.forEach(function(el) {
+            el.addEventListener(event, func);
+        });
+    };
+
+  Faust.toggleButtonState = function toggleButtonState(selector, newState) {
+      var result;
+      document.querySelectorAll(selector).forEach(function(element) {
+        if (typeof(newState) == "undefined" && element.classList.contains('pure-button-primary')
+            || (newState === false)) {
+          element.classList.remove('pure-button-primary');
+          result = false;
+        } else {
+          element.classList.add('pure-button-primary');
+          result = true;
+        }
+      });
+      return result;
+    };
+
+    Faust.PageCache = function PageCache() {
+        this.cache = {};
+        this.hasPage = function(pageNo) { return this.cache.hasOwnProperty(pageNo); };
+        this.addPage = function(pageNo, node) {
+            if (this.hasPage(pageNo))
+                console.warn('PageCache is overwriting page no ', pageNo);
+            this.cache[pageNo] = node;
+        };
+        this.getPage = function(pageNo, doNotClone) {
+            if (!thisPage.hasPage(pageNo)) {
+                console.warn('PageCache does not have page no ', pageNo);
+                return undefined;
+            } else {
+                var node = this.cache[pageNo];
+                if (document.contains(node)) {
+                    return node.cloneNode(true)
+                } else {
+                    return node;
+                }
+            }
+        };
+    };
+
+    Faust.finishedLoading = function finishedLoading() {
+      var loadingSpinner = document.getElementById('loading-spinner');
+      if (loadingSpinner)
+        loadingSpinner.parentNode.removeChild(loadingSpinner);
+    };
+
+    Faust.addToTopButton = function addToTopButton(parent) {
+      var aTop = document.createElement('a'),
+          aLink = document.createElement('a'),
+          visible = false;
+
+      if (!parent)
+        parent = document.getElementsByTagName('body').item(0);
+
+      aTop.name = 'top';
+      parent.insertBefore(aTop, parent.firstChild);
+
+      aLink.id = 'link-to-top';
+      aLink.innerHTML = '<i class="fa fa-3x fa-up-circled"></i>'
+      aLink.href = '#top';
+      parent.appendChild(aLink);
+
+      document.addEventListener('scroll', function (scrollEvent) {
+        if (visible && (window.pageYOffset === 0)) {
+          aLink.style.display = 'none';
+          visible = false;
+        } else if (!visible && (window.pageYOffset > 0)) {
+          aLink.style.display = 'inline';
+          visible = true;
+        }
+      });
+    };
+
+    Faust.fixTargetOffset = function fixDomOffset(parent) {
+      if (!parent) parent = document;
+      parent.querySelectorAll(":target").forEach(function(target) {
+          var container = window,
+              y = target.getBoundingClientRect().top;
+          console.log('fixTargetOffset target=', target, ' y=', y);
+          window.scrollTo(0, y - 100);
+      });
+    };
+
+    domReady(function () {
+        console.log('Loaded page: ', window.location);
+        Faust.fixTargetOffset();
+        window.addEventListener('hashchange', function(event) { Faust.fixTargetOffset(); });
+    });
+
 
 
 //###########################################################################

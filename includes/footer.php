@@ -1,5 +1,14 @@
     </main>
 
+    <noscript>
+        <div class="pure-alert pure-alert-warning">
+            <h3>JavaScript erforderlich</h3>
+            <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+            <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+        </div>
+    </noscript>
+
+
     <footer>
       <div class="center pure-g-r">
         <div class="pure-u-1-2 pure-fade-50">
@@ -26,7 +35,7 @@
             <a href="/archive_locations">Aufbewahrungsorte</a>
             <a href="/archive_manuscripts">Handschriften</a>
             <a href="/archive_prints">Drucke</a>
-            <a href="/archive_testimonies">Dokumente zur Entstehungsgeschichte</a>
+            <a href="/archive_testimonies">Entstehungszeugnisse</a>
           </div>
           <div class="pure-u-1-4 pure-gap">
             <a><big>Genese</big></a>
@@ -36,8 +45,8 @@
           </div>
           <div class="pure-u-1-4 pure-gap">
             <a href="/text"><big>Text</big></a>
-            <a href="/print/faust1">Faust I</a>
-            <a href="/print/faust2">Faust II</a>
+            <a href="/print/faust#part_1.1">Faust I</a>
+            <a href="/print/faust#part_2">Faust II</a>
             <a href="/paralipomena">Paralipomena</a>
           </div>
           <div class="pure-u-1-4 pure-gap pure-fade-50">
@@ -72,14 +81,14 @@
     </script>
 
 <script>
-    requirejs(['./js/faust_common.js'], function(Faust) {
-        requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard'], function ($, $chocolat, $overlays, $clipboard) {
-            $('main').Chocolat({className:'faustedition', loop:true});
-            $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
-                $('[data-target]').copyToClipboard();
-            }});
-        });
-    });
+requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common'],
+  function ($, $chocolat, $overlays, $clipboard, Faust) {
+    $('main').Chocolat({className:'faustedition', loop:true});
+    $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
+        $('[data-target]').copyToClipboard();
+    }});
+    Faust.addToTopButton();
+});
 </script>
 
 <!-- Piwik -->

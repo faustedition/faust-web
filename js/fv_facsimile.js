@@ -1,11 +1,13 @@
-define(["faust_common"], 
-  function(Faust) {
+// noinspection JSAnnotator
+define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
+  function(Faust, docTranscriptViewer, addMouseMoveScroll) {
   "use strict";
 
   var htmlStrings = {
     "loadingMetadata": "Lade Faksimile.",
     "metadataLoaded": "Metadaten geladen. Lade Grafiken und Überblendung (falls vorhanden).",
     "noFacsimileAvailable": "Kein Faksimile verfügbar.",
+    "emptyPage": "Leere Seite",
     "imageMetadataLoadError": "Metadaten zum Faksimile konnten nicht geladen werden.",
     "imageMetadataParseError": "Metadaten zum Faksimile konnten nicht verarbeitet werden.",
     "overlayLoadError": "Keine Überblendung gefunden."
@@ -14,13 +16,11 @@ define(["faust_common"],
   var minZoom = 0.005;
   var maxZoom = 4;
 
-  var imageOverlay = {};
 
   /* based on echo.js from Todd Motto (http://toddmotto.com/labs/echo/ | https://travis-ci.org/toddmotto/echo)
      adjusted to be called with an element as parameter that will be watched for scroll events rather than
      listening to window.onscroll events */
-  var lazyTileLoader = (function() {
-    return function (root) {
+  var lazyTileLoader = function lazyTileLoader(root) {
 
       'use strict';
 
@@ -135,13 +135,22 @@ define(["faust_common"],
 
       return echo;
 
-    };
-  })();
+  };
 
-  var createNodes = (function(){
-    return function() {
+  /**
+   * Creates the element structure and returns it. The root node has a property .echo that contains
+   * the lazyTileLoader. div#text-layer -> overlay svg
+   */
+  var createNodes = function(container) {
+
       // creating dom nodes
-      var imageContainer = document.createElement("div");
+      var imageContainer;
+      if (container) {
+        Faust.dom.removeAllChildren(container);
+        imageContainer = container;
+      } else {
+          imageContainer = document.createElement("div");
+      }
         var rotateContainer = document.createElement("div");
           var scaleContainer = document.createElement("div");
             var overlayContainer = document.createElement("div");
@@ -200,7 +209,6 @@ define(["faust_common"],
 
       return imageContainer;
     };
-  })();
 
   /* calculates the next zoom level / zoom. The zoom level is calculated so that
    it reaches powers of 2 (1/4, 1/2, 1, 2, 4, ...).
@@ -208,8 +216,7 @@ define(["faust_common"],
    elements (eg. 0.5, 0.625, 0.75, 0.825, 1, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 3.5, 4.0, ...)
    The function takes the current zoom as well as the direction as a parameter and returns
    the next zoom. */
-  var getNextScale = (function() {
-    return function(currentScale, direction) {
+  var getNextScale = function getNextScale(currentScale, direction) {
       /* first step: calculate the next two larger powers of two (compared to zoom) as well
        as the next two lower powers of 2 */
       var zoomBase = [ Math.floor(Math.log(currentScale) / Math.log(2)) - 1,
@@ -229,6 +236,7 @@ define(["faust_common"],
       /* Fields [2]...[4] contain the values between the powers of two (eg currentScale is
        1.1, than [1] = 1.0, [2] = 1.25, [3] = 1.5, [4] = 1.75, [5] = 2.0
        */
+      // noinspection PointlessArithmeticExpressionJS
       zoomSteps[2] = zoomSteps[1] + 1 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
       zoomSteps[3] = zoomSteps[1] + 2 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
       zoomSteps[4] = zoomSteps[1] + 3 * ( ( zoomSteps[5] - zoomSteps[1] ) / 4);
@@ -271,13 +279,11 @@ define(["faust_common"],
       }
 
       return currentScale;
-    };
-  })();
+  };
 
   /* determines in which direction the mouse wheel was spun. Normalises
    the result value (-1 or 1) */
-  var getScrollDirection = (function() {
-    return function(scrollEvent) {
+  var getScrollDirection = function(scrollEvent) {
       var direction = scrollEvent.wheelDelta ? scrollEvent.wheelDelta : -scrollEvent.detail;
       direction = parseInt(direction, 10);
 
@@ -285,29 +291,25 @@ define(["faust_common"],
         direction = direction / Math.abs(direction);
       }
       return direction;
-    };
-  })();
+  };
 
-  var createImageOverlay = (function(){
-    return function(callArgs) {
+  /**
+   * Creates the controls for a single page.
+   */
+  var createImageOverlay = function createImageOverlay(options) {
     var args = null;
     var metadata = null;
     var domNodes = null;
 
-    var metadataLoadedCallback = null;
-
-    var showElement = (function () {
-      return function (element, show) {
+    var showElement = function (element, show) {
         if (show === true) {
           element.style.display = "block";
         } else if (show === false) {
           element.style.display = "none";
         }
-      };
-    })();
+    };
 
-    var setBackgroundImage = (function(){
-      return function(zoomLevel) {
+    var setBackgroundImage = function(zoomLevel) {
         var currentImage = domNodes.image.images[zoomLevel];
         // determine if src is set
         if(currentImage.getAttribute("src") === null) {
@@ -317,15 +319,13 @@ define(["faust_common"],
         // replace content (if set) with new image
         Faust.dom.removeAllChildren(domNodes.image);
         domNodes.image.appendChild(currentImage);
-      };
-    })();
+    };
 
     // select specific tile div to be put in dom and be rendered. a zoom level of 0
     // represents the original unscaled source image as tiles, zoom level 1 represents
     // the tiles of the original image, scaled to 50% in height and width, level 2
     // scaled to 25%, ...
-    var setTileDiv = (function(){
-      return function(zoomLevel) {
+    var setTileDiv = function(zoomLevel) {
         var adjustedZoomLevel = zoomLevel;
         // zoom levels are in the range of 0...metadata.zoomLevels
         if(zoomLevel < 0) {
@@ -343,12 +343,10 @@ define(["faust_common"],
         var currentTile = domNodes.tile.tiles[adjustedZoomLevel];
         Faust.dom.removeAllChildren(domNodes.tile);
         domNodes.tile.appendChild(currentTile);
-      };
-    })();
+    };
 
     // set the scale of the scaleContainer. that is resizing the facsimile. returns the newly set scale value
-    var setScale = (function() {
-      return function(newScale) {
+    var setScale = function(newScale) {
         // scaling can only be done if any images exists to scale. If no facsimile exists scaling isn't possible, so skip
         if(domNodes.image.images !== undefined) {
 
@@ -407,32 +405,33 @@ define(["faust_common"],
           // there is no content to scale, so scaling can't be done and the current scale is not available.
           return undefined;
         }
-      };
-    })();
+    };
 
     // function to zoom in or out. zooming in by applying "in" or 1 as parameter,
     // zooming out with "out" or -1 as parameter
-    var zoom = (function() {
-      return function(direction) {
+    var zoom = function zoom(direction) {
         if(direction === "in" || direction === 1) {
           setScale(getNextScale(domNodes.currentScale, 1));
         } else if(direction === "out" || direction === -1) {
           setScale(getNextScale(domNodes.currentScale, -1));
         }
-      };
-    })();
+    };
 
     // calculates the scale to apply to (original sized) image so that it will
     // fully fit inside the facsimile container (outermost node / domNodes)
     // returns the determined scale value
-    var fitScale = (function() {
-      return function() {
-        return setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth, domNodes.getBoundingClientRect().height / metadata.imageHeight));
-      };
-    })();
+    var fitScale = function fitScale() {
+      try {
+        var scale = setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth,
+          domNodes.getBoundingClientRect().height / metadata.imageHeight));
+        return scale;
+      } catch (e) {
+        console.log(e);
+        return undefined;
+      }
+    };
 
-    var rotate = (function(){
-      return function(direction) {
+    var rotate = function(direction) {
         if(direction === "right") {
           domNodes.currentRotation = (domNodes.currentRotation + 1) % 4;
         } else if(direction === "left") {
@@ -454,12 +453,10 @@ define(["faust_common"],
                   break;
         }
         domNodes.echo.render();
-      };
-    })();
+    };
 
     // 
-    var showOverlay = (function(){
-      return function(showOverlay) {
+    var showOverlay = function showOverlay(showOverlay) {
         var i;
         var facsimileElementLines;
         if(showOverlay === true) {
@@ -473,8 +470,7 @@ define(["faust_common"],
             Faust.dom.addClassToElement(facsimileElementLines.item(i), "element-line-hidden");
           }
         }
-      };
-    })();
+    };
 
     /* the eventhandler first determines whether the mozilla
      'detail' attribute or the world's wheelDelta shall
@@ -489,24 +485,21 @@ define(["faust_common"],
      1 if there was a scroll event scrolling  UP  and
      -1 if there was a scroll event scrolling DOWN
      Further: the event propagation is beeing stopped */
-    var mouseWheelEventHandler = (function() {
-      return function(event) {
+    var mouseWheelEventHandler = function(event) {
 
         var direction = getScrollDirection(event);
         zoom(direction);
         event.preventDefault();
 
         return false;
-      };
-    })();
+    };
 
     // function to create a div containing all tiles of a specific zoom level. All generated divs will have
     // the same dimensions as the original image. To realize this, all scaled down tiles (tiles not the same
     // resolution as the unscaled original image) will be resized / magnified.
     // The resulting div will contain divs that will make up a row of tiles. Each of this rows / "row divs"
     // than contains one div for each tile to be shown on that specific row.
-    var createTileDiv = (function() {
-      return function(imageMetadata, tileBaseUrl, zoomLevel) {
+    var createTileDiv = function createTileDiv(imageMetadata, tileBaseUrl, zoomLevel) {
         var i, j;
 
         var zoomedWidth = imageMetadata.imageWidth;
@@ -582,59 +575,33 @@ define(["faust_common"],
         }
 
         return tileImageDiv;
-      };
-    })();
+    };
 
-    var createZoomImage = (function() {
-      return function(imageMetadata, jpgBaseUrl, zoomLevel) {
+    var createZoomImage = function createZoomImage(imageMetadata, jpgBaseUrl, zoomLevel) {
         var image = document.createElement("img");
         image.style.width = imageMetadata.imageWidth;
         image.height = imageMetadata.imageHeight;
         image.imgSrc = jpgBaseUrl + "_" + zoomLevel  + ".jpg";
         return image;
-      };
-    })();
+    };
 
-    var overlayLoadHandler = (function(){
-      return function(overlayXhr) {
-        if(overlayXhr.status !== 200) {
-          // if no overlay was found write a message to imageInfo.
-          // domNodes.imageInfo.innerHTML = htmlStrings.overlayLoadError;
-          // previous command commented out until needed or wished. until then mute if no overlay was found
-          showElement(domNodes.imageInfo, false);
-        } else {
-          domNodes.text.innerHTML = overlayXhr.responseText;
+      var insertOverlay = function(overlayText) {
+          domNodes.text.innerHTML = overlayText;
           events.triggerEvent("overlayLoaded");
-          Faust.dom.removeAllChildren(domNodes.imageInfo);
-        }
-        showElement(domNodes.rotateContainer, true);
+          // Faust.dom.removeAllChildren(domNodes.imageInfo);
+          showElement(domNodes.rotateContainer, true);
+          return domNodes.text;
       };
-    })();
 
-    var metadataLoadHandler = (function(){
-      return function(metadataXhr) {
+    var insertFacsimileTiles = function(metadataText) {
 
         var i;
 
-        // Test if metadata was loaded successfully
-        if(metadataXhr.status !== 200) {
-          // metadata wasn't loaded properly. Echo error message
-          domNodes.imageInfo.innerHTML = htmlStrings.imageMetadataLoadError;
-        } else {
           // metadata was found. Try to parse
-          try {
-            metadata = JSON.parse(metadataXhr.responseText);
+        try {
+            metadata = JSON.parse(metadataText);
             // Metadata is available.
             domNodes.imageInfo.innerHTML = htmlStrings.metadataLoaded;
-
-            // if an overlay exists try to load it
-            // Since xhr is async try to get overlay
-            if(args.hasImageTextLink === true) {
-              Faust.xhr.getXhr(args.overlayUrl, overlayLoadHandler);
-            } else {
-              Faust.dom.removeAllChildren(domNodes.imageInfo);
-              showElement(domNodes.rotateContainer, true);
-            }
 
             // Set width and height of all elements beneath rotate container to width
             // and height of original image
@@ -656,14 +623,14 @@ define(["faust_common"],
 
             // create an image for each available zoom level
             domNodes.image.images = [];
-            for(i = 0; i < metadata.zoomLevels; i++) {
-              domNodes.image.images[i] = createZoomImage(metadata, args.jpgBaseUrl, i);
+            for (i = 0; i < metadata.zoomLevels; i++) {
+                domNodes.image.images[i] = createZoomImage(metadata, args.jpgBaseUrl, i);
             }
 
             // create a div with tiles for each available zoom level
             domNodes.tile.tiles = [];
-            for(i = 0; i < metadata.zoomLevels; i++) {
-              domNodes.tile.tiles[i] = createTileDiv(metadata, args.tileBaseUrl, i);
+            for (i = 0; i < metadata.zoomLevels; i++) {
+                domNodes.tile.tiles[i] = createTileDiv(metadata, args.tileBaseUrl, i);
             }
 
             // now set the background image (full image small quality - as preview) to
@@ -672,19 +639,17 @@ define(["faust_common"],
 
             addMouseMoveScroll(domNodes);
 
-          } catch (exception) {
-            domNodes.imageInfo.innerHTML = htmlStrings.imageMetadataParseError;
-          }
-
-          events.triggerEvent("metadataLoaded");
+        } catch (e) {
+            Faust.error("Error reading page metadata", e + '<pre>' + metadataText + '</pre>', domNodes.rotateContainer);
         }
-      };
-    })();
+
+            showElement(domNodes.rotateContainer, true);
+    };
 
 
       var events = Faust.event.createEventQueue();
       // store arguments for later use
-      args = callArgs;
+      args = options;
       // create dom nodes / div elements to store content
       domNodes = createNodes();
       // set load message, that is hide (not yet available) images and show imageInfo div. then set text
@@ -692,13 +657,34 @@ define(["faust_common"],
       showElement(domNodes.imageInfo, true);
       domNodes.imageInfo.innerHTML = htmlStrings.loadingMetadata;
 
+      var facsimilePromise, overlayPromise;
       // test if facsimile is available
       if(args.hasFacsimile === false) {
         // if no facsimile exists, set text to imageInfo div. images are still hidden, so text is modal
         domNodes.imageInfo.innerHTML = htmlStrings.noFacsimileAvailable;
+        facsimilePromise = Promise.resolve(domNodes.imageInfo);
       } else {
         // else try to get metadata
-        Faust.xhr.getXhr(args.imageMetadataUrl, metadataLoadHandler);
+        // Faust.xhr.getXhr(args.imageMetadataUrl, metadataLoadHandler);
+        facsimilePromise = Faust.xhr.get(args.imageMetadataUrl, 'text')
+          .then(insertFacsimileTiles)
+          .catch(function(e) {
+            Faust.error('Fehler beim Laden der Facsimile-Metadaten', e.toString(), domNodes);
+          })
+
+      }
+
+      if(args.hasImageTextLink === true) {
+        overlayPromise = Faust.xhr.get(args.overlayUrl, 'text')
+          .then(insertOverlay)
+          .catch(function(reason) {
+            console.error('Fehler beim Laden der Transkriptionsüberblendung', reason);
+            return Promise.resolve(true);
+          })
+      } else {
+        Faust.dom.removeAllChildren(domNodes.imageInfo);
+        showElement(domNodes.rotateContainer, true);
+        overlayPromise = Promise.resolve(domNodes.imageInfo);
       }
 
       if (args.copyright) {
@@ -723,11 +709,173 @@ define(["faust_common"],
       domNodes.fitScale = fitScale;
       domNodes.showOverlay = showOverlay;
       domNodes.addFacsimileEventListener = events.addEventListener;
-      return domNodes;
-    };
 
-  })();
+      if (args.hasFacsimile) {
+        return Promise
+          .all([facsimilePromise, overlayPromise])
+          .then(function () {
+            showElement(domNodes.imageInfo, false);
+            return domNodes;
+          })
+          .catch(function (reason) {
+            Faust.error('Fehler beim Laden des Digitalisats', reason, domNodes.imageInfo);
+            showElement(domNodes.imageInfo, true);
+          })
+      } else if (args.empty) {
+        domNodes.imageInfo.innerHTML = htmlStrings.emptyPage;
+        showElement(domNodes.imageInfo, true);
+        return Promise.resolve(domNodes);
+      } else {
+          domNodes.imageInfo.innerHTML = htmlStrings.noFacsimileAvailable;
+          showElement(domNodes.imageInfo, true);
+          return Promise.resolve(domNodes);
+      }
+  };
 
-  imageOverlay.createImageOverlay = createImageOverlay;
-  return imageOverlay;
+  var imageOverlay = {
+
+      createImageOverlay: createImageOverlay,
+
+      init: function init(parent, state, controller) {
+          var that = this;
+          this.state = state;
+          this.controller = controller;
+
+
+          var container = document.createElement("div");
+          container.id = "facsimile-content";         // FIXME do we need an ID?
+          container.className = "facsimile-content view-content";
+          this.container = container;
+          parent.appendChild(container);
+          this.loadPage(state.page)
+            .then(function (value) { that.bindControls() });
+      },
+
+      loadPage : function(pageNo) {
+          var currentPage = this.state.doc.pages[pageNo - 1];
+          var currentMetadata = this.state.doc.metadata.pages[pageNo - 1];
+          var that = this;
+          var pagePromise;
+          // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
+          // docTranscript exists and if it has images attached
+          this.setLayer(this.state.layer);
+          var layer = this.state.layer;
+          if (currentMetadata.docTranscriptCount > 0 && currentMetadata.docTranscripts[0].hasImages) {
+              pagePromise = this.createImageOverlay(
+                  {
+                      "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
+                      "hasImageTextLink": currentMetadata.docTranscripts[0].hasImageTextLink,
+                      "imageMetadataUrl": currentMetadata.docTranscripts[0].images[layer].metadataUrl,
+                      "jpgBaseUrl": currentMetadata.docTranscripts[0].images[layer].jpgUrlBase,
+                      "tileBaseUrl": currentMetadata.docTranscripts[0].images[layer].tileUrlBase,
+                      "overlayUrl": currentMetadata.docTranscripts[0].facsimileOverlayUrl,
+                      "backgroundZoomLevel": this.state.imageBackgroundZoomLevel,
+                      "copyright": this.state.doc.getFacsCopyright()
+                  });
+          } else {
+              pagePromise = this.createImageOverlay({hasFacsimile: false, empty: currentMetadata.empty});
+          }
+          return pagePromise.then(function (facsimile) {
+            Faust.dom.removeAllChildren(that.container);
+            that.container.appendChild(facsimile);
+            that.facsimile = facsimile;
+            facsimile.addFacsimileEventListener("scaleChanged", function (newScale) {
+              that.state.scale = newScale;
+            });
+            if (that.state.scale === undefined) {
+                that.state.scale = facsimile.fitScale();
+            } else {
+              facsimile.setScale(that.state.scale);
+            }
+            facsimile.showOverlay(that.state.showOverlay);
+            docTranscriptViewer.transcriptTooltips(facsimile);
+            facsimile.overlayContainer.addEventListener("click", function (event) {
+              that.toggleOverlay();
+            });
+            return facsimile;
+          }).catch(function(e) { Faust.error('Fehler beim Laden der Ansicht', e, that.facsimile)});
+      },
+      show : function () { this.visible = true;  this.container.style.display = 'block'; this.shown(); },
+      hide : function () { this.visible = false; this.container.style.display = 'none';  this.hidden(); },
+      shown: function () {
+          document.getElementById("facsimile-settings").style.display = "block";
+          document.getElementById("facsimile-layer-button").style.display =
+            this.getLayerCount() > 1? "inline-block" : "none";
+          if (this.facsimile) {
+            if (this.state.scale)
+              this.facsimile.setScale(this.state.scale);
+            else
+              this.facsimile.fitScale();
+          }
+      },
+      hidden: function() {
+          document.getElementById("facsimile-settings").style.display = "none";
+      },
+      setPage: function (pageNo) {
+          var that = this;
+          return this.loadPage(pageNo)
+            .then(function (facsimile) {
+              that.facsimile = facsimile;
+              facsimile.fitScale();
+              return facsimile; });
+      },
+      getLayerCount: function() {
+        var pageMetadata = this.state.doc.metadata.pages[this.state.page - 1];
+        if (pageMetadata.docTranscripts.length > 0 && pageMetadata.docTranscripts[0].hasImages)
+          return pageMetadata.docTranscripts[0].images.length;
+        else return 1;
+      },
+      nextLayer: function() {
+        if (this.visible) {
+          var layers = this.getLayerCount();
+          if (layers > 1) {
+            this.setLayer((this.state.layer + 1) % layers);
+            this.state.toLocation();
+          } else {
+            this.setLayer(0);
+          }
+        }
+        this.setPage(this.state.page);
+      },
+      setLayer: function(layer) {
+        var newLayer = layer % this.getLayerCount();
+        if (this.state.layer !== newLayer) {
+          this.state.layer = newLayer;
+          this.state.toLocation(true);
+        }
+        document.getElementById("facsimile-layer-button").style.display =
+          this.getLayerCount() > 1? "inline-block" : "none";
+        document.getElementById("facsimile-layer-badge").innerHTML = this.state.layer;
+      },
+      toggleOverlay: function () {
+        if (this.visible && this.facsimile) {
+          this.state.showOverlay = !this.state.showOverlay;
+          Faust.toggleButtonState('#toggle-overlay-button', this.state.showOverlay);
+          this.facsimile.showOverlay(this.state.showOverlay);
+        }
+      },
+      bindControls: function() {
+          var that = this;
+          var zoomIn = function () { if (that.visible) that.facsimile.zoom("in"); };
+          var zoomOut = function () { if (that.visible) that.facsimile.zoom("out"); };
+          var rotateLeft = function () { if (that.visible) that.facsimile.rotate("left"); };
+          var rotateRight = function () { if (that.visible) that.facsimile.rotate("right"); };
+          var toggleOverlay = function () { that.toggleOverlay(); };
+          var nextLayer = function () {
+            that.nextLayer();
+          }
+
+          Faust.bindBySelector('#zoom-in-button', zoomIn);
+          Faust.bindBySelector('#zoom-out-button', zoomOut);
+          Faust.bindBySelector('#rotate-left', rotateLeft);
+          Faust.bindBySelector('#rotate-right', rotateRight);
+          Faust.bindBySelector('#toggle-overlay-button', toggleOverlay);
+          Faust.bindBySelector('#facsimile-layer-button', nextLayer);
+      }
+  };
+  return function (container, state, controller) {
+    var result = Object.create(imageOverlay);
+    result.init(container, state, controller);
+    return result;
+  }
 });

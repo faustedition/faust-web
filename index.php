@@ -66,8 +66,8 @@
       <div class="center">
         <div class="text">
           <h2>Text</h2>
-              <p>Der Text des <a href="/print/faust1.html">Faust I</a> beruht auf dem
-                  Erstdruck von 1808, der des <a href="/print/faust2.html">Faust II</a> auf
+              <p>Der Text des <a href="/print/faust#part1">Faust I</a> beruht auf dem
+                  Erstdruck von 1808, der des <a href="/print/faust#part2">Faust II</a> auf
                   der großen Reinschrift, die heute im Goethe- und Schiller-Archiv liegt. Vom
                   Text aus sind alle übrigen handschriftlichen und gedruckten Fassungen
                   erreichbar.</p>
@@ -80,8 +80,7 @@
   </div>
 </section>
 <script type="text/javascript">
-  requirejs(['./js/faust_common.js'], function(Faust) {
-      requirejs(['jquery', 'jquery.slick'], function ($, slick) {
+      requirejs(['faust_common', 'jquery', 'jquery.slick'], function (Faust, $, slick) {
           $(function () {
               $(window).resize(function (event) {
                   $('.slider .center').css('height', $('body').height() - $('footer').outerHeight()); // adjust slider height
@@ -109,7 +108,6 @@
               });
           });
       });
-  });
 </script>
 
 <?php include "includes/footer.php"; ?>
