@@ -402,37 +402,37 @@ h3:hover .score { visibility: visible; }
 ul.sort { list-style-type: none; }
 .idno mark { padding: 0; }
 
-.results p { margin: 0.25em 0; }
+.results p { margin: 0.25em 0; }
 
 .sidenote-number {counter-increment: sidenote-counter; width: 0; visibility: hidden;}
 
 .sidenote-number:after, .sidenote:before {
   position: relative;
   vertical-align: baseline;
-  visibility: visible;
 }
 .sidenote-number:after {
   content: counter(sidenote-counter);  
   font-size: 10px;
   top: -0.5rem;
   left: 0.05rem;
+  visibility: visible;
 }
 .sidenote:before {
   opacity: 1;
-  content: counter(sidenote-counter) " ";
-  font-size: 12px;  
-  margin-left: -1em;
+  content: counter(sidenote-counter) " "; /* en space */
+  font-size: 10px;    
   top: -3px;
 }
 
-.sidenote {  
+.sidenote {    
   float: right;
   clear: right;
   text-align: left;  
-  margin-right: -22%;
+  hyphens: auto;
+  margin-right: -20%;
   margin-top: 6px;
   margin-bottom: 6px;
-  width: 17.5%;
+  width: 16.66667%;
   font-size: 12px;
   line-height: 14px;  
 }
