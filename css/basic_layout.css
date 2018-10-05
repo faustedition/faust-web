@@ -409,6 +409,7 @@ ul.sort { list-style-type: none; }
 .sidenote-number:after, .sidenote:before {
   position: relative;
   vertical-align: baseline;
+  visibility: visible;
 }
 .sidenote-number:after {
   content: counter(sidenote-counter);  
