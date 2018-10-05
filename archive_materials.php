@@ -20,6 +20,6 @@
 
       <script type="text/javascript">
         requirejs(['faust_common'], function(Faust) {
-              document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv – Materialien"}]));
+              document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Archiv", link: "archive"}, {caption: "Materialien"}]));
         });
       </script>
