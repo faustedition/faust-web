@@ -9,6 +9,7 @@
              <a href="archive_manuscripts" class="pure-button pure-button-tile">Hand&shy;schriften</a>
              <a href="archive_prints" class="pure-button pure-button-tile">Drucke</a>
              <a href="archive_testimonies" class="pure-button pure-button-tile">Entstehungs&shy;zeugnisse</a>
+             <a href="archive_materials" class="pure-button pure-button-tile">Materialien</a>
             </p>
         
         </article>
