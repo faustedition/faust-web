@@ -438,3 +438,8 @@ ul.sort { list-style-type: none; }
   font-size: 12px;
   line-height: 14px;  
 }
+
+a.disabled, .disabled a {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

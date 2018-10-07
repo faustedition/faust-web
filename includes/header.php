@@ -68,6 +68,7 @@
           <ul>
           <li><a href="/help" title="Hilfe"><i class="fa fa-help-circled fa-lg"></i></a></li>
           <li><a href="#quotation" title="Zitieremfehlung"><i class="fa fa-bookmark fa-lg"></i></a></li>
+          <li><a href="#download" title="Download"><i class="fa fa-download fa-lg"></i></a></li>
           <li><form class="pure-form" action="/query" method="GET"><input id="quick-search" name="q" type="text" onblur="this.value=''" /><button type="submit" class="pure-fade-30"><i class="fa fa-search fa-lg"></i></button></form></li>
           <li><a href="#navigation" title="Seitennavigation"><i class="fa fa-menu fa-lg"></i> Menü</a></li>
           </ul>

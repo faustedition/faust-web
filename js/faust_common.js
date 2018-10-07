@@ -1,4 +1,4 @@
-define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady, es6_promise) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(Sortable, domReady, es6_promise, archives) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
@@ -934,55 +934,13 @@ define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady,
   // there will only be a text node with the caption instead of a link in the returned
   // span element
   Faust.createBreadcrumbs = function(data) {
-    var quotation = [];
+    var last = data.pop();
 
-    // create return element
-    var breadcrumbs = document.createElement("span");
-
-    // count breadcrumbs
-    var num = data.length;
-
-    // iterate through all breadcrumbs
-    data.forEach(function(crumb, index) {
-      // add quotation title
-      quotation.push(crumb.caption);
-
-      // insert last breadcrumb item into seperate breadcrumb element
-      if (index == num-1) {
-        var current = '<span>'+crumb.caption+'</span>';
-        document.getElementById("current").innerHTML = current;
-        return; // do not proceed adding caption to standard breadcrumb line
-      }
-
-      // add a spacer if there is more than one breadcrub
-      if(index > 0) {
-        var spacer = Faust.dom.createElement({name: "i", parent: breadcrumbs, class: 'fa fa-angle-right'});
-      }
-
-      // create a for breadcrumb
-      var crumbA = Faust.dom.createElement({name: "a", parent: breadcrumbs});
-
-      // add a link for current element if a link was provided, otherwise only append the caption
-      if(crumb.link !== undefined) {
-        crumbA.href = crumb.link;
-      }
-      crumbA.appendChild(document.createTextNode(crumb.caption));
-    });
-
-
-    // replace breadcrumb and url inside quotation template
-    if (document.getElementById("quotation") != null) {
-      var clone = document.querySelector('#quotation').cloneNode(true);
-      clone.innerHTML = clone.innerHTML.replace(/<span>Startseite<\/span>/g, quotation.join(", "));
-      clone.innerHTML = clone.innerHTML.replace(/<span>URL: .*<\/span>/g, 'URL: '+window.location.href);
-      document.getElementById("quotation").innerHTML = clone.innerHTML;
-    }
-
-    // wait a while that (hopefully) dom is loaded and adjust breadcrumb width for long titles
-    setTimeout(Faust.adjustBreadcrumbWidth, 100);
+    Faust.context.setTitle(last.caption);
+    Faust.context.setBreadcrumbs(data);
 
     // return breadcrumbs
-    return breadcrumbs;
+    return document.getElementById('breadcrumbs').firstChild;
   };
 
 //###########################################################################
@@ -1050,6 +1008,161 @@ define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady,
     }
 
     return breadcrumbs;
+  };
+
+
+  Faust.context = {
+
+    setTitle: function setTitle(title) {
+      document.getElementById('current').innerText = title;
+      // wait a while that (hopefully) dom is loaded and adjust breadcrumb width for long titles
+      setTimeout(Faust.adjustBreadcrumbWidth, 100);
+
+    },
+
+    buildBreadcrumbHtml: function addBreadcrumb(breadcrumbs) {
+      var span = document.createElement('span'),
+          last = breadcrumbs.length-1;
+      breadcrumbs.forEach(function(breadcrumb, index) {
+        var el = document.createElement('a');
+        if (breadcrumb.hasOwnProperty('link'))
+          el.href = breadcrumb.link;
+        el.textContent = breadcrumb.caption;
+        span.appendChild(el);
+        if (index !== last) {
+          var separator = document.createElement('i');
+          separator.className = 'fa fa-angle-right';
+          span.appendChild(separator);
+        }
+      });
+      return span;
+    },
+
+    appendBreadcrumbLine: function appendBreadcrumbLine(span) {
+      var breadcrumbs = document.getElementById('breadcrumbs');
+      if (breadcrumbs.hasChildNodes())
+        breadcrumbs.appendChild(document.createElement('br'));
+      breadcrumbs.appendChild(span);
+    },
+
+    setBreadcrumbs(breadcrumbData, secondBreadcrumbData) {
+      Faust.dom.removeAllChildren(document.getElementById('breadcrumbs'));
+      this.appendBreadcrumbLine(this.buildBreadcrumbHtml(breadcrumbData));
+      if (secondBreadcrumbData)
+        this.appendBreadcrumbLine(this.buildBreadcrumbHtml(secondBreadcrumbData));
+    },
+
+    quotationTemplate: null,
+    updateQuotationReference: function (options) {
+      var templateContainer = document.getElementById('quotation');
+      if (!this.quotationTemplate)
+          this.quotationTemplate = templateContainer.innerHTML; // keep original, unmodified template string
+      var template = this.quotationTemplate;
+      Object.keys(options).forEach(function(key) {
+        template = template.replace(RegExp('\{' + key + '\}', 'g'), options[key]);
+      });
+      templateContainer.innerHTML = template;
+    },
+
+    downloadTemplate: null,
+    getDownloadTemplate: function() {
+      if (!this.downloadTemplate) {
+        var templateText = document.getElementById('download').innerHTML,
+          container = document.createElement('div');
+        container.innerHTML = templateText;
+        this.downloadTemplate = container;
+      }
+      return this.downloadTemplate.cloneNode(true);
+    },
+    setDownloadTemplate: function (containerElement) {
+      if (!this.downloadTemplate)
+        getDownloadTemplate();
+      document.getElementById('download').innerHTML = containerElement.innerHTML;
+    },
+    updateLinks: function(element, linkMap) {
+      Object.keys(linkMap).forEach(function(linkId) {
+        var a = element.querySelector('#' + linkId);
+        if (linkMap[linkId])
+          a.href = linkMap[linkId];
+        else {
+          a.disabled = true;
+          a.className = 'disabled';
+        }
+      });
+      return element;
+    },
+
+
+    setContextSimple: function (title, breadcrumbs) {
+      this.setTitle(title);
+      this.setBreadcrumbs(breadcrumbs);
+      var context = '';
+      breadcrumbs.forEach(function (breadcrumb) {
+        context += breadcrumb.caption + ' / ';
+      });
+      context += title;
+      this.updateQuotationReference({
+        context: context,
+        url: window.location,
+        date: new Date(Date.now()).toLocaleDateString("de")
+      });
+    },
+
+    setContextDocument: function (options) { // metadata (from document_metadata), firstVerse, pageNo, view
+
+      // Breadcrumbs
+      var archiveBreadcrumbs = [{caption: 'Archiv', link: 'archive'},
+        options.metadata.type === 'print'?
+          {caption: 'Drucke', link: 'archive_prints'}
+          : {caption: archives[options.metadata.sigils.repository].name,
+            link: 'archive_locations_detail?id='+options.metadata.sigils.repository}],
+        genesisBreadcrumbs = Faust.genesisBreadcrumbData(options.firstVerse, options.firstVerse);
+      this.setBreadcrumbs(archiveBreadcrumbs, genesisBreadcrumbs);
+      this.setTitle(options.metadata.sigils.idno_faustedition);
+
+      // Citation
+      var context = options.metadata.sigils.idno_faustedition + ", S. " + options.pageNo;
+      this.updateQuotationReference({
+        context: context,
+        url: window.location,
+        date: new Date(Date.now()).toLocaleDateString("de")
+      });
+
+      // Downloads
+      var download = this.getDownloadTemplate(),
+        xmlBase = '/xml/',  // TODO github / configurability
+        transcriptBase = xmlBase + options.metadata.base,
+        page = options.metadata.page[options.pageNo-1];
+
+      this.updateLinks(download, {
+        'xml-current-doc-source-page': ((page.doc.length > 0) && page.doc[0].uri? transcriptBase + page.doc[0].uri : null),
+        'xml-current-text-source': (transcriptBase + options.metadata.text),
+        'xml-current-text-emended': '/download/emended/' + options.metadata.sigil + '.xml',
+        'xml-current-metadata': xmlBase + 'document/' + options.metadata.document
+      });
+      download.querySelector('#xml-current').classList.remove('disabled');
+      this.setDownloadTemplate(download);
+    },
+
+
+    initContext: function() {
+      var titleEl = document.querySelector('*[data-title]'),
+          bcEl    = document.querySelector('*[data-breadcrumbs]'),
+          title   = titleEl? titleEl.getAttribute('data-title'): null,
+          bcString = bcEl? bcEl.getAttribute('data-breadcrumbs'): '',
+          breadcrumbs = [];
+      if (title) {
+        bcString.split('|').forEach(function (bc) {
+          var parts = bc.split('@', 2), breadcrumb = {};
+          breadcrumb.caption = parts[0];
+          if (parts.length > 1)
+            breadcrumb.link = parts[1];
+          breadcrumbs.push(breadcrumb);
+        });
+        this.setContextSimple(title, breadcrumbs);
+      }
+    }
+
   };
 
   var formatExceptionDetail = function formatExceptionDetail(e) {
@@ -1182,6 +1295,7 @@ define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady,
         console.log('Loaded page: ', window.location);
         Faust.fixTargetOffset();
         window.addEventListener('hashchange', function(event) { Faust.fixTargetOffset(); });
+        Faust.context.initContext();
     });
 
 
