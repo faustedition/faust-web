@@ -80,6 +80,33 @@
         </div>
     </script>
 
+
+    <script type="text/template" id="download">
+
+        <div class="center pure-g-r navigation">
+          <div class="pure-u-1">
+            <h3><i class="fa fa-code" aria-hidden="true"></i> XML-Quellen</h3>
+          </div>
+          <div id="xml-global" class="pure-u-1-3 pure-gap">
+            <a><big>Globale TEI-Daten</big></a>
+            <a href="https://github.com/faustedition/faust-xml"><i class="fa fa-github-circled"></i> alle XML-Daten</a>
+            <a href="/download/testimony-split.zip" disabled="disabled"><i class="fa fa-file-archive"></i> Entstehungszeugnisse</a>
+            <a href="/download/faust.xml" disabled="disabled"><i class="fa fa-file-code"></i> konstituierter Text</a>
+          </div>
+
+          <div id="xml-current" class="pure-u-1-3 pure-gap">
+            <a><big>aktueller Datensatz</big></a>
+            <a id="xml-current-doc-source-page" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript</a>
+            <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript</a>
+            <a id="xml-current-text-emended"    href="#"><i class="fa fa-file-code"></i> Emendierte Version</a>
+            <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten</a>
+
+          </div>
+        </div>
+    </script>
+
+
+
 <script>
 requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common'],
   function ($, $chocolat, $overlays, $clipboard, Faust) {
