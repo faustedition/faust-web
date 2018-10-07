@@ -94,13 +94,17 @@
             <a href="/download/faust.xml" disabled="disabled"><i class="fa fa-file-code"></i> konstituierter Text</a>
           </div>
 
-          <div id="xml-current" class="pure-u-1-3 pure-gap">
+          <div id="xml-current" class="pure-u-1-3 pure-gap disabled">
             <a><big>aktueller Datensatz</big></a>
             <a id="xml-current-doc-source-page" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript</a>
             <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript</a>
             <a id="xml-current-text-emended"    href="#"><i class="fa fa-file-code"></i> Emendierte Version</a>
             <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten</a>
+          </div>
 
+          <div id="more-downloads" class="pure-u-1-3 pure-gap"  >
+              <a>mehr …</a>
+              <a>weitere Downloadmöglichkeiten demnächst.</a>
           </div>
         </div>
     </script>

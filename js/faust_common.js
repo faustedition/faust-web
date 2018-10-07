@@ -1064,6 +1064,35 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       templateContainer.innerHTML = template;
     },
 
+    downloadTemplate: null,
+    getDownloadTemplate: function() {
+      if (!this.downloadTemplate) {
+        var templateText = document.getElementById('download').innerHTML,
+          container = document.createElement('div');
+        container.innerHTML = templateText;
+        this.downloadTemplate = container;
+      }
+      return this.downloadTemplate.cloneNode(true);
+    },
+    setDownloadTemplate: function (containerElement) {
+      if (!this.downloadTemplate)
+        getDownloadTemplate();
+      document.getElementById('download').innerHTML = containerElement.innerHTML;
+    },
+    updateLinks: function(element, linkMap) {
+      Object.keys(linkMap).forEach(function(linkId) {
+        var a = element.querySelector('#' + linkId);
+        if (linkMap[linkId])
+          a.href = linkMap[linkId];
+        else {
+          a.disabled = true;
+          a.className = 'disabled';
+        }
+      });
+      return element;
+    },
+
+
     setContextSimple: function (title, breadcrumbs) {
       this.setTitle(title);
       this.setBreadcrumbs(breadcrumbs);
@@ -1098,9 +1127,25 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
         url: window.location,
         date: new Date(Date.now()).toLocaleDateString("de")
       });
+
+      // Downloads
+      var download = this.getDownloadTemplate(),
+        xmlBase = '/xml/',  // TODO github / configurability
+        transcriptBase = xmlBase + options.metadata.base,
+        page = options.metadata.page[options.pageNo-1];
+
+      this.updateLinks(download, {
+        'xml-current-doc-source-page': ((page.doc.length > 0) && page.doc[0].uri? transcriptBase + page.doc[0].uri : null),
+        'xml-current-text-source': (transcriptBase + options.metadata.text),
+        'xml-current-text-emended': '/download/emended/' + options.metadata.sigil + '.xml',
+        'xml-current-metadata': xmlBase + 'document/' + options.metadata.document
+      });
+      download.querySelector('#xml-current').classList.remove('disabled');
+      this.setDownloadTemplate(download);
     },
 
-    initContext: function () {
+
+    initContext: function() {
       var titleEl = document.querySelector('*[data-title]'),
           bcEl    = document.querySelector('*[data-breadcrumbs]'),
           title   = titleEl? titleEl.getAttribute('data-title'): null,
