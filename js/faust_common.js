@@ -1052,6 +1052,88 @@ define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady,
     return breadcrumbs;
   };
 
+
+  Faust.context = {
+
+    setTitle: function setTitle(title) {
+      document.getElementById('current').innerText = title;
+    },
+
+    buildBreadcrumbHtml: function addBreadcrumb(breadcrumbs) {
+      var span = document.createElement('span'),
+          last = breadcrumbs.length-1;
+      breadcrumbs.forEach(function(breadcrumb, index) {
+        var el = document.createElement('a');
+        if (breadcrumb.hasOwnProperty('link'))
+          el.href = breadcrumb.link;
+        el.textContent = breadcrumb.caption;
+        span.appendChild(el);
+        if (index !== last) {
+          var separator = document.createElement('i');
+          separator.className = 'fa fa-angle-right';
+          span.appendChild(separator);
+        }
+      });
+      return span;
+    },
+
+    appendBreadcrumbLine: function appendBreadcrumbLine(span) {
+      var breadcrumbs = document.getElementById('breadcrumbs');
+      if (breadcrumbs.hasChildNodes())
+        breadcrumbs.appendChild(document.createElement('br'));
+      breadcrumbs.appendChild(span);
+    },
+
+    quotationTemplate: null,
+    updateQuotationReference: function (options) {
+      var templateContainer = document.getElementById('quotation');
+      if (!this.quotationTemplate)
+          this.quotationTemplate = templateContainer.innerHTML; // keep original, unmodified template string
+      var template = this.quotationTemplate;
+      Object.keys(options).forEach(function(key) {
+        template = template.replace(RegExp('\{' + key + '\}', 'g'), options[key]);
+      });
+      templateContainer.innerHTML = template;
+    },
+
+    setContextSimple: function (title, breadcrumbs) {
+      this.setTitle(title);
+      document.getElementById('breadcrumbs').innerHTML = '';
+      this.appendBreadcrumbLine(this.buildBreadcrumbHtml(breadcrumbs));
+      var context = '';
+      breadcrumbs.forEach(function (breadcrumb) {
+        context += breadcrumb.caption + ' / ';
+      });
+      context += title;
+      this.updateQuotationReference({
+        context: context,
+        url: window.location,
+        date: new Date(Date.now()).toLocaleDateString("de")
+      });
+    },
+
+    initContext: function () {
+      var titleEl = document.querySelector('*[data-title]'),
+          bcEl    = document.querySelector('*[data-breadcrumbs]'),
+          title   = titleEl? titleEl.getAttribute('data-title'): null,
+          bcString = bcEl? bcEl.getAttribute('data-breadcrumbs'): '',
+          breadcrumbs = [];
+      if (title) {
+        bcString.split('|').forEach(function (bc) {
+          var parts = bc.split('@', 2), breadcrumb = {};
+          breadcrumb.caption = parts[0];
+          if (parts.length > 1)
+            breadcrumb.link = parts[1];
+          breadcrumbs.push(breadcrumb);
+        });
+        this.setContextSimple(title, breadcrumbs);
+      }
+
+
+    }
+
+  };
+
   var formatExceptionDetail = function formatExceptionDetail(e) {
     var result = e;
     try {
@@ -1182,6 +1264,7 @@ define(["sortable", "domReady", "es6-promise.min"], function(Sortable, domReady,
         console.log('Loaded page: ', window.location);
         Faust.fixTargetOffset();
         window.addEventListener('hashchange', function(event) { Faust.fixTargetOffset(); });
+        Faust.context.initContext();
     });
 
 

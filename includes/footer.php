@@ -70,10 +70,10 @@
               Historisch-kritische Faustedition.
               Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis.
               Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.
-              Version 1. Frankfurt am Main / Weimar / Würzburg 2016,
-              <span>Startseite</span>,
-              <span>URL: <?php echo $_SERVER['HTTP_HOST']; ?></span>,
-              abgerufen am <?php echo date('d.m.Y'); ?>.
+              Version 1.0rc. Frankfurt am Main / Weimar / Würzburg 2018,
+              <span>{context}</span>,
+              <span>URL: <a href="{url}">{url}</a></span>,
+              abgerufen am {date}.
             </p>
             <p><i class="fa fa-paste pure-fade-50"></i> <a href="#" data-target=".quotation-content">kopieren</a></p>
           </div>
