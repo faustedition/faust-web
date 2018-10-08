@@ -148,6 +148,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           }).then(function (response) {
             if (response) transcriptBody.innerHTML = response;
           }).catch(function (err) {
+            transcriptBody.innerHTML = '';
             Faust.error("Fehler bei der Suche", err, transcriptBody);
           });
         };
@@ -157,6 +158,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             metaBody.innerHTML = response;
             metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
           }).catch(function (err) {
+            metaBody.innerHTML = '';
             Faust.error("Fehler bei der Metadatensuche", err, metaBody);
           });
         };
@@ -166,6 +168,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             testiBody.innerHTML = response;
             testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
           }).catch(function (err) {
+            testiBody.innerHTML = '';
             Faust.error("Fehler bei der Entstehungszeugnis-Suche", err, testiBody);
           });
         };
@@ -176,6 +179,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
                   infoBody.innerHTML = response;
                   infoBtn.setAttribute('data-badge', infoBody.children[0].getAttribute('data-hits'));
               }).catch(function (err) {
+                  infoBody.innerHTML = '';
                   Faust.error("Fehler bei der Suche in den Texten über die Ausgabe", err, infoBody);
               });
           };

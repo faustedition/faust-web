@@ -402,4 +402,44 @@ h3:hover .score { visibility: visible; }
 ul.sort { list-style-type: none; }
 .idno mark { padding: 0; }
 
-.results p { margin: 0.25em 0; }
+.results p { margin: 0.25em 0; }
+.hit h2, .hit h3 { margin-bottom: 0.5ex; }
+.hit dl { margin: 0; }
+
+.sidenote-number {counter-increment: sidenote-counter; width: 0; visibility: hidden;}
+
+.sidenote-number:after, .sidenote:before {
+  position: relative;
+  vertical-align: baseline;
+}
+.sidenote-number:after {
+  content: counter(sidenote-counter);  
+  font-size: 10px;
+  top: -0.5rem;
+  left: 0.05rem;
+  visibility: visible;
+}
+.sidenote:before {
+  opacity: 1;
+  content: counter(sidenote-counter) " "; /* en space */
+  font-size: 10px;    
+  top: -3px;
+}
+
+.sidenote {    
+  float: right;
+  clear: right;
+  text-align: left;  
+  hyphens: auto;
+  margin-right: -20%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 16.66667%;
+  font-size: 12px;
+  line-height: 14px;  
+}
+
+a.disabled, .disabled a {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

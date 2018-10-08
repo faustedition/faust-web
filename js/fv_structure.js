@@ -192,7 +192,7 @@ define(['faust_common', 'faust_structure'],
                 // to inform about a missing preview
                 if( pageNum !== undefined ) {
                     var page = this.state.doc.metadata.pages[pageNum - 1];
-                    if((page.hasDocTranscripts && page.docTranscripts[0].hasImages) ) {
+                    if((page.docTranscriptCount > 0 && page.docTranscripts[0].hasImages) ) {
                         // load existing preview image
                         pageUri = page.docTranscripts[0].images[0].jpgUrlBase + "_preview.jpg";
                         parent.appendChild(this.getPreviewElement(pageUri));

@@ -406,7 +406,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
        *
        * FIXME similar code is in Faust.genesisBreadcrumbData
        */
-      var getSceneData = function(faustUri, pageNum) {
+      var findFirstVerse = function(faustUri, pageNum) {
         var result = undefined;
 
         var barData;
@@ -496,7 +496,15 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
         }
 
           // set breadcrumbs FIXME refactor to faust_common
-
+          // get information about scene that contains current page
+          verseNo = findFirstVerse(state.doc.faustUri, pageNum);
+          Faust.context.setContextDocument({
+            metadata: state.doc.faustMetadata,
+            pageNo: state.page,
+            firstVerse: verseNo,
+            view: state.view
+          });
+          /*
           // get breadcrumbs element
           var breadcrumbs = document.getElementById("breadcrumbs");
 
@@ -508,8 +516,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               state.doc.metadata.type == "print"? {caption: "Drucke", link: "archive_prints"}  : {caption: archives[repository].name, link: "archive_locations_detail?id=" + repository},
               {caption: state.doc.metadata.sigils.idno_faustedition}]));
 
-          // get information about scene that contains current page
-          verseNo = getSceneData(state.doc.faustUri, pageNum);
 
           // set second breadcrumb to barGraph if a matching scene was found
           if (verseNo !== undefined) {
@@ -518,6 +524,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               breadcrumbData.push({caption: state.doc.metadata.sigils.idno_faustedition});
               breadcrumbs.appendChild(Faust.createBreadcrumbs(breadcrumbData));
           }
+          */
       }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
