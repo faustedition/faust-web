@@ -91,7 +91,7 @@
               var slideshow = $('.slider').slick({
                   adaptiveHeight: true,
                   dots: true,
-                  autoplaySpeed: 8000,
+                  autoplaySpeed: 15000,
                   pauseOnHover: true,
                   responsive: [
                       {

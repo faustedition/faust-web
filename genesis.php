@@ -1,17 +1,10 @@
 <?php include "includes/header.php"; ?>
 <section class="center pure-g-r">
   
-  <div class="pure-u-1-8"></div>
-  
-  <article class="pure-u-3-4 pure-center">
-
-      <h2 class="pure-u-1-2">Faust I</h2>
-      <h2 class="pure-u-1-2">Faust II</h2>
-      <?php include "img/chessboard_overview.svg";?>
+  <article class="pure-u-1 pure-center">
+      <?php include "img/genesis_entry.svg";?>
   
   </article>
-  
-  <div class="pure-u-1-8"></div>
 
 </section>
 

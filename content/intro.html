@@ -330,5 +330,12 @@
             davon)]</p>-->
 
     </article>
+
+    <script type="text/javascript">
+      requirejs(['faust_common'], function(Faust) {
+        document.getElementById('breadcrumbs').appendChild(Faust.createBreadcrumbs(
+          [{caption: "Ausgabe", link: "intro"}]));
+      });
+    </script>
 </section>
 
