@@ -2,7 +2,7 @@
 <section>
 
     <nav class="pure-center tab-bar">
-     <a id="btn-transcripts" href="#" class="pure-button pure-button-selected">Transkripte</a>
+     <a id="btn-texts" href="#" class="pure-button pure-button-selected">Texte</a>
      <a id="btn-metadata" href="#" class="pure-button">Metadaten</a>
      <a id="btn-testimony" href="#" class="pure-button">Entstehungszeugnisse</a>
      <a id="btn-info" href="#" class="pure-button">Über die Ausgabe</a>
@@ -12,7 +12,7 @@
     </nav>
 
     <div id="tabcontainer">
-        <article class="tab pure-grid-r" id="tab-transcripts">
+        <article class="tab pure-grid-r" id="tab-texts">
             <div class="pure-u-1-5">
                 <form class="pure-form">
                     <fieldset>
@@ -43,7 +43,7 @@
                         <label for="option-sp">nur im Haupttext</label>
                     </fieldset>
                 </form>
-            </div><div class="pure-u-4-5" id="transcripts-content">
+            </div><div class="pure-u-4-5" id="texts-content">
                 <div class="background-container">
                     <div class="pure-center pure-fade-50">
                         <i class="fa fa-spinner fa-pulse fa-5x"></i><br/>
@@ -88,7 +88,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             index: "text-de",
             order: "sigil",
             sp: false,
-            tab: "transcripts"
+            tab: "texts"
           },
           current: {},
           fromDefaults: function () {
@@ -127,8 +127,8 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           }
         };
 
-        var transcriptBody = document.getElementById('transcripts-content'),
-          transcriptBtn = document.getElementById('btn-transcripts'),
+        var transcriptBody = document.getElementById('texts-content'),
+          transcriptBtn = document.getElementById('btn-texts'),
           metaBody = document.getElementById('tab-metadata'),
           metaBtn = document.getElementById('btn-metadata'),
           testiBody = document.getElementById('tab-testimony'),
@@ -136,7 +136,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           infoBody = document.getElementById('tab-info'),
           infoBtn = document.getElementById('btn-info');
 
-        var searchTranscripts = function searchTranscripts() {
+        var searchTexts = function searchTexts() {
           return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
             transcriptBody.innerHTML = response;
             var hits = transcriptBody.children[0].getAttribute("data-hits");
@@ -199,10 +199,10 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         state.fromQuery();
         state.toForm();
 
-        $('#tab-transcripts form').on("change", function () {
+        $('#tab-texts form').on("change", function () {
           state.fromForm();
           state.toLocation();
-          searchTranscripts();
+          searchTexts();
         });
 
 
@@ -218,7 +218,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
 
         // Initially perform the queries
-        searchTranscripts();
+        searchTexts();
         searchMetadata();
         searchTestimony();
         searchInfo();
