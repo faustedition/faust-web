@@ -936,8 +936,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
   Faust.createBreadcrumbs = function(data) {
     var last = data.pop();
 
-    Faust.context.setTitle(last.caption);
-    Faust.context.setBreadcrumbs(data);
+    Faust.context.setContextSimple(last.caption, data);
 
     // return breadcrumbs
     return document.getElementById('breadcrumbs').firstChild;
