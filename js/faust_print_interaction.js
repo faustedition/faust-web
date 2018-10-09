@@ -42,7 +42,7 @@ define(['/js/faust_common'],
                 resultContainer.innerHTML = xhr.responseText;
 
                 // loaded html contains variants for several lines. find right one
-                variantsDiv = resultContainer.querySelector("#v" + verseLine.replace(' ', '_'));
+                variantsDiv = resultContainer.querySelector("#v" + verseLine.replace(/ /g, '_'));
 
                 // now sort the current witnesses entry first
                 if (faustUri) {
