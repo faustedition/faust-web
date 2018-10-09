@@ -9,9 +9,20 @@
 </section>
 
 <script type="text/javascript">
-    requirejs(['faust_common'], function(Faust) {
+    requirejs(['faust_common','json!data/testimony-stats', 'domReady'], function(Faust, testimony, domReady) {
         // set breadcrumbs
-        document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Genese"}]));
+      domReady(function() {
+        Faust.context.setContextSimple("Genese", []);
+        Object.keys(testimony.counts).forEach(function (year) {
+          var el = document.getElementById('tes_' + year);
+          if (el) {
+            var height = testimony.counts[year] / testimony.max;
+            el.setAttribute('height', height)
+            el.setAttribute('title', year + ': ' + testimony.counts[year] + ' Entstehungszeugnisse');
+          }
+        });
+        Faust.tooltip.addToTooltipElements();
+      });
     });
 </script>
 
