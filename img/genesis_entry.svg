@@ -170,7 +170,7 @@
 			c0-1.898,1.552-3.45,3.45-3.45h43.016c1.898,0,3.45,1.552,3.45,3.45V487.563z"/>
 		<text transform="matrix(1 0 0 1 196.7275 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">1 H.5</text>
 		<text transform="matrix(1 0 0 1 287.5771 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">J.1</text>
-		<text transform="matrix(1 0 0 1 397.9775 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">S.o 7</text>
+		<text transform="matrix(1 0 0 1 407.9775 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">S</text>
 		<text transform="matrix(1 0 0 1 694.6787 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">H P63</text>
 		<text transform="matrix(1 0 0 1 795.8779 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">2 V H.2</text>
 		<text transform="matrix(1 0 0 1 875.2285 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">2 H</text>
@@ -178,14 +178,14 @@
 		<text transform="matrix(1 0 0 1 518.7266 484.0986)" style="fill:#FFFFFF; font-size:0.75em;">2 III H.1</text>
 		<text transform="matrix(1 0 0 1 824.6279 484.0986)" style="fill:#FFFFFF; font-size:0.75em;">C.1 4</text>
 		<text transform="matrix(1 0 0 1 820.0283 518.5986)" style="fill:#FFFFFF; font-size:0.75em;">C.1 12</text>
-		<text transform="matrix(1 0 0 1 621.0781 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">A 8</text>
+		<text transform="matrix(1 0 0 1 627.0781 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">A</text>
 		<a xlink:href="document?sigil=1_H.5" >
 			<rect x="185.802" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 		<a xlink:href="document?sigil=J.1" >
 			<rect x="270.327" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
-		<a xlink:href="# " >
+		<a xlink:href="document?sigil=S" >
 			<rect x="386.478" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 		<a xlink:href="document?sigil=H_P1" >
@@ -194,7 +194,7 @@
 		<a xlink:href="document?sigil=2_III_H.1" >
 			<rect x="512.981" y="468.585" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
-		<a xlink:href="#" >
+		<a xlink:href="document?sigil=A" >
 			<rect x="605.556" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 		<a xlink:href="document?sigil=H_P63" >
@@ -213,7 +213,7 @@
 			<rect x="812.556" y="503.66" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 	</g>
-	<g id="Entstehungszeugnisse" transform="translate(0 653) scale(1 -100)">
+	<g id="Entstehungszeugnisse" transform="translate(0 652) scale(1 -100)">
 		<rect id="tes_1770" x="177.0" y="0" style="fill:#9B9D9E;" width="9" height="0" />
 		<rect id="tes_1771" x="188.5" y="0" style="fill:#9B9D9E;" width="9" height="0" />
 		<rect id="tes_1772" x="200.0" y="0" style="fill:#9B9D9E;" width="9" height="0" />
