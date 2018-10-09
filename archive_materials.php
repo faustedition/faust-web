@@ -8,7 +8,7 @@
              <a href="archive_schillemeit" class="pure-button pure-button-tile">Schillemeit, Faust-Aufzeichnungen</a>
              <a href="watermarks" class="pure-button pure-button-tile">Wasserzeichen</a>
              <a href="multispectral_imaging" class="pure-button pure-button-tile">Multispektrale Bildverarbeitung</a>
-             <a href="x-ray_spectrometry" class="pure-button pure-button-tile">Röntgenfluoreszenzanalyse</a>
+             <a href="archive_x-ray_spectrometry" class="pure-button pure-button-tile">Ergebnisse der Röntgenfluoreszenzanalyse</a>
             </p>
         
         </article>
