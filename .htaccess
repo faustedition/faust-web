@@ -71,3 +71,15 @@ RewriteRule ^watermarks _content.php [QSA,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^x-ray_spectrometry _content.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^1-0-release _content.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^archive_schillemeit _content.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^intro_macrogenesis _content.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^intro_text _content.php [QSA,L]
