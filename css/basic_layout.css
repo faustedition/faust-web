@@ -406,6 +406,7 @@ ul.sort { list-style-type: none; }
 .hit h2, .hit h3 { margin-bottom: 0.5ex; }
 .hit dl { margin: 0; }
 
+section {counter-reset: sidenote-counter 0;} 
 .sidenote-number {counter-increment: sidenote-counter; width: 0; visibility: hidden;}
 
 .sidenote-number:after, .sidenote:before {
