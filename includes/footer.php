@@ -67,9 +67,9 @@
           <div class="pure-u-1">
             <h3>Zitierempfehlung</h3>
             <p class="quotation-content">
-              Historisch-kritische Faustedition.
-              Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis.
-              Unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.
+              Johann Wolfgang Goethe: Faust. Historisch-kritische Edition.
+              Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis
+              unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.
               Version 1.0rc. Frankfurt am Main / Weimar / Würzburg 2018,
               <span>{context}</span>,
               <span>URL: <a href="{url}">{url}</a></span>,
