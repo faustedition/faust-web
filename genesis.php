@@ -9,18 +9,31 @@
 </section>
 
 <script type="text/javascript">
-    requirejs(['faust_common','json!data/testimony-stats', 'domReady'], function(Faust, testimony, domReady) {
+    requirejs(['faust_common','json!data/testimony-stats', 'json!data/witness-stats', 'domReady'],
+      function(Faust, testimony, witnesses, domReady) {
         // set breadcrumbs
       domReady(function() {
         Faust.context.setContextSimple("Genese", []);
-        Object.keys(testimony.counts).forEach(function (year) {
-          var el = document.getElementById('tes_' + year);
-          if (el) {
-            var height = testimony.counts[year] / testimony.max;
-            el.setAttribute('height', height)
-            el.setAttribute('title', year + ': ' + testimony.counts[year] + ' Entstehungszeugnisse');
+
+        var updateGraph = function(data, idPrefix, labelSuffix) {
+          try {
+            Object.keys(data.counts).forEach(function (year) {
+              var el = document.getElementById(idPrefix + year);
+              if (el) {
+                var height = data.counts[year] / data.max;
+                el.setAttribute('height', height)
+                if (labelSuffix)
+                  el.setAttribute('title', year + ': ' + data.counts[year] + labelSuffix);
+              }
+            });
+          } catch (e) {
+            console.error(e, 'while updating graph', idPrefix)
           }
-        });
+        };
+
+        updateGraph(testimony, 'tes_', ' Entstehungszeugnisse');
+        updateGraph(witnesses, 'wit_');
+
         Faust.tooltip.addToTooltipElements();
       });
     });
