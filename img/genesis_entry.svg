@@ -221,8 +221,8 @@
 		<text transform="matrix(1 0 0 1 20.7773 599.0986)" style="fill:#333333; font-size:0.85em;">Entstehungszeugnisse</text>
 	</g>
 	<g id="Zeugen">
-		<path style="fill:#F9BD02;" d="M235.722,452.76c0,1.896-1.553,3.449-3.45,3.449h-43.019c-1.897,0-3.449-1.554-3.449-3.449v-15.525
-			c0-1.896,1.552-3.45,3.449-3.45h43.019c1.897,0,3.45,1.554,3.45,3.45V452.76z"/>
+		<path style="fill:#f9bd02" d="m 267.722,452.76 c 0,1.896 -1.553,3.449 -3.45,3.449 h -43.019 c -1.897,0 -3.449,-1.554 -3.449,-3.449 
+			 v -15.525 c 0,-1.896 1.552,-3.45 3.449,-3.45 h 43.019 c 1.897,0 3.45,1.554 3.45,3.45 z" />
 		<path style="fill:#333333;" d="M321.054,452.76c0,1.896-1.553,3.449-3.45,3.449h-43.018c-1.898,0-3.45-1.554-3.45-3.449v-15.525
 			c0-1.896,1.552-3.45,3.45-3.45h43.018c1.897,0,3.45,1.554,3.45,3.45V452.76z"/>
 		<path style="fill:#333333;" d="M436.622,452.76c0,1.896-1.553,3.449-3.45,3.449h-43.019c-1.897,0-3.45-1.554-3.45-3.449v-15.525
@@ -241,21 +241,21 @@
 			c0-1.898,1.556-3.45,3.45-3.45h43.02c1.897,0,3.45,1.552,3.45,3.45V522.636z"/>
 		<path style="fill:#F9BD02;" d="M907.536,452.76c0,1.896-1.552,3.449-3.449,3.449h-43.018c-1.895,0-3.45-1.554-3.45-3.449v-15.525
 			c0-1.896,1.556-3.45,3.45-3.45h43.018c1.897,0,3.449,1.554,3.449,3.45V452.76z"/>
-		<path style="fill:#F9BD02;" d="M563.118,487.563c0,1.895-1.552,3.45-3.45,3.45h-43.016c-1.898,0-3.45-1.556-3.45-3.45v-15.524
-			c0-1.898,1.552-3.45,3.45-3.45h43.016c1.898,0,3.45,1.552,3.45,3.45V487.563z"/>
-		<text transform="matrix(1 0 0 1 196.7275 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">1 H.5</text>
+		<path style="fill:#f9bd02;" d="m 549.118,487.563 c 0,1.895 -1.552,3.45 -3.45,3.45 h -43.016 c -1.898,0 -3.45,-1.556 -3.45,-3.45 
+			v -15.524 c 0,-1.898 1.552,-3.45 3.45,-3.45 h 43.016 c 1.898,0 3.45,1.552 3.45,3.45 z" />
+		<text transform="matrix(1 0 0 1 230.7275 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">1 H.5</text>
 		<text transform="matrix(1 0 0 1 287.5771 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">J.1</text>
 		<text transform="matrix(1 0 0 1 407.9775 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">S</text>
 		<text transform="matrix(1 0 0 1 694.6787 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">H P63</text>
 		<text transform="matrix(1 0 0 1 795.8779 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">2 V H.2</text>
 		<text transform="matrix(1 0 0 1 875.2285 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">2 H</text>
 		<text transform="matrix(1 0 0 1 524.4766 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">H P1</text>
-		<text transform="matrix(1 0 0 1 518.7266 484.0986)" style="fill:#FFFFFF; font-size:0.75em;">2 III H.1</text>
+		<text transform="matrix(1 0 0 1 504.0762 484.0986)" style="fill:#FFFFFF; font-size:0.75em;">2 III H.1</text>
 		<text transform="matrix(1 0 0 1 824.6279 484.0986)" style="fill:#FFFFFF; font-size:0.75em;">C.1 4</text>
 		<text transform="matrix(1 0 0 1 820.0283 518.5986)" style="fill:#FFFFFF; font-size:0.75em;">C.1 12</text>
 		<text transform="matrix(1 0 0 1 627.0781 448.4492)" style="fill:#FFFFFF; font-size:0.75em;">A</text>
 		<a xlink:href="document?sigil=1_H.5" >
-			<rect x="185.802" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
+			<rect x="218.802" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 		<a xlink:href="document?sigil=J.1" >
 			<rect x="270.327" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
@@ -267,7 +267,7 @@
 			<rect x="512.981" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 		<a xlink:href="document?sigil=2_III_H.1" >
-			<rect x="512.981" y="468.585" style="fill-opacity:0;" width="50" height="23" class="invisible" />
+			<rect x="498.98102" y="468.585" style="fill-opacity:0;" width="50" height="23" class="invisible" />
 		</a>
 		<a xlink:href="document?sigil=A" >
 			<rect x="605.556" y="433.739" style="fill-opacity:0;" width="50" height="23" class="invisible" />
