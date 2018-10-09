@@ -22,16 +22,38 @@
             Zeitintervallen normiert und nach Möglichkeit interpretatorisch präzisiert. 
             Diese Aussagen wurden dann zu
             einem großen Gesamtgraphen miteinander verknüpft.</p>
+        
+        <p>Ein Graph setzt sich zusammen aus Objekten (graphentheoretisch: <em>Knoten</em>),
+            zwischen denen Relationen (<em>Kanten</em>) bestehen. Die Knoten werden in diesem Fall
+            durch Zeugen und tagesgenaue Datumsangaben gebildet, die Kanten durch zeitliche
+            Verhältnisse (z.B. Handschrift <em>a</em> entstand vor Handschrift <em>b</em>, das Datum
+            25. Februar 1825 liegt vor der Entstehung von Handschrift <em>c</em>). Da die
+            Verhältnisse stets in der Form „x vor y“ ausgedrückt werden, ist der Graph
+            <em>gerichtet</em>.</p>
 
-        <p>In einen solchem Gesamtzusammenhang wird die Widersprüchlichkeit der Forschungsaussagen
-            offenbar. Insbesondere bildet sich ein großes <a href="/macrogenesis/components"
+        <p>Sobald die Einzelaussagen zu einem Gesamtzusammenhang verknüpft werden, treten Widersprüche zwischen Forschungsaussagen 
+            zutage. Insbesondere bildet sich ein großes <a href="/macrogenesis/components"
                 >Widerspruchscluster</a> (in der Sprache der Graphentheorie eine <em>stark
                 zusammenhängende Komponente</em>) mit über 2000 Aussagen zu fast 500 Zeugen, in der
             die (vermutlich) falschen Aussagen nicht mehr mit bloßem Auge zu identifizieren sind.
-            Mithilfe einer Heuristik wurde deshalb automatisch eine möglichst kleine Menge von
-            Aussagen identifiziert, die nicht berücksichtigt werden sollen – im Makrogenese-Lab <a
+            Mithilfe einer Heuristik wurde deshalb automatisch eine Menge von
+            Aussagen identifiziert, die bei der Bildung des Gesamtgraphen ausscheiden sollen – im Makrogenese-Lab <a
                 href="/macrogenesis/conflicts">Konfliktkanten</a> genannt und rotgestrichelt
-            dargestellt.</p>
+            dargestellt. Die Auswahl der Konfliktkanten geschieht nach mehreren Kriterien:</p>
+        <ul>
+            <li>Grundsätzlich wird angestrebt, möglichst viele Aussagen in den Graphen zu integrieren (d.h. 
+                die Anzahl der ausgeschiedenen gering zu halten.</li>
+            <li>Einzelne Kanten können ein größeres Gewicht erhalten durch
+                <ul>
+                    <li>die Glaubwürdigkeit der Quelle aus heutiger Sicht (formuliert durch ein einfaches 
+                        Punktesystem),</li>
+                    <li>durch Addition gleichlautender Aussagen.</li>
+                </ul></li>
+        </ul> 
+        <p>Einige Aussagen werden von vornherein nicht berücksichtigt: entweder, weil die Quelle insgesamt als zu wenig fundiert 
+            (<a href="bibliography#hertz1931">Hertz 1931</a>) oder eine einzelne Aussage als unbegründet gilt oder das in der 
+            Aussage formulierte zeitliche Verhältnis Gleichzeitigkeit zwischen Zeugen und damit keine <em>gerichtete</em> Beziehung 
+            ausdrückt.</p>
 
         <p>Der <a href="/macrogenesis/dag">verbleibende Graph</a> ist zyklen- und damit
             widerspruchsfrei. Damit besteht die Möglichkeit, seine Knoten in eine <a
