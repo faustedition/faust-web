@@ -14,7 +14,7 @@
                     auch Annahmen, die lediglich forschungsgeschichtlich relevant 
                     sind. Allgemeine Annahmen über die mutmaßliche Entstehungszeit von Teilen 
                     des Werks wurden dagegen nicht berücksichtigt.</span> Die Erkenntnisse, die im Rahmen der Arbeit an der 
-            Faustedition gewonnen und noch nicht separat publiziert sind, wurden als Selbstaussagen (<em>self</em>) aufgenommen.
+            Faustedition gewonnen und noch nicht separat publiziert sind, wurden als Selbstaussagen <em>(self)</em> aufgenommen.
             Die Forschungsaussagen wurden 
             nach einem einfachen Modell <a
                 href="https://github.com/faustedition/faust-xml/tree/master/macrogenesis">in XML
@@ -29,9 +29,8 @@
             zwischen denen Relationen (<em>Kanten</em>) bestehen. Die Knoten werden in diesem Fall
             durch Zeugen und tagesgenaue Datumsangaben gebildet, die Kanten durch zeitliche
             Verhältnisse (z.B. Handschrift <em>a</em> entstand vor Handschrift <em>b</em>, das Datum
-            25. Februar 1825 liegt vor der Entstehung von Handschrift <em>c</em>). Da die
-            Verhältnisse stets in der Form „x vor y“ ausgedrückt werden, ist der Graph
-            <em>gerichtet</em>.</p>
+            25. Februar 1825 liegt vor der Entstehung von Handschrift <em>c</em>). Der Graph ist gerichtet, d.h. die
+            Richtung der Kanten ist relevant: Eine Kante x → y drückt immer das Verhältnis „x vor y“ aus.</p>
 
         <p>Sobald die Einzelaussagen zu einem Gesamtzusammenhang verknüpft werden, treten Widersprüche zwischen Forschungsaussagen 
             als <em>Zyklen</em> zutage. Insbesondere bildet sich ein großes <a href="/macrogenesis/components"
@@ -44,7 +43,7 @@
             dargestellt. Die Auswahl der Konfliktkanten geschieht nach mehreren Kriterien:</p>
         <ul>
             <li>Grundsätzlich wird angestrebt, möglichst viele Aussagen in den Graphen zu integrieren (d.h. 
-                die Anzahl der ausgeschiedenen gering zu halten.</li>
+                die Anzahl der ausgeschiedenen gering zu halten).</li>
             <li>Einzelne Kanten können ein größeres Gewicht erhalten durch
                 <ul>
                     <li>die Glaubwürdigkeit der Quelle aus heutiger Sicht (formuliert durch ein einfaches 
@@ -65,7 +64,8 @@
             Aussagen widerspricht (eine <em>topologische Sortierung</em>). Diese Reihenfolge ist
             nicht eindeutig, zur Auflösung von Ambiguitäten wurden als sekundäre Kriterien das
             Syntagma (konkret: der erste vorkommende Faustvers) und die Siglierung
-            <!-- FIXME oder die absolute Datierung? --> herangezogen. Die auf diese Weise disambiguierte 
+            <!-- FIXME oder die absolute Datierung? - Nein, denn die steckt ja schon im Graphen -->
+            herangezogen. Die auf diese Weise disambiguierte
         Reihenfolge dient als Grundlage der Sortierung der Zeilen und Siglen in der 
             Zeilensynopse sowie der Balken im Balkendiagramm.</p>
 
