@@ -102,6 +102,9 @@
 	<a xlink:href="archive_testimonies" >
 		<rect x="9.277" y="536.5" width="920.004" height="115" style="fill:#ADD8E6; fill-opacity:0.25" class="highlight show-tooltip" title="Entstehungszeugnisse" />
 	</a>
+	<a xlink:href="macrogenesis" >
+		<rect x="9.277" y="423" width="920.004" height="115" style="fill:#ADD8E6; fill-opacity:0.25" class="highlight show-tooltip" title="Makrogenese-Lab" />
+	</a>
 </g>
 	<g id="Zeugen" transform="translate(0 537) scale(1 -113)">
 		<rect id="wit_1770" x="177.0" y="0" style="fill:#DCDCDC;" width="9" height="0" />
