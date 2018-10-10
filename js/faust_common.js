@@ -1044,7 +1044,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       breadcrumbs.appendChild(span);
     },
 
-    setBreadcrumbs(breadcrumbData, secondBreadcrumbData) {
+    setBreadcrumbs : function setBreadcrumbs(breadcrumbData, secondBreadcrumbData) {
       Faust.dom.removeAllChildren(document.getElementById('breadcrumbs'));
       this.appendBreadcrumbLine(this.buildBreadcrumbHtml(breadcrumbData));
       if (secondBreadcrumbData)

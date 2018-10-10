@@ -136,7 +136,7 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
     if (consent != 'yes') {
         $('#cookie-consent-button').bind('click', function () {
            var domain = window.location.hostname;
-           if (domain.endsWith('faustedition.net'))
+           if (/faustedition\.net$/.test(domain))
                domain = '.faustedition.net';
            Cookies.set('faust-cookie-consent', 'yes', {expires: 365, domain: domain});
            $('#cookie-consent').hide();
