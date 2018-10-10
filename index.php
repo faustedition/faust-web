@@ -66,11 +66,9 @@
       <div class="center">
         <div class="text">
           <h2>Text</h2>
-              <p>Der Text des <a href="/print/faust#part1">Faust I</a> beruht auf dem
-                  Erstdruck von 1808, der des <a href="/print/faust#part2">Faust II</a> auf
-                  der großen Reinschrift, die heute im Goethe- und Schiller-Archiv liegt. Vom
-                  Text aus sind alle übrigen handschriftlichen und gedruckten Fassungen
-                  erreichbar.</p>
+          <p>Die Ausgabe bietet einen neu konstituierten <a href="text">Text von „Faust. Eine
+                Tragödie“</a>, erstellt auf der Grundlage des gesamten Materials. Vom konstituierten
+            Text aus sind alle übrigen handschriftlichen und gedruckten Fassungen erreichbar.</p>
               <p>
                 <a class="pure-button pure-button-primary" href="/text">Text</a>
               </p>
