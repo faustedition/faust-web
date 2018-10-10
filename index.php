@@ -51,10 +51,10 @@
       <div class="center">
         <div class="text">
           <h2>Genese</h2>
-              <p>Goethe hat beinahe in jeder Phase seines Lebens an dem Werkprojekt Faust
-                  gearbeitet. Verschiedene Grafiken stellen die <a
-                      href="/genesis">Genese</a> von Goethes Faust
-                  retrospektiv, d.h. vom abgeschlossenen Werk ausgehend dar.</p>
+        <p>Goethe hat fast sein ganzes Leben am Faust gearbeitet. Dabei wechseln Phasen der
+            intensiven Tätigkeit mit langen Unterbrechungen. Verschiedene Diagramme bieten einen <a
+                href="/genesis">genetisch orientierten Zugang</a> zum Werk und seiner vollständigen
+            Überlieferung.</p>
               <p>
                 <a class="pure-button pure-button-primary" href="/genesis">Genese</a>
               </p>
