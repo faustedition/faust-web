@@ -11,6 +11,7 @@ function inreferer($substring) {
 
     if (inreferer('archive_prints')) 	$target = 'intro#drucke';
 elseif (inreferer('/print/faust'))  	$target = 'intro#text';
+elseif (inreferer('/text')) 		$target = 'intro#text';
 elseif (inreferer('/print/text')) 		$target = 'intro#text';
 elseif (inreferer('/print/')) 		$target = 'intro#drucke';
 elseif (inreferer('/meta/')) 		$target = 'metadata';

@@ -1023,6 +1023,8 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       var span = document.createElement('span'),
           last = breadcrumbs.length-1;
       breadcrumbs.forEach(function(breadcrumb, index) {
+        if (/^Der Tragödie/.test(breadcrumb.caption))
+          return;
         var el = document.createElement('a');
         if (breadcrumb.hasOwnProperty('link'))
           el.href = breadcrumb.link;
@@ -1095,6 +1097,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       });
       return element;
     },
+
 
 
     setContextSimple: function (title, breadcrumbs, quotation) {
