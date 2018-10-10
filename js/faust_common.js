@@ -1056,7 +1056,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       var templateContainer = document.getElementById('quotation'),
           options = {
               context: context,
-              url: window.location,
+              url: 'http://v1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
               date: new Date(Date.now()).toLocaleDateString("de")
           };
       if (!this.quotationTemplate)
@@ -1098,11 +1098,16 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
 
 
     setContextSimple: function (title, breadcrumbs, quotation) {
+        // Hack follows
+        if (/^\/print\/faust.*/.test(window.location.pathname)) {
+            quotation = "Faust. Eine Tragödie. Konstituierter Text. Bearbeitet von Gerrit Brüning und Dietmar Pravida";
+        }
       this.setTitle(title);
       if (breadcrumbs)
         this.setBreadcrumbs(breadcrumbs);
       else
         this.setBreadcrumbs([]);
+
 
       var context = '';
       if (quotation)
