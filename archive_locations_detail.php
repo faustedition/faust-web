@@ -23,7 +23,8 @@
 
 <script>
 
-requirejs(['faust_common', 'faust_tables', 'data/archives'], function(Faust, createConcordanceTable, archives) {
+requirejs(['faust_common', 'faust_tables', 'data/archives', 'jquery', 'jquery.table'], 
+          function(Faust, createConcordanceTable, archives, $, $tables) {
 
       var i;
 
@@ -86,6 +87,9 @@ requirejs(['faust_common', 'faust_tables', 'data/archives'], function(Faust, cre
       // write table
 
       createConcordanceTable(document.getElementById("archive-table-container"), repositoryName);
+
+      $("table[data-sortable]").fixedtableheader();
+
       Faust.finishedLoading();
     });
 </script>

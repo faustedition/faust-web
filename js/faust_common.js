@@ -1290,16 +1290,15 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       if (!parent) parent = document;
       parent.querySelectorAll(":target").forEach(function(target) {
           var container = window,
-              y = target.getBoundingClientRect().top;
-          console.log('fixTargetOffset target=', target, ' y=', y);
-          window.scrollTo(0, y - 100);
+              y = target.getBoundingClientRect().top + window.pageYOffset;
+              window.scrollTo(0, y - 100);
       });
     };
 
     domReady(function () {
         console.log('Loaded page: ', window.location);
-        Faust.fixTargetOffset();
         window.addEventListener('hashchange', function(event) { Faust.fixTargetOffset(); });
+        Faust.fixTargetOffset();
         Faust.context.initContext();
     });
 
