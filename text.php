@@ -6,6 +6,7 @@
         <article class="pure-u-3-5 pure-center">
             <h1 class="centered">Faust</h1>
             <h2 class="centered">Eine Tragödie</h2>
+            <br/>
             <p>
              <a href="print/faust" class="pure-button pure-button-tile">Konstituierter Text</a>
              <a href="print/app" class="pure-button pure-button-tile">Apparat</a>
