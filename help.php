@@ -20,6 +20,7 @@ elseif (inreferer('genesis_bargraph')) 	$target = 'intro#genesis_bargraph';
 elseif (inreferer('genesis')) 		$target = 'intro#genesis';
 elseif (inreferer('search')) 		$target = 'intro#volltextsuche';
 elseif (inreferer('testimon')) 		$target = 'intro#testimony';
+elseif (inreferer('macrogenesis')) 		$target = '/macrogenesis/help';
 elseif (inreferer('view=document_text')) 	$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=text')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=print')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
