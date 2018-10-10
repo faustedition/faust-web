@@ -48,17 +48,21 @@
             <a href="/archive_manuscripts">Handschriften</a>
             <a href="/archive_prints">Drucke</a>
             <a href="/archive_testimonies">Entstehungszeugnisse</a>
+            <a href="/archive_materials">Materialien</a>
           </div>
           <div class="pure-u-1-4 pure-gap">
             <a><big>Genese</big></a>
             <a href="/genesis">Werkgenese</a>
             <a href="/genesis_faust_i">Genese Faust I</a>
             <a href="/genesis_faust_ii">Genese Faust II</a>
+            <a href="/macrogenesis">Makrogenese-Lab</a>
           </div>
           <div class="pure-u-1-4 pure-gap">
             <a href="/text"><big>Text</big></a>
-            <a href="/print/faust#part_1.1">Faust I</a>
-            <a href="/print/faust#part_2">Faust II</a>
+            <a href="/print/faust">Faust: Konstituierter Text</a>
+            <a href="/print/app">Apparat</a>
+            <a href="/print/app">Editorischer Bericht</a>
+            <br />
             <a href="/paralipomena">Paralipomena</a>
           </div>
           <div class="pure-u-1-4 pure-gap pure-fade-50">
@@ -136,7 +140,7 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
     if (consent != 'yes') {
         $('#cookie-consent-button').bind('click', function () {
            var domain = window.location.hostname;
-           if (domain.endsWith('faustedition.net'))
+           if (/faustedition\.net$/.test(domain))
                domain = '.faustedition.net';
            Cookies.set('faust-cookie-consent', 'yes', {expires: 365, domain: domain});
            $('#cookie-consent').hide();

@@ -1023,6 +1023,8 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       var span = document.createElement('span'),
           last = breadcrumbs.length-1;
       breadcrumbs.forEach(function(breadcrumb, index) {
+        if (/^Der Tragödie/.test(breadcrumb.caption))
+          return;
         var el = document.createElement('a');
         if (breadcrumb.hasOwnProperty('link'))
           el.href = breadcrumb.link;
@@ -1044,7 +1046,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       breadcrumbs.appendChild(span);
     },
 
-    setBreadcrumbs(breadcrumbData, secondBreadcrumbData) {
+    setBreadcrumbs : function setBreadcrumbs(breadcrumbData, secondBreadcrumbData) {
       Faust.dom.removeAllChildren(document.getElementById('breadcrumbs'));
       this.appendBreadcrumbLine(this.buildBreadcrumbHtml(breadcrumbData));
       if (secondBreadcrumbData)
@@ -1056,7 +1058,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       var templateContainer = document.getElementById('quotation'),
           options = {
               context: context,
-              url: window.location,
+              url: 'http://v1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
               date: new Date(Date.now()).toLocaleDateString("de")
           };
       if (!this.quotationTemplate)
@@ -1097,12 +1099,18 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
     },
 
 
+
     setContextSimple: function (title, breadcrumbs, quotation) {
+        // Hack follows
+        if (/^\/print\/faust.*/.test(window.location.pathname)) {
+            quotation = "Faust. Eine Tragödie. Konstituierter Text. Bearbeitet von Gerrit Brüning und Dietmar Pravida";
+        }
       this.setTitle(title);
       if (breadcrumbs)
         this.setBreadcrumbs(breadcrumbs);
       else
         this.setBreadcrumbs([]);
+
 
       var context = '';
       if (quotation)
@@ -1290,16 +1298,15 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
       if (!parent) parent = document;
       parent.querySelectorAll(":target").forEach(function(target) {
           var container = window,
-              y = target.getBoundingClientRect().top;
-          console.log('fixTargetOffset target=', target, ' y=', y);
-          window.scrollTo(0, y - 100);
+              y = target.getBoundingClientRect().top + window.pageYOffset;
+              window.scrollTo(0, y - 100);
       });
     };
 
     domReady(function () {
         console.log('Loaded page: ', window.location);
-        Faust.fixTargetOffset();
         window.addEventListener('hashchange', function(event) { Faust.fixTargetOffset(); });
+        Faust.fixTargetOffset();
         Faust.context.initContext();
     });
 

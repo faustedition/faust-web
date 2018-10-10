@@ -113,6 +113,9 @@ body.documentViewer main, body.document main {
   border-right-width: 0px;
 }
 
+/* Required so text isn't centered in IE */
+.print > * > * { text-align: left; }
+
 #page-input {
   text-align: right;
   width: 3em;
