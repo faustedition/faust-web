@@ -12,7 +12,7 @@
                   unter Mitarbeit von Gerrit Brüning, Katrin Henzel,
                   Christoph Leijser, Gregor Middell, Dietmar Pravida,
                   Thorsten Vitt und Moritz Wissenbach<br>
-                  Frankfurt am Main, Weimar, Würzburg 2017
+                  Frankfurt am Main, Weimar, Würzburg 2018
                 </p>
                 <a class="pure-button pure-button-primary" href="/archive">Archiv</a>
                 <a class="pure-button pure-button-primary" href="/genesis">Genese</a>
@@ -104,6 +104,8 @@
               $('.slider *').click(function () {
                   slideshow.slick('slickPause'); // stop on click
               });
+
+              Faust.context.setContextSimple('', undefined, 'Startseite')
           });
       });
 </script>

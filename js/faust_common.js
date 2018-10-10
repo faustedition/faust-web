@@ -936,7 +936,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
   Faust.createBreadcrumbs = function(data) {
     var last = data.pop();
 
-    Faust.context.setContextSimple(last.caption, data);
+    this.context.setContextSimple(last.caption, data);
 
     // return breadcrumbs
     return document.getElementById('breadcrumbs').firstChild;
@@ -1052,8 +1052,13 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
     },
 
     quotationTemplate: null,
-    updateQuotationReference: function (options) {
-      var templateContainer = document.getElementById('quotation');
+    updateQuotationReference: function (context) {
+      var templateContainer = document.getElementById('quotation'),
+          options = {
+              context: context,
+              url: window.location,
+              date: new Date(Date.now()).toLocaleDateString("de")
+          };
       if (!this.quotationTemplate)
           this.quotationTemplate = templateContainer.innerHTML; // keep original, unmodified template string
       var template = this.quotationTemplate;
@@ -1092,19 +1097,24 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
     },
 
 
-    setContextSimple: function (title, breadcrumbs) {
+    setContextSimple: function (title, breadcrumbs, quotation) {
       this.setTitle(title);
-      this.setBreadcrumbs(breadcrumbs);
+      if (breadcrumbs)
+        this.setBreadcrumbs(breadcrumbs);
+      else
+        this.setBreadcrumbs([]);
+
       var context = '';
-      breadcrumbs.forEach(function (breadcrumb) {
-        context += breadcrumb.caption + ' / ';
-      });
-      context += title;
-      this.updateQuotationReference({
-        context: context,
-        url: window.location,
-        date: new Date(Date.now()).toLocaleDateString("de")
-      });
+      if (quotation)
+        context = quotation;
+      else {
+          breadcrumbs.forEach(function (breadcrumb) {
+              if (breadcrumb.caption)
+                context += breadcrumb.caption + ' / ';
+          });
+          context += title;
+      }
+      this.updateQuotationReference(context);
     },
 
     setContextDocument: function (options) { // metadata (from document_metadata), firstVerse, pageNo, view
@@ -1121,11 +1131,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
 
       // Citation
       var context = options.metadata.sigils.idno_faustedition + ", S. " + options.pageNo;
-      this.updateQuotationReference({
-        context: context,
-        url: window.location,
-        date: new Date(Date.now()).toLocaleDateString("de")
-      });
+      this.updateQuotationReference(context);
 
       // Downloads
       var download = this.getDownloadTemplate(),
