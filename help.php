@@ -27,6 +27,7 @@ elseif (inreferer('view=text')) 		$target = 'transcription_guidelines#txt_Transk
 elseif (inreferer('view=print')) 		$target = 'transcription_guidelines#txt_Transkr_Hss';
 elseif (inreferer('view=document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
 elseif (inreferer('view=facsimile_document')) 	$target = 'transcription_guidelines#dok_Transkr_Hss';
+else $target = 'intro';
 
 
 if ($target) {
@@ -38,19 +39,13 @@ if ($target) {
 
 
 <?php include "includes/header.php"; ?>
-<section class="center pure-g-r wip">
+<section class="center pure-g-r">
 
   <div class="pure-u-1-5"></div>
 
   <article class="pure-u-3-5">
-    <h3>folgt demnächst</h3>
-
-    <p>Die Hilfefunktion ist noch in Arbeit und wird in einer der nächsten Versionen ergänzt.</p>
 
     <p>Einige Benutzungshinweise finden Sie <a href="intro">in der Einführung in die Ausgabe</a>.</p>
-
-
-
 
   </article>
 
