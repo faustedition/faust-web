@@ -8,6 +8,18 @@
         </div>
     </noscript>
 
+    <div id="cookie-consent" class="pure-modal center" style="top:auto;">
+        <div class="pure-modal-body">
+            <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Erhöhung des Bedienkomforts
+                und – entsprechend Ihren Browsereinstellungen – für eine anonymisierte Nutzungsstatistik.
+                Durch die Benutzung erklären Sie sich damit einverstanden.
+                <a href="/imprint#privacy">Erfahren Sie mehr.</a>
+            </p>
+            <p><a id="cookie-consent-button" class="pure-button pull-right">OK</a></p>
+        </div>
+
+    </div>
+
 
     <footer>
       <div class="center pure-g-r">
@@ -112,13 +124,25 @@
 
 
 <script>
-requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common'],
-  function ($, $chocolat, $overlays, $clipboard, Faust) {
+requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common', 'js.cookie'],
+  function ($, $chocolat, $overlays, $clipboard, Faust, Cookies) {
     $('main').Chocolat({className:'faustedition', loop:true});
     $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
         $('[data-target]').copyToClipboard();
     }});
     Faust.addToTopButton();
+
+    var consent = Cookies.get('faust-cookie-consent');
+    if (consent != 'yes') {
+        $('#cookie-consent-button').bind('click', function () {
+           var domain = window.location.hostname;
+           if (domain.endsWith('faustedition.net'))
+               domain = '.faustedition.net';
+           Cookies.set('faust-cookie-consent', 'yes', {expires: 365, domain: domain});
+           $('#cookie-consent').hide();
+        });
+        $('#cookie-consent').show();
+    }
 });
 </script>
 
