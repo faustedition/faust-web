@@ -5,6 +5,6 @@ git status
 for f in content/*.html
 do
 	link=`basename "$f" .html`.php
-	ln -v -s _intro_frame.php "$link"
+	ln -v -f -s _content.php "$link"
 	git add "$link"
 done

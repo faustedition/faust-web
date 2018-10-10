@@ -104,6 +104,8 @@
               $('.slider *').click(function () {
                   slideshow.slick('slickPause'); // stop on click
               });
+
+              Faust.context.setContextSimple('', undefined, 'Startseite')
           });
       });
 </script>
