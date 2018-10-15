@@ -61,7 +61,7 @@
             <a href="/text"><big>Text</big></a>
             <a href="/print/faust">Faust: Konstituierter Text</a>
             <a href="/print/app">Apparat</a>
-            <a href="/print/app">Editorischer Bericht</a>
+            <a href="/intro_text">Editorischer Bericht</a>
             <br />
             <a href="/paralipomena">Paralipomena</a>
           </div>
