@@ -13,6 +13,7 @@ function inreferer($substring) {
 elseif (inreferer('/print/faust'))  	$target = 'intro#text';
 elseif (inreferer('/text')) 		$target = 'intro#text';
 elseif (inreferer('/print/text')) 		$target = 'intro#text';
+elseif (inreferer('/print/app')) 		$target = 'intro_text#apparat';
 elseif (inreferer('/print/')) 		$target = 'intro#drucke';
 elseif (inreferer('/meta/')) 		$target = 'metadata';
 elseif (inreferer('view=structure')) 	$target = 'metadata';
