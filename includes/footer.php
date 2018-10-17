@@ -24,7 +24,7 @@
     <footer>
       <div class="center pure-g-r">
         <div class="pure-u-1-2 pure-fade-50">
-          <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="middle"></a>
+          <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-Lizenzvertrag CC-BY-NC-SA 4.0" src="/img/cc-by-nc-sa-40-80x15.png" align="middle"></a>
         </div>
         <div class="pure-u-1-2 pure-right pure-fade-50 pure-noprint">
           <a href="project">Projekt</a>
@@ -72,7 +72,7 @@
             <a href="/contact">Kontakt</a>
             <a href="/imprint">Impressum</a>
             <a href="/intro#sitemap">Sitemap</a>
-            <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="middle"></a>
+            <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-Lizenzvertrag CC BY-NC-SA 4.0" src="/img/cc-by-nc-sa-40-80x15.png" align="middle"></a>
           </div>
         </div>
     </script>
