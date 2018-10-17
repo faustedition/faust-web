@@ -15,7 +15,7 @@
   array_push($classes, $base);
 ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="de" xml:lang="de">
   <head>
     <meta charset='utf-8'>
     <title>Faustedition</title>
