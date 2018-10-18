@@ -1,23 +1,26 @@
 Options +Multiviews
 
+Redirect 301 /project/about /intro
+
 ErrorDocument 400 /error.php?status=400
 ErrorDocument 401 /error.php?status=401
 ErrorDocument 403 /error.php?status=403
 ErrorDocument 404 /error.php?status=404
 ErrorDocument 500 /error.php?status=500
 
-Redirect 301 /chessboard_overview.php /genesis.php
-Redirect 301 /chessboard_faust_i.php /genesis_faust_i.php
-Redirect 301 /chessboard_faust_ii.php /genesis_faust_ii.php
-Redirect 301 /geneticBarGraph.php /genesis_bargraph.php
+Redirect 301 /chessboard_overview.php /genesis
+Redirect 301 /chessboard_faust_i.php /genesis_faust_i
+Redirect 301 /chessboard_faust_ii.php /genesis_faust_ii
+Redirect 301 /geneticBarGraph.php /genesis_bargraph
 
-Redirect 301 /archives.php /archive.php
-Redirect 301 /archives_locations.php /archive_locations.php
-Redirect 301 /archives_locations_detail.php /archive_locations_detail.php
-Redirect 301 /archives_print.php /archive_prints.php
-Redirect 301 /archives_manuscripts.php /archive_manuscripts.php
+Redirect 301 /archives.php /archive
+Redirect 301 /archives_locations.php /archive_locations
+Redirect 301 /archives_locations_detail.php /archive_locations_detail
+Redirect 301 /archives_print.php /archive_prints
+Redirect 301 /archives_manuscripts.php /archive_manuscripts
 Redirect 301 /documentViewer /document
 Redirect 301 /documentViewer.php /document
+
 
 
 # Moved intro content to content folder
