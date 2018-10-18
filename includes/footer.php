@@ -106,15 +106,14 @@
           <div id="xml-global" class="pure-u-1-3 pure-gap">
             <a><big>Globale TEI-Daten</big></a>
             <a href="https://github.com/faustedition/faust-xml"><i class="fa fa-github-circled"></i> alle XML-Daten</a>
-            <a href="/download/testimony-split.zip" disabled="disabled"><i class="fa fa-file-archive"></i> Entstehungszeugnisse</a>
-            <a href="/download/faust.xml" disabled="disabled"><i class="fa fa-file-code"></i> konstituierter Text</a>
+            <a href="/downloads/testimony-split.zip" disabled="disabled"><i class="fa fa-file-archive"></i> Entstehungszeugnisse</a>
+            <a href="/downloads/faust.xml" disabled="disabled"><i class="fa fa-file-code"></i> konstituierter Text</a>
           </div>
 
           <div id="xml-current" class="pure-u-1-3 pure-gap disabled">
             <a><big>aktueller Datensatz</big></a>
             <a id="xml-current-doc-source-page" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript</a>
             <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript</a>
-            <a id="xml-current-text-emended"    href="#"><i class="fa fa-file-code"></i> Emendierte Version</a>
             <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten</a>
           </div>
 
