@@ -1143,14 +1143,13 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(So
 
       // Downloads
       var download = this.getDownloadTemplate(),
-        xmlBase = '/xml/',  // TODO github / configurability
+        xmlBase = 'https://github.com/faustedition/faust-xml/blob/1.0-RC/xml/',  // TODO github / configurability
         transcriptBase = xmlBase + options.metadata.base,
         page = options.metadata.page[options.pageNo-1];
 
       this.updateLinks(download, {
         'xml-current-doc-source-page': ((page.doc.length > 0) && page.doc[0].uri? transcriptBase + page.doc[0].uri : null),
         'xml-current-text-source': (transcriptBase + options.metadata.text),
-        'xml-current-text-emended': '/download/emended/' + options.metadata.sigil + '.xml',
         'xml-current-metadata': xmlBase + 'document/' + options.metadata.document
       });
       download.querySelector('#xml-current').classList.remove('disabled');
