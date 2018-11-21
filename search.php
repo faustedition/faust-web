@@ -23,8 +23,8 @@
                         <label for="index-text">allen Wortformen</label><br/>
                         <input id="index-text-ws" type="radio" name="index" value="text-ws"/>
                         <label for="index-text-ws">Exakten Tokens</label><br/>
-                        <input id="index-ngram" type="radio" name="index" value="ngram" disabled="disabled"/>
-                        <label for="index-ngram">Substrings</label>
+                        <!-- <input id="index-ngram" type="radio" name="index" value="ngram" disabled="disabled"/>
+                        <label for="index-ngram">Substrings</label> -->
                     </fieldset>
                     <fieldset>
                         <legend>Sortierung</legend>

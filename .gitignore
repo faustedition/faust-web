@@ -4,6 +4,7 @@ tags
 app/
 print/
 ./transcript/
+/macrogenesis
 xml/
 meta/
 debug*.html

@@ -6,7 +6,9 @@
   <article class="pure-u-3-5 pure-center">
   
     <?php
-      $status = filter_input (INPUT_GET, 'status', FILTER_SANITIZE_NUMBER_INT);
+      if (!isset($status)) {
+          $status = filter_input(INPUT_GET, 'status', FILTER_SANITIZE_NUMBER_INT);
+      }
       $msg = array();
       
       switch ($status) {

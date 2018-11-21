@@ -24,7 +24,7 @@
     <footer>
       <div class="center pure-g-r">
         <div class="pure-u-1-2 pure-fade-50">
-          <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="middle"></a>
+          <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-Lizenzvertrag CC-BY-NC-SA 4.0" src="/img/cc-by-nc-sa-40-80x15.png" align="middle"></a>
         </div>
         <div class="pure-u-1-2 pure-right pure-fade-50 pure-noprint">
           <a href="project">Projekt</a>
@@ -61,7 +61,7 @@
             <a href="/text"><big>Text</big></a>
             <a href="/print/faust">Faust: Konstituierter Text</a>
             <a href="/print/app">Apparat</a>
-            <a href="/print/app">Editorischer Bericht</a>
+            <a href="/intro_text">Editorischer Bericht</a>
             <br />
             <a href="/paralipomena">Paralipomena</a>
           </div>
@@ -72,7 +72,7 @@
             <a href="/contact">Kontakt</a>
             <a href="/imprint">Impressum</a>
             <a href="/intro#sitemap">Sitemap</a>
-            <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" align="middle"></a>
+            <a class="undecorated" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-Lizenzvertrag CC BY-NC-SA 4.0" src="/img/cc-by-nc-sa-40-80x15.png" align="middle"></a>
           </div>
         </div>
     </script>
@@ -106,15 +106,14 @@
           <div id="xml-global" class="pure-u-1-3 pure-gap">
             <a><big>Globale TEI-Daten</big></a>
             <a href="https://github.com/faustedition/faust-xml"><i class="fa fa-github-circled"></i> alle XML-Daten</a>
-            <a href="/download/testimony-split.zip" disabled="disabled"><i class="fa fa-file-archive"></i> Entstehungszeugnisse</a>
-            <a href="/download/faust.xml" disabled="disabled"><i class="fa fa-file-code"></i> konstituierter Text</a>
+            <a href="/downloads/testimony-split.zip" disabled="disabled"><i class="fa fa-file-archive"></i> Entstehungszeugnisse</a>
+            <a href="/downloads/faust.xml" disabled="disabled"><i class="fa fa-file-code"></i> konstituierter Text</a>
           </div>
 
           <div id="xml-current" class="pure-u-1-3 pure-gap disabled">
             <a><big>aktueller Datensatz</big></a>
             <a id="xml-current-doc-source-page" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript</a>
             <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript</a>
-            <a id="xml-current-text-emended"    href="#"><i class="fa fa-file-code"></i> Emendierte Version</a>
             <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten</a>
           </div>
 

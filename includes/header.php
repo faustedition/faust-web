@@ -15,10 +15,10 @@
   array_push($classes, $base);
 ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="de" xml:lang="de">
   <head>
     <meta charset='utf-8'>
-    <title>Faustedition</title>
+    <title>Faustedition [alpha]</title>
 
     <script type="text/javascript" src="/js/require.js"></script>
     <script type="text/javascript" src="/js/faust_config.js"></script>
@@ -58,7 +58,7 @@
     <header>
         <div class="logo">
           <a href="/"><img src="/img/faustlogo.svg" alt="Faustedition"></a>
-          <sup class="pure-fade-50"><mark>1.0 RC</mark></sup>
+          <sup class="pure-fade-50"><mark>alpha</mark></sup>
         </div>
         <div class="breadcrumbs pure-right pure-nowrap pure-noprint pure-fade-50">
           <small id="breadcrumbs"></small>
