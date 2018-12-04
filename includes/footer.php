@@ -136,7 +136,7 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
     Faust.addToTopButton();
 
     var consent = Cookies.get('faust-cookie-consent');
-    if (consent != 'yes') {
+    if (navigator.cookieEnabled && (consent != 'yes')) {
         $('#cookie-consent-button').bind('click', function () {
            var domain = window.location.hostname;
            if (/faustedition\.net$/.test(domain))
