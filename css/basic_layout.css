@@ -444,3 +444,8 @@ a.disabled, .disabled a {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+#cookie-consent {
+  width: inherit;
+  bottom: 3em; /* should not cover footer w/impressum */
+}

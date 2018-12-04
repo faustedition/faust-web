@@ -12,10 +12,12 @@
         <div class="pure-modal-body">
             <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Erhöhung des Bedienkomforts
                 und – entsprechend Ihren Browsereinstellungen – für eine anonymisierte Nutzungsstatistik.
-                Durch die Benutzung erklären Sie sich damit einverstanden.
-                <a href="/imprint#privacy">Erfahren Sie mehr.</a>
-            </p>
-            <p><a id="cookie-consent-button" class="pure-button pull-right">OK</a></p>
+                Durch die Benutzung erklären Sie sich damit einverstanden.</p>
+            <p>Die Webanalyse können Sie <a href="/imprint#privacy">auf unserer Datenschutzseite</a> oder
+                über Ihre Browsereinstellungen deaktivieren. Falls Sie Cookies grundsätzlich ablehnen wollen,
+                verwenden Sie Ihre Browsereinstellungen dazu und nehmen entsprechende Funktionalitätseinbußen
+                in Kauf.</p>
+            <p><a id="cookie-consent-button" class="pure-button pull-right">Verstanden</a></p>
         </div>
 
     </div>
