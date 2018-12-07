@@ -440,6 +440,34 @@ section {counter-reset: sidenote-counter 0;}
   line-height: 14px;  
 }
 
+.testimony .note {
+  float: right;
+  clear: right;
+  text-align: left;
+  hyphens: auto;
+  width: 25%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (min-width:768px) {
+  .testimony .note {
+    margin-right: -30%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width:767px) {
+  .testimony .note {
+    margin-left: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 12em;
+    text-align: right;
+  }
+}
+
+
 a.disabled, .disabled a {
   opacity: 0.4;
   cursor: not-allowed;
