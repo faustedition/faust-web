@@ -46,6 +46,9 @@
     <?php if (inurl('genesis')) : ?>
     <link rel="stylesheet" href="/css/genesis-bargraph.css">
     <?php endif; ?>
+    <?php if (inurl('intro_text')) : ?>
+      <link rel="stylesheet" href="/css/textual-transcript.css">
+    <?php endif; ?>
     <?php if (inurl('index')) : ?>
     <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/slick-custom.css">
