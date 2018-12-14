@@ -1,4 +1,5 @@
-define(["sortable", "domReady", "es6-promise.min", "data/archives"], function(Sortable, domReady, es6_promise, archives) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady", "es6-promise.min", "data/archives", "faust_oldversion"],
+    function(Sortable, domReady, es6_promise, archives, oldversion) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
