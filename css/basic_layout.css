@@ -24,6 +24,17 @@ header {
   display:table;
 }
 
+.pure-alert-top {
+  position: fixed;
+  z-index: 101 !important;
+  top: 3.4em;
+  width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.pure-alert-top.pure-alert-success {
+  background: #d4e6cc;
+}
+
 header > * {
   display:table-cell;
   vertical-align:middle;
@@ -239,7 +250,7 @@ a[href^="//"]:after, a[href^="https://"]:after, a[href^="http://"]:after {
   color: rgb(175,175,175);
   margin-left: 3px;
 }
-a[href^="http://beta.faustedition.net/"]:after, a.undecorated:after {
+a[href*="http://beta.faustedition.net/"]:after, a.undecorated:after, a.internal:after {
   display:none;
 }
 a.undecorated {
