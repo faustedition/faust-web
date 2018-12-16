@@ -55,10 +55,10 @@ h3.head, .body > .div > .head {
 
 /* Versnummern */
 .print a.lineno {
-  margin-left: -5em;
+  left: -5em;
   width: 4.5em;
-  float: left;
-  position: relative;
+  float: none;
+  position: absolute;
   text-align: right;
   text-indent: 0pt;
   border: none;
@@ -68,10 +68,6 @@ h3.head, .body > .div > .head {
 a.lineno, .lineno {
     color: #aaa;
     font-size: 80%;
-}
-
-.print a.lineno.technical-lineno {
-  margin-left: -10em !important;
 }
 
 a.lineno.invisible {
