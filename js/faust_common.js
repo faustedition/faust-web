@@ -1,5 +1,5 @@
-define(["sortable", "domReady", "es6-promise.min", "data/archives", "faust_oldversion"],
-    function(Sortable, domReady, es6_promise, archives, oldversion) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady", "es6-promise.min", "data/archives"],
+    function(Sortable, domReady, es6_promise, archives) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
@@ -1059,7 +1059,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "faust_oldve
       var templateContainer = document.getElementById('quotation'),
           options = {
               context: context,
-              url: 'http://v1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
+              url: 'http://v1-1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
               date: new Date(Date.now()).toLocaleDateString("de")
           };
       if (!this.quotationTemplate)
@@ -1144,7 +1144,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "faust_oldve
 
       // Downloads
       var download = this.getDownloadTemplate(),
-        xmlBase = 'https://github.com/faustedition/faust-xml/blob/master/xml/',  // TODO github / configurability
+        xmlBase = 'https://github.com/faustedition/faust-xml/blob/1.1-RC/xml/',  // TODO github / configurability
         transcriptBase = xmlBase + options.metadata.base,
         page = options.metadata.page[options.pageNo-1];
 

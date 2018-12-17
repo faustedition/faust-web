@@ -88,7 +88,7 @@
               Johann Wolfgang Goethe: Faust. Historisch-kritische Edition.
               Herausgegeben von Anne Bohnenkamp, Silke Henke und Fotis Jannidis
               unter Mitarbeit von Gerrit Brüning, Katrin Henzel, Christoph Leijser, Gregor Middell, Dietmar Pravida, Thorsten Vitt und Moritz Wissenbach.
-              Version 1.0rc. Frankfurt am Main / Weimar / Würzburg 2018,
+              Version 1.1 RC. Frankfurt am Main / Weimar / Würzburg 2018,
               <span>{context}</span>,
               <span>URL: <a href="{url}">{url}</a></span>,
               abgerufen am {date}.
