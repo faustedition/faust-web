@@ -1057,9 +1057,10 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
     quotationTemplate: null,
     updateQuotationReference: function (context) {
       var templateContainer = document.getElementById('quotation'),
+          url = 'http://v1-1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
           options = {
               context: context,
-              url: 'http://v1-1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
+              url: url.replace(/&/g, '&amp;'),
               date: new Date(Date.now()).toLocaleDateString("de")
           };
       if (!this.quotationTemplate)
