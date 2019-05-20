@@ -575,3 +575,15 @@ p .pb:before {
   /* padding-left: 1em; */
   line-height: 1em;
 }
+
+.print-guide {
+  margin-left: 1ex;  
+}
+.print-guide h4 {
+  margin-bottom: 3pt;
+}
+.print-guide * {
+  padding: 2pt;
+  line-height: 100%
+}
+}
