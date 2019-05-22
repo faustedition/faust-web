@@ -559,8 +559,8 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
               }
             }
           } finally {
-            updateControlsToPage(newPage);
             state.toLocation(!!initializing);
+            updateControlsToPage(newPage);
           }
           return state.page;
       };
