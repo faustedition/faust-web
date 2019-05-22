@@ -185,6 +185,9 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           getSectionFileName: function getSectionFileName(pageNum) {
             var section, page;
 
+            if (!this.doc.metadata.hasTextTranscript) {
+                return undefined;
+            }
             if (pageNum == this.page && typeof(this.section) !== "undefined")
               section = this.section;
             else {
