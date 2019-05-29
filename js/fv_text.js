@@ -1,5 +1,5 @@
-define(['faust_common', 'faust_print_interaction', 'faust_app'],
-    function(Faust, addPrintInteraction, app) {
+define(['faust_common', 'faust_print_interaction', 'faust_app', 'scrollIntoView.min'],
+    function(Faust, addPrintInteraction, app, scrollIntoView) {
 
         var textualView = {
             init: function(parent, state, controller, kind, halfWidth) {
@@ -91,25 +91,38 @@ define(['faust_common', 'faust_print_interaction', 'faust_app'],
          * @param pageNum current page number
          */
         var revealState = function revealState(doc, pageNum, fragment) {
+            window.setTimeout(() => {
+
+
             var result = false;
             // remove old fragment highlight class
             doc.querySelectorAll('.target').forEach(function(el) {el.classList.remove('target');});
 
-            if(doc.querySelector("#dt" + pageNum) !== null) {
-                doc.querySelector("#dt" + pageNum).scrollIntoView();
+            let pageNoLabel = doc.querySelector("#dt" + pageNum);
+            if(pageNoLabel !== null) {
+                scrollIntoView(pageNoLabel);
+                // pageNoLabel.scrollIntoView();
+                // console.log('Page scrolling', pageNoLabel.getBoundingClientRect())
                 result = true;
             }
 
             if (fragment) {
                 result = false;
-                var currentTarget = doc.querySelector("#" + fragment.replace(/\./g, '\\.'));
+                const currentTarget = doc.querySelector("#" + fragment.replace(/\./g, '\\.'));
                 if (currentTarget) {
-                    currentTarget.scrollIntoView();
+                    scrollIntoView(currentTarget);
+                    // currentTarget.scrollIntoView();
                     currentTarget.classList.add("target");
                     result = true;
+                    // console.log('Fragment scrolling, ', currentTarget.getBoundingClientRect())
+                } else {
+                    console.warn('Fragment', fragment, 'not found! So we can’t scroll there.')
                 }
+            } else {
+                console.log('revealState w/o fragment!')
             }
-            return result;
+            });
+            return true
         };
 
 
