@@ -61,7 +61,7 @@
     <header>
         <div class="logo">
           <a href="/"><img src="/img/faustlogo.svg" alt="Faustedition"></a>
-          <sup class="pure-fade-50"><mark>1.2 RC</mark></sup>
+          <sup class="pure-fade-50"><mark>alpha</mark></sup>
         </div>
         <div class="breadcrumbs pure-right pure-nowrap pure-noprint pure-fade-50">
           <small id="breadcrumbs"></small>
