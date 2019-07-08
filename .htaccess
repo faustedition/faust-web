@@ -79,6 +79,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^1-0-release _content.php [QSA,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^1-1-release _content.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^1-2-release _content.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^archive_schillemeit _content.php [QSA,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f

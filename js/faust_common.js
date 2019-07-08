@@ -1057,7 +1057,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
     quotationTemplate: null,
     updateQuotationReference: function (context) {
       var templateContainer = document.getElementById('quotation'),
-          url = 'http://v1-1.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
+          url = 'http://v1-2.faustedition.net' + window.location.pathname + window.location.search + window.location.hash,
           options = {
               context: context,
               url: url.replace(/&/g, '&amp;'),
@@ -1145,7 +1145,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
 
       // Downloads
       var download = this.getDownloadTemplate(),
-        xmlBase = 'https://github.com/faustedition/faust-xml/blob/master/xml/',  // TODO github / configurability
+        xmlBase = 'https://github.com/faustedition/faust-xml/blob/1.2-RC/xml/',  // TODO github / configurability
         transcriptBase = xmlBase + options.metadata.base,
         page = options.metadata.page[options.pageNo-1];
 
