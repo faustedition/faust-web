@@ -815,9 +815,15 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
     // create listener to append to the given element's mouseenter event. when the event is triggered
     // the element specific tooltip will be added to the dom and thus shown. The tooltip div will be put
     // in the mousepointers proximity
+
+    var visibleTooltip = null;
+
     var createMouseenterListener = function(element) {
       return function(event) {
+        if (visibleTooltip !== null)
+          document.body.removeChild(visibleTooltip);
         document.body.insertBefore(element.tooltipDiv, document.body.firstChild);
+        visibleTooltip = element.tooltipDiv;
         element.tooltipDiv.style.left = event.clientX + "px";
         element.tooltipDiv.style.top = (event.clientY + 10) + "px";
       };
@@ -838,6 +844,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
       return function() {
         if(element.tooltipDiv.parentElement !== null) {
           document.body.removeChild(element.tooltipDiv);
+          visibleTooltip = null;
         }
       };
     };
