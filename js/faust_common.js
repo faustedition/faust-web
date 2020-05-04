@@ -1097,12 +1097,14 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
     updateLinks: function(element, linkMap) {
       Object.keys(linkMap).forEach(function(linkId) {
         var a = element.querySelector('#' + linkId);
-        if (linkMap[linkId])
-          a.href = linkMap[linkId];
-        else {
-          a.disabled = true;
-          a.className = 'disabled';
-        }
+        if (a) {
+          if (linkMap[linkId])
+            a.href = linkMap[linkId];
+          else {
+            a.disabled = true;
+            a.className = 'disabled';
+          }
+        } else console.log('Missing download link: ', linkId);
       });
       return element;
     },
@@ -1154,10 +1156,12 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
       var download = this.getDownloadTemplate(),
         xmlBase = 'https://github.com/faustedition/faust-xml/blob/master/xml/',  // TODO github / configurability
         transcriptBase = xmlBase + options.metadata.base,
-        page = options.metadata.page[options.pageNo-1];
+        page = options.metadata.page[options.pageNo-1],
+        hasDocTranscript = (page.doc.length > 0) && page.doc[0].uri;
 
       this.updateLinks(download, {
-        'xml-current-doc-source-page': ((page.doc.length > 0) && page.doc[0].uri? transcriptBase + page.doc[0].uri : null),
+        'xml-current-doc-source-page': (hasDocTranscript? transcriptBase + page.doc[0].uri : null),
+        'xml-current-doc-pdf' : (hasDocTranscript? ('/transcript/diplomatic/' + options.metadata.sigil + '/' + options.metadata.sigil + '.pdf'): null),
         'xml-current-text-source': (transcriptBase + options.metadata.text),
         'xml-current-metadata': xmlBase + 'document/' + options.metadata.document
       });

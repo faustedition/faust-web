@@ -475,21 +475,6 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           };
 
 
-          // update the PDF button (DEBUG)
-          try {
-              var pdfButton = document.getElementById('diplomatic-pdf-button'),
-                  debugButton = document.getElementById('diplomatic-debug-button');
-              if (state.doc.metadata.type != 'print') {
-                pdfButton.removeAttribute('disabled');
-                pdfButton.href = 'transcript/diplomatic/' + state.doc.sigil + '/page_' + state.page + '.pdf';
-                debugButton.removeAttribute('disabled');
-                debugButton.href = "debug.html" + window.location.search;
-              }
-          } catch (e) {
-              // no PDF button -> NOP
-              console.log(e);
-          }
-
         try {
           var macrogenesisButton = document.getElementById('macrogenesis-button');
           macrogenesisButton.removeAttribute('disabled');
