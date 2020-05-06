@@ -1,0 +1,65 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+@media screen {
+    html, body {
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 5px;
+        /* background-color: lightgray; */
+    }
+
+    .rendercontainer {
+        overflow: auto;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    .onlypdf {
+        display: none;
+    }
+}
+
+@media print {
+    .rendercontainer {
+        break-after: page;
+        text-align: center;
+    }
+
+    .printheader {
+        font-family: "Ubuntu derivative Faust";
+        font-size: 9pt;
+        margin-bottom: 0.5cm;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .printheader img.logo {
+        height: 0.8em;
+        vertical-align: center;
+    }
+
+    .bgBox {
+        fill: none !important;
+    }
+
+    @page {
+        margin: 1cm 2cm 2cm;
+    }
+}
+
+/*
+#container {
+  border: 1px solid black;
+  background-color: white;
+}
+*/
