@@ -7,6 +7,7 @@ svg.diplomatic .bgBox.noBackground {
     visibility: hidden;
 }
 
+@media screen {
 svg.diplomatic .bgBox.hand-g {
 	fill: White;
 }
@@ -45,4 +46,5 @@ svg.diplomatic .bgBox.hand-sc, svg.diplomatic .bgBox.hand-zs {
 
 svg.diplomatic .bgBox.hand-xx, svg.diplomatic .bgBox.hand-xy, svg.diplomatic .bgBox.hand-xz  {
     fill: #b45f06;
+}
 }
