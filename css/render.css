@@ -57,6 +57,35 @@
     }
 }
 
+.aboutpage article {
+    margin-bottom: 1cm;
+}
+
+.aboutpage .title {
+    text-align: center;
+    horiz-align: center;
+}
+
+.aboutpage .title h1 { font-size: 36pt; }
+.aboutpage .title h2 { font-size: 24pt; }
+.aboutpage .title .author { margin-bottom: 24pt;}
+.aboutpage .title h3 { font-size: 18pt; }
+.aboutpage .title * { font-size: 16pt; line-height: 24pt; }
+
+.aboutpage .legende td:first-child { text-align: right; border-right: 0.5pt solid gray; }
+.aboutpage .legende td { padding-left: 0.5em; padding-right: 0.5em; }
+.aboutpage .legende th { padding-top: 1ex; }
+
+.aboutpage h1 { text-align: center;}
+
+.aboutpage { width: 100%; }
+.aboutpage *, .aboutpage *:first-child { width: 40rem; margin-left: auto; margin-right: auto;}
+
+.aboutpage .generated {
+    text-align: center;
+    font-size: 6pt;
+}
+
 /*
 #container {
   border: 1px solid black;
