@@ -114,7 +114,7 @@
 
           <div id="xml-current" class="pure-u-1-3 pure-gap disabled">
             <a><big>aktueller Datensatz</big></a>
-            <a id="xml-current-doc-pdf"         href="#"><i class="fa fa-file-pdf"></i> Dokumentarisches Transkript</a>
+            <a id="xml-current-doc-pdf"         href="#"><i class="fa fa-file-pdf"></i> Dokumentarische Transkription</a>
             <a id="xml-current-doc-source-page" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript (Seite)</a>
             <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript</a>
             <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten</a>
