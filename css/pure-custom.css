@@ -13,7 +13,7 @@ mark,  .hit span.hi, .results a.hi {padding:0px 0.25em; background-color:rgb(250
 abbr[title], acronym[title] {border-bottom: 1px dotted; cursor:help; text-decoration: none;}
 i { margin-right: 0.1em;}
 blockquote {font-style:italic;}
-blockquote:before {font-family:"FontAwesome"; content:"\f10e"; text-decoration:inherit; display: inline-block; speak: none; color:rgba(0,0,0,0.1); padding-right:.25em; font-size:2em;}
+blockquote:before {font-family:"FontAwesome"; content:"\e84d"; text-decoration:inherit; display: inline-block; speak: none; color:rgba(0,0,0,0.1); padding-right:.25em; font-size:2em;}
 blockquote * {margin:0; display:inline-block; color:rgb(0,0,0); font-size:1em;}
 blockquote small {display:block; margin: 0 0 0 40px ;font-size:0.8em;}
 ol ol li {list-style-type:lower-alpha;}
