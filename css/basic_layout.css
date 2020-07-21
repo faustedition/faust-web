@@ -318,6 +318,12 @@ a.undecorated {
 
 .delete td { background-color: #fee; }
 .ignore td { color: #ddd; }
+span.ignore { color: #ddd; }
+.insert td { background-color: #efe; }
+.replace td { background-color: #fef; }
+
+.right { text-align: right; }
+td.border-right { border-right: 1px solid black; }
 
 /* -- search -- */
 
