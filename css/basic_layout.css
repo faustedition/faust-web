@@ -325,6 +325,10 @@ span.ignore { color: #ddd; }
 .right { text-align: right; }
 td.border-right { border-right: 1px solid black; }
 
+.mark-warning-ref, a.mark-warning-ref {
+    text-decoration: wavy rgb(250,190,0) underline;
+}
+
 /* -- search -- */
 
 .pure-button[data-badge] { position: relative; }
@@ -494,3 +498,4 @@ a.disabled, .disabled a {
   width: inherit;
   bottom: 3em; /* should not cover footer w/impressum */
 }
+
