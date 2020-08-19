@@ -61,6 +61,26 @@ define(['/js/faust_common'],
 //                  currentLine.parentNode.insertBefore(variantsDiv, currentLine);
                 currentLine.parentNode.insertBefore(variantsDiv, currentLine.nextElementSibling);
 
+                // now determine the macrogenesis link
+                const sigils = Array.prototype.map.call(variantsDiv.querySelectorAll('.sigil'),
+                        el => el.textContent),
+                      unique = new Set(sigils);
+                unique.delete('Text');
+                const nodestr= [...unique].join(', '),
+                      macrogenParams = new URLSearchParams({
+                          nodes: nodestr,
+                          order: true,
+                          dir: 'TB',
+                          inscriptions: true,
+                          collapse: true
+                      }),
+                      macrogenContainer = Faust.dom.createElement({name: 'div', class: 'subgraphlink'});
+                macrogenContainer.innerHTML = `<a title="Makrogenese-Graph zu den Zeugen dieses Verses"><i class="fa fa-sliders"></i> Makrogenese-Lab</a>`;
+                macrogenContainer.firstElementChild.href = '/macrogenesis/subgraph?' + macrogenParams.toString();
+                variantsDiv.insertBefore(macrogenContainer, variantsDiv.firstElementChild);
+
+
+
                 // set flags that variants are loaded and currently shown
                 currentLine.variantsLoaded = true;
                 currentLine.isShown = true;

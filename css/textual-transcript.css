@@ -511,6 +511,19 @@ div.variants {
     text-transform: none;
 }
 
+.variants .subgraphlink {
+    position: absolute;
+    text-align: left;
+    font-weight: bold;
+    right: -10rem;
+    text-indent: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 50;
+}
+.variants .subgraphlink a {
+    color: rgb(125,125,125);
+}
+
 .placeholder {
     visibility: hidden;
 }
@@ -585,5 +598,4 @@ p .pb:before {
 .print-guide * {
   padding: 2pt;
   line-height: 100%
-}
 }
