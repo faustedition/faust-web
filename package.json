@@ -1,0 +1,22 @@
+{
+  "name": "faust-web",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faustedition/faust-web.git"
+  },
+  "author": "Thorsten Vitt",
+  "bugs": {
+    "url": "https://github.com/faustedition/faust-web/issues"
+  },
+  "homepage": "http://faustedition.net/",
+  "dependencies": {
+    "@hpcc-js/wasm": "^0.3.14",
+    "d3": "^6.1.1",
+    "d3-graphviz": "^3.1.0"
+  },
+  "scripts": {
+    "install": "cp -rp node_modules/d3-graphviz/build/* node_modules/@hpcc-js/wasm node_modules/d3/dist/d3.min.js js"
+  }
+}
