@@ -227,6 +227,8 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             if (state.current.tab == "texts") {
                 $('.tab-bar [data-badge!="0"]').first().click();
             }
+        $("#quick-search").on("focus", null, null, 
+            (ev) => {ev.target.value = state.current.q; ev.target.select();});
         });
 
       } catch (e) {
