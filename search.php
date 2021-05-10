@@ -218,10 +218,16 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
 
         // Initially perform the queries
-        searchTexts();
-        searchMetadata();
-        searchTestimony();
-        searchInfo();
+        Promise.all([
+            searchTexts(),
+            searchMetadata(),
+            searchTestimony(),
+            searchInfo()
+        ]).then(function () {
+            if (state.current.tab == "texts") {
+                $('.tab-bar [data-badge!="0"]').first().click();
+            }
+        });
 
       } catch (e) {
         Faust.error('Bug in der interaktiven Suche', e);
