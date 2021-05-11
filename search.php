@@ -215,21 +215,51 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           state.toLocation();
         });
 
-        document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
 
-        // Initially perform the queries
-        Promise.all([
-            searchTexts(),
-            searchMetadata(),
-            searchTestimony(),
-            searchInfo()
-        ]).then(function () {
-            if (state.current.tab == "texts") {
-                $('.tab-bar [data-badge!="0"]').first().click();
-            }
         $("#quick-search").on("focus", null, null, 
             (ev) => {ev.target.value = state.current.q; ev.target.select();});
+
+        function performSearches() {
+            // Initially perform the queries
+            return Promise.all([
+                searchTexts(),
+                searchMetadata(),
+                searchTestimony(),
+                searchInfo()
+            ]).then(function () {
+                if (state.current.tab == "texts") {
+                    $('.tab-bar [data-badge!="0"]').first().click();
+                }
+            });
+        };
+        
+
+        $("#quick-search").parent().on("submit", null, null, function(ev) {
+            ev.preventDefault();
+            let data = new FormData(ev.target);
+            state.current.q = data.get('q');
+            fetch('/query?' + new URLSearchParams(data).toString())
+                .then(function (response) {
+                    let url = new URL(response.url);
+                    if (!url.pathname.startsWith('/search')) {
+                        window.location = url;    // redirect
+                    } else {
+                        state.toLocation();
+                        state.toForm();
+                        $("#quick-search").blur();
+                    }
+                })
+                .catch(function (e) {
+                    if (e.status == 400) {
+                        e.text().then(text => {Faust.error('Problem in der Suchanfrage', text);});
+                    } else {
+                        Faust.error('Problem mit der Suchanfrage', e);
+                    }
+                })
+            performSearches();
         });
+
+        performSearches();
 
       } catch (e) {
         Faust.error('Bug in der interaktiven Suche', e);
