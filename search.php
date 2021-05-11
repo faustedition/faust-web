@@ -114,6 +114,10 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             $('#order-' + this.current.order).prop('checked', true);
             $('#option-sp').prop('checked', this.current.sp)
             setTab(this.current.tab)
+
+            let breadcrumbsEl = document.getElementById("breadcrumbs");
+            breadcrumbsEl.textContent = '';
+            breadcrumbsEl.appendChild(Faust.createBreadcrumbs([{caption: "Suche"}, {caption: state.current.q}]));
           },
           fromForm: function () {
             this.current.index = $('[name=index]:checked').val();
@@ -218,7 +222,6 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           state.current.tab = currentVerb;
           state.toLocation();
         });
-
 
         $("#quick-search").on("focus", null, null, 
             (ev) => {ev.target.value = state.current.q; ev.target.select();});
