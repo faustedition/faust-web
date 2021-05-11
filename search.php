@@ -137,6 +137,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
           infoBtn = document.getElementById('btn-info');
 
         var searchTexts = function searchTexts() {
+          transcriptBtn.setAttribute("data-badge", "...");
           return Faust.xhr.get('/query/text?' + state.toQuery() + '&highlight=false', 'text').then(function (response) {
             transcriptBody.innerHTML = response;
             var hits = transcriptBody.children[0].getAttribute("data-hits");
@@ -154,6 +155,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         };
 
         var searchMetadata = function searchMetadata() {
+          metaBtn.setAttribute("data-badge", "...");
           return Faust.xhr.get('/query/meta?' + state.toQuery(), 'text').then(function (response) {
             metaBody.innerHTML = response;
             metaBtn.setAttribute('data-badge', metaBody.children[0].getAttribute('data-hits'));
@@ -164,6 +166,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
         };
 
         var searchTestimony = function searchTestimony() {
+          testiBtn.setAttribute('data-badge', '...');
           return Faust.xhr.get('/query/testimony?' + state.toQuery(), 'text').then(function (response) {
             testiBody.innerHTML = response;
             testiBtn.setAttribute('data-badge', testiBody.children[0].getAttribute('data-hits'));
@@ -175,6 +178,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
 
           var searchInfo = function searchInfo() {
+              infoBtn.setAttribute('data-badge', '...');
               return Faust.xhr.get('/query/info?' + state.toQuery(), 'text').then(function (response) {
                   infoBody.innerHTML = response;
                   infoBtn.setAttribute('data-badge', infoBody.children[0].getAttribute('data-hits'));
