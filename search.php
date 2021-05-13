@@ -245,11 +245,12 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             ev.preventDefault();
             let data = new FormData(ev.target);
             state.current.q = data.get('q');
-            fetch('/query?' + new URLSearchParams(data).toString())
+            const queryUrl = '/query?' + new URLSearchParams(data).toString()
+            fetch(queryUrl)
                 .then(function (response) {
                     let url = new URL(response.url);
                     if (!url.pathname.startsWith('/search')) {
-                        window.location = url;    // redirect
+                        window.location = queryUrl;    // redirect
                     } else {
                         state.toLocation();
                         state.toForm();
