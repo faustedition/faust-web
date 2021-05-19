@@ -26,12 +26,15 @@
         function(Faust, paralipomena, Sortable, $, $table) {
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text", link: "text"}, {caption: "Paralipomena"}]));
         function createParalipomenaTable() {
-          function getViewerURI(faustURI) { return 'documentViewer?faustUri=' + faustURI }
+            function getViewerURI(sigil) { 
+                const sigil_t = sigil.replace('α', 'alpha').replace(/[^A-Za-z0-9.-]/, '_');
+                return 'document?sigil=' + sigil_t;
+            }
           function createSigilLink(sigil, uri) {
-            return Faust.dom.createElement({name: "a", attributes: [["href", getViewerURI(uri)]], children: [document.createTextNode(sigil)]});
+            return Faust.dom.createElement({name: "a", attributes: [["href", getViewerURI(sigil)]], children: [document.createTextNode(sigil)]});
           }
           function createParaLink(paralipomenon) {
-            var href = getViewerURI(paralipomenon.uri) + '&view=text';
+            var href = getViewerURI(paralipomenon.sigil) + '&view=text';
             if (paralipomenon.page) { href = href + '&page=' + paralipomenon.page; }
             href = href + '#' + paralipomenon.id;
             return Faust.dom.createElement({name: "a", attributes: [["href", href]], children: [document.createTextNode(paralipomenon.n)]});
