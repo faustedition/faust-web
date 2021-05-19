@@ -22,8 +22,8 @@
 
   <script type="text/javascript">
     // set breadcrumbs
-    requirejs(['faust_common', 'data/paralipomena', 'sortable', 'jquery', 'jquery.table'],
-        function(Faust, paralipomena, Sortable, $, $table) {
+    requirejs(['faust_common', 'data/paralipomena', 'sortable', 'jquery', 'jquery.table', 'scrollIntoView.min'],
+        function(Faust, paralipomena, Sortable, $, $table, scrollIntoView) {
       document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Text", link: "text"}, {caption: "Paralipomena"}]));
         function createParalipomenaTable() {
             function getViewerURI(sigil) { 
@@ -65,5 +65,13 @@
         createParalipomenaTable();
         Sortable.init();
         $("table[data-sortable]").fixedtableheader();
+
+        if (window.location.hash) {
+            const currentTarget = document.getElementById(window.location.hash.substring(1));
+            if (currentTarget) {
+                scrollIntoView(currentTarget);
+                currentTarget.classList.add('target');
+            }
+        }
       });
   </script>
