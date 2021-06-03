@@ -362,7 +362,10 @@ define(['faust_common', 'data/scene_line_mapping', 'json!data/genetic_bar_graph'
       // process all witnesses inside selection
       var highlightSigil = Faust.url.getParameters()['#'];
       var highlightSigilElement = null;
+      var witnessesForMacrogen = [];
       selectedWitnesses.forEach(function(witness, witnessIndex) {
+
+        witnessesForMacrogen.push(witness.sigil);
 
         // add sigil name to vertical axis
         var witnessSigil = createSvgElement({name: "text"});
@@ -475,6 +478,27 @@ define(['faust_common', 'data/scene_line_mapping', 'json!data/genetic_bar_graph'
 
         geneticBarDiagramVerseBars.appendChild(witnessGroup);
       });
+
+      const macrogenButton = document.getElementById('macrogenesis-button');
+      const currentScene = this.scenes[this.firstVisibleScene()];
+      if (currentScene.rangeStart == this.start && currentScene.rangeEnd == this.end) {
+          // we're displaying exactly one scene -> goto scene page
+          macrogenButton.href = 'macrogenesis/scene_' + currentScene.id.replace(/\./g, '-');
+      } else {
+          // generate subgraph
+          const macrogenParams = new URLSearchParams();
+          if (highlightSigil) {
+              macrogenParams.append('nodes', highlightSigil.replace(/_/g, ' '));
+              macrogenParams.append('extra', witnessesForMacrogen.join(', '));
+          } else {
+              macrogenParams.append('nodes', witnessesForMacrogen.join(', '));
+          }
+          macrogenParams.append('order', 'on');
+          macrogenParams.append('collapse', 'on');
+          macrogenButton.href = 'macrogenesis/subgraph?' + macrogenParams.toString();
+      }
+      macrogenButton.removeAttribute('disabled');
+  
 
       Faust.tooltip.addToTooltipElements();
 

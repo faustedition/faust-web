@@ -30,8 +30,10 @@
       </div>
       <div id="next-page-button" class="pure-button" title="Nächste Seite"><i class="fa fa-angle-right"></i></div>
       <div id="last-page-button" class="pure-button" title="Letzte Seite"><i class="fa fa-angle-double-right"></i></div>
+      <a href="#" id="macrogenesis-button" class="pure-button" title="Makrogenese-Subgraph" disabled="disabled"><i class="fa fa-calendar"></i></a>
     </div>
-    <div id="view-select" class="view"></div>
+    <div id="view-select" class="view">
+    </div>
   </div>
 </div>
 
