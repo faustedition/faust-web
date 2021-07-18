@@ -592,7 +592,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
             var image = document.createElement("img");
             image.style.height = "100%";
             image.style.width = "100%";
-            image.setAttribute("src", "img/transparent_pixel.png");
+            image.setAttribute("src", "img/tilebg.png");
             image.setAttribute("data-echo", tileBaseUrl + "_" + zoomLevel + "_" + j + "_" + i + ".jpg");
             tileDiv.appendChild(image);
 
