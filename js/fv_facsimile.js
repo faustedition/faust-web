@@ -300,6 +300,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
     var args = null;
     var metadata = null;
     var domNodes = null;
+    var pageRect = null;
 
     var showElement = function (element, show) {
         if (show === true) {
@@ -417,19 +418,44 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
         }
     };
 
+    var fitTo = function fitTo(left, top, right, bottom) {
+      const width = right - left;
+      const height = bottom - top;           
+      const scale = setScale(Math.min(domNodes.getBoundingClientRect().width / width, domNodes.getBoundingClientRect().height / height));
+      domNodes.scrollTo(left * scale, top * scale);
+      return scale;
+    }
+
+    var getDefaultScale = function getDefaultScale() {
+      return Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth,
+            domNodes.getBoundingClientRect().height / metadata.imageHeight)
+    }
+
     // calculates the scale to apply to (original sized) image so that it will
     // fully fit inside the facsimile container (outermost node / domNodes)
     // returns the determined scale value
-    var fitScale = function fitScale() {
-      try {
-        var scale = setScale(Math.min(domNodes.getBoundingClientRect().width / metadata.imageWidth,
-          domNodes.getBoundingClientRect().height / metadata.imageHeight));
-        return scale;
-      } catch (e) {
-        console.log(e);
-        return undefined;
+    var fitScale = function fitScale(force) {
+      if (force != true && (pageRect != null)) {
+        console.log('fitScale right turn');
+        return fitTo(...pageRect);
+      } else {
+        try {
+          try { throw "fitScale wrong turn!" } catch (e) { console.error(e);}
+          var scale = setScale(getDefaultScale());
+          return scale;
+        } catch (e) {
+          console.log(e);
+          return undefined;
+        }
       }
     };
+
+    var setPageRect = function setPageRect(coords) {
+      console.log('setPageRect', coords)
+      pageRect = coords;
+      if (pageRect !== null)
+        return fitTo(...pageRect);
+    }
 
     var rotate = function(direction) {
         if(direction === "right") {
@@ -707,6 +733,8 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       domNodes.rotate = rotate;
       domNodes.zoom = zoom;
       domNodes.fitScale = fitScale;
+      domNodes.getDefaultScale = getDefaultScale;
+      domNodes.setPageRect = setPageRect;
       domNodes.showOverlay = showOverlay;
       domNodes.addFacsimileEventListener = events.addEventListener;
 
@@ -736,6 +764,9 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
 
       createImageOverlay: createImageOverlay,
 
+      currentPageNo: null,
+      facsimile: null,
+
       init: function init(parent, state, controller) {
           var that = this;
           this.state = state;
@@ -746,21 +777,43 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           container.id = "facsimile-content";         // FIXME do we need an ID?
           container.className = "facsimile-content view-content";
           this.container = container;
+          container.faust_debug = this;
           parent.appendChild(container);
           this.loadPage(state.page)
             .then(function (value) { that.bindControls() });
       },
 
       loadPage : function(pageNo) {
+          if ((this.currentPageNo === pageNo) && (this.facsimile != null)) {
+            return Promise.resolve(this.facsimile);
+          }
           var currentPage = this.state.doc.pages[pageNo - 1];
           var currentMetadata = this.state.doc.metadata.pages[pageNo - 1];
           var that = this;
-          var pagePromise;
+          var pagePromise, rectPromise;
           // only load facsimile if images do exist. images are encoded in docTranscripts, so check if
           // docTranscript exists and if it has images attached
           this.setLayer(this.state.layer);
           var layer = this.state.layer;
           if (currentMetadata.docTranscriptCount > 0 && currentMetadata.docTranscripts[0].hasImages) {
+              function getPageRect() {
+                const mdUrl = currentMetadata.docTranscripts[0].images[layer].metadataUrl,
+                  docMetadata = that.state.doc.metadata,
+                  slash = mdUrl.lastIndexOf('/'),
+                  pageName = mdUrl.substring(slash + 1, mdUrl.lastIndexOf('.')),
+                  zoomFile = mdUrl.substring(0, slash + 1) + 'zoom.json';
+                if (docMetadata.pageRects) {
+                  return Promise.resolve(docMetadata.pageRects[pageName]);
+                } else {
+                  return Faust.xhr.get(zoomFile, 'text')
+                    .then(function (text) {
+                      docMetadata.pageRects = JSON.parse(text);
+                      return docMetadata.pageRects[pageName]
+                    })
+                    .catch(function () { return null;})
+                }
+              }
+              rectPromise = getPageRect();
               pagePromise = this.createImageOverlay(
                   {
                       "hasFacsimile": currentMetadata.docTranscripts[0].hasImages,
@@ -773,25 +826,35 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
                       "copyright": this.state.doc.getFacsCopyright()
                   });
           } else {
+              rectPromise = Promise.resolve(null);
               pagePromise = this.createImageOverlay({hasFacsimile: false, empty: currentMetadata.empty});
           }
-          return pagePromise.then(function (facsimile) {
+          return Promise.all([pagePromise, rectPromise]).then(function (details) {
+            const facsimile = details[0], zoomRect = details[1];
             Faust.dom.removeAllChildren(that.container);
             that.container.appendChild(facsimile);
             that.facsimile = facsimile;
             facsimile.addFacsimileEventListener("scaleChanged", function (newScale) {
-              that.state.scale = newScale;
+              if (newScale != facsimile.getDefaultScale()) {
+                that.state.scale = newScale;
+                console.log('Registered new scale:', newScale);
+              }
             });
-            if (that.state.scale === undefined) {
-                that.state.scale = facsimile.fitScale();
-            } else {
-              facsimile.setScale(that.state.scale);
-            }
+            if (zoomRect != null)
+              facsimile.setPageRect(zoomRect);
+            else
+              if (that.state.scale === undefined) {
+                  facsimile.fitScale();
+              } else {
+                facsimile.setScale(that.state.scale);
+              }
             facsimile.showOverlay(that.state.showOverlay);
             docTranscriptViewer.transcriptTooltips(facsimile);
             facsimile.overlayContainer.addEventListener("click", function (event) {
               that.toggleOverlay();
             });
+            that.facsimile = facsimile;
+            that.currentPageNo = pageNo;
             return facsimile;
           }).catch(function(e) { Faust.error('Fehler beim Laden der Ansicht', e, that.facsimile)});
       },
