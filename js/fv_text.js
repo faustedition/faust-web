@@ -100,7 +100,7 @@ define(['faust_common', 'faust_print_interaction', 'faust_app', 'scrollIntoView.
 
             let pageNoLabel = doc.querySelector("#dt" + pageNum);
             if(pageNoLabel !== null) {
-                scrollIntoView(pageNoLabel);
+                scrollIntoView(pageNoLabel, {align: {top: 0}});
                 // pageNoLabel.scrollIntoView();
                 // console.log('Page scrolling', pageNoLabel.getBoundingClientRect())
                 result = true;
