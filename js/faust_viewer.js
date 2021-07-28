@@ -222,11 +222,19 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   window.location.href = newUrl;
                 } */
               } else {
-                var id = sigil || state.doc.faustUri;
-                Faust.error("Dokument " + id + " existiert nicht.",
-                  "Sie können <a href='/search?q=" + id + "'>über die Suchfunktion</a> oder " +
-                  "<a href='/archive'>manuell im Archiv</a> nach dem Dokument suchen.");
-              }
+                const id = sigil || state.doc.faustUri;
+                if (id)
+                  Faust.error("Dokument " + id + " existiert nicht.",
+                    "Sie können <a href='/search?q=" + id + "'>über die Suchfunktion</a> oder " +
+                    "<a href='/archive'>manuell im Archiv</a> nach dem Dokument suchen.");
+                else
+                  Faust.error("Kein Dokument ausgewählt.",
+                    "<p>Vermutlich war der Link, über den Sie auf diese Seite gekommen sind, defekt.</p>" +
+                    "<p>Übersichten über alle <a href='/archive_manuscripts'>Handschriften</a> und <a href='/archive_prints'>Drucke</a> " +
+                    "der Edition finden Sie in unserem <strong><a href='/archive'>Archiv</a></strong>. " +
+                    "Benutzen Sie alternativ die <i class= 'fa fa-search' ></i> Suche, " +
+                    "oder steigen Sie über den <a href='/text'>konstituierten Text</a> in die Edition ein.</p>")
+                }
           },
 
           // structure representing the current document
@@ -296,24 +304,26 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
       // 4. parse rest of URL to view, page, section, fragment → state variable
       // 5. setPage, setView → might trigger loading stuff
       // 6. initialize toolbar tooltips. Toolbar itself is hard-coded in documentViewer.php
-      var init = (function(){
+    var init = (function () {
 
-        /**
-         * Some initialisation tasks.
-         *
-         * - find metadata for current state.doc
-         * - initialize HTML -> createDomNodes
-         * - load XML metadata -> structure view
-         * - update state.page
-         * - go to initial page
-         * - go to initial view
-         */
-        return function init() {
+      /**
+       * Some initialisation tasks.
+       *
+       * - find metadata for current state.doc
+       * - initialize HTML -> createDomNodes
+       * - load XML metadata -> structure view
+       * - update state.page
+       * - go to initial page
+       * - go to initial view
+       */
+      return function init() {
 
-          try {
+        try {
 
-            state.fromLocation();
-            state.initMetadata(); // FIXME refactor
+          state.fromLocation();
+          state.initMetadata(); // FIXME refactor
+
+          if (state.doc.metadata) {
 
             document.title = document.title + " – " + state.doc.metadata.sigils.idno_faustedition;
 
@@ -384,10 +394,12 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
             // init tooltips for the navigation bar
             Faust.tooltip.addToTooltipElementsBySelector(".navigation-bar-container [title]", "title");
+          }
 
           } catch (e) {
             Faust.error("Dokumentansicht konnte nicht geladen werden", e);
           }
+
 
           Faust.finishedLoading();
 
