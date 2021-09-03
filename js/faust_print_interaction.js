@@ -154,4 +154,13 @@ define(['/js/faust_common'],
   }
 
   Faust.tooltip.addToTooltipElementsBySelector(".view-content [title], .print [title]", "title");
+
+    const params = Faust.url.getParameters();
+    if (params['#']) {
+      for (const target of document.querySelectorAll('#' + params['#'])) {
+        if (target.hasAttribute('data-variants')) {
+          target.click();
+        }
+      }
+    }
 }});
