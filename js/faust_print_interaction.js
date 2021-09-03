@@ -1,8 +1,8 @@
 // create functions for on demand loading of variants and add tooltips 
 // for showing number of variants per line
 
-define(['/js/faust_common'],
-  function(Faust) {
+define(['/js/faust_common', 'jquery'],
+  function(Faust, $) {
   return function addPrintInteraction(rootDir, node, faustUri) {
   "use strict";
 
@@ -77,7 +77,9 @@ define(['/js/faust_common'],
                       macrogenContainer = Faust.dom.createElement({name: 'div', class: 'subgraphlink'});
                 macrogenContainer.innerHTML = `<a title="Makrogenese-Graph zu den Zeugen dieses Verses"><i class="fa fa-sliders"></i> Makrogenese-Lab</a>`;
                 macrogenContainer.firstElementChild.href = '/macrogenesis/subgraph?' + macrogenParams.toString();
+                $(variantsDiv).hide();
                 variantsDiv.insertBefore(macrogenContainer, variantsDiv.firstElementChild);
+                $(variantsDiv).slideDown(250);
 
 
 
@@ -98,12 +100,11 @@ define(['/js/faust_common'],
           // and shall be removed from dom or if they aren't yet in dom and shall be appended
           if(currentLine.isShown === true) {
             currentLine.isShown = false;
-            currentLine.parentNode.removeChild(currentLine.variantsDiv);
+            $(currentLine.variantsDiv).slideUp(250);
             currentLine.classList.remove('show');
           } else if (currentLine.isShown === false) {
             currentLine.isShown = true;
-//              currentLine.parentNode.insertBefore(currentLine.variantsDiv, currentLine);
-            currentLine.parentNode.insertBefore(currentLine.variantsDiv, currentLine.nextElementSibling);
+            $(currentLine.variantsDiv).slideDown(250);
             currentLine.classList.add('show');
           }
         }
@@ -153,7 +154,7 @@ define(['/js/faust_common'],
     }
   }
 
-  Faust.tooltip.addToTooltipElementsBySelector(".view-content [title], .print [title]", "title");
+    Faust.tooltip.addToTooltipElementsBySelector(".view-content [title], .print [title]", "title");
 
     const params = Faust.url.getParameters();
     if (params['#']) {
