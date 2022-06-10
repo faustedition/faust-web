@@ -113,17 +113,16 @@
           </div>
 
           <div id="xml-current" class="pure-u-1-3 pure-gap disabled">
-            <a><big>aktueller Datensatz</big></a>
-            <a id="jpg-current-facsimile" class="disabled" disabled="disabled" download="" href="#"><i class="fa fa-file-image"></i> Facsimile (Seite)</a>
-            <a id="xml-current-doc-pdf"         href="#"><i class="fa fa-file-pdf"></i> Dokumentarische Transkription</a>
-            <a id="xml-current-doc-source-page" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript (Seite)</a>
-            <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript</a>
-            <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten</a>
+            <a><big>aktueller Zeuge</big></a>
+            <a id="xml-current-doc-pdf"         href="#"><i class="fa fa-file-pdf"></i> Dokumentarische Transkription (PDF)</a>
+            <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript (TEI)</a>
+            <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten (XML)</a>
           </div>
 
           <div id="more-downloads" class="pure-u-1-3 pure-gap"  >
-              <a>mehr …</a>
-              <a>weitere Downloadmöglichkeiten demnächst.</a>
+            <a><big>aktuelle Seite</big></a>
+            <a id="jpg-current-facsimile" class="disabled" disabled="disabled" download="" href="#"><i class="fa fa-file-image"></i> Facsimile (JPEG)</a>
+            <a id="xml-current-doc-source-page" class="disabled" disabled="disabled" href="#"><i class="fa fa-file-code"></i> Dokumentarisches Transkript (TEI)</a>
           </div>
         </div>
     </script>
