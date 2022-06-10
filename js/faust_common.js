@@ -1,5 +1,5 @@
-define(["sortable", "domReady", "es6-promise.min", "data/archives"],
-    function(Sortable, domReady, es6_promise, archives) {  // TODO factor sorting stuff into a tables.js
+define(["sortable", "domReady", "es6-promise.min", "data/archives", "json!data/download-restrictions"],
+    function(Sortable, domReady, es6_promise, archives, downloadRestrictions) {  // TODO factor sorting stuff into a tables.js
   "use strict";
   // creating return object
   var Faust = {};
@@ -1098,9 +1098,11 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
       Object.keys(linkMap).forEach(function(linkId) {
         var a = element.querySelector('#' + linkId);
         if (a) {
-          if (linkMap[linkId])
+          if (linkMap[linkId]) {
             a.href = linkMap[linkId];
-          else {
+            a.disabled = false;
+            a.classList.remove('disabled');
+          }  else {
             a.disabled = true;
             a.className = 'disabled';
           }
@@ -1156,14 +1158,18 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives"],
       var download = this.getDownloadTemplate(),
         xmlBase = 'https://github.com/faustedition/faust-xml/blob/master/xml/',  // TODO github / configurability
         transcriptBase = xmlBase + options.metadata.base,
-        page = options.metadata.page[options.pageNo-1],
-        hasDocTranscript = (page.doc.length > 0) && page.doc[0].uri;
+        page = options.metadata.page[options.pageNo - 1],
+        hasDocTranscript = (page.doc.length > 0) && page.doc[0].uri,
+        facsPath = page.doc.length > 0 ? page.doc[0].img[0] : null,
+        facsDownload = !!facsPath && facsPath in downloadRestrictions ? downloadRestrictions[facsPath] :
+          (!!facsPath ? facsPath + "_0.jpg" : null);
 
       this.updateLinks(download, {
         'xml-current-doc-source-page': (hasDocTranscript? transcriptBase + page.doc[0].uri : null),
         'xml-current-doc-pdf' : (hasDocTranscript? ('/transcript/diplomatic/' + options.metadata.sigil + '/' + options.metadata.sigil + '.pdf'): null),
         'xml-current-text-source': (transcriptBase + options.metadata.text),
-        'xml-current-metadata': xmlBase + 'document/' + options.metadata.document
+        'xml-current-metadata': xmlBase + 'document/' + options.metadata.document,
+        'jpg-current-facsimile': (!!facsDownload? '/transcript/facsimile/jpg/' + facsDownload : null)
       });
       download.querySelector('#xml-current').classList.remove('disabled');
       this.setDownloadTemplate(download);
