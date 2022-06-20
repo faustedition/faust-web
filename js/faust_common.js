@@ -1169,7 +1169,8 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "json!data/d
         'xml-current-doc-pdf' : (hasDocTranscript? ('/transcript/diplomatic/' + options.metadata.sigil + '/' + options.metadata.sigil + '.pdf'): null),
         'xml-current-text-source': (transcriptBase + options.metadata.text),
         'xml-current-metadata': xmlBase + 'document/' + options.metadata.document,
-        'jpg-current-facsimile': (!!facsDownload? '/transcript/facsimile/jpg/' + facsDownload : null)
+        'jpg-current-facsimile': (!!facsDownload? '/transcript/facsimile/jpg/' + facsDownload : null),
+        'zip-current-facsimile': (!!facsDownload? '/downloads/facsimiles/' + options.metadata.sigil + '.zip': null)
       });
       download.querySelector('#xml-current').classList.remove('disabled');
       this.setDownloadTemplate(download);

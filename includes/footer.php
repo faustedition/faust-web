@@ -114,6 +114,7 @@
 
           <div id="xml-current" class="pure-u-1-3 pure-gap disabled">
             <a><big>aktueller Zeuge</big></a>
+            <a id="zip-current-facsimile"       href="#"><i class="fa fa-file-archive"></i> Facsimiles (ZIP mit JPEGs)</a>
             <a id="xml-current-doc-pdf"         href="#"><i class="fa fa-file-pdf"></i> Dokumentarische Transkription (PDF)</a>
             <a id="xml-current-text-source"     href="#"><i class="fa fa-file-code"></i> Textuelles Transkript (TEI)</a>
             <a id="xml-current-metadata"        href="#"><i class="fa fa-file-code"></i> Metadaten (XML)</a>
