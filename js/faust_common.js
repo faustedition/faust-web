@@ -1327,6 +1327,18 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "json!data/d
         window.addEventListener('hashchange', function(event) { Faust.fixTargetOffset(); });
         Faust.fixTargetOffset();
         Faust.context.initContext();
+      
+        // Allow to open, e.g., the download overlay by appending #download.
+        const hash = window.location.hash;
+        if (window.location.hash) {
+          const link = document.querySelector('nav [href="' + hash + '"]');
+          if (link) {
+            window.setTimeout(() => { link.click() });
+            const url = new URL(window.location);
+            url.hash = '';
+            history.pushState(null, '', url);
+          }
+        }
     });
 
 
