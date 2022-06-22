@@ -1,0 +1,61 @@
+<section class="center pure-g-r" xmlns="http://www.w3.org/1999/xhtml"
+    data-breadcrumbs="Ausgabe@intro" data-title="Version 1.3 RC (unveröffentlicht)">
+
+
+    <article class="pure-u-1 slides">
+
+        <section class="slide">
+            <h2>Zentrale neue Features</h2>
+
+            <ul>
+                <li class="frag"><a target="_blank" href="/archive_watermarks">Wasserzeichen</a></li>
+                <li class="frag">Facsimiles: <a target="_blank" href="/document?sigil=D.2&page=16&view=facsimile_text">Zoom auf Ausschnitt</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_III_H.2_2&page=3&view=facsimile_text">Download Dokumentarischer Transkriptionen</a> <a href="/transcript/diplomatic/2_III_H.2_2/2_III_H.2_2.pdf">(PDF)</a></li>
+                <li class="frag"><a target="_blank" href="http://dev.faustedition.net/document?sigil=2_III_H.2_2&page=3&view=facsimile_text#download">Download Facsimiles</a>
+                    <ul>
+                        <li>als Einzelbild</li>
+                        <li>experimentell: als ZIP</li>
+                    </ul>
+
+            </ul>
+        
+        
+        </section>
+
+        <section class="slide">
+            <h2>Experimentellere neue Features</h2>
+            <ul>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_III_H.2_2&page=3&view=structure#hands-info">Schreiber- und Materialanmerkungen</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_I_H.1&page=1&view=structure">Note nach Headnote</a></li>
+                <li class="frag">Makrogenese: <a target="_blank" href="/macrogenesis/subgraph">Subgraph-Viewer</a>
+                    (Links aus <a target="_blank" href="http://dev.faustedition.net/genesis_bargraph?rangeStart=11043&rangeEnd=11142">Genese </a>und <a href="http://dev.faustedition.net/document?sigil=2_V_H.0a&page=2&view=print#l11081">Apparat,</a> benötigen Finetuning)
+                </li>
+        </section>
+
+        <section class="slide">
+            <h2>Kleinigkeiten</h2>
+            <ul>
+                <li class="frag"><a target="_blank" href="http://dev.faustedition.net/document?sigil=2_V_H.0a&page=2&view=print#l11081">Link auf Apparat</a></li>
+                <li class="frag"><a target="_blank" href="http://dev.faustedition.net/document?sigil=2_V_H.0a&page=2&view=print#l11081">Animation im Apparat</a></li>
+                <li class="frag"><a target="_blank" href="/search?q=urfaust">Sucheseite flüssiger</a></li>
+
+        </section>
+
+        <a id="presentr-toggle" href="#"><i class="fa fa-play-circled"></i></a>
+
+    </article>
+    <script>
+
+        requirejs(['jquery', 'presentr.min'], function($, Presentr) {
+                    $('#presentr-toggle').on("click", () => {
+                                $('html').toggleClass('presentr');
+                            });
+                    const presentr = new Presentr({
+                                slides: '.slides > section',
+                                fragments: '.frag'
+                            });
+                    console.log(presentr);
+        });
+
+    </script>
+</section>
