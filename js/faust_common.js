@@ -1160,7 +1160,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "json!data/d
         transcriptBase = xmlBase + options.metadata.base,
         page = options.metadata.page[options.pageNo - 1],
         hasDocTranscript = (page.doc.length > 0) && page.doc[0].uri,
-        facsPath = page.doc.length > 0 ? page.doc[0].img[0] : null,
+        facsPath = page.doc.length> 0 && page.doc[0].img? page.doc[0].img[0] : null,
         facsDownload = !!facsPath && facsPath in downloadRestrictions ? downloadRestrictions[facsPath] :
           (!!facsPath ? facsPath + "_0.jpg" : null);
 
