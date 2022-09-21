@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="239.96701mm"
+   height="87.435898mm"
+   viewBox="0 0 239.96701 87.4359"
+   version="1.1"
+   id="svg2523"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="macrogenesis-model.svg"
+   inkscape:export-filename="/home/tv/git/pydelta/macrogenesis-model.png"
+   inkscape:export-xdpi="95.962265"
+   inkscape:export-ydpi="95.962265"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title215496">Faustedition-Makrogenese: Von der Literaturstelle über XML zum Graph</title>
+  <sodipodi:namedview
+     id="namedview2525"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.0970139"
+     inkscape:cx="353.23161"
+     inkscape:cy="281.67373"
+     inkscape:window-width="1920"
+     inkscape:window-height="1026"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     lock-margins="true"
+     fit-margin-top="6"
+     fit-margin-left="6"
+     fit-margin-right="6"
+     fit-margin-bottom="6" />
+  <defs
+     id="defs2520">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6065"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutS">
+      <path
+         transform="scale(0.2)"
+         style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6063" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4499"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4497"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path3416"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3875"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutS"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.2)"
+         style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path3873" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(130.99188,-44.266981)">
+    <path
+       style="color:black;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:black;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e6e6e6;stroke-width:6.48547;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-end:url(#TriangleOutS);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M -77.242484,57.227933 V 69.358698"
+       id="path3266"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path3871"
+       d="M 36.661756,57.227933 V 69.933558"
+       style="color:black;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:black;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e6e6e6;stroke-width:6.48547;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-end:url(#marker3875);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:6.48547;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4499)"
+       d="M 37.551875,83.705851 C 37.258129,93.32249 24.896015,97.987667 21.674178,110.22603"
+       id="path4417"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path6061"
+       d="m -76.286354,86.99778 c -0.630175,10.169752 18.842224,2.378255 32.756267,13.78411"
+       style="fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:6.48547;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6065)" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:black;fill-opacity:1;stroke:none;stroke-width:0.202671px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-10.608295"
+       y="53.029949"
+       id="text878"><tspan
+         sodipodi:role="line"
+         id="tspan876"
+         x="-10.608295"
+         y="53.029949"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;stroke-width:0.202671px">Erste Entwürfe finden sich auch auf V H3 (diese Version wiedergegeben in BA,</tspan><tspan
+         sodipodi:role="line"
+         x="-10.608295"
+         y="57.439674"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;stroke-width:0.202671px"
+         id="tspan880">S. 662), <tspan
+   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Bold Italic';stroke-width:0.202671px"
+   id="tspan898"><tspan
+   style="font-size:3.52778px;fill:teal;stroke-width:0.202671px"
+   id="tspan129384">die nächsten Entwicklungsstufen</tspan> <tspan
+   style="font-size:3.52778px;fill:navy;stroke-width:0.202671px"
+   id="tspan151784">dieser Verse</tspan> finden sich auf den</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="-10.608295"
+         y="61.8494"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;stroke-width:0.202671px"
+         id="tspan882"><tspan
+   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Bold Italic';stroke-width:0.202671px"
+   id="tspan892">Handschriften <tspan
+   style="font-size:3.52778px;fill:purple;stroke-width:0.202671px"
+   id="tspan175149">V H5</tspan></tspan> , V H6, V H8 [...] <tspan
+   style="font-size:3.52778px;fill:maroon;stroke-width:0.202671px"
+   id="tspan198110">(Bohnenkamp 1994, p.763)</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="-10.608295"
+         y="66.259125"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;fill:gray;stroke-width:0.202671px"
+         id="tspan888" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#666;fill-opacity:1;stroke:none;stroke-width:0.202671px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-7.4930964"
+       y="73.292847"
+       id="text918"><tspan
+         sodipodi:role="line"
+         id="tspan916"
+         x="-7.4930964"
+         y="73.292847"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke-width:0.202671px">&lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke-width:0.202671px"
+   id="tspan928">relation</tspan> name=&quot;<tspan
+   style="font-size:3.35139px;fill:teal;stroke-width:0.202671px"
+   id="tspan940">temp-pre</tspan>&quot;&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="-7.4930964"
+         y="77.482086"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke-width:0.202671px"
+         id="tspan920">  &lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke-width:0.202671px"
+   id="tspan930">source</tspan> uri=&quot;faust://bibliography<tspan
+   style="font-size:3.35139px;fill:maroon;stroke-width:0.202671px"
+   id="tspan211840">/bohnenkamp1994&quot;&gt;</tspan><tspan
+   style="font-size:3.35139px;fill:maroon;stroke-width:0.202671px"
+   id="tspan938">S.763</tspan>&lt;/source&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="-7.4930964"
+         y="81.671326"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke-width:0.202671px"
+         id="tspan922">  &lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke-width:0.202671px"
+   id="tspan932">item</tspan> uri=&quot;faust://inscription/wa/<tspan
+   style="font-size:3.35139px;fill:navy;stroke-width:0.202671px"
+   id="tspan165974">2_V_H.4/i_uebrige</tspan>&quot;/&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="-7.4930964"
+         y="85.860558"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke-width:0.202671px"
+         id="tspan924">  &lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke-width:0.202671px"
+   id="tspan934">item</tspan> uri=&quot;faust://document/wa/<tspan
+   style="font-size:3.35139px;fill:purple;stroke-width:0.202671px"
+   id="tspan186233">2_V_H.5</tspan>&quot;/&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="-7.4930964"
+         y="90.049797"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke-width:0.202671px"
+         id="tspan926">&lt;/<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke-width:0.202671px"
+   id="tspan936">relation</tspan>&gt;</tspan></text>
+    <text
+       id="text1137"
+       y="73.292847"
+       x="-124.99188"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#666;fill-opacity:1;stroke:none;stroke-width:0.202671px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan1135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke:none;stroke-width:0.202671px"
+         y="73.292847"
+         x="-124.99188"
+         sodipodi:role="line">&lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke:none;stroke-width:0.202671px"
+   id="tspan1191">date</tspan> <tspan
+   style="font-size:3.35139px;fill:green;stroke-width:0.202671px"
+   id="tspan62475">notBefore=”1825-02-26” notAfter=”1825-04-05”</tspan>&gt;</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke:none;stroke-width:0.202671px"
+         y="77.482086"
+         x="-124.99188"
+         sodipodi:role="line"
+         id="tspan1183">  &lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke:none;stroke-width:0.202671px"
+   id="tspan1193">comment</tspan>&gt;Frühjahr 1825&lt;/<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke:none;stroke-width:0.202671px"
+   id="tspan1195">comment</tspan>&gt;</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke:none;stroke-width:0.202671px"
+         y="81.671326"
+         x="-124.99188"
+         sodipodi:role="line"
+         id="tspan1185">  &lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke:none;stroke-width:0.202671px"
+   id="tspan1197">source</tspan> uri=”faust://bibliography/<tspan
+   style="font-size:3.35139px;fill:maroon;stroke-width:0.202671px"
+   id="tspan93793">bohnenkamp1994”&gt;S.763</tspan>&lt;/source&gt;</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke:none;stroke-width:0.202671px"
+         y="85.860558"
+         x="-124.99188"
+         sodipodi:role="line"
+         id="tspan1187">  &lt;<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke:none;stroke-width:0.202671px"
+   id="tspan1199">item</tspan> uri=”faust://inscription/wa/<tspan
+   style="font-size:3.35139px;fill:navy;stroke-width:0.202671px"
+   id="tspan46245">2_V_H.4/i_uebrige</tspan>”/&gt;</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.35139px;line-height:125%;font-family:PragmataPro;-inkscape-font-specification:PragmataPro;text-align:start;text-anchor:start;fill:#666;stroke:none;stroke-width:0.202671px"
+         y="90.049797"
+         x="-124.99188"
+         sodipodi:role="line"
+         id="tspan1189">&lt;/<tspan
+   style="font-weight:bold;font-size:3.35139px;fill:#666;stroke:none;stroke-width:0.202671px"
+   id="tspan1201">date</tspan>&gt;</tspan></text>
+    <g
+       transform="matrix(0.27015781,0,0,0.27015781,-92.893469,125.43272)"
+       class="graph"
+       id="graph0-2">
+      <title
+         id="title1626">%3</title>
+      <g
+         class="cluster"
+         id="clust1-5">
+        <title
+           id="title1630">cluster_timeline</title>
+        <polygon
+           id="polygon1632"
+           points="8,-44 8,-116 335.1,-116 335.1,-44 "
+           style="fill:none;stroke:white;stroke-dasharray:1, 5" />
+      </g>
+      <!-- 1825&#45;04&#45;06 -->
+      <g
+         class="node"
+         id="node1-7">
+        <title
+           id="title1635">1825-04-06</title>
+        <text
+           id="text1637"
+           font-size="12.00"
+           y="-86.900002"
+           x="288.10001"
+           style="font-size:12px;font-family:'Ubuntu derivative Faust';text-anchor:middle;fill:green">1825-04-06</text>
+      </g>
+      <!-- 1825&#45;02&#45;25 -->
+      <g
+         class="node"
+         id="node2-6">
+        <title
+           id="title1640">1825-02-25</title>
+        <text
+           id="text1642"
+           font-size="12.00"
+           y="-82.569862"
+           x="55"
+           style="font-size:12px;font-family:'Ubuntu derivative Faust';text-anchor:middle;fill:green">1825-02-25</text>
+      </g>
+      <!-- 1825&#45;02&#45;25&#45;&gt;1825&#45;04&#45;06 -->
+      <g
+         class="edge"
+         id="edge1-9">
+        <title
+           id="title1645">1825-02-25-&gt;1825-04-06</title>
+        <path
+           id="path1647"
+           d="m 93.48694,-86.296651 c 39.70837,0.06122 101.88972,0.168337 145.04031,0.242229"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:black;stroke-dasharray:1, 5"
+           inkscape:transform-center-x="20.359456"
+           inkscape:transform-center-y="0.34140661" />
+        <polygon
+           id="polygon1649"
+           points="238.62,-89.32 248.88,-86.69 239.22,-82.34 "
+           style="fill:black;stroke:black"
+           transform="rotate(7.7611315,244.22396,-85.786924)" />
+      </g>
+      <!-- faust://inscription/faustedition/2_V_H.4/i_uebrige -->
+      <g
+         class="node"
+         id="node4">
+        <title
+           id="title1652">faust://inscription/faustedition/2_V_H.4/i_uebrige</title>
+        <g
+           id="a_node4">
+          <a
+             id="a1658"
+             target="_top"
+             xlink:title="2 V H.4 i_uebrige"
+             xlink:href="/home/tv/Documents/OwnCloud/Uni/Faust/DH2019/poster/faustedition.2_V_H.4.i_uebrige">
+            <ellipse
+               style="fill:#f0f000;stroke:navy;stroke-width:2"
+               cx="288.10001"
+               cy="-18"
+               rx="67.199997"
+               ry="18"
+               id="ellipse1654" />
+            <text
+               style="font-size:12px;font-family:'Ubuntu derivative Faust';text-anchor:middle"
+               x="288.10001"
+               y="-14.9"
+               font-size="12.00"
+               id="text1656"><tspan
+                 style="fill:navy"
+                 id="tspan100081">2 V H.4 i_uebrige</tspan></text>
+          </a>
+        </g>
+      </g>
+      <!-- 1825&#45;02&#45;25&#45;&gt;faust://inscription/faustedition/2_V_H.4/i_uebrige -->
+      <g
+         class="edge"
+         id="edge4">
+        <title
+           id="title1662">1825-02-25-&gt;faust://inscription/faustedition/2_V_H.4/i_uebrige</title>
+        <path
+           id="path1664"
+           d="M 84.920068,-75.426522 C 120.76007,-67.366522 184.23,-41.15 226.08,-31.73"
+           inkscape:connector-curvature="0"
+           style="fill:green;stroke:green"
+           sodipodi:nodetypes="cc" />
+        <polygon
+           id="polygon1666"
+           points="225.37,-28.3 226.9,-35.13 235.89,-29.52 "
+           style="fill:green;stroke:green" />
+        <text
+           id="text1668"
+           font-size="8.00"
+           y="-64.476196"
+           x="173.1698"
+           style="font-size:8px;font-family:'Ubuntu derivative Faust';text-anchor:middle"><tspan
+             style="fill:maroon"
+             id="tspan112699">Bohnenkamp 1994 S.763</tspan></text>
+      </g>
+      <!-- faust://document/faustedition/2_V_H.5 -->
+      <g
+         class="node"
+         id="node3-1">
+        <title
+           id="title1671">faust://document/faustedition/2_V_H.5</title>
+        <g
+           id="a_node3-9">
+          <a
+             id="a1677"
+             target="_top"
+             xlink:title="2 V H.5"
+             xlink:href="/home/tv/Documents/OwnCloud/Uni/Faust/DH2019/poster/2_V_H.5">
+            <ellipse
+               style="fill:none;stroke:black"
+               cx="496.67001"
+               cy="-18"
+               rx="34.450001"
+               ry="18"
+               id="ellipse1673" />
+            <text
+               style="font-size:12px;font-family:'Ubuntu derivative Faust';text-anchor:middle"
+               x="496.67001"
+               y="-14.9"
+               font-size="12.00"
+               id="text1675"><tspan
+                 style="fill:purple"
+                 id="tspan181209">2 V H.5</tspan></text>
+          </a>
+        </g>
+      </g>
+      <!-- faust://inscription/faustedition/2_V_H.4/i_uebrige&#45;&gt;1825&#45;04&#45;06 -->
+      <g
+         class="edge"
+         id="edge3-8">
+        <title
+           id="title1681">faust://inscription/faustedition/2_V_H.4/i_uebrige-&gt;1825-04-06</title>
+        <path
+           id="path1683"
+           d="m 288.1,-36.17 c 0,-7.7 0,-16.86 0,-25.41"
+           inkscape:connector-curvature="0"
+           style="fill:green;stroke:green" />
+        <polygon
+           id="polygon1685"
+           points="291.6,-61.59 284.6,-61.59 288.1,-71.59 "
+           style="fill:green;stroke:green" />
+        <text
+           id="text1687"
+           font-size="8.00"
+           y="-52.099998"
+           x="280.60001"
+           style="font-size:8px;font-family:'Ubuntu derivative Faust';text-anchor:middle"><tspan
+             style="fill:maroon"
+             id="tspan107549">Bohnenkamp 1994 S.763</tspan></text>
+      </g>
+      <!-- faust://inscription/faustedition/2_V_H.4/i_uebrige&#45;&gt;faust://document/faustedition/2_V_H.5 -->
+      <g
+         class="edge"
+         id="edge2-7">
+        <title
+           id="title1690">faust://inscription/faustedition/2_V_H.4/i_uebrige-&gt;faust://document/faustedition/2_V_H.5</title>
+        <path
+           id="path1692"
+           d="m 355.31,-18 c 31.6,0 68.54,0 96.59,0"
+           inkscape:connector-curvature="0"
+           style="fill:teal;stroke:teal" />
+        <polygon
+           id="polygon1694"
+           points="452.19,-14.5 452.19,-21.5 462.19,-18 "
+           style="fill:teal;stroke:teal" />
+        <text
+           id="text1696"
+           font-size="8.00"
+           y="-20.6"
+           x="408.70001"
+           style="font-size:8px;font-family:'Ubuntu derivative Faust';text-anchor:middle"><tspan
+             style="fill:maroon"
+             id="tspan203286">Bohnenkamp 1994</tspan></text>
+      </g>
+    </g>
+    <text
+       id="text1105"
+       y="55.31686"
+       x="-122.72369"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:black;fill-opacity:1;stroke:none;stroke-width:0.202671px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan1093"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;stroke-width:0.202671px"
+         y="55.31686"
+         x="-122.72369"
+         sodipodi:role="line"><tspan
+   style="font-size:3.52778px;fill:navy;stroke-width:0.202671px"
+   id="tspan38659">Diese Entwürfe zur Szene ‘Mitternacht’</tspan> sind sehr wahrscheinlich</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;stroke-width:0.202671px"
+         y="59.726585"
+         x="-122.72369"
+         sodipodi:role="line"
+         id="tspan1154"><tspan
+   style="font-size:3.52778px;fill:green;stroke-width:0.202671px"
+   id="tspan55973">im Frühjahr 1825</tspan> entstanden. (<tspan
+   style="font-size:3.52778px;fill:maroon;stroke-width:0.202671px"
+   id="tspan82355">Bohnenkamp 1994, S. 763</tspan>)</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:125%;font-family:'Gentium Book Basic';-inkscape-font-specification:'Gentium Book Basic Italic';text-align:start;text-anchor:start;fill:gray;stroke-width:0.202671px"
+         y="64.136307"
+         x="-122.72369"
+         sodipodi:role="line"
+         id="tspan1156" /></text>
+  </g>
+  <metadata
+     id="metadata215490">
+    <rdf:RDF>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:title>Faustedition-Makrogenese: Von der Literaturstelle über XML zum Graph</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Thorsten Vitt</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>https://faustedition.net</dc:source>
+        <dc:language>de</dc:language>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -30,6 +30,7 @@ table.fixed {position:fixed; top:3.4em; width:auto; display:none; border:none; m
 table.fixed thead {background-color:rgb(255, 255, 255);}
 figure {margin:0.2em 0 2em 0; text-align:center;}
 figure img {max-width:300px !important; padding:5px; background-color:rgba(155,155,155,0.2); border:1px solid rgb(155,155,155); border-radius:4px;}
+figure.plain img {max-width:inherit !important;  padding:5px; background:rgba(255,255,255,1);border:none;}
 figure figcaption {max-width:400px !important; margin:0 auto; padding:0 1em; font-size:85%; font-style:italic; line-height:1.5em; color:rgb(125,125,125);}
 figure figcaption a[href] {color:rgb(125,125,125);}
 figure ~ h1, figure ~ h2, figure ~ h3, figure ~ h4, figure ~ h5, figure ~ h6 {clear:both;}
@@ -254,6 +255,9 @@ table .pure-button-tile { margin: 0 0 0 0 !important; }
 .pure-invisible{visibility:hidden;}
 .pure-disabled {cursor: not-allowed; opacity:0.4;}
 .pure-nowrap {white-space:nowrap;}
+
+*[id] > a.hover-link { color: gray; font-weight: normal; visibility: hidden; }
+*[id]:hover > a.hover-link { visibility: visible};
 
 @media print {
 	.pure-noprint {display:none !important;}
