@@ -283,6 +283,7 @@ a.pageno + .hasvars:hover::before {
 /* Everything that is not in the original text should be grey: */
 .generated-text, a[href].generated-text, .type-textcrit .note {
 	color: #aaa;
+	text-shadow: 0 0 3px white, 0 0 1px white;
 }
 
 /* Editorial notes */
