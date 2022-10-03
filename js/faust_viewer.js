@@ -561,6 +561,22 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
           } finally {
             state.toLocation(!!initializing);
             updateControlsToPage(newPage);
+            if (state.fragment && state.fragment.startsWith('hl=')) {
+                const selector =  state.fragment.substring(3);
+                window.setTimeout(function() {
+                    try {
+                        const nodes = document.querySelectorAll(selector);
+                        console.log(`From fragment ${state.fragment} querying ${selector}`, nodes)
+                        nodes.forEach(element => {
+                            element.classList.add('highlighted');
+                            console.log('Highlighted', element)
+                        });
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }, 3000);
+                console.log('Achtung, in drei Sekunden ...')
+            }
           }
           return state.page;
       };

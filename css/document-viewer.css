@@ -155,9 +155,18 @@ g.element-line:hover .bgBox {
   stroke: #ffc20e;
   stroke-width: 0.1em;
 }
+.bgBox.highlighted {
+    opacity: 1 !important;
+    stroke-width: 0.1em !important;
+    stroke: #ffc20e !important;
+    transition: all 1s ease-out;
+}
+
 g.element-line-hidden > * {
   opacity: 0;
 }
+
+
 div g.element-line-hidden:hover > * {
   opacity: 1;
 }
