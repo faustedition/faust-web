@@ -192,6 +192,13 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
               });
           };
 
+	const searchShortcut = function searchShortcut() {
+	    return Faust.xhr.get('/query/shortcut?' + state.toQuery(), 'text')
+		    .then(response => { 
+			window.location = window.location.protocol + '//' + window.location.host + response;
+		    });
+	}
+
         var setTab = function setTab(currentVerb) {
           var currentTab = $('#tab-' + currentVerb),
             currentBtn = $('#btn-' + currentVerb);
@@ -228,7 +235,8 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
 
         function performSearches() {
             // Initially perform the queries
-            return Promise.all([
+	    return Promise.any([searchShortcut(),
+		Promise.all([
                 searchTexts(),
                 searchMetadata(),
                 searchTestimony(),
@@ -237,7 +245,7 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
                 if (state.current.tab == "texts") {
                     $('.tab-bar [data-badge!="0"]').first().click();
                 }
-            });
+            })]);
         };
         
 
