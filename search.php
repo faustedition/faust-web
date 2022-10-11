@@ -253,26 +253,18 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
             ev.preventDefault();
             let data = new FormData(ev.target);
             state.current.q = data.get('q');
-            const queryUrl = '/query?' + new URLSearchParams(data).toString()
-            fetch(queryUrl)
-                .then(function (response) {
-                    let url = new URL(response.url);
-                    if (!url.pathname.startsWith('/search')) {
-                        window.location = queryUrl;    // redirect
-                    } else {
-                        state.toLocation();
-                        state.toForm();
-                        $("#quick-search").blur();
-                    }
-                })
-                .catch(function (e) {
-                    if (e.status == 400) {
-                        e.text().then(text => {Faust.error('Problem in der Suchanfrage', text);});
-                    } else {
-                        Faust.error('Problem mit der Suchanfrage', e);
-                    }
-                })
-            performSearches();
+	    performSearches().then(() => {
+		    state.toLocation();
+		    state.toForm();
+		    $("#quick-search").blur();
+	    })
+	    .catch(function (e) {
+		if (e.status == 400) {
+		    e.text().then(text => {Faust.error('Problem in der Suchanfrage', text);});
+		} else {
+		    Faust.error('Problem mit der Suchanfrage', e);
+		}
+	    })
         });
 
         performSearches();
