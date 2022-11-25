@@ -8,10 +8,10 @@
             <h2>Zentrale neue Features</h2>
 
             <ul>
-                <li class="frag"><a href="/archive_watermarks">Wasserzeichen</a></li>
-                <li class="frag">Facsimiles: <a href="/document?sigil=D.2&page=16&view=facsimile_text">Zoom auf Ausschnitt</a></li>
-                <li class="frag"><a href="/document?sigil=2_III_H.2_2&page=3&view=facsimile_text">Download Dokumentarischer Transkriptionen</a> <a href="/transcript/diplomatic/2_III_H.2_2/2_III_H.2_2.pdf">(PDF)</a></li>
-                <li class="frag"><a href="/document?sigil=2_III_H.2_2&page=3&view=facsimile_text#download">Download Facsimiles</a>
+                <li class="frag"><a target="_blank" href="/archive_watermarks">Wasserzeichen</a></li>
+                <li class="frag">Facsimiles: <a target="_blank" href="/document?sigil=D.2&page=16&view=facsimile_text">Zoom auf Ausschnitt</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_III_H.2_2&page=3&view=facsimile_text">Download Dokumentarischer Transkriptionen</a> <a target="_blank" href="/transcript/diplomatic/2_III_H.2_2/2_III_H.2_2.pdf">(PDF)</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_III_H.2_2&page=3&view=facsimile_text#download">Download Facsimiles</a>
                     <ul>
                         <li>als Einzelbild</li>
                         <li>experimentell: als ZIP</li>
@@ -25,31 +25,63 @@
         <section class="slide">
             <h2>Experimentellere neue Features</h2>
             <ul>
-                <li class="frag"><a href="/document?sigil=2_III_H.2_2&page=3&view=structure#hands-info">Schreiber- und Materialanmerkungen</a></li>
-                <li class="frag"><a href="/document?sigil=2_I_H.1&page=1&view=structure">Note nach Headnote</a> (<a href="/meta/first-notes">Übersicht über all diese Notes</a>)</li>
-                <li class="frag">Makrogenese: <a href="/macrogenesis/subgraph">Subgraph-Viewer</a>
-                    (Links aus <a href="/genesis_bargraph?rangeStart=11043&rangeEnd=11142">Genese </a>und <a href="http://dev.faustedition.net/document?sigil=2_V_H.0a&page=2&view=print#l11081">Apparat,</a> benötigen Finetuning)
+                <li class="frag"><a target="_blank" href="/document?sigil=2_III_H.2_2&page=3&view=structure#hands-info">Schreiber- und Materialanmerkungen</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_I_H.1&page=1&view=structure">Note nach Headnote</a> (<a target="_blank" href="/meta/first-notes">Übersicht über all diese Notes</a>)</li>
+                <li class="frag">Makrogenese: <a target="_blank" href="/macrogenesis/subgraph">Subgraph-Viewer</a>
+                    (Links aus <a target="_blank" href="/genesis_bargraph?rangeStart=11043&rangeEnd=11142">Genese </a>und <a target="_blank" href="http://dev.faustedition.net/document?sigil=2_V_H.0a&page=2&view=print#l11081">Apparat,</a> benötigen Finetuning)
                 </li>
         </section>
 
         <section class="slide">
             <h2>Kleinigkeiten</h2>
             <ul>
-                <li class="frag"><a href="/document?sigil=2_V_H.0a&page=2&view=print#l11081">Link auf Apparat</a></li>
-                <li class="frag"><a href="/document?sigil=2_V_H.0a&page=2&view=print#l11081">Animation im Apparat</a></li>
-                <li class="frag"><a href="/search?q=urfaust">Sucheseite flüssiger</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_V_H.0a&page=2&view=print#l11081">Link auf Apparat</a></li>
+                <li class="frag"><a target="_blank" href="/document?sigil=2_V_H.0a&page=2&view=print#l11081">Animation im Apparat</a></li>
+                <li class="frag"><a target="_blank" href="/search?q=urfaust">Sucheseite flüssiger</a></li>
 
+        </section>
+
+        <section class="slide">
+            <h2>Makrogenese-Viewer: Konzept</h2>
+            <ol>
+                <li class="fragment">Aussagen aus Literatur → XML → Graph</li>
+                <li class="fragment">Konfliktkanten suchen, Ordnung bestimmen → annotierter Graph</li>
+                <li class="fragment"><a target="_blank" href="/macrogenesis">Statische Berichte und Grafiken</a> generieren</li>
+                <li class="fragment">Subgraph-Viewer: Dynamisch Auszüge aus dem annotierten Graph anfragen</li>
+            </ol>
+        </section>
+
+        <section class="slide">
+            <h2>Makrogenese-Viewer: Beispiele</h2>
+            <ul>
+                <li><a target="_blank" href="http://localhost:81/macrogenesis/2_I_H.15b">Einstieg Makrogenese-Lab</a>
+                <li><a target="_blank" href="http://localhost:81/document?sigil=2_V_H.0b&page=2&view=print#l11095">Einstieg Apparat; Pfade</a></li>
+                <li><a target="_blank" href="http://localhost:81/macrogenesis/subgraph?nodes=2+V+H.20&central_paths=dag&extra=&model=default&assertions=on&collapse=on&dir=LR">gleichzeitige Knoten</a></li>
+                <li><a target="_blank" href="http://localhost:81/macrogenesis/subgraph?nodes=2+V+H.15b&central_paths=all&extra=&model=default&assertions=on&collapse=on&dir=LR">2 V H.15b – absolute Datierungen rechtfertigen</a></li>
+                <li><a target="_blank" href="http://localhost:81/macrogenesis/subgraph?nodes=2+V+H.33+i_3_v&central_paths=all&extra=&model=default&assertions=on&dir=LR">Inskriptionen; alle induzierten Kanten; transitive Reduktion</a></li>
+                <li><a target="_blank" href="http://localhost:81/macrogenesis/subgraph?nodes=2+V+H.26a&central_paths=all&abs_dates=on&extra=&model=default&assertions=on&induced_edges=on&dir=LR">ignorierte Kanten</a></li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>Makrogenese-Viewer: weitere Ideen</h2>
+            <ul>
+                <li>weitere interessante Anfragen?</li>
+                <li>"Ordnungsnachbarn"
+                <li>tabellarische Darstellungen generieren</li>
+                <li>direkt Verse, Szenen, ... anfragen</li>
+            </ul>
         </section>
 
         <section class="slide">
             <h2>Über frühere Versionen</h2>
             <ul>
-                <li><a href="1-1-release">Version 1.2 RC</a></li>            
-                <li><a href="1-1-release">Version 1.1 RC</a></li>            
-                <li><a href="1-0-release">Version 1.0 RC</a></li>
-                <li><a href="beta-release">Beta-Version 3</a></li>
-                <li><a href="beta-release2">Beta-Version 2</a></li>
-                <li><a href="beta-release1">Beta-Version 1</a></li>
+                <li><a target="_blank" href="1-1-release">Version 1.2 RC</a></li>            
+                <li><a target="_blank" href="1-1-release">Version 1.1 RC</a></li>            
+                <li><a target="_blank" href="1-0-release">Version 1.0 RC</a></li>
+                <li><a target="_blank" href="beta-release">Beta-Version 3</a></li>
+                <li><a target="_blank" href="beta-release2">Beta-Version 2</a></li>
+                <li><a target="_blank" href="beta-release1">Beta-Version 1</a></li>
             </ul>
         </section>
 

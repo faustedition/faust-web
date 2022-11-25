@@ -3,6 +3,9 @@
   
   <article class="pure-u-1 pure-center">
       <?php include "img/genesis_entry.svg";?>
+
+
+      <p><a class="pure-button pure-button-tile" href="/macrogenesis" style="display:block;">Makrogenese-Lab</a></p>
   
   </article>
 
