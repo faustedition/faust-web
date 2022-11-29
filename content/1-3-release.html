@@ -36,21 +36,6 @@
             </ul>
         </section>
 
-        <a id="presentr-toggle" href="#"><i class="fa fa-play-circled"></i></a>
 
     </article>
-    <script>
-
-        requirejs(['jquery', 'presentr.min'], function($, Presentr) {
-                    $('#presentr-toggle').on("click", () => {
-                                $('html').toggleClass('presentr');
-                            });
-                    const presentr = new Presentr({
-                                slides: '.slides > section',
-                                fragments: '.frag'
-                            });
-                    console.log(presentr);
-        });
-
-    </script>
 </section>

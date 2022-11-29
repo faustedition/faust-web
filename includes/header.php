@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="/css/overlay.css">
     <link rel="stylesheet" href="/css/chocolat.css">
     <link rel="stylesheet" href="/css/chocolat-custom.css">
-    <link rel="stylesheet" href="/css/presentr.css">
     <?php if (inurl('document')) : ?>
     <link rel="stylesheet" href="/css/document-viewer.css">
     <link rel="stylesheet" href="/css/document-text.css">
