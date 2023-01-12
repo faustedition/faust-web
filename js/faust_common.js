@@ -306,7 +306,10 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "json!data/d
     // change browser location / url without reloading or changing browser history
     url.setUrl = (function() {
       return function(newUrl) {
+        const _paq = window._paq || [];
+        _paq.push(['setReferrerUrl', window.location]);
         history.replaceState(history.state, "", newUrl);
+        _paq.push(['trackPageView']);
       };
     })();
 

@@ -168,7 +168,7 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
   })();
   window.addEventListener('popstate', (event) => {
 	if (event.state && event.state.referrer) {
-	    _paq.push(['setReferrerUrl', event.state.referrer);
+	    _paq.push(['setReferrerUrl', event.state.referrer]);
 	}
 	_paq.push(['trackPageView']);
     });
