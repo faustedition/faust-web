@@ -118,6 +118,7 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
 
           // updates the address in the browser bar to a value calculated from state and state.doc
         toLocation: function toLocation(replaceHistory) {
+	      const referrer = window.location;
               var fixedPath = window.location.pathname.replace(/^\/+/, '/');
               var url = fixedPath + '?sigil=' + state.doc.sigil + '&page=' + this.page + '&view=' + this.view;
               if (typeof(this.section) !== 'undefined' && this.section !== this.doc.metadata.pages[this.page-1].section) {
@@ -130,9 +131,9 @@ define(['faust_common', 'fv_structure', 'fv_doctranscript', 'fv_facsimile', 'fv_
                   url += '#' + this.fragment;
               }
               if (replaceHistory && !this.dontrecordhistory)
-                  history.replaceState(history.state, null, url);
+                  history.replaceState(history.state, {referrer: referrer}, url);
               else
-                  if (!this.dontrecordhistory) history.pushState(history.state, null, url);
+                  if (!this.dontrecordhistory) history.pushState(history.state, {referrer: referrer}, url);
 
               return this;
           },

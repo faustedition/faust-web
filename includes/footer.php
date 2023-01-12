@@ -166,6 +166,12 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
+  window.addEventListener('popstate', (event) => {
+	if (event.state && event.state.referrer) {
+	    _paq.push(['setReferrerUrl', event.state.referrer);
+	}
+	_paq.push(['trackPageView']);
+    });
 </script>
 <noscript><p><img src="//analytics.faustedition.net/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
