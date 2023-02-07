@@ -157,7 +157,9 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
 <script type="text/javascript">
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
+  if (window.location.pathname != "/document") {
+    _paq.push(['trackPageView']);
+  }
   _paq.push(['enableLinkTracking']);
   (function() {
     var u="//analytics.faustedition.net/";
