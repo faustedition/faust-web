@@ -108,11 +108,11 @@ requirejs(['faust_common', 'jquery'], function(Faust, $) {
               }
             }
             const _paq = window._paq || [];
-	    const new_url = window.location.pathname + '?' + $.param(params;
+            const new_url = window.location.pathname + '?' + $.param(params);
             _paq.push(['setReferrerUrl', window.location]);
-	    _paq.push(['setCustomUrl', new_url]);
-            history.replaceState(history.state, '', new_url));
-	    _paq.push(['trackPageView']);
+            _paq.push(['setCustomUrl', new_url]);
+            history.replaceState(history.state, '', new_url);
+            _paq.push(['trackPageView']);
           },
           toForm: function () {
             $('#index-' + this.current.index).prop('checked', true);
