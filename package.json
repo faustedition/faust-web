@@ -13,8 +13,8 @@
   "homepage": "http://faustedition.net/",
   "dependencies": {
     "@hpcc-js/wasm": "^0.3.14",
-    "d3": "^5.1.16",
-    "d3-graphviz": "^3.1.0"
+    "d3": "^7.8.5",
+    "d3-graphviz": "^5.1.0"
   },
   "scripts": {
     "install": "cp -rp node_modules/d3-graphviz/build/* node_modules/@hpcc-js/wasm node_modules/d3/dist/d3.min.js js"
