@@ -13,7 +13,7 @@
   "homepage": "http://faustedition.net/",
   "dependencies": {
     "@hpcc-js/wasm": "^0.3.14",
-    "d3": "^6.1.1",
+    "d3": "^5.1.16",
     "d3-graphviz": "^3.1.0"
   },
   "scripts": {
