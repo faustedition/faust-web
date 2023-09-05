@@ -10,14 +10,12 @@
 
     <div id="cookie-consent" class="pure-modal center" style="top:auto;">
         <div class="pure-modal-body">
-            <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Erhöhung des Bedienkomforts
-                und – entsprechend Ihren Browsereinstellungen – für eine anonymisierte Nutzungsstatistik.
-                Durch die Benutzung erklären Sie sich damit einverstanden.</p>
-            <p>Die Webanalyse können Sie <a href="/imprint#privacy">auf unserer Datenschutzseite</a> oder
-                über Ihre Browsereinstellungen deaktivieren. Falls Sie Cookies grundsätzlich ablehnen wollen,
-                verwenden Sie Ihre Browsereinstellungen dazu und nehmen entsprechende Funktionalitätseinbußen
-                in Kauf.</p>
-            <p><a id="cookie-consent-button" class="pure-button pull-right">Verstanden</a></p>
+            <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Sicherstellung der 
+               Funktionalität und – optional entsprechend Ihren Einstellungen – für eine anonymisierte 
+               Nutzungsstatistik zur Verbesserung der Edition und zur Erforschung der Nutzung digitaler
+               Editionen. Lesen Sie auch unsere <a href="imprint#privacy">Datenschutzerklärung</a>.</p>
+            <p><a id="functional-cookies-button" class="pure-button pull-right">nur funktionale Cookies zulassen</a></p>
+            <p><a id="cookie-consent-button" class="pure-button pull-right">auch Statistik erlauben</a></p>
         </div>
 
     </div>
@@ -139,15 +137,27 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
     }});
     Faust.addToTopButton();
 
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['requireConsent']);
     var consent = Cookies.get('faust-cookie-consent');
-    if (navigator.cookieEnabled && (consent != 'yes')) {
+    if (consent == 'yes') {
+      _paq.push(['rememberConsentGiven'])
+    } else if (navigator.cookieEnabled && (consent != 'yes' && consent != 'no')) {
         $('#cookie-consent-button').bind('click', function () {
+           _paq.push(['rememberConsentGiven'])
            var domain = window.location.hostname;
            if (/faustedition\.net$/.test(domain))
                domain = '.faustedition.net';
            Cookies.set('faust-cookie-consent', 'yes', {expires: 365, domain: domain});
            $('#cookie-consent').hide();
         });
+        $('#functional-cookies-button').bind('click', function() {
+           var domain = window.location.hostname;
+           if (/faustedition\.net$/.test(domain))
+               domain = '.faustedition.net';
+           Cookies.set('faust-cookie-consent', 'no', {expires: 365, domain: domain});
+           $('#cookie-consent').hide();
+        })
         $('#cookie-consent').show();
     }
 });
