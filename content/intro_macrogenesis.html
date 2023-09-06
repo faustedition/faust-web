@@ -1,131 +1,178 @@
 <section class="center pure-g-r" xmlns="http://www.w3.org/1999/xhtml" data-title="Makrogenese-Lab"
-    data-breadcrumbs="Ausgabe@intro">
-    <article class="pure-u-1">
-        <p>Die Reihenfolge der Zeilen und Siglen in der <a href="intro#zeilensynopse">Zeilensynopse</a> sowie 
-            die Reihenfolge und Datierung der Balken im <a href="intro#genesis_bargraph">Balkendiagramm</a> 
-            beruhen auf einem experimentellen Teil der Edition, dem <a href="/macrogenesis"
-                >Makrogenese-Lab</a>.<span class="sidenote-number" id="sn-no-2" data-also-highlight="sn-2"></span><span class="sidenote" id="sn-2" data-also-highlight="sn-no-2">
-                    Vgl. hierzu auch <a href="/bibliography#vitt2019">Vitt et al. 2019</a>.                    
-                </span></p>
+  data-breadcrumbs="Ausgabe@intro">
+  <article class="pure-u-1">
+    <p>Die Reihenfolge der Zeilen und Siglen in der <a href="intro#zeilensynopse">Zeilensynopse</a> sowie
+      die Reihenfolge und Datierung der Balken im <a href="intro#genesis_bargraph">Balkendiagramm</a>
+      beruhen auf einem experimentellen Teil der Edition, dem <a href="/macrogenesis">Makrogenese-Lab</a>.<span
+        class="sidenote-number" id="sn-no-2" data-also-highlight="sn-2"></span><span class="sidenote" id="sn-2"
+        data-also-highlight="sn-no-2">
+        Vgl. hierzu auch <a href="/bibliography#vitt2019">Vitt et al. 2019</a>.
+      </span></p>
 
-	<h2 id="modellierung">Modellierung <a class="hover-link" href="#modellierung">¶</a></h2>
-	
+    <h2 id="modellierung">Modellierung <a class="hover-link" href="#modellierung">¶</a></h2>
 
-        <p>Hierfür wurden die für relevant erachteten <a href="/macrogenesis/sources">Quellen</a> aus der Forschungs-
-            und Editionsgeschichte zu Faust ausgewertet. Als Kriterium für die Auswahl diente nicht die Plausibilität der jeweiligen 
-            Annahmen, sondern der konkrete Bezug auf die Überlieferung.<span class="sidenote-number" id="sn-no-1" data-also-highlight="sn-1"
-                >​</span><span class="sidenote" id="sn-1" data-also-highlight="sn-no-1"
-                    >Aufgenommen wurden 
-                    auch Annahmen, die lediglich forschungsgeschichtlich relevant 
-                    sind. Allgemeine Annahmen über die mutmaßliche Entstehungszeit von Teilen 
-                    des Werks wurden dagegen nicht berücksichtigt.</span> Die Erkenntnisse, die im Rahmen der Arbeit an der 
-            Faustedition gewonnen und noch nicht separat publiziert sind, wurden als Selbstaussagen <em>(self)</em> aufgenommen.
-            Die Forschungsaussagen wurden 
-            nach einem einfachen Modell <a
-                href="https://github.com/faustedition/faust-xml/tree/master/xml/macrogenesis">in XML
-                codiert</a>: Einzelne Zeugen können untereinander in einer zeitlichen Reihenfolge stehen sowie mit
-            einem möglichen Entstehungszeitraum assoziiert werden. 
-            Ungefähre oder vage Angaben (z.B. „1800/1801“ oder „Frühsommer“) wurden dabei zu eindeutig definierten 
-            Zeitintervallen normiert und nach Möglichkeit interpretatorisch präzisiert.</p>
 
-	<figure class="plain">
-	    <img src="/img/info/macrogenesis-model.png" />
+    <p>Hierfür wurden die für relevant erachteten <a href="/macrogenesis/sources">Quellen</a> aus der Forschungs-
+      und Editionsgeschichte zu Faust ausgewertet. Als Kriterium für die Auswahl diente nicht die Plausibilität der
+      jeweiligen
+      Annahmen, sondern der konkrete Bezug auf die Überlieferung.<span class="sidenote-number" id="sn-no-1"
+        data-also-highlight="sn-1">​</span><span class="sidenote" id="sn-1" data-also-highlight="sn-no-1">Aufgenommen
+        wurden
+        auch Annahmen, die lediglich forschungsgeschichtlich relevant
+        sind. Allgemeine Annahmen über die mutmaßliche Entstehungszeit von Teilen
+        des Werks wurden dagegen nicht berücksichtigt.</span> Die Erkenntnisse, die im Rahmen der Arbeit an der
+      Faustedition gewonnen und noch nicht separat publiziert sind, wurden als Selbstaussagen <em>(self)</em>
+      aufgenommen.
+      Die Forschungsaussagen wurden
+      nach einem einfachen Modell <a href="https://github.com/faustedition/faust-xml/tree/master/xml/macrogenesis">in
+        XML
+        codiert</a>: Einzelne Zeugen können untereinander in einer zeitlichen Reihenfolge stehen sowie mit
+      einem möglichen Entstehungszeitraum assoziiert werden.
+      Ungefähre oder vage Angaben (z.B. „1800/1801“ oder „Frühsommer“) wurden dabei zu eindeutig definierten
+      Zeitintervallen normiert und nach Möglichkeit interpretatorisch präzisiert.</p>
 
-	    <figcaption>Abb. 1: Von der Aussage in der Literatur über die XML-Codierung zum Graphen
-	</figure>
-        
-	<p>Diese Aussagen wurden dann zu einem großen <a href="/macrogenesis/dag">Gesamtgraphen</a> miteinander verknüpft.</p>
-        
-        <p>Ein Graph setzt sich zusammen aus Objekten (graphentheoretisch: <em>Knoten</em>),
-            zwischen denen Relationen (<em>Kanten</em>) bestehen. Die Knoten werden in diesem Fall
-            durch Zeugen und tagesgenaue Datumsangaben gebildet, die Kanten durch zeitliche
-            Verhältnisse (z.B. Handschrift <em>a</em> entstand vor Handschrift <em>b</em>, das Datum
-            25. Februar 1825 liegt vor der Entstehung von Handschrift <em>c</em>). Der Graph ist gerichtet, d.h. die
-            Richtung der Kanten ist relevant: Eine Kante x → y drückt immer das Verhältnis „x vor y“ aus.</p>
+    <figure class="plain">
+      <img src="/img/info/macrogenesis-model.png" />
 
-	<h2 id="analyse">Analyse <a class="hover-link" href="#analyse">¶</a></h2>
+      <figcaption>Abb. 1: Von der Aussage in der Literatur über die XML-Codierung zum Graphen
+    </figure>
 
-        <p>Sobald die Einzelaussagen zu einem Gesamtzusammenhang verknüpft werden, treten Widersprüche zwischen Forschungsaussagen 
-            als <em>Zyklen</em> zutage. Insbesondere bildet sich ein großes <a href="/macrogenesis/components"
-                >Widerspruchscluster</a> (in der Sprache der Graphentheorie eine <em>stark
-                zusammenhängende Komponente</em>) mit über 2000 Aussagen zu fast 500 Zeugen, in der
-            die (vermutlich) falschen Aussagen nicht mehr mit bloßem Auge zu identifizieren sind.
-            Deshalb wurde automatisch eine Menge von
-            Aussagen identifiziert, die bei der Bildung des Gesamtgraphen ausscheiden sollen – im Makrogenese-Lab <a
-                href="/macrogenesis/conflicts">Konfliktkanten</a> genannt und rotgestrichelt
-            dargestellt. Die Auswahl der Konfliktkanten geschieht nach mehreren Kriterien:</p>
+    <p>Diese Aussagen wurden dann zu einem großen <a href="/macrogenesis/dag">Gesamtgraphen</a> miteinander verknüpft.
+    </p>
+
+    <p>Ein Graph setzt sich zusammen aus Objekten (graphentheoretisch: <em>Knoten</em>),
+      zwischen denen Relationen (<em>Kanten</em>) bestehen. Die Knoten werden in diesem Fall
+      durch Zeugen und tagesgenaue Datumsangaben gebildet, die Kanten durch zeitliche
+      Verhältnisse (z.B. Handschrift <em>a</em> entstand vor Handschrift <em>b</em>, das Datum
+      25. Februar 1825 liegt vor der Entstehung von Handschrift <em>c</em>). Der Graph ist gerichtet, d.h. die
+      Richtung der Kanten ist relevant: Eine Kante x → y drückt immer das Verhältnis „x vor y“ aus.</p>
+
+    <h2 id="analyse">Analyse <a class="hover-link" href="#analyse">¶</a></h2>
+
+    <p>Sobald die Einzelaussagen zu einem Gesamtzusammenhang verknüpft werden, treten Widersprüche zwischen
+      Forschungsaussagen
+      als <em>Zyklen</em> zutage. Insbesondere bildet sich ein großes <a
+        href="/macrogenesis/components">Widerspruchscluster</a> (in der Sprache der Graphentheorie eine <em>stark
+        zusammenhängende Komponente</em>) mit über 2000 Aussagen zu fast 500 Zeugen, in der
+      die (vermutlich) falschen Aussagen nicht mehr mit bloßem Auge zu identifizieren sind.
+      Deshalb wurde automatisch eine Menge von
+      Aussagen identifiziert, die bei der Bildung des Gesamtgraphen ausscheiden sollen – im Makrogenese-Lab <a
+        href="/macrogenesis/conflicts">Konfliktkanten</a> genannt und rotgestrichelt
+      dargestellt. Die Auswahl der Konfliktkanten geschieht nach mehreren Kriterien:</p>
+    <ul>
+      <li>Grundsätzlich wird angestrebt, möglichst viele Aussagen in den Graphen zu integrieren (d.h.
+        die Anzahl der ausgeschiedenen gering zu halten).</li>
+      <li>Einzelne Kanten können ein größeres Gewicht erhalten durch
         <ul>
-            <li>Grundsätzlich wird angestrebt, möglichst viele Aussagen in den Graphen zu integrieren (d.h. 
-                die Anzahl der ausgeschiedenen gering zu halten).</li>
-            <li>Einzelne Kanten können ein größeres Gewicht erhalten durch
-                <ul>
-                    <li>die Glaubwürdigkeit der Quelle aus heutiger Sicht (formuliert durch ein einfaches 
-                        <a href="https://github.com/faustedition/faust-macrogen/blob/master/src/macrogen/etc/bibscores.tsv">Punktesystem</a>),</li>
-                    <li>durch Addition gleichlautender Aussagen.</li>
-                </ul></li>
-        </ul> 
-        <p>Einige Aussagen werden bereits vor der heuristischen Konfliktbeseitigung aus dem Graphen entfernt: weil die Quelle entweder insgesamt als  
-            lediglich forschungsgeschichtlich relevant 
-            gilt (<a href="bibliography#hertz1931">Hertz 1931</a>) oder weil eine einzelne Aussage als offensichtlich unbegründet markiert wurde.
-            Aussagen über Gleichzeitigkeit zwischen Zeugen werden bei der Konstruktion des Graphen ebenfalls nicht berücksichtigt, weil sie keine <em>gerichtete</em> Beziehung 
-            ausdrücken. <!-- FIXME DH 2021 --> Alle diese nicht berücksichtigten Kanten erscheinen 
-            in den Visualisierungen grau.</p>
+          <li>die Glaubwürdigkeit der Quelle aus heutiger Sicht (formuliert durch ein einfaches
+            <a
+              href="https://github.com/faustedition/faust-macrogen/blob/master/src/macrogen/etc/bibscores.tsv">Punktesystem</a>),
+          </li>
+          <li>durch Addition gleichlautender Aussagen.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Einige Aussagen werden bereits vor der heuristischen Konfliktbeseitigung aus dem Graphen entfernt: weil die
+      Quelle entweder insgesamt als
+      lediglich forschungsgeschichtlich relevant
+      gilt (<a href="bibliography#hertz1931">Hertz 1931</a>) oder weil eine einzelne Aussage als offensichtlich
+      unbegründet markiert wurde.
+      Aussagen über Gleichzeitigkeit zwischen Zeugen werden bei der Konstruktion des Graphen ebenfalls nicht
+      berücksichtigt, weil sie keine <em>gerichtete</em> Beziehung
+      ausdrücken. <!-- FIXME DH 2021 --> Alle diese nicht berücksichtigten Kanten erscheinen
+      in den Visualisierungen grau.</p>
 
-	<h2 id="auswertung">Auswertung <a class="hover-link" href="#auswertung">¶</a></h2>
-        
-        <p>Der <a href="/macrogenesis/dag">verbleibende Graph</a> ist zyklen- und damit
-            widerspruchsfrei. Damit besteht die Möglichkeit, seine Knoten in eine <a
-                href="/macrogenesis/refs">Reihenfolge</a> zu bringen, die keiner der verbliebenen
-            Aussagen widerspricht (eine <em>topologische Sortierung</em>). Diese Reihenfolge ist
-            nicht eindeutig, zur Auflösung von Ambiguitäten wurden als sekundäre Kriterien das
-            Syntagma (konkret: der erste vorkommende Faustvers) und die Siglierung            
-            herangezogen. Die auf diese Weise disambiguierte
-        Reihenfolge dient als Grundlage der Sortierung der Zeilen und Siglen in der 
-            Zeilensynopse sowie der Balken im Balkendiagramm.</p>
-        
-        <p>Dieser Graph dient darüber hinaus auch einer Abschätzung des Entstehungszeitraums eines Zeugen, wie sie im Balkendiagramm ganz links
-            visualisiert wird. Dazu wird jeweils das nächste vom Zeugen erreichbare Datum in Vorwärts- oder Rückwärtsrichtung herangezogen.</p>
+    <h2 id="auswertung">Auswertung <a class="hover-link" href="#auswertung">¶</a></h2>
 
-        <p>Das Makrogenese-Lab versteht sich als Werkzeug nicht nur zum Nachvollziehen der in der Faustedition sichtbaren 
-            Einordnung, sondern insbesondere auch zur weiteren Forschung und Verbesserung der Daten. Es gibt deshalb
-            nicht nur <a href="/macrogenesis/refs">zu jedem Zeugen</a> (<a
-                href="/macrogenesis/2_I_H.24c">Beispiel</a>) eine interaktive Visualisierung
-            auf der Basis der Software Graphviz mit
-            Einordnung und eine Darstellung der unmittelbar assoziierten Aussagen, sondern auch etwa
-            eine Darstellung aller <a href="/macrogenesis/conflicts">entfernten Konfliktkanten</a>
-            mit individueller Visualisierung des Widerspruchs, sowie Darstellungen <a
-                href="/macrogenesis/scenes">pro Szene</a> oder <a href="/macrogenesis/sources">pro
-                Quelle</a>. Eine <a href="/macrogenesis/help">Legende</a> erläutert die
-            Visualisierungen im Detail.</p>
+    <p>Der <a href="/macrogenesis/dag">verbleibende Graph</a> ist zyklen- und damit
+      widerspruchsfrei. Damit besteht die Möglichkeit, seine Knoten in eine <a href="/macrogenesis/refs">Reihenfolge</a>
+      zu bringen, die keiner der verbliebenen
+      Aussagen widerspricht (eine <em>topologische Sortierung</em>). Diese Reihenfolge ist
+      nicht eindeutig, zur Auflösung von Ambiguitäten wurden als sekundäre Kriterien das
+      Syntagma (konkret: der erste vorkommende Faustvers) und die Siglierung
+      herangezogen. Die auf diese Weise disambiguierte
+      Reihenfolge dient als Grundlage der Sortierung der Zeilen und Siglen in der
+      Zeilensynopse sowie der Balken im Balkendiagramm.</p>
 
-	<h2 id="grenzen">Grenzen und Herausforderungen <a class="hover-link" href="#grenzen">¶</a></h2>
+    <p>Dieser Graph dient darüber hinaus auch einer Abschätzung des Entstehungszeitraums eines Zeugen, wie sie im
+      Balkendiagramm ganz links
+      visualisiert wird. Dazu wird jeweils das nächste vom Zeugen erreichbare Datum in Vorwärts- oder Rückwärtsrichtung
+      herangezogen.</p>
 
-	<figure class="pull-right">
-	    <blockquote>
-		    All models are wrong, but some are useful.
-	    </blockquote>
-	    <figcaption>— <cite>George Box</cite></figcaption>
-	</figure>
+    <p>Das Makrogenese-Lab versteht sich als Werkzeug nicht nur zum Nachvollziehen der in der Faustedition sichtbaren
+      Einordnung, sondern insbesondere auch zur weiteren Forschung und Verbesserung der Daten. Es gibt deshalb
+      nicht nur <a href="/macrogenesis/refs">zu jedem Zeugen</a> (<a href="/macrogenesis/2_I_H.24c">Beispiel</a>) eine
+      interaktive Visualisierung
+      auf der Basis der Software Graphviz mit
+      Einordnung und eine Darstellung der unmittelbar assoziierten Aussagen, sondern auch etwa
+      eine Darstellung aller <a href="/macrogenesis/conflicts">entfernten Konfliktkanten</a>
+      mit individueller Visualisierung des Widerspruchs, sowie Darstellungen <a href="/macrogenesis/scenes">pro
+        Szene</a> oder <a href="/macrogenesis/sources">pro
+        Quelle</a>. Eine <a href="/macrogenesis/help">Legende</a> erläutert die
+      Visualisierungen im Detail.</p>
 
-	<p>Die Makrogenese-Modellierung aggregiert Abstraktionen von Datierungsaussagen aus der Literatur. Sie liefert dementsprechend nicht <em>die</em> Reihenfolge der Zeugen, sondern vielmehr eine mögliche Reihenfolge, die mit möglichst vielen der Aussagen kompatibel ist – oder zumindest mit der <a href="#modellierung">oben beschriebenen</a> Modellierung der Aussagen.</p>
-	<p>Aus Modellierung und Datenbestand ergeben sich eine Reihe von Einschränkungen, die zu Abweichungen von der Realität führen können: <!-- FIXME Formulierung! --></p>
+    <h2 id="grenzen">Grenzen und Herausforderungen <a class="hover-link" href="#grenzen">¶</a></h2>
 
-	<ul>
-	    <li id="unschaerfe"><p>Für die Datierungsaussagen mit unscharfen oder unsicheren Datierungen wird dennoch im Modell eine „scharfe“ Vorher-Nachher-Beziehung bzw. ein konkretes Zeitintervall angesetzt. Dies ist natürlich nur eine Näherung; eine unschärfere Modellierung und die Berücksichtigung weiterer Beziehungen zwischen den Intervallen ist Gegenstand der Forschung.</p></li>	
-	    <li id="inskriptionen"><p>Inskriptionen sind nur unzureichend modelliert.</p>
+    <figure class="pull-right">
+      <blockquote>
+        All models are wrong, but some are useful.
+      </blockquote>
+      <figcaption>— <cite>George Box</cite></figcaption>
+    </figure>
 
-		<p>Bei der Datierung werden eigentlich <em>Inskriptionen</em> untersucht, also zusammenhängende Schreibakte bzw. deren materielle Hinterlassenschaft. Die Zeugen-Einheit, mit der in der Edition gearbeitet wird, sind jedoch Archivalien. Das Makrogenese-Modell sieht zwar Äußerungen sowohl über Zeugen (Archivalien) als auch über Inskriptionen vor und modelliert auch deren Zusammenhang, jedoch: Zum einen sind Inskriptionen und ihr Ausmaß nicht immer leicht zu erkennen (und dementsprechend auch nur eingeschränkt in den Transkriptionen ausgezeichnet), zum anderen ist auch in den Datierungsaussagen in der Literatur nicht immer klar, auf welchen Teil eines Zeugen sie sich beziehen, und schließlich ist die Semantik unklar, wenn sowohl eine Aussage über ein Archivale als auch über eine Inskription darauf vorliegt: Beginnt die Arbeit am Archivale vor der ersten und endet nach der letzten Inskription? Bezieht sich die Aussage über das Archivale möglicherweise nur auf eine Inskription auf dem Blatt? <!-- TODO kann man hier ggf. im Graph einen Zusammenhang zwischen Inskriptionen und Konflikten finden? --></p>
+    <p>Die Makrogenese-Modellierung aggregiert Abstraktionen von Datierungsaussagen aus der Literatur. Sie liefert
+      dementsprechend nicht <em>die</em> Reihenfolge der Zeugen, sondern vielmehr eine mögliche Reihenfolge, die mit
+      möglichst vielen der Aussagen kompatibel ist – oder zumindest mit der <a href="#modellierung">oben
+        beschriebenen</a> Modellierung der Aussagen.</p>
+    <p>Aus Modellierung und Datenbestand ergeben sich eine Reihe von Einschränkungen, die zu Abweichungen von der
+      Realität führen können: <!-- FIXME Formulierung! --></p>
 
-	    </li>
-	    <li id="konfliktkanten"><p>Die Auswahl der <a href="/macrogenesis/conflicts">Konfliktkanten</a> erfolgt nach formalen statt nach philologischen Kriterien, <em>gerade weil</em> der Gegenstand zu komplex für eine umfassende rein philologische Betrachtung ist. Die Vorauswahl kann natürlich durch eine entsprechende Anpassung des Modells beeinflusst werden, wenn fehlerhafte Entscheidungen des Verfahrens identifiziert werden. <a href="https://github.com/faustedition/faust-xml/issues">Fehlerberichte</a> sind willkommen.</p></li>
+    <ul>
+      <li id="unschaerfe">
+        <p>Für die Datierungsaussagen mit unscharfen oder unsicheren Datierungen wird dennoch im Modell eine „scharfe“
+          Vorher-Nachher-Beziehung bzw. ein konkretes Zeitintervall angesetzt. Dies ist natürlich nur eine Näherung;
+          eine unschärfere Modellierung und die Berücksichtigung weiterer Beziehungen zwischen den Intervallen ist
+          Gegenstand der Forschung.</p>
+      </li>
+      <li id="inskriptionen">
+        <p>Inskriptionen sind nur unzureichend modelliert.</p>
+
+        <p>Bei der Datierung werden eigentlich <em>Inskriptionen</em> untersucht, also zusammenhängende Schreibakte bzw.
+          deren materielle Hinterlassenschaft. Die Zeugen-Einheit, mit der in der Edition gearbeitet wird, sind jedoch
+          Archivalien. Das Makrogenese-Modell sieht zwar Äußerungen sowohl über Zeugen (Archivalien) als auch über
+          Inskriptionen vor und modelliert auch deren Zusammenhang, jedoch: Zum einen sind Inskriptionen und ihr Ausmaß
+          nicht immer leicht zu erkennen (und dementsprechend auch nur eingeschränkt in den Transkriptionen
+          ausgezeichnet), zum anderen ist auch in den Datierungsaussagen in der Literatur nicht immer klar, auf welchen
+          Teil eines Zeugen sie sich beziehen, und schließlich ist die Semantik unklar, wenn sowohl eine Aussage über
+          ein Archivale als auch über eine Inskription darauf vorliegt: Beginnt die Arbeit am Archivale vor der ersten
+          und endet nach der letzten Inskription? Bezieht sich die Aussage über das Archivale möglicherweise nur auf
+          eine Inskription auf dem Blatt?
+          <!-- TODO kann man hier ggf. im Graph einen Zusammenhang zwischen Inskriptionen und Konflikten finden? --></p>
+
+      </li>
+      <li id="konfliktkanten">
+        <p>Die Auswahl der <a href="/macrogenesis/conflicts">Konfliktkanten</a> erfolgt nach formalen statt nach
+          philologischen Kriterien, <em>gerade weil</em> der Gegenstand zu komplex für eine umfassende rein
+          philologische Betrachtung ist. Die Vorauswahl kann natürlich durch eine entsprechende Anpassung des Modells
+          beeinflusst werden, wenn fehlerhafte Entscheidungen des Verfahrens identifiziert werden. <a
+            href="https://github.com/faustedition/faust-xml/issues">Fehlerberichte</a> sind willkommen.</p>
+      </li>
 
 
-	    <li id="datierung"><p>Für viele Handschriften liegt keine absolute Datierung vor, oder nur eine Hälfte (also nur frühester oder spätester Entstehungszeitpunkt, nicht beide). Über Zeugen, deren relativer Bezug bekannt ist, kann oft die Datierung transitiv weiter eingegrenzt werden, dabei wird aber die Richtigkeit aller Aussagen auf dem entsprechenden Pfad angenommen, und es wird zur Datierung arbiträr das „engste“ Intervall, also der späteste <em>terminus post quem</em> und der früheste <em>terminus ante quem</em> herangezogen.</p>
-		<p>Darüberhinaus wird zur Datierung bei Vorliegen nur einer Intervallgrenze die andere (mit sehr niedriger Priorität) im Abstand von sechs Monaten angenommen, in der Annahme, dass die „einseitige“ Datierung eine zeitliche nähe zum Datum impliziert. Die niedrige Priorität bewirkt, dass diese Kanten im Fall eines Konflikts bevorzugt ausgeschieden werden.</p>
-	    </li>
-	</ul>
+      <li id="datierung">
+        <p>Für viele Handschriften liegt keine absolute Datierung vor, oder nur eine Hälfte (also nur frühester oder
+          spätester Entstehungszeitpunkt, nicht beide). Über Zeugen, deren relativer Bezug bekannt ist, kann oft die
+          Datierung transitiv weiter eingegrenzt werden, dabei wird aber die Richtigkeit aller Aussagen auf dem
+          entsprechenden Pfad angenommen, und es wird zur Datierung arbiträr das „engste“ Intervall, also der späteste
+          <em>terminus post quem</em> und der früheste <em>terminus ante quem</em> herangezogen.</p>
+        <p>Darüberhinaus wird zur Datierung bei Vorliegen nur einer Intervallgrenze die andere (mit sehr niedriger
+          Priorität) im Abstand von sechs Monaten angenommen, in der Annahme, dass die „einseitige“ Datierung eine
+          zeitliche Nähe zum Datum impliziert. Die niedrige Priorität bewirkt, dass diese Kanten im Fall eines Konflikts
+          bevorzugt ausgeschieden werden.</p>
+      </li>
+    </ul>
 
-	<p></p>
+    <p></p>
 
-    </article>
+  </article>
 </section>
