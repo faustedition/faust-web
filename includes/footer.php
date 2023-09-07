@@ -12,8 +12,8 @@
         <div class="pure-modal-body">
             <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Sicherstellung der 
                Funktionalität und – optional entsprechend Ihren Einstellungen – für eine anonymisierte 
-               Nutzungsstatistik zur Verbesserung der Edition und zur Erforschung der Nutzung digitaler
-               Editionen. Lesen Sie auch unsere <a href="imprint#privacy">Datenschutzerklärung</a>.</p>
+               Nutzungsstatistik zur Analyse der Nutzung und zur Verbesserung der
+               Edition. Lesen Sie auch unsere <a href="imprint#privacy">Datenschutzerklärung</a>.</p>
             <p><a id="functional-cookies-button" class="pure-button pull-right">nur funktionale Cookies zulassen</a></p>
             <p><a id="cookie-consent-button" class="pure-button pull-right">auch Statistik erlauben</a></p>
         </div>
