@@ -138,7 +138,6 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
     Faust.addToTopButton();
 
     var _paq = window._paq = window._paq || [];
-    _paq.push(['requireConsent']);
     var consent = Cookies.get('faust-cookie-consent');
     if (consent == 'yes') {
       _paq.push(['rememberConsentGiven'])
@@ -166,6 +165,8 @@ requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', '
 <!-- Matomo -->
 <script type="text/javascript">
   var _paq = window._paq = window._paq || [];
+  _paq.push(['requireConsent']);
+
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   if (window.location.pathname != "/document") {
     _paq.push(['trackPageView']);
