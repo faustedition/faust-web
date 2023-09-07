@@ -1,22 +1,24 @@
     </main>
 
     <noscript>
-        <div class="pure-alert pure-alert-warning">
-            <h3>JavaScript erforderlich</h3>
-            <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
-            <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
-        </div>
+      <div class="pure-alert pure-alert-warning">
+        <h3>JavaScript erforderlich</h3>
+        <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+        <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+      </div>
     </noscript>
 
     <div id="cookie-consent" class="pure-modal center" style="top:auto;">
-        <div class="pure-modal-body">
-            <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Sicherstellung der 
-               Funktionalität und – optional entsprechend Ihren Einstellungen – für eine anonymisierte 
-               Nutzungsstatistik zur Analyse der Nutzung und zur Verbesserung der
-               Edition. Lesen Sie auch unsere <a href="imprint#privacy">Datenschutzerklärung</a>.</p>
-            <p><a id="functional-cookies-button" class="pure-button pull-right">nur funktionale Cookies zulassen</a></p>
-            <p><a id="cookie-consent-button" class="pure-button pull-right">auch Statistik erlauben</a></p>
-        </div>
+      <div class="pure-modal-body">
+        <p>Diese Website verwendet Cookies und vergleichbare Technologien zur Sicherstellung der
+          Funktionalität und – optional entsprechend Ihren Einstellungen – für eine anonymisierte
+          Nutzungsstatistik zur Analyse der Nutzung und zur Verbesserung der
+          Edition. Lesen Sie auch unsere <a href="imprint#privacy">Datenschutzerklärung</a>.</p>
+        <p class="pure-right">
+          <a id="functional-cookies-button" class="pure-button">nur funktionale Cookies zulassen</a>
+          <a id="cookie-consent-button" class="pure-button">auch Statistik erlauben</a>
+        </p>
+      </div>
 
     </div>
 
@@ -41,7 +43,7 @@
     </footer>
 
     <script type="text/template" id="navigation">
-        <div class="center pure-g-r navigation">
+      <div class="center pure-g-r navigation">
           <div class="pure-u-1-4 pure-gap">
             <a href="/archive"><big>Archiv</big></a>
             <a href="/archive_locations">Aufbewahrungsorte</a>
@@ -79,7 +81,7 @@
 
 
     <script type="text/template" id="quotation">
-        <div class="center pure-g-r quotation">
+      <div class="center pure-g-r quotation">
           <div class="pure-u-1">
             <h3>Zitierempfehlung</h3>
             <p class="quotation-content">
@@ -99,7 +101,7 @@
 
     <script type="text/template" id="download">
 
-        <div class="center pure-g-r navigation">
+      <div class="center pure-g-r navigation">
           <div class="pure-u-1">
             <h3><i class="fa fa-code" aria-hidden="true"></i> XML-Quellen</h3>
           </div>
@@ -128,66 +130,86 @@
 
 
 
-<script>
-requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common', 'js.cookie'],
-  function ($, $chocolat, $overlays, $clipboard, Faust, Cookies) {
-    $('main').Chocolat({className:'faustedition', loop:true});
-    $('header nav').menuOverlays({highlightClass:'pure-menu-selected', onAfterShow: function() {
-        $('[data-target]').copyToClipboard();
-    }});
-    Faust.addToTopButton();
+    <script>
+      requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common', 'js.cookie'],
+        function($, $chocolat, $overlays, $clipboard, Faust, Cookies) {
+          $('main').Chocolat({
+            className: 'faustedition',
+            loop: true
+          });
+          $('header nav').menuOverlays({
+            highlightClass: 'pure-menu-selected',
+            onAfterShow: function() {
+              $('[data-target]').copyToClipboard();
+            }
+          });
+          Faust.addToTopButton();
 
-    var _paq = window._paq = window._paq || [];
-    var consent = Cookies.get('faust-cookie-consent');
-    if (consent == 'yes') {
-      _paq.push(['rememberConsentGiven'])
-    } else if (navigator.cookieEnabled && (consent != 'yes' && consent != 'no')) {
-        $('#cookie-consent-button').bind('click', function () {
-           _paq.push(['rememberConsentGiven'])
-           var domain = window.location.hostname;
-           if (/faustedition\.net$/.test(domain))
-               domain = '.faustedition.net';
-           Cookies.set('faust-cookie-consent', 'yes', {expires: 365, domain: domain});
-           $('#cookie-consent').hide();
+          var _paq = window._paq = window._paq || [];
+          var consent = Cookies.get('faust-cookie-consent');
+          if (consent == 'yes') {
+            _paq.push(['rememberConsentGiven'])
+          } else if (navigator.cookieEnabled && (consent != 'yes' && consent != 'no')) {
+            $('#cookie-consent-button').bind('click', function() {
+              _paq.push(['rememberConsentGiven'])
+              var domain = window.location.hostname;
+              if (/faustedition\.net$/.test(domain))
+                domain = '.faustedition.net';
+              Cookies.set('faust-cookie-consent', 'yes', {
+                expires: 365,
+                domain: domain
+              });
+              $('#cookie-consent').hide();
+            });
+            $('#functional-cookies-button').bind('click', function() {
+              var domain = window.location.hostname;
+              if (/faustedition\.net$/.test(domain))
+                domain = '.faustedition.net';
+              Cookies.set('faust-cookie-consent', 'no', {
+                expires: 365,
+                domain: domain
+              });
+              $('#cookie-consent').hide();
+            })
+            $('#cookie-consent').show();
+          }
         });
-        $('#functional-cookies-button').bind('click', function() {
-           var domain = window.location.hostname;
-           if (/faustedition\.net$/.test(domain))
-               domain = '.faustedition.net';
-           Cookies.set('faust-cookie-consent', 'no', {expires: 365, domain: domain});
-           $('#cookie-consent').hide();
-        })
-        $('#cookie-consent').show();
-    }
-});
-</script>
+    </script>
 
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  _paq.push(['requireConsent']);
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['requireConsent']);
 
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  if (window.location.pathname != "/document") {
-    _paq.push(['trackPageView']);
-  }
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.faustedition.net/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-  window.addEventListener('popstate', (event) => {
-	if (event.state && event.state.referrer) {
-	    _paq.push(['setReferrerUrl', event.state.referrer]);
-	}
-	_paq.push(['trackPageView']);
-    });
-</script>
-<noscript><p><img src="//analytics.faustedition.net/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      if (window.location.pathname != "/document") {
+        _paq.push(['trackPageView']);
+      }
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u = "//analytics.faustedition.net/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+      window.addEventListener('popstate', (event) => {
+        if (event.state && event.state.referrer) {
+          _paq.push(['setReferrerUrl', event.state.referrer]);
+        }
+        _paq.push(['trackPageView']);
+      });
+    </script>
+    <noscript>
+      <p><img src="//analytics.faustedition.net/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <!-- End Matomo Code -->
 
-  </body>
-</html>
+    </body>
+
+    </html>
