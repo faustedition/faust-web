@@ -1159,7 +1159,7 @@ define(["sortable", "domReady", "es6-promise.min", "data/archives", "json!data/d
 
       // Downloads
       var download = this.getDownloadTemplate(),
-        xmlBase = 'https://github.com/faustedition/faust-xml/blob/master/xml/',  // TODO github / configurability
+        xmlBase = 'https://github.com/faustedition/faust-xml/blob/1.3-RC/xml/',  // TODO github / configurability
         transcriptBase = xmlBase + options.metadata.base,
         page = options.metadata.page[options.pageNo - 1],
         hasDocTranscript = (page.doc.length > 0) && page.doc[0].uri,
