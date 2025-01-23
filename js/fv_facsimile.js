@@ -765,6 +765,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       createImageOverlay: createImageOverlay,
 
       currentPageNo: null,
+      currentLayer: null,
       facsimile: null,
 
       init: function init(parent, state, controller) {
@@ -784,7 +785,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
       },
 
       loadPage : function(pageNo) {
-          if ((this.currentPageNo === pageNo) && (this.facsimile != null)) {
+          if ((this.currentPageNo === pageNo) && (this.currentLayer === this.state.layer) && (this.facsimile != null)) {
             return Promise.resolve(this.facsimile);
           }
           var currentPage = this.state.doc.pages[pageNo - 1];
@@ -795,6 +796,7 @@ define(["faust_common", "fv_doctranscript", "faust_mousemove_scroll"],
           // docTranscript exists and if it has images attached
           this.setLayer(this.state.layer);
           var layer = this.state.layer;
+          this.currentLayer = layer;
           if (currentMetadata.docTranscriptCount > 0 && currentMetadata.docTranscripts[0].hasImages) {
               function getPageRect() {
                 const mdUrl = currentMetadata.docTranscripts[0].images[layer].metadataUrl,
