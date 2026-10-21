@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de" xml:lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <title>Faustedition</title>
+    <script>
+      const helpTargets = [
+        ['archive_prints', 'intro#drucke'],
+        ['/print/faust', 'intro#text'],
+        ['/text', 'intro#text'],
+        ['/print/text', 'intro#text'],
+        ['/print/app', 'intro_text#apparat'],
+        ['/print/', 'intro#drucke'],
+        ['/meta/', 'metadata'],
+        ['view=structure', 'metadata'],
+        ['macrogenesis', '/macrogenesis/help'],
+        ['genesis_faust', 'intro#genesis_part'],
+        ['genesis_bargraph', 'intro#genesis_bargraph'],
+        ['genesis', 'intro#genesis'],
+        ['search', 'intro#volltextsuche'],
+        ['testimon', 'intro#testimony'],
+        ['view=document_text', 'transcription_guidelines#txt_Transkr_Hss'],
+        ['view=text', 'transcription_guidelines#txt_Transkr_Hss'],
+        ['view=print', 'transcription_guidelines#txt_Transkr_Hss'],
+        ['view=document', 'transcription_guidelines#dok_Transkr_Hss'],
+        ['view=facsimile_document', 'transcription_guidelines#dok_Transkr_Hss'],
+      ];
+      const helpTarget = helpTargets.find(([referrerPart]) => document.referrer.includes(referrerPart));
+      location.replace(helpTarget ? helpTarget[1] : 'intro');
+    </script>
+    <script src="/js/require.js"></script>
+    <script src="/js/faust_config.js"></script>
+    <script src="/js/faust-frame.js"></script>
+    <link rel="stylesheet" href="/css/faust.css">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  </head>
+  <body class="help">
+    <faust-header></faust-header>
+    <main>
+<section class="center pure-g-r">
+
+  <div class="pure-u-1-5"></div>
+
+  <article class="pure-u-3-5">
+
+    <p>Einige Benutzungshinweise finden Sie <a href="intro">in der Einführung in die Ausgabe</a>.</p>
+
+  </article>
+
+  <div class="pure-u-1-5">
+  </div>
+
+</section>
+
+<script type="text/javascript">
+    requirejs(['faust_common'], function(Faust) {
+      // set breadcrumbs
+      document.getElementById("breadcrumbs").appendChild(Faust.createBreadcrumbs([{caption: "Hilfe"}]));
+    });
+</script>
+    </main>
+    <noscript>
+      <div class="pure-alert pure-alert-warning">
+        <h3>JavaScript erforderlich</h3>
+        <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+        <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+      </div>
+      <p><img src="//analytics.faustedition.net/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <faust-footer></faust-footer>
+  </body>
+</html>

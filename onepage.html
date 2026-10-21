@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de" xml:lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <title>Faustedition</title>
+    <script src="/js/require.js"></script>
+    <script src="/js/faust_config.js"></script>
+    <script src="/js/faust-frame.js"></script>
+    <link rel="stylesheet" href="/css/faust.css">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  </head>
+  <body class="onepage">
+    <faust-header></faust-header>
+    <main>
+<section id="placeholder">
+	<!-- Hier landen die Inhalte der eigenen Seiten -->
+</section>
+
+
+<script type="text/javascript">
+	/* Diese Seiten werden, in der Reihenfolge in der sie hier stehen, zusammengeklebt.
+	   Jeweils nur der Inhalt der ersten <section>.
+	*/
+	var pages = [
+		"project",
+		"intro",
+		"metadata",
+		"transcription_guidelines",
+		"multispectral_imaging",
+		"x-ray_spectrometry",
+		"watermarks",
+		"imprint",
+		],
+		placeholder = document.getElementById('placeholder');
+	pages.forEach(function(page) {
+		var target = document.createElement('p');
+		target.textContent = "Loading " + page + " …";
+		placeholder.appendChild(target);
+		var req = new XMLHttpRequest();
+		req.addEventListener("load", function(e) {
+			var doc = req.response,
+			    content = doc.getElementsByTagName('section')[0];
+			placeholder.replaceChild(content, target);
+		});
+		req.responseType = "document";
+		req.open("GET", "/content/" + page + ".html", true);
+		req.send();
+	});
+</script>
+    </main>
+    <noscript>
+      <div class="pure-alert pure-alert-warning">
+        <h3>JavaScript erforderlich</h3>
+        <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+        <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+      </div>
+      <p><img src="//analytics.faustedition.net/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <faust-footer></faust-footer>
+  </body>
+</html>

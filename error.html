@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de" xml:lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <title>Faustedition</title>
+    <script src="/js/require.js"></script>
+    <script src="/js/faust_config.js"></script>
+    <script src="/js/faust-frame.js"></script>
+    <link rel="stylesheet" href="/css/faust.css">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  </head>
+  <body class="error">
+    <faust-header></faust-header>
+    <main>
+<section class="center pure-g-r">
+  
+  <div class="pure-u-1-5"></div>
+  
+  <article class="pure-u-3-5 pure-center">
+
+    <p>&nbsp;</p>
+
+    <p class="pure-alert pure-alert-danger">
+      <b><i class="icon-warning-sign"></i> <span id="error-title">Unbekannter Fehler</span></b> <span id="error-text"></span>
+    </p>
+
+    <p><a href="/">Startseite</a></p>
+  
+  </article>
+  
+  <div class="pure-u-1-5"></div>
+
+</section>
+<script>
+  (function () {
+    const messages = {
+      400: ['Bad Request', ' - Die Anfrage-Nachricht ist fehlerhaft aufgebaut.'],
+      401: ['Unauthorized', ' - Die Authentifizierung schlug fehl.'],
+      403: ['Forbidden', ' - Sie sind nicht berechtigt diese Ressource anzusehen.'],
+      404: ['Not Found', ' - Die angeforderte Ressource wurde nicht gefunden.'],
+      500: ['Internal Server Error', ''],
+    };
+    const navigation = performance.getEntriesByType('navigation')[0];
+    const status = new URLSearchParams(location.search).get('status') || (navigation && navigation.responseStatus);
+    if (messages[status]) {
+      document.getElementById('error-title').textContent = status + ': ' + messages[status][0];
+      document.getElementById('error-text').textContent = messages[status][1];
+    }
+  })();
+</script>
+    </main>
+    <noscript>
+      <div class="pure-alert pure-alert-warning">
+        <h3>JavaScript erforderlich</h3>
+        <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+        <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+      </div>
+      <p><img src="//analytics.faustedition.net/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <faust-footer></faust-footer>
+  </body>
+</html>

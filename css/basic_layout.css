@@ -506,3 +506,8 @@ a.disabled, .disabled a {
   bottom: 3em; /* should not cover footer w/impressum */
 }
 
+
+/* keep fragment targets clear of the fixed header, like Faust.fixTargetOffset */
+:target {
+  scroll-margin-top: 100px;
+}

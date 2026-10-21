@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de" xml:lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <title>Faustedition</title>
+    <script src="/js/require.js"></script>
+    <script src="/js/faust_config.js"></script>
+    <script src="/js/faust-frame.js"></script>
+    <link rel="stylesheet" href="/css/faust.css">
+    <link rel="stylesheet" href="/css/genesis-bargraph.css">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  </head>
+  <body class="genesis">
+    <faust-header></faust-header>
+    <main>
+<section class="center pure-g-r">
+  
+  <article class="pure-u-1 pure-center">
+      <faust-include src="/img/genesis_entry.svg"></faust-include>
+
+
+      <p><a class="pure-button pure-button-tile" href="/macrogenesis" style="display:block;">Makrogenese-Lab</a></p>
+  
+  </article>
+
+</section>
+
+<script type="text/javascript">
+    requirejs(['faust_common','json!data/testimony-stats', 'json!data/witness-stats', 'domReady'],
+      function(Faust, testimony, witnesses, domReady) {
+        // set breadcrumbs
+      domReady(function() {
+        Faust.context.setContextSimple("Genese", []);
+
+        var updateGraph = function(data, idPrefix, labelSuffix) {
+          try {
+            Object.keys(data.counts).forEach(function (year) {
+              var el = document.getElementById(idPrefix + year);
+              if (el) {
+                var height = data.counts[year] / data.max;
+                el.setAttribute('height', height)
+                if (labelSuffix)
+                  el.setAttribute('title', year + ': ' + data.counts[year] + labelSuffix);
+              }
+            });
+          } catch (e) {
+            console.error(e, 'while updating graph', idPrefix)
+          }
+        };
+
+        updateGraph(testimony, 'tes_', ' Entstehungszeugnisse');
+        updateGraph(witnesses, 'wit_');
+
+        Faust.tooltip.addToTooltipElements();
+      });
+    });
+</script>
+    </main>
+    <noscript>
+      <div class="pure-alert pure-alert-warning">
+        <h3>JavaScript erforderlich</h3>
+        <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+        <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+      </div>
+      <p><img src="//analytics.faustedition.net/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <faust-footer></faust-footer>
+  </body>
+</html>

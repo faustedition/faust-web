@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de" xml:lang="de">
+  <head>
+    <meta charset='utf-8'>
+    <title>Faustedition</title>
+    <script src="/js/require.js"></script>
+    <script src="/js/faust_config.js"></script>
+    <script src="/js/faust-frame.js"></script>
+    <link rel="stylesheet" href="/css/faust.css">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  </head>
+  <body>
+    <faust-header></faust-header>
+    <main>
+
+    </main>
+    <noscript>
+      <div class="pure-alert pure-alert-warning">
+        <h3>JavaScript erforderlich</h3>
+        <p>Die Faustedition bietet ein interaktives Userinterface, für das JavaScript erforderlich ist.</p>
+        <p>Bitte deaktivieren Sie ggf. vorhandene Skriptblocker für diese Seite.</p>
+      </div>
+      <p><img src="//analytics.faustedition.net/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+    <faust-footer></faust-footer>
+<script>
+  (async function () {
+    const name = location.pathname.slice(1);
+    document.body.classList.add(name);
+    const response = await fetch('/content/' + encodeURIComponent(name) + '.html');
+    if (!response.ok) {
+      location.replace('/error.html?status=' + response.status);
+      return;
+    }
+    const main = document.querySelector('main');
+    const range = document.createRange();
+    range.selectNodeContents(main);
+    const content = range.createContextualFragment(await response.text());
+    document.head.append(...content.querySelectorAll('link[rel="stylesheet"]'));
+    // registered before the fragment's own scripts, so these may still override the context
+    requirejs(['faust_common'], function (Faust) {
+      Faust.context.initContext();
+      Faust.fixTargetOffset();
+    });
+    main.append(content);
+    document.dispatchEvent(new Event('faust:content-loaded'));
+    if (location.hash) {
+      location.replace(location.hash);
+    }
+  })();
+</script>
+  </body>
+</html>
