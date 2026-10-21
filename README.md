@@ -1,6 +1,6 @@
 ## Faust Edition Frontend
 
-THIS DOCUMENTATION IS OUTDATED
+THIS DOCUMENTATION IS SEVERELY OUTDATED
 
 This is the web frontend for the Faustedition.
 
