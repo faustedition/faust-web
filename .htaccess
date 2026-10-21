@@ -2,11 +2,11 @@ Options +Multiviews
 
 Redirect 301 /project/about /intro
 
-ErrorDocument 400 /error.php?status=400
-ErrorDocument 401 /error.php?status=401
-ErrorDocument 403 /error.php?status=403
-ErrorDocument 404 /error.php?status=404
-ErrorDocument 500 /error.php?status=500
+ErrorDocument 400 /error.html
+ErrorDocument 401 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html
+ErrorDocument 500 /error.html
 
 Redirect 301 /chessboard_overview.php /genesis
 Redirect 301 /chessboard_faust_i.php /genesis_faust_i
@@ -23,72 +23,20 @@ Redirect 301 /documentViewer.php /document
 
 
 
-# Moved intro content to content folder
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^beta-release _content.php [QSA,L]
+# Pages from content/*.html are rendered by _content.html,
+# unless there is a static page of the same name.
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/content/$1.html -f
+RewriteRule ^([\w.-]+)/$ /$1 [R=301,L]
+
+RewriteCond %{DOCUMENT_ROOT}/content/$1_$2.html -f
+RewriteRule ^([\w.-]+)/([\w.-]+)$ /$1_$2 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^beta-release1 _content.php [QSA,L]
+RewriteCond %{DOCUMENT_ROOT}/$1.html !-f
+RewriteCond %{DOCUMENT_ROOT}/content/$1.html -f
+RewriteRule ^([\w.-]+)$ /_content.html [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^beta-release2 _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^contact _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^credits _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^credits_advice _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^credits_archives _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^credits_coop _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^credits_finance _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^imprint _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^intro _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^metadata _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^multispectral_imaging _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^project _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^transcription_guidelines _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^watermarks _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^x-ray_spectrometry _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^1-0-release _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^1-1-release _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^1-2-release _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^archive_schillemeit _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^intro_macrogenesis _content.php [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^intro_text _content.php [QSA,L]
+RedirectMatch 301 ^/(.+)\.php$ /$1

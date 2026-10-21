@@ -155,10 +155,14 @@
   function initFrame() {
     requirejs(['jquery', 'jquery.chocolat', 'jquery.overlays', 'jquery.clipboard', 'faust_common', 'js.cookie'],
       function($, $chocolat, $overlays, $clipboard, Faust, Cookies) {
-        $('main').Chocolat({
-          className: 'faustedition',
-          loop: true
-        });
+        function initLightbox() {
+          $('main').removeData('chocolat').Chocolat({
+            className: 'faustedition',
+            loop: true
+          });
+        }
+        initLightbox();
+        document.addEventListener('faust:content-loaded', initLightbox);
         $('header nav').menuOverlays({
           highlightClass: 'pure-menu-selected',
           onAfterShow: function() {
