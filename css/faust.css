@@ -1,0 +1,8 @@
+/* Stylesheets shared by all pages that use js/faust-frame.js */
+@import url("webfonts.css");
+@import url("pure-min.css");
+@import url("pure-custom.css");
+@import url("basic_layout.css");
+@import url("overlay.css");
+@import url("chocolat.css");
+@import url("chocolat-custom.css");
